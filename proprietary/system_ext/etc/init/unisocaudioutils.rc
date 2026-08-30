@@ -1,0 +1,5 @@
+service unisocaudioutils /system_ext/bin/unisocaudioutils
+    class main
+    user system
+    group audio system media_rw sdcard_rw everybody
+    task_profiles ProcessCapacityHigh HighPerformance

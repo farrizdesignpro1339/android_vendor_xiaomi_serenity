@@ -1,0 +1,6 @@
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+on property:sys.boot_completed=1
+    chown system system /dev/sys/fs/by-name/userdata/discard_idle_interval
+    write /dev/sys/fs/by-name/userdata/ckpt_thread_ioprio "rt,3"

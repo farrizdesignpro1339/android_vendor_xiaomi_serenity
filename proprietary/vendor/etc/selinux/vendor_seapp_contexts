@@ -1,0 +1,4 @@
+user=system seinfo=platform name=com.spreadst.validator domain=sprd_validator_app type=system_app_data_file levelFrom=user
+user=system seinfo=platform name=com.huaqin.factory domain=cittest_app type=system_app_data_file levelFrom=user
+user=system seinfo=platform name=com.mi.AutoTest domain=cittest_app type=system_app_data_file levelFrom=user
+user=system seinfo=platform name=com.miui.qr domain=cittest_app type=system_app_data_file levelFrom=user

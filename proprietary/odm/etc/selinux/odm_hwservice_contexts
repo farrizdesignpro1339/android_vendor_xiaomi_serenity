@@ -1,0 +1,3 @@
+android.hardware.nfc::INfc  u:object_r:hal_nfc_hwservice:s0
+vendor.xiaomi.hardware.fx.tunnel::IMiFxTunnel u:object_r:android_fp_hwservice:s0
+vendor.silead.hardware.fingerprintext::ISileadFingerprint  u:object_r:android_fp_hwservice:s0

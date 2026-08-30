@@ -1,0 +1,9 @@
+#extend data service
+#storage: system_ext/etc/init/
+service ext_data /product/bin/ext_data
+    class main
+    user root
+    group vpn radio wakelock
+
+on boot
+    write /proc/sys/net/ipv4/tcp_mtu_probing 1

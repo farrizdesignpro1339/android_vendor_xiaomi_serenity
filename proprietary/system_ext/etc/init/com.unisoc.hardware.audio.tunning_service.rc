@@ -1,0 +1,5 @@
+service audio_tunning_service /system_ext/bin/hw/com.unisoc.hardware.audio.tunning.service
+    class core
+    user audioserver
+    group media
+    task_profiles ProcessCapacityHigh HighPerformance

@@ -1,0 +1,26 @@
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+on early-init && property:ro.boot.auto.efuse=UMS9230T
+    setprop ro.soc.model UMS9230T
+    setprop ro.unicpu.model T7255
+
+on early-init && property:ro.boot.auto.efuse=UMS9230
+    setprop ro.soc.model UMS9230
+    setprop ro.unicpu.model T7200
+
+on early-init && property:ro.boot.auto.efuse=UMS9230H
+    setprop ro.soc.model UMS9230H
+    setprop ro.unicpu.model T7225
+
+on early-init && property:ro.boot.auto.efuse=UMS9230S
+    setprop ro.soc.model UMS9230S
+    setprop ro.unicpu.model T7280
+
+on early-init && property:ro.boot.auto.efuse=UMS9230E
+    setprop ro.soc.model UMS9230E
+    setprop ro.unicpu.model T7250
+
+on early-init && property:ro.boot.auto.efuse=-1
+    setprop ro.soc.model UMS9230T
+    setprop ro.unicpu.model T7255

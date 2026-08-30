@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unifwk_boost version="0">
+    <board name="common">
+        <mainswicth>1</mainswicth>
+        <feature name="uni_fwkboost_default">
+            <switch>1</switch>
+            <id>480</id>
+        </feature>
+        <feature name="uni_fwkboost_surfaceview">
+            <switch>1</switch>
+            <id>500</id>
+        </feature>
+        <feature name="uni_fwkboost_overscrool">
+            <switch>1</switch>
+            <id>500</id>
+        </feature>
+        <feature name="uni_fwkboost_textureview">
+            <switch>1</switch>
+            <id>500</id>
+        </feature>
+        <feature name="uni_fwkboost_touch">
+            <switch>1</switch>
+            <id>500</id>
+        </feature>
+        <feature name="uni_fwkboost_activity_start">
+            <switch>1</switch>
+            <id>600</id>
+        </feature>
+        <feature name="uni_fwkboost_activity_resume">
+            <switch>1</switch>
+            <id>600</id>
+        </feature>
+        <feature name="uni_fwkboost_activity_pause">
+            <switch>1</switch>
+            <id>500</id>
+        </feature>
+        <feature name="uni_fwkboost_activity_idle">
+            <switch>1</switch>
+            <id>500</id>
+        </feature>
+        <feature name="uni_fwkboost_activity_stop">
+            <switch>1</switch>
+            <id>500</id>
+        </feature>
+        <feature name="uni_fwkboost_animation_transition">
+            <switch>1</switch>
+            <id>400</id>
+        </feature>
+        <feature name="uni_fwkboost_animation_rotation">
+            <switch>1</switch>
+            <id>400</id>
+        </feature>
+        <feature name="uni_fwkboost_animation_startingwindow">
+            <switch>1</switch>
+            <id>400</id>
+        </feature>
+        <feature name="uni_fwkboost_animation_recents">
+            <switch>1</switch>
+            <id>400</id>
+        </feature>
+        <feature name="uni_fwkboost_animation_others">
+            <switch>1</switch>
+            <id>400</id>
+        </feature>
+        <feature name="uni_fwkboost_add_window">
+            <switch>0</switch>
+            <id>500</id>
+        </feature>
+        <feature name="uni_fwkboost_process_create">
+            <switch>1</switch>
+            <id>500</id>
+        </feature>
+        <feature name="uni_fwkboost_view_layout">
+            <switch>1</switch>
+            <id>500</id>
+        </feature>
+        <feature name="uni_fwkboost_view_measure">
+            <switch>1</switch>
+            <id>500</id>
+        </feature>
+        <feature name="uni_fwkboost_view_draw">
+            <switch>1</switch>
+            <id>500</id>
+        </feature>
+        <feature name="uni_fwkboost_transitionAnimation_normal">
+            <switch>1</switch>
+            <id>50</id>
+        </feature>
+        <feature name="uni_fwkboost_transitionAnimation_moderate">
+            <switch>1</switch>
+            <id>70</id>
+        </feature>
+        <feature name="uni_fwkboost_transitionAnimation_low">
+            <switch>1</switch>
+            <id>90</id>
+        </feature>
+        <feature name="uni_fwkboost_transitionAnimation_critical">
+            <switch>1</switch>
+            <id>100</id>
+        </feature>
+        <feature name="uni_fwkboost_transitionAnimation_lowram_scale">
+            <switch>1</switch>
+            <id>100</id>
+        </feature>
+        <feature name="uni_fwkboost_highPerf_packagename">
+            <switch>1</switch>
+            <string>com.primatelabs.geekbench</string>
+            <string>benchmark</string>
+            <string>ludashi</string>
+            <string>cfbench</string>
+            <string>antutu</string>
+            <string>quicinc.vellamo</string>
+            <string>greenecomputing.linpack</string>
+            <string>nenamark</string>
+            <string>Quadrant</string>
+            <string>qihoo360.mobilesage.opti</string>
+            <string>eembc.coremard</string>
+            <string>rightware.tdmm2v10jnifree</string>
+            <string>aurorasoftworks.quadrant</string>
+            <string>futuremark.dmandroid</string>
+            <string>andromeda.androbench</string>
+            <string>rightware.Basemark</string>
+            <string>tptest</string>
+            <string>mobilexprt</string>
+            <string>Benchmark</string>
+            <string>com.network.test</string>
+            <string>org.zwanoo.android.speedtest</string>
+            <string>org.zwanoo.android.speedtest.china</string>
+            <string>com.metricowireless.datumandroid</string>
+            <string>com.sparklite.test</string>
+            <string>cn.nokia.speedtest5g</string>
+            <string>com.knowyou.perception</string>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_normal">
+            <switch>1</switch>
+            <gameconfig>*, true, 60, 1, 1, 0, 5000</gameconfig>
+            <gameconfig>com.tencent.tmgp.sgame, true, 60, 1, 2, 0, 5000</gameconfig>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_performance">
+            <switch>1</switch>
+            <gameconfig>com.tencent.tmgp.sgame, true, 60, 0.9, 2, 0, 8000</gameconfig>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_low_power">
+            <switch>1</switch>
+            <gameconfig>com.tencent.tmgp.sgame, true, 30, 0.7, 3, 0, 1000</gameconfig>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_saving_power">
+            <switch>1</switch>
+            <gameconfig>com.tencent.tmgp.sgame, true, 30, 0.8, 3, 0, 2000</gameconfig>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_ultrasaving_power">
+            <switch>1</switch>
+            <gameconfig>com.tencent.tmgp.sgame, true, 30, 0.7, 3, 0, 1000</gameconfig>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_high_temperature_critical">
+            <switch>1</switch>
+            <gameconfig>com.tencent.tmgp.sgame, true, 30, 0.7, 3, 0, 0</gameconfig>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_high_temperature_emergency">
+            <switch>1</switch>
+            <gameconfig>*, true, 30, 0.7, 3, 0, 1000</gameconfig>
+            <gameconfig>com.tencent.tmgp.sgame, true, 30, 0.7, 3, 0, 0</gameconfig>
+        </feature>
+    </board>
+
+    <board name="ums9230">
+        <feature name="uni_fwkboost_surfaceview">
+            <switch>1</switch>
+            <id>550</id>
+        </feature>
+    </board>
+</unifwk_boost>

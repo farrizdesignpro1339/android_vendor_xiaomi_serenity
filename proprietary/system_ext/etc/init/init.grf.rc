@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2016-2024 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+# for grf, set grf props by init.grf.rc
+
+on early-init && property:ro.build.fingerprint=*
+    setprop ro.system.build.fingerprint ${ro.build.fingerprint}

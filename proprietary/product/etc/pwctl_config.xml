@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<!--
+     SPDX-FileCopyrightText: 2023 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+<!--
+   Unisoc: SmartSence feature
+   SR: SR.599.001272.007004, SR.599.001753.006150, SR.599.001754.006154
+   AR: AR.599.001272.007004.022715, AR.599.001753.006150.016465, AR.599.001754.006154.016637,
+       AR.599.001754.006154.016638, AR.599.001754.006154.016639, AR.599.001754.006154.016640,
+       AR.599.001754.006154.016641, AR.599.001754.006154.016642, AR.599.001754.006154.016644,
+       AR.599.001754.006154.016645, AR.599.001754.006155.016647, AR.599.001754.006155.016648
+   Bug: 2190108, 2190109, 2190110, 2190111, 2190112, 2190113, 2190115, 2190116, 2190117, 2190118,
+        2190123, 2207726
+   method: modify directly
+-->
+<config>
+<item name='FlingApp'>
+    <packageName>com.ss.android.ugc.aweme</packageName>
+    <packageName>com.ss.android.ugc.aweme.lite</packageName>
+    <packageName>com.smile.gifmake</packageName>
+    <packageName>com.kuaishou.nebula</packageName>
+</item>
+<item name='Game'>
+     <packageName>com.tencent.tmgp.lolm</packageName>
+     <packageName>com.riseup.game</packageName>
+     <packageName>com.imangi.templerun2</packageName>
+     <packageName>com.happyelements.AndroidAnimal.qq</packageName>
+     <packageName>com.vectorunit.silver.googleplay</packageName>
+     <packageName>com.qqgame.hlddz</packageName>
+     <packageName>com.tencent.jkchess</packageName>
+     <packageName>com.tencent.pao</packageName>
+     <packageName>com.qqgame.happymj</packageName>
+     <packageName>com.tencent.game.rhythmmaster</packageName>
+     <packageName>com.tencent.tmgp.supercell.clashofclans</packageName>
+     <packageName>com.tencent.qqgame.xq</packageName>
+     <packageName>com.tencent.tmgp.wdsj666</packageName>
+     <packageName>com.tencent.tmgp.supercell.clashroyale</packageName>
+     <packageName>com.tencent.tmgp.sgame</packageName>
+     <packageName>com.studiowildcard.wardrumstudios.ark</packageName>
+     <packageName>com.studiowildcard.wardrumstudios.ark.ncr</packageName>
+     <packageName>com.t2ksports.nba2k19and</packageName>
+     <packageName>com.t2ksports.nba2k18and</packageName>
+     <packageName>com.garena.game.kgvntest</packageName>
+     <packageName>com.netmarble.penta</packageName>
+     <packageName>com.garena.game.kgth</packageName>
+     <packageName>com.garena.game.kgsam</packageName>
+     <packageName>com.garena.game.kgvn</packageName>
+     <packageName>com.garena.game.kgtw</packageName>
+     <packageName>com.garena.game.kgid</packageName>
+     <packageName>com.ngame.allstar.in</packageName>
+     <packageName>com.miHoYo.bh3.uc</packageName>
+     <packageName>com.netease.hyxd</packageName>
+     <packageName>com.netease.hyxd.mi</packageName>
+     <packageName>com.tencent.tmgp.cf</packageName>
+     <packageName>com.tencent.tmgp.speedmobileEx</packageName>
+     <packageName>com.tencent.tmgp.speedmobile</packageName>
+     <packageName>com.tencent.tmgp.sgamece</packageName>
+     <packageName>com.miHoYo.enterprise.NGHSoD</packageName>
+     <packageName>com.miHoYo.bh3.mi</packageName>
+     <packageName>com.tencent.tmgp.cod</packageName>
+     <packageName>com.tencent.ig</packageName>
+     <packageName>com.tencent.tmgp.pubgm</packageName>
+     <packageName>com.tencent.tmgp.pubgmhdce</packageName>
+     <packageName>com.tencent.tmgp.pubgmhd</packageName>
+     <packageName>com.pubg.imobile</packageName>
+     <packageName>com.pubg.imobiler</packageName>
+     <packageName>com.tencent.lolm</packageName>
+     <packageName>com.pubg.krmobile</packageName>
+     <packageName>com.tencent.igce</packageName>
+     <packageName>com.netease.onmyoji.mi</packageName>
+     <packageName>com.netease.onmyoji</packageName>
+     <packageName>com.huoshe.mndwdzz.mi</packageName>
+     <packageName>com.netease.h48</packageName>
+     <packageName>com.netease.h48.mi</packageName>
+     <packageName>com.netease.lx12</packageName>
+     <packageName>com.netease.lx12.mi</packageName>
+     <packageName>com.netease.mrzh</packageName>
+     <packageName>com.netease.mrzh.mi</packageName>
+     <packageName>com.epicgames.fortnite</packageName>
+     <packageName>com.netease.dwrg</packageName>
+     <packageName>com.netease.dwrg.mi</packageName>
+     <packageName>com.tencent.af</packageName>
+     <packageName>com.mobile.legends</packageName>
+     <packageName>com.dts.freefireth</packageName>
+     <packageName>com.wildspike.wormszone</packageName>
+     <packageName>com.supercell.clashofclans</packageName>
+     <packageName>com.xiaomi.gamecenter</packageName>
+     <packageName>com.yy.hiyo</packageName>
+     <packageName>com.roblox.client</packageName>
+     <packageName>com.kiloo.subwaysurf</packageName>
+     <packageName>com.miniclip.eightballpool</packageName>
+     <packageName>com.outfit7.mytalkingtom2</packageName>
+     <packageName>com.king.candycrushsodasaga</packageName>
+     <packageName>com.ludo.king</packageName>
+     <packageName>me.pou.app</packageName>
+     <packageName>com.outfit7.mytalkingtomfriends</packageName>
+     <packageName>jp.konami.pesam</packageName>
+     <packageName>com.supercell.clashroyale</packageName>
+     <packageName>com.garena.game.codm</packageName>
+     <packageName>com.playrix.homescapes</packageName>
+     <packageName>jp.garud.ssimulator</packageName>
+     <packageName>com.moonton.mobilehero</packageName>
+     <packageName>com.netease.onmyoji.mi</packageName>
+     <packageName>com.netease.onmyoji</packageName>
+     <packageName>com.tencent.tmgp.codty</packageName>
+     <packageName>com.gamelion.ck</packageName>
+     <packageName>com.njh.biubiu</packageName>
+</item>
+<item name='VideoChat'>
+    <appName>com.tencent.mm/.plugin.voip.ui.VideoActivity</appName>
+</item>
+<item name='Phone'>
+    <packageName>com.android.incallui</packageName>
+    <appName>com.android.dialer/com.android.incallui.InCallActivity</appName>
+    <appName>com.android.incallui/.InCallActivity</appName>
+    <appName>com.android.incallui/com.android.incallui.InCallActivity</appName>
+    <packageName>com.google.android.dialer</packageName>
+</item>
+<item name='Nolimits'>
+    <packageName>com.ludashi.benchmark</packageName>
+    <packageName>com.antutu.benchmark</packageName>
+    <packageName>com.ludashi.benchmark2</packageName>
+    <packageName>com.antutu.benchmark.bench64</packageName>
+    <packageName>com.antutu.benchmark</packageName>
+    <packageName>com.antutu.benchmark.full.lite</packageName>
+    <packageName>com.antutu.videobench</packageName>
+    <packageName>com.antutu.ABenchMark5</packageName>
+    <packageName>com.antutu.ABenchMark.GL2</packageName>
+    <packageName>org.zwanoo.android.speedtest</packageName>
+    <packageName>com.antutu.ABenchMark.lite</packageName>
+    <packageName>com.antutu.aibenchmark</packageName>
+    <packageName>com.ludashi.aibench</packageName>
+    <packageName>com.glbenchmark.glbenchmark27</packageName>
+    <packageName>com.andromeda.androbench2</packageName>
+    <packageName>com.primatelabs.geekbench</packageName>
+    <packageName>com.primatelabs.geekbench5c</packageName>
+    <packageName>com.primatelabs.geekbench5</packageName>
+    <packageName>com.primatelabs.geekbench4.corporate</packageName>
+    <packageName>net.kishonti.gfxbench.gl.v40001.corporate</packageName>
+    <packageName>com.android.gputest</packageName>
+    <packageName>android.test.app</packageName>
+    <packageName>com.futuremark.dmandroid.application</packageName>
+</item>
+<item name='CameraApp'>
+    <appName>com.android.camera2/com.android.camera.CameraLauncher</appName>
+     <packageName>com.miui.gallery</packageName>
+     <packageName>com.android.camera</packageName>
+     <packageName>com.android.camera2</packageName>
+     <packageName>com.google.android.apps.photos</packageName>
+</item>
+<item name="Gallery">
+</item>
+<item name='BenchMark'>
+    <appName>com.primatelabs.geekbench</appName>
+    <appName>benchmark</appName>
+    <appName>ludashi</appName>
+    <appName>cfbench</appName>
+    <appName>antutu</appName>
+    <appName>quicinc.vellamo</appName>
+    <appName>greenecomputing.linpack</appName>
+    <appName>nenamark</appName>
+    <appName>Quadrant</appName>
+    <appName>qihoo360.mobilesage.opti</appName>
+    <appName>eembc.coremard</appName>
+    <appName>rightware.tdmm2v10jnifree</appName>
+    <appName>aurorasoftworks.quadrant</appName>
+    <appName>futuremark.dmandroid</appName>
+    <appName>andromeda.androbench</appName>
+    <appName>rightware.Basemark</appName>
+    <appName>tptest</appName>
+    <appName>mobilexprt</appName>
+    <appName>Benchmark</appName>
+    <appName>BenchMark</appName>
+    <appName>com.network.test</appName>
+    <appName>org.zwanoo.android.speedtest</appName>
+    <appName>org.zwanoo.android.speedtest.china</appName>
+    <appName>com.metricowireless.datumandroid</appName>
+    <appName>com.sparklite.test</appName>
+    <appName>cn.nokia.speedtest5g</appName>
+    <appName>com.knowyou.perception</appName>
+</item>
+<item name="Navigation">
+    <packageName>com.baidu.BaiduMap</packageName>
+    <packageName>com.autonavi.minimap</packageName>
+    <packageName>com.tencent.map</packageName>
+    <packageName>com.tmri.app.main</packageName>
+    <packageName>com.MobileTicket</packageName>
+    <packageName>com.sdu.didi.gsui</packageName>
+    <packageName>com.google.android.apps.maps</packageName>
+</item>
+<item name="NavigationSimple">
+    <packageName>com.baidu.BaiduMap</packageName>
+    <packageName>com.autonavi.minimap</packageName>
+    <packageName>com.tencent.map</packageName>
+    <packageName>com.tmri.app.main</packageName>
+    <packageName>com.MobileTicket</packageName>
+    <packageName>com.sdu.didi.gsui</packageName>
+    <packageName>com.google.android.apps.maps</packageName>
+</item>
+<item name="Class0">
+    <packageName>com.taobao.taobao</packageName>
+    <packageName>com.xiaomi.midrop</packageName>
+    <packageName>com.jingdong.app.mall</packageName>
+    <packageName>com.xunmeng.pinduoduo</packageName>
+    <packageName>com.sina.weibo</packageName>
+    <packageName>com.ss.android.article.lite</packageName>
+    <packageName>com.ss.android.article.news</packageName>
+    <packageName>com.android.browser</packageName>
+    <packageName>com.android.mms</packageName>
+    <packageName>com.tencent.mobileqq</packageName>
+    <packageName>com.taobao.idlefish</packageName>
+    <packageName>com.baidu.searchbox</packageName>
+    <packageName>com.baidu.tieba</packageName>
+    <packageName>com.baidu.searchbox.lite</packageName>
+    <packageName>com.xingin.xhs</packageName>
+    <packageName>com.tencent.news</packageName>
+    <packageName>com.zhihu.android</packageName>
+    <packageName>com.quark.browser</packageName>
+    <packageName>com.tencent.mtt</packageName>
+    <packageName>com.UCMobile</packageName>
+    <packageName>com.UCMobile.intl</packageName>
+    <packageName>com.ximalaya.ting.android</packageName>
+    <packageName>com.qidian.QDReader</packageName>
+    <packageName>com.xs.fm</packageName>
+    <packageName>com.jingyao.easybike</packageName>
+    <packageName>com.xiaomi.vipaccount</packageName>
+    <packageName>com.duokan.reader</packageName>
+    <packageName>com.xiaomi.market</packageName>
+    <packageName>com.sdu.didi.psnger</packageName>
+    <packageName>com.facebook.katana</packageName>
+    <packageName>com.instagram.android</packageName>
+    <packageName>com.tencent.android.qqdownloader</packageName>
+    <packageName>com.amazon.mShop.android.shopping</packageName>
+    <packageName>com.android.chrome</packageName>
+    <packageName>com.vivo.easyshare</packageName>
+    <packageName>com.softin.copydata</packageName>
+    <packageName>com.go.browser</packageName>
+    <packageName>com.google.android.apps.searchlite</packageName>
+    <packageName>com.microsoft.emmx</packageName>
+    <packageName>org.mozilla.firefox</packageName>
+    <packageName>com.facebook.orca</packageName>
+    <packageName>net.one97.paytm</packageName>
+    <packageName>com.jingyao.easybike</packageName>
+    <packageName>com.tencent.mm</packageName>
+</item>
+<item name='Video'>
+     <appName>com.hunantv.imgo.activity/com.mgtv.ui.player.VodPlayerPageActivity</appName>
+     <appName>com.hunantv.imgo.activity/com.mgtv.ui.videoplay.MGVideoPlayActivity</appName>
+     <appName>com.youku.phone/com.youku.ui.activity.DetailActivity</appName>
+     <appName>com.tudou.android/com.youku.android.smallvideo.entry.SmallVideoLandingActivity</appName>
+     <appName>com.hunantv.imgo.activity/com.mg.ec.ui.videodetail.VideoDetailActivity</appName>
+ 
+     <packageName>com.ss.android.ugc.aweme</packageName>
+     <packageName>dopool.player</packageName>
+     <packageName>com.youku.phone</packageName>
+     <packageName>com.smile.gifmaker</packageName>
+     <packageName>com.tudou.android</packageName>
+     <packageName>com.miui.video</packageName>
+     <packageName>com.qiyi.video</packageName>
+     <packageName>com.qiyi.video.pad</packageName>
+     <packageName>com.tencent.qqlive</packageName>
+     <packageName>com.tencent.videolite.android</packageName>
+     <packageName>com.ss.android.ugc.aweme.lite</packageName>
+     <packageName>com.ss.android.ugc.live</packageName>
+     <packageName>com.kuaishou.nebula</packageName>
+     <packageName>com.ss.android.article.video</packageName>
+     <packageName>air.tv.douyu.android</packageName>
+     <packageName>com.duowan.kiwi</packageName>
+     <packageName>com.duowan.mobile</packageName>
+     <packageName>cn.cntv</packageName>
+     <packageName>com.babycloud.hanju</packageName>
+     <packageName>com.hunantv.imgo.activity</packageName>
+     <packageName>com.google.android.youtube</packageName>
+     <packageName>com.smartapps.videodownloaderfortiktok</packageName>
+     <packageName>com.zhiliaoapp.musically</packageName>
+     <packageName>com.snapchat.android</packageName>
+     <packageName>com.netflix.mediaclient</packageName>
+     <packageName>com.mxtech.videoplayer.ad</packageName>
+     <packageName>video.like</packageName>
+
+    <videoTag>video</videoTag>
+    <videoTag>MVplayer</videoTag>
+    <videoTag>vod</videoTag>
+    <videoTag>vodplayer</videoTag>
+    <videoTag>VideoDetail</videoTag>
+    <videoTag>videolive</videoTag>
+    <videoTag>Video</videoTag>
+
+    <packageTag>tv</packageTag>
+    <packageTag>live</packageTag>
+    <packageTag>mv</packageTag>
+    <packageTag>Mv</packageTag>
+    <packageTag>living</packageTag>
+    <packageTag>com.smile.gifmaker</packageTag>
+    <packageTag>show</packageTag>
+
+    <appTag>RoomActivity</appTag>
+    <appTag>DetailActivity</appTag>
+    <appTag>PlayActivity</appTag>
+    <appTag>LiveActivty</appTag>
+    <appTag>PlayerActivity</appTag>
+    <appTag>VideoPlayer</appTag>
+    <appTag>live_room</appTag>
+    <appTag>LivingActivity</appTag>
+    <appTag>PlayerPageActivity</appTag>
+</item>
+<item name="LaunchBlackList">
+</item>
+<!--Unisoc : Ultra Saving mode refactor
+    SR.624.002367.007759
+    AR.624.002367.007759.024754-->
+<!--black list for ultra saving power mode,kill them before switching-->
+<item name="UltraSaveModeBlackList">
+    <packageName>com.android.music</packageName>
+    <packageName>com.android.browser</packageName>
+    <packageName>com.android.email</packageName>
+    <packageName>com.android.camera2</packageName>
+    <packageName>com.android.calculator2</packageName>
+    <packageName>com.android.gallery3d</packageName>
+    <packageName>com.google.android.apps.maps</packageName>
+    <packageName>com.google.android.gm.lite</packageName>
+    <packageName>com.android.chrome</packageName>
+    <packageName>com.google.android.apps.youtube.music</packageName>
+    <packageName>com.android.dreams.phototable</packageName>
+</item>
+<!--white list for ultra saving power mode,won't kill then when switching-->
+<item name="UltraSaveModeWhiteList">
+</item>
+<!--end for  Ultra Saving mode refactor-->
+<!--List of apps allowed to start when high temperature, AR.698.004625.014993.044045-->
+<item name="HighTempAllowLaunchAppList">
+    <packageName>com.google.android.dialer</packageName>
+    <packageName>com.google.android.apps.messaging</packageName>
+    <packageName>com.google.android.contacts</packageName>
+    <packageName>com.android.dialer</packageName>
+    <packageName>com.android.messaging</packageName>
+    <packageName>com.android.contacts</packageName>
+    <packageName>com.android.settings</packageName>
+    <packageName>com.android.launcher3</packageName>
+    <packageName>com.android.systemui</packageName>
+</item>
+</config>

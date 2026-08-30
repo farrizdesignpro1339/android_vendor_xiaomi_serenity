@@ -1,0 +1,21 @@
+VERSION,1
+status,enable
+aplogrotate,enable
+prioritypath,internal
+sroot,/blackbox/
+aplogfilesize,10
+aplogmaxsize,50%
+uboot,1
+lastlog,0
+kernel,1
+android,1
+hcidump,0
+tcpdump,0
+sgm,0
+sysinfo,0
+ylogdebug,0
+phoneinfo,1
+trace,0
+trustlog,1
+tcpdump_c,-s 10000
+sublog,0

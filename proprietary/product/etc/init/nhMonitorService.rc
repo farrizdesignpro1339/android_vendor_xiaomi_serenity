@@ -1,0 +1,53 @@
+#
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+# SPDX-FileCopyrightText: 2018 Unisoc (Shanghai) Technologies Co., Ltd
+
+on property:persist.nhmonitor.enable=off
+    write /proc/monitor_enable "off"
+
+on property:persist.nhmonitor.enable=on && property:sys.nhmonitor.bootmode.allow=true
+    write /proc/monitor_enable "on"
+    write /proc/monitor_enable "panic-on"
+    write /proc/monitor_enable "dump-info"
+
+on property:persist.nhmonitor.enable=on && property:sys.nhmonitor.bootmode.allow=true && property:persist.skynet.enable=true
+    write /proc/monitor_enable "panic-off"
+
+on property:debug.nhmonitor.panic.enable=off
+    write /proc/monitor_enable "panic-off"
+    
+on property:debug.nhmonitor.panic.enable=on
+    write /proc/monitor_enable "panic-on"
+
+on property:debug.nhmonitor.logcat2kmsg=on
+    start dumpstatePowerOnLog_K
+
+on property:debug.nhmonitor.poweronlog=on
+    start dumpstatePowerOnLog_l
+    start dumpstatePowerOnLog_k
+
+service nhmonitor /product/bin/nhMonitorService
+    class late_start 
+    user system
+    group system root 
+    seclabel u:r:system_server:s0
+    oneshot
+
+on early-fs
+    chown system system /dev/native_hang_monitor
+    chown system system /proc/monitor_enable
+
+on property:debug.nhmonitor.sysdump=on
+    setprop vendor.debug.sysdump.enabled true
+    setprop persist.vendor.eng.reset  0
+
+on post-fs-data
+    mkdir /data/local/.stability/ 0777 system system
+    mkdir /blackbox/unisoc-stability 0777 system system
+    mkdir /blackbox/unisoc-stability/rescueParty  0777 system system
+    mkdir /blackbox/unisoc-stability/debug/  0777 system system
+    mkdir /blackbox/unisoc-stability/stab_data/  0777 system system
+
+
+
+

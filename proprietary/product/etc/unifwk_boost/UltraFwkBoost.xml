@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unifwk_boost version="0">
+    <board name="common">
+        <mainswicth>1</mainswicth>
+        <feature name="uni_fwkboost_animation_transition">
+            <switch>1</switch>
+            <id>400</id>
+        </feature>
+        <feature name="uni_fwkboost_animation_rotation">
+            <switch>1</switch>
+            <id>400</id>
+        </feature>
+        <feature name="uni_fwkboost_animation_startingwindow">
+            <switch>1</switch>
+            <id>400</id>
+        </feature>
+        <feature name="uni_fwkboost_animation_recents">
+            <switch>1</switch>
+            <id>400</id>
+        </feature>
+        <feature name="uni_fwkboost_animation_others">
+            <switch>1</switch>
+            <id>400</id>
+        </feature>
+        <feature name="uni_fwkboost_transitionAnimation_normal">
+            <switch>1</switch>
+            <id>50</id>
+        </feature>
+        <feature name="uni_fwkboost_transitionAnimation_moderate">
+            <switch>1</switch>
+            <id>70</id>
+        </feature>
+        <feature name="uni_fwkboost_transitionAnimation_low">
+            <switch>1</switch>
+            <id>90</id>
+        </feature>
+        <feature name="uni_fwkboost_transitionAnimation_critical">
+            <switch>1</switch>
+            <id>100</id>
+        </feature>
+        <feature name="uni_fwkboost_transitionAnimation_lowram_scale">
+            <switch>1</switch>
+            <id>100</id>
+        </feature>
+        <feature name="uni_fwkboost_dyn_skip_frame">
+            <switch>1</switch>
+        </feature>
+        <feature name="uni_fwkboost_animation_scale_enable">
+            <switch>1</switch>
+        </feature>
+        <feature name="uni_fwkboost_animation_skipframe_enable">
+            <switch>1</switch>
+        </feature>
+         <feature name="uni_fwkboost_scroll_friction_enable">
+            <switch>1</switch>
+            <id>70</id>
+        </feature>
+        <feature name="uni_fwkboost_scroll_animation_enable">
+            <switch>1</switch>
+            <id>16</id>
+        </feature>
+        <feature name="uni_fwkboost_animation_window">
+            <switch>1</switch>
+            <id>400</id>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_normal">
+            <switch>1</switch>
+            <gameconfig>*, true, 60, 1, 1, 0, 5000</gameconfig>
+            <gameconfig>com.tencent.tmgp.sgame, true, 0, 1, 2, 0, 5000</gameconfig>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_performance">
+            <switch>1</switch>
+            <gameconfig>com.tencent.tmgp.sgame, true, 0, 0.65, 2, 0, 8000</gameconfig>
+            <gameconfig>com.tencent.ig, true, 0, 0.65, 2, 0, 8000</gameconfig>
+            <gameconfig>com.tencent.tmgp.puniverse, true, 0, 0.65, 2, 0, 8000</gameconfig>
+            <gameconfig>com.riseup.game, true, 0, 0.65, 2, 0, 8000</gameconfig>
+            <gameconfig>com.tencent.pocket, true, 0, 0.65, 2, 0, 8000</gameconfig>
+            <gameconfig>com.tmgp.xl.lcdcg, true, 0, 0.65, 2, 0, 8000</gameconfig>
+            <gameconfig>com.tencent.tmgp.bh3, true, 0, 0.65, 2, 0, 8000</gameconfig>
+            <gameconfig>com.playgendary.tom, true, 0, 0.65, 2, 0, 8000</gameconfig>
+            <gameconfig>com.entrepreware.nis, true, 0, 0.65, 2, 0, 8000</gameconfig>
+            <gameconfig>com.tencent.tmgp.sskgame, true, 0, 0.65, 2, 0, 8000</gameconfig>
+            <gameconfig>com.tencent.shihun.android, true, 0, 0.65, 2, 0, 8000</gameconfig>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_low_power">
+            <switch>1</switch>
+            <gameconfig>com.tencent.tmgp.sgame, true, 60, 0.7, 3, 0, 1000</gameconfig>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_saving_power">
+            <switch>1</switch>
+            <gameconfig>com.tencent.tmgp.sgame, true, 0, 0.8, 3, 0, 2000</gameconfig>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_ultrasaving_power">
+            <switch>1</switch>
+            <gameconfig>com.tencent.tmgp.sgame, true, 30, 0.7, 3, 0, 1000</gameconfig>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_high_temperature_critical">
+            <switch>1</switch>
+            <gameconfig>com.tencent.tmgp.sgame, true, 30, 0.7, 3, 0, 0</gameconfig>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_high_temperature_emergency">
+            <switch>1</switch>
+            <gameconfig>com.tencent.tmgp.sgame, true, 30, 0.7, 3, 0, 0</gameconfig>
+        </feature>
+    </board>
+
+    <board name="ums9230">
+        <feature name="uni_fwkboost_animation_recents">
+            <switch>1</switch>
+            <id>400</id>
+        </feature>
+    </board>
+    <board name="go_32b">
+        <feature name="uni_fwkboost_dyn_skip_frame">
+            <switch>0</switch>
+        </feature>
+        <feature name="uni_fwkboost_animation_skipframe_enable">
+            <switch>0</switch>
+        </feature>
+        <feature name="uni_fwkboost_gamepolicy_performance">
+            <switch>1</switch>
+            <gameconfig>com.tencent.tmgp.sgame, true, 0, 0.9, 2, 0, 8000</gameconfig>
+            <gameconfig>com.riseup.game, true, 0, 0.9, 2, 0, 8000</gameconfig>
+            <gameconfig>com.tencent.pocket, true, 0, 0.9, 2, 0, 8000</gameconfig>
+            <gameconfig>com.tmgp.xl.lcdcg, true, 0, 0.9, 2, 0, 8000</gameconfig>
+            <gameconfig>ccom.tencent.tmgp.bh3, true, 0, 0.9, 2, 0, 8000</gameconfig>
+            <gameconfig>com.playgendary.tom, true, 0, 0.9, 2, 0, 8000</gameconfig>
+            <gameconfig>com.entrepreware.nis, true, 0, 0.9, 2, 0, 8000</gameconfig>
+            <gameconfig>com.tencent.tmgp.sskgame, true, 0, 0.9, 2, 0, 8000</gameconfig>
+            <gameconfig>com.tencent.shihun.android, true, 0, 0.9, 2, 0, 8000</gameconfig>
+        </feature>
+    </board>
+</unifwk_boost>

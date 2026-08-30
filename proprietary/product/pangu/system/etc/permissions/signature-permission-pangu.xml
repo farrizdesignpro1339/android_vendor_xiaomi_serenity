@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+   <signature-permissions package="com.miui.android.fashiongallery">
+      <permission name="android.permission.WRITE_SETTINGS" />
+      <permission name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+   </signature-permissions>
+</permissions>

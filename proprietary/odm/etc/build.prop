@@ -1,0 +1,72 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.odm.brand=Redmi
+ro.product.odm.manufacturer=Xiaomi
+ro.product.odm.device=serenity
+ro.product.odm.model=serenity
+ro.product.odm.name=serenity
+ro.product.model_for_attestation=serenity
+ro.product.brand_for_attestation=Redmi
+ro.product.name_for_attestation=miodm_serenity_id
+ro.product.manufacturer_for_attestation=Xiaomi
+ro.product.device_for_attestation=serenity
+ro.odm.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist32=armeabi-v7a,armeabi
+ro.odm.product.cpu.abilist64=arm64-v8a
+ro.odm.build.display.id=TP1A.220624.014 release-keys
+ro.odm.build.description=miodm_serenity_id-user 13 TP1A.220624.014 A15.0.11.0.VGWIDXM release-keys
+ro.odm.build.date=Wed Jul 22 22:03:10 CST 2026
+ro.odm.build.date.utc=1784728990
+ro.odm.build.fingerprint=Redmi/serenity/serenity:15/AP3A.240905.015.A2/A15.0.11.0.VGWIDXM:user/release-keys
+ro.odm.build.id=TP1A.220624.014
+ro.odm.build.tags=release-keys
+ro.odm.build.type=user
+ro.odm.build.version.incremental=A15.0.11.0.VGWIDXM
+ro.odm.build.version.release=13
+ro.odm.build.version.release_or_codename=13
+ro.odm.build.version.sdk=33
+####################################
+# from variable ADDITIONAL_ODM_PROPERTIES
+####################################
+ro.product.board=serenity
+####################################
+# from variable PRODUCT_ODM_PROPERTIES
+####################################
+persist.vendor.cam.back.high.resolution.mode=1
+persist.vendor.cam.front.high.resolution.mode=0
+persist.vendor.cam.icap.save.stat.num=6
+persist.vendor.cam.xtm.buf.num=6
+persist.vendor.cam.hdr.select.num=8
+persist.vendor.cam.ba.blur.version=1
+persist.vendor.cam.shot2shot.enable=1111
+persist.vendor.cam.high.res.zsl=1
+ro.sf.lcd_density=320
+ro.recovery.ui.dropscreen=1
+ro.recovery.ui.margin_height=45
+debug.sf.enable_changezorder_flag=1
+persist.vendor.radio.feature.bitmask=8
+ro.odm.oemcrypto.enabled=false
+persist.sys.wifi.reset.devpath=devices/platform/87000000.cpwcn-btwf/87000000.cpwcn-btwf:sprd-wlan
+ro.vendor.wcn.hardware.product=marlin3_internal
+persist.bluetooth.a2dp_offload.disabled=false
+ro.bluetooth.a2dp_offload.supported=true
+ro.product.hardware=serenity
+ro.product.property_source_order=odm,product,vendor,system_ext,system
+persist.vendor.cam.faceid.version=1
+persist.vendor.faceid.livenessgrade=2
+ro.vendor.tui.support=false
+ro.vendor.soter.support=false
+ro.vendor.ifaa.support=false
+ro.vendor.identity.support=false
+ro.vendor.gnsschip=marlin3lite-Integ
+ro.vendor.wcn.gpschip=marlin3lite-Integ
+persist.vendor.radio.phone_count=2
+persist.radio.multisim.config=dsds
+qemu.hw.mainkeys=0
+ro.odm.ab_ota_partitions=boot,dtbo,init_boot,l_agdsp,l_deltanv,l_fixnv1,l_fixnv2,l_gdsp,l_ldsp,l_modem,logo,mmcblk0boot1,odm,pm_sys,product,sdc,sml,system,system_dlkm,system_ext,teecfg,trustos,uboot,vbmeta,vbmeta_odm,vbmeta_product,vbmeta_system,vbmeta_system_ext,vbmeta_vendor,vendor,vendor_boot,vendor_dlkm
+ro.vendor.sp.support.reset=0
+# end of file
+import /odm/etc/build_${ro.boot.product.hardware.sku}.prop
+

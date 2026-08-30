@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--SPDX-FileCopyrightText: 2023 Unisoc (Shanghai) Technologies Co., Ltd
+    SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0 -->
+
+<app_list>
+<packageItem>
+<pkg_name>com.pp.assistant</pkg_name>
+</packageItem>
+<packageItem>
+<pkg_name>com.google.android.gms</pkg_name>
+</packageItem>
+<packageItem>
+<pkg_name>com.android.vending</pkg_name>
+</packageItem>
+</app_list>

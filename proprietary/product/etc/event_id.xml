@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?Declaration Don't modify the file manually,  its created automaticlly?>
+<Entry>
+  <EventId_Version version="1.0"/>
+  <Event id="101100000" EventType="STATISTIC" EventLevel="DEBUG" EventName="dump sensor info">
+    <Param id="0" name="type_info" type="varchar" length="128"/>
+  </Event>
+  <Event id="101100001" EventType="STATISTIC" EventLevel="DEBUG" EventName="dump meminfo">
+    <Param id="0" name="type_info" type="varchar" length="128"/>
+  </Event>
+  <Event id="101200000" EventType="STATISTIC" EventLevel="DEBUG" EventName="sim status">
+    <Param id="0" name="phoneid" type="varchar" length="16"/>
+    <Param id="1" name="subid" type="varchar" length="16"/>
+    <Param id="2" name="sim_status" type="varchar" length="16"/>
+  </Event>
+  <Event id="101400000" EventType="BEHAVIOR" EventLevel="DEBUG" EventName="App usage info">
+    <Param id="0" name="name" type="varchar" length="128"/>
+    <Param id="1" name="total_time_used" type="varchar" length="256"/>
+    <Param id="2" name="last_time_used" type="varchar" length="256"/>
+  </Event>
+  <Event id="102100000" EventType="STATISTIC" EventLevel="DEBUG" EventName="Runtime permission record during random power-down test">
+    <Param id="0" name="permission" type="varchar" length="256"/>
+  </Event>
+  <Event id="102100001" EventType="STATISTIC" EventLevel="DEBUG" EventName="Appops permission record during monkey">
+    <Param id="0" name="permission" type="varchar" length="256"/>
+  </Event>
+  <Event id="102200000" EventType="FAULT" EventLevel="DEBUG" EventName="dump window info when anr">
+    <Param id="0" name="visibility" type="varchar" length="64"/>
+    <Param id="1" name="focusable" type="varchar" length="64"/>
+  </Event>
+  <Event id="102200001" EventType="FAULT" EventLevel="GENERAL" EventName="dump winscope info when anr">
+    <Param id="0" name="process" type="varchar" length="128"/>
+  </Event>
+  <Event id="102300000" EventType="STATISTIC" EventLevel="DEBUG" EventName="open or close sensor">
+    <Param id="0" name="sensor_info" type="varchar" length="256"/>
+    <Param id="1" name="process_info" type="varchar" length="256"/>
+  </Event>
+  <Event id="102300001" EventType="STATISTIC" EventLevel="DEBUG" EventName="sensor event info">
+    <Param id="0" name="value" type="varchar" length="128"/>
+    <Param id="1" name="time" type="varchar" length="128"/>
+  </Event>
+  <Event id="102300002" EventType="STATISTIC" EventLevel="IMPORTANT" EventName="sensor open timeout">
+    <Param id="0" name="sensor_info" type="varchar" length="256"/>
+    <Param id="1" name="process_info" type="varchar" length="256"/>
+  </Event>
+  <Event id="103000001" EventType="FAULT" EventLevel="GENERAL" EventName="Shutdown Error">
+    <Param id="0" name="type" type="varchar" length="64"/>
+  </Event>
+  <Event id="103000002" EventType="FAULT" EventLevel="GENERAL" EventName="Boot Category">
+    <Param id="0" name="reboot_category" type="varchar" length="64"/>
+    <Param id="1" name="reboot_reason" type="varchar" length="64"/>
+  </Event>
+  <Event id="103000003" EventType="FAULT" EventLevel="GENERAL" EventName="Native Crash">
+    <Param id="0" name="fault_type" type="varchar" length="16"/>
+    <Param id="1" name="process" type="varchar" length="128"/>
+  </Event>
+  <Event id="103000004" EventType="FAULT" EventLevel="GENERAL" EventName="Java Crash">
+    <Param id="0" name="fault_type" type="varchar" length="16"/>
+    <Param id="1" name="process" type="varchar" length="128"/>
+  </Event>
+  <Event id="103000005" EventType="FAULT" EventLevel="GENERAL" EventName="ANR">
+    <Param id="0" name="fault_type" type="varchar" length="16"/>
+    <Param id="1" name="process" type="varchar" length="128"/>
+  </Event>
+  <Event id="103000006" EventType="FAULT" EventLevel="GENERAL" EventName="watchdog">
+    <Param id="0" name="fault_type" type="varchar" length="16"/>
+    <Param id="1" name="process" type="varchar" length="128"/>
+  </Event>
+  <Event id="103000007" EventType="FAULT" EventLevel="GENERAL" EventName="data full">
+    <Param id="0" name="fault_type" type="varchar" length="16"/>
+    <Param id="1" name="process" type="varchar" length="128"/>
+  </Event>
+  <Event id="104000000" EventType="STATISTIC" EventLevel="DEBUG" EventName="wcn status">
+    <Param id="0" name="wcn_type" type="varchar" length="64"/>
+    <Param id="1" name="status" type="varchar" length="64"/>
+  </Event>
+  <Event id="104000001" EventType="FAULT" EventLevel="DEBUG" EventName="android_information">
+    <Param id="0" name="android_version" type="varchar" length="128"/>
+    <Param id="1" name="kernel_version" type="varchar" length="128"/>
+    <Param id="2" name="cp_version" type="varchar" length="256"/>
+  </Event>
+  <Event id="104000002" EventType="FAULT" EventLevel="DEBUG" EventName="cpu_information">
+    <Param id="0" name="cpu_model" type="varchar" length="64"/>
+    <Param id="1" name="cpu_max_freq" type="varchar" length="128"/>
+    <Param id="2" name="cpu_min_freq" type="varchar" length="128"/>
+    <Param id="3" name="cpu_struction" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000003" EventType="FAULT" EventLevel="DEBUG" EventName="gpu_information">
+    <Param id="0" name="gpu_available_freq" type="varchar" length="64"/>
+    <Param id="1" name="gpu_render" type="varchar" length="64"/>
+  </Event>
+  <Event id="104000004" EventType="FAULT" EventLevel="DEBUG" EventName="ddr_information">
+    <Param id="0" name="ddr_model" type="varchar" length="64"/>
+    <Param id="1" name="ddr_freq" type="varchar" length="64"/>
+    <Param id="2" name="ddr_size" type="varchar" length="64"/>
+  </Event>
+  <Event id="104000005" EventType="FAULT" EventLevel="DEBUG" EventName="hw_device_information">
+    <Param id="0" name="screen_model" type="varchar" length="32"/>
+    <Param id="1" name="gps_version" type="varchar" length="32"/>
+    <Param id="2" name="storage_size" type="varchar" length="16"/>
+    <Param id="3" name="network_operator_name" type="varchar" length="16"/>
+    <Param id="4" name="bt_name_addr" type="varchar" length="64"/>
+    <Param id="5" name="mac_address" type="varchar" length="32"/>
+  </Event>
+  <Event id="104000102" EventType="FAULT" EventLevel="DEBUG" EventName="screen_brightness">
+    <Param id="0" name="brightness" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000103" EventType="FAULT" EventLevel="DEBUG" EventName="screen_curve">
+    <Param id="0" name="curve_nits" type="varchar" length="256"/>
+    <Param id="1" name="curve_brightness" type="varchar" length="256"/>
+  </Event>
+  <Event id="104000104" EventType="FAULT" EventLevel="DEBUG" EventName="screen_mode">
+    <Param id="0" name="brightness_mode" type="varchar" length="32"/>
+  </Event>
+  <Event id="104000105" EventType="FAULT" EventLevel="DEBUG" EventName="screen_status">
+    <Param id="0" name="screen_status" type="varchar" length="128"/>
+  </Event>
+  <Event id="104000106" EventType="FAULT" EventLevel="DEBUG" EventName="screen_timeout">
+    <Param id="0" name="screen_off_timeout" type="varchar" length="32"/>
+  </Event>
+  <Event id="104000107" EventType="FAULT" EventLevel="DEBUG" EventName="screen_rotation_switch">
+    <Param id="0" name="accelerometer_rotation" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000108" EventType="FAULT" EventLevel="DEBUG" EventName="screen_resolution">
+    <Param id="0" name="width_pixels" type="varchar" length="16"/>
+    <Param id="1" name="height_pixels" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000109" EventType="FAULT" EventLevel="DEBUG" EventName="screen_refresh_rate">
+    <Param id="0" name="refresh_rate" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000110" EventType="FAULT" EventLevel="DEBUG" EventName="screen_cabc_enabled">
+    <Param id="0" name="cabc_enabled" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000111" EventType="FAULT" EventLevel="DEBUG" EventName="screen_orientation">
+    <Param id="0" name="screen_orientation" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000202" EventType="FAULT" EventLevel="DEBUG" EventName="volume_audio_device_info">
+    <Param id="0" name="audio_device_type" type="varchar" length="16"/>
+    <Param id="1" name="audio_device_id" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000203" EventType="FAULT" EventLevel="DEBUG" EventName="volume_current_value">
+    <Param id="0" name="current_call_volume" type="varchar" length="16"/>
+    <Param id="1" name="current_system_volume" type="varchar" length="16"/>
+    <Param id="2" name="current_ring_volume" type="varchar" length="16"/>
+    <Param id="3" name="current_music_volume" type="varchar" length="16"/>
+    <Param id="4" name="current_alarm_volume" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000301" EventType="FAULT" EventLevel="DEBUG" EventName="battery_info">
+    <Param id="0" name="status" type="varchar" length="64"/>
+    <Param id="1" name="level" type="varchar" length="16"/>
+    <Param id="2" name="health" type="varchar" length="16"/>
+    <Param id="3" name="present" type="varchar" length="16"/>
+    <Param id="4" name="plugged" type="varchar" length="16"/>
+    <Param id="5" name="voltage" type="varchar" length="16"/>
+    <Param id="6" name="temperature" type="varchar" length="16"/>
+    <Param id="7" name="technology" type="varchar" length="64"/>
+    <Param id="8" name="batteryCapacity" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000302" EventType="FAULT" EventLevel="DEBUG" EventName="battery_current">
+    <Param id="0" name="current" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000501" EventType="FAULT" EventLevel="DEBUG" EventName="sensor_state">
+    <Param id="0" name="type" type="varchar" length="64"/>
+    <Param id="1" name="uid" type="varchar" length="16"/>
+    <Param id="2" name="state" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000601" EventType="FAULT" EventLevel="DEBUG" EventName="bt_state">
+    <Param id="0" name="state" type="varchar" length="64"/>
+  </Event>
+  <Event id="104000602" EventType="FAULT" EventLevel="DEBUG" EventName="bt_switch_state">
+    <Param id="0" name="switch_state" type="varchar" length="64"/>
+  </Event>
+  <Event id="104000603" EventType="FAULT" EventLevel="DEBUG" EventName="bt_connection_state">
+    <Param id="0" name="connection_state" type="varchar" length="64"/>
+  </Event>
+  <Event id="104000604" EventType="FAULT" EventLevel="DEBUG" EventName="bt_a2dp_offload">
+    <Param id="0" name="a2dp_offload_supported" type="varchar" length="64"/>
+    <Param id="1" name="a2dp_offload_disabled" type="varchar" length="64"/>
+  </Event>
+  <Event id="104000701" EventType="FAULT" EventLevel="DEBUG" EventName="wifi_state">
+    <Param id="0" name="switch_state" type="varchar" length="16"/>
+    <Param id="1" name="connection_state" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000702" EventType="FAULT" EventLevel="DEBUG" EventName="signal_strength">
+    <Param id="0" name="rssi" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000703" EventType="FAULT" EventLevel="DEBUG" EventName="traffic_stats">
+    <Param id="0" name="rx_tx" type="varchar" length="64"/>
+  </Event>
+  <Event id="104000704" EventType="FAULT" EventLevel="DEBUG" EventName="wifi_status">
+    <Param id="0" name="status" type="varchar" length="64"/>
+  </Event>
+  <Event id="104000705" EventType="FAULT" EventLevel="DEBUG" EventName="wifi_p2p_state">
+    <Param id="0" name="p2p_switch_state" type="varchar" length="16"/>
+    <Param id="1" name="p2p_connection_state" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000801" EventType="FAULT" EventLevel="DEBUG" EventName="radio_state">
+    <Param id="0" name="phoneId" type="varchar" length="16"/>
+    <Param id="1" name="state" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000802" EventType="FAULT" EventLevel="DEBUG" EventName="sim_state">
+    <Param id="0" name="phoneId" type="varchar" length="16"/>
+    <Param id="1" name="oldState" type="varchar" length="16"/>
+    <Param id="2" name="state" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000803" EventType="FAULT" EventLevel="DEBUG" EventName="nettype_state">
+    <Param id="0" name="phoneId" type="varchar" length="16"/>
+    <Param id="1" name="lastVoiceTechnology" type="varchar" length="32"/>
+    <Param id="2" name="lastDataTechnology" type="varchar" length="32"/>
+    <Param id="3" name="voiceTechnology" type="varchar" length="32"/>
+    <Param id="4" name="dataTechnology" type="varchar" length="32"/>
+  </Event>
+  <Event id="104000804" EventType="FAULT" EventLevel="DEBUG" EventName="search_state">
+    <Param id="0" name="phoneId" type="varchar" length="16"/>
+    <Param id="1" name="lastIsSearching" type="varchar" length="16"/>
+    <Param id="2" name="lastIsManualSelection" type="varchar" length="16"/>
+    <Param id="3" name="isSearching" type="varchar" length="16"/>
+    <Param id="4" name="isManualSelection" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000805" EventType="FAULT" EventLevel="DEBUG" EventName="signal_state">
+    <Param id="0" name="phoneId" type="varchar" length="16"/>
+    <Param id="1" name="lastLevel" type="varchar" length="16"/>
+    <Param id="2" name="lastDbm" type="varchar" length="16"/>
+    <Param id="3" name="lastAsuLevel" type="varchar" length="16"/>
+    <Param id="4" name="level" type="varchar" length="16"/>
+    <Param id="5" name="dbm" type="varchar" length="16"/>
+    <Param id="6" name="asuLevel" type="varchar" length="16"/>
+  </Event>
+  <Event id="104000806" EventType="FAULT" EventLevel="DEBUG" EventName="data_state">
+    <Param id="0" name="phoneId" type="varchar" length="16"/>
+    <Param id="1" name="state" type="varchar" length="16"/>
+    <Param id="2" name="networkType" type="varchar" length="32"/>
+  </Event>
+  <Event id="104000807" EventType="FAULT" EventLevel="DEBUG" EventName="datapackage_state">
+    <Param id="0" name="phoneId" type="varchar" length="16"/>
+    <Param id="1" name="startTime" type="varchar" length="32"/>
+    <Param id="2" name="endTime" type="varchar" length="32"/>
+    <Param id="3" name="rxBytes" type="varchar" length="32"/>
+    <Param id="4" name="txBytes" type="varchar" length="32"/>
+  </Event>
+  <Event id="104000901" EventType="FAULT" EventLevel="DEBUG" EventName="location_state">
+    <Param id="0" name="state" type="varchar" length="8"/>
+  </Event>
+  <Event id="104000902" EventType="FAULT" EventLevel="DEBUG" EventName="gps_state">
+    <Param id="0" name="state" type="varchar" length="32"/>
+    <Param id="1" name="firstFixTime" type="varchar" length="16"/>
+    <Param id="2" name="gpsCnt" type="varchar" length="16"/>
+  </Event>
+  <Event id="104001002" EventType="FAULT" EventLevel="DEBUG" EventName="ylog status">
+    <Param id="0" name="status" type="varchar" length="16"/>
+  </Event>
+  <Event id="104001101" EventType="FAULT" EventLevel="DEBUG" EventName="audio_state">
+    <Param id="0" name="uid" type="varchar" length="16"/>
+    <Param id="1" name="state" type="varchar" length="16"/>
+  </Event>
+  <Event id="104001102" EventType="FAULT" EventLevel="DEBUG" EventName="audio_audiocodec">
+    <Param id="0" name="name" type="varchar" length="64"/>
+  </Event>
+  <Event id="104001201" EventType="FAULT" EventLevel="DEBUG" EventName="video_state">
+    <Param id="0" name="uid" type="varchar" length="16"/>
+    <Param id="1" name="state" type="varchar" length="16"/>
+  </Event>
+  <Event id="104001202" EventType="FAULT" EventLevel="DEBUG" EventName="video_mediacodec_fps">
+    <Param id="0" name="name" type="varchar" length="64"/>
+    <Param id="1" name="uid" type="varchar" length="16"/>
+    <Param id="2" name="pkg" type="varchar" length="64"/>
+    <Param id="3" name="pid" type="varchar" length="16"/>
+    <Param id="4" name="fps" type="varchar" length="16"/>
+    <Param id="5" name="maxFfps" type="varchar" length="16"/>
+  </Event>
+  <Event id="104001203" EventType="FAULT" EventLevel="DEBUG" EventName="video_mediacodec_list">
+    <Param id="0" name="name" type="varchar" length="64"/>
+    <Param id="1" name="type" type="varchar" length="64"/>
+  </Event>
+  <Event id="104002201" EventType="FAULT" EventLevel="DEBUG" EventName="thermal_info">
+    <Param id="0" name="type" type="varchar" length="64"/>
+    <Param id="1" name="temp" type="varchar" length="16"/>
+  </Event>
+  <Event id="104001001" EventType="FAULT" EventLevel="DEBUG" EventName="cp_log_state">
+    <Param id="0" name="name" type="varchar" length="64"/>
+    <Param id="1" name="stat" type="varchar" length="16"/>
+  </Event>
+  <Event id="104001401" EventType="FAULT" EventLevel="DEBUG" EventName="power domain">
+    <Param id="0" name="ebInfo" type="varchar" length="256"/>
+    <Param id="1" name="pdInfo" type="varchar" length="256"/>
+  </Event>
+  <Event id="104001501" EventType="FAULT" EventLevel="DEBUG" EventName="wakeup info">
+    <Param id="0" name="SuspendState" type="varchar" length="16"/>
+    <Param id="1" name="WakeupReasons" type="varchar" length="128"/>
+    <Param id="2" name="SleepTimes" type="varchar" length="128"/>
+  </Event>
+  <Event id="104001601" EventType="FAULT" EventLevel="DEBUG" EventName="native and kernel wakelock">
+    <Param id="0" name="Title" type="varchar" length="128"/>
+    <Param id="1" name="Info*" type="varchar" length="128"/>
+  </Event>
+  <Event id="104001602" EventType="FAULT" EventLevel="DEBUG" EventName="userspace wakelock">
+    <Param id="0" name="PackageName" type="varchar" length="64"/>
+    <Param id="1" name="action" type="varchar" length="16"/>
+    <Param id="2" name="flag" type="varchar" length="64"/>
+    <Param id="3" name="tag" type="varchar" length="16"/>
+    <Param id="4" name="nowElapsed" type="varchar" length="128"/>
+  </Event>
+  <Event id="104001901" EventType="FAULT" EventLevel="DEBUG" EventName="ddr info">
+    <Param id="0" name="module" type="varchar" length="64"/>
+    <Param id="1" name="ddr_freq" type="varchar" length="128"/>
+    <Param id="2" name="ddr_freq_time" type="varchar" length="128"/>
+    <Param id="3" name="ddr_state" type="varchar" length="128"/>
+    <Param id="4" name="ddr_state_time" type="varchar" length="128"/>
+  </Event>
+  <Event id="104002001" EventType="FAULT" EventLevel="DEBUG" EventName="app proc state">
+    <Param id="0" name="state" type="varchar" length="8"/>
+    <Param id="1" name="uid" type="varchar" length="8"/>
+    <Param id="2" name="pid" type="varchar" length="8"/>
+    <Param id="3" name="name" type="varchar" length="128"/>
+  </Event>
+  <Event id="104002101" EventType="FAULT" EventLevel="DEBUG" EventName="jobscheduler state">
+    <Param id="0" name="state" type="varchar" length="8"/>
+    <Param id="1" name="uid" type="varchar" length="8"/>
+    <Param id="2" name="jobId" type="varchar" length="8"/>
+    <Param id="3" name="batteryName" type="varchar" length="128"/>
+  </Event>
+  <Event id="104002302" EventType="FAULT" EventLevel="DEBUG" EventName="ringing info">
+    <Param id="0" name="start_realtime" type="varchar" length="64"/>
+    <Param id="1" name="duration_millitime" type="varchar" length="64"/>
+  </Event>
+  <Event id="104002303" EventType="FAULT" EventLevel="DEBUG"  EventName="offhook info">
+    <Param id="0" name="start_realtime" type="varchar" length="64"/>
+    <Param id="1" name="duration_millitime" type="varchar" length="64"/>
+  </Event>
+  <Event id="104002401" EventType="FAULT" EventLevel="DEBUG"  EventName="display state and id">
+    <Param id="0" name="display_state" type="varchar" length="64"/>
+    <Param id="1" name="display_id" type="varchar" length="8"/>
+  </Event>
+  <Event id="104002402" EventType="FAULT" EventLevel="DEBUG"  EventName="display pip state">
+    <Param id="0" name="pip_mode_state" type="varchar" length="64"/>
+    <Param id="1" name="package_name" type="varchar" length="128"/>
+  </Event>
+  <Event id="104002403" EventType="FAULT" EventLevel="DEBUG"  EventName="display split state">
+    <Param id="0" name="split_mode_state" type="varchar" length="64"/>
+    <Param id="1" name="package_name" type="varchar" length="128"/>
+  </Event>
+  <Event id="104002404" EventType="FAULT" EventLevel="DEBUG"  EventName="display projection info">
+    <Param id="0" name="projection_state" type="varchar" length="64"/>
+  </Event>
+  <Event id="104002501" EventType="FAULT" EventLevel="DEBUG" EventName="pre-installed package info">
+    <Param id="0" name="pkg_name" type="varchar" length="64"/>
+    <Param id="1" name="ver_name" type="varchar" length="64"/>
+  </Event>
+  <Event id="104002502" EventType="FAULT" EventLevel="DEBUG" EventName="newly-installed package info">
+    <Param id="0" name="pkg_name" type="varchar" length="64"/>
+    <Param id="1" name="ver_name" type="varchar" length="64"/>
+  </Event>
+  <Event id="104002503" EventType="FAULT" EventLevel="DEBUG" EventName="removed package info">
+    <Param id="0" name="pkg_name" type="varchar" length="64"/>
+  </Event>
+  <Event id="104002504" EventType="FAULT" EventLevel="DEBUG" EventName="replaced package info">
+    <Param id="0" name="pkg_name" type="varchar" length="64"/>
+    <Param id="1" name="ver_name" type="varchar" length="64"/>
+  </Event>
+  <Event id="107000001" EventType="FAULT" EventLevel="DEBUG" EventName="regulator event info">
+    <Param id="0" name="task" type="varchar" length="64"/>
+    <Param id="1" name="pid" type="varchar" length="64"/>
+    <Param id="2" name="vsel_reg" type="varchar" length="64"/>
+  </Event>
+  <Event id="107000002" EventType="FAULT" EventLevel="GENERAL" EventName="UFS debugbus dump count">
+    <Param id="0" name="ufs_debug_bus_dump_cnt" type="varchar" length="64"/>
+  </Event>
+  <Event id="107000003" EventType="FAULT" EventLevel="DEBUG" EventName="Camera ISP timeout">
+    <Param id="0" name="task" type="varchar" length="64"/>
+    <Param id="1" name="pid" type="varchar" length="8"/>
+    <Param id="2" name="func" type="varchar" length="64"/>
+    <Param id="3" name="val" type="varchar" length="64"/>
+  </Event>
+  <Event id="107000004" EventType="FAULT" EventLevel="DEBUG" EventName="RTC event">
+    <Param id="0" name="flag" type="varchar" length="32"/>
+    <Param id="1" name="info" type="varchar" length="256"/>
+  </Event>
+  <Event id="109000001" EventType="FAULT" EventLevel="GENERAL" EventName="CP2 Assert">
+    <Param id="0" name="type" type="varchar" length="64"/>
+    <Param id="1" name="message" type="varchar" length="256"/>
+  </Event>
+  <Event id="109000002" EventType="FAULT" EventLevel="GENERAL" EventName="GNSS Assert">
+    <Param id="0" name="type" type="varchar" length="64"/>
+    <Param id="1" name="message" type="varchar" length="256"/>
+  </Event>
+  <Event id="110000001" EventType="FAULT" EventLevel="GENERAL" EventName="Modem Assert">
+    <Param id="0" name="type" type="varchar" length="64"/>
+    <Param id="1" name="message" type="varchar" length="256"/>
+  </Event>
+</Entry>

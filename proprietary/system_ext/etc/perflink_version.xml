@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * SPDX-FileCopyrightText: 2022 Unisoc (Shanghai) Technologies Co., Ltd
+ * SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+ *
+ * Copyright 2020 Unisoc (Shanghai) Technologies Co., Ltd.
+ * Licensed under the Unisoc General Software License, version 1.0 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+ *
+ * Software distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+ * See the Unisoc General Software License, version 1.0 for more details.
+ */
+-->
+<networkslice>
+    <version>
+        <date>Apr 18 5:04 PM</date>
+        <changeid>If7c1bcf0b415a2557896aec83735c64c9a4deb87</changeid>
+    </version>
+</networkslice>
+<ext_data>
+    <version>
+        <date>Feb 22, 2025 16:03 PM</date>
+        <changeid>I22d32b2b8ff5f4e31950c124dd0b93c15a80c609</changeid>
+    </version>
+</ext_data>
+<sld_service>
+    <version>
+        <date>Nov 27, 2024, 6:17:01 PM UTC+08:00</date>
+        <changeid>I1f2c746d9bea4f3f95d091d7e525a001bcc8caaa</changeid>
+    </version>
+</sld_service>
+<sld_native>
+    <version>
+        <date>Sep 04, 2024, 11:34:02 AM UTC+08:00</date>
+        <changeid>I8462015af91e21fc73a30fc0838f8b4c03bc4545</changeid>
+    </version>
+</sld_native>
+<UnisocNetwork>
+    <version>
+        <date>July 16, 2024 14:01 PM</date>
+        <changeid>I75aa44ec12c10f3da8404ef73bf3e35aa999be78</changeid>
+    </version>
+</UnisocNetwork>
+<imsbr>
+    <version>
+        <date>Nov 5, 2024 17:28 AM</date>
+        <changeid>I3529d8665132494601b3ca985665354329705a76</changeid>
+    </version>
+\ No newline at end of file
+</imsbr>

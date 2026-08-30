@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2024 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+<!-- Remove vendor app for 35 -->
+<config>
+    <scan-in-config config="ro.vndk.version" value="33">
+        <disallowed-scan-path name="/product/app/UASetting"/>
+        <disallowed-scan-path name="/product/app/EngineerInternal"/>
+        <disallowed-scan-path name="/product/app/SGPS"/>
+        <disallowed-scan-path name="/product/app/LogManager"/>
+        <disallowed-scan-path name="/product/app/EngineerMode"/>
+        <disallowed-scan-path name="/product/app/WirelessTools"/>
+        <disallowed-scan-path name="/product/app/ProxyNFwLocation"/>
+    </scan-in-config>
+</config>

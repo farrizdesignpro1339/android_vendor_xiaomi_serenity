@@ -1,0 +1,11 @@
+# Large product APKs >100MB - exclude from git, use GApps separately
+proprietary/product/app/TrichromeLibrary64/
+proprietary/product/app/Gmail2/
+proprietary/product/app/YouTube/
+proprietary/product/app/Maps/
+proprietary/product/priv-app/GmsCoreGo/
+# OAT/VDEX not needed
+proprietary/product/app/*/oat/
+proprietary/product/priv-app/*/oat/
+proprietary/product/app/*/*.prof
+proprietary/product/app/*/*.art

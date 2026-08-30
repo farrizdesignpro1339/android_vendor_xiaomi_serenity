@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--SPDX-FileCopyrightText: 2024 Unisoc (Shanghai) Technologies Co., Ltd
+    SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0 -->
+<!-- In device, the default config file is product/etc/cta/allow.record_discrete_unifw.xml -->
+<!--
+E.g.
+    <allow-record-discrete-package name="com.example.app" />
+-->
+<config></config>

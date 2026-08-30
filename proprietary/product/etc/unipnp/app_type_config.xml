@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* app type defined
+ * 0  - SYSTEM
+ * 1  - GAME
+ * 2  - MUSIC
+ * 3  - MESSAGE
+ * 4  - SOCIAL
+ * 5  - NEWS
+ * 6  - MEDIA
+ * 7  - READER
+ * 8  - NET
+ * 9  - MAP
+ * 10 - MONEY
+ * 11 - STUDY
+ * 12 - SHOPPING
+ * 13 - SPORT
+ * 14 - LIFE_SERVICE
+ * 15 - TRAVEL
+ * 16 - TRAFFIC
+ * 17 - SHORT_VIDEO
+ * 18 - DESKTOP
+ * 19 - CAPTURE
+ * 20 - OTHER
+ */
+ -->
+
+<app_type_config>
+    <package name="com.imangi.templerun2" type="1" />
+    <package name="com.tencent.tmgp.sgame" type="1" />
+    <package name="com.tencent.qqmusic" type="2" />
+    <package name="com.tencent.mm" type="3" />
+    <package name="com.tencent.mobileqq" type="3" />
+    <package name="com.tencent.mtt" type="5" />
+    <package name="com.ss.android.article.news" type="5" />
+    <package name="com.tencent.qqlive" type="6" />
+    <package name="com.chaozh.iReaderFree" type="7" />
+    <package name="com.qq.reader" type="7" />
+    <package name="com.autonavi.minimap" type="9" />
+    <package name="com.eg.android.AlipayGphone" type="10" />
+    <package name="com.sankuai.meituan" type="12" />
+    <package name="com.taobao.taobao" type="12" />
+    <package name="com.ss.android.ugc.aweme" type="17" />
+    <package name="com.smile.gifmaker" type="17" />
+</app_type_config>
