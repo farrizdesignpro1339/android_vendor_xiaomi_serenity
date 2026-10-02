@@ -20092,10 +20092,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/firmware/vecft-zh.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/vecft-zh.elf \
     vendor/xiaomi/serenity/proprietary/vendor/firmware/xml2bin.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/xml2bin.txt \
     vendor/xiaomi/serenity/proprietary/vendor/framework/androidx.camera.extensions.impl.jar:$(TARGET_COPY_OUT_VENDOR)/framework/androidx.camera.extensions.impl.jar \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common@7.0-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.0-enums.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common@7.1-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.1-enums.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrm.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidltransport.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwbinder.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyalsa.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.0-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.0-enums.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.1-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.1-enums.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwbinder.so \
@@ -20153,9 +20157,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common-util \
     android.hardware.audio.common@5.0 \
     android.hardware.audio.common@7.0 \
-    android.hardware.audio.common@7.0-enums \
     android.hardware.audio.common@7.0-util \
-    android.hardware.audio.common@7.1-enums \
     android.hardware.audio.common@7.1-util \
     android.hardware.audio.effect@7.0 \
     android.hardware.audio.effect@7.0-impl \

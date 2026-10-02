@@ -554,45 +554,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common@7.0-enums",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/android.hardware.audio.common@7.0-enums.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common@7.0-enums.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.hardware.audio.common@7.0-util",
     owner: "xiaomi",
     strip: {
@@ -609,7 +570,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "android.hardware.audio.common-util",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums",
                 "libbase",
                 "libc++",
                 "libc",
@@ -627,47 +587,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "android.hardware.audio.common-util",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums",
                 "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.audio.common@7.1-enums",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/android.hardware.audio.common@7.1-enums.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.audio.common@7.1-enums.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -697,7 +617,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "android.hardware.audio.common-util",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.1-enums",
                 "libbase",
                 "libc++",
                 "libc",
@@ -715,7 +634,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "android.hardware.audio.common-util",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.1-enums",
                 "libbase",
                 "libc++",
                 "libc",
@@ -957,7 +875,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "android.hardware.audio.common-util",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums",
                 "android.hardware.audio.common@7.0-util",
                 "android.hardware.audio@7.0",
                 "libbase",
@@ -977,7 +894,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "android.hardware.audio.common-util",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.0-enums",
                 "android.hardware.audio.common@7.0-util",
                 "android.hardware.audio@7.0",
                 "libbase",
@@ -1068,7 +984,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.audio@7.1",
                 "android.hardware.audio@7.1-util",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.1-enums",
                 "android.hardware.audio.common@7.1-util",
                 "libbase",
                 "libc++",
@@ -1096,7 +1011,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.audio@7.1",
                 "android.hardware.audio@7.1-util",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.1-enums",
                 "android.hardware.audio.common@7.1-util",
                 "libbase",
                 "libc++",
@@ -1129,7 +1043,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "android.hardware.audio.common-util",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.1-enums",
                 "android.hardware.audio.common@7.1-util",
                 "android.hardware.audio@7.1",
                 "libbase",
@@ -1149,7 +1062,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "android.hardware.audio.common-util",
                 "android.hardware.audio.common@7.0",
-                "android.hardware.audio.common@7.1-enums",
                 "android.hardware.audio.common@7.1-util",
                 "android.hardware.audio@7.1",
                 "libbase",
