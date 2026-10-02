@@ -20164,6 +20164,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.thermal@2.0.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/android.hidl.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.allocator@1.0.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/android.hidl.memory.block@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.memory.block@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.media.audio.common.types-V1-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.media.audio.common.types-V1-cpp.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.broadcastradio@1.0-impl.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
@@ -20296,6 +20297,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.wifi@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.6.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hidl.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hidl.allocator@1.0.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hidl.memory.block@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hidl.memory.block@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.media.audio.common.types-V1-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.media.audio.common.types-V1-cpp.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.system.wifi.keystore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.system.wifi.keystore@1.0.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.broadcastradio@1.0-impl.so \
@@ -20412,7 +20414,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0-impl-arm \
     android.hardware.graphics.mapper@4.0-impl-arm \
     android.hardware.sensors@2.X-sprd_subhal \
-    android.media.audio.common.types-V1-cpp \
     android.system.keystore2-V1-ndk \
     arm.graphics-V1-ndk \
     arm.graphics-V1-ndk_platform \

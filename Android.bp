@@ -635,45 +635,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.media.audio.common.types-V1-cpp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/android.media.audio.common.types-V1-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.media.audio.common.types-V1-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.system.keystore2-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -1002,7 +963,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbinder",
                 "libutils",
-                "android.media.audio.common.types-V1-cpp",
                 "framework-permission-aidl-cpp",
                 "libc++",
                 "libc",
@@ -1017,7 +977,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbinder",
                 "libutils",
-                "android.media.audio.common.types-V1-cpp",
                 "framework-permission-aidl-cpp",
                 "libc++",
                 "libc",
