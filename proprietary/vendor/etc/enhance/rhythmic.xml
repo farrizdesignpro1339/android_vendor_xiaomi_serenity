@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <enhance major_version="13"/>
+  <enhance version="2502131320"/>
+  <rhy_risezone>
+	<item>2000</item>
+	<item>7500</item>
+	<item>2000</item>
+	<item>7000</item>
+	<item>2500</item>
+	<item>11000</item>
+  </rhy_risezone>
+  <rhy_dayzone>
+	<item>6500</item>
+	<item>7000</item>
+	<item>6500</item>
+  </rhy_dayzone>
+  <rhy_pm_dropzone>
+	<item>500</item>
+	<item>15500</item>
+	<item>500</item>
+	<item>16000</item>
+	<item>500</item>
+	<item>15500</item>
+  </rhy_pm_dropzone>
+  <rhy_night_dropzone>
+	<item>500</item>
+	<item>15500</item>
+	<item>500</item>
+	<item>16000</item>
+	<item>1000</item>
+	<item>26000</item>
+  </rhy_night_dropzone>
+  <rhy_nightzone>
+	<item>4500</item>
+	<item>5000</item>
+	<item>4000</item>
+  </rhy_nightzone>
+  <rhy_nativecct>
+	<item>6500</item>
+  </rhy_nativecct>
+  <hourtime>
+	<item>0</item>
+	<item>1</item>
+	<item>2</item>
+	<item>3</item>
+	<item>4</item>
+	<item>5</item>
+	<item>6</item>
+	<item>7</item>
+	<item>8</item>
+	<item>9</item>
+	<item>10</item>
+	<item>11</item>
+	<item>12</item>
+	<item>13</item>
+	<item>14</item>
+	<item>15</item>
+	<item>16</item>
+	<item>17</item>
+	<item>18</item>
+	<item>19</item>
+	<item>20</item>
+	<item>21</item>
+	<item>22</item>
+	<item>23</item>
+	<item>24</item>
+  </hourtime>
+  <rhy_dimmingtotaltime>
+	<item>30</item>
+  </rhy_dimmingtotaltime>
+  <rhy_dimmingintervalus>
+	<item>20000</item>
+  </rhy_dimmingintervalus>
+  <rhy_coef0>
+	<item>-1.05835804644638e-11</item>
+	<item>1.54977017505332e-07</item>
+	<item>-0.000746246021922793</item>
+	<item>2.18267555378975</item>
+  </rhy_coef0>
+  <rhy_coef1>
+	<item>-1.10749173464052e-28</item>
+	<item>1.15181230847783e-24</item>
+	<item>-1.62227041943322e-21</item>
+	<item>8.05727837532549e-19</item>
+  </rhy_coef1>
+  <rhy_coef2>
+	<item> -9.58128638425608e-28</item>
+	<item>1.46826990154225e-23</item>
+	<item> -6.06235668938761e-20</item>
+	<item> 9.34983637712599e-17</item>
+  </rhy_coef2>
+  <rhy_coef3>
+	<item> 7.58085815572227e-30</item>
+	<item> -1.02889562680175e-24</item>
+	<item> 1.08860319669299e-20</item>
+	<item> -9.13905684338227e-18</item>
+  </rhy_coef3>
+  <rhy_coef4>
+	<item>-1.03535998464308e-11</item>
+	<item>1.35391839774962e-07</item>
+	<item>-0.000451350026634634</item>
+	<item>1.03021061232858</item>
+  </rhy_coef4>
+  <rhy_coef5>
+	<item>-9.51083790225490e-29</item>
+	<item>1.18922615511748e-24</item>
+	<item>-3.40702769050836e-22</item>
+	<item>1.64063137282217e-18</item>
+  </rhy_coef5>
+  <rhy_coef6>
+	<item>8.99625815863913e-30</item>
+	<item>-9.88173213438833e-26</item>
+	<item>2.54836897703718e-22</item>
+	<item>-1.57516507927125e-18</item>
+  </rhy_coef6>
+  <rhy_coef7>
+	<item>-6.27881238521459e-29</item>
+	<item>9.20467727154455e-25</item>
+	<item>-3.98187763175622e-21</item>
+	<item>8.78725506688242e-18</item>
+  </rhy_coef7>
+  <rhy_coef8>
+	<item>-1.65674768358671e-11</item>
+	<item>2.44492513874633e-07</item>
+	<item>-0.000949574030599081</item>
+	<item>1.36357834072476</item>
+  </rhy_coef8>
+</root>

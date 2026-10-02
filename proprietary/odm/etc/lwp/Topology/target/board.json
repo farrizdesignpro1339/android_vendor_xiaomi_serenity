@@ -1,0 +1,69 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2023 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "id": "TargetBoard",
+    "usecase": {
+        "TargetList": [
+            {
+                "name": "CAMERA_EIS_BOARD_PARAM",
+                "value": "ums9230-6-go",
+                "description": "eis_param",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_MFSR_CAPTURE",
+                "value": "false",
+                "description": "mfsr_capture_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_MOTION_PHONE",
+                "value": "false",
+                "description": "motion_phone_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_BOKEH_HDR_MODE_SUPPORT",
+                "value": "false",
+                "description": "bokeh_hdr_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_LMK_CAMERA_POWERHINT",
+                "value": "true",
+                "description": "set_power_hint_high_performance",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_BOKEH_HDR_MODE_SUPPORT",
+                "value": "false",
+                "description": "bokeh_hdr_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_BOKEH_MODE_SUPPORT",
+                "value": "false",
+                "description": "bokeh_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_PORTRAIT_SUPPORT",
+                "value": "false",
+                "description": "portrait_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_MFNR_SD_FRAME",
+                "value": "5",
+                "description": "mfnr_scene_framenum_for_go_version",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_HDR_EXTRA_BUF",
+                "value": "1",
+                "description": "hdr_cap_extra_buffer",
+                "group": "reprocessing"
+            }
+        ]
+    }
+}

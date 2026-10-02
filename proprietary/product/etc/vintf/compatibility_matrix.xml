@@ -1,0 +1,23 @@
+<!--
+    Input:
+        device/xiaomi/missi/device_framework_compatibility_matrix/mtdservice/aidl/vendor_framework_compatibility_matrix.xml
+        device/xiaomi/missi/device_framework_compatibility_matrix/payjoy/vendor_framework_compatibility_matrix.xml
+-->
+<compatibility-matrix version="8.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.mpayjoyca</name>
+        <version>1.0</version>
+        <interface>
+            <name>IPayjoyService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.mtdservice</name>
+        <version>1.0-3</version>
+        <interface>
+            <name>IMTService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>

@@ -1,0 +1,56 @@
+<apps>
+    <!--domestic apps-->
+    <generalapp>com.heytap.browser</generalapp>
+    <generalapp>com.android.browser</generalapp>
+    <generalapp>com.UCMobile</generalapp>
+    <generalapp>com.tencent.mm</generalapp>
+    <generalapp>com.tencent.mobileqq</generalapp>
+    <generalapp>com.sina.weibo</generalapp>
+    <generalapp>com.netease.newsreader.activity</generalapp>
+    <generalapp>com.ss.android.article.news</generalapp>
+    <generalapp>com.jingdong.app.mall</generalapp>
+    <generalapp>com.taobao.taobao</generalapp>
+    <generalapp>com.tmall.wireless</generalapp>
+    <generalapp>com.achievo.vipshop</generalapp>
+    <generalapp>com.xunmeng.pinduoduo</generalapp>
+    <generalapp>com.baidu.tieba</generalapp>
+    <generalapp>com.qzone</generalapp>
+    <generalapp>com.zhihu.android</generalapp>
+    <generalapp>com.xingin.xhs</generalapp>
+    <generalapp>com.baidu.browser.apps</generalapp>
+    <generalapp>com.tencent.mtt</generalapp>
+    <generalapp>com.eg.android.AlipayGphoneme.ele</generalapp>
+    <generalapp>com.sankuai.meituan</generalapp>
+    <generalapp>com.sankuai.meituan.takeoutnew</generalapp>
+    <generalapp>com.dianping.v1</generalapp>
+    <generalapp>com.moji.mjweather</generalapp>
+    <generalapp>ctrip.android.view</generalapp>
+    <generalapp>com.Qunar</generalapp>
+    <generalapp>com.tencent.news</generalapp>
+    <generalapp>com.tencent.reading</generalapp>
+    <specialapp>com.tencent.wemeet.app</specialapp>
+    <gameapp>com.tencent.qqlive</gameapp>
+    <gameapp>com.ss.android.ugc.aweme</gameapp>
+    <gameapp>com.ss.android.ugc.aweme.lite</gameapp>
+    <gameapp>com.qiyi.video</gameapp>
+    <gameapp>com.youku.phone</gameapp>
+    <gameapp>com.hunantv.imgo.activity</gameapp>
+    <gameapp>com.tencent.tmgp.sgame</gameapp>
+    <gameapp>com.tencent.tmgp.pubgmhd</gameapp>
+    <!--overseas apps-->
+    <generalapp>com.whatsapp</generalapp>
+    <generalapp>in.mohalla.sharechat</generalapp>
+    <generalapp>app.buzz.share</generalapp>
+    <generalapp>com.facebook.orca</generalapp>
+    <generalapp>com.UCMobile.intl</generalapp>
+    <generalapp>com.mcent.browser</generalapp>
+    <generalapp>com.redefine.welike</generalapp>
+    <generalapp>com.instagram.android</generalapp>
+    <generalapp>com.heytap.browser</generalapp>
+    <generalapp>com.android.browser</generalapp>
+    <generalapp>com.coloros.browser</generalapp>
+    <generalapp>com.android.chrome</generalapp>
+    <generalapp>com.facebook.katana</generalapp>
+    <generalapp>org.mozilla.firefox</generalapp>
+    <generalapp>com.opera.browser</generalapp>
+</apps>

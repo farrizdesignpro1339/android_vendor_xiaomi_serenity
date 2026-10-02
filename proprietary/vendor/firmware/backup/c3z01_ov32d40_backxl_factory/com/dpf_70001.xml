@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    SPDX-FileCopyrightText: 2024 Unisoc (Shanghai) Technologies Co., Ltd
+    SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+    Copyright 2024 Unisoc (Shanghai) Technologies Co., Ltd.
+    Licensed under the Unisoc General Software License, version 1.0 (the License);
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+    Software distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+    See the Unisoc General Software License, version 1.0 for more details.
+-->
+<DPF>
+	<tuning_param>
+		<version_major              type="uint8"  range="[0,255]"   default="1"    length="1"    description="step is 1">1</version_major>
+	    <version_minor     			type="uint8"  range="[0,255]"   default="0"    length="1"    description="step is 1">0</version_minor>
+	    <version_micor              type="uint8"  range="[0,255]"   default="0"    length="1"    description="step is 1">0</version_micor>
+	    <dpf_en                     type="uint8" range="[0,1]" default="1" Descripion="enable of dpf, the value is 0 or 1, 1 is open tunning">1</dpf_en>
+	    <dpf_check_en               type="uint8" range="[0,1]" default="1" Descripion="enable of dpf small picture check, the value is 0 or 1, 1 is open tunning">1</dpf_check_en>
+	    <reserve               type="uint8" range="[0,1]" default="0" Descripion="reserve">0</reserve>
+		<level_num type="uint16">5</level_num>
+		<sensor_dpf_level level="1" gain="128">		
+			<cpr_dpf_detect_lowth type="uint8" rang="[0,255]" default="0" description="the low threshold of small picture check, step is 1">1</cpr_dpf_detect_lowth>
+			<cpr_dpf_detect_highth type="uint8" rang="[0,255]" default="64" description="the high threshold of small picture check, step is 1">50</cpr_dpf_detect_highth>
+			<cpr_lum_noise_x_0 type="uint8" rang="[0,255]" default="0" description="the luma param x0,step is 1">0</cpr_lum_noise_x_0>
+			<cpr_lum_noise_x_1 type="uint8" rang="[0,255]" default="64" description="the luma param x1,step is 1">64</cpr_lum_noise_x_1>
+			<cpr_lum_noise_x_2 type="uint8" rang="[0,255]" default="128" description="the luma param x2,step is 1">128</cpr_lum_noise_x_2>
+			<cpr_lum_noise_x_3 type="uint8" rang="[0,255]" default="255" description="the luma param x3,step is 1">255</cpr_lum_noise_x_3>
+			<cpr_lum_noise_y_0 type="uint8" rang="[0,255]" default="0" description="the noise param y0,step is 1">0</cpr_lum_noise_y_0>
+			<cpr_lum_noise_y_1 type="uint8" rang="[0,255]" default="0" description="the noise param y1,step is 1">2</cpr_lum_noise_y_1>
+			<cpr_lum_noise_y_2 type="uint8" rang="[0,255]" default="0" description="the noise param y2,step is 1">4</cpr_lum_noise_y_2>
+			
+			<cpr_face_gain type="uint8" rang="[0,32]" default="0" description="the face gain for face protection,step is 1,0 is no dpf in face area">0</cpr_face_gain>
+			
+			<cpr_dpf_reg_size type="uint8" rang="[4,64]" default="16" description="the region size, step is modify 2">16</cpr_dpf_reg_size>
+			<cpr_dpf_uv_size type="uint8" rang="[4,64]" default="16" description="the dpf corrction size, step is modify 2">16</cpr_dpf_uv_size>
+			<cpr_dpf_edgey_x_0 type="uint8" rang="[0,255]" default="0"  description="the small picture check:the difference param x0 between pixel luma and region luma, step is 1">0</cpr_dpf_edgey_x_0>
+			<cpr_dpf_edgey_x_1 type="uint8" rang="[0,255]" default="16" description="the small picture check:the difference param x1 between pixel luma and region luma, step is 1">4</cpr_dpf_edgey_x_1>
+			<cpr_dpf_edgey_x_2 type="uint8" rang="[0,255]" default="16" description="the small picture check:the difference param x2 between pixel luma and region luma, step is 1">4</cpr_dpf_edgey_x_2>
+			<cpr_dpf_edgey_x_3 type="uint8" rang="[0,255]" default="32" description="the small picture check:the difference param x3 between pixel luma and region luma, step is 1">8</cpr_dpf_edgey_x_3>
+			
+			<cpr_dpf_edgey_y_0 type="uint8" rang="[0,16]" default="0"  description="the small picture check:the difference param y0 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_0>
+			<cpr_dpf_edgey_y_1 type="uint8" rang="[0,16]" default="8"  description="the small picture check:the difference param y1 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_1>
+			<cpr_dpf_edgey_y_2 type="uint8" rang="[0,16]" default="16" description="the small picture check:the difference param y2 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_2>
+			
+			<cpr_dpf_edge_x_0 type="uint8" rang="[0,255]" default="0"  description="the DPF check:the difference param x0 between pixel luma and MAX(r,g,b), step is 1">8</cpr_dpf_edge_x_0>
+			<cpr_dpf_edge_x_1 type="uint8" rang="[0,255]" default="16" description="the DPF check:the difference param x1 between pixel luma and MAX(r,g,b), step is 1">16</cpr_dpf_edge_x_1>
+			<cpr_dpf_edge_x_2 type="uint8" rang="[0,255]" default="16" description="the DPF check:the difference param x2 between pixel luma and MAX(r,g,b), step is 1">32</cpr_dpf_edge_x_2>
+			<cpr_dpf_edge_x_3 type="uint8" rang="[0,255]" default="32" description="the DPF check:the difference param x3 between pixel luma and MAX(r,g,b), step is 1">64</cpr_dpf_edge_x_3>
+			
+			<cpr_dpf_edge_y_0 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the difference param y0 between pixel luma and MAX(r,g,b), step is 1">0</cpr_dpf_edge_y_0>
+			<cpr_dpf_edge_y_1 type="uint8" rang="[0,16]" default="8"  description="the DPF check:the difference param y1 between pixel luma and MAX(r,g,b), step is 1">8</cpr_dpf_edge_y_1>
+			<cpr_dpf_edge_y_2 type="uint8" rang="[0,16]" default="16" description="the DPF check:the difference param y2 between pixel luma and MAX(r,g,b), step is 1">16</cpr_dpf_edge_y_2>
+			
+			<cpr_dpf_reg_edge_x_0 type="uint8" rang="[0,255]" default="0"   description="the DPF check:the difference param x0 between region luma and MAX(r,g,b), step is 1">0</cpr_dpf_reg_edge_x_0>
+			<cpr_dpf_reg_edge_x_1 type="uint8" rang="[0,255]" default="16"  description="the DPF check:the difference param x1 between region luma and MAX(r,g,b), step is 1">16</cpr_dpf_reg_edge_x_1>
+			<cpr_dpf_reg_edge_x_2 type="uint8" rang="[0,255]" default="32"  description="the DPF check:the difference param x2 between region luma and MAX(r,g,b), step is 1">32</cpr_dpf_reg_edge_x_2>
+			<cpr_dpf_reg_edge_x_3 type="uint8" rang="[0,255]" default="160" description="the DPF check:the difference param x3 between region luma and MAX(r,g,b), step is 1">64</cpr_dpf_reg_edge_x_3>
+			
+			<cpr_dpf_reg_edge_y_0 type="uint8" rang="[0,16]" default="16" description="the DPF check:the difference param y0 between region luma and MAX(r,g,b), step is 1">16</cpr_dpf_reg_edge_y_0>
+			<cpr_dpf_reg_edge_y_1 type="uint8" rang="[0,16]" default="14" description="the DPF check:the difference param y1 between region luma and MAX(r,g,b), step is 1">8</cpr_dpf_reg_edge_y_1>
+			<cpr_dpf_reg_edge_y_2 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the difference param y2 between region luma and MAX(r,g,b), step is 1">0</cpr_dpf_reg_edge_y_2>
+			
+			<cpr_dpf_hue1_y_0 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y0 , step is 1">0</cpr_dpf_hue1_y_0>
+			<cpr_dpf_hue1_y_1 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y1 , step is 1">0</cpr_dpf_hue1_y_1>
+			<cpr_dpf_hue1_y_2 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y2 , step is 1">0</cpr_dpf_hue1_y_2>
+			
+			<cpr_dpf_hue1_x_0 type="uint16" rang="[0,360]" default="240" description="the DPF check:the hue1 x0 , step is 1">240</cpr_dpf_hue1_x_0>
+			<cpr_dpf_hue1_x_1 type="uint16" rang="[0,360]" default="250" description="the DPF check:the hue1 x1 , step is 1">250</cpr_dpf_hue1_x_1>
+			<cpr_dpf_hue1_x_2 type="uint16" rang="[0,360]" default="280" description="the DPF check:the hue1 x2 , step is 1">280</cpr_dpf_hue1_x_2>
+			<cpr_dpf_hue1_x_3 type="uint16" rang="[0,360]" default="290" description="the DPF check:the hue1 x3 , step is 1">290</cpr_dpf_hue1_x_3>
+					
+			<cpr_dpf_hue2_x_0 type="uint16" rang="[0,360]" default="220" description="the DPF check:the hue2 x0 , step is 1">220</cpr_dpf_hue2_x_0>
+			<cpr_dpf_hue2_x_1 type="uint16" rang="[0,360]" default="230" description="the DPF check:the hue2 x1 , step is 1">230</cpr_dpf_hue2_x_1>
+			<cpr_dpf_hue2_x_2 type="uint16" rang="[0,360]" default="240" description="the DPF check:the hue2 x2 , step is 1">240</cpr_dpf_hue2_x_2>
+			<cpr_dpf_hue2_x_3 type="uint16" rang="[0,360]" default="250" description="the DPF check:the hue2 x3 , step is 1">250</cpr_dpf_hue2_x_3>
+			
+			<cpr_dpf_hue2_y_0 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the hue2 y0 , step is 1">0</cpr_dpf_hue2_y_0>
+			<cpr_dpf_hue2_y_1 type="uint8" rang="[0,16]" default="16" description="the DPF check:the hue2 y1 , step is 1">16</cpr_dpf_hue2_y_1>
+			<cpr_dpf_hue2_y_2 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the hue2 y2 , step is 1">0</cpr_dpf_hue2_y_2>
+			<reserve type="uint8" rang="[0,16]" default="0" description="reserve">0</reserve>
+		</sensor_dpf_level>
+		<sensor_dpf_level level="2" gain="2304">			
+			<cpr_dpf_detect_lowth type="uint8" rang="[0,255]" default="0" description="the low threshold of small picture check, step is 1">1</cpr_dpf_detect_lowth>
+			<cpr_dpf_detect_highth type="uint8" rang="[0,255]" default="64" description="the high threshold of small picture check, step is 1">50</cpr_dpf_detect_highth>
+			<cpr_lum_noise_x_0 type="uint8" rang="[0,255]" default="0" description="the luma param x0,step is 1">0</cpr_lum_noise_x_0>
+			<cpr_lum_noise_x_1 type="uint8" rang="[0,255]" default="64" description="the luma param x1,step is 1">64</cpr_lum_noise_x_1>
+			<cpr_lum_noise_x_2 type="uint8" rang="[0,255]" default="128" description="the luma param x2,step is 1">128</cpr_lum_noise_x_2>
+			<cpr_lum_noise_x_3 type="uint8" rang="[0,255]" default="255" description="the luma param x3,step is 1">255</cpr_lum_noise_x_3>
+			<cpr_lum_noise_y_0 type="uint8" rang="[0,255]" default="0" description="the noise param y0,step is 1">0</cpr_lum_noise_y_0>
+			<cpr_lum_noise_y_1 type="uint8" rang="[0,255]" default="0" description="the noise param y1,step is 1">2</cpr_lum_noise_y_1>
+			<cpr_lum_noise_y_2 type="uint8" rang="[0,255]" default="0" description="the noise param y2,step is 1">4</cpr_lum_noise_y_2>
+			
+			<cpr_face_gain type="uint8" rang="[0,32]" default="0" description="the face gain for face protection,step is 1,0 is no dpf in face area">0</cpr_face_gain>
+			
+			<cpr_dpf_reg_size type="uint8" rang="[4,64]" default="16" description="the region size, step is modify 2">16</cpr_dpf_reg_size>
+			<cpr_dpf_uv_size type="uint8" rang="[4,64]" default="16" description="the dpf corrction size, step is modify 2">16</cpr_dpf_uv_size>
+			<cpr_dpf_edgey_x_0 type="uint8" rang="[0,255]" default="0"  description="the small picture check:the difference param x0 between pixel luma and region luma, step is 1">0</cpr_dpf_edgey_x_0>
+			<cpr_dpf_edgey_x_1 type="uint8" rang="[0,255]" default="16" description="the small picture check:the difference param x1 between pixel luma and region luma, step is 1">4</cpr_dpf_edgey_x_1>
+			<cpr_dpf_edgey_x_2 type="uint8" rang="[0,255]" default="16" description="the small picture check:the difference param x2 between pixel luma and region luma, step is 1">4</cpr_dpf_edgey_x_2>
+			<cpr_dpf_edgey_x_3 type="uint8" rang="[0,255]" default="32" description="the small picture check:the difference param x3 between pixel luma and region luma, step is 1">8</cpr_dpf_edgey_x_3>
+			
+			<cpr_dpf_edgey_y_0 type="uint8" rang="[0,16]" default="0"  description="the small picture check:the difference param y0 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_0>
+			<cpr_dpf_edgey_y_1 type="uint8" rang="[0,16]" default="8"  description="the small picture check:the difference param y1 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_1>
+			<cpr_dpf_edgey_y_2 type="uint8" rang="[0,16]" default="16" description="the small picture check:the difference param y2 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_2>
+			
+			<cpr_dpf_edge_x_0 type="uint8" rang="[0,255]" default="0"  description="the DPF check:the difference param x0 between pixel luma and MAX(r,g,b), step is 1">8</cpr_dpf_edge_x_0>
+			<cpr_dpf_edge_x_1 type="uint8" rang="[0,255]" default="16" description="the DPF check:the difference param x1 between pixel luma and MAX(r,g,b), step is 1">16</cpr_dpf_edge_x_1>
+			<cpr_dpf_edge_x_2 type="uint8" rang="[0,255]" default="16" description="the DPF check:the difference param x2 between pixel luma and MAX(r,g,b), step is 1">32</cpr_dpf_edge_x_2>
+			<cpr_dpf_edge_x_3 type="uint8" rang="[0,255]" default="32" description="the DPF check:the difference param x3 between pixel luma and MAX(r,g,b), step is 1">64</cpr_dpf_edge_x_3>
+			
+			<cpr_dpf_edge_y_0 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the difference param y0 between pixel luma and MAX(r,g,b), step is 1">0</cpr_dpf_edge_y_0>
+			<cpr_dpf_edge_y_1 type="uint8" rang="[0,16]" default="8"  description="the DPF check:the difference param y1 between pixel luma and MAX(r,g,b), step is 1">8</cpr_dpf_edge_y_1>
+			<cpr_dpf_edge_y_2 type="uint8" rang="[0,16]" default="16" description="the DPF check:the difference param y2 between pixel luma and MAX(r,g,b), step is 1">16</cpr_dpf_edge_y_2>
+			
+			<cpr_dpf_reg_edge_x_0 type="uint8" rang="[0,255]" default="0"   description="the DPF check:the difference param x0 between region luma and MAX(r,g,b), step is 1">0</cpr_dpf_reg_edge_x_0>
+			<cpr_dpf_reg_edge_x_1 type="uint8" rang="[0,255]" default="16"  description="the DPF check:the difference param x1 between region luma and MAX(r,g,b), step is 1">16</cpr_dpf_reg_edge_x_1>
+			<cpr_dpf_reg_edge_x_2 type="uint8" rang="[0,255]" default="32"  description="the DPF check:the difference param x2 between region luma and MAX(r,g,b), step is 1">32</cpr_dpf_reg_edge_x_2>
+			<cpr_dpf_reg_edge_x_3 type="uint8" rang="[0,255]" default="160" description="the DPF check:the difference param x3 between region luma and MAX(r,g,b), step is 1">64</cpr_dpf_reg_edge_x_3>
+			
+			<cpr_dpf_reg_edge_y_0 type="uint8" rang="[0,16]" default="16" description="the DPF check:the difference param y0 between region luma and MAX(r,g,b), step is 1">16</cpr_dpf_reg_edge_y_0>
+			<cpr_dpf_reg_edge_y_1 type="uint8" rang="[0,16]" default="14" description="the DPF check:the difference param y1 between region luma and MAX(r,g,b), step is 1">8</cpr_dpf_reg_edge_y_1>
+			<cpr_dpf_reg_edge_y_2 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the difference param y2 between region luma and MAX(r,g,b), step is 1">0</cpr_dpf_reg_edge_y_2>
+			
+			<cpr_dpf_hue1_y_0 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y0 , step is 1">0</cpr_dpf_hue1_y_0>
+			<cpr_dpf_hue1_y_1 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y1 , step is 1">0</cpr_dpf_hue1_y_1>
+			<cpr_dpf_hue1_y_2 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y2 , step is 1">0</cpr_dpf_hue1_y_2>
+			
+			<cpr_dpf_hue1_x_0 type="uint16" rang="[0,360]" default="240" description="the DPF check:the hue1 x0 , step is 1">240</cpr_dpf_hue1_x_0>
+			<cpr_dpf_hue1_x_1 type="uint16" rang="[0,360]" default="250" description="the DPF check:the hue1 x1 , step is 1">250</cpr_dpf_hue1_x_1>
+			<cpr_dpf_hue1_x_2 type="uint16" rang="[0,360]" default="280" description="the DPF check:the hue1 x2 , step is 1">280</cpr_dpf_hue1_x_2>
+			<cpr_dpf_hue1_x_3 type="uint16" rang="[0,360]" default="290" description="the DPF check:the hue1 x3 , step is 1">290</cpr_dpf_hue1_x_3>
+					
+			<cpr_dpf_hue2_x_0 type="uint16" rang="[0,360]" default="220" description="the DPF check:the hue2 x0 , step is 1">220</cpr_dpf_hue2_x_0>
+			<cpr_dpf_hue2_x_1 type="uint16" rang="[0,360]" default="230" description="the DPF check:the hue2 x1 , step is 1">230</cpr_dpf_hue2_x_1>
+			<cpr_dpf_hue2_x_2 type="uint16" rang="[0,360]" default="240" description="the DPF check:the hue2 x2 , step is 1">240</cpr_dpf_hue2_x_2>
+			<cpr_dpf_hue2_x_3 type="uint16" rang="[0,360]" default="250" description="the DPF check:the hue2 x3 , step is 1">250</cpr_dpf_hue2_x_3>
+			
+			<cpr_dpf_hue2_y_0 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the hue2 y0 , step is 1">0</cpr_dpf_hue2_y_0>
+			<cpr_dpf_hue2_y_1 type="uint8" rang="[0,16]" default="16" description="the DPF check:the hue2 y1 , step is 1">16</cpr_dpf_hue2_y_1>
+			<cpr_dpf_hue2_y_2 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the hue2 y2 , step is 1">0</cpr_dpf_hue2_y_2>
+			<reserve type="uint8" rang="[0,16]" default="0" description="reserve">0</reserve>
+		</sensor_dpf_level>
+		<sensor_dpf_level level="3" gain="3840">			
+			<cpr_dpf_detect_lowth type="uint8" rang="[0,255]" default="0" description="the low threshold of small picture check, step is 1">1</cpr_dpf_detect_lowth>
+			<cpr_dpf_detect_highth type="uint8" rang="[0,255]" default="64" description="the high threshold of small picture check, step is 1">50</cpr_dpf_detect_highth>
+			<cpr_lum_noise_x_0 type="uint8" rang="[0,255]" default="0" description="the luma param x0,step is 1">0</cpr_lum_noise_x_0>
+			<cpr_lum_noise_x_1 type="uint8" rang="[0,255]" default="64" description="the luma param x1,step is 1">64</cpr_lum_noise_x_1>
+			<cpr_lum_noise_x_2 type="uint8" rang="[0,255]" default="128" description="the luma param x2,step is 1">128</cpr_lum_noise_x_2>
+			<cpr_lum_noise_x_3 type="uint8" rang="[0,255]" default="255" description="the luma param x3,step is 1">255</cpr_lum_noise_x_3>
+			<cpr_lum_noise_y_0 type="uint8" rang="[0,255]" default="0" description="the noise param y0,step is 1">0</cpr_lum_noise_y_0>
+			<cpr_lum_noise_y_1 type="uint8" rang="[0,255]" default="0" description="the noise param y1,step is 1">2</cpr_lum_noise_y_1>
+			<cpr_lum_noise_y_2 type="uint8" rang="[0,255]" default="0" description="the noise param y2,step is 1">4</cpr_lum_noise_y_2>
+			
+			<cpr_face_gain type="uint8" rang="[0,32]" default="0" description="the face gain for face protection,step is 1,0 is no dpf in face area">0</cpr_face_gain>
+			
+			<cpr_dpf_reg_size type="uint8" rang="[4,64]" default="16" description="the region size, step is modify 2">16</cpr_dpf_reg_size>
+			<cpr_dpf_uv_size type="uint8" rang="[4,64]" default="16" description="the dpf corrction size, step is modify 2">16</cpr_dpf_uv_size>
+			<cpr_dpf_edgey_x_0 type="uint8" rang="[0,255]" default="0"  description="the small picture check:the difference param x0 between pixel luma and region luma, step is 1">0</cpr_dpf_edgey_x_0>
+			<cpr_dpf_edgey_x_1 type="uint8" rang="[0,255]" default="16" description="the small picture check:the difference param x1 between pixel luma and region luma, step is 1">4</cpr_dpf_edgey_x_1>
+			<cpr_dpf_edgey_x_2 type="uint8" rang="[0,255]" default="16" description="the small picture check:the difference param x2 between pixel luma and region luma, step is 1">4</cpr_dpf_edgey_x_2>
+			<cpr_dpf_edgey_x_3 type="uint8" rang="[0,255]" default="32" description="the small picture check:the difference param x3 between pixel luma and region luma, step is 1">8</cpr_dpf_edgey_x_3>
+			
+			<cpr_dpf_edgey_y_0 type="uint8" rang="[0,16]" default="0"  description="the small picture check:the difference param y0 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_0>
+			<cpr_dpf_edgey_y_1 type="uint8" rang="[0,16]" default="8"  description="the small picture check:the difference param y1 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_1>
+			<cpr_dpf_edgey_y_2 type="uint8" rang="[0,16]" default="16" description="the small picture check:the difference param y2 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_2>
+			
+			<cpr_dpf_edge_x_0 type="uint8" rang="[0,255]" default="0"  description="the DPF check:the difference param x0 between pixel luma and MAX(r,g,b), step is 1">8</cpr_dpf_edge_x_0>
+			<cpr_dpf_edge_x_1 type="uint8" rang="[0,255]" default="16" description="the DPF check:the difference param x1 between pixel luma and MAX(r,g,b), step is 1">16</cpr_dpf_edge_x_1>
+			<cpr_dpf_edge_x_2 type="uint8" rang="[0,255]" default="16" description="the DPF check:the difference param x2 between pixel luma and MAX(r,g,b), step is 1">32</cpr_dpf_edge_x_2>
+			<cpr_dpf_edge_x_3 type="uint8" rang="[0,255]" default="32" description="the DPF check:the difference param x3 between pixel luma and MAX(r,g,b), step is 1">64</cpr_dpf_edge_x_3>
+			
+			<cpr_dpf_edge_y_0 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the difference param y0 between pixel luma and MAX(r,g,b), step is 1">0</cpr_dpf_edge_y_0>
+			<cpr_dpf_edge_y_1 type="uint8" rang="[0,16]" default="8"  description="the DPF check:the difference param y1 between pixel luma and MAX(r,g,b), step is 1">8</cpr_dpf_edge_y_1>
+			<cpr_dpf_edge_y_2 type="uint8" rang="[0,16]" default="16" description="the DPF check:the difference param y2 between pixel luma and MAX(r,g,b), step is 1">16</cpr_dpf_edge_y_2>
+			
+			<cpr_dpf_reg_edge_x_0 type="uint8" rang="[0,255]" default="0"   description="the DPF check:the difference param x0 between region luma and MAX(r,g,b), step is 1">0</cpr_dpf_reg_edge_x_0>
+			<cpr_dpf_reg_edge_x_1 type="uint8" rang="[0,255]" default="16"  description="the DPF check:the difference param x1 between region luma and MAX(r,g,b), step is 1">16</cpr_dpf_reg_edge_x_1>
+			<cpr_dpf_reg_edge_x_2 type="uint8" rang="[0,255]" default="32"  description="the DPF check:the difference param x2 between region luma and MAX(r,g,b), step is 1">32</cpr_dpf_reg_edge_x_2>
+			<cpr_dpf_reg_edge_x_3 type="uint8" rang="[0,255]" default="160" description="the DPF check:the difference param x3 between region luma and MAX(r,g,b), step is 1">64</cpr_dpf_reg_edge_x_3>
+			
+			<cpr_dpf_reg_edge_y_0 type="uint8" rang="[0,16]" default="16" description="the DPF check:the difference param y0 between region luma and MAX(r,g,b), step is 1">16</cpr_dpf_reg_edge_y_0>
+			<cpr_dpf_reg_edge_y_1 type="uint8" rang="[0,16]" default="14" description="the DPF check:the difference param y1 between region luma and MAX(r,g,b), step is 1">8</cpr_dpf_reg_edge_y_1>
+			<cpr_dpf_reg_edge_y_2 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the difference param y2 between region luma and MAX(r,g,b), step is 1">0</cpr_dpf_reg_edge_y_2>
+			
+			<cpr_dpf_hue1_y_0 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y0 , step is 1">0</cpr_dpf_hue1_y_0>
+			<cpr_dpf_hue1_y_1 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y1 , step is 1">0</cpr_dpf_hue1_y_1>
+			<cpr_dpf_hue1_y_2 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y2 , step is 1">0</cpr_dpf_hue1_y_2>
+			
+			<cpr_dpf_hue1_x_0 type="uint16" rang="[0,360]" default="240" description="the DPF check:the hue1 x0 , step is 1">240</cpr_dpf_hue1_x_0>
+			<cpr_dpf_hue1_x_1 type="uint16" rang="[0,360]" default="250" description="the DPF check:the hue1 x1 , step is 1">250</cpr_dpf_hue1_x_1>
+			<cpr_dpf_hue1_x_2 type="uint16" rang="[0,360]" default="280" description="the DPF check:the hue1 x2 , step is 1">280</cpr_dpf_hue1_x_2>
+			<cpr_dpf_hue1_x_3 type="uint16" rang="[0,360]" default="290" description="the DPF check:the hue1 x3 , step is 1">290</cpr_dpf_hue1_x_3>
+					
+			<cpr_dpf_hue2_x_0 type="uint16" rang="[0,360]" default="220" description="the DPF check:the hue2 x0 , step is 1">220</cpr_dpf_hue2_x_0>
+			<cpr_dpf_hue2_x_1 type="uint16" rang="[0,360]" default="230" description="the DPF check:the hue2 x1 , step is 1">230</cpr_dpf_hue2_x_1>
+			<cpr_dpf_hue2_x_2 type="uint16" rang="[0,360]" default="240" description="the DPF check:the hue2 x2 , step is 1">240</cpr_dpf_hue2_x_2>
+			<cpr_dpf_hue2_x_3 type="uint16" rang="[0,360]" default="250" description="the DPF check:the hue2 x3 , step is 1">250</cpr_dpf_hue2_x_3>
+			
+			<cpr_dpf_hue2_y_0 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the hue2 y0 , step is 1">0</cpr_dpf_hue2_y_0>
+			<cpr_dpf_hue2_y_1 type="uint8" rang="[0,16]" default="16" description="the DPF check:the hue2 y1 , step is 1">16</cpr_dpf_hue2_y_1>
+			<cpr_dpf_hue2_y_2 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the hue2 y2 , step is 1">0</cpr_dpf_hue2_y_2>
+			<reserve type="uint8" rang="[0,16]" default="0" description="reserve">0</reserve>
+		</sensor_dpf_level>
+		<sensor_dpf_level level="4" gain="4480">			
+			<cpr_dpf_detect_lowth type="uint8" rang="[0,255]" default="0" description="the low threshold of small picture check, step is 1">1</cpr_dpf_detect_lowth>
+			<cpr_dpf_detect_highth type="uint8" rang="[0,255]" default="64" description="the high threshold of small picture check, step is 1">50</cpr_dpf_detect_highth>
+			<cpr_lum_noise_x_0 type="uint8" rang="[0,255]" default="0" description="the luma param x0,step is 1">0</cpr_lum_noise_x_0>
+			<cpr_lum_noise_x_1 type="uint8" rang="[0,255]" default="64" description="the luma param x1,step is 1">64</cpr_lum_noise_x_1>
+			<cpr_lum_noise_x_2 type="uint8" rang="[0,255]" default="128" description="the luma param x2,step is 1">128</cpr_lum_noise_x_2>
+			<cpr_lum_noise_x_3 type="uint8" rang="[0,255]" default="255" description="the luma param x3,step is 1">255</cpr_lum_noise_x_3>
+			<cpr_lum_noise_y_0 type="uint8" rang="[0,255]" default="0" description="the noise param y0,step is 1">0</cpr_lum_noise_y_0>
+			<cpr_lum_noise_y_1 type="uint8" rang="[0,255]" default="0" description="the noise param y1,step is 1">2</cpr_lum_noise_y_1>
+			<cpr_lum_noise_y_2 type="uint8" rang="[0,255]" default="0" description="the noise param y2,step is 1">4</cpr_lum_noise_y_2>
+			
+			<cpr_face_gain type="uint8" rang="[0,32]" default="0" description="the face gain for face protection,step is 1,0 is no dpf in face area">0</cpr_face_gain>
+			
+			<cpr_dpf_reg_size type="uint8" rang="[4,64]" default="16" description="the region size, step is modify 2">16</cpr_dpf_reg_size>
+			<cpr_dpf_uv_size type="uint8" rang="[4,64]" default="16" description="the dpf corrction size, step is modify 2">16</cpr_dpf_uv_size>
+			<cpr_dpf_edgey_x_0 type="uint8" rang="[0,255]" default="0"  description="the small picture check:the difference param x0 between pixel luma and region luma, step is 1">0</cpr_dpf_edgey_x_0>
+			<cpr_dpf_edgey_x_1 type="uint8" rang="[0,255]" default="16" description="the small picture check:the difference param x1 between pixel luma and region luma, step is 1">4</cpr_dpf_edgey_x_1>
+			<cpr_dpf_edgey_x_2 type="uint8" rang="[0,255]" default="16" description="the small picture check:the difference param x2 between pixel luma and region luma, step is 1">4</cpr_dpf_edgey_x_2>
+			<cpr_dpf_edgey_x_3 type="uint8" rang="[0,255]" default="32" description="the small picture check:the difference param x3 between pixel luma and region luma, step is 1">8</cpr_dpf_edgey_x_3>
+			
+			<cpr_dpf_edgey_y_0 type="uint8" rang="[0,16]" default="0"  description="the small picture check:the difference param y0 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_0>
+			<cpr_dpf_edgey_y_1 type="uint8" rang="[0,16]" default="8"  description="the small picture check:the difference param y1 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_1>
+			<cpr_dpf_edgey_y_2 type="uint8" rang="[0,16]" default="16" description="the small picture check:the difference param y2 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_2>
+			
+			<cpr_dpf_edge_x_0 type="uint8" rang="[0,255]" default="0"  description="the DPF check:the difference param x0 between pixel luma and MAX(r,g,b), step is 1">8</cpr_dpf_edge_x_0>
+			<cpr_dpf_edge_x_1 type="uint8" rang="[0,255]" default="16" description="the DPF check:the difference param x1 between pixel luma and MAX(r,g,b), step is 1">16</cpr_dpf_edge_x_1>
+			<cpr_dpf_edge_x_2 type="uint8" rang="[0,255]" default="16" description="the DPF check:the difference param x2 between pixel luma and MAX(r,g,b), step is 1">32</cpr_dpf_edge_x_2>
+			<cpr_dpf_edge_x_3 type="uint8" rang="[0,255]" default="32" description="the DPF check:the difference param x3 between pixel luma and MAX(r,g,b), step is 1">64</cpr_dpf_edge_x_3>
+			
+			<cpr_dpf_edge_y_0 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the difference param y0 between pixel luma and MAX(r,g,b), step is 1">0</cpr_dpf_edge_y_0>
+			<cpr_dpf_edge_y_1 type="uint8" rang="[0,16]" default="8"  description="the DPF check:the difference param y1 between pixel luma and MAX(r,g,b), step is 1">8</cpr_dpf_edge_y_1>
+			<cpr_dpf_edge_y_2 type="uint8" rang="[0,16]" default="16" description="the DPF check:the difference param y2 between pixel luma and MAX(r,g,b), step is 1">16</cpr_dpf_edge_y_2>
+			
+			<cpr_dpf_reg_edge_x_0 type="uint8" rang="[0,255]" default="0"   description="the DPF check:the difference param x0 between region luma and MAX(r,g,b), step is 1">0</cpr_dpf_reg_edge_x_0>
+			<cpr_dpf_reg_edge_x_1 type="uint8" rang="[0,255]" default="16"  description="the DPF check:the difference param x1 between region luma and MAX(r,g,b), step is 1">16</cpr_dpf_reg_edge_x_1>
+			<cpr_dpf_reg_edge_x_2 type="uint8" rang="[0,255]" default="32"  description="the DPF check:the difference param x2 between region luma and MAX(r,g,b), step is 1">32</cpr_dpf_reg_edge_x_2>
+			<cpr_dpf_reg_edge_x_3 type="uint8" rang="[0,255]" default="160" description="the DPF check:the difference param x3 between region luma and MAX(r,g,b), step is 1">64</cpr_dpf_reg_edge_x_3>
+			
+			<cpr_dpf_reg_edge_y_0 type="uint8" rang="[0,16]" default="16" description="the DPF check:the difference param y0 between region luma and MAX(r,g,b), step is 1">16</cpr_dpf_reg_edge_y_0>
+			<cpr_dpf_reg_edge_y_1 type="uint8" rang="[0,16]" default="14" description="the DPF check:the difference param y1 between region luma and MAX(r,g,b), step is 1">8</cpr_dpf_reg_edge_y_1>
+			<cpr_dpf_reg_edge_y_2 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the difference param y2 between region luma and MAX(r,g,b), step is 1">0</cpr_dpf_reg_edge_y_2>
+			
+			<cpr_dpf_hue1_y_0 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y0 , step is 1">0</cpr_dpf_hue1_y_0>
+			<cpr_dpf_hue1_y_1 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y1 , step is 1">0</cpr_dpf_hue1_y_1>
+			<cpr_dpf_hue1_y_2 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y2 , step is 1">0</cpr_dpf_hue1_y_2>
+			
+			<cpr_dpf_hue1_x_0 type="uint16" rang="[0,360]" default="240" description="the DPF check:the hue1 x0 , step is 1">240</cpr_dpf_hue1_x_0>
+			<cpr_dpf_hue1_x_1 type="uint16" rang="[0,360]" default="250" description="the DPF check:the hue1 x1 , step is 1">250</cpr_dpf_hue1_x_1>
+			<cpr_dpf_hue1_x_2 type="uint16" rang="[0,360]" default="280" description="the DPF check:the hue1 x2 , step is 1">280</cpr_dpf_hue1_x_2>
+			<cpr_dpf_hue1_x_3 type="uint16" rang="[0,360]" default="290" description="the DPF check:the hue1 x3 , step is 1">290</cpr_dpf_hue1_x_3>
+					
+			<cpr_dpf_hue2_x_0 type="uint16" rang="[0,360]" default="220" description="the DPF check:the hue2 x0 , step is 1">220</cpr_dpf_hue2_x_0>
+			<cpr_dpf_hue2_x_1 type="uint16" rang="[0,360]" default="230" description="the DPF check:the hue2 x1 , step is 1">230</cpr_dpf_hue2_x_1>
+			<cpr_dpf_hue2_x_2 type="uint16" rang="[0,360]" default="240" description="the DPF check:the hue2 x2 , step is 1">240</cpr_dpf_hue2_x_2>
+			<cpr_dpf_hue2_x_3 type="uint16" rang="[0,360]" default="250" description="the DPF check:the hue2 x3 , step is 1">250</cpr_dpf_hue2_x_3>
+			
+			<cpr_dpf_hue2_y_0 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the hue2 y0 , step is 1">0</cpr_dpf_hue2_y_0>
+			<cpr_dpf_hue2_y_1 type="uint8" rang="[0,16]" default="16" description="the DPF check:the hue2 y1 , step is 1">16</cpr_dpf_hue2_y_1>
+			<cpr_dpf_hue2_y_2 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the hue2 y2 , step is 1">0</cpr_dpf_hue2_y_2>
+			<reserve type="uint8" rang="[0,16]" default="0" description="reserve">0</reserve>
+		</sensor_dpf_level>
+		<sensor_dpf_level level="5" gain="6400">			
+			<cpr_dpf_detect_lowth type="uint8" rang="[0,255]" default="0" description="the low threshold of small picture check, step is 1">1</cpr_dpf_detect_lowth>
+			<cpr_dpf_detect_highth type="uint8" rang="[0,255]" default="64" description="the high threshold of small picture check, step is 1">50</cpr_dpf_detect_highth>
+			<cpr_lum_noise_x_0 type="uint8" rang="[0,255]" default="0" description="the luma param x0,step is 1">0</cpr_lum_noise_x_0>
+			<cpr_lum_noise_x_1 type="uint8" rang="[0,255]" default="64" description="the luma param x1,step is 1">64</cpr_lum_noise_x_1>
+			<cpr_lum_noise_x_2 type="uint8" rang="[0,255]" default="128" description="the luma param x2,step is 1">128</cpr_lum_noise_x_2>
+			<cpr_lum_noise_x_3 type="uint8" rang="[0,255]" default="255" description="the luma param x3,step is 1">255</cpr_lum_noise_x_3>
+			<cpr_lum_noise_y_0 type="uint8" rang="[0,255]" default="0" description="the noise param y0,step is 1">0</cpr_lum_noise_y_0>
+			<cpr_lum_noise_y_1 type="uint8" rang="[0,255]" default="0" description="the noise param y1,step is 1">2</cpr_lum_noise_y_1>
+			<cpr_lum_noise_y_2 type="uint8" rang="[0,255]" default="0" description="the noise param y2,step is 1">4</cpr_lum_noise_y_2>
+			
+			<cpr_face_gain type="uint8" rang="[0,32]" default="0" description="the face gain for face protection,step is 1,0 is no dpf in face area">0</cpr_face_gain>
+			
+			<cpr_dpf_reg_size type="uint8" rang="[4,64]" default="16" description="the region size, step is modify 2">16</cpr_dpf_reg_size>
+			<cpr_dpf_uv_size type="uint8" rang="[4,64]" default="16" description="the dpf corrction size, step is modify 2">16</cpr_dpf_uv_size>
+			<cpr_dpf_edgey_x_0 type="uint8" rang="[0,255]" default="0"  description="the small picture check:the difference param x0 between pixel luma and region luma, step is 1">0</cpr_dpf_edgey_x_0>
+			<cpr_dpf_edgey_x_1 type="uint8" rang="[0,255]" default="16" description="the small picture check:the difference param x1 between pixel luma and region luma, step is 1">4</cpr_dpf_edgey_x_1>
+			<cpr_dpf_edgey_x_2 type="uint8" rang="[0,255]" default="16" description="the small picture check:the difference param x2 between pixel luma and region luma, step is 1">4</cpr_dpf_edgey_x_2>
+			<cpr_dpf_edgey_x_3 type="uint8" rang="[0,255]" default="32" description="the small picture check:the difference param x3 between pixel luma and region luma, step is 1">8</cpr_dpf_edgey_x_3>
+			
+			<cpr_dpf_edgey_y_0 type="uint8" rang="[0,16]" default="0"  description="the small picture check:the difference param y0 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_0>
+			<cpr_dpf_edgey_y_1 type="uint8" rang="[0,16]" default="8"  description="the small picture check:the difference param y1 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_1>
+			<cpr_dpf_edgey_y_2 type="uint8" rang="[0,16]" default="16" description="the small picture check:the difference param y2 between pixel luma and region luma, step is 1">16</cpr_dpf_edgey_y_2>
+			
+			<cpr_dpf_edge_x_0 type="uint8" rang="[0,255]" default="0"  description="the DPF check:the difference param x0 between pixel luma and MAX(r,g,b), step is 1">8</cpr_dpf_edge_x_0>
+			<cpr_dpf_edge_x_1 type="uint8" rang="[0,255]" default="16" description="the DPF check:the difference param x1 between pixel luma and MAX(r,g,b), step is 1">16</cpr_dpf_edge_x_1>
+			<cpr_dpf_edge_x_2 type="uint8" rang="[0,255]" default="16" description="the DPF check:the difference param x2 between pixel luma and MAX(r,g,b), step is 1">32</cpr_dpf_edge_x_2>
+			<cpr_dpf_edge_x_3 type="uint8" rang="[0,255]" default="32" description="the DPF check:the difference param x3 between pixel luma and MAX(r,g,b), step is 1">64</cpr_dpf_edge_x_3>
+			
+			<cpr_dpf_edge_y_0 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the difference param y0 between pixel luma and MAX(r,g,b), step is 1">0</cpr_dpf_edge_y_0>
+			<cpr_dpf_edge_y_1 type="uint8" rang="[0,16]" default="8"  description="the DPF check:the difference param y1 between pixel luma and MAX(r,g,b), step is 1">8</cpr_dpf_edge_y_1>
+			<cpr_dpf_edge_y_2 type="uint8" rang="[0,16]" default="16" description="the DPF check:the difference param y2 between pixel luma and MAX(r,g,b), step is 1">16</cpr_dpf_edge_y_2>
+			
+			<cpr_dpf_reg_edge_x_0 type="uint8" rang="[0,255]" default="0"   description="the DPF check:the difference param x0 between region luma and MAX(r,g,b), step is 1">0</cpr_dpf_reg_edge_x_0>
+			<cpr_dpf_reg_edge_x_1 type="uint8" rang="[0,255]" default="16"  description="the DPF check:the difference param x1 between region luma and MAX(r,g,b), step is 1">16</cpr_dpf_reg_edge_x_1>
+			<cpr_dpf_reg_edge_x_2 type="uint8" rang="[0,255]" default="32"  description="the DPF check:the difference param x2 between region luma and MAX(r,g,b), step is 1">32</cpr_dpf_reg_edge_x_2>
+			<cpr_dpf_reg_edge_x_3 type="uint8" rang="[0,255]" default="160" description="the DPF check:the difference param x3 between region luma and MAX(r,g,b), step is 1">64</cpr_dpf_reg_edge_x_3>
+			
+			<cpr_dpf_reg_edge_y_0 type="uint8" rang="[0,16]" default="16" description="the DPF check:the difference param y0 between region luma and MAX(r,g,b), step is 1">16</cpr_dpf_reg_edge_y_0>
+			<cpr_dpf_reg_edge_y_1 type="uint8" rang="[0,16]" default="14" description="the DPF check:the difference param y1 between region luma and MAX(r,g,b), step is 1">8</cpr_dpf_reg_edge_y_1>
+			<cpr_dpf_reg_edge_y_2 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the difference param y2 between region luma and MAX(r,g,b), step is 1">0</cpr_dpf_reg_edge_y_2>
+			
+			<cpr_dpf_hue1_y_0 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y0 , step is 1">0</cpr_dpf_hue1_y_0>
+			<cpr_dpf_hue1_y_1 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y1 , step is 1">0</cpr_dpf_hue1_y_1>
+			<cpr_dpf_hue1_y_2 type="uint8" rang="[0,16]" default="0" description="the DPF check:the hue1 y2 , step is 1">0</cpr_dpf_hue1_y_2>
+			
+			<cpr_dpf_hue1_x_0 type="uint16" rang="[0,360]" default="240" description="the DPF check:the hue1 x0 , step is 1">240</cpr_dpf_hue1_x_0>
+			<cpr_dpf_hue1_x_1 type="uint16" rang="[0,360]" default="250" description="the DPF check:the hue1 x1 , step is 1">250</cpr_dpf_hue1_x_1>
+			<cpr_dpf_hue1_x_2 type="uint16" rang="[0,360]" default="280" description="the DPF check:the hue1 x2 , step is 1">280</cpr_dpf_hue1_x_2>
+			<cpr_dpf_hue1_x_3 type="uint16" rang="[0,360]" default="290" description="the DPF check:the hue1 x3 , step is 1">290</cpr_dpf_hue1_x_3>
+					
+			<cpr_dpf_hue2_x_0 type="uint16" rang="[0,360]" default="220" description="the DPF check:the hue2 x0 , step is 1">220</cpr_dpf_hue2_x_0>
+			<cpr_dpf_hue2_x_1 type="uint16" rang="[0,360]" default="230" description="the DPF check:the hue2 x1 , step is 1">230</cpr_dpf_hue2_x_1>
+			<cpr_dpf_hue2_x_2 type="uint16" rang="[0,360]" default="240" description="the DPF check:the hue2 x2 , step is 1">240</cpr_dpf_hue2_x_2>
+			<cpr_dpf_hue2_x_3 type="uint16" rang="[0,360]" default="250" description="the DPF check:the hue2 x3 , step is 1">250</cpr_dpf_hue2_x_3>
+			
+			<cpr_dpf_hue2_y_0 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the hue2 y0 , step is 1">0</cpr_dpf_hue2_y_0>
+			<cpr_dpf_hue2_y_1 type="uint8" rang="[0,16]" default="16" description="the DPF check:the hue2 y1 , step is 1">16</cpr_dpf_hue2_y_1>
+			<cpr_dpf_hue2_y_2 type="uint8" rang="[0,16]" default="0"  description="the DPF check:the hue2 y2 , step is 1">0</cpr_dpf_hue2_y_2>
+			<reserve type="uint8" rang="[0,16]" default="0" description="reserve">0</reserve>
+		</sensor_dpf_level>
+	</tuning_param>
+</DPF>

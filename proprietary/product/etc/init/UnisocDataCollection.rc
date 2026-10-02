@@ -1,0 +1,22 @@
+#
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+# SPDX-FileCopyrightText: 2018 Unisoc (Shanghai) Technologies Co., Ltd
+
+on property:debug.unidata.enable=on
+    start uniStabDataService
+
+on property:debug.unidata.enable=off
+    stop uniStabDataService
+
+service uniStabDataService /product/bin/UnisocDataCollection -O followSS -d 20
+    class late_start 
+    user  root
+    group root system
+    seclabel u:r:system_server:s0
+    disabled
+
+on property:debug.corefilepath.simple=off
+    write /proc/sys/kernel/core_pattern "/data/corefile/core-%e-%p@%t"
+
+on property:debug.corefilepath.simple=on
+    write /proc/sys/kernel/core_pattern "/data/corefile/core-%e-%u-%s"

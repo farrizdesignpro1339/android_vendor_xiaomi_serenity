@@ -1,0 +1,197 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2023 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "id": "TargetBoard",
+    "usecase": {
+        "TargetList": [
+            {
+                "name": "TARGET_BOARD_GC5035_MIRROR_HV",
+                "value": "true",
+                "description": "mirror_hv",
+                "group": "sensor"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_4IN1",
+                "value": "true",
+                "description": "4in1",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_CAMERA_SENSOR_CCT",
+                "value": "sensorHub",
+                "description": "sensor_cct",
+                "group": "sensor"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_FLASH_LED_0",
+                "value": "true",
+                "description": "flash_led_0",
+                "group": "flash"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_FLASH_LED_1",
+                "value": "true",
+                "description": "flash_led_1",
+                "group": "flash"
+            },
+            {
+                "name": "TARGET_BOARD_FRONT_CAMERA_FLASH_TYPE",
+                "value": "lcd",
+                "description": "flash_type",
+                "group": "flash"
+            },
+            {
+                "name": "CAMERA_TORCH_LIGHT_LEVEL",
+                "value": "16",
+                "description": "flash_light_level",
+                "group": "flash"
+            },
+            {
+                "name": "TARGET_BOARD_SPRD_FD_VERSION",
+                "value": "v1",
+                "description": "gender_race_age_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_HDR_CAPTURE",
+                "value": "true",
+                "description": "hdr_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_SUPPORT_AUTO_HDR",
+                "value": "true",
+                "description": "auto_hdr_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_PORTRAIT_SINGLE_SUPPORT",
+                "value": "true",
+                "description": "single_portrait_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_AFBC_ENABLE",
+                "value": "false",
+                "description": "afbc enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_LOGOWATERMARK_SUPPORT",
+                "value": "true",
+                "description": "logo_watermark_enabel",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_TIMEWATERMARK_SUPPORT",
+                "value": "true",
+                "description": "time_watermark_enabel",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_ZOOM_FACTOR_SUPPORT",
+                "value": "z4",
+                "description": "zoom_ratio_v4l2",
+                "group": "other"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_GESTURE_DETECT",
+                "value": "true",
+                "description": "gesture_capture_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_GYRO",
+                "value": "true",
+                "description": "gyro_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_USER_LOGLEVEL",
+                "value": "333333"
+            },
+            {
+                "name": "TARGET_BOARD_FACE_UNLOCK_SUPPORT",
+                "value": "true",
+                "description": "face_unlock_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_3D_FACE_UNLOCK_SUPPORT",
+                "value": "true",
+                "description": "3d_face_unlock_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_BOKEH_MODE_SUPPORT",
+                "value": "true",
+                "description": "bokeh_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_BOKEH_HDR_MODE_SUPPORT",
+                "value": "true",
+                "description": "bokeh_hdr_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_PORTRAIT_SUPPORT",
+                "value": "true",
+                "description": "portrait_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_DEPTH_DECRYPT",
+                "value": "true",
+                "description": "depth_decrypt_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "CONFIG_CAMERA_MM_DVFS_SUPPORT",
+                "value": "true",
+                "description": "mm_dvfs_enable",
+                "group": "performance"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_MANUAL_SENSOR",
+                "value": "true",
+                "description": "manual_sensor",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_GRALLOC1_USAGE_PRIVATE_17",
+                "value": "true",
+                "description": "usage_private_17",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_BEAUTY_FOR_SHARKL5PRO",
+                "value": "true",
+                "description": "face_beauty_arithmetic",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_MFNR_DETECT_V2",
+                "value": "true",
+                "description": "mfnr_sd2.0",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_2K_VIDEO_ROT",
+                "value": "false",
+                "description": "2k_video_rot",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_RAW_HWLIMIT",
+                "value": "true",
+                "description": "raw_hw_limit",
+                "group": "other"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_VIRL_LIGHTSENSOR",
+                "value": "true"
+            }
+        ]
+    }
+}

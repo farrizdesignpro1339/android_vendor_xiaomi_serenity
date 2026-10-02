@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2023-2024 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2023-2024 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<DRE_PRO_20609>
+	<block_header>
+		<version type="u8">
+			<version_major>0</version_major>
+			<version_minor>0</version_minor>
+			<version_micro>0</version_micro>
+			<reserved len="5">0</reserved>
+		</version>
+		<block_info type="u32">
+			<block_id>20609</block_id>
+			<bypass range="[0,1]">0</bypass>
+			<smart_size>208</smart_size>
+			<block_size>792</block_size>
+			<modify_time>2401190938</modify_time>
+			<trigger_flag range="[0,1]">0</trigger_flag>
+			<reserved len="2">0</reserved>
+		</block_info>
+	</block_header>
+	<SMART>
+		<enable type="u32">1</enable>
+		<smart_id>58</smart_id>
+		<block_id>20609</block_id>
+		<component_num>1</component_num>
+		<reserved len="2">0</reserved>
+		<component_cfg>
+			<id type="u32">0</id>
+			<type>0</type>
+			<offset>0</offset>
+			<size>0</size>
+			<x_type>4</x_type>
+			<y_type>0</y_type>
+			<default_val type="int32">0</default_val>
+			<use_flash_val>0</use_flash_val>
+			<flash_val>0</flash_val>
+			<section_num type="u32">4</section_num>
+			<func_num>4</func_num>
+			<reserved len="3">0</reserved>
+			<isp_range_new>
+				<min type="int16">-1000</min>
+				<max>-230</max>
+				<reserved len="2">0</reserved>
+			</isp_range_new>
+			<isp_range_new>
+				<min type="int16">-230</min>
+				<max>400</max>
+				<reserved len="2">0</reserved>
+			</isp_range_new>
+			<isp_range_new>
+				<min type="int16">400</min>
+				<max>1100</max>
+				<reserved len="2">0</reserved>
+			</isp_range_new>
+			<isp_range_new>
+				<min type="int16">1100</min>
+				<max>3000</max>
+				<reserved len="2">0</reserved>
+			</isp_range_new>
+			<func_new>
+				<sample_num type="u32">2</sample_num>
+				<reserved>0</reserved>
+				<sample_new>
+					<x type="int16">30</x>
+					<y>0</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+				<sample_new>
+					<x type="int16">70</x>
+					<y>1</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+			</func_new>
+			<func_new>
+				<sample_num type="u32">2</sample_num>
+				<reserved>0</reserved>
+				<sample_new>
+					<x type="int16">30</x>
+					<y>2</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+				<sample_new>
+					<x type="int16">70</x>
+					<y>3</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+			</func_new>
+			<func_new>
+				<sample_num type="u32">2</sample_num>
+				<reserved>0</reserved>
+				<sample_new>
+					<x type="int16">30</x>
+					<y>4</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+				<sample_new>
+					<x type="int16">80</x>
+					<y>5</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+			</func_new>
+			<func_new>
+				<sample_num type="u32">2</sample_num>
+				<reserved>0</reserved>
+				<sample_new>
+					<x type="int16">30</x>
+					<y>6</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+				<sample_new>
+					<x type="int16">80</x>
+					<y>7</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+			</func_new>
+		</component_cfg>
+	</SMART>
+	<predre_param idx="0">
+		<enable type="u8">0</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>13</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="1">
+		<enable type="u8">0</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>13</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="2">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>10</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="3">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>20</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="4">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>10</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="5">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>20</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="6">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>10</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="7">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>20</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="8">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>20</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="9">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>20</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="10">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>20</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="11">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>20</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="12">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>20</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="13">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>20</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="14">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>20</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<predre_param idx="15">
+		<enable type="u8">1</enable>
+		<imgKey_setting_mode>1</imgKey_setting_mode>
+		<tarNorm_setting_mode>1</tarNorm_setting_mode>
+		<target_norm>64</target_norm>
+		<imagekey type="u16">32</imagekey>
+		<min_per>9</min_per>
+		<max_per>16</max_per>
+		<stat_step>8</stat_step>
+		<low_thresh>2</low_thresh>
+		<high_thresh>185</high_thresh>
+		<uv_gain_ratio type="u8">128</uv_gain_ratio>
+		<tarCoeff>20</tarCoeff>
+		<reserved len="2">0</reserved>
+	</predre_param>
+	<postdre_param idx="0">
+		<enable type="u8">0</enable>
+		<strength>2</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="1">
+		<enable type="u8">0</enable>
+		<strength>2</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="2">
+		<enable type="u8">1</enable>
+		<strength>2</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="3">
+		<enable type="u8">1</enable>
+		<strength>3</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="4">
+		<enable type="u8">1</enable>
+		<strength>2</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="5">
+		<enable type="u8">1</enable>
+		<strength>3</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="6">
+		<enable type="u8">1</enable>
+		<strength>2</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="7">
+		<enable type="u8">1</enable>
+		<strength>3</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="8">
+		<enable type="u8">1</enable>
+		<strength>3</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="9">
+		<enable type="u8">1</enable>
+		<strength>3</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="10">
+		<enable type="u8">1</enable>
+		<strength>3</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="11">
+		<enable type="u8">1</enable>
+		<strength>3</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="12">
+		<enable type="u8">1</enable>
+		<strength>3</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="13">
+		<enable type="u8">1</enable>
+		<strength>3</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="14">
+		<enable type="u8">1</enable>
+		<strength>3</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<postdre_param idx="15">
+		<enable type="u8">1</enable>
+		<strength>3</strength>
+		<texture_counter_en>1</texture_counter_en>
+		<text_point_thres>7</text_point_thres>
+		<text_prop_thres>19</text_prop_thres>
+		<tile_num_auto>0</tile_num_auto>
+		<tile_num_x>8</tile_num_x>
+		<tile_num_y>8</tile_num_y>
+		<text_point_alpha type="u16">102</text_point_alpha>
+		<reserved>0</reserved>
+	</postdre_param>
+	<reserved type="u8" len="280">0</reserved>
+</DRE_PRO_20609>

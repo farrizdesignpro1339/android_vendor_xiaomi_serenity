@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array>
+    <item plmn="21403,21409">
+        <ignore_cusd
+            is_ignore_cusd_in_stk_progress="1">
+        </ignore_cusd>
+    </item>
+  </string-array>
+</resources>

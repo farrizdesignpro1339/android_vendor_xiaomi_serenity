@@ -1,0 +1,181 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Xiaomi_Single_Portrait_Capture",
+    "stream": "capture_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "MultiFrameRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_MF_router"
+        },
+        {
+            "type": "MFNR6Node",
+            "vendor": "SPRD",
+            "id": "cap_MFNR"
+        },
+        {
+            "type": "YNR2CNR4Node",
+            "vendor": "SPRD",
+            "id": "cap_YNR2CNR4"
+        },
+        {
+            "type": "WaterMarkNode",
+            "vendor": "SPRD",
+            "id": "cap_WaterMark"
+        },
+        {
+            "type": "FaceBeautyNode",
+            "vendor": "SPRD",
+            "id": "cap_FaceBeauty"
+        },
+        {
+            "type": "JpegNode",
+            "vendor": "SPRD",
+            "id": "cap_Jpeg"
+        },
+        {
+            "type": "JgCapBokehNode",
+            "vendor": "SPRD",
+            "id": "cap_SingleBlur"
+        },
+        {
+            "type": "JgCapBokehRearNode",
+            "vendor": "SPRD",
+            "id": "cap_SingleBlurRear"
+        },
+        {
+            "type": "LptNode",
+            "vendor": "SPRD",
+            "id": "cap_Lpt"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode1"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "mfnr"
+            },
+            "to": {
+                "name": "cap_MFNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MFNR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "multinone"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "single"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNR2CNR4",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_SingleBlur",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_SingleBlur",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNR2CNR4",
+                "port": "SingleBlurRear"
+            },
+            "to": {
+                "name": "cap_SingleBlurRear",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_SingleBlurRear",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Jpeg",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

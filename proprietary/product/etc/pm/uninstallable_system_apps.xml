@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--SPDX-FileCopyrightText: 2023 Unisoc (Shanghai) Technologies Co., Ltd
+    SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0 -->
+<!--
+E.g.
+    1. <uninstallable-system-package name="com.example.app" />
+    Indicates that a system package - com.example.app can be uninstalled
+    2. <uninstallable-system-package-dir path="/example/app" />
+    Indicates that the system package with prebuild in dir example/app can be uninstalled
+-->
+<config></config>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<whitelist>
+<packagename>com.google.android.apps.nbu.files</packagename>
+<packagename>com.google.android.apps.youtube.music</packagename>
+<packagename>com.miui.player</packagename>
+<packagename>com.miui.videoplayer</packagename>
+<packagename>com.ss.android.ugc.aweme</packagename>
+<packagename>com.changba</packagename>
+<packagename>com.tencent.karaoke</packagename>
+<packagename>com.qiyi.video</packagename>
+<packagename>com.youku.phone</packagename>
+<packagename>com.kugou.android</packagename>
+<packagename>com.tencent.qqlive</packagename>
+<packagename>com.tencent.qqmusic</packagename>
+<packagename>com.netease.cloudmusic</packagename>
+<packagename>com.tencent.wesing</packagename>
+<packagename>com.google.android.apps.photos</packagename>
+</whitelist>

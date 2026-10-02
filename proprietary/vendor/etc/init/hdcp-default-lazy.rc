@@ -1,0 +1,7 @@
+service vendor.hdcp-default /vendor/bin/hw/vendor.sprd.hardware.hdcp-service-lazy
+    interface aidl vendor.sprd.hardware.hdcp.IHDCP/default
+    disabled
+    oneshot
+    class hal
+    user system
+    group system

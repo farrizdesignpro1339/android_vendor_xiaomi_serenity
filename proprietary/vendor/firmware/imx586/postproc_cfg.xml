@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<postproc_cfg> 
+  <sensor_name>imx586</sensor_name>  
+  <versionid>0x000C0019</versionid>  
+  <scenario_num>50</scenario_num>  
+  <scenario alia="com"> 
+    <id>0x0000000000000000</id>  
+    <postprocfile_num>23</postprocfile_num>  
+    <postprocfile name="TRG_SP_BOKEH2_29961.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_SP_BOKEH1_29962.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_SC_BOKEH_29963.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_SD_USD2.2_29959.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_SD_LOWLIGHT_29979.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_SD_MFSR_29976.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_MFSR3_29975.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_YNR2_29954.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_CNR4_29972.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_HDR5.2_29978.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_CHDR_29982.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_MFNR6_29956.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_MFNR6_LITE_29957.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_SD_MFNR2.0_29960.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_D_MASK_29966.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_DP_BOKEH_29967.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_DC_BOKEH_29968.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_BEAUTY12_29973.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_SD_HIGHRES_29980.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_SD_ISZ_29981.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="dpf_70001.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="mfnr3_70000.xml"> 
+      <param>com</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_XDR2_29974.xml"> 
+      <param>com</param> 
+    </postprocfile> 
+  </scenario>  
+  <scenario alia="prv1"> 
+    <id>0x0000020000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="prv2"> 
+    <id>0x0000030000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="cap0"> 
+    <id>0x0000050000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="cap1"> 
+    <id>0x0000060000000000</id>  
+    <postprocfile_num>2</postprocfile_num>  
+    <postprocfile name="TRG_CNR4_29972.xml"> 
+      <param>cap1</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_YNR2_29954.xml"> 
+      <param>cap1</param> 
+    </postprocfile> 
+  </scenario>  
+  <scenario alia="video1">
+    <id>0x00000a0000000000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+  <scenario alia="video2"> 
+    <id>0x00000b0000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="video3_sm120"> 
+    <id>0x00000C0800000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="prv1_night"> 
+    <id>0x0000020100000000</id>  
+    <postprocfile_num>1</postprocfile_num>  
+    <postprocfile name="TRG_SD_USD2.2_29959.xml"> 
+      <param>prv1_night</param> 
+    </postprocfile> 
+  </scenario>  
+  <scenario alia="prv2_night"> 
+    <id>0x0000030100000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="cap1_night"> 
+    <id>0x0000060100000000</id>  
+    <postprocfile_num>2</postprocfile_num>  
+    <postprocfile name="TRG_CNR4_29972.xml"> 
+      <param>cap1_night</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_YNR2_29954.xml"> 
+      <param>cap1_night</param> 
+    </postprocfile> 
+  </scenario>  
+  <scenario alia="cap1_hdr"> 
+    <id>0x0000060001000000</id>  
+    <postprocfile_num>1</postprocfile_num>  
+    <postprocfile name="TRG_YNR2_29954.xml"> 
+      <param>cap1_hdr</param> 
+    </postprocfile> 
+  </scenario>  
+  <scenario alia="cap1_flash"> 
+    <id>0x0000060002000000</id>  
+    <postprocfile_num>2</postprocfile_num>  
+    <postprocfile name="TRG_CNR4_29972.xml"> 
+      <param>cap1_flash</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_YNR2_29954.xml"> 
+      <param>cap1_flash</param> 
+    </postprocfile> 
+  </scenario>  
+  <scenario alia="video2_eis"> 
+    <id>0x00000b0003000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="prv1_zoom2x"> 
+    <id>0x0000020000000002</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="cap1_zoom2x"> 
+    <id>0x0000060000000002</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="cap1_bokeh"> 
+    <id>0x0000060200000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="cap1_portrait"> 
+    <id>0x0000060300000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="prv2_panorama"> 
+    <id>0x0000030400000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="wechat_prv1"> 
+    <id>0x0001020000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="wechat_prv2"> 
+    <id>0x0001030000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="qq_prv2"> 
+    <id>0x0002030000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="tiktok_prv1"> 
+    <id>0x0003020000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="tiktok_prv2"> 
+    <id>0x0003030000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="kuaishou_prv2"> 
+    <id>0x0004030000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="snapchat_prv2"> 
+    <id>0x0005030000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="facebook_prv2"> 
+    <id>0x0006030000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="facebook_cap1"> 
+    <id>0x0006060000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="facebook_cap2"> 
+    <id>0x0006070000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="whatsapp_prv2"> 
+    <id>0x0007030000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="messenger_prv2"> 
+    <id>0x0009030000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="messenger_cap1"> 
+    <id>0x0009060000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="messenger_cap2"> 
+    <id>0x0009070000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="thirdapp_prv1"> 
+    <id>0x000A020000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="thirdapp_prv2"> 
+    <id>0x000A030000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="thirdapp_video2"> 
+    <id>0x000A0B0000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="instagram_prv2"> 
+    <id>0x0008030000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="prv1_professional"> 
+    <id>0x0000020500000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="prv2_professional"> 
+    <id>0x0000030500000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="prv2_qrcode"> 
+    <id>0x0000030E00000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="video2_timelapsephotography"> 
+    <id>0x00000B1000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="top-app-meiyan_prv2"> 
+    <id>0x0012030000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="cap1_field00-c5"> 
+    <id>0x0000060008000000</id>  
+    <postprocfile_num>1</postprocfile_num>  
+    <postprocfile name="TRG_YNR2CNR4_29954.xml"> 
+      <param>cap1_field00-c5</param> 
+    </postprocfile> 
+  </scenario>  
+  <scenario alia="prv1_panorama"> 
+    <id>0x0000020400000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="cap1_lls"> 
+    <id>0x0000060007000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="prv1_hdr"> 
+    <id>0x0000020001000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="top_app_meiyan_prv1"> 
+    <id>0x0012020000000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="prv1_chdr"> 
+    <id>0x0000020005000000</id>  
+    <postprocfile_num>0</postprocfile_num> 
+  </scenario>  
+  <scenario alia="cap1_chdr"> 
+    <id>0x0000060005000000</id>  
+    <postprocfile_num>2</postprocfile_num>  
+    <postprocfile name="TRG_CNR4_29972.xml"> 
+      <param>cap1</param> 
+    </postprocfile>  
+    <postprocfile name="TRG_YNR2_29954.xml"> 
+      <param>cap1</param> 
+    </postprocfile> 
+  </scenario>
+  <scenario alia="cap1_professional">
+    <id>0x0000060500000000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario> 
+</postproc_cfg>

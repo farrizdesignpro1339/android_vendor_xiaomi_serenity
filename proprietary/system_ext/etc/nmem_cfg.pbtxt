@@ -1,0 +1,24 @@
+buffers {
+  size_kb: 262144
+  fill_policy: RING_BUFFER
+}
+data_sources {
+  config {
+    name: "android.heapprofd"
+	target_buffer: 0
+    heapprofd_config {
+      shmem_size_bytes: 8388608
+      sampling_interval_bytes: 4096
+      block_client: true
+      process_cmdline: "system_server"
+    }
+  }
+}
+duration_ms: 36000000
+enable_extra_guardrails: false
+write_into_file: true
+file_write_period_ms: 60000
+flush_period_ms: 30000
+flush_timeout_ms: 5000
+max_file_size_bytes: 268435456
+statsd_logging: STATSD_LOGGING_DISABLED

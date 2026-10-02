@@ -1,0 +1,131 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Xiaomi_Capture_Video",
+    "stream": "capture_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "YNR2CNR4Node",
+            "vendor": "SPRD",
+            "id": "cap_YNR2CNR4"
+        },
+        {
+            "type": "TSFaceBeautyCapNode",
+            "vendor": "TrueSight",
+            "id": "cap_TSFaceBeauty"
+        },
+        {
+            "type": "JpegNode",
+            "vendor": "SPRD",
+            "id": "cap_Jpeg"
+        }
+    ],
+    "rootNodes": ["SourceNode0", "SourceNode1", "SourceNode2", "SourceNode3"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNR2CNR4",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNR2CNR4",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_TSFaceBeauty",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_TSFaceBeauty",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Jpeg",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

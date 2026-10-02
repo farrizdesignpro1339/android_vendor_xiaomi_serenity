@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<capabilities xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' version='1.40.0'>
+    <ip_capabilities ip="GPU">
+        <feature name="AFBC_16X16" permission="RW"></feature>
+        <feature name="AFBC_BLOCK_SPLIT" permission="RW"></feature>
+        <feature name="AFBC_32X8" permission="RO"></feature>
+        <feature name="AFBC_YUV" permission="RW"></feature>
+        <feature name="AFBC_WRITE_NON_SPARSE" permission="RW"></feature>
+        <feature name="AFBC_FORMAT_R16G16B16A16_FLOAT" permission="NO"></feature>
+        <feature name="AFBC_TILED_HEADERS" permission="NO"></feature>
+        <feature name="FORMAT_R10G10B10A2" permission="RW"></feature>
+        <feature name="FORMAT_R10G10B10A10" permission="NO"></feature>
+        <feature name="FORMAT_R16G16B16A16_FLOAT" permission="RW"></feature>
+        <feature name="FORMAT_RGB16" permission="RW"></feature>
+        <feature name="DISABLED" permission="NO"></feature>
+    </ip_capabilities>
+
+    <ip_capabilities ip="DPU">
+        <feature name="AFBC_16X16" permission="RO"></feature>
+        <feature name="AFBC_32X8" permission="RO"></feature>
+        <feature name="AFBC_BLOCK_SPLIT" permission="RO"></feature>
+        <feature name="AFBC_YUV" permission="RW"></feature>
+        <feature name="AFBC_WRITE_NON_SPARSE" permission="RO"></feature>
+        <feature name="AFBC_TILED_HEADERS" permission="NO"></feature>
+        <feature name="FORMAT_R10G10B10A2" permission="RO"></feature>
+        <feature name="FORMAT_R10G10B10A10" permission="NO"></feature>
+        <feature name="FORMAT_R16G16B16A16_FLOAT" permission="RO"></feature>
+        <feature name="DISABLED" permission="NO"></feature>
+    </ip_capabilities>
+
+    <ip_capabilities ip="DPU_AEU">
+        <feature name="AFBC_16X16" permission="RW"></feature>
+        <feature name="AFBC_BLOCK_SPLIT" permission="RW"></feature>
+        <feature name="AFBC_YUV" permission="RW"></feature>
+        <feature name="AFBC_WRITE_NON_SPARSE" permission="RW"></feature>
+        <feature name="FORMAT_R10G10B10A2" permission="RW"></feature>
+        <feature name="FORMAT_R16G16B16A16_FLOAT" permission="RW"></feature>
+    </ip_capabilities>
+
+    <ip_capabilities ip="VPU">
+        <feature name="AFBC_16X16" permission="RW"></feature>
+        <feature name="AFBC_32X8" permission="RW"></feature>
+        <feature name="AFBC_YUV" permission="RW"></feature>
+        <feature name="AFBC_WRITE_NON_SPARSE" permission="NO"></feature>
+    </ip_capabilities>
+
+    <ip_capabilities ip="CAM">
+        <feature name="FORMAT_RGB16" permission="RW"></feature>
+    </ip_capabilities>
+</capabilities>

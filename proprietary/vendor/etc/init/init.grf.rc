@@ -1,0 +1,15 @@
+# SPDX-FileCopyrightText: 2016-2024 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+# for grf, set grf props by init.grf.rc
+
+on early-init && property:ro.odm.build.fingerprint=*
+    setprop ro.vendor.build.fingerprint ${ro.odm.build.fingerprint}
+
+on early-init && property:ro.product.device=*
+    setprop ro.product.vendor.device ${ro.product.device}
+on early-init && property:ro.product.model=*
+    setprop ro.product.vendor.model ${ro.product.model}
+on early-init && property:ro.product.name=*
+    setprop ro.product.vendor.name ${ro.product.name}
+

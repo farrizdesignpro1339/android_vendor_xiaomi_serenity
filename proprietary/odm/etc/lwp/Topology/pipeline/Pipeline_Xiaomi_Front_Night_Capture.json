@@ -1,0 +1,186 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Xiaomi_Front_Night_Capture",
+    "stream": "capture_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "MultiFrameRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_MF_router"
+        },
+        {
+            "type": "NoneNode",
+            "vendor": "SPRD",
+            "id": "cap_NONENODE"
+        },
+        {
+            "type": "SNNode",
+            "vendor": "SPRD",
+            "id": "cap_SN"
+        },
+        {
+            "type": "MFNR6Node",
+            "vendor": "SPRD",
+            "id": "cap_MFNR"
+        },
+        {
+            "type": "YNR2CNR4Node",
+            "vendor": "SPRD",
+            "id": "cap_YNR2CNR4"
+        },
+        {
+            "type": "PCCNode",
+            "vendor": "SPRD",
+            "id": "cap_PCC"
+        },
+        {
+            "type": "JpegNode",
+            "vendor": "SPRD",
+            "id": "cap_Jpeg"
+        }
+    ],
+    "rootNodes": ["SourceNode1"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "flash"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "single"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "mfnr"
+            },
+            "to": {
+                "name": "cap_MFNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MFNR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "supernight"
+            },
+            "to": {
+                "name": "cap_SN",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_SN",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNR2CNR4",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_PCC",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "multinone"
+            },
+            "to": {
+                "name": "cap_NONENODE",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_NONENODE",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNR2CNR4",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_PCC",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_PCC",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Jpeg",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Front_Auto_Raw_Capture",
+    "stream": "raw_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "RawMFNRNode",
+            "vendor": "SPRD",
+            "id": "raw_mfnr"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        }
+    ],
+    "rootNodes": ["SourceNode1"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "raw_mfnr",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "raw_mfnr",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

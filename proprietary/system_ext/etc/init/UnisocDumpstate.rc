@@ -1,0 +1,114 @@
+#
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+# SPDX-FileCopyrightText: 2018 Unisoc (Shanghai) Technologies Co., Ltd
+#
+# Copyright 2018-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+#
+# Licensed under the Unisoc General Software License, version 1.0 (the License);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+#
+# Software distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+# See the Unisoc General Software License, version 1.0 for more details.
+#
+
+service bugreportW /system/bin/dumpstate -q -d -z -U W
+    class main
+    disabled
+    user root
+    oneshot
+
+
+service bugreportM /system/bin/dumpstate -q -d -z -U M
+    class main
+    disabled
+    user root
+    oneshot
+
+service saveFile /system/bin/dumpstate -q -U l
+    class main
+    disabled
+    user root
+    oneshot
+
+service dumpstateStabilityLogs /system/bin/dumpstate -q -S -U A
+    socket dumpstate stream 0660 shell log
+    class main
+    disabled
+    user root
+    oneshot
+
+service dumpstatet /system/bin/dumpstate -q -U t
+    class main
+    disabled
+    user root
+    oneshot
+    
+
+service dumpstatePowerOnLog_l /system/bin/dumpstate -q -U Pl
+    class main
+    disabled
+    user root
+    oneshot
+    
+service dumpstatePowerOnLog_k /system/bin/dumpstate -q -U Pk
+    class main
+    disabled
+    user root
+    oneshot
+    
+service dumpstatePowerOnLog_K /system/bin/dumpstate -q -U PK
+    class main
+    disabled
+    user root
+    oneshot
+    
+service dumpstateInfo2Logcat /system/bin/dumpstate -q -U L
+    class main
+    disabled
+    user root
+    oneshot
+
+service dumpstatePerfetto /system/bin/perfetto --detach=per_watchdog -c /system_ext/etc/watchdog_cfg.pbtxt --txt -o /data/misc/perfetto-traces/per_watchdog.perfetto
+    class main
+    disabled
+    user root
+    oneshot
+
+service dumpstatePerfettoStop  /system/bin/perfetto --stop --attach=per_watchdog
+    class main
+    disabled
+    user root
+    oneshot
+
+service dumpstateNmemStart /system/bin/dumpstate -q -U ns
+    class main
+    disabled
+    user root
+    oneshot
+
+service dumpstateNmemStop /system/bin/dumpstate -q -U nS
+    class main
+    disabled
+    user root
+    oneshot
+
+service dumpstateNmemSampling /system/bin/dumpstate -q -U nP
+    class main
+    disabled
+    user root
+    oneshot
+    
+service dumpstateCleanCorefile /system/bin/dumpstate -q -U C
+    class main
+    disabled
+    user root
+    oneshot
+
+
+
+
+

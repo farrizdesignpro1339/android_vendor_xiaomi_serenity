@@ -1,0 +1,5 @@
+<config>
+    <!-- temperature -->
+    <gamemaxtemp>1000</gamemaxtemp>
+    <generalmaxtemp>1000</generalmaxtemp>
+</config>

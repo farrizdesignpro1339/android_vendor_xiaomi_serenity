@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<driver_info> 
+  <sensor_name>c3z01_ov08f10_frontsyx_factory</sensor_name>  
+  <versionid>0x000C0019</versionid>  
+  <scenario_num>1</scenario_num>  
+  <size> 
+    <fullsize> 
+      <width>3264</width>  
+      <height>2448</height> 
+    </fullsize>  
+    <binningsize> 
+      <width/>  
+      <height/> 
+    </binningsize> 
+  </size>  
+  <deviceinfo> 
+    <line_time>13278</line_time>  
+    <mine_line>4</mine_line>  
+    <max_gain>1984</max_gain>  
+    <min_gain>128</min_gain>  
+    <gain_precision>1</gain_precision>  
+    <exp_skip_num>1</exp_skip_num>  
+    <gain_skip_num>1</gain_skip_num> 
+  </deviceinfo>  
+  <blc> 
+    <r>1024</r>  
+    <gr>1024</gr>  
+    <gb>1024</gb>  
+    <b>1024</b> 
+  </blc> 
+</driver_info>

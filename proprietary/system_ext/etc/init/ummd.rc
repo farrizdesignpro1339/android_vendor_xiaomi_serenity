@@ -1,0 +1,9 @@
+service ummd /system_ext/bin/ummd
+    user root
+    group root system readproc
+    capabilities SYS_NICE SYS_RESOURCE
+    socket ummd seqpacket 0660 root system
+    writepid /dev/cpuset/system-background/tasks
+
+on boot && property:ro.ummd.enabled=1
+    start ummd

@@ -1,0 +1,28 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2023-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "session": {
+        "name": "Session_DualView_Video",
+        "usecase": {
+            "facing": "front",
+            "stream_list": [
+                {
+                    "dir": "output",
+                    "max_width": 1920,
+                    "max_height": 1080,
+                    "formats": [ "NV12" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 1920,
+                    "max_height": 1080,
+                    "formats": [ "NV12_VIDEO" ]
+                }
+            ]
+        },
+        "pipeline": [
+            "Pipeline_Rear_Auto_Preview",
+            "Pipeline_DualView_Async"
+        ]
+    }
+}

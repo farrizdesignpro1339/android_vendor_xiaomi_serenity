@@ -1,0 +1,131 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Rear_Auto_Video",
+    "stream": "video_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "DeWarpingNode",
+            "vendor": "SPRD",
+            "id": "video_DeWarping"
+        },
+        {
+            "type": "ModeRouterNode",
+            "vendor": "SPRD",
+            "id": "video_ModeRouter"
+        },
+        {
+            "type": "EISNode",
+            "vendor": "SPRD",
+            "id": "video_EIS"
+        },
+        {
+            "type": "WaterMarkNode",
+            "vendor": "SPRD",
+            "id": "video_WaterMark"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode2","SourceNode3"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "video_ModeRouter",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "video_DeWarping",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "video_DeWarping",
+                "port": "out0"
+            },
+            "to": {
+                "name": "video_ModeRouter",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "video_ModeRouter",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "video_ModeRouter",
+                "port": "normal"
+            },
+            "to": {
+                "name": "video_WaterMark",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "video_WaterMark",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "video_ModeRouter",
+                "port": "eis"
+            },
+            "to": {
+                "name": "video_EIS",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "video_EIS",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

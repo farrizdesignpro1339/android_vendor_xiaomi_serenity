@@ -1,0 +1,46 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2023-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Front_NightPro_Raw_Capture",
+    "stream": "raw_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "XDR2Node",
+            "vendor": "SPRD",
+            "id": "raw_xdr"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        }
+    ],
+    "rootNodes": ["SourceNode1"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "raw_xdr",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "raw_xdr",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+# This file has been modified by Unisoc(shanghai)Technologies Co.,Ltd in 2023.
+#
+# Copyright (C) 2020 The Android Open Source Project
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+service vendor.fingerprint-default /vendor/bin/hw/android.hardware.biometrics.fingerprint-service
+    class late_start
+    user system
+    group system input uhid
+    capabilities WAKE_ALARM
+    disabled
+
+on property:ro.vendor.fps.support=true
+    start vendor.fingerprint-default
+
+#add for FP begin:
+on post-fs
+    insmod ${ro.vendor.ko.mount.point}/socko/silead_fp.ko
+    insmod ${ro.vendor.ko.mount.point}/socko/goodix_fp.ko
+on factorytest
+    insmod ${ro.vendor.ko.mount.point}/socko/silead_fp.ko
+    insmod ${ro.vendor.ko.mount.point}/socko/goodix_fp.ko
+on boot
+    chmod 660 /dev/silead_fp
+    chmod 660 /dev/goodix_fp
+    chown system system /dev/silead_fp
+    chown system system /dev/goodix_fp
+    mkdir /data/vendor/silead 0770 system system
+    mkdir /data/vendor/fpdump 0770 system system
+    setprop persist.vendor.sys.fp.dump_data 1
+#add for FP end!

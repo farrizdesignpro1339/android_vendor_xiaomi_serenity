@@ -1,0 +1,47 @@
+# SPDX-FileCopyrightText: 2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+#
+# Copyright 2016-2023 Unisoc(Shanghai) Technologies Co., Ltd.
+# Licensed under the Unisoc General Software License, version 1.0(the License);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# http://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE-V1.0-EN_US
+# Software distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+# See the Unisoc General Software License, version 1.0 for more details.
+
+# SR.004774.015870
+on property:ro.config.per_app_memcg=true
+    # Unisoc:app memcg uid and score initialize
+    write /dev/memcg/memory.app_score 400
+    write /dev/memcg/apps/memory.app_score 300
+    write /dev/memcg/system/memory.app_score 500
+
+on init
+    # Unisoc: create big core process group.
+    # bug 2587042 AR.004774.015871.046266
+    mkdir /dev/cpuset/top-app-high-perf
+    copy /dev/cpuset/cpus /dev/cpuset/top-app-high-perf/cpus
+    copy /dev/cpuset/mems /dev/cpuset/top-app-high-perf/mems
+    chown system system /dev/cpuset/top-app-high-perf
+    chown system system /dev/cpuset/top-app-high-perf/tasks
+    chown system system /dev/cpuset/top-app-high-perf/cgroup.procs
+    chmod 0664 /dev/cpuset/top-app-high-perf/tasks
+
+    # Unisoc: create vip sched process group.
+    # bug 2587048 AR.004774.015871.046272
+    mkdir /dev/cpuctl/vip-sched
+    chown system system /dev/cpuctl/vip-sched
+    chown system system /dev/cpuctl/vip-sched/tasks
+    chown system system /dev/cpuctl/vip-sched/cgroup.procs
+    chmod 0664 /dev/cpuctl/vip-sched/tasks
+    chmod 0664 /dev/cpuctl/vip-sched/cgroup.procs
+
+# SR.000989.012137 SR.000989.007435
+service uniresctlopt /system_ext/bin/uniresctlopt
+    class main
+    user system
+    group system
+    oneshot
+    capabilities SYS_NICE
+    task_profiles HighPerformance MaxIoPriority TimerSlackNormal

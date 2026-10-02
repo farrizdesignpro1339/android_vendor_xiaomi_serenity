@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/sprd/platform/frameworks/av/service/audio/audioparameterparser/manifest_media_audio_parameter_parser_aidl_unisoc.xml
+-->
+<manifest version="8.0" type="framework">
+    <hal format="aidl">
+        <name>android.media.audio</name>
+        <fqname>IHalAdapterVendorExtension/default</fqname>
+    </hal>
+</manifest>

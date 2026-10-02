@@ -1,0 +1,2 @@
+SPRD_DEF_Tag path = /home/work/mnt/miui_codes1/build_home_rom-vendor-merged/vendor/sprd/modules/libcamera/iss/ISSFrame/ISSFrame.h
+

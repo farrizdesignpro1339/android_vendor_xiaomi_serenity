@@ -1,0 +1,66 @@
+scene_detect_out_t path = /home/work/mnt/miui_codes1/build_home_rom-vendor-merged/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
+typedef struct {
+    uint32_t postproc_type;
+    float ev[MAX_CAP_NUM];
+    cmr_u8 xtm_bypass_flag[MAX_CAP_NUM];
+    int total_num;
+    int normal_num;
+    sprd_hdr_detect_out_t hdr_detect_out;
+    int cur_frame_merge_frame_num;
+    sprd_raw_mfnr_detect_out_t raw_mfnr_detect_out;
+    xdr_detect_out_param_t xdr_detect_out;
+    xdr_1_2_detect_out_param_t xdr1_2_detect_out;
+    usd_out_param_t usd_detect_out;
+    sprd_xdr2_sd_out_t xdr2_detect_out;
+    float dark_ratio;
+    float bright_ratio;
+    int motion_detect;
+    int is_flash_scene;
+    int is_hdr_scene;
+    int is_chdr_scene;
+    int is_mfnr_scene;
+    int is_mfnr_chdr_scene;
+    int is_remosaic_scene;
+    int is_isz_scene;
+    int is_mfsr_scene;
+    int is_mfnr_hdr_scene;
+    int is_raw_scene;
+    int is_raw_mfnr_scene;
+    int is_xdr_scene;
+    int is_filter_scene;
+    int is_lls_scene;
+    int is_acd_scene;
+    int is_thumb_zsl_frame;
+    int is_thumb_nozsl_frame;
+    int is_highlight_nozsl;
+    int is_izoom;
+} scene_detect_out_t;
+
+sprd_hdr_detect_out_t path = /home/work/mnt/miui_codes1/build_home_rom-vendor-merged/vendor/sprd/modules/libcamera/arithmetic/sprd_easy_hdr/inc/sprd_hdr_adapter.h
+typedef struct
+{
+    float       ev[HDR_IMG_NUM_MAX];
+    uint32_t    shutter[HDR_IMG_NUM_MAX];
+    uint32_t    gain[HDR_IMG_NUM_MAX];
+    int         frame_num;
+    int         tuning_param_index;
+    uint64_t    clock;
+    int         bv;
+    uint32_t    face_num;
+    uint32_t    prop_dark;
+    uint32_t    prop_bright;
+    float       trg_prop_dark;
+    float       trg_prop_bright;
+    uint32_t    sceneChosen;
+    int         scene_flag;
+    int         normalNum;
+    int         in_out_flag;
+    int         dark_flag;
+    sprd_hdr_face_info_t face_info[HDR_FACE_NUM_MAX];
+}sprd_hdr_detect_out_t;
+
+sprd_raw_mfnr_detect_out_t path = /home/work/mnt/miui_codes1/build_home_rom-vendor-merged/vendor/sprd/modules/libcamera/common/inc/cmr_common.h
+typedef struct {
+    int total_frame_num;
+} sprd_raw_mfnr_detect_out_t;
+

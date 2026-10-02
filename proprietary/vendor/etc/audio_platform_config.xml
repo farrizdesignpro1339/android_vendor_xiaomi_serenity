@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+     SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+<audio_platform_config>
+    <param_configs>
+        <param name="snd_card_name" value="sprdphone-sc2730"/>
+        <param name="audio_zoom_supported" value="false"/>
+        <param name="audio_focus_supported" value="false"/>
+        <param name="hdr_supported" value="false"/>
+        <param name="isc_supported" value="false"/>
+        <param name="usb_async_supported" value="false"/>
+        <param name="hifi_supported" value="false"/>
+        <param name="agdsp_v2_supported" value="false"/>
+        <param name="fm_smooth_supported" value="false"/>
+        <param name="smartamp_mute_supported" value="true"/>
+        <param name="default_tx_backend" value=""/>
+        <param name="default_param_path" value="/odm/etc/audio_params/sprd"/>
+    </param_configs>
+    <source_mic_configs>
+        <source_mic name="SOURCE_MIC_PRIMARY" value="true"/>
+        <source_mic name="SOURCE_MIC_SECOND" value="false"/>
+        <source_mic name="SOURCE_MIC_THIRD" value="false"/>
+    </source_mic_configs>
+    <mixer_info_configs>
+        <mixer_info name="MIXER_INFO_MUTE_HANDSET" ctl="Earpiece Mute"/>
+        <mixer_info name="MIXER_INFO_MUTE_SPEAKER" ctl="Speaker Mute"/>
+        <mixer_info name="MIXER_INFO_MUTE_SPEAKER_2" ctl="Speaker2 Mute"/>
+        <mixer_info name="MIXER_INFO_MUTE_HEADPHONE" ctl="HeadPhone Mute"/>
+        <mixer_info name="MIXER_INFO_MUTE_LINE_IN" ctl="Linein Mute Switch"/>
+        <mixer_info name="MIXER_INFO_MUTE_MDG_VBC_DA_0" ctl="VBC DAC0 DSP MDG Set"/>
+        <mixer_info name="MIXER_INFO_MUTE_MDG_VBC_DA_1" ctl="VBC DAC1 DSP MDG Set"/>
+        <mixer_info name="MIXER_INFO_MUTE_MDG_VBC_AP_01" ctl="VBC DAC0 AUD MDG Set"/>
+        <mixer_info name="MIXER_INFO_MUTE_MDG_VBC_AP_23" ctl="VBC DAC0 AUD23 MDG Set"/>
+        <mixer_info name="MIXER_INFO_MUTE_MDG_VBC_HIFI" ctl=""/>
+    </mixer_info_configs>
+    <app_type_configs>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_PRIMARY" tx="APP_TYPE_TX" rx="APP_TYPE_INVALID" dai_id="DAI_ID_NORMAL_OUTDSP_PLAYBACK"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_FAST" tx="APP_TYPE_TX" rx="APP_TYPE_INVALID" dai_id="DAI_ID_NORMAL_OUTDSP_PLAYBACK"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_DEEP_BUFFER" tx="APP_TYPE_TX" rx="APP_TYPE_INVALID" dai_id="DAI_ID_NORMAL_OUTDSP_PLAYBACK"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_OFFLOAD" tx="APP_TYPE_TX" rx="APP_TYPE_INVALID" dai_id="DAI_ID_NORMAL_OUTDSP_PLAYBACK"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_MMAP" tx="APP_TYPE_TX" rx="APP_TYPE_INVALID" dai_id="DAI_ID_NORMAL_OUTDSP_PLAYBACK"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_VOIP" tx="APP_TYPE_TX_VOIP" rx="APP_TYPE_INVALID" dai_id="DAI_ID_VOIP"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_HIFI" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_DISPLAY_PORT" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_FM" tx="APP_TYPE_TX_FM" rx="APP_TYPE_INVALID" dai_id="DAI_ID_NORMAL_OUTDSP_PLAYBACK"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_FM_DSP" tx="APP_TYPE_TX_FM" rx="APP_TYPE_INVALID" dai_id="DAI_ID_NORMAL_OUTDSP_PLAYBACK"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_HIDL" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_HIDL_DIAG" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_TDM" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_VOIP_BT" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_OFFLOAD_A2DP" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_OFFLOAD_A2DP_MIXER" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD" tx="APP_TYPE_INVALID" rx="APP_TYPE_RX" dai_id="DAI_ID_NORMAL_OUTDSP_CAPTURE"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_FAST" tx="APP_TYPE_INVALID" rx="APP_TYPE_RX" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_MMAP" tx="APP_TYPE_INVALID" rx="APP_TYPE_RX" dai_id="DAI_ID_NORMAL_OUTDSP_CAPTURE"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_VOIP" tx="APP_TYPE_INVALID" rx="APP_TYPE_RX_VOIP" dai_id="DAI_ID_VOIP"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_VOICE_CALL" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_BT" tx="APP_TYPE_INVALID" rx="APP_TYPE_RX" dai_id="DAI_ID_NORMAL_OUTDSP_CAPTURE"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_FM" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_HIDL" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_HIDL_DIAG" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_TDM" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_VOICE_CALL" tx="APP_TYPE_TX_VOICE" rx="APP_TYPE_RX_VOICE" dai_id="DAI_ID_VOICE"/>
+        <app_scene name="AUDIO_APP_SCENE_VOICE_RECOGNITION" tx="APP_TYPE_INVALID" rx="APP_TYPE_RX" dai_id="DAI_ID_NORMAL_OUTDSP_CAPTURE"/>
+        <app_scene name="AUDIO_APP_SCENE_VOICE_RECOGNITION_PROXY" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_INCALL_MUSIC" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+        <app_scene name="AUDIO_APP_SCENE_LOOPBACK" tx="APP_TYPE_TX_LOOP" rx="APP_TYPE_RX_LOOP" dai_id="DAI_ID_LOOPBACK"/>
+        <app_scene name="AUDIO_APP_SCENE_VBC_DUMP" tx="APP_TYPE_INVALID" rx="APP_TYPE_INVALID" dai_id="DAI_ID_INVALID"/>
+    </app_type_configs>
+    <pcm_configs>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_PRIMARY" type="out" card="sprdphone-sc2730" device="3" fe="FE_ST_FAST"
+                   channels="2" rate="48000" period_size="960" period_count="4" format="PCM_FORMAT_S16_LE"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_FAST" type="out" card="sprdphone-sc2730" device="0" fe="FE_ST_NORMAL_AP01"
+                   channels="2" rate="48000" period_size="480" period_count="2" format="PCM_FORMAT_S16_LE"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_DEEP_BUFFER" type="out" card="sprdphone-sc2730" device="25" fe="FE_ST_MM_P"
+                   channels="2" rate="48000" period_size="1920" period_count="4" format="PCM_FORMAT_S16_LE"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_OFFLOAD" type="out" card="sprdphone-sc2730" device="4" fe="FE_ST_OFFLOAD"
+                   fragment_size="0x5000" fragments="0x40"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_MMAP" type="out" card="sprdphone-sc2730" device="1" fe="FE_ST_NORMAL_AP23"
+                   channels="2" rate="48000" period_size="240" period_count="2" format="PCM_FORMAT_S16_LE" stop_threshold="-1"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_VOIP" type="out" card="sprdphone-sc2730" device="6" fe="FE_ST_VOIP"
+                   channels="1" rate="16000" period_size="480" period_count="3" format="PCM_FORMAT_S16_LE" start_threshold="1280"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_FM" type="out" card="sprdphone-sc2730" device="7" fe="FE_ST_FM"
+                   channels="2" rate="32000" period_size="1280" period_count="2" format="PCM_FORMAT_S16_LE" stop_threshold="-1"/>
+        <app_scene name="AUDIO_APP_SCENE_PLAYBACK_FM_DSP" type="out" card="sprdphone-sc2730" device="15" fe="FE_ST_FM_DSP"
+                   channels="2" rate="32000" period_size="1280" period_count="2" format="PCM_FORMAT_S16_LE" stop_threshold="-1"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD" type="in" card="sprdphone-sc2730" device="2" fe="FE_ST_CAPTURE_DSP"
+                   channels="2" rate="48000" period_size="1920" period_count="4" format="PCM_FORMAT_S16_LE" start_threshold="1920"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_FAST" type="in" card="sprdphone-sc2730" device="0" fe="FE_ST_NORMAL_AP01"
+                   channels="1" rate="48000" period_size="480" period_count="4" format="PCM_FORMAT_S16_LE"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_MMAP" type="in" card="sprdphone-sc2730" device="1" fe="FE_ST_NORMAL_AP23"
+                   channels="1" rate="48000" period_size="320" period_count="2" format="PCM_FORMAT_S16_LE" stop_threshold="-1"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_VOIP" type="in" card="sprdphone-sc2730" device="6" fe="FE_ST_VOIP"
+                   channels="1" rate="16000" period_size="480" period_count="2" format="PCM_FORMAT_S16_LE" start_threshold="960"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_VOICE_CALL" type="in" card="sprdphone-sc2730" device="9" fe="FE_ST_VOICE_C"
+                   channels="1" rate="8000" period_size="960" period_count="2" format="PCM_FORMAT_S16_LE"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_BT" type="in" card="sprdphone-sc2730" device="14" fe="FE_ST_CAPTURE_BTSCO_DSP"
+                   channels="1" rate="48000" period_size="960" period_count="2" format="PCM_FORMAT_S16_LE"/>
+        <app_scene name="AUDIO_APP_SCENE_RECORD_FM" type="in" card="sprdphone-sc2730" device="13" fe="FE_ST_CAPTURE_FM_DSP"
+                   channels="2" rate="48000" period_size="960" period_count="2" format="PCM_FORMAT_S16_LE"/>
+        <app_scene name="AUDIO_APP_SCENE_VOICE_CALL" type="out" card="sprdphone-sc2730" device="5" fe="FE_ST_VOICE"
+                   channels="1" rate="8000" period_size="160" period_count="2" format="PCM_FORMAT_S16_LE" stop_threshold="-1"/>
+        <app_scene name="AUDIO_APP_SCENE_VOICE_CALL" type="in" card="sprdphone-sc2730" device="5" fe="FE_ST_VOICE"
+                   channels="1" rate="8000" period_size="160" period_count="2" format="PCM_FORMAT_S16_LE" stop_threshold="-1"/>
+        <app_scene name="AUDIO_APP_SCENE_VOICE_RECOGNITION" type="in" card="sprdphone-sc2730" device="0" fe="FE_ST_NORMAL_AP01"
+                   channels="1" rate="48000" period_size="480" period_count="4" format="PCM_FORMAT_S16_LE"/>
+        <app_scene name="AUDIO_APP_SCENE_INCALL_MUSIC" type="out" card="sprdphone-sc2730" device="18" fe="FE_ST_VOICE_PCM_P"
+                   channels="1" rate="16000" period_size="640" period_count="2" format="PCM_FORMAT_S16_LE" start_threshold="1280"/>
+        <app_scene name="AUDIO_APP_SCENE_LOOPBACK" type="out" card="sprdphone-sc2730" device="10" fe="FE_ST_LOOP"
+                   channels="1" rate="8000" period_size="640" period_count="4" format="PCM_FORMAT_S16_LE"/>
+        <app_scene name="AUDIO_APP_SCENE_LOOPBACK" type="in" card="sprdphone-sc2730" device="10" fe="FE_ST_LOOP"
+                   channels="1" rate="8000" period_size="640" period_count="4" format="PCM_FORMAT_S16_LE"/>
+        <app_scene name="AUDIO_APP_SCENE_VBC_DUMP" type="in" card="sprdphone-sc2730" device="16" fe="FE_ST_DUMP"
+                   channels="2" rate="48000" period_size="960" period_count="2" format="PCM_FORMAT_S16_LE"/>
+    </pcm_configs>
+<!--
+    <backend_configs>
+        <device name="AUDIO_HAL_DEVICE_OUT_HANDSET" backend="handset" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_SPEAKER" backend="speaker" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_HEADSET" backend="headset" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_HEADPHONE" backend="headphone" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_USB_DEVICE" backend="usb-device" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_USB_DEVICE_HEADPHONE" backend="usb-device-headphone" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_USB_HEADSET" backend="usb-headset" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_USB_HEADPHONE" backend="usb-headphone" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_BT_SCO" backend="bt-sco" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_BT_SCO_WB" backend="bt-sco-wb" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_BT_SCO_HEADSET" backend="bt-sco-headset" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_BT_SCO_HEADSET_WB" backend="bt-sco-headset-wb" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_BT_SCO_CARKIT" backend="bt-sco-carkit" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_BT_SCO_CARKIT_WB" backend="bt-sco-carkit-wb" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_BT_A2DP" backend="bt-a2dp" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_AUX_DIGITAL" backend="aux-digital" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_TELEPHONY_TX" backend="telephony-tx" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_VOICE_HANDSET" backend="voice-handset" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_VOICE_SPEAKER" backend="voice-speaker" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_VOICE_HEADSET" backend="voice-headset" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_VOICE_HEADPHONE" backend="voice-headphone" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_VOICE_USB_DEVICE" backend="voice-usb-device" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_VOICE_USB_DEVICE_HEADPHONE" backend="voice-usb-device-headphone" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_VOICE_USB_HEADSET" backend="voice-usb-headset" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_VOICE_USB_HEADPHONE" backend="voice-usb-headphone" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_VOICE_HEARING_AID" backend="voice-hearing-aid" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_SPEAKER_AND_HEADSET" backend="speaker-and-headset" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_SPEAKER_AND_HEADPHONE" backend="speaker-and-headphone" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_SPEAKER_AND_USB_DEVICE" backend="speaker-and-usb-device" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_SPEAKER_AND_USB_HEADSET" backend="speaker-and-usb-headset" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_SPEAKER_AND_BT_SCO" backend="speaker-and-bt-sco" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_SPEAKER_AND_BT_SCO_WB" backend="speaker-and-bt-sco-wb" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_SPEAKER_AND_BT_SCO_HEADSET" backend="speaker-and-bt-sco-headset" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_SPEAKER_AND_BT_SCO_HEADSET_WB" backend="speaker-and-bt-sco-headset-wb" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_SPEAKER_AND_BT_SCO_CARKIT" backend="speaker-and-bt-sco-carkit" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_SPEAKER_AND_BT_SCO_CARKIT_WB" backend="speaker-and-bt-sco-carkit-wb" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_OUT_SPEAKER_AND_BT_A2DP" backend="speaker-and-bt-a2dp" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_PRIMARY_MIC" backend="primary-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_PRIMARY_MIC_AEC" backend="primary-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_SECOND_MIC" backend="second-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_SECOND_MIC_AEC" backend="second-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_THIRD_MIC" backend="third-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_THIRD_MIC_AEC" backend="third-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_HANDSET_MIC" backend="handset-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_HANDSET_MIC_AEC" backend="handset-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_HANDSET_DMIC" backend="handset-dual-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_HANDSET_DMIC_AEC" backend="handset-dual-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_HANDSET_TMIC" backend="handset-triple-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_HANDSET_TMIC_AEC" backend="handset-triple-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_SPEAKER_MIC" backend="speaker-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_SPEAKER_MIC_AEC" backend="speaker-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_SPEAKER_DMIC" backend="speaker-dual-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_SPEAKER_DMIC_AEC" backend="speaker-dual-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_SPEAKER_TMIC" backend="speaker-triple-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_SPEAKER_TMIC_AEC" backend="speaker-triple-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_HEADSET_MIC" backend="headset-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_HEADSET_MIC_AEC" backend="headset-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_USB_DEVICE_MIC" backend="usb-device-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_USB_DEVICE_MIC_AEC" backend="usb-device-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_USB_HEADSET_MIC" backend="usb-headset-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_USB_HEADSET_MIC_AEC" backend="usb-headset-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_BT_SCO_HEADSET_MIC" backend="bt-sco-headset-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_BT_SCO_HEADSET_MIC_WB" backend="bt-sco-headset-mic-wb" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_FM_TUNER" backend="fm-tuner" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_TELEPHONY_RX" backend="telephony-rx" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_HANDSET_MIC" backend="voice-handset-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_HANDSET_MIC_AEC" backend="voice-handset-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_HANDSET_DMIC" backend="voice-handset-dual-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_HANDSET_DMIC_AEC" backend="voice-handset-dual-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_HANDSET_TMIC" backend="voice-handset-triple-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_HANDSET_TMIC_AEC" backend="voice-handset-triple-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_SPEAKER_MIC" backend="voice-speaker-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_SPEAKER_MIC_AEC" backend="voice-speaker-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_SPEAKER_DMIC" backend="voice-speaker-dual-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_SPEAKER_DMIC_AEC" backend="voice-speaker-dual-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_SPEAKER_TMIC" backend="voice-speaker-triple-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_SPEAKER_TMIC_AEC" backend="voice-speaker-triple-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_HEADSET_MIC" backend="voice-headset-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_HEADSET_MIC_AEC" backend="voice-headset-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_USB_DEVICE_MIC" backend="voice-usb-device-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_USB_DEVICE_MIC_AEC" backend="voice-usb-device-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_USB_HEADSET_MIC" backend="voice-usb-headset-mic" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_USB_HEADSET_MIC_AEC" backend="voice-usb-headset-mic-aec" interface=""/>
+        <device name="AUDIO_HAL_DEVICE_IN_VOICE_RECOGNITION_PROXY" backend="voice-recognition-proxy" interface=""/>
+    </backend_configs>
+-->
+    <microphone_characteristics>
+        <microphone device_id="main_mic" type="AUDIO_DEVICE_IN_BUILTIN_MIC" address="" location="AUDIO_MICROPHONE_LOCATION_MAINBODY"
+                    group="0" index_in_the_group="0" directionality="AUDIO_MICROPHONE_DIRECTIONALITY_OMNI" num_frequency_responses="18"
+                    frequencies="200 400 600 800 1000 1200 1500 1800 2000 3000 4000 8000 10000 120000 140000 160000 180000 200000"
+                    responses="0.1 0.3 0.5 0.8 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 0.8 0.6 0.6 0.4 0.4"
+                    sensitivity="0.0" max_spl="1.0" min_spl="0.0" orientation="0.0 0.0 0.0" geometric_location="0.0 0.0 0.0"/>
+        <microphone device_id="aux_mic" type="AUDIO_DEVICE_IN_BACK_MIC" address="" location="AUDIO_MICROPHONE_LOCATION_MAINBODY"
+                    group="0" index_in_the_group="0" directionality="AUDIO_MICROPHONE_DIRECTIONALITY_OMNI" num_frequency_responses="18"
+                    frequencies="200 400 600 800 1000 1200 1500 1800 2000 3000 4000 8000 10000 120000 140000 160000 180000 200000"
+                    responses="0.1 0.3 0.5 0.8 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 0.8 0.6 0.6 0.4 0.4"
+                    sensitivity="0.0" max_spl="1.0" min_spl="0.0" orientation="0.0 0.0 0.0" geometric_location="0.0 0.0 0.0"/>
+        <microphone device_id="headset_mic" type="AUDIO_DEVICE_IN_WIRED_HEADSET" address="" location="AUDIO_MICROPHONE_LOCATION_MAINBODY"
+                    group="0" index_in_the_group="0" directionality="AUDIO_MICROPHONE_DIRECTIONALITY_OMNI" num_frequency_responses="18"
+                    frequencies="200 400 600 800 1000 1200 1500 1800 2000 3000 4000 8000 10000 120000 140000 160000 180000 200000"
+                    responses="0.1 0.3 0.5 0.8 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 0.8 0.6 0.6 0.4 0.4"
+                    sensitivity="0.0" max_spl="1.0" min_spl="0.0" orientation="0.0 0.0 0.0" geometric_location="0.0 0.0 0.0"/>
+        <microphone device_id="bt_sco_headset_mic" type="AUDIO_DEVICE_IN_BLUETOOTH_SCO_HEADSET" address="bt_sco_headset_mic" location="AUDIO_MICROPHONE_LOCATION_MAINBODY"
+                    group="0" index_in_the_group="0" directionality="AUDIO_MICROPHONE_DIRECTIONALITY_OMNI" num_frequency_responses="12"
+                    frequencies="200 400 600 800 1000 1200 1500 1800 2000 3000 4000 8000"
+                    responses="0.1 0.3 0.5 0.8 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0"
+                    sensitivity="0.0" max_spl="1.0" min_spl="0.0" orientation="0.0 0.0 0.0" geometric_location="0.0 0.0 0.0"/>
+        <microphone device_id="voice_mic" type="AUDIO_DEVICE_IN_VOICE_CALL" address="voice_mic" location="AUDIO_MICROPHONE_LOCATION_MAINBODY"
+                    group="0" index_in_the_group="0" directionality="AUDIO_MICROPHONE_DIRECTIONALITY_OMNI" num_frequency_responses="12"
+                    frequencies="200 400 600 800 1000 1200 1500 1800 2000 3000 4000 8000"
+                    responses="0.1 0.3 0.5 0.8 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0"
+                    sensitivity="0.0" max_spl="1.0" min_spl="0.0" orientation="0.0 0.0 0.0" geometric_location="0.0 0.0 0.0"/>
+    </microphone_characteristics>
+</audio_platform_config>

@@ -1,0 +1,91 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Xiaomi_Async_video",
+    "stream": "async_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "FaceDetectSDKNode",
+            "vendor": "SPRD",
+            "id": "async_FaceDetect"
+        },
+        {
+            "type": "GestureNode",
+            "vendor": "SPRD",
+            "id": "async_Gesture"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode1","SourceNode2","SourceNode3"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_Gesture",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_Gesture",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_Gesture",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_Gesture",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_Gesture",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_FaceDetect",
+                "port": "in0"
+            }
+        }
+    ]
+}

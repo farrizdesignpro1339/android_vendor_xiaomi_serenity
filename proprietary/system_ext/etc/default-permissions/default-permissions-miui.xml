@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<exceptions>
+    <exception
+        package="com.android.incallui"
+        sha256-cert-digest="E4:43:14:22:E2:5A:E6:1F:A3:65:5E:9F:90:8A:9B:40:DA:2A:CD:67:FA:B9:9B:73:70:27:C2:1F:D2:2B:7D:40">
+        <permission name="android.permission.POST_NOTIFICATIONS" fixed="false"/>
+        <permission name="android.permission.READ_CONTACTS" fixed="false"/>
+    </exception>
+</exceptions>

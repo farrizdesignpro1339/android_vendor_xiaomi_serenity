@@ -1,0 +1,36 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "session": {
+        "name": "Session_Xiaomi_Rear_Auto_Video",
+        "usecase": {
+            "facing": "rear",
+            "stream_list": [
+                {
+                    "dir": "output",
+                    "max_width": 1920,
+                    "max_height": 1080,
+                    "formats": [ "NV12" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 1920,
+                    "max_height": 1080,
+                    "formats": [ "NV12_VIDEO" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 1920,
+                    "max_height": 1080,
+                    "formats": [ "JPEG" ]
+                }
+            ]
+        },
+        "pipeline": [
+            "Pipeline_Xiaomi_Rear_Auto_Preview_Video",
+            "Pipeline_Xiaomi_Async",
+            "Pipeline_Xiaomi_Rear_Auto_Video",
+            "Pipeline_Xiaomi_Capture_Video"
+        ]
+    }
+}

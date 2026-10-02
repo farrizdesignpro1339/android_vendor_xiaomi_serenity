@@ -1,0 +1,1450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root name="MFNR6L"> 
+  <BlockInfo> 
+    <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">29957</Parameter>  
+    <Parameter index="" name="version" des="description" level="1" range="[0,255]" type="int">6</Parameter>  
+    <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>  
+    <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">2501031740</Parameter>  
+    <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="triggersize" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="datasize" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">3264</Parameter>  
+    <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">2448</Parameter>  
+    <Parameter index="" name="BlockControl" des="description" level="1" range="[0,32767]" type="int">0x0022</Parameter>  
+    <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter> 
+  </BlockInfo>  
+  <Triggers name="MFNR6L" select_way="0" trigger_enable="1" group_num="12" des="description"> 
+    <Trigger start="1.0" end="2.0" para="total_gain" interp_type="0x2" name="region0">0</Trigger>  
+    <Trigger start="2.0" end="4.0" para="total_gain" interp_type="0x2" name="region1">1</Trigger>  
+    <Trigger start="4.0" end="8.0" para="total_gain" interp_type="0x2" name="region2">2</Trigger>  
+    <Trigger start="8.0" end="11.0" para="total_gain" interp_type="0x2" name="region3">3</Trigger>  
+    <Trigger start="11.0" end="16.0" para="total_gain" interp_type="0x2" name="region4">4</Trigger>  
+    <Trigger start="16.0" end="24.0" para="total_gain" interp_type="0x2" name="region5">5</Trigger>  
+    <Trigger start="24.0" end="32.0" para="total_gain" interp_type="0x2" name="region6">6</Trigger>  
+    <Trigger start="32.0" end="48.0" para="total_gain" interp_type="0x2" name="region7">7</Trigger>  
+    <Trigger start="48.0" end="64.0" para="total_gain" interp_type="0x2" name="region8">8</Trigger>  
+    <Trigger start="64.0" end="96.0" para="total_gain" interp_type="0x2" name="region9">9</Trigger>  
+    <Trigger start="96.0" end="160.0" para="total_gain" interp_type="0x2" name="region10">10</Trigger>  
+    <Trigger start="160.0" end="257.0" para="total_gain" interp_type="0x2" name="region11">11</Trigger> 
+  </Triggers>  
+  <Parameters name="MFNR6L" group_num="12"> 
+    <Parameter index="0" name="region0" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="Bypass" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1" seq="0">1</Parameter> 
+      </Parameter>  
+      <Parameter name="Multi_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ratio_resolution" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1" seq="1">200</Parameter>  
+        <Parameter name="weight_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="2">0.00004</Parameter>  
+        <Parameter name="weight_sigma_uv" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="3">0.0001</Parameter>  
+        <Parameter name="lens_multi_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="4">0.003</Parameter>  
+        <Parameter name="lens_multi_denoise_uv_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="5">0.003</Parameter>  
+        <Parameter name="keep_refidx0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="6">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Single_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="py_denoise_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="7">0</Parameter>  
+        <Parameter name="flat_py_enable0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="8">0</Parameter>  
+        <Parameter name="flat_py_enable1" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="9">0</Parameter>  
+        <Parameter name="flat_py_enable2" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="10">0</Parameter>  
+        <Parameter name="moving_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="11">0.50</Parameter>  
+        <Parameter name="moving_deghost_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="12">1</Parameter>  
+        <Parameter name="py_sigma0" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="13">0</Parameter>  
+        <Parameter name="py_sigma1" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="14">0</Parameter>  
+        <Parameter name="py_sigma2" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="15">0</Parameter>  
+        <Parameter name="flat_py_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="16">0</Parameter>  
+        <Parameter name="flat_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="17">0</Parameter>  
+        <Parameter name="py_lens_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="18">0</Parameter>  
+        <Parameter name="lens_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="19">0</Parameter>  
+        <Parameter name="face_denoise_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="20">0</Parameter>  
+        <Parameter name="layer0_clip_lap_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="21">0.02</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_CNR" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="cnr_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" seq="22">0</Parameter>  
+        <Parameter name="layer0_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="23">0</Parameter>  
+        <Parameter name="layer1_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="24">0</Parameter>  
+        <Parameter name="layer2_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="25">1</Parameter>  
+        <Parameter name="layer3_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="26">1</Parameter>  
+        <Parameter name="layer4_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="27">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Control" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ee_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" seq="28">0</Parameter>  
+        <Parameter name="layer1_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="57">1</Parameter>  
+        <Parameter name="layer2_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="65">1</Parameter>  
+        <Parameter name="moving_ee_reduce_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="73">128</Parameter>  
+        <Parameter name="edge_filter_radius" des="description" level="1" range="[0,5]" type="int" reserve="0x0007" length="1" seq="74">2</Parameter>  
+        <Parameter name="edge_filter_sigma_r" des="description" level="1" range="[0,1]" type="float" reserve="0x0030" length="1" seq="75">0.03</Parameter>  
+        <Parameter name="flat_filter_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="76">0</Parameter>  
+        <Parameter name="normal_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="77">0.00</Parameter>  
+        <Parameter name="face_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="78">1.00</Parameter>  
+        <Parameter name="portrait_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="79">1.00</Parameter>  
+        <Parameter name="use_portrait_mask" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="80">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Layer0" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="laplace_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="51">128</Parameter>  
+        <Parameter name="laplace_exponent" des="description" level="1" range="[1,2]" type="float" reserve="0x0007" length="1" seq="52">1.5</Parameter>  
+        <Parameter name="laplace_reduction" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="53">0.6</Parameter>  
+        <Parameter name="grad_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="54">1</Parameter>  
+        <Parameter name="grad_clip_down" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="55">255</Parameter>  
+        <Parameter name="y_offset_weight" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="56">4</Parameter>  
+        <Parameter name="layer0_ee_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="81">0.5</Parameter>  
+        <Parameter name="layer0_ee_lens_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="82">1.00</Parameter>  
+        <Parameter name="layer0_ee_flat_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="83">1.00</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Threshold" type="table"> 
+        <Parameter name="t0" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="29">20</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="33">20</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="37">1</Parameter> 
+        </Parameter>  
+        <Parameter name="t1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="30">84</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="34">52</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="38">5</Parameter> 
+        </Parameter>  
+        <Parameter name="t2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="31">130</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="35">60</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="39">6</Parameter> 
+        </Parameter>  
+        <Parameter name="t3" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="32">194</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="36">124</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="40">14</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="layer0_ee_lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="44">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="45">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="46">20</Parameter>  
+      <Parameter name="layer0_ee_freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="47">24</Parameter>  
+      <Parameter name="layer0_ee_freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="48">32</Parameter>  
+      <Parameter name="layer0_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="49">24</Parameter>  
+      <Parameter name="layer0_ee_lens_map_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="50">0</Parameter>  
+      <Parameter name="layer0_ee_offset_r0" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="41">48</Parameter>  
+      <Parameter name="layer0_ee_offset_r1" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="42">64</Parameter>  
+      <Parameter name="layer0_ee_offset_r2" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="43">48</Parameter>  
+      <Parameter name="Post_EE_Ratio" type="table"> 
+        <Parameter name="Layer1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="58">6</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="59">12</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="60">4</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="61">6</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="62">16</Parameter>  
+          <Parameter name="freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="63">4</Parameter>  
+          <Parameter name="lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="64">1</Parameter> 
+        </Parameter>  
+        <Parameter name="Layer2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="66">4</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="67">4</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="68">4</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="69">5</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="70">12</Parameter>  
+          <Parameter name="layer2_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="71">4</Parameter>  
+          <Parameter name="layer2_ee_lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="72">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="reserved1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="84">0</Parameter>  
+      <Parameter name="reserved2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="85">0</Parameter>  
+      <Parameter name="reserved9" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="86">0</Parameter>  
+      <Parameter name="reserved10" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="87">0</Parameter> 
+    </Parameter>  
+    <Parameter index="1" name="region1" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="Bypass" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1" seq="0">1</Parameter> 
+      </Parameter>  
+      <Parameter name="Multi_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ratio_resolution" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1" seq="1">200</Parameter>  
+        <Parameter name="weight_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="2">0.0002</Parameter>  
+        <Parameter name="weight_sigma_uv" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="3">0.0001</Parameter>  
+        <Parameter name="lens_multi_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="4">0.003</Parameter>  
+        <Parameter name="lens_multi_denoise_uv_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="5">0.003</Parameter>  
+        <Parameter name="keep_refidx0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="6">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Single_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="py_denoise_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="7">0</Parameter>  
+        <Parameter name="flat_py_enable0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="8">0</Parameter>  
+        <Parameter name="flat_py_enable1" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="9">0</Parameter>  
+        <Parameter name="flat_py_enable2" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="10">0</Parameter>  
+        <Parameter name="moving_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="11">0.50</Parameter>  
+        <Parameter name="moving_deghost_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="12">1</Parameter>  
+        <Parameter name="py_sigma0" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="13">0</Parameter>  
+        <Parameter name="py_sigma1" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="14">0</Parameter>  
+        <Parameter name="py_sigma2" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="15">0</Parameter>  
+        <Parameter name="flat_py_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="16">0</Parameter>  
+        <Parameter name="flat_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="17">0</Parameter>  
+        <Parameter name="py_lens_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="18">0</Parameter>  
+        <Parameter name="lens_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="19">0</Parameter>  
+        <Parameter name="face_denoise_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="20">0</Parameter>  
+        <Parameter name="layer0_clip_lap_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="21">0.02</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_CNR" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="cnr_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" seq="22">0</Parameter>  
+        <Parameter name="layer0_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="23">0</Parameter>  
+        <Parameter name="layer1_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="24">0</Parameter>  
+        <Parameter name="layer2_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="25">1</Parameter>  
+        <Parameter name="layer3_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="26">1</Parameter>  
+        <Parameter name="layer4_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="27">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Control" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ee_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" seq="28">1</Parameter>  
+        <Parameter name="layer1_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="57">1</Parameter>  
+        <Parameter name="layer2_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="65">0</Parameter>  
+        <Parameter name="moving_ee_reduce_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="73">128</Parameter>  
+        <Parameter name="edge_filter_radius" des="description" level="1" range="[0,5]" type="int" reserve="0x0007" length="1" seq="74">2</Parameter>  
+        <Parameter name="edge_filter_sigma_r" des="description" level="1" range="[0,1]" type="float" reserve="0x0030" length="1" seq="75">0.03</Parameter>  
+        <Parameter name="flat_filter_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="76">0</Parameter>  
+        <Parameter name="normal_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="77">0.00</Parameter>  
+        <Parameter name="face_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="78">1.00</Parameter>  
+        <Parameter name="portrait_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="79">1.00</Parameter>  
+        <Parameter name="use_portrait_mask" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="80">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Layer0" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="laplace_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="51">128</Parameter>  
+        <Parameter name="laplace_exponent" des="description" level="1" range="[1,2]" type="float" reserve="0x0007" length="1" seq="52">1.5</Parameter>  
+        <Parameter name="laplace_reduction" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="53">0.6</Parameter>  
+        <Parameter name="grad_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="54">1</Parameter>  
+        <Parameter name="grad_clip_down" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="55">255</Parameter>  
+        <Parameter name="y_offset_weight" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="56">4</Parameter>  
+        <Parameter name="layer0_ee_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="81">0.5</Parameter>  
+        <Parameter name="layer0_ee_lens_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="82">1.00</Parameter>  
+        <Parameter name="layer0_ee_flat_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="83">1.00</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Threshold" type="table"> 
+        <Parameter name="t0" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="29">20</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="33">20</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="37">1</Parameter> 
+        </Parameter>  
+        <Parameter name="t1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="30">84</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="34">52</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="38">5</Parameter> 
+        </Parameter>  
+        <Parameter name="t2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="31">130</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="35">60</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="39">6</Parameter> 
+        </Parameter>  
+        <Parameter name="t3" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="32">194</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="36">124</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="40">14</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="layer0_ee_lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="44">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="45">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="46">20</Parameter>  
+      <Parameter name="layer0_ee_freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="47">24</Parameter>  
+      <Parameter name="layer0_ee_freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="48">32</Parameter>  
+      <Parameter name="layer0_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="49">24</Parameter>  
+      <Parameter name="layer0_ee_lens_map_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="50">0</Parameter>  
+      <Parameter name="layer0_ee_offset_r0" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="41">48</Parameter>  
+      <Parameter name="layer0_ee_offset_r1" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="42">64</Parameter>  
+      <Parameter name="layer0_ee_offset_r2" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="43">48</Parameter>  
+      <Parameter name="Post_EE_Ratio" type="table"> 
+        <Parameter name="Layer1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="58">6</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="59">12</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="60">6</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="61">6</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="62">16</Parameter>  
+          <Parameter name="freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="63">8</Parameter>  
+          <Parameter name="lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="64">1</Parameter> 
+        </Parameter>  
+        <Parameter name="Layer2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="66">4</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="67">4</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="68">6</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="69">4</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="70">12</Parameter>  
+          <Parameter name="layer2_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="71">4</Parameter>  
+          <Parameter name="layer2_ee_lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="72">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="reserved1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="84">0</Parameter>  
+      <Parameter name="reserved2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="85">0</Parameter>  
+      <Parameter name="reserved9" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="86">0</Parameter>  
+      <Parameter name="reserved10" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="87">0</Parameter> 
+    </Parameter>  
+    <Parameter index="2" name="region2" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="Bypass" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1" seq="0">1</Parameter> 
+      </Parameter>  
+      <Parameter name="Multi_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ratio_resolution" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1" seq="1">200</Parameter>  
+        <Parameter name="weight_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="2">0.001</Parameter>  
+        <Parameter name="weight_sigma_uv" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="3">0.001</Parameter>  
+        <Parameter name="lens_multi_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="4">0</Parameter>  
+        <Parameter name="lens_multi_denoise_uv_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="5">0.00</Parameter>  
+        <Parameter name="keep_refidx0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="6">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Single_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="py_denoise_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="7">1</Parameter>  
+        <Parameter name="flat_py_enable0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="8">1</Parameter>  
+        <Parameter name="flat_py_enable1" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="9">0</Parameter>  
+        <Parameter name="flat_py_enable2" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="10">0</Parameter>  
+        <Parameter name="moving_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="11">0.50</Parameter>  
+        <Parameter name="moving_deghost_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="12">1</Parameter>  
+        <Parameter name="py_sigma0" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="13">0.003</Parameter>  
+        <Parameter name="py_sigma1" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="14">0.003</Parameter>  
+        <Parameter name="py_sigma2" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="15">0.001</Parameter>  
+        <Parameter name="flat_py_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="16">0.5</Parameter>  
+        <Parameter name="flat_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="17">0</Parameter>  
+        <Parameter name="py_lens_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="18">0</Parameter>  
+        <Parameter name="lens_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="19">0</Parameter>  
+        <Parameter name="face_denoise_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="20">0</Parameter>  
+        <Parameter name="layer0_clip_lap_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="21">0.02</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_CNR" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="cnr_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" seq="22">0</Parameter>  
+        <Parameter name="layer0_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="23">0</Parameter>  
+        <Parameter name="layer1_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="24">0</Parameter>  
+        <Parameter name="layer2_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="25">1</Parameter>  
+        <Parameter name="layer3_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="26">1</Parameter>  
+        <Parameter name="layer4_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="27">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Control" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ee_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" seq="28">1</Parameter>  
+        <Parameter name="layer1_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="57">1</Parameter>  
+        <Parameter name="layer2_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="65">0</Parameter>  
+        <Parameter name="moving_ee_reduce_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="73">128</Parameter>  
+        <Parameter name="edge_filter_radius" des="description" level="1" range="[0,5]" type="int" reserve="0x0007" length="1" seq="74">2</Parameter>  
+        <Parameter name="edge_filter_sigma_r" des="description" level="1" range="[0,1]" type="float" reserve="0x0030" length="1" seq="75">0.03</Parameter>  
+        <Parameter name="flat_filter_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="76">0</Parameter>  
+        <Parameter name="normal_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="77">0.0</Parameter>  
+        <Parameter name="face_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="78">0.0</Parameter>  
+        <Parameter name="portrait_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="79">1.00</Parameter>  
+        <Parameter name="use_portrait_mask" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="80">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Layer0" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="laplace_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="51">128</Parameter>  
+        <Parameter name="laplace_exponent" des="description" level="1" range="[1,2]" type="float" reserve="0x0007" length="1" seq="52">1.5</Parameter>  
+        <Parameter name="laplace_reduction" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="53">0.6</Parameter>  
+        <Parameter name="grad_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="54">1</Parameter>  
+        <Parameter name="grad_clip_down" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="55">255</Parameter>  
+        <Parameter name="y_offset_weight" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="56">4</Parameter>  
+        <Parameter name="layer0_ee_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="81">0.5</Parameter>  
+        <Parameter name="layer0_ee_lens_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="82">0.5</Parameter>  
+        <Parameter name="layer0_ee_flat_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="83">0.2</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Threshold" type="table"> 
+        <Parameter name="t0" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="29">20</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="33">20</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="37">1</Parameter> 
+        </Parameter>  
+        <Parameter name="t1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="30">84</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="34">52</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="38">5</Parameter> 
+        </Parameter>  
+        <Parameter name="t2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="31">130</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="35">60</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="39">6</Parameter> 
+        </Parameter>  
+        <Parameter name="t3" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="32">194</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="36">124</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="40">14</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="layer0_ee_lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="44">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="45">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="46">20</Parameter>  
+      <Parameter name="layer0_ee_freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="47">24</Parameter>  
+      <Parameter name="layer0_ee_freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="48">32</Parameter>  
+      <Parameter name="layer0_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="49">24</Parameter>  
+      <Parameter name="layer0_ee_lens_map_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="50">0</Parameter>  
+      <Parameter name="layer0_ee_offset_r0" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="41">48</Parameter>  
+      <Parameter name="layer0_ee_offset_r1" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="42">64</Parameter>  
+      <Parameter name="layer0_ee_offset_r2" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="43">48</Parameter>  
+      <Parameter name="Post_EE_Ratio" type="table"> 
+        <Parameter name="Layer1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="58">6</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="59">12</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="60">16</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="61">12</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="62">16</Parameter>  
+          <Parameter name="freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="63">8</Parameter>  
+          <Parameter name="lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="64">1</Parameter> 
+        </Parameter>  
+        <Parameter name="Layer2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="66">4</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="67">4</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="68">6</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="69">8</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="70">12</Parameter>  
+          <Parameter name="layer2_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="71">4</Parameter>  
+          <Parameter name="layer2_ee_lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="72">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="reserved1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="84">0</Parameter>  
+      <Parameter name="reserved2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="85">0</Parameter>  
+      <Parameter name="reserved9" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="86">0</Parameter>  
+      <Parameter name="reserved10" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="87">0</Parameter> 
+    </Parameter>  
+    <Parameter index="3" name="region3" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="Bypass" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1" seq="0">1</Parameter> 
+      </Parameter>  
+      <Parameter name="Multi_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ratio_resolution" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1" seq="1">200</Parameter>  
+        <Parameter name="weight_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="2">0.001</Parameter>  
+        <Parameter name="weight_sigma_uv" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="3">0.001</Parameter>  
+        <Parameter name="lens_multi_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="4">0</Parameter>  
+        <Parameter name="lens_multi_denoise_uv_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="5">0.00</Parameter>  
+        <Parameter name="keep_refidx0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="6">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Single_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="py_denoise_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="7">0</Parameter>  
+        <Parameter name="flat_py_enable0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="8">0</Parameter>  
+        <Parameter name="flat_py_enable1" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="9">0</Parameter>  
+        <Parameter name="flat_py_enable2" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="10">0</Parameter>  
+        <Parameter name="moving_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="11">0.5</Parameter>  
+        <Parameter name="moving_deghost_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="12">1</Parameter>  
+        <Parameter name="py_sigma0" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="13">0.005</Parameter>  
+        <Parameter name="py_sigma1" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="14">0.002</Parameter>  
+        <Parameter name="py_sigma2" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="15">0.001</Parameter>  
+        <Parameter name="flat_py_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="16">0.5</Parameter>  
+        <Parameter name="flat_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="17">0</Parameter>  
+        <Parameter name="py_lens_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="18">0</Parameter>  
+        <Parameter name="lens_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="19">0</Parameter>  
+        <Parameter name="face_denoise_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="20">0</Parameter>  
+        <Parameter name="layer0_clip_lap_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="21">0.02</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_CNR" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="cnr_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" seq="22">0</Parameter>  
+        <Parameter name="layer0_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="23">0</Parameter>  
+        <Parameter name="layer1_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="24">0</Parameter>  
+        <Parameter name="layer2_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="25">1</Parameter>  
+        <Parameter name="layer3_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="26">1</Parameter>  
+        <Parameter name="layer4_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="27">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Control" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ee_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" seq="28">1</Parameter>  
+        <Parameter name="layer1_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="57">1</Parameter>  
+        <Parameter name="layer2_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="65">0</Parameter>  
+        <Parameter name="moving_ee_reduce_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="73">128</Parameter>  
+        <Parameter name="edge_filter_radius" des="description" level="1" range="[0,5]" type="int" reserve="0x0007" length="1" seq="74">2</Parameter>  
+        <Parameter name="edge_filter_sigma_r" des="description" level="1" range="[0,1]" type="float" reserve="0x0030" length="1" seq="75">0.03</Parameter>  
+        <Parameter name="flat_filter_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="76">0</Parameter>  
+        <Parameter name="normal_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="77">0.0</Parameter>  
+        <Parameter name="face_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="78">1.00</Parameter>  
+        <Parameter name="portrait_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="79">0.00</Parameter>  
+        <Parameter name="use_portrait_mask" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="80">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Layer0" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="laplace_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="51">128</Parameter>  
+        <Parameter name="laplace_exponent" des="description" level="1" range="[1,2]" type="float" reserve="0x0007" length="1" seq="52">1.5</Parameter>  
+        <Parameter name="laplace_reduction" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="53">0.6</Parameter>  
+        <Parameter name="grad_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="54">1</Parameter>  
+        <Parameter name="grad_clip_down" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="55">255</Parameter>  
+        <Parameter name="y_offset_weight" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="56">4</Parameter>  
+        <Parameter name="layer0_ee_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="81">0.5</Parameter>  
+        <Parameter name="layer0_ee_lens_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="82">0.5</Parameter>  
+        <Parameter name="layer0_ee_flat_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="83">0.2</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Threshold" type="table"> 
+        <Parameter name="t0" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="29">20</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="33">20</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="37">1</Parameter> 
+        </Parameter>  
+        <Parameter name="t1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="30">84</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="34">52</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="38">5</Parameter> 
+        </Parameter>  
+        <Parameter name="t2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="31">130</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="35">60</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="39">6</Parameter> 
+        </Parameter>  
+        <Parameter name="t3" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="32">194</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="36">124</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="40">14</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="layer0_ee_lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="44">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="45">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="46">20</Parameter>  
+      <Parameter name="layer0_ee_freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="47">24</Parameter>  
+      <Parameter name="layer0_ee_freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="48">32</Parameter>  
+      <Parameter name="layer0_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="49">24</Parameter>  
+      <Parameter name="layer0_ee_lens_map_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="50">0</Parameter>  
+      <Parameter name="layer0_ee_offset_r0" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="41">48</Parameter>  
+      <Parameter name="layer0_ee_offset_r1" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="42">64</Parameter>  
+      <Parameter name="layer0_ee_offset_r2" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="43">48</Parameter>  
+      <Parameter name="Post_EE_Ratio" type="table"> 
+        <Parameter name="Layer1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="58">6</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="59">12</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="60">6</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="61">6</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="62">12</Parameter>  
+          <Parameter name="freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="63">4</Parameter>  
+          <Parameter name="lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="64">1</Parameter> 
+        </Parameter>  
+        <Parameter name="Layer2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="66">4</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="67">4</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="68">0</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="69">4</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="70">4</Parameter>  
+          <Parameter name="layer2_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="71">0</Parameter>  
+          <Parameter name="layer2_ee_lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="72">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="reserved1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="84">0</Parameter>  
+      <Parameter name="reserved2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="85">0</Parameter>  
+      <Parameter name="reserved9" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="86">0</Parameter>  
+      <Parameter name="reserved10" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="87">0</Parameter> 
+    </Parameter>  
+    <Parameter index="4" name="region4" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="Bypass" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1" seq="0">1</Parameter> 
+      </Parameter>  
+      <Parameter name="Multi_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ratio_resolution" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1" seq="1">200</Parameter>  
+        <Parameter name="weight_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="2">0.001</Parameter>  
+        <Parameter name="weight_sigma_uv" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="3">0.001</Parameter>  
+        <Parameter name="lens_multi_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="4">0</Parameter>  
+        <Parameter name="lens_multi_denoise_uv_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="5">0.00</Parameter>  
+        <Parameter name="keep_refidx0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="6">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Single_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="py_denoise_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="7">0</Parameter>  
+        <Parameter name="flat_py_enable0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="8">0</Parameter>  
+        <Parameter name="flat_py_enable1" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="9">0</Parameter>  
+        <Parameter name="flat_py_enable2" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="10">0</Parameter>  
+        <Parameter name="moving_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="11">0.50</Parameter>  
+        <Parameter name="moving_deghost_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="12">1</Parameter>  
+        <Parameter name="py_sigma0" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="13">0.005</Parameter>  
+        <Parameter name="py_sigma1" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="14">0.002</Parameter>  
+        <Parameter name="py_sigma2" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="15">0.001</Parameter>  
+        <Parameter name="flat_py_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="16">0.5</Parameter>  
+        <Parameter name="flat_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="17">0</Parameter>  
+        <Parameter name="py_lens_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="18">0</Parameter>  
+        <Parameter name="lens_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="19">0</Parameter>  
+        <Parameter name="face_denoise_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="20">0</Parameter>  
+        <Parameter name="layer0_clip_lap_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="21">0.02</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_CNR" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="cnr_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" seq="22">0</Parameter>  
+        <Parameter name="layer0_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="23">0</Parameter>  
+        <Parameter name="layer1_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="24">0</Parameter>  
+        <Parameter name="layer2_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="25">1</Parameter>  
+        <Parameter name="layer3_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="26">1</Parameter>  
+        <Parameter name="layer4_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="27">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Control" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ee_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" seq="28">1</Parameter>  
+        <Parameter name="layer1_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="57">1</Parameter>  
+        <Parameter name="layer2_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="65">0</Parameter>  
+        <Parameter name="moving_ee_reduce_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="73">128</Parameter>  
+        <Parameter name="edge_filter_radius" des="description" level="1" range="[0,5]" type="int" reserve="0x0007" length="1" seq="74">2</Parameter>  
+        <Parameter name="edge_filter_sigma_r" des="description" level="1" range="[0,1]" type="float" reserve="0x0030" length="1" seq="75">0.03</Parameter>  
+        <Parameter name="flat_filter_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="76">0</Parameter>  
+        <Parameter name="normal_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="77">0.0</Parameter>  
+        <Parameter name="face_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="78">1.00</Parameter>  
+        <Parameter name="portrait_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="79">0.00</Parameter>  
+        <Parameter name="use_portrait_mask" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="80">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Layer0" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="laplace_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="51">128</Parameter>  
+        <Parameter name="laplace_exponent" des="description" level="1" range="[1,2]" type="float" reserve="0x0007" length="1" seq="52">1.5</Parameter>  
+        <Parameter name="laplace_reduction" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="53">0.6</Parameter>  
+        <Parameter name="grad_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="54">1</Parameter>  
+        <Parameter name="grad_clip_down" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="55">255</Parameter>  
+        <Parameter name="y_offset_weight" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="56">4</Parameter>  
+        <Parameter name="layer0_ee_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="81">0.5</Parameter>  
+        <Parameter name="layer0_ee_lens_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="82">0.5</Parameter>  
+        <Parameter name="layer0_ee_flat_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="83">0.2</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Threshold" type="table"> 
+        <Parameter name="t0" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="29">20</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="33">20</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="37">1</Parameter> 
+        </Parameter>  
+        <Parameter name="t1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="30">84</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="34">52</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="38">5</Parameter> 
+        </Parameter>  
+        <Parameter name="t2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="31">130</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="35">60</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="39">6</Parameter> 
+        </Parameter>  
+        <Parameter name="t3" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="32">194</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="36">124</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="40">14</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="layer0_ee_lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="44">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="45">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="46">20</Parameter>  
+      <Parameter name="layer0_ee_freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="47">24</Parameter>  
+      <Parameter name="layer0_ee_freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="48">32</Parameter>  
+      <Parameter name="layer0_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="49">24</Parameter>  
+      <Parameter name="layer0_ee_lens_map_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="50">0</Parameter>  
+      <Parameter name="layer0_ee_offset_r0" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="41">48</Parameter>  
+      <Parameter name="layer0_ee_offset_r1" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="42">64</Parameter>  
+      <Parameter name="layer0_ee_offset_r2" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="43">48</Parameter>  
+      <Parameter name="Post_EE_Ratio" type="table"> 
+        <Parameter name="Layer1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="58">6</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="59">12</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="60">6</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="61">6</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="62">12</Parameter>  
+          <Parameter name="freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="63">4</Parameter>  
+          <Parameter name="lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="64">1</Parameter> 
+        </Parameter>  
+        <Parameter name="Layer2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="66">4</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="67">4</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="68">0</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="69">4</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="70">4</Parameter>  
+          <Parameter name="layer2_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="71">0</Parameter>  
+          <Parameter name="layer2_ee_lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="72">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="reserved1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="84">0</Parameter>  
+      <Parameter name="reserved2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="85">0</Parameter>  
+      <Parameter name="reserved9" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="86">0</Parameter>  
+      <Parameter name="reserved10" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="87">0</Parameter> 
+    </Parameter>  
+    <Parameter index="5" name="region5" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="Bypass" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1" seq="0">1</Parameter> 
+      </Parameter>  
+      <Parameter name="Multi_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ratio_resolution" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1" seq="1">200</Parameter>  
+        <Parameter name="weight_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="2">0.008</Parameter>  
+        <Parameter name="weight_sigma_uv" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="3">0.003</Parameter>  
+        <Parameter name="lens_multi_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="4">0.5</Parameter>  
+        <Parameter name="lens_multi_denoise_uv_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="5">0.003</Parameter>  
+        <Parameter name="keep_refidx0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="6">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Single_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="py_denoise_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="7">1</Parameter>  
+        <Parameter name="flat_py_enable0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="8">0</Parameter>  
+        <Parameter name="flat_py_enable1" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="9">0</Parameter>  
+        <Parameter name="flat_py_enable2" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="10">0</Parameter>  
+        <Parameter name="moving_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="11">0.5</Parameter>  
+        <Parameter name="moving_deghost_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="12">1</Parameter>  
+        <Parameter name="py_sigma0" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="13">0.005</Parameter>  
+        <Parameter name="py_sigma1" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="14">0.005</Parameter>  
+        <Parameter name="py_sigma2" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="15">0.003</Parameter>  
+        <Parameter name="flat_py_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="16">0.5</Parameter>  
+        <Parameter name="flat_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="17">0.5</Parameter>  
+        <Parameter name="py_lens_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="18">0.5</Parameter>  
+        <Parameter name="lens_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="19">0.5</Parameter>  
+        <Parameter name="face_denoise_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="20">0.00</Parameter>  
+        <Parameter name="layer0_clip_lap_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="21">0.02</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_CNR" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="cnr_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" seq="22">0</Parameter>  
+        <Parameter name="layer0_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="23">0</Parameter>  
+        <Parameter name="layer1_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="24">0</Parameter>  
+        <Parameter name="layer2_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="25">1</Parameter>  
+        <Parameter name="layer3_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="26">1</Parameter>  
+        <Parameter name="layer4_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="27">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Control" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ee_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" seq="28">1</Parameter>  
+        <Parameter name="layer1_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="57">1</Parameter>  
+        <Parameter name="layer2_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="65">0</Parameter>  
+        <Parameter name="moving_ee_reduce_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="73">128</Parameter>  
+        <Parameter name="edge_filter_radius" des="description" level="1" range="[0,5]" type="int" reserve="0x0007" length="1" seq="74">2</Parameter>  
+        <Parameter name="edge_filter_sigma_r" des="description" level="1" range="[0,1]" type="float" reserve="0x0030" length="1" seq="75">0.03</Parameter>  
+        <Parameter name="flat_filter_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="76">0</Parameter>  
+        <Parameter name="normal_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="77">0.00</Parameter>  
+        <Parameter name="face_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="78">0.7</Parameter>  
+        <Parameter name="portrait_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="79">0.00</Parameter>  
+        <Parameter name="use_portrait_mask" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="80">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Layer0" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="laplace_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="51">128</Parameter>  
+        <Parameter name="laplace_exponent" des="description" level="1" range="[1,2]" type="float" reserve="0x0007" length="1" seq="52">1.5</Parameter>  
+        <Parameter name="laplace_reduction" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="53">0.6</Parameter>  
+        <Parameter name="grad_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="54">1</Parameter>  
+        <Parameter name="grad_clip_down" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="55">255</Parameter>  
+        <Parameter name="y_offset_weight" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="56">4</Parameter>  
+        <Parameter name="layer0_ee_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="81">1.00</Parameter>  
+        <Parameter name="layer0_ee_lens_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="82">0.00</Parameter>  
+        <Parameter name="layer0_ee_flat_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="83">0.2</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Threshold" type="table"> 
+        <Parameter name="t0" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="29">20</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="33">20</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="37">1</Parameter> 
+        </Parameter>  
+        <Parameter name="t1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="30">84</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="34">52</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="38">5</Parameter> 
+        </Parameter>  
+        <Parameter name="t2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="31">130</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="35">60</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="39">6</Parameter> 
+        </Parameter>  
+        <Parameter name="t3" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="32">194</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="36">124</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="40">14</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="layer0_ee_lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="44">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="45">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="46">20</Parameter>  
+      <Parameter name="layer0_ee_freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="47">24</Parameter>  
+      <Parameter name="layer0_ee_freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="48">32</Parameter>  
+      <Parameter name="layer0_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="49">24</Parameter>  
+      <Parameter name="layer0_ee_lens_map_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="50">0</Parameter>  
+      <Parameter name="layer0_ee_offset_r0" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="41">48</Parameter>  
+      <Parameter name="layer0_ee_offset_r1" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="42">64</Parameter>  
+      <Parameter name="layer0_ee_offset_r2" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="43">48</Parameter>  
+      <Parameter name="Post_EE_Ratio" type="table"> 
+        <Parameter name="Layer1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="58">6</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="59">12</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="60">16</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="61">12</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="62">16</Parameter>  
+          <Parameter name="freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="63">8</Parameter>  
+          <Parameter name="lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="64">1</Parameter> 
+        </Parameter>  
+        <Parameter name="Layer2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="66">4</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="67">4</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="68">6</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="69">8</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="70">12</Parameter>  
+          <Parameter name="layer2_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="71">4</Parameter>  
+          <Parameter name="layer2_ee_lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="72">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="reserved1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="84">0</Parameter>  
+      <Parameter name="reserved2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="85">0</Parameter>  
+      <Parameter name="reserved9" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="86">0</Parameter>  
+      <Parameter name="reserved10" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="87">0</Parameter> 
+    </Parameter>  
+    <Parameter index="6" name="region6" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="Bypass" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1" seq="0">1</Parameter> 
+      </Parameter>  
+      <Parameter name="Multi_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ratio_resolution" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1" seq="1">200</Parameter>  
+        <Parameter name="weight_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="2">0.008</Parameter>  
+        <Parameter name="weight_sigma_uv" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="3">0.003</Parameter>  
+        <Parameter name="lens_multi_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="4">0.003</Parameter>  
+        <Parameter name="lens_multi_denoise_uv_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="5">0.003</Parameter>  
+        <Parameter name="keep_refidx0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="6">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Single_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="py_denoise_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="7">1</Parameter>  
+        <Parameter name="flat_py_enable0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="8">1</Parameter>  
+        <Parameter name="flat_py_enable1" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="9">1</Parameter>  
+        <Parameter name="flat_py_enable2" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="10">1</Parameter>  
+        <Parameter name="moving_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="11">0.5</Parameter>  
+        <Parameter name="moving_deghost_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="12">1</Parameter>  
+        <Parameter name="py_sigma0" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="13">0.015</Parameter>  
+        <Parameter name="py_sigma1" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="14">0.005</Parameter>  
+        <Parameter name="py_sigma2" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="15">0.003</Parameter>  
+        <Parameter name="flat_py_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="16">0.5</Parameter>  
+        <Parameter name="flat_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="17">0.5</Parameter>  
+        <Parameter name="py_lens_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="18">0.5</Parameter>  
+        <Parameter name="lens_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="19">0.5</Parameter>  
+        <Parameter name="face_denoise_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="20">0</Parameter>  
+        <Parameter name="layer0_clip_lap_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="21">0.02</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_CNR" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="cnr_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" seq="22">0</Parameter>  
+        <Parameter name="layer0_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="23">0</Parameter>  
+        <Parameter name="layer1_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="24">0</Parameter>  
+        <Parameter name="layer2_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="25">1</Parameter>  
+        <Parameter name="layer3_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="26">1</Parameter>  
+        <Parameter name="layer4_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="27">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Control" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ee_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" seq="28">1</Parameter>  
+        <Parameter name="layer1_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="57">1</Parameter>  
+        <Parameter name="layer2_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="65">0</Parameter>  
+        <Parameter name="moving_ee_reduce_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="73">128</Parameter>  
+        <Parameter name="edge_filter_radius" des="description" level="1" range="[0,5]" type="int" reserve="0x0007" length="1" seq="74">2</Parameter>  
+        <Parameter name="edge_filter_sigma_r" des="description" level="1" range="[0,1]" type="float" reserve="0x0030" length="1" seq="75">0.03</Parameter>  
+        <Parameter name="flat_filter_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="76">0</Parameter>  
+        <Parameter name="normal_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="77">0.00</Parameter>  
+        <Parameter name="face_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="78">0.7</Parameter>  
+        <Parameter name="portrait_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="79">0.00</Parameter>  
+        <Parameter name="use_portrait_mask" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="80">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Layer0" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="laplace_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="51">128</Parameter>  
+        <Parameter name="laplace_exponent" des="description" level="1" range="[1,2]" type="float" reserve="0x0007" length="1" seq="52">1.5</Parameter>  
+        <Parameter name="laplace_reduction" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="53">0.6</Parameter>  
+        <Parameter name="grad_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="54">1</Parameter>  
+        <Parameter name="grad_clip_down" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="55">255</Parameter>  
+        <Parameter name="y_offset_weight" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="56">4</Parameter>  
+        <Parameter name="layer0_ee_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="81">1.00</Parameter>  
+        <Parameter name="layer0_ee_lens_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="82">1.00</Parameter>  
+        <Parameter name="layer0_ee_flat_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="83">0.2</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Threshold" type="table"> 
+        <Parameter name="t0" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="29">20</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="33">20</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="37">1</Parameter> 
+        </Parameter>  
+        <Parameter name="t1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="30">84</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="34">52</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="38">5</Parameter> 
+        </Parameter>  
+        <Parameter name="t2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="31">130</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="35">60</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="39">6</Parameter> 
+        </Parameter>  
+        <Parameter name="t3" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="32">194</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="36">124</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="40">14</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="layer0_ee_lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="44">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="45">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="46">20</Parameter>  
+      <Parameter name="layer0_ee_freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="47">24</Parameter>  
+      <Parameter name="layer0_ee_freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="48">32</Parameter>  
+      <Parameter name="layer0_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="49">24</Parameter>  
+      <Parameter name="layer0_ee_lens_map_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="50">0</Parameter>  
+      <Parameter name="layer0_ee_offset_r0" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="41">48</Parameter>  
+      <Parameter name="layer0_ee_offset_r1" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="42">64</Parameter>  
+      <Parameter name="layer0_ee_offset_r2" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="43">48</Parameter>  
+      <Parameter name="Post_EE_Ratio" type="table"> 
+        <Parameter name="Layer1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="58">6</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="59">12</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="60">16</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="61">12</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="62">16</Parameter>  
+          <Parameter name="freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="63">8</Parameter>  
+          <Parameter name="lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="64">1</Parameter> 
+        </Parameter>  
+        <Parameter name="Layer2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="66">4</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="67">4</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="68">6</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="69">8</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="70">12</Parameter>  
+          <Parameter name="layer2_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="71">4</Parameter>  
+          <Parameter name="layer2_ee_lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="72">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="reserved1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="84">0</Parameter>  
+      <Parameter name="reserved2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="85">0</Parameter>  
+      <Parameter name="reserved9" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="86">0</Parameter>  
+      <Parameter name="reserved10" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="87">0</Parameter> 
+    </Parameter>  
+    <Parameter index="7" name="region7" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="Bypass" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1" seq="0">1</Parameter> 
+      </Parameter>  
+      <Parameter name="Multi_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ratio_resolution" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1" seq="1">200</Parameter>  
+        <Parameter name="weight_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="2">0.008</Parameter>  
+        <Parameter name="weight_sigma_uv" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="3">0.003</Parameter>  
+        <Parameter name="lens_multi_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="4">1.00</Parameter>  
+        <Parameter name="lens_multi_denoise_uv_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="5">0.5</Parameter>  
+        <Parameter name="keep_refidx0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="6">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Single_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="py_denoise_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="7">1</Parameter>  
+        <Parameter name="flat_py_enable0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="8">0</Parameter>  
+        <Parameter name="flat_py_enable1" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="9">0</Parameter>  
+        <Parameter name="flat_py_enable2" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="10">0</Parameter>  
+        <Parameter name="moving_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="11">0.5</Parameter>  
+        <Parameter name="moving_deghost_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="12">1</Parameter>  
+        <Parameter name="py_sigma0" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="13">0.015</Parameter>  
+        <Parameter name="py_sigma1" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="14">0.005</Parameter>  
+        <Parameter name="py_sigma2" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="15">0.003</Parameter>  
+        <Parameter name="flat_py_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="16">0.5</Parameter>  
+        <Parameter name="flat_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="17">0.5</Parameter>  
+        <Parameter name="py_lens_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="18">1.00</Parameter>  
+        <Parameter name="lens_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="19">1.00</Parameter>  
+        <Parameter name="face_denoise_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="20">0.00</Parameter>  
+        <Parameter name="layer0_clip_lap_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="21">0.02</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_CNR" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="cnr_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" seq="22">0</Parameter>  
+        <Parameter name="layer0_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="23">0</Parameter>  
+        <Parameter name="layer1_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="24">0</Parameter>  
+        <Parameter name="layer2_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="25">1</Parameter>  
+        <Parameter name="layer3_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="26">1</Parameter>  
+        <Parameter name="layer4_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="27">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Control" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ee_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" seq="28">1</Parameter>  
+        <Parameter name="layer1_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="57">1</Parameter>  
+        <Parameter name="layer2_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="65">0</Parameter>  
+        <Parameter name="moving_ee_reduce_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="73">128</Parameter>  
+        <Parameter name="edge_filter_radius" des="description" level="1" range="[0,5]" type="int" reserve="0x0007" length="1" seq="74">2</Parameter>  
+        <Parameter name="edge_filter_sigma_r" des="description" level="1" range="[0,1]" type="float" reserve="0x0030" length="1" seq="75">0.03</Parameter>  
+        <Parameter name="flat_filter_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="76">0</Parameter>  
+        <Parameter name="normal_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="77">0.00</Parameter>  
+        <Parameter name="face_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="78">0.7</Parameter>  
+        <Parameter name="portrait_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="79">0.00</Parameter>  
+        <Parameter name="use_portrait_mask" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="80">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Layer0" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="laplace_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="51">128</Parameter>  
+        <Parameter name="laplace_exponent" des="description" level="1" range="[1,2]" type="float" reserve="0x0007" length="1" seq="52">1.5</Parameter>  
+        <Parameter name="laplace_reduction" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="53">0.6</Parameter>  
+        <Parameter name="grad_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="54">1</Parameter>  
+        <Parameter name="grad_clip_down" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="55">255</Parameter>  
+        <Parameter name="y_offset_weight" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="56">4</Parameter>  
+        <Parameter name="layer0_ee_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="81">1.00</Parameter>  
+        <Parameter name="layer0_ee_lens_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="82">0.00</Parameter>  
+        <Parameter name="layer0_ee_flat_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="83">0.2</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Threshold" type="table"> 
+        <Parameter name="t0" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="29">20</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="33">20</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="37">1</Parameter> 
+        </Parameter>  
+        <Parameter name="t1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="30">84</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="34">52</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="38">5</Parameter> 
+        </Parameter>  
+        <Parameter name="t2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="31">130</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="35">60</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="39">6</Parameter> 
+        </Parameter>  
+        <Parameter name="t3" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="32">194</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="36">124</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="40">14</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="layer0_ee_lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="44">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="45">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="46">20</Parameter>  
+      <Parameter name="layer0_ee_freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="47">24</Parameter>  
+      <Parameter name="layer0_ee_freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="48">32</Parameter>  
+      <Parameter name="layer0_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="49">24</Parameter>  
+      <Parameter name="layer0_ee_lens_map_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="50">0</Parameter>  
+      <Parameter name="layer0_ee_offset_r0" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="41">48</Parameter>  
+      <Parameter name="layer0_ee_offset_r1" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="42">64</Parameter>  
+      <Parameter name="layer0_ee_offset_r2" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="43">48</Parameter>  
+      <Parameter name="Post_EE_Ratio" type="table"> 
+        <Parameter name="Layer1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="58">6</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="59">12</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="60">16</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="61">12</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="62">16</Parameter>  
+          <Parameter name="freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="63">8</Parameter>  
+          <Parameter name="lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="64">1</Parameter> 
+        </Parameter>  
+        <Parameter name="Layer2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="66">4</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="67">4</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="68">6</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="69">8</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="70">12</Parameter>  
+          <Parameter name="layer2_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="71">4</Parameter>  
+          <Parameter name="layer2_ee_lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="72">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="reserved1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="84">0</Parameter>  
+      <Parameter name="reserved2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="85">0</Parameter>  
+      <Parameter name="reserved9" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="86">0</Parameter>  
+      <Parameter name="reserved10" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="87">0</Parameter> 
+    </Parameter>  
+    <Parameter index="8" name="region8" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="Bypass" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1" seq="0">1</Parameter> 
+      </Parameter>  
+      <Parameter name="Multi_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ratio_resolution" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1" seq="1">200</Parameter>  
+        <Parameter name="weight_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="2">0.008</Parameter>  
+        <Parameter name="weight_sigma_uv" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="3">0.003</Parameter>  
+        <Parameter name="lens_multi_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="4">1.00</Parameter>  
+        <Parameter name="lens_multi_denoise_uv_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="5">0.5</Parameter>  
+        <Parameter name="keep_refidx0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="6">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Single_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="py_denoise_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="7">1</Parameter>  
+        <Parameter name="flat_py_enable0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="8">1</Parameter>  
+        <Parameter name="flat_py_enable1" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="9">1</Parameter>  
+        <Parameter name="flat_py_enable2" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="10">1</Parameter>  
+        <Parameter name="moving_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="11">0.5</Parameter>  
+        <Parameter name="moving_deghost_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="12">1</Parameter>  
+        <Parameter name="py_sigma0" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="13">0.015</Parameter>  
+        <Parameter name="py_sigma1" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="14">0.005</Parameter>  
+        <Parameter name="py_sigma2" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="15">0.003</Parameter>  
+        <Parameter name="flat_py_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="16">0.5</Parameter>  
+        <Parameter name="flat_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="17">0</Parameter>  
+        <Parameter name="py_lens_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="18">1.00</Parameter>  
+        <Parameter name="lens_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="19">1.00</Parameter>  
+        <Parameter name="face_denoise_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="20">0.00</Parameter>  
+        <Parameter name="layer0_clip_lap_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="21">0.02</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_CNR" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="cnr_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" seq="22">0</Parameter>  
+        <Parameter name="layer0_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="23">0</Parameter>  
+        <Parameter name="layer1_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="24">0</Parameter>  
+        <Parameter name="layer2_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="25">1</Parameter>  
+        <Parameter name="layer3_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="26">1</Parameter>  
+        <Parameter name="layer4_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="27">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Control" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ee_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" seq="28">1</Parameter>  
+        <Parameter name="layer1_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="57">1</Parameter>  
+        <Parameter name="layer2_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="65">0</Parameter>  
+        <Parameter name="moving_ee_reduce_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="73">128</Parameter>  
+        <Parameter name="edge_filter_radius" des="description" level="1" range="[0,5]" type="int" reserve="0x0007" length="1" seq="74">2</Parameter>  
+        <Parameter name="edge_filter_sigma_r" des="description" level="1" range="[0,1]" type="float" reserve="0x0030" length="1" seq="75">0.03</Parameter>  
+        <Parameter name="flat_filter_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="76">0</Parameter>  
+        <Parameter name="normal_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="77">0.00</Parameter>  
+        <Parameter name="face_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="78">0.7</Parameter>  
+        <Parameter name="portrait_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="79">0.00</Parameter>  
+        <Parameter name="use_portrait_mask" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="80">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Layer0" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="laplace_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="51">128</Parameter>  
+        <Parameter name="laplace_exponent" des="description" level="1" range="[1,2]" type="float" reserve="0x0007" length="1" seq="52">1.5</Parameter>  
+        <Parameter name="laplace_reduction" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="53">0.6</Parameter>  
+        <Parameter name="grad_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="54">1</Parameter>  
+        <Parameter name="grad_clip_down" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="55">255</Parameter>  
+        <Parameter name="y_offset_weight" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="56">4</Parameter>  
+        <Parameter name="layer0_ee_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="81">1.00</Parameter>  
+        <Parameter name="layer0_ee_lens_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="82">0.00</Parameter>  
+        <Parameter name="layer0_ee_flat_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="83">0.2</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Threshold" type="table"> 
+        <Parameter name="t0" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="29">124</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="33">10</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="37">1</Parameter> 
+        </Parameter>  
+        <Parameter name="t1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="30">84</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="34">26</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="38">5</Parameter> 
+        </Parameter>  
+        <Parameter name="t2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="31">130</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="35">27</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="39">6</Parameter> 
+        </Parameter>  
+        <Parameter name="t3" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="32">194</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="36">59</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="40">14</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="layer0_ee_lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="44">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="45">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="46">20</Parameter>  
+      <Parameter name="layer0_ee_freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="47">24</Parameter>  
+      <Parameter name="layer0_ee_freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="48">32</Parameter>  
+      <Parameter name="layer0_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="49">24</Parameter>  
+      <Parameter name="layer0_ee_lens_map_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="50">0</Parameter>  
+      <Parameter name="layer0_ee_offset_r0" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="41">48</Parameter>  
+      <Parameter name="layer0_ee_offset_r1" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="42">64</Parameter>  
+      <Parameter name="layer0_ee_offset_r2" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="43">48</Parameter>  
+      <Parameter name="Post_EE_Ratio" type="table"> 
+        <Parameter name="Layer1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="58">6</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="59">12</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="60">12</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="61">12</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="62">16</Parameter>  
+          <Parameter name="freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="63">8</Parameter>  
+          <Parameter name="lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="64">1</Parameter> 
+        </Parameter>  
+        <Parameter name="Layer2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="66">4</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="67">4</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="68">6</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="69">8</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="70">12</Parameter>  
+          <Parameter name="layer2_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="71">4</Parameter>  
+          <Parameter name="layer2_ee_lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="72">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="reserved1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="84">0</Parameter>  
+      <Parameter name="reserved2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="85">0</Parameter>  
+      <Parameter name="reserved9" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="86">0</Parameter>  
+      <Parameter name="reserved10" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="87">0</Parameter> 
+    </Parameter>  
+    <Parameter index="9" name="region9" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="Bypass" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1" seq="0">1</Parameter> 
+      </Parameter>  
+      <Parameter name="Multi_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ratio_resolution" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1" seq="1">200</Parameter>  
+        <Parameter name="weight_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="2">0.008</Parameter>  
+        <Parameter name="weight_sigma_uv" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="3">0.03</Parameter>  
+        <Parameter name="lens_multi_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="4">1.00</Parameter>  
+        <Parameter name="lens_multi_denoise_uv_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="5">0.5</Parameter>  
+        <Parameter name="keep_refidx0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="6">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Single_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="py_denoise_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="7">1</Parameter>  
+        <Parameter name="flat_py_enable0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="8">0</Parameter>  
+        <Parameter name="flat_py_enable1" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="9">0</Parameter>  
+        <Parameter name="flat_py_enable2" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="10">1</Parameter>  
+        <Parameter name="moving_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="11">0.50</Parameter>  
+        <Parameter name="moving_deghost_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="12">1</Parameter>  
+        <Parameter name="py_sigma0" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="13">0.003</Parameter>  
+        <Parameter name="py_sigma1" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="14">0.005</Parameter>  
+        <Parameter name="py_sigma2" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="15">0.008</Parameter>  
+        <Parameter name="flat_py_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="16">0.5</Parameter>  
+        <Parameter name="flat_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="17">0.5</Parameter>  
+        <Parameter name="py_lens_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="18">0.5</Parameter>  
+        <Parameter name="lens_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="19">0.5</Parameter>  
+        <Parameter name="face_denoise_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="20">0</Parameter>  
+        <Parameter name="layer0_clip_lap_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="21">0.02</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_CNR" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="cnr_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" seq="22">0</Parameter>  
+        <Parameter name="layer0_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="23">0</Parameter>  
+        <Parameter name="layer1_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="24">0</Parameter>  
+        <Parameter name="layer2_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="25">1</Parameter>  
+        <Parameter name="layer3_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="26">1</Parameter>  
+        <Parameter name="layer4_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="27">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Control" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ee_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" seq="28">1</Parameter>  
+        <Parameter name="layer1_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="57">1</Parameter>  
+        <Parameter name="layer2_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="65">1</Parameter>  
+        <Parameter name="moving_ee_reduce_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="73">128</Parameter>  
+        <Parameter name="edge_filter_radius" des="description" level="1" range="[0,5]" type="int" reserve="0x0007" length="1" seq="74">2</Parameter>  
+        <Parameter name="edge_filter_sigma_r" des="description" level="1" range="[0,1]" type="float" reserve="0x0030" length="1" seq="75">0.03</Parameter>  
+        <Parameter name="flat_filter_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="76">0</Parameter>  
+        <Parameter name="normal_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="77">0.0</Parameter>  
+        <Parameter name="face_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="78">0.70</Parameter>  
+        <Parameter name="portrait_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="79">0.00</Parameter>  
+        <Parameter name="use_portrait_mask" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="80">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Layer0" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="laplace_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="51">128</Parameter>  
+        <Parameter name="laplace_exponent" des="description" level="1" range="[1,2]" type="float" reserve="0x0007" length="1" seq="52">1.5</Parameter>  
+        <Parameter name="laplace_reduction" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="53">0.6</Parameter>  
+        <Parameter name="grad_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="54">1</Parameter>  
+        <Parameter name="grad_clip_down" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="55">255</Parameter>  
+        <Parameter name="y_offset_weight" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="56">4</Parameter>  
+        <Parameter name="layer0_ee_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="81">0.6</Parameter>  
+        <Parameter name="layer0_ee_lens_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="82">0.00</Parameter>  
+        <Parameter name="layer0_ee_flat_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="83">0.5</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Threshold" type="table"> 
+        <Parameter name="t0" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="29">20</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="33">10</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="37">1</Parameter> 
+        </Parameter>  
+        <Parameter name="t1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="30">84</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="34">26</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="38">5</Parameter> 
+        </Parameter>  
+        <Parameter name="t2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="31">130</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="35">27</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="39">6</Parameter> 
+        </Parameter>  
+        <Parameter name="t3" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="32">194</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="36">59</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="40">14</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="layer0_ee_lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="44">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="45">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="46">20</Parameter>  
+      <Parameter name="layer0_ee_freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="47">24</Parameter>  
+      <Parameter name="layer0_ee_freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="48">32</Parameter>  
+      <Parameter name="layer0_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="49">24</Parameter>  
+      <Parameter name="layer0_ee_lens_map_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="50">0</Parameter>  
+      <Parameter name="layer0_ee_offset_r0" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="41">48</Parameter>  
+      <Parameter name="layer0_ee_offset_r1" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="42">64</Parameter>  
+      <Parameter name="layer0_ee_offset_r2" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="43">48</Parameter>  
+      <Parameter name="Post_EE_Ratio" type="table"> 
+        <Parameter name="Layer1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="58">6</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="59">12</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="60">6</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="61">6</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="62">12</Parameter>  
+          <Parameter name="freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="63">6</Parameter>  
+          <Parameter name="lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="64">0</Parameter> 
+        </Parameter>  
+        <Parameter name="Layer2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="66">4</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="67">4</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="68">4</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="69">4</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="70">4</Parameter>  
+          <Parameter name="layer2_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="71">0</Parameter>  
+          <Parameter name="layer2_ee_lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="72">0</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="reserved1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="84">0</Parameter>  
+      <Parameter name="reserved2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="85">0</Parameter>  
+      <Parameter name="reserved9" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="86">0</Parameter>  
+      <Parameter name="reserved10" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="87">0</Parameter> 
+    </Parameter>  
+    <Parameter index="10" name="region10" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="Bypass" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1" seq="0">1</Parameter> 
+      </Parameter>  
+      <Parameter name="Multi_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ratio_resolution" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1" seq="1">200</Parameter>  
+        <Parameter name="weight_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="2">0.03</Parameter>  
+        <Parameter name="weight_sigma_uv" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="3">0.02</Parameter>  
+        <Parameter name="lens_multi_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="4">1.00</Parameter>  
+        <Parameter name="lens_multi_denoise_uv_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="5">0.5</Parameter>  
+        <Parameter name="keep_refidx0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="6">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Single_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="py_denoise_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="7">1</Parameter>  
+        <Parameter name="flat_py_enable0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="8">0</Parameter>  
+        <Parameter name="flat_py_enable1" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="9">0</Parameter>  
+        <Parameter name="flat_py_enable2" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="10">1</Parameter>  
+        <Parameter name="moving_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="11">0.5</Parameter>  
+        <Parameter name="moving_deghost_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="12">1</Parameter>  
+        <Parameter name="py_sigma0" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="13">0.04</Parameter>  
+        <Parameter name="py_sigma1" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="14">0.02</Parameter>  
+        <Parameter name="py_sigma2" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="15">0.01</Parameter>  
+        <Parameter name="flat_py_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="16">1.00</Parameter>  
+        <Parameter name="flat_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="17">1.00</Parameter>  
+        <Parameter name="py_lens_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="18">1.00</Parameter>  
+        <Parameter name="lens_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="19">1.00</Parameter>  
+        <Parameter name="face_denoise_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="20">0.00</Parameter>  
+        <Parameter name="layer0_clip_lap_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="21">0.009</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_CNR" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="cnr_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" seq="22">0</Parameter>  
+        <Parameter name="layer0_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="23">0</Parameter>  
+        <Parameter name="layer1_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="24">0</Parameter>  
+        <Parameter name="layer2_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="25">1</Parameter>  
+        <Parameter name="layer3_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="26">1</Parameter>  
+        <Parameter name="layer4_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="27">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Control" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ee_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" seq="28">1</Parameter>  
+        <Parameter name="layer1_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="57">1</Parameter>  
+        <Parameter name="layer2_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="65">1</Parameter>  
+        <Parameter name="moving_ee_reduce_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="73">128</Parameter>  
+        <Parameter name="edge_filter_radius" des="description" level="1" range="[0,5]" type="int" reserve="0x0007" length="1" seq="74">2</Parameter>  
+        <Parameter name="edge_filter_sigma_r" des="description" level="1" range="[0,1]" type="float" reserve="0x0030" length="1" seq="75">0.05</Parameter>  
+        <Parameter name="flat_filter_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="76">0</Parameter>  
+        <Parameter name="normal_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="77">0.05</Parameter>  
+        <Parameter name="face_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="78">0.7</Parameter>  
+        <Parameter name="portrait_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="79">0.00</Parameter>  
+        <Parameter name="use_portrait_mask" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="80">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Layer0" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="laplace_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="51">128</Parameter>  
+        <Parameter name="laplace_exponent" des="description" level="1" range="[1,2]" type="float" reserve="0x0007" length="1" seq="52">1.5</Parameter>  
+        <Parameter name="laplace_reduction" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="53">0.6</Parameter>  
+        <Parameter name="grad_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="54">1</Parameter>  
+        <Parameter name="grad_clip_down" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="55">255</Parameter>  
+        <Parameter name="y_offset_weight" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="56">4</Parameter>  
+        <Parameter name="layer0_ee_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="81">1.00</Parameter>  
+        <Parameter name="layer0_ee_lens_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="82">0.00</Parameter>  
+        <Parameter name="layer0_ee_flat_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="83">0.00</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Threshold" type="table"> 
+        <Parameter name="t0" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="29">20</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="33">20</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="37">1</Parameter> 
+        </Parameter>  
+        <Parameter name="t1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="30">84</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="34">52</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="38">5</Parameter> 
+        </Parameter>  
+        <Parameter name="t2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="31">130</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="35">60</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="39">6</Parameter> 
+        </Parameter>  
+        <Parameter name="t3" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="32">194</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="36">124</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="40">14</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="layer0_ee_lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="44">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="45">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="46">20</Parameter>  
+      <Parameter name="layer0_ee_freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="47">24</Parameter>  
+      <Parameter name="layer0_ee_freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="48">32</Parameter>  
+      <Parameter name="layer0_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="49">24</Parameter>  
+      <Parameter name="layer0_ee_lens_map_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="50">0</Parameter>  
+      <Parameter name="layer0_ee_offset_r0" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="41">48</Parameter>  
+      <Parameter name="layer0_ee_offset_r1" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="42">64</Parameter>  
+      <Parameter name="layer0_ee_offset_r2" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="43">48</Parameter>  
+      <Parameter name="Post_EE_Ratio" type="table"> 
+        <Parameter name="Layer1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="58">6</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="59">12</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="60">6</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="61">6</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="62">12</Parameter>  
+          <Parameter name="freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="63">10</Parameter>  
+          <Parameter name="lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="64">1</Parameter> 
+        </Parameter>  
+        <Parameter name="Layer2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="66">4</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="67">4</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="68">4</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="69">4</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="70">4</Parameter>  
+          <Parameter name="layer2_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="71">4</Parameter>  
+          <Parameter name="layer2_ee_lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="72">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="reserved1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="84">0</Parameter>  
+      <Parameter name="reserved2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="85">200</Parameter>  
+      <Parameter name="reserved9" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="86">0</Parameter>  
+      <Parameter name="reserved10" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="87">0</Parameter> 
+    </Parameter>  
+    <Parameter index="11" name="region11" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="Bypass" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1" seq="0">1</Parameter> 
+      </Parameter>  
+      <Parameter name="Multi_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ratio_resolution" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1" seq="1">200</Parameter>  
+        <Parameter name="weight_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="2">0.03</Parameter>  
+        <Parameter name="weight_sigma_uv" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="3">0.02</Parameter>  
+        <Parameter name="lens_multi_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="4">0.8</Parameter>  
+        <Parameter name="lens_multi_denoise_uv_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="5">1.00</Parameter>  
+        <Parameter name="keep_refidx0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="6">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Single_Denoise" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="py_denoise_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="7">1</Parameter>  
+        <Parameter name="flat_py_enable0" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="8">0</Parameter>  
+        <Parameter name="flat_py_enable1" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="9">0</Parameter>  
+        <Parameter name="flat_py_enable2" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1" seq="10">1</Parameter>  
+        <Parameter name="moving_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="11">0.5</Parameter>  
+        <Parameter name="moving_deghost_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="12">1</Parameter>  
+        <Parameter name="py_sigma0" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="13">0.04</Parameter>  
+        <Parameter name="py_sigma1" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="14">0.02</Parameter>  
+        <Parameter name="py_sigma2" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="15">0.01</Parameter>  
+        <Parameter name="flat_py_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="16">1.00</Parameter>  
+        <Parameter name="flat_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="17">1.00</Parameter>  
+        <Parameter name="py_lens_denoise_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="18">1.00</Parameter>  
+        <Parameter name="lens_clip_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="19">0.6</Parameter>  
+        <Parameter name="face_denoise_sigma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="20">0.00</Parameter>  
+        <Parameter name="layer0_clip_lap_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="21">0.007</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_CNR" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="cnr_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" seq="22">0</Parameter>  
+        <Parameter name="layer0_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="23">0</Parameter>  
+        <Parameter name="layer1_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="24">0</Parameter>  
+        <Parameter name="layer2_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="25">1</Parameter>  
+        <Parameter name="layer3_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="26">1</Parameter>  
+        <Parameter name="layer4_cnr_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0020" length="1" seq="27">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Control" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="ee_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" seq="28">1</Parameter>  
+        <Parameter name="layer1_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="57">1</Parameter>  
+        <Parameter name="layer2_ee_strength" des="description" level="1" range="[0,5]" type="int" reserve="0x0030" length="1" seq="65">1</Parameter>  
+        <Parameter name="moving_ee_reduce_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="73">128</Parameter>  
+        <Parameter name="edge_filter_radius" des="description" level="1" range="[0,5]" type="int" reserve="0x0007" length="1" seq="74">2</Parameter>  
+        <Parameter name="edge_filter_sigma_r" des="description" level="1" range="[0,1]" type="float" reserve="0x0030" length="1" seq="75">0.05</Parameter>  
+        <Parameter name="flat_filter_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="76">0</Parameter>  
+        <Parameter name="normal_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="77">0.05</Parameter>  
+        <Parameter name="face_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="78">0.7</Parameter>  
+        <Parameter name="portrait_enhance_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="79">0.00</Parameter>  
+        <Parameter name="use_portrait_mask" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1" seq="80">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Layer0" des="description" level="1" range="[0,100]" reserve="0xffff" length="0"> 
+        <Parameter name="laplace_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="51">128</Parameter>  
+        <Parameter name="laplace_exponent" des="description" level="1" range="[1,2]" type="float" reserve="0x0007" length="1" seq="52">1.5</Parameter>  
+        <Parameter name="laplace_reduction" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="53">0.6</Parameter>  
+        <Parameter name="grad_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="54">1</Parameter>  
+        <Parameter name="grad_clip_down" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="55">255</Parameter>  
+        <Parameter name="y_offset_weight" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="56">4</Parameter>  
+        <Parameter name="layer0_ee_ratio" des="description" level="1" range="[0,5]" type="float" reserve="0x0000" length="1" seq="81">1.00</Parameter>  
+        <Parameter name="layer0_ee_lens_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="82">0.00</Parameter>  
+        <Parameter name="layer0_ee_flat_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1" seq="83">0.00</Parameter> 
+      </Parameter>  
+      <Parameter name="Post_EE_Threshold" type="table"> 
+        <Parameter name="t0" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="29">20</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="33">20</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="37">1</Parameter> 
+        </Parameter>  
+        <Parameter name="t1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="30">84</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="34">52</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="38">5</Parameter> 
+        </Parameter>  
+        <Parameter name="t2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="31">130</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="35">60</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="39">6</Parameter> 
+        </Parameter>  
+        <Parameter name="t3" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="32">194</Parameter>  
+          <Parameter name="freq" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="36">124</Parameter>  
+          <Parameter name="ee_offset" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="40">14</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="layer0_ee_lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="44">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="45">24</Parameter>  
+      <Parameter name="layer0_ee_lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="46">20</Parameter>  
+      <Parameter name="layer0_ee_freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="47">24</Parameter>  
+      <Parameter name="layer0_ee_freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="48">32</Parameter>  
+      <Parameter name="layer0_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="49">24</Parameter>  
+      <Parameter name="layer0_ee_lens_map_ratio" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="50">0</Parameter>  
+      <Parameter name="layer0_ee_offset_r0" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="41">48</Parameter>  
+      <Parameter name="layer0_ee_offset_r1" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="42">64</Parameter>  
+      <Parameter name="layer0_ee_offset_r2" des="step is 1" default="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="43">48</Parameter>  
+      <Parameter name="Post_EE_Ratio" type="table"> 
+        <Parameter name="Layer1" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="58">6</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="59">12</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="60">6</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="61">6</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="62">12</Parameter>  
+          <Parameter name="freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="63">10</Parameter>  
+          <Parameter name="lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="64">1</Parameter> 
+        </Parameter>  
+        <Parameter name="Layer2" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="lum_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="66">4</Parameter>  
+          <Parameter name="lum_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="67">4</Parameter>  
+          <Parameter name="lum_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="68">4</Parameter>  
+          <Parameter name="freq_r0" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="69">4</Parameter>  
+          <Parameter name="freq_r1" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="70">4</Parameter>  
+          <Parameter name="layer2_ee_freq_r2" des="description" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" seq="71">4</Parameter>  
+          <Parameter name="layer2_ee_lens_map_ratio" des="description" level="1" range="[0,1]" type="int" reserve="0x0030" length="1" seq="72">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="reserved1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="84">0</Parameter>  
+      <Parameter name="reserved2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" seq="85">245</Parameter>  
+      <Parameter name="reserved9" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="86">0</Parameter>  
+      <Parameter name="reserved10" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1" seq="87">0</Parameter> 
+    </Parameter> 
+  </Parameters> 
+</root>

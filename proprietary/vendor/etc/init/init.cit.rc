@@ -1,0 +1,11 @@
+on property:sys.sarcali.trigger=1
+    start sarcalisvc
+
+service sarcalisvc /vendor/bin/nusensors -s -w calibration -t s
+    class main
+    user root
+    disabled
+    oneshot
+    group root system
+    seclabel u:r:sar:s0
+

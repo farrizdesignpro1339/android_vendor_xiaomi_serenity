@@ -1,0 +1,711 @@
+<?xml version="1.0"?>
+<root name="CCNR">
+ <BlockInfo>
+  <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">24598</Parameter>
+  <Parameter index="" name="version" des="description" level="1" range="[0,32767]" type="int">1</Parameter>
+  <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>
+  <Parameter index="" name="modify_time" des="description" level="1" range="[0,2147483648]" type="int">2412042221</Parameter>
+  <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">48</Parameter>
+  <Parameter index="" name="triggersize" des="description" level="1" range="[0,2147483648]" type="int">204</Parameter>
+  <Parameter index="" name="datasize" des="description" level="1" range="[0,2147483648]" type="int">2336</Parameter>
+  <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">3264</Parameter>
+  <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">2448</Parameter>
+  <Parameter index="" name="BlockControl" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+ </BlockInfo>
+ <Triggers name="CCNR" select_way="0" trigger_enable="1" group_num="8">
+  <Trigger start="1.0" end="1.0" para="total_gain" name="region0" interp_type="1" enable="1">0</Trigger>
+  <Trigger start="2.0" end="2.0" para="total_gain" name="region1" interp_type="1" enable="1">1</Trigger>
+  <Trigger start="3.5" end="3.5" para="total_gain" name="region2" interp_type="1" enable="1">2</Trigger>
+  <Trigger start="5.0" end="5.0" para="total_gain" name="region3" interp_type="1" enable="1">3</Trigger>
+  <Trigger start="8.0" end="8.0" para="total_gain" name="region4" interp_type="1" enable="1">4</Trigger>
+  <Trigger start="11.0" end="11.0" para="total_gain" name="region5" interp_type="1" enable="1">5</Trigger>
+  <Trigger start="20.0" end="20.0" para="total_gain" name="region6" interp_type="1" enable="1">6</Trigger>
+  <Trigger start="38.0" end="38.0" para="total_gain" name="region7" interp_type="1" enable="1">7</Trigger>
+ </Triggers>
+ <Parameters name="CCNR" group_num="8" des="description">
+  <Parameter index="0" name="region0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CCNR_Control">
+    <Parameter name="ccnr_bypass" des="ccnr_bypass" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Strength">
+    <Parameter name="y_th" des="y thresh" level="1" default="0" range="[0,255]" type="int" reserve="0x0000" length="1">240</Parameter>
+    <Parameter name="uv_diff_thr" des="the different value of UV palne and the surrounding pixels" level="1" default="16" range="[0,255]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="alpha_hl_diff_u" des="The difference between low and high strength in the U plane" level="1" default="1800" range="[0,16383]" type="int" reserve="0x0000" length="1">1800</Parameter>
+    <Parameter name="alpha_low_u" des="U palne denoise thresh" level="1" default="14264" range="[0,18383]" type="int" reserve="0x0000" length="1">14264</Parameter>
+    <Parameter name="uv_low_thr2_0" des="the strenth of filter in low freq" level="1" default="768" range="[0,81600]" type="int" reserve="0x0000" length="1">768</Parameter>
+    <Parameter name="uv_low_thr2_1" des="the strenth of filter in low freq" level="1" default="960" range="[0,81600]" type="int" reserve="0x0000" length="1">960</Parameter>
+    <Parameter name="uv_low_thr2_2" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_low_thr2_3" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_high_thr2_0" des="the strenth of filter in high freq" level="1" default="2240" range="[0,81600]" type="int" reserve="0x0000" length="1">2240</Parameter>
+    <Parameter name="uv_high_thr2_1" des="the strenth of filter in high freq" level="1" default="2880" range="[0,81600]" type="int" reserve="0x0000" length="1">2880</Parameter>
+    <Parameter name="uv_high_thr2_2" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="uv_high_thr2_3" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="css_lum_thr" des="color supression thresh" level="1" default="32" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>
+   </Parameter>
+   <Parameter name="Threashold">
+    <Parameter name="pre_uv_th" des="the first line pixel,UV thresh" level="1" default="30" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="uv_th" des="variance thresh" level="1" default="15" range="[0,255]" type="int" reserve="0x0000" length="1">8</Parameter>
+    <Parameter name="uv_dist" des="gradient thresh" level="1" default="5" range="[0,765]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="uv_low_thr1_0" des="UV thresh under different bv" level="1" default="448" range="[0,16383]" type="int" reserve="0x0000" length="1">448</Parameter>
+    <Parameter name="uv_low_thr1_1" des="UV thresh under different bv" level="1" default="576" range="[0,16383]" type="int" reserve="0x0000" length="1">576</Parameter>
+    <Parameter name="uv_low_thr1_2" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="uv_low_thr1_3" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="y_edge_thr_min_0" des="min edge juge thresh under different bv" level="1" default="20" range="[0,65535]" type="int" reserve="0x0000" length="1">20</Parameter>
+    <Parameter name="y_edge_thr_min_1" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_2" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_3" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_max_0" des="max edge juge thresh under different bv" level="1" default="40" range="[0,65535]" type="int" reserve="0x0000" length="1">40</Parameter>
+    <Parameter name="y_edge_thr_max_1" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_2" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_3" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+   </Parameter>
+   <Parameter name="Threashold_Index">
+    <Parameter name="ymd_u" des="ymd_u" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_u" des="ymd_min_u" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="ymd_v" des="ymd_v" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_v" des="ymd_min_v" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="slop_uv_0" des="slop_uv_0" level="1" default="5" range="[0,65536]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="slop_uv_1" des="slop_uv_1" level="1" default="4" range="[0,65536]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="slop_uv_2" des="slop_uv_2" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_3" des="slop_uv_3" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_4" des="slop_uv_4" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_5" des="slop_uv_5" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_6" des="slop_uv_6" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_7" des="slop_uv_7" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_y_0" des="slop_y_0" level="1" default="409" range="[0,65536]" type="int" reserve="0x0000" length="1">409</Parameter>
+    <Parameter name="slop_y_1" des="slop_y_1" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_2" des="slop_y_2" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_3" des="slop_y_3" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_4" des="slop_y_4" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_5" des="slop_y_5" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_6" des="slop_y_6" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_7" des="slop_y_7" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="middle_factor_uv_0" des="middle_factor_uv_0" level="1" default="19392" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19392</Parameter>
+    <Parameter name="middle_factor_uv_1" des="middle_factor_uv_1" level="1" default="19712" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19712</Parameter>
+    <Parameter name="middle_factor_uv_2" des="middle_factor_uv_2" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_3" des="middle_factor_uv_3" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_4" des="middle_factor_uv_4" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_5" des="middle_factor_uv_5" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_6" des="middle_factor_uv_6" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_7" des="middle_factor_uv_7" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_y_0" des="middle_factor_y_0" level="1" default="24552" range="[0,65536]" type="int" reserve="0x0000" length="1">24552</Parameter>
+    <Parameter name="middle_factor_y_1" des="middle_factor_y_1" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_2" des="middle_factor_y_2" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_3" des="middle_factor_y_3" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_4" des="middle_factor_y_4" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_5" des="middle_factor_y_5" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_6" des="middle_factor_y_6" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_7" des="middle_factor_y_7" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CCNR_Control">
+    <Parameter name="ccnr_bypass" des="ccnr_bypass" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Strength">
+    <Parameter name="y_th" des="y thresh" level="1" default="0" range="[0,255]" type="int" reserve="0x0000" length="1">240</Parameter>
+    <Parameter name="uv_diff_thr" des="the different value of UV palne and the surrounding pixels" level="1" default="16" range="[0,255]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="alpha_hl_diff_u" des="The difference between low and high strength in the U plane" level="1" default="1800" range="[0,16383]" type="int" reserve="0x0000" length="1">1800</Parameter>
+    <Parameter name="alpha_low_u" des="U palne denoise thresh" level="1" default="14264" range="[0,18383]" type="int" reserve="0x0000" length="1">14264</Parameter>
+    <Parameter name="uv_low_thr2_0" des="the strenth of filter in low freq" level="1" default="768" range="[0,81600]" type="int" reserve="0x0000" length="1">768</Parameter>
+    <Parameter name="uv_low_thr2_1" des="the strenth of filter in low freq" level="1" default="960" range="[0,81600]" type="int" reserve="0x0000" length="1">960</Parameter>
+    <Parameter name="uv_low_thr2_2" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_low_thr2_3" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_high_thr2_0" des="the strenth of filter in high freq" level="1" default="2240" range="[0,81600]" type="int" reserve="0x0000" length="1">2240</Parameter>
+    <Parameter name="uv_high_thr2_1" des="the strenth of filter in high freq" level="1" default="2880" range="[0,81600]" type="int" reserve="0x0000" length="1">2880</Parameter>
+    <Parameter name="uv_high_thr2_2" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="uv_high_thr2_3" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="css_lum_thr" des="color supression thresh" level="1" default="32" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>
+   </Parameter>
+   <Parameter name="Threashold">
+    <Parameter name="pre_uv_th" des="the first line pixel,UV thresh" level="1" default="30" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="uv_th" des="variance thresh" level="1" default="15" range="[0,255]" type="int" reserve="0x0000" length="1">8</Parameter>
+    <Parameter name="uv_dist" des="gradient thresh" level="1" default="5" range="[0,765]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="uv_low_thr1_0" des="UV thresh under different bv" level="1" default="448" range="[0,16383]" type="int" reserve="0x0000" length="1">448</Parameter>
+    <Parameter name="uv_low_thr1_1" des="UV thresh under different bv" level="1" default="576" range="[0,16383]" type="int" reserve="0x0000" length="1">576</Parameter>
+    <Parameter name="uv_low_thr1_2" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="uv_low_thr1_3" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="y_edge_thr_min_0" des="min edge juge thresh under different bv" level="1" default="20" range="[0,65535]" type="int" reserve="0x0000" length="1">20</Parameter>
+    <Parameter name="y_edge_thr_min_1" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_2" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_3" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_max_0" des="max edge juge thresh under different bv" level="1" default="40" range="[0,65535]" type="int" reserve="0x0000" length="1">40</Parameter>
+    <Parameter name="y_edge_thr_max_1" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_2" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_3" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+   </Parameter>
+   <Parameter name="Threashold_Index">
+    <Parameter name="ymd_u" des="ymd_u" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_u" des="ymd_min_u" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="ymd_v" des="ymd_v" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_v" des="ymd_min_v" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="slop_uv_0" des="slop_uv_0" level="1" default="5" range="[0,65536]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="slop_uv_1" des="slop_uv_1" level="1" default="4" range="[0,65536]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="slop_uv_2" des="slop_uv_2" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_3" des="slop_uv_3" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_4" des="slop_uv_4" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_5" des="slop_uv_5" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_6" des="slop_uv_6" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_7" des="slop_uv_7" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_y_0" des="slop_y_0" level="1" default="409" range="[0,65536]" type="int" reserve="0x0000" length="1">409</Parameter>
+    <Parameter name="slop_y_1" des="slop_y_1" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_2" des="slop_y_2" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_3" des="slop_y_3" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_4" des="slop_y_4" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_5" des="slop_y_5" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_6" des="slop_y_6" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_7" des="slop_y_7" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="middle_factor_uv_0" des="middle_factor_uv_0" level="1" default="19392" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19392</Parameter>
+    <Parameter name="middle_factor_uv_1" des="middle_factor_uv_1" level="1" default="19712" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19712</Parameter>
+    <Parameter name="middle_factor_uv_2" des="middle_factor_uv_2" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_3" des="middle_factor_uv_3" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_4" des="middle_factor_uv_4" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_5" des="middle_factor_uv_5" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_6" des="middle_factor_uv_6" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_7" des="middle_factor_uv_7" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_y_0" des="middle_factor_y_0" level="1" default="24552" range="[0,65536]" type="int" reserve="0x0000" length="1">24552</Parameter>
+    <Parameter name="middle_factor_y_1" des="middle_factor_y_1" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_2" des="middle_factor_y_2" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_3" des="middle_factor_y_3" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_4" des="middle_factor_y_4" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_5" des="middle_factor_y_5" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_6" des="middle_factor_y_6" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_7" des="middle_factor_y_7" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CCNR_Control">
+    <Parameter name="ccnr_bypass" des="ccnr_bypass" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Strength">
+    <Parameter name="y_th" des="y thresh" level="1" default="0" range="[0,255]" type="int" reserve="0x0000" length="1">240</Parameter>
+    <Parameter name="uv_diff_thr" des="the different value of UV palne and the surrounding pixels" level="1" default="16" range="[0,255]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="alpha_hl_diff_u" des="The difference between low and high strength in the U plane" level="1" default="1800" range="[0,16383]" type="int" reserve="0x0000" length="1">1800</Parameter>
+    <Parameter name="alpha_low_u" des="U palne denoise thresh" level="1" default="14264" range="[0,18383]" type="int" reserve="0x0000" length="1">14264</Parameter>
+    <Parameter name="uv_low_thr2_0" des="the strenth of filter in low freq" level="1" default="768" range="[0,81600]" type="int" reserve="0x0000" length="1">768</Parameter>
+    <Parameter name="uv_low_thr2_1" des="the strenth of filter in low freq" level="1" default="960" range="[0,81600]" type="int" reserve="0x0000" length="1">960</Parameter>
+    <Parameter name="uv_low_thr2_2" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_low_thr2_3" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_high_thr2_0" des="the strenth of filter in high freq" level="1" default="2240" range="[0,81600]" type="int" reserve="0x0000" length="1">2240</Parameter>
+    <Parameter name="uv_high_thr2_1" des="the strenth of filter in high freq" level="1" default="2880" range="[0,81600]" type="int" reserve="0x0000" length="1">2880</Parameter>
+    <Parameter name="uv_high_thr2_2" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="uv_high_thr2_3" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="css_lum_thr" des="color supression thresh" level="1" default="32" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>
+   </Parameter>
+   <Parameter name="Threashold">
+    <Parameter name="pre_uv_th" des="the first line pixel,UV thresh" level="1" default="30" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="uv_th" des="variance thresh" level="1" default="15" range="[0,255]" type="int" reserve="0x0000" length="1">8</Parameter>
+    <Parameter name="uv_dist" des="gradient thresh" level="1" default="5" range="[0,765]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="uv_low_thr1_0" des="UV thresh under different bv" level="1" default="448" range="[0,16383]" type="int" reserve="0x0000" length="1">448</Parameter>
+    <Parameter name="uv_low_thr1_1" des="UV thresh under different bv" level="1" default="576" range="[0,16383]" type="int" reserve="0x0000" length="1">576</Parameter>
+    <Parameter name="uv_low_thr1_2" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="uv_low_thr1_3" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="y_edge_thr_min_0" des="min edge juge thresh under different bv" level="1" default="20" range="[0,65535]" type="int" reserve="0x0000" length="1">20</Parameter>
+    <Parameter name="y_edge_thr_min_1" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_2" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_3" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_max_0" des="max edge juge thresh under different bv" level="1" default="40" range="[0,65535]" type="int" reserve="0x0000" length="1">40</Parameter>
+    <Parameter name="y_edge_thr_max_1" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_2" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_3" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+   </Parameter>
+   <Parameter name="Threashold_Index">
+    <Parameter name="ymd_u" des="ymd_u" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_u" des="ymd_min_u" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="ymd_v" des="ymd_v" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_v" des="ymd_min_v" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="slop_uv_0" des="slop_uv_0" level="1" default="5" range="[0,65536]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="slop_uv_1" des="slop_uv_1" level="1" default="4" range="[0,65536]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="slop_uv_2" des="slop_uv_2" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_3" des="slop_uv_3" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_4" des="slop_uv_4" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_5" des="slop_uv_5" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_6" des="slop_uv_6" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_7" des="slop_uv_7" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_y_0" des="slop_y_0" level="1" default="409" range="[0,65536]" type="int" reserve="0x0000" length="1">409</Parameter>
+    <Parameter name="slop_y_1" des="slop_y_1" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_2" des="slop_y_2" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_3" des="slop_y_3" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_4" des="slop_y_4" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_5" des="slop_y_5" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_6" des="slop_y_6" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_7" des="slop_y_7" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="middle_factor_uv_0" des="middle_factor_uv_0" level="1" default="19392" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19392</Parameter>
+    <Parameter name="middle_factor_uv_1" des="middle_factor_uv_1" level="1" default="19712" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19712</Parameter>
+    <Parameter name="middle_factor_uv_2" des="middle_factor_uv_2" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_3" des="middle_factor_uv_3" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_4" des="middle_factor_uv_4" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_5" des="middle_factor_uv_5" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_6" des="middle_factor_uv_6" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_7" des="middle_factor_uv_7" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_y_0" des="middle_factor_y_0" level="1" default="24552" range="[0,65536]" type="int" reserve="0x0000" length="1">24552</Parameter>
+    <Parameter name="middle_factor_y_1" des="middle_factor_y_1" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_2" des="middle_factor_y_2" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_3" des="middle_factor_y_3" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_4" des="middle_factor_y_4" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_5" des="middle_factor_y_5" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_6" des="middle_factor_y_6" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_7" des="middle_factor_y_7" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CCNR_Control">
+    <Parameter name="ccnr_bypass" des="ccnr_bypass" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Strength">
+    <Parameter name="y_th" des="y thresh" level="1" default="0" range="[0,255]" type="int" reserve="0x0000" length="1">240</Parameter>
+    <Parameter name="uv_diff_thr" des="the different value of UV palne and the surrounding pixels" level="1" default="16" range="[0,255]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="alpha_hl_diff_u" des="The difference between low and high strength in the U plane" level="1" default="1800" range="[0,16383]" type="int" reserve="0x0000" length="1">1800</Parameter>
+    <Parameter name="alpha_low_u" des="U palne denoise thresh" level="1" default="14264" range="[0,18383]" type="int" reserve="0x0000" length="1">14264</Parameter>
+    <Parameter name="uv_low_thr2_0" des="the strenth of filter in low freq" level="1" default="768" range="[0,81600]" type="int" reserve="0x0000" length="1">768</Parameter>
+    <Parameter name="uv_low_thr2_1" des="the strenth of filter in low freq" level="1" default="960" range="[0,81600]" type="int" reserve="0x0000" length="1">960</Parameter>
+    <Parameter name="uv_low_thr2_2" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_low_thr2_3" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_high_thr2_0" des="the strenth of filter in high freq" level="1" default="2240" range="[0,81600]" type="int" reserve="0x0000" length="1">2240</Parameter>
+    <Parameter name="uv_high_thr2_1" des="the strenth of filter in high freq" level="1" default="2880" range="[0,81600]" type="int" reserve="0x0000" length="1">2880</Parameter>
+    <Parameter name="uv_high_thr2_2" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="uv_high_thr2_3" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="css_lum_thr" des="color supression thresh" level="1" default="32" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>
+   </Parameter>
+   <Parameter name="Threashold">
+    <Parameter name="pre_uv_th" des="the first line pixel,UV thresh" level="1" default="30" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="uv_th" des="variance thresh" level="1" default="15" range="[0,255]" type="int" reserve="0x0000" length="1">8</Parameter>
+    <Parameter name="uv_dist" des="gradient thresh" level="1" default="5" range="[0,765]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="uv_low_thr1_0" des="UV thresh under different bv" level="1" default="448" range="[0,16383]" type="int" reserve="0x0000" length="1">448</Parameter>
+    <Parameter name="uv_low_thr1_1" des="UV thresh under different bv" level="1" default="576" range="[0,16383]" type="int" reserve="0x0000" length="1">576</Parameter>
+    <Parameter name="uv_low_thr1_2" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="uv_low_thr1_3" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="y_edge_thr_min_0" des="min edge juge thresh under different bv" level="1" default="20" range="[0,65535]" type="int" reserve="0x0000" length="1">20</Parameter>
+    <Parameter name="y_edge_thr_min_1" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_2" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_3" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_max_0" des="max edge juge thresh under different bv" level="1" default="40" range="[0,65535]" type="int" reserve="0x0000" length="1">40</Parameter>
+    <Parameter name="y_edge_thr_max_1" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_2" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_3" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+   </Parameter>
+   <Parameter name="Threashold_Index">
+    <Parameter name="ymd_u" des="ymd_u" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_u" des="ymd_min_u" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="ymd_v" des="ymd_v" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_v" des="ymd_min_v" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="slop_uv_0" des="slop_uv_0" level="1" default="5" range="[0,65536]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="slop_uv_1" des="slop_uv_1" level="1" default="4" range="[0,65536]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="slop_uv_2" des="slop_uv_2" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_3" des="slop_uv_3" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_4" des="slop_uv_4" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_5" des="slop_uv_5" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_6" des="slop_uv_6" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_7" des="slop_uv_7" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_y_0" des="slop_y_0" level="1" default="409" range="[0,65536]" type="int" reserve="0x0000" length="1">409</Parameter>
+    <Parameter name="slop_y_1" des="slop_y_1" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_2" des="slop_y_2" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_3" des="slop_y_3" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_4" des="slop_y_4" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_5" des="slop_y_5" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_6" des="slop_y_6" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_7" des="slop_y_7" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="middle_factor_uv_0" des="middle_factor_uv_0" level="1" default="19392" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19392</Parameter>
+    <Parameter name="middle_factor_uv_1" des="middle_factor_uv_1" level="1" default="19712" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19712</Parameter>
+    <Parameter name="middle_factor_uv_2" des="middle_factor_uv_2" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_3" des="middle_factor_uv_3" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_4" des="middle_factor_uv_4" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_5" des="middle_factor_uv_5" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_6" des="middle_factor_uv_6" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_7" des="middle_factor_uv_7" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_y_0" des="middle_factor_y_0" level="1" default="24552" range="[0,65536]" type="int" reserve="0x0000" length="1">24552</Parameter>
+    <Parameter name="middle_factor_y_1" des="middle_factor_y_1" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_2" des="middle_factor_y_2" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_3" des="middle_factor_y_3" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_4" des="middle_factor_y_4" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_5" des="middle_factor_y_5" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_6" des="middle_factor_y_6" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_7" des="middle_factor_y_7" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="4" name="region4" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CCNR_Control">
+    <Parameter name="ccnr_bypass" des="ccnr_bypass" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Strength">
+    <Parameter name="y_th" des="y thresh" level="1" default="0" range="[0,255]" type="int" reserve="0x0000" length="1">240</Parameter>
+    <Parameter name="uv_diff_thr" des="the different value of UV palne and the surrounding pixels" level="1" default="16" range="[0,255]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="alpha_hl_diff_u" des="The difference between low and high strength in the U plane" level="1" default="1800" range="[0,16383]" type="int" reserve="0x0000" length="1">1800</Parameter>
+    <Parameter name="alpha_low_u" des="U palne denoise thresh" level="1" default="14264" range="[0,18383]" type="int" reserve="0x0000" length="1">14264</Parameter>
+    <Parameter name="uv_low_thr2_0" des="the strenth of filter in low freq" level="1" default="768" range="[0,81600]" type="int" reserve="0x0000" length="1">768</Parameter>
+    <Parameter name="uv_low_thr2_1" des="the strenth of filter in low freq" level="1" default="960" range="[0,81600]" type="int" reserve="0x0000" length="1">960</Parameter>
+    <Parameter name="uv_low_thr2_2" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_low_thr2_3" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_high_thr2_0" des="the strenth of filter in high freq" level="1" default="2240" range="[0,81600]" type="int" reserve="0x0000" length="1">2240</Parameter>
+    <Parameter name="uv_high_thr2_1" des="the strenth of filter in high freq" level="1" default="2880" range="[0,81600]" type="int" reserve="0x0000" length="1">2880</Parameter>
+    <Parameter name="uv_high_thr2_2" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="uv_high_thr2_3" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="css_lum_thr" des="color supression thresh" level="1" default="32" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>
+   </Parameter>
+   <Parameter name="Threashold">
+    <Parameter name="pre_uv_th" des="the first line pixel,UV thresh" level="1" default="30" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="uv_th" des="variance thresh" level="1" default="15" range="[0,255]" type="int" reserve="0x0000" length="1">8</Parameter>
+    <Parameter name="uv_dist" des="gradient thresh" level="1" default="5" range="[0,765]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="uv_low_thr1_0" des="UV thresh under different bv" level="1" default="448" range="[0,16383]" type="int" reserve="0x0000" length="1">448</Parameter>
+    <Parameter name="uv_low_thr1_1" des="UV thresh under different bv" level="1" default="576" range="[0,16383]" type="int" reserve="0x0000" length="1">576</Parameter>
+    <Parameter name="uv_low_thr1_2" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="uv_low_thr1_3" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="y_edge_thr_min_0" des="min edge juge thresh under different bv" level="1" default="20" range="[0,65535]" type="int" reserve="0x0000" length="1">20</Parameter>
+    <Parameter name="y_edge_thr_min_1" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_2" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_3" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_max_0" des="max edge juge thresh under different bv" level="1" default="40" range="[0,65535]" type="int" reserve="0x0000" length="1">40</Parameter>
+    <Parameter name="y_edge_thr_max_1" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_2" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_3" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+   </Parameter>
+   <Parameter name="Threashold_Index">
+    <Parameter name="ymd_u" des="ymd_u" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_u" des="ymd_min_u" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="ymd_v" des="ymd_v" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_v" des="ymd_min_v" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="slop_uv_0" des="slop_uv_0" level="1" default="5" range="[0,65536]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="slop_uv_1" des="slop_uv_1" level="1" default="4" range="[0,65536]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="slop_uv_2" des="slop_uv_2" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_3" des="slop_uv_3" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_4" des="slop_uv_4" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_5" des="slop_uv_5" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_6" des="slop_uv_6" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_7" des="slop_uv_7" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_y_0" des="slop_y_0" level="1" default="409" range="[0,65536]" type="int" reserve="0x0000" length="1">409</Parameter>
+    <Parameter name="slop_y_1" des="slop_y_1" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_2" des="slop_y_2" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_3" des="slop_y_3" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_4" des="slop_y_4" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_5" des="slop_y_5" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_6" des="slop_y_6" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_7" des="slop_y_7" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="middle_factor_uv_0" des="middle_factor_uv_0" level="1" default="19392" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19392</Parameter>
+    <Parameter name="middle_factor_uv_1" des="middle_factor_uv_1" level="1" default="19712" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19712</Parameter>
+    <Parameter name="middle_factor_uv_2" des="middle_factor_uv_2" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_3" des="middle_factor_uv_3" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_4" des="middle_factor_uv_4" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_5" des="middle_factor_uv_5" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_6" des="middle_factor_uv_6" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_7" des="middle_factor_uv_7" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_y_0" des="middle_factor_y_0" level="1" default="24552" range="[0,65536]" type="int" reserve="0x0000" length="1">24552</Parameter>
+    <Parameter name="middle_factor_y_1" des="middle_factor_y_1" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_2" des="middle_factor_y_2" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_3" des="middle_factor_y_3" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_4" des="middle_factor_y_4" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_5" des="middle_factor_y_5" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_6" des="middle_factor_y_6" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_7" des="middle_factor_y_7" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="5" name="region5" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CCNR_Control">
+    <Parameter name="ccnr_bypass" des="ccnr_bypass" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Strength">
+    <Parameter name="y_th" des="y thresh" level="1" default="0" range="[0,255]" type="int" reserve="0x0000" length="1">240</Parameter>
+    <Parameter name="uv_diff_thr" des="the different value of UV palne and the surrounding pixels" level="1" default="16" range="[0,255]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="alpha_hl_diff_u" des="The difference between low and high strength in the U plane" level="1" default="1800" range="[0,16383]" type="int" reserve="0x0000" length="1">1800</Parameter>
+    <Parameter name="alpha_low_u" des="U palne denoise thresh" level="1" default="14264" range="[0,18383]" type="int" reserve="0x0000" length="1">14264</Parameter>
+    <Parameter name="uv_low_thr2_0" des="the strenth of filter in low freq" level="1" default="768" range="[0,81600]" type="int" reserve="0x0000" length="1">768</Parameter>
+    <Parameter name="uv_low_thr2_1" des="the strenth of filter in low freq" level="1" default="960" range="[0,81600]" type="int" reserve="0x0000" length="1">960</Parameter>
+    <Parameter name="uv_low_thr2_2" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_low_thr2_3" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_high_thr2_0" des="the strenth of filter in high freq" level="1" default="2240" range="[0,81600]" type="int" reserve="0x0000" length="1">2240</Parameter>
+    <Parameter name="uv_high_thr2_1" des="the strenth of filter in high freq" level="1" default="2880" range="[0,81600]" type="int" reserve="0x0000" length="1">2880</Parameter>
+    <Parameter name="uv_high_thr2_2" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="uv_high_thr2_3" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="css_lum_thr" des="color supression thresh" level="1" default="32" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>
+   </Parameter>
+   <Parameter name="Threashold">
+    <Parameter name="pre_uv_th" des="the first line pixel,UV thresh" level="1" default="30" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="uv_th" des="variance thresh" level="1" default="15" range="[0,255]" type="int" reserve="0x0000" length="1">8</Parameter>
+    <Parameter name="uv_dist" des="gradient thresh" level="1" default="5" range="[0,765]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="uv_low_thr1_0" des="UV thresh under different bv" level="1" default="448" range="[0,16383]" type="int" reserve="0x0000" length="1">448</Parameter>
+    <Parameter name="uv_low_thr1_1" des="UV thresh under different bv" level="1" default="576" range="[0,16383]" type="int" reserve="0x0000" length="1">576</Parameter>
+    <Parameter name="uv_low_thr1_2" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="uv_low_thr1_3" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="y_edge_thr_min_0" des="min edge juge thresh under different bv" level="1" default="20" range="[0,65535]" type="int" reserve="0x0000" length="1">20</Parameter>
+    <Parameter name="y_edge_thr_min_1" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_2" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_3" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_max_0" des="max edge juge thresh under different bv" level="1" default="40" range="[0,65535]" type="int" reserve="0x0000" length="1">40</Parameter>
+    <Parameter name="y_edge_thr_max_1" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_2" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_3" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+   </Parameter>
+   <Parameter name="Threashold_Index">
+    <Parameter name="ymd_u" des="ymd_u" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_u" des="ymd_min_u" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="ymd_v" des="ymd_v" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_v" des="ymd_min_v" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="slop_uv_0" des="slop_uv_0" level="1" default="5" range="[0,65536]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="slop_uv_1" des="slop_uv_1" level="1" default="4" range="[0,65536]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="slop_uv_2" des="slop_uv_2" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_3" des="slop_uv_3" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_4" des="slop_uv_4" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_5" des="slop_uv_5" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_6" des="slop_uv_6" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_7" des="slop_uv_7" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_y_0" des="slop_y_0" level="1" default="409" range="[0,65536]" type="int" reserve="0x0000" length="1">409</Parameter>
+    <Parameter name="slop_y_1" des="slop_y_1" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_2" des="slop_y_2" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_3" des="slop_y_3" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_4" des="slop_y_4" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_5" des="slop_y_5" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_6" des="slop_y_6" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_7" des="slop_y_7" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="middle_factor_uv_0" des="middle_factor_uv_0" level="1" default="19392" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19392</Parameter>
+    <Parameter name="middle_factor_uv_1" des="middle_factor_uv_1" level="1" default="19712" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19712</Parameter>
+    <Parameter name="middle_factor_uv_2" des="middle_factor_uv_2" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_3" des="middle_factor_uv_3" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_4" des="middle_factor_uv_4" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_5" des="middle_factor_uv_5" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_6" des="middle_factor_uv_6" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_7" des="middle_factor_uv_7" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_y_0" des="middle_factor_y_0" level="1" default="24552" range="[0,65536]" type="int" reserve="0x0000" length="1">24552</Parameter>
+    <Parameter name="middle_factor_y_1" des="middle_factor_y_1" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_2" des="middle_factor_y_2" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_3" des="middle_factor_y_3" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_4" des="middle_factor_y_4" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_5" des="middle_factor_y_5" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_6" des="middle_factor_y_6" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_7" des="middle_factor_y_7" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="6" name="region6" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CCNR_Control">
+    <Parameter name="ccnr_bypass" des="ccnr_bypass" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Strength">
+    <Parameter name="y_th" des="y thresh" level="1" default="0" range="[0,255]" type="int" reserve="0x0000" length="1">240</Parameter>
+    <Parameter name="uv_diff_thr" des="the different value of UV palne and the surrounding pixels" level="1" default="16" range="[0,255]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="alpha_hl_diff_u" des="The difference between low and high strength in the U plane" level="1" default="1800" range="[0,16383]" type="int" reserve="0x0000" length="1">1800</Parameter>
+    <Parameter name="alpha_low_u" des="U palne denoise thresh" level="1" default="14264" range="[0,18383]" type="int" reserve="0x0000" length="1">14264</Parameter>
+    <Parameter name="uv_low_thr2_0" des="the strenth of filter in low freq" level="1" default="768" range="[0,81600]" type="int" reserve="0x0000" length="1">672</Parameter>
+    <Parameter name="uv_low_thr2_1" des="the strenth of filter in low freq" level="1" default="960" range="[0,81600]" type="int" reserve="0x0000" length="1">864</Parameter>
+    <Parameter name="uv_low_thr2_2" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1056</Parameter>
+    <Parameter name="uv_low_thr2_3" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1056</Parameter>
+    <Parameter name="uv_high_thr2_0" des="the strenth of filter in high freq" level="1" default="2240" range="[0,81600]" type="int" reserve="0x0000" length="1">1792</Parameter>
+    <Parameter name="uv_high_thr2_1" des="the strenth of filter in high freq" level="1" default="2880" range="[0,81600]" type="int" reserve="0x0000" length="1">2300</Parameter>
+    <Parameter name="uv_high_thr2_2" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">2816</Parameter>
+    <Parameter name="uv_high_thr2_3" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3328</Parameter>
+    <Parameter name="css_lum_thr" des="color supression thresh" level="1" default="32" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>
+   </Parameter>
+   <Parameter name="Threashold">
+    <Parameter name="pre_uv_th" des="the first line pixel,UV thresh" level="1" default="30" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="uv_th" des="variance thresh" level="1" default="15" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>
+    <Parameter name="uv_dist" des="gradient thresh" level="1" default="5" range="[0,765]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="uv_low_thr1_0" des="UV thresh under different bv" level="1" default="448" range="[0,16383]" type="int" reserve="0x0000" length="1">448</Parameter>
+    <Parameter name="uv_low_thr1_1" des="UV thresh under different bv" level="1" default="576" range="[0,16383]" type="int" reserve="0x0000" length="1">576</Parameter>
+    <Parameter name="uv_low_thr1_2" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="uv_low_thr1_3" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="y_edge_thr_min_0" des="min edge juge thresh under different bv" level="1" default="20" range="[0,65535]" type="int" reserve="0x0000" length="1">20</Parameter>
+    <Parameter name="y_edge_thr_min_1" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_2" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_3" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_max_0" des="max edge juge thresh under different bv" level="1" default="40" range="[0,65535]" type="int" reserve="0x0000" length="1">40</Parameter>
+    <Parameter name="y_edge_thr_max_1" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_2" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_3" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+   </Parameter>
+   <Parameter name="Threashold_Index">
+    <Parameter name="ymd_u" des="ymd_u" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_u" des="ymd_min_u" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="ymd_v" des="ymd_v" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_v" des="ymd_min_v" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="slop_uv_0" des="slop_uv_0" level="1" default="5" range="[0,65536]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="slop_uv_1" des="slop_uv_1" level="1" default="4" range="[0,65536]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="slop_uv_2" des="slop_uv_2" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_3" des="slop_uv_3" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_4" des="slop_uv_4" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_5" des="slop_uv_5" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_6" des="slop_uv_6" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_7" des="slop_uv_7" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_y_0" des="slop_y_0" level="1" default="409" range="[0,65536]" type="int" reserve="0x0000" length="1">409</Parameter>
+    <Parameter name="slop_y_1" des="slop_y_1" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_2" des="slop_y_2" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_3" des="slop_y_3" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_4" des="slop_y_4" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_5" des="slop_y_5" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_6" des="slop_y_6" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_7" des="slop_y_7" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="middle_factor_uv_0" des="middle_factor_uv_0" level="1" default="19392" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19392</Parameter>
+    <Parameter name="middle_factor_uv_1" des="middle_factor_uv_1" level="1" default="19712" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19712</Parameter>
+    <Parameter name="middle_factor_uv_2" des="middle_factor_uv_2" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_3" des="middle_factor_uv_3" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_4" des="middle_factor_uv_4" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_5" des="middle_factor_uv_5" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_6" des="middle_factor_uv_6" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_7" des="middle_factor_uv_7" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_y_0" des="middle_factor_y_0" level="1" default="24552" range="[0,65536]" type="int" reserve="0x0000" length="1">24552</Parameter>
+    <Parameter name="middle_factor_y_1" des="middle_factor_y_1" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_2" des="middle_factor_y_2" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_3" des="middle_factor_y_3" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_4" des="middle_factor_y_4" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_5" des="middle_factor_y_5" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_6" des="middle_factor_y_6" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_7" des="middle_factor_y_7" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="7" name="region7" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CCNR_Control">
+    <Parameter name="ccnr_bypass" des="ccnr_bypass" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Strength">
+    <Parameter name="y_th" des="y thresh" level="1" default="0" range="[0,255]" type="int" reserve="0x0000" length="1">240</Parameter>
+    <Parameter name="uv_diff_thr" des="the different value of UV palne and the surrounding pixels" level="1" default="16" range="[0,255]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="alpha_hl_diff_u" des="The difference between low and high strength in the U plane" level="1" default="1800" range="[0,16383]" type="int" reserve="0x0000" length="1">1800</Parameter>
+    <Parameter name="alpha_low_u" des="U palne denoise thresh" level="1" default="14264" range="[0,18383]" type="int" reserve="0x0000" length="1">14264</Parameter>
+    <Parameter name="uv_low_thr2_0" des="the strenth of filter in low freq" level="1" default="768" range="[0,81600]" type="int" reserve="0x0000" length="1">768</Parameter>
+    <Parameter name="uv_low_thr2_1" des="the strenth of filter in low freq" level="1" default="960" range="[0,81600]" type="int" reserve="0x0000" length="1">960</Parameter>
+    <Parameter name="uv_low_thr2_2" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_low_thr2_3" des="the strenth of filter in low freq" level="1" default="1080" range="[0,81600]" type="int" reserve="0x0000" length="1">1080</Parameter>
+    <Parameter name="uv_high_thr2_0" des="the strenth of filter in high freq" level="1" default="2240" range="[0,81600]" type="int" reserve="0x0000" length="1">2240</Parameter>
+    <Parameter name="uv_high_thr2_1" des="the strenth of filter in high freq" level="1" default="2880" range="[0,81600]" type="int" reserve="0x0000" length="1">2880</Parameter>
+    <Parameter name="uv_high_thr2_2" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="uv_high_thr2_3" des="the strenth of filter in high freq" level="1" default="3200" range="[0,81600]" type="int" reserve="0x0000" length="1">3200</Parameter>
+    <Parameter name="css_lum_thr" des="color supression thresh" level="1" default="32" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>
+   </Parameter>
+   <Parameter name="Threashold">
+    <Parameter name="pre_uv_th" des="the first line pixel,UV thresh" level="1" default="30" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="uv_th" des="variance thresh" level="1" default="15" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>
+    <Parameter name="uv_dist" des="gradient thresh" level="1" default="5" range="[0,765]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="uv_low_thr1_0" des="UV thresh under different bv" level="1" default="448" range="[0,16383]" type="int" reserve="0x0000" length="1">448</Parameter>
+    <Parameter name="uv_low_thr1_1" des="UV thresh under different bv" level="1" default="576" range="[0,16383]" type="int" reserve="0x0000" length="1">576</Parameter>
+    <Parameter name="uv_low_thr1_2" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="uv_low_thr1_3" des="UV thresh under different bv" level="1" default="640" range="[0,16383]" type="int" reserve="0x0000" length="1">640</Parameter>
+    <Parameter name="y_edge_thr_min_0" des="min edge juge thresh under different bv" level="1" default="20" range="[0,65535]" type="int" reserve="0x0000" length="1">20</Parameter>
+    <Parameter name="y_edge_thr_min_1" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_2" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_min_3" des="min edge juge thresh under different bv" level="1" default="34" range="[0,65535]" type="int" reserve="0x0000" length="1">34</Parameter>
+    <Parameter name="y_edge_thr_max_0" des="max edge juge thresh under different bv" level="1" default="40" range="[0,65535]" type="int" reserve="0x0000" length="1">40</Parameter>
+    <Parameter name="y_edge_thr_max_1" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_2" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+    <Parameter name="y_edge_thr_max_3" des="max edge juge thresh under different bv" level="1" default="49" range="[0,65535]" type="int" reserve="0x0000" length="1">49</Parameter>
+   </Parameter>
+   <Parameter name="Threashold_Index">
+    <Parameter name="ymd_u" des="ymd_u" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_u" des="ymd_min_u" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="ymd_v" des="ymd_v" level="1" default="491520" range="[0,2147483647]" type="int" reserve="0x0000" length="1">491520</Parameter>
+    <Parameter name="ymd_min_v" des="ymd_min_v" level="1" default="0" range="[0,2147483647]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="slop_uv_0" des="slop_uv_0" level="1" default="5" range="[0,65536]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="slop_uv_1" des="slop_uv_1" level="1" default="4" range="[0,65536]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="slop_uv_2" des="slop_uv_2" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_3" des="slop_uv_3" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_4" des="slop_uv_4" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_5" des="slop_uv_5" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_6" des="slop_uv_6" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_uv_7" des="slop_uv_7" level="1" default="3" range="[0,65536]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="slop_y_0" des="slop_y_0" level="1" default="409" range="[0,65536]" type="int" reserve="0x0000" length="1">409</Parameter>
+    <Parameter name="slop_y_1" des="slop_y_1" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_2" des="slop_y_2" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_3" des="slop_y_3" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_4" des="slop_y_4" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_5" des="slop_y_5" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_6" des="slop_y_6" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="slop_y_7" des="slop_y_7" level="1" default="546" range="[0,65536]" type="int" reserve="0x0000" length="1">546</Parameter>
+    <Parameter name="middle_factor_uv_0" des="middle_factor_uv_0" level="1" default="19392" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19392</Parameter>
+    <Parameter name="middle_factor_uv_1" des="middle_factor_uv_1" level="1" default="19712" range="[0,2147483648]" type="int" reserve="0x0000" length="1">19712</Parameter>
+    <Parameter name="middle_factor_uv_2" des="middle_factor_uv_2" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_3" des="middle_factor_uv_3" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_4" des="middle_factor_uv_4" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_5" des="middle_factor_uv_5" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_6" des="middle_factor_uv_6" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_uv_7" des="middle_factor_uv_7" level="1" default="17792" range="[0,2147483648]" type="int" reserve="0x0000" length="1">17792</Parameter>
+    <Parameter name="middle_factor_y_0" des="middle_factor_y_0" level="1" default="24552" range="[0,65536]" type="int" reserve="0x0000" length="1">24552</Parameter>
+    <Parameter name="middle_factor_y_1" des="middle_factor_y_1" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_2" des="middle_factor_y_2" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_3" des="middle_factor_y_3" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_4" des="middle_factor_y_4" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_5" des="middle_factor_y_5" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_6" des="middle_factor_y_6" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+    <Parameter name="middle_factor_y_7" des="middle_factor_y_7" level="1" default="34946" range="[0,65536]" type="int" reserve="0x0000" length="1">34946</Parameter>
+   </Parameter>
+  </Parameter>
+ </Parameters>
+ <Defaults name="CCNR" des="description">
+  <Parameter index="0" name="region0" des="description">
+   <Parameter name="cnr_iir_mode" des="description" level="1" range="[0,65535]" type="int" length="1">0</Parameter>
+   <Parameter name="cnr_uv_pg_th" des="description" level="1" range="[0,65535]" type="int" length="1">960</Parameter>
+   <Parameter name="iircnr_sat_ratio" des="description" level="1" range="[0,65535]" type="int" length="1">64</Parameter>
+   <Parameter name="iircnr_uv_s_th" des="description" level="1" range="[0,65535]" type="int" length="1">4</Parameter>
+   <Parameter name="iircnr_y_max_th" des="description" level="1" range="[0,255]" type="int" length="1">250</Parameter>
+   <Parameter name="iircnr_y_min_th" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="iircnr_alpha_hl_diff_v" des="description" level="1" range="[0,65535]" type="int" length="1">1800</Parameter>
+   <Parameter name="iircnr_alpha_low_v" des="description" level="1" range="[0,65535]" type="int" length="1">14264</Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description">
+   <Parameter name="cnr_iir_mode" des="description" level="1" range="[0,65535]" type="int" length="1">0</Parameter>
+   <Parameter name="cnr_uv_pg_th" des="description" level="1" range="[0,65535]" type="int" length="1">960</Parameter>
+   <Parameter name="iircnr_sat_ratio" des="description" level="1" range="[0,65535]" type="int" length="1">64</Parameter>
+   <Parameter name="iircnr_uv_s_th" des="description" level="1" range="[0,65535]" type="int" length="1">4</Parameter>
+   <Parameter name="iircnr_y_max_th" des="description" level="1" range="[0,255]" type="int" length="1">250</Parameter>
+   <Parameter name="iircnr_y_min_th" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="iircnr_alpha_hl_diff_v" des="description" level="1" range="[0,65535]" type="int" length="1">1800</Parameter>
+   <Parameter name="iircnr_alpha_low_v" des="description" level="1" range="[0,65535]" type="int" length="1">14264</Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description">
+   <Parameter name="cnr_iir_mode" des="description" level="1" range="[0,65535]" type="int" length="1">0</Parameter>
+   <Parameter name="cnr_uv_pg_th" des="description" level="1" range="[0,65535]" type="int" length="1">960</Parameter>
+   <Parameter name="iircnr_sat_ratio" des="description" level="1" range="[0,65535]" type="int" length="1">64</Parameter>
+   <Parameter name="iircnr_uv_s_th" des="description" level="1" range="[0,65535]" type="int" length="1">4</Parameter>
+   <Parameter name="iircnr_y_max_th" des="description" level="1" range="[0,255]" type="int" length="1">250</Parameter>
+   <Parameter name="iircnr_y_min_th" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="iircnr_alpha_hl_diff_v" des="description" level="1" range="[0,65535]" type="int" length="1">1800</Parameter>
+   <Parameter name="iircnr_alpha_low_v" des="description" level="1" range="[0,65535]" type="int" length="1">14264</Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description">
+   <Parameter name="cnr_iir_mode" des="description" level="1" range="[0,65535]" type="int" length="1">0</Parameter>
+   <Parameter name="cnr_uv_pg_th" des="description" level="1" range="[0,65535]" type="int" length="1">960</Parameter>
+   <Parameter name="iircnr_sat_ratio" des="description" level="1" range="[0,65535]" type="int" length="1">64</Parameter>
+   <Parameter name="iircnr_uv_s_th" des="description" level="1" range="[0,65535]" type="int" length="1">4</Parameter>
+   <Parameter name="iircnr_y_max_th" des="description" level="1" range="[0,255]" type="int" length="1">250</Parameter>
+   <Parameter name="iircnr_y_min_th" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="iircnr_alpha_hl_diff_v" des="description" level="1" range="[0,65535]" type="int" length="1">1800</Parameter>
+   <Parameter name="iircnr_alpha_low_v" des="description" level="1" range="[0,65535]" type="int" length="1">14264</Parameter>
+  </Parameter>
+  <Parameter index="4" name="region4" des="description">
+   <Parameter name="cnr_iir_mode" des="description" level="1" range="[0,65535]" type="int" length="1">0</Parameter>
+   <Parameter name="cnr_uv_pg_th" des="description" level="1" range="[0,65535]" type="int" length="1">960</Parameter>
+   <Parameter name="iircnr_sat_ratio" des="description" level="1" range="[0,65535]" type="int" length="1">64</Parameter>
+   <Parameter name="iircnr_uv_s_th" des="description" level="1" range="[0,65535]" type="int" length="1">4</Parameter>
+   <Parameter name="iircnr_y_max_th" des="description" level="1" range="[0,255]" type="int" length="1">250</Parameter>
+   <Parameter name="iircnr_y_min_th" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="iircnr_alpha_hl_diff_v" des="description" level="1" range="[0,65535]" type="int" length="1">1800</Parameter>
+   <Parameter name="iircnr_alpha_low_v" des="description" level="1" range="[0,65535]" type="int" length="1">14264</Parameter>
+  </Parameter>
+  <Parameter index="5" name="region5" des="description">
+   <Parameter name="cnr_iir_mode" des="description" level="1" range="[0,65535]" type="int" length="1">0</Parameter>
+   <Parameter name="cnr_uv_pg_th" des="description" level="1" range="[0,65535]" type="int" length="1">960</Parameter>
+   <Parameter name="iircnr_sat_ratio" des="description" level="1" range="[0,65535]" type="int" length="1">64</Parameter>
+   <Parameter name="iircnr_uv_s_th" des="description" level="1" range="[0,65535]" type="int" length="1">4</Parameter>
+   <Parameter name="iircnr_y_max_th" des="description" level="1" range="[0,255]" type="int" length="1">250</Parameter>
+   <Parameter name="iircnr_y_min_th" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="iircnr_alpha_hl_diff_v" des="description" level="1" range="[0,65535]" type="int" length="1">1800</Parameter>
+   <Parameter name="iircnr_alpha_low_v" des="description" level="1" range="[0,65535]" type="int" length="1">14264</Parameter>
+  </Parameter>
+  <Parameter index="6" name="region6" des="description">
+   <Parameter name="cnr_iir_mode" des="description" level="1" range="[0,65535]" type="int" length="1">0</Parameter>
+   <Parameter name="cnr_uv_pg_th" des="description" level="1" range="[0,65535]" type="int" length="1">960</Parameter>
+   <Parameter name="iircnr_sat_ratio" des="description" level="1" range="[0,65535]" type="int" length="1">64</Parameter>
+   <Parameter name="iircnr_uv_s_th" des="description" level="1" range="[0,65535]" type="int" length="1">4</Parameter>
+   <Parameter name="iircnr_y_max_th" des="description" level="1" range="[0,255]" type="int" length="1">250</Parameter>
+   <Parameter name="iircnr_y_min_th" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="iircnr_alpha_hl_diff_v" des="description" level="1" range="[0,65535]" type="int" length="1">1800</Parameter>
+   <Parameter name="iircnr_alpha_low_v" des="description" level="1" range="[0,65535]" type="int" length="1">14264</Parameter>
+  </Parameter>
+  <Parameter index="7" name="region7" des="description">
+   <Parameter name="cnr_iir_mode" des="description" level="1" range="[0,65535]" type="int" length="1">0</Parameter>
+   <Parameter name="cnr_uv_pg_th" des="description" level="1" range="[0,65535]" type="int" length="1">960</Parameter>
+   <Parameter name="iircnr_sat_ratio" des="description" level="1" range="[0,65535]" type="int" length="1">64</Parameter>
+   <Parameter name="iircnr_uv_s_th" des="description" level="1" range="[0,65535]" type="int" length="1">4</Parameter>
+   <Parameter name="iircnr_y_max_th" des="description" level="1" range="[0,255]" type="int" length="1">250</Parameter>
+   <Parameter name="iircnr_y_min_th" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="iircnr_alpha_hl_diff_v" des="description" level="1" range="[0,65535]" type="int" length="1">1800</Parameter>
+   <Parameter name="iircnr_alpha_low_v" des="description" level="1" range="[0,65535]" type="int" length="1">14264</Parameter>
+  </Parameter>
+ </Defaults>
+</root>

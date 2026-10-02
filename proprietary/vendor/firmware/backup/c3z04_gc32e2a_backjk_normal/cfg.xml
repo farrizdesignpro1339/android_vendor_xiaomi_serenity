@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<cfg>
+  <sensor_name>c3z04_gc32e2a_backjk</sensor_name>
+  <versionid>0x000C0019</versionid>
+  <scenario_num>4</scenario_num>
+  <scenario alia="com">
+    <id>0x0000000000000000</id>
+    <block_num>61</block_num>
+    <imageWidth>3264</imageWidth>
+    <imageHeight>2448</imageHeight>
+    <block name="BLC">
+      <block_id>0x4002</block_id>
+      <param>com</param>
+    </block>
+    <block name="RGBGAIN">
+      <block_id>0x4007</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_RGB_DITHER">
+      <block_id>0x6019</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_PPE">
+      <block_id>0x6018</block_id>
+      <param>com</param>
+    </block>
+    <block name="ALSC">
+      <block_id>0x402f</block_id>
+      <param>com</param>
+    </block>
+    <block name="ALSC_CTRL">
+      <block_id>0x50a9</block_id>
+      <param>com</param>
+    </block>
+    <block name="AEM">
+      <block_id>0x400e</block_id>
+      <param>com</param>
+    </block>
+    <block name="AFL_V3">
+      <block_id>0x401a</block_id>
+      <param>com</param>
+    </block>
+    <block name="ANTIFL">
+      <block_id>0x403b</block_id>
+      <param>com</param>
+    </block>
+    <block name="AE">
+      <block_id>0x4031</block_id>
+      <param>com</param>
+    </block>
+    <block name="AE_CTRL">
+      <block_id>0x50a7</block_id>
+      <param>com</param>
+    </block>
+    <block name="AE_ADAPT">
+      <block_id>0x5009</block_id>
+      <param>com</param>
+    </block>
+    <block name="AWB">
+      <block_id>0x4032</block_id>
+      <param>com</param>
+    </block>
+    <block name="AIAWB">
+      <block_id>0x50B1</block_id>
+      <param>com</param>
+    </block>
+    <block name="AWB_CTRL">
+      <block_id>0x50B3</block_id>
+      <param>com</param>
+    </block>
+    <block name="AWBC">
+      <block_id>0x400d</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_BPC">
+      <block_id>0x6008</block_id>
+      <param>com</param>
+    </block>
+    <block name="AF">
+      <block_id>0x4033</block_id>
+      <param>com</param>
+    </block>
+    <block name="PD">
+      <block_id>0x50B4</block_id>
+      <param>com</param>
+    </block>
+    <block name="AF_CTRL">
+      <block_id>0x50B0</block_id>
+      <param>com</param>
+    </block>
+    <block name="AIPD">
+      <block_id>0x50AD</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_BAYER_NR">
+      <block_id>0x6005</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_IMBALANCE">
+      <block_id>0x6017</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_CFAI">
+      <block_id>0x600c</block_id>
+      <param>com</param>
+    </block>
+    <block name="CMC10_V1">
+      <block_id>0x50aa</block_id>
+      <param>com</param>
+    </block>
+    <block name="RGB_GAM">
+      <block_id>0x4014</block_id>
+      <param>com</param>
+    </block>
+    <block name="XTM">
+      <block_id>0x50a2</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_HSV">
+      <block_id>0x6015</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_CCE">
+      <block_id>0x600a</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_CCE_UVDIV">
+      <block_id>0x600b</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_3DNR">
+      <block_id>0x6003</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_YUV_PRECDN">
+      <block_id>0x601e</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_UV_CDN">
+      <block_id>0x601b</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_UV_POSTCDN">
+      <block_id>0x601c</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_YNR">
+      <block_id>0x601f</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_EE">
+      <block_id>0x6012</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_CCNR">
+      <block_id>0x6016</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_BCHS">
+      <block_id>0x6006</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_YUV_NOISEFILTER">
+      <block_id>0x601d</block_id>
+      <param>com</param>
+    </block>
+    <block name="PCC">
+      <block_id>0x50a0</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_MFNR6_LITE">
+      <block_id>0x7505</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_MFSR3">
+      <block_id>0x7517</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_HDR5.2">
+      <block_id>0x751a</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_CHDR">
+      <block_id>0x751e</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_XDR2">
+      <block_id>0x7516</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_YNR2">
+      <block_id>0x7502</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_CNR4">
+      <block_id>0x7514</block_id>
+      <param>com</param>
+    </block>
+    <block name="AI_PRO">
+      <block_id>0x5079</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_BEAUTY12">
+      <block_id>0x7515</block_id>
+      <param>com</param>
+    </block>
+    <block name="dpf">
+      <block_id>0x11171</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_SP_BOKEH2">
+      <block_id>0x7509</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_SC_BOKEH">
+      <block_id>0x750b</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_D_MASK">
+      <block_id>0x750e</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_DP_BOKEH">
+      <block_id>0x750f</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_DC_BOKEH">
+      <block_id>0x7510</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_SD_MFNR2.0">
+      <block_id>0x7508</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_SD_USD2.2">
+      <block_id>0x7507</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_SD_LOWLIGHT">
+      <block_id>0x751b</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_SD_MFSR">
+      <block_id>0x7518</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_SD_HIGHRES">
+      <block_id>0x751c</block_id>
+      <param>com</param>
+    </block>
+    <block name="TRG_SD_ISZ">
+      <block_id>0x751d</block_id>
+      <param>com</param>
+    </block>
+  </scenario>
+  <scenario alia="prv0">
+    <id>0x0000010000000000</id>
+    <block_num>0</block_num>
+    <imageWidth>3264</imageWidth>
+    <imageHeight>2448</imageHeight>
+  </scenario>
+  <scenario alia="cap0">
+    <id>0x0000050000000000</id>
+    <block_num>0</block_num>
+    <imageWidth>3264</imageWidth>
+    <imageHeight>2448</imageHeight>
+  </scenario>
+  <scenario alia="video0">
+    <id>0x0000090000000000</id>
+    <block_num>0</block_num>
+    <imageWidth>3264</imageWidth>
+    <imageHeight>2448</imageHeight>
+  </scenario>
+</cfg>

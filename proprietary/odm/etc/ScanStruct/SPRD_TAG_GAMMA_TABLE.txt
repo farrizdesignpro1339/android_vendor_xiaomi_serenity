@@ -1,0 +1,8 @@
+isp_dev_gamma_info path = /home/work/mnt/miui_codes1/build_home_rom-vendor-merged/vendor/sprd/modules/libcamera/kiface/sprd_isp_r9p0.h
+struct isp_dev_gamma_info {
+	uint32_t bypass;
+	uint8_t gain_r[ISP_FRGB_GAMMA_PT_NUM];
+	uint8_t gain_g[ISP_FRGB_GAMMA_PT_NUM];
+	uint8_t gain_b[ISP_FRGB_GAMMA_PT_NUM];
+};
+

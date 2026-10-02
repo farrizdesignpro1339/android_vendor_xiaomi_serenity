@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cfg> 
+  <sensor_name>imx616</sensor_name>  
+  <versionid>0x000C0019</versionid>  
+  <scenario_num>24</scenario_num>  
+  <scenario alia="com"> 
+    <id>0x0000000000000000</id>  
+    <block_num>62</block_num>  
+    <imageWidth>6560</imageWidth>  
+    <imageHeight>4928</imageHeight>  
+    <block name="TRG_3DNR"> 
+      <block_id>0x6003</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AE"> 
+      <block_id>0x4031</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AEM"> 
+      <block_id>0x400e</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AE_CTRL"> 
+      <block_id>0x50a7</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AF"> 
+      <block_id>0x4033</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AFL_V3"> 
+      <block_id>0x401a</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AI_PRO"> 
+      <block_id>0x5079</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="ALSC"> 
+      <block_id>0x402f</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="ALSC_CTRL"> 
+      <block_id>0x50a9</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="ANTIFL"> 
+      <block_id>0x403b</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AWB"> 
+      <block_id>0x4032</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AIAWB"> 
+      <block_id>0x50B1</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AWB_CTRL"> 
+      <block_id>0x50B3</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AWBC"> 
+      <block_id>0x400d</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_BAYER_NR"> 
+      <block_id>0x6005</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_BCHS"> 
+      <block_id>0x605e</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_BEAUTY12"> 
+      <block_id>0x7515</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="BLC"> 
+      <block_id>0x4002</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_BPC"> 
+      <block_id>0x6008</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="BWUD"> 
+      <block_id>0x5069</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_CCE"> 
+      <block_id>0x600a</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_CCE_UVDIV"> 
+      <block_id>0x600b</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_CFAI"> 
+      <block_id>0x600c</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="CMC10_V1"> 
+      <block_id>0x50aa</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="DRE_PRO"> 
+      <block_id>0x5081</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_EE"> 
+      <block_id>0x6012</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="HDR"> 
+      <block_id>0x5083</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="HIST2"> 
+      <block_id>0x4022</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_HSV"> 
+      <block_id>0x6015</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_CCNR"> 
+      <block_id>0x6016</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_IMBALANCE"> 
+      <block_id>0x6017</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="PCC"> 
+      <block_id>0x50a0</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="PDAF4"> 
+      <block_id>0x50a6</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_PPE"> 
+      <block_id>0x6018</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="RGBGAIN"> 
+      <block_id>0x4007</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="RGB_AFM"> 
+      <block_id>0x5055</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_RGB_DITHER"> 
+      <block_id>0x6019</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="RGB_GAM"> 
+      <block_id>0x4014</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_HDR5.2"> 
+      <block_id>0x751a</block_id>  
+      <param>com</param>  
+      <bypass>0</bypass>  
+      <fix>0</fix> 
+    </block>  
+    <block name="TRG_CHDR"> 
+      <block_id>0x751e</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_MFNR6"> 
+      <block_id>0x7504</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_MFNR6_LITE"> 
+      <block_id>0x7505</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_SD_MFNR2.0"> 
+      <block_id>0x7508</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_SD_USD2.2"> 
+      <block_id>0x7507</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_SD_LOWLIGHT"> 
+      <block_id>0x751b</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_SC_BOKEH"> 
+      <block_id>0x750b</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_SP_BOKEH1"> 
+      <block_id>0x750a</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_SP_BOKEH2"> 
+      <block_id>0x7509</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_YNR2"> 
+      <block_id>0x7502</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_CNR4"> 
+      <block_id>0x7514</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_SD_HIGHRES"> 
+      <block_id>0x751C</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_SD_ISZ"> 
+      <block_id>0x751D</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_UV_CDN"> 
+      <block_id>0x601b</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_UV_POSTCDN"> 
+      <block_id>0x601c</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_XDR2"> 
+      <block_id>0x7516</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="XTM"> 
+      <block_id>0x50a2</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_YNR"> 
+      <block_id>0x601f</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_YUV_NOISEFILTER"> 
+      <block_id>0x601d</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_YUV_PRECDN"> 
+      <block_id>0x601e</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="Y_GAMMA"> 
+      <block_id>0x5075</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="dpf"> 
+      <block_id>0x11171</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="mfnr3"> 
+      <block_id>0x11170</block_id>  
+      <param>com</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="prv0"> 
+    <id>0x0000010000000000</id>  
+    <block_num>0</block_num>  
+    <imageWidth>6560</imageWidth>  
+    <imageHeight>4928</imageHeight> 
+  </scenario>  
+  <scenario alia="prv1"> 
+    <id>0x0000020000000000</id>  
+    <block_num>16</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="TRG_3DNR"> 
+      <block_id>0x6003</block_id>  
+      <param>prv1</param> 
+    </block>  
+    <block name="TRG_BAYER_NR"> 
+      <block_id>0x6005</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_BPC"> 
+      <block_id>0x6008</block_id>  
+      <param>prv1</param> 
+    </block>  
+    <block name="BWUD"> 
+      <block_id>0x5069</block_id>  
+      <param>prv1</param> 
+    </block>  
+    <block name="TRG_CCE_UVDIV"> 
+      <block_id>0x600b</block_id>  
+      <param>prv1</param> 
+    </block>  
+    <block name="TRG_CFAI"> 
+      <block_id>0x600c</block_id>  
+      <param>prv1</param> 
+    </block>  
+    <block name="TRG_EE"> 
+      <block_id>0x6012</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="TRG_CCNR"> 
+      <block_id>0x6016</block_id>  
+      <param>prv1</param> 
+    </block>  
+    <block name="TRG_IMBALANCE"> 
+      <block_id>0x6017</block_id>  
+      <param>prv1</param> 
+    </block>  
+    <block name="TRG_PPE"> 
+      <block_id>0x6018</block_id>  
+      <param>prv1</param> 
+    </block>  
+    <block name="TRG_RGB_DITHER"> 
+      <block_id>0x6019</block_id>  
+      <param>prv1</param> 
+    </block>  
+    <block name="TRG_UV_CDN"> 
+      <block_id>0x601b</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_UV_POSTCDN"> 
+      <block_id>0x601c</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_YNR"> 
+      <block_id>0x601f</block_id>  
+      <param>prv1</param> 
+    </block>  
+    <block name="TRG_YUV_NOISEFILTER"> 
+      <block_id>0x601d</block_id>  
+      <param>prv1</param> 
+    </block>  
+    <block name="TRG_YUV_PRECDN"> 
+      <block_id>0x601e</block_id>  
+      <param>com</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="cap0"> 
+    <id>0x0000050000000000</id>  
+    <block_num>0</block_num>  
+    <imageWidth>6560</imageWidth>  
+    <imageHeight>4928</imageHeight> 
+  </scenario>  
+  <scenario alia="cap1"> 
+    <id>0x0000060000000000</id>  
+    <block_num>13</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="TRG_3DNR"> 
+      <block_id>0x6003</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_BAYER_NR"> 
+      <block_id>0x6005</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="BWUD"> 
+      <block_id>0x5069</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_CCE_UVDIV"> 
+      <block_id>0x600b</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_CFAI"> 
+      <block_id>0x600c</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_EE"> 
+      <block_id>0x6012</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_CCNR"> 
+      <block_id>0x6016</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_IMBALANCE"> 
+      <block_id>0x6017</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_UV_CDN"> 
+      <block_id>0x601b</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_UV_POSTCDN"> 
+      <block_id>0x601c</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_YNR"> 
+      <block_id>0x601f</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_YUV_NOISEFILTER"> 
+      <block_id>0x601d</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_YUV_PRECDN"> 
+      <block_id>0x601e</block_id>  
+      <param>com</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="video0"> 
+    <id>0x0000090000000000</id>  
+    <block_num>0</block_num>  
+    <imageWidth>6560</imageWidth>  
+    <imageHeight>4928</imageHeight> 
+  </scenario>  
+  <scenario alia="video1"> 
+    <id>0x00000A0000000000</id>  
+    <block_num>22</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="TRG_3DNR"> 
+      <block_id>0x6003</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="AE"> 
+      <block_id>0x4031</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="AE_CTRL"> 
+      <block_id>0x50a7</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="AWB"> 
+      <block_id>0x4032</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="TRG_BAYER_NR"> 
+      <block_id>0x6005</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_BPC"> 
+      <block_id>0x6008</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="BWUD"> 
+      <block_id>0x5069</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="TRG_CCE_UVDIV"> 
+      <block_id>0x600b</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="TRG_CFAI"> 
+      <block_id>0x600c</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="CMC10_V1"> 
+      <block_id>0x50aa</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="TRG_EE"> 
+      <block_id>0x6012</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="TRG_CCNR"> 
+      <block_id>0x6016</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_IMBALANCE"> 
+      <block_id>0x6017</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="TRG_PPE"> 
+      <block_id>0x6018</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="TRG_RGB_DITHER"> 
+      <block_id>0x6019</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="RGB_GAM"> 
+      <block_id>0x4014</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="TRG_UV_CDN"> 
+      <block_id>0x601b</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_UV_POSTCDN"> 
+      <block_id>0x601c</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="XTM"> 
+      <block_id>0x50a2</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="TRG_YNR"> 
+      <block_id>0x601f</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="TRG_YUV_NOISEFILTER"> 
+      <block_id>0x601d</block_id>  
+      <param>video1</param> 
+    </block>  
+    <block name="TRG_YUV_PRECDN"> 
+      <block_id>0x601e</block_id>  
+      <param>com</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="video2"> 
+    <id>0x00000B0000000000</id>  
+    <block_num>0</block_num>  
+    <imageWidth>1920</imageWidth>  
+    <imageHeight>1080</imageHeight> 
+  </scenario>  
+  <scenario alia="cap1_night"> 
+    <id>0x0000060100000000</id>  
+    <block_num>7</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="TRG_BAYER_NR"> 
+      <block_id>0x6005</block_id>  
+      <param>cap1_night</param> 
+    </block>  
+    <block name="TRG_CFAI"> 
+      <block_id>0x600c</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_EE"> 
+      <block_id>0x6012</block_id>  
+      <param>cap1_night</param> 
+    </block>  
+    <block name="RGB_GAM"> 
+      <block_id>0x4014</block_id>  
+      <param>cap1_night</param> 
+    </block>  
+    <block name="XTM"> 
+      <block_id>0x50a2</block_id>  
+      <param>cap1_night</param> 
+    </block>  
+    <block name="TRG_YNR"> 
+      <block_id>0x601f</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_YNR2"> 
+      <block_id>0x7502</block_id>  
+      <param>cap1_night</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="cap1_hdr"> 
+    <id>0x0000060001000000</id>  
+    <block_num>3</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="TRG_BAYER_NR"> 
+      <block_id>0x6005</block_id>  
+      <param>cap1_hdr</param> 
+    </block>  
+    <block name="TRG_EE"> 
+      <block_id>0x6012</block_id>  
+      <param>cap1_hdr</param> 
+    </block>  
+    <block name="TRG_YNR"> 
+      <block_id>0x601f</block_id>  
+      <param>cap1</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="cap1_flash"> 
+    <id>0x0000060002000000</id>  
+    <block_num>7</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="TRG_BAYER_NR"> 
+      <block_id>0x6005</block_id>  
+      <param>cap1_flash</param> 
+    </block>  
+    <block name="TRG_CFAI"> 
+      <block_id>0x600c</block_id>  
+      <param>cap1_flash</param> 
+    </block>  
+    <block name="TRG_EE"> 
+      <block_id>0x6012</block_id>  
+      <param>cap1_flash</param> 
+    </block>  
+    <block name="TRG_UV_CDN"> 
+      <block_id>0x601b</block_id>  
+      <param>cap1_flash</param> 
+    </block>  
+    <block name="TRG_UV_POSTCDN"> 
+      <block_id>0x601c</block_id>  
+      <param>cap1_flash</param> 
+    </block>  
+    <block name="TRG_YNR"> 
+      <block_id>0x601f</block_id>  
+      <param>cap1_flash</param> 
+    </block>  
+    <block name="TRG_YUV_PRECDN"> 
+      <block_id>0x601e</block_id>  
+      <param>cap1_flash</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="cap1_portrait"> 
+    <id>0x0000060300000000</id>  
+    <block_num>4</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="TRG_BAYER_NR"> 
+      <block_id>0x6005</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_CFAI"> 
+      <block_id>0x600c</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_EE"> 
+      <block_id>0x6012</block_id>  
+      <param>cap1_portrait</param> 
+    </block>  
+    <block name="TRG_YNR"> 
+      <block_id>0x601f</block_id>  
+      <param>cap1</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="prv1_facebeauty"> 
+    <id>0x0000020000000200</id>  
+    <block_num>1</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="XTM"> 
+      <block_id>0x50a2</block_id>  
+      <param>com</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="wechat_prv1"> 
+    <id>0x0001020000000000</id>  
+    <block_num>4</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="TRG_BAYER_NR"> 
+      <block_id>0x6005</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_EE"> 
+      <block_id>0x6012</block_id>  
+      <param>wechat_prv1</param> 
+    </block>  
+    <block name="XTM"> 
+      <block_id>0x50a2</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_YNR"> 
+      <block_id>0x601f</block_id>  
+      <param>com</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="messenger_cap1"> 
+    <id>0x0009060000000000</id>  
+    <block_num>4</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="TRG_BAYER_NR"> 
+      <block_id>0x6005</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_EE"> 
+      <block_id>0x6012</block_id>  
+      <param>messenger_cap1</param> 
+    </block>  
+    <block name="XTM"> 
+      <block_id>0x50a2</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="TRG_YNR"> 
+      <block_id>0x601f</block_id>  
+      <param>com</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="thirdapp_prv1"> 
+    <id>0x000A020000000000</id>  
+    <block_num>8</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="AE"> 
+      <block_id>0x4031</block_id>  
+      <param>thirdapp_prv1</param> 
+    </block>  
+    <block name="AE_CTRL"> 
+      <block_id>0x50a7</block_id>  
+      <param>thirdapp_prv1</param> 
+    </block>  
+    <block name="ALSC"> 
+      <block_id>0x402f</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="ALSC_CTRL"> 
+      <block_id>0x50a9</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="BLC"> 
+      <block_id>0x4002</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="RGB_GAM"> 
+      <block_id>0x4014</block_id>  
+      <param>thirdapp_prv1</param> 
+    </block>  
+    <block name="RGBGAIN"> 
+      <block_id>0x4007</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="XTM"> 
+      <block_id>0x50a2</block_id>  
+      <param>thirdapp_prv1</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="cap1_night_hdr"> 
+    <id>0x0000060101000000</id>  
+    <block_num>7</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="TRG_BAYER_NR"> 
+      <block_id>0x6005</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_CFAI"> 
+      <block_id>0x600c</block_id>  
+      <param>cap1_night_hdr</param> 
+    </block>  
+    <block name="TRG_EE"> 
+      <block_id>0x6012</block_id>  
+      <param>cap1_night_hdr</param> 
+    </block>  
+    <block name="TRG_UV_CDN"> 
+      <block_id>0x601b</block_id>  
+      <param>cap1_night_hdr</param> 
+    </block>  
+    <block name="TRG_UV_POSTCDN"> 
+      <block_id>0x601c</block_id>  
+      <param>cap1_night_hdr</param> 
+    </block>  
+    <block name="TRG_YNR"> 
+      <block_id>0x601f</block_id>  
+      <param>cap1</param> 
+    </block>  
+    <block name="TRG_YUV_PRECDN"> 
+      <block_id>0x601e</block_id>  
+      <param>cap1_night_hdr</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="top_app_faceid_register_prv1"> 
+    <id>0x0019020000000000</id>  
+    <block_num>1</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="AE_CTRL"> 
+      <block_id>0x50a7</block_id>  
+      <param>top_app_faceid_register_prv1</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="top_app_faceid_unlock_prv1"> 
+    <id>0x001a020000000000</id>  
+    <block_num>1</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="AE_CTRL"> 
+      <block_id>0x50a7</block_id>  
+      <param>top_app_faceid_unlock_prv1</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="top_app_meiyan_prv1"> 
+    <id>0x0012020000000000</id>  
+    <block_num>4</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="AE"> 
+      <block_id>0x4031</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AE_CTRL"> 
+      <block_id>0x50a7</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="RGB_GAM"> 
+      <block_id>0x4014</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="XTM"> 
+      <block_id>0x50a2</block_id>  
+      <param>com</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="facebook_prv1"> 
+    <id>0x0006020000000000</id>  
+    <block_num>4</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="AE"> 
+      <block_id>0x4031</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AE_CTRL"> 
+      <block_id>0x50a7</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="RGB_GAM"> 
+      <block_id>0x4014</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="XTM"> 
+      <block_id>0x50a2</block_id>  
+      <param>com</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="instagram_prv1"> 
+    <id>0x0008020000000000</id>  
+    <block_num>4</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="AE"> 
+      <block_id>0x4031</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AE_CTRL"> 
+      <block_id>0x50a7</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="RGB_GAM"> 
+      <block_id>0x4014</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="XTM"> 
+      <block_id>0x50a2</block_id>  
+      <param>com</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="tiktok_prv1"> 
+    <id>0x0003020000000000</id>  
+    <block_num>4</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="AE"> 
+      <block_id>0x4031</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="AE_CTRL"> 
+      <block_id>0x50a7</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="RGB_GAM"> 
+      <block_id>0x4014</block_id>  
+      <param>com</param> 
+    </block>  
+    <block name="XTM"> 
+      <block_id>0x50a2</block_id>  
+      <param>com</param> 
+    </block> 
+  </scenario>  
+  <scenario alia="prv1_ultra"> 
+    <id>0x0000020d00000000</id>  
+    <block_num>1</block_num>  
+    <imageWidth>3280</imageWidth>  
+    <imageHeight>2464</imageHeight>  
+    <block name="TRG_SD_HIGHRES"> 
+      <block_id>0x751C</block_id>  
+      <param>prv1_ultra</param> 
+    </block>
+  </scenario> 
+</cfg>

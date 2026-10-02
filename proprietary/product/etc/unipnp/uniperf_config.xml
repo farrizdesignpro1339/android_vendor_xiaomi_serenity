@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--this xml is for dynamic powerhal config-->
+<!--suggestion: id format:
+    10000~19999 for common
+    20000~29999 for 7731
+    30000~39999 for 9832
+    40000~49999 for 9863
+    50000~59999 for 9230
+    60000~69999 for 9620
+    70000~79999 for 9621
+    80000~84999 for 9632-->
+
+<config version="1.0">
+    <action id="40000" name="screen_unlock">
+        <duration_ms>3000</duration_ms>
+        <cluster0_freq_min>1600000</cluster0_freq_min>
+        <cluster1_freq_min>1800000</cluster1_freq_min>
+    </action>
+    <action id="40001" name="task_boost">
+        <duration_ms>0</duration_ms>
+        <cpu_boost_top>60</cpu_boost_top>
+        <cpu_boost_foreground>60</cpu_boost_foreground>
+    </action>
+
+    <action id="50000" name="screen_unlock">
+        <duration_ms>3000</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+    </action>
+
+    <action id="50001" name="interaction_launch">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <ddr_freq>max</ddr_freq>
+        <cpu_boost_foreground>5120</cpu_boost_foreground>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="50002" name="interaction_fling">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cpu_boost_foreground>5120</cpu_boost_foreground>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="50003" name="app_foreground_light">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>15,10</cpu_freq_margin>
+        <cpu_boost_foreground>5120</cpu_boost_foreground>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="50004" name="weibo_slide">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>1228800</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>1690000</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <ddr_freq>max</ddr_freq>
+        <cpu_boost_foreground>5120</cpu_boost_foreground>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="50005" name="web_browser">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>20,10</cpu_freq_margin>
+    </action>
+
+    <action id="50006" name="article_news">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>15,0</cpu_freq_margin>
+    </action>
+
+    <action id="50007" name="shopping">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>15,10</cpu_freq_margin>
+    </action>
+
+    <action id="50008" name="sf_bigcore">
+        <duration_ms>0</duration_ms>
+        <cpu_affinity>surfaceflinger,192</cpu_affinity>
+    </action>
+
+    <action id="50009" name="facebook">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <ddr_freq>max</ddr_freq>
+        <cpu_affinity>com.facebook.katana,192</cpu_affinity>
+        <cpu_affinity>com.facebook.katana/RenderThread,192</cpu_affinity>
+    </action>
+
+    <action id="50010" name="YouTube">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <ddr_freq>max</ddr_freq>
+        <cpu_boost_foreground>5120</cpu_boost_foreground>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+        <cpu_affinity>com.google.android.youtube,192</cpu_affinity>
+        <cpu_affinity>com.google.android.youtube/RenderThread,192</cpu_affinity>
+    </action>
+
+    <action id="60000" name="slide_boost">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>1228800</cluster0_freq_min>
+        <cluster1_freq_min>1228800</cluster1_freq_min>
+        <cluster2_freq_min>1536000</cluster2_freq_min>
+    </action>
+
+    <action id="60001" name="interaction_launch">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <cluster2_freq_min>max</cluster2_freq_min>
+        <cluster2_freq_max>max</cluster2_freq_max>
+        <ddr_freq>max</ddr_freq>
+        <cpu_shares_top>8192</cpu_shares_top>
+        <cpu_shares_foreground>8192</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+        <cpu_boost_top>-30</cpu_boost_top>
+        <cpu_boost_foreground>-30</cpu_boost_foreground>
+        <cpu_boost_background>-30</cpu_boost_background>
+        <cpu_boost_system>-30</cpu_boost_system>
+    </action>
+
+    <action id="60002" name="interaction_fling">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cpu_shares_top>8192</cpu_shares_top>
+        <cpu_shares_foreground>8192</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+        <cpu_boost_top>-30</cpu_boost_top>
+        <cpu_boost_foreground>-30</cpu_boost_foreground>
+        <cpu_boost_background>-30</cpu_boost_background>
+        <cpu_boost_system>-30</cpu_boost_system>
+    </action>
+
+    <action id="60003" name="screen_unlock">
+        <duration_ms>3000</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <cluster2_freq_min>max</cluster2_freq_min>
+        <cluster2_freq_max>max</cluster2_freq_max>
+    </action>
+
+    <action id="60004" name="web_browser">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_max>1404000</cluster0_freq_max>
+        <cluster1_freq_max>768000</cluster1_freq_max>
+        <cluster2_freq_max>768000</cluster2_freq_max>
+    </action>
+
+    <action id="60005" name="article_news">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>20,10,10</cpu_freq_margin>
+    </action>
+
+    <action id="60006" name="shopping">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>20,10,10</cpu_freq_margin>
+    </action>
+
+    <action id="60007" name="happyelements">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>10,0,0</cpu_freq_margin>
+    </action>
+
+    <action id="60008" name="weibo_slide">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>1228800</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>1536000</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <cluster2_freq_min>1536000</cluster2_freq_min>
+        <cluster2_freq_max>max</cluster2_freq_max>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="60009" name="app_foreground_light">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>20,10,10</cpu_freq_margin>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="60010" name="templerun2_power">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>-10,-10,-10</cpu_freq_margin>
+    </action>
+
+    <action id="70000" name="slide_boost">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>1001000</cluster0_freq_min>
+        <cluster1_freq_min>1157000</cluster1_freq_min>
+        <cluster2_freq_min>1228800</cluster2_freq_min>
+    </action>
+
+    <action id="70001" name="screen_unlock">
+        <duration_ms>3000</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <cluster2_freq_min>max</cluster2_freq_min>
+        <cluster2_freq_max>max</cluster2_freq_max>
+    </action>
+
+    <action id="70002" name="tencent_mtt">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>10,-60,-60</cpu_freq_margin>
+        <cpu_uclamp>thread,0,512,com.tencent.mtt|com.tencent.mtt</cpu_uclamp>
+    </action>
+
+    <action id="70003" name="toutiao_news">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>10,-20,-20</cpu_freq_margin>
+    </action>
+
+    <action id="70004" name="payment">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>20,0,0</cpu_freq_margin>
+    </action>
+
+    <action id="70005" name="taobao">
+        <duration_ms>0</duration_ms>
+        <cpu_uclamp>thread,0,614,com.taobao.taobao|m.taobao.taobao</cpu_uclamp>
+        <cpu_uclamp>thread,0,614,com.taobao.taobao|RenderThread</cpu_uclamp>
+    </action>
+
+    <action id="70006" name="meituan">
+        <duration_ms>0</duration_ms>
+        <cpu_uclamp>thread,0,614,com.sankuai.meituan|sankuai.meituan</cpu_uclamp>
+        <cpu_uclamp>thread,0,614,com.sankuai.meituan|Jit thread pool</cpu_uclamp>
+    </action>
+
+    <action id="70007" name="app_foreground_light">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>20,10,10</cpu_freq_margin>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="70008" name="weibo_slide">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>25,15,15</cpu_freq_margin>
+        <cluster0_freq_min>1228800</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>1536000</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <cluster2_freq_min>1536000</cluster2_freq_min>
+        <cluster2_freq_max>max</cluster2_freq_max>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="70009" name="interaction_launch">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <cluster2_freq_min>max</cluster2_freq_min>
+        <cluster2_freq_max>max</cluster2_freq_max>
+        <ddr_freq>max</ddr_freq>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="70010" name="interaction_fling">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="70011" name="happyelements">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>10,0,0</cpu_freq_margin>
+    </action>
+
+    <action id="70012" name="candycrushsaga_performance">
+        <duration_ms>0</duration_ms>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="70013" name="navigation">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>15,0,0</cpu_freq_margin>
+    </action>
+
+    <action id="70014" name="interaction_launch_taobao">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <cluster2_freq_min>max</cluster2_freq_min>
+        <cluster2_freq_max>max</cluster2_freq_max>
+        <ddr_freq>max</ddr_freq>
+        <cpu_affinity>com.taobao.taobao,192</cpu_affinity>
+        <cpu_affinity>com.taobao.taobao/RenderThread,192</cpu_affinity>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="70015" name="templerun2">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>10,10,10</cpu_freq_margin>
+    </action>
+
+    <action id="70016" name="interaction_launch_toutiao">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <cluster2_freq_min>max</cluster2_freq_min>
+        <cluster2_freq_max>max</cluster2_freq_max>
+        <ddr_freq>max</ddr_freq>
+        <cpu_affinity>com.ss.android.article.news,192</cpu_affinity>
+        <cpu_affinity>com.ss.android.article.news/RenderThread,192</cpu_affinity>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="70999" name="scroll_systemui_120">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <cluster2_freq_min>max</cluster2_freq_min>
+        <cluster2_freq_max>max</cluster2_freq_max>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+        <cpu_dma_latency>0XDAC</cpu_dma_latency>
+    </action>
+
+    <action id="80001" name="slide_boost_max">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>1352000</cluster0_freq_min>
+        <cluster1_freq_min>1430000</cluster1_freq_min>
+        <ddr_freq>max</ddr_freq>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="80002" name="fling_boost">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>1352000</cluster0_freq_min>
+        <cluster1_freq_min>1430000</cluster1_freq_min>
+    </action>
+
+    <action id="80003" name="com.imangi.templerun2_max">
+        <ddr_freq>max</ddr_freq>
+        <cpu_shares_top>5120</cpu_shares_top>
+    </action>
+
+    <action id="80004" name="com.imangi.templerun2_min">
+        <cpu_shares_top>1024</cpu_shares_top>
+    </action>
+
+    <action id="80005" name="interaction_launch">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <ddr_freq>max</ddr_freq>
+        <cpu_shares_top>8192</cpu_shares_top>
+        <cpu_shares_foreground>8192</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="80006" name="happyelements_performance">
+        <duration_ms>0</duration_ms>
+        <cpu_shares_top>4096</cpu_shares_top>
+        <cpu_shares_foreground>4096</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="80007" name="browsing_news">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>15,0</cpu_freq_margin>
+    </action>
+
+    <action id="80008" name="payment">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>15,5</cpu_freq_margin>
+    </action>
+
+    <action id="80009" name="taobao">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>15,5</cpu_freq_margin>
+        <cpu_uclamp>thread,0,614,com.taobao.taobao|m.taobao.taobao</cpu_uclamp>
+    </action>
+
+    <action id="80010" name="meituan">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>15,5</cpu_freq_margin>
+        <cpu_uclamp>thread,0,614,com.sankuai.meituan|sankuai.meituan</cpu_uclamp>
+    </action>
+
+    <action id="80011" name="happyelements_power">
+        <duration_ms>0</duration_ms>
+        <cpu_freq_margin>10,0</cpu_freq_margin>
+    </action>
+
+    <action id="80012" name="app_foreground_light">
+        <duration_ms>0</duration_ms>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>5120</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+    <action id="80013" name="mm_fling">
+        <duration_ms>0</duration_ms>
+        <cluster0_freq_min>max</cluster0_freq_min>
+        <cluster0_freq_max>max</cluster0_freq_max>
+        <cluster1_freq_min>max</cluster1_freq_min>
+        <cluster1_freq_max>max</cluster1_freq_max>
+        <ddr_freq>max</ddr_freq>
+        <cpu_boost_foreground>5120</cpu_boost_foreground>
+        <cpu_shares_top>5120</cpu_shares_top>
+        <cpu_shares_foreground>1024</cpu_shares_foreground>
+        <cpu_shares_background>512</cpu_shares_background>
+    </action>
+
+</config>

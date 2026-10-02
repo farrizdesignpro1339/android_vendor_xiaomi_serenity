@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root name="SD_HIGHRES"> 
+  <BlockInfo> 
+    <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">29980</Parameter>  
+    <Parameter index="" name="version" des="description" level="1" range="[0,255]" type="int">0</Parameter>  
+    <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>  
+    <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">2409070244</Parameter>  
+    <Parameter index="" name="headersize" des="description" level="1" range="[0,255]" type="int">0</Parameter>  
+    <Parameter index="" name="triggersize" des="description" level="1" range="[0,255]" type="int">0</Parameter>  
+    <Parameter index="" name="datasize" des="description" level="1" range="[0,255]" type="int">0</Parameter>  
+    <Parameter index="" name="calc_freq" des="description" level="1" range="[0,255]" type="int">0</Parameter>  
+    <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">8000</Parameter>  
+    <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">6000</Parameter>  
+    <Parameter index="" name="BlockControl" des="description" level="1" range="[0,32767]" type="int">0x0022</Parameter>  
+    <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter> 
+  </BlockInfo>  
+  <Triggers name="Scene_Flag" select_way="0" trigger_enable="1" group_num="5" des="description"> 
+    <Trigger start="-600" end="400" para="bv" name=""> 
+      <Trigger start="50" end="6400" para="iso" name="region0" interp_type="0x1">0</Trigger> 
+    </Trigger>  
+    <Trigger start="400" end="500" para="bv" name=""> 
+      <Trigger start="50" end="6400" para="iso" name="region1" interp_type="0x1">1</Trigger> 
+    </Trigger>  
+    <Trigger start="500" end="1600" para="bv" name=""> 
+      <Trigger start="50" end="750" para="iso" name="region2" interp_type="0x1">2</Trigger>  
+      <Trigger start="750" end="800" para="iso" name="region3" interp_type="0x1">3</Trigger>  
+      <Trigger start="800" end="6400" para="iso" name="region4" interp_type="0x1">4</Trigger> 
+    </Trigger> 
+  </Triggers>  
+  <Parameters name="Scene_Flag" group_num="5" des="description"> 
+    <Parameter index="0" name="region0" des="description" level="1" type="int" reserve="0x0000" length="1"> 
+      <Parameter name="Scene_Flag"> 
+        <Parameter name="flag" des="description" level="1" range="[0,2]" type="int" reserve="0x0000" length="1">0</Parameter> 
+      </Parameter> 
+    </Parameter>  
+    <Parameter index="1" name="region1" des="description" level="1" type="int" reserve="0x0000" length="1"> 
+      <Parameter name="Scene_Flag"> 
+        <Parameter name="flag" des="description" level="1" range="[0,2]" type="int" reserve="0x0000" length="1">0</Parameter> 
+      </Parameter> 
+    </Parameter>  
+    <Parameter index="2" name="region2" des="description" level="1" type="int" reserve="0x0000" length="1"> 
+      <Parameter name="Scene_Flag"> 
+        <Parameter name="flag" des="description" level="1" range="[0,2]" type="int" reserve="0x0000" length="1">0</Parameter> 
+      </Parameter> 
+    </Parameter>  
+    <Parameter index="3" name="region3" des="description" level="1" type="int" reserve="0x0000" length="1"> 
+      <Parameter name="Scene_Flag"> 
+        <Parameter name="flag" des="description" level="1" range="[0,2]" type="int" reserve="0x0000" length="1">0</Parameter> 
+      </Parameter> 
+    </Parameter>  
+    <Parameter index="4" name="region4" des="description" level="1" type="int" reserve="0x0000" length="1"> 
+      <Parameter name="Scene_Flag"> 
+        <Parameter name="flag" des="description" level="1" range="[0,2]" type="int" reserve="0x0000" length="1">0</Parameter> 
+      </Parameter> 
+    </Parameter> 
+  </Parameters> 
+</root>

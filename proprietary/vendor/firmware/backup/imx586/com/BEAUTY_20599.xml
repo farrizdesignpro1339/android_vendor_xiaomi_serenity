@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<BEAUTY_20599>
+	<block_header>
+		<version type="u8">
+			<version_major>0</version_major>
+			<version_minor>0</version_minor>
+			<version_micro>0</version_micro>
+			<reserved len="5">0</reserved>
+		</version>
+		<block_info type="u32">
+			<block_id>20599</block_id>
+			<bypass range="[0,1]">0</bypass>
+			<smart_size>0</smart_size>
+			<block_size>700</block_size>
+			<modify_time>2209061032</modify_time>
+			<trigger_flag range="[0,1]">0</trigger_flag>
+			<reserved len="2">0</reserved>
+		</block_info>
+	</block_header>
+	<fb_param idx="0">
+		<removeBlemishFlag type="u8" description="blemish enable,0：off;1：on" range="[0,1]" freq="less" default="1">1</removeBlemishFlag>
+		<blemishSizeThrCoeff description="blemish radius threshold，set small to remove large spot" range="[13,20]" freq="often" default="14">14</blemishSizeThrCoeff>
+		<skinColorType description="target skin color,0：white;1：rosy;2：wheat" range="[0,2]" freq="less" default="0">0</skinColorType>
+		<lipColorType description="target lip color,0：crimson;1：pink;2：fuchsia" range="[0,2]" freq="less" default="0">0</lipColorType>
+		<fb_layer>
+			<skinSmoothLevel type="u8" len="11" description="skinSmooth strength" range="[0,20]" freq="often_tune" default=" 0 2 3 4 6 7 0 0 0 0 0 ">
+				<table> 0 2 3 4 5 6 0 0 0 0 0 </table>
+			</skinSmoothLevel>
+			<skinSmoothDefaultLevel description="skinSmooth Default value" range="[0,20]" freq="less" default="4">4</skinSmoothDefaultLevel>
+			<skinTextureHiFreqLevel len="11" description="High Frequence Texture recover strength" range="[0,10]" freq="often_tune" default="0 10 10 10 10 10 0 0 0 0 0 ">
+				<table> 0 10 10 10 10 10 0 0 0 0 0 </table>
+			</skinTextureHiFreqLevel>
+			<skinTextureHiFreqDefaultLevel description="High Frequence Texture recover strength Default value" range="[0,10]" freq="less" default="10">10</skinTextureHiFreqDefaultLevel>
+			<skinTextureLoFreqLevel len="11" description="Low Frequence Texture recover strength" range="[0,10]" freq="often_tune" default="4 4 3 2 1 0 0 0 0 0 0">
+				<table> 4 4 3 2 1 0 0 0 0 0 0 </table>
+			</skinTextureLoFreqLevel>
+			<skinTextureLoFreqDefaultLevel description="Low Frequence Texture recover strength Default value" range="[0,10]" freq="less" default="2">2</skinTextureLoFreqDefaultLevel>
+			<skinSmoothRadiusCoeff len="11" description="skinSmooth radius threshold" range="[1,255]" freq="often_tune" default="55 55 55 55 55 55 0 0 0 0 0">
+				<table> 65 65 65 65 65 65 0 0 0 0 0 </table>
+			</skinSmoothRadiusCoeff>
+			<skinSmoothRadiusCoeffDefaultLevel description="skinSmooth radius threshold Default value" range="[1,255]" freq="less" default="55">65</skinSmoothRadiusCoeffDefaultLevel>
+			<skinBrightLevel len="11" description="skinBright strength" range="[0,20]" freq="often_tune" default="0 4 6 8 10 12 0 0 0 0 0">
+				<table> 0 4 6 8 10 12 0 0 0 0 0 </table>
+			</skinBrightLevel>
+			<skinBrightDefaultLevel description=" skinBright strength Default value" range="[0,20]" freq="less" default="8">8</skinBrightDefaultLevel>
+			<largeEyeLevel len="11" description="largeEye strength" range="[0,20]" freq="often_tune" default="0 2 4 6 8 10 0 0 0 0 0">
+				<table> 0 2 4 6 8 10 0 0 0 0 0 </table>
+			</largeEyeLevel>
+			<largeEyeDefaultLevel description="largeEye strength Default value" range="[0,20]" freq="often_tune" default="2">2</largeEyeDefaultLevel>
+			<slimFaceLevel len="11" description="slimFace strength" range="[0,20]" freq="often_tune" default="0 2 4 6 8 10 0 0 0 0 0">
+				<table> 0 2 4 6 8 10 0 0 0 0 0 </table>
+			</slimFaceLevel>
+			<slimFaceDefaultLevel description="slimFace strength Default value" range="[0,20]" freq="less" default="2">2</slimFaceDefaultLevel>
+			<skinColorLevel len="11" description="skinColor change strength  " range="[0,20]" freq="often_tune" default="0 3 6 9 11 12 0 0 0 0 0">
+				<table> 0 3 6 9 11 12 0 0 0 0 0 </table>
+			</skinColorLevel>
+			<skinColorDefaultLevel description="skinColor change strength Default value" range="[0,20]" freq="less" default="0">0</skinColorDefaultLevel>
+			<lipColorLevel len="11" description="lipColor change strength " range="[0,1]" freq="often_tune" default="0 3 6 9 11 12 0 0 0 0 0 ">
+				<table> 0 3 6 9 11 12 0 0 0 0 0 </table>
+			</lipColorLevel>
+			<lipColorDefaultLevel description="lipColor change strength Default value" range="[0,1]" freq="less" default="6">6</lipColorDefaultLevel>
+			<reserved len="4">0</reserved>
+		</fb_layer>
+		<reserved len="20">0</reserved>
+	</fb_param>
+	<fb_param idx="1">
+		<removeBlemishFlag type="u8" description="blemish enable,0：off;1：on" range="[0,1]" freq="less" default="1">1</removeBlemishFlag>
+		<blemishSizeThrCoeff description="blemish radius threshold，set small to remove large spot" range="[13,20]" freq="often" default="14">14</blemishSizeThrCoeff>
+		<skinColorType description="target skin color,0：white;1：rosy;2：wheat" range="[0,2]" freq="less" default="0">0</skinColorType>
+		<lipColorType description="target lip color,0：crimson;1：pink;2：fuchsia" range="[0,2]" freq="less" default="0">0</lipColorType>
+		<fb_layer>
+			<skinSmoothLevel type="u8" len="11" description="skinSmooth strength" range="[0,20]" freq="often_tune" default=" 0 2 3 4 6 7 0 0 0 0 0 ">
+				<table> 0 6 8 10 12 14 0 0 0 0 0 </table>
+			</skinSmoothLevel>
+			<skinSmoothDefaultLevel description="skinSmooth Default value" range="[0,20]" freq="less" default="4">10</skinSmoothDefaultLevel>
+			<skinTextureHiFreqLevel len="11" description="High Frequence Texture recover strength" range="[0,10]" freq="often_tune" default="0 10 10 10 10 10 0 0 0 0 0 ">
+				<table> 0 10 10 10 10 10 0 0 0 0 0 </table>
+			</skinTextureHiFreqLevel>
+			<skinTextureHiFreqDefaultLevel description="High Frequence Texture recover strength Default value" range="[0,10]" freq="less" default="10">10</skinTextureHiFreqDefaultLevel>
+			<skinTextureLoFreqLevel len="11" description="Low Frequence Texture recover strength" range="[0,10]" freq="often_tune" default="4 4 3 2 1 0 0 0 0 0 0">
+				<table> 4 4 3 2 1 0 0 0 0 0 0 </table>
+			</skinTextureLoFreqLevel>
+			<skinTextureLoFreqDefaultLevel description="Low Frequence Texture recover strength Default value" range="[0,10]" freq="less" default="2">2</skinTextureLoFreqDefaultLevel>
+			<skinSmoothRadiusCoeff len="11" description="skinSmooth radius threshold" range="[1,255]" freq="often_tune" default="55 55 55 55 55 55 0 0 0 0 0">
+				<table> 55 55 55 55 55 55 0 0 0 0 0 </table>
+			</skinSmoothRadiusCoeff>
+			<skinSmoothRadiusCoeffDefaultLevel description="skinSmooth radius threshold Default value" range="[1,255]" freq="less" default="55">55</skinSmoothRadiusCoeffDefaultLevel>
+			<skinBrightLevel len="11" description="skinBright strength" range="[0,20]" freq="often_tune" default="0 4 6 8 10 12 0 0 0 0 0">
+				<table> 0 4 6 8 10 12 0 0 0 0 0 </table>
+			</skinBrightLevel>
+			<skinBrightDefaultLevel description=" skinBright strength Default value" range="[0,20]" freq="less" default="8">8</skinBrightDefaultLevel>
+			<largeEyeLevel len="11" description="largeEye strength" range="[0,20]" freq="often_tune" default="0 2 4 6 8 10 0 0 0 0 0">
+				<table> 0 2 4 6 8 10 0 0 0 0 0 </table>
+			</largeEyeLevel>
+			<largeEyeDefaultLevel description="largeEye strength Default value" range="[0,20]" freq="often_tune" default="2">2</largeEyeDefaultLevel>
+			<slimFaceLevel len="11" description="slimFace strength" range="[0,20]" freq="often_tune" default="0 2 4 6 8 10 0 0 0 0 0">
+				<table> 0 2 4 6 8 10 0 0 0 0 0 </table>
+			</slimFaceLevel>
+			<slimFaceDefaultLevel description="slimFace strength Default value" range="[0,20]" freq="less" default="2">2</slimFaceDefaultLevel>
+			<skinColorLevel len="11" description="skinColor change strength  " range="[0,20]" freq="often_tune" default="0 3 6 9 11 12 0 0 0 0 0">
+				<table> 0 3 6 9 11 12 0 0 0 0 0 </table>
+			</skinColorLevel>
+			<skinColorDefaultLevel description="skinColor change strength Default value" range="[0,20]" freq="less" default="0">0</skinColorDefaultLevel>
+			<lipColorLevel len="11" description="lipColor change strength " range="[0,1]" freq="often_tune" default="0 3 6 9 11 12 0 0 0 0 0 ">
+				<table> 0 3 6 9 11 12 0 0 0 0 0 </table>
+			</lipColorLevel>
+			<lipColorDefaultLevel description="lipColor change strength Default value" range="[0,1]" freq="less" default="6">6</lipColorDefaultLevel>
+			<reserved len="4">0</reserved>
+		</fb_layer>
+		<reserved len="20">0</reserved>
+	</fb_param>
+	<fb_param idx="2">
+		<removeBlemishFlag type="u8" description="blemish enable,0：off;1：on" range="[0,1]" freq="less" default="1">1</removeBlemishFlag>
+		<blemishSizeThrCoeff description="blemish radius threshold，set small to remove large spot" range="[13,20]" freq="often" default="14">14</blemishSizeThrCoeff>
+		<skinColorType description="target skin color,0：white;1：rosy;2：wheat" range="[0,2]" freq="less" default="0">0</skinColorType>
+		<lipColorType description="target lip color,0：crimson;1：pink;2：fuchsia" range="[0,2]" freq="less" default="0">0</lipColorType>
+		<fb_layer>
+			<skinSmoothLevel type="u8" len="11" description="skinSmooth strength" range="[0,20]" freq="often_tune" default=" 0 2 3 4 6 7 0 0 0 0 0 ">
+				<table> 0 6 8 10 12 14 0 0 0 0 0 </table>
+			</skinSmoothLevel>
+			<skinSmoothDefaultLevel description="skinSmooth Default value" range="[0,20]" freq="less" default="4">10</skinSmoothDefaultLevel>
+			<skinTextureHiFreqLevel len="11" description="High Frequence Texture recover strength" range="[0,10]" freq="often_tune" default="0 10 10 10 10 10 0 0 0 0 0 ">
+				<table> 0 10 10 10 10 10 0 0 0 0 0 </table>
+			</skinTextureHiFreqLevel>
+			<skinTextureHiFreqDefaultLevel description="High Frequence Texture recover strength Default value" range="[0,10]" freq="less" default="10">10</skinTextureHiFreqDefaultLevel>
+			<skinTextureLoFreqLevel len="11" description="Low Frequence Texture recover strength" range="[0,10]" freq="often_tune" default="4 4 3 2 1 0 0 0 0 0 0">
+				<table> 4 4 3 2 1 0 0 0 0 0 0 </table>
+			</skinTextureLoFreqLevel>
+			<skinTextureLoFreqDefaultLevel description="Low Frequence Texture recover strength Default value" range="[0,10]" freq="less" default="2">2</skinTextureLoFreqDefaultLevel>
+			<skinSmoothRadiusCoeff len="11" description="skinSmooth radius threshold" range="[1,255]" freq="often_tune" default="55 55 55 55 55 55 0 0 0 0 0">
+				<table> 55 55 55 55 55 55 0 0 0 0 0 </table>
+			</skinSmoothRadiusCoeff>
+			<skinSmoothRadiusCoeffDefaultLevel description="skinSmooth radius threshold Default value" range="[1,255]" freq="less" default="55">55</skinSmoothRadiusCoeffDefaultLevel>
+			<skinBrightLevel len="11" description="skinBright strength" range="[0,20]" freq="often_tune" default="0 4 6 8 10 12 0 0 0 0 0">
+				<table> 0 2 4 6 8 10 0 0 0 0 0 </table>
+			</skinBrightLevel>
+			<skinBrightDefaultLevel description=" skinBright strength Default value" range="[0,20]" freq="less" default="8">8</skinBrightDefaultLevel>
+			<largeEyeLevel len="11" description="largeEye strength" range="[0,20]" freq="often_tune" default="0 2 4 6 8 10 0 0 0 0 0">
+				<table> 0 2 4 6 8 10 0 0 0 0 0 </table>
+			</largeEyeLevel>
+			<largeEyeDefaultLevel description="largeEye strength Default value" range="[0,20]" freq="often_tune" default="2">2</largeEyeDefaultLevel>
+			<slimFaceLevel len="11" description="slimFace strength" range="[0,20]" freq="often_tune" default="0 2 4 6 8 10 0 0 0 0 0">
+				<table> 0 2 4 6 8 10 0 0 0 0 0 </table>
+			</slimFaceLevel>
+			<slimFaceDefaultLevel description="slimFace strength Default value" range="[0,20]" freq="less" default="2">2</slimFaceDefaultLevel>
+			<skinColorLevel len="11" description="skinColor change strength  " range="[0,20]" freq="often_tune" default="0 3 6 9 11 12 0 0 0 0 0">
+				<table> 0 3 6 9 11 12 0 0 0 0 0 </table>
+			</skinColorLevel>
+			<skinColorDefaultLevel description="skinColor change strength Default value" range="[0,20]" freq="less" default="0">0</skinColorDefaultLevel>
+			<lipColorLevel len="11" description="lipColor change strength " range="[0,1]" freq="often_tune" default="0 3 6 9 11 12 0 0 0 0 0 ">
+				<table> 0 3 6 9 11 12 0 0 0 0 0 </table>
+			</lipColorLevel>
+			<lipColorDefaultLevel description="lipColor change strength Default value" range="[0,1]" freq="less" default="6">6</lipColorDefaultLevel>
+			<reserved len="4">0</reserved>
+		</fb_layer>
+		<reserved len="20">0</reserved>
+	</fb_param>
+	<fb_param idx="3">
+		<removeBlemishFlag type="u8" description="blemish enable,0：off;1：on" range="[0,1]" freq="less" default="1">1</removeBlemishFlag>
+		<blemishSizeThrCoeff description="blemish radius threshold，set small to remove large spot" range="[13,20]" freq="often" default="14">14</blemishSizeThrCoeff>
+		<skinColorType description="target skin color,0：white;1：rosy;2：wheat" range="[0,2]" freq="less" default="0">0</skinColorType>
+		<lipColorType description="target lip color,0：crimson;1：pink;2：fuchsia" range="[0,2]" freq="less" default="0">0</lipColorType>
+		<fb_layer>
+			<skinSmoothLevel type="u8" len="11" description="skinSmooth strength" range="[0,20]" freq="often_tune" default=" 0 2 3 4 6 7 0 0 0 0 0 ">
+				<table> 0 6 8 10 13 16 0 0 0 0 0 </table>
+			</skinSmoothLevel>
+			<skinSmoothDefaultLevel description="skinSmooth Default value" range="[0,20]" freq="less" default="4">10</skinSmoothDefaultLevel>
+			<skinTextureHiFreqLevel len="11" description="High Frequence Texture recover strength" range="[0,10]" freq="often_tune" default="0 10 10 10 10 10 0 0 0 0 0 ">
+				<table> 0 10 10 10 10 10 0 0 0 0 0 </table>
+			</skinTextureHiFreqLevel>
+			<skinTextureHiFreqDefaultLevel description="High Frequence Texture recover strength Default value" range="[0,10]" freq="less" default="10">10</skinTextureHiFreqDefaultLevel>
+			<skinTextureLoFreqLevel len="11" description="Low Frequence Texture recover strength" range="[0,10]" freq="often_tune" default="4 4 3 2 1 0 0 0 0 0 0">
+				<table> 4 4 3 2 1 0 0 0 0 0 0 </table>
+			</skinTextureLoFreqLevel>
+			<skinTextureLoFreqDefaultLevel description="Low Frequence Texture recover strength Default value" range="[0,10]" freq="less" default="2">2</skinTextureLoFreqDefaultLevel>
+			<skinSmoothRadiusCoeff len="11" description="skinSmooth radius threshold" range="[1,255]" freq="often_tune" default="55 55 55 55 55 55 0 0 0 0 0">
+				<table> 55 55 55 55 55 55 0 0 0 0 0 </table>
+			</skinSmoothRadiusCoeff>
+			<skinSmoothRadiusCoeffDefaultLevel description="skinSmooth radius threshold Default value" range="[1,255]" freq="less" default="55">55</skinSmoothRadiusCoeffDefaultLevel>
+			<skinBrightLevel len="11" description="skinBright strength" range="[0,20]" freq="often_tune" default="0 4 6 8 10 12 0 0 0 0 0">
+				<table> 0 3 6 8 11 14 0 0 0 0 0 </table>
+			</skinBrightLevel>
+			<skinBrightDefaultLevel description=" skinBright strength Default value" range="[0,20]" freq="less" default="8">8</skinBrightDefaultLevel>
+			<largeEyeLevel len="11" description="largeEye strength" range="[0,20]" freq="often_tune" default="0 2 4 6 8 10 0 0 0 0 0">
+				<table> 0 1 2 3 4 5 0 0 0 0 0 </table>
+			</largeEyeLevel>
+			<largeEyeDefaultLevel description="largeEye strength Default value" range="[0,20]" freq="often_tune" default="2">2</largeEyeDefaultLevel>
+			<slimFaceLevel len="11" description="slimFace strength" range="[0,20]" freq="often_tune" default="0 2 4 6 8 10 0 0 0 0 0">
+				<table> 0 1 2 3 4 5 0 0 0 0 0 </table>
+			</slimFaceLevel>
+			<slimFaceDefaultLevel description="slimFace strength Default value" range="[0,20]" freq="less" default="2">2</slimFaceDefaultLevel>
+			<skinColorLevel len="11" description="skinColor change strength  " range="[0,20]" freq="often_tune" default="0 3 6 9 11 12 0 0 0 0 0">
+				<table> 0 3 6 9 11 12 0 0 0 0 0 </table>
+			</skinColorLevel>
+			<skinColorDefaultLevel description="skinColor change strength Default value" range="[0,20]" freq="less" default="0">0</skinColorDefaultLevel>
+			<lipColorLevel len="11" description="lipColor change strength " range="[0,1]" freq="often_tune" default="0 3 6 9 11 12 0 0 0 0 0 ">
+				<table> 0 3 6 9 11 12 0 0 0 0 0 </table>
+			</lipColorLevel>
+			<lipColorDefaultLevel description="lipColor change strength Default value" range="[0,1]" freq="less" default="6">6</lipColorDefaultLevel>
+			<reserved len="4">0</reserved>
+		</fb_layer>
+		<reserved len="20">0</reserved>
+	</fb_param>
+	<fb_param idx="4">
+		<removeBlemishFlag type="u8" description="blemish enable,0：off;1：on" range="[0,1]" freq="less" default="1">1</removeBlemishFlag>
+		<blemishSizeThrCoeff description="blemish radius threshold，set small to remove large spot" range="[13,20]" freq="often" default="14">14</blemishSizeThrCoeff>
+		<skinColorType description="target skin color,0：white;1：rosy;2：wheat" range="[0,2]" freq="less" default="0">0</skinColorType>
+		<lipColorType description="target lip color,0：crimson;1：pink;2：fuchsia" range="[0,2]" freq="less" default="0">0</lipColorType>
+		<fb_layer>
+			<skinSmoothLevel type="u8" len="11" description="skinSmooth strength" range="[0,20]" freq="often_tune" default=" 0 2 3 4 6 7 0 0 0 0 0 ">
+				<table> 0 6 8 10 13 16 0 0 0 0 0 </table>
+			</skinSmoothLevel>
+			<skinSmoothDefaultLevel description="skinSmooth Default value" range="[0,20]" freq="less" default="4">10</skinSmoothDefaultLevel>
+			<skinTextureHiFreqLevel len="11" description="High Frequence Texture recover strength" range="[0,10]" freq="often_tune" default="0 10 10 10 10 10 0 0 0 0 0 ">
+				<table> 0 10 10 10 10 10 0 0 0 0 0 </table>
+			</skinTextureHiFreqLevel>
+			<skinTextureHiFreqDefaultLevel description="High Frequence Texture recover strength Default value" range="[0,10]" freq="less" default="10">10</skinTextureHiFreqDefaultLevel>
+			<skinTextureLoFreqLevel len="11" description="Low Frequence Texture recover strength" range="[0,10]" freq="often_tune" default="4 4 3 2 1 0 0 0 0 0 0">
+				<table> 4 4 3 2 1 0 0 0 0 0 0 </table>
+			</skinTextureLoFreqLevel>
+			<skinTextureLoFreqDefaultLevel description="Low Frequence Texture recover strength Default value" range="[0,10]" freq="less" default="2">2</skinTextureLoFreqDefaultLevel>
+			<skinSmoothRadiusCoeff len="11" description="skinSmooth radius threshold" range="[1,255]" freq="often_tune" default="55 55 55 55 55 55 0 0 0 0 0">
+				<table> 55 55 55 55 55 55 0 0 0 0 0 </table>
+			</skinSmoothRadiusCoeff>
+			<skinSmoothRadiusCoeffDefaultLevel description="skinSmooth radius threshold Default value" range="[1,255]" freq="less" default="55">55</skinSmoothRadiusCoeffDefaultLevel>
+			<skinBrightLevel len="11" description="skinBright strength" range="[0,20]" freq="often_tune" default="0 4 6 8 10 12 0 0 0 0 0">
+				<table> 0 4 6 8 10 12 0 0 0 0 0 </table>
+			</skinBrightLevel>
+			<skinBrightDefaultLevel description=" skinBright strength Default value" range="[0,20]" freq="less" default="8">8</skinBrightDefaultLevel>
+			<largeEyeLevel len="11" description="largeEye strength" range="[0,20]" freq="often_tune" default="0 2 4 6 8 10 0 0 0 0 0">
+				<table> 0 1 2 3 4 5 0 0 0 0 0 </table>
+			</largeEyeLevel>
+			<largeEyeDefaultLevel description="largeEye strength Default value" range="[0,20]" freq="often_tune" default="2">2</largeEyeDefaultLevel>
+			<slimFaceLevel len="11" description="slimFace strength" range="[0,20]" freq="often_tune" default="0 2 4 6 8 10 0 0 0 0 0">
+				<table> 0 1 2 3 4 5 0 0 0 0 0 </table>
+			</slimFaceLevel>
+			<slimFaceDefaultLevel description="slimFace strength Default value" range="[0,20]" freq="less" default="2">2</slimFaceDefaultLevel>
+			<skinColorLevel len="11" description="skinColor change strength  " range="[0,20]" freq="often_tune" default="0 3 6 9 11 12 0 0 0 0 0">
+				<table> 0 2 4 6 8 10 0 0 0 0 0 </table>
+			</skinColorLevel>
+			<skinColorDefaultLevel description="skinColor change strength Default value" range="[0,20]" freq="less" default="0">0</skinColorDefaultLevel>
+			<lipColorLevel len="11" description="lipColor change strength " range="[0,1]" freq="often_tune" default="0 3 6 9 11 12 0 0 0 0 0 ">
+				<table> 0 2 4 6 8 10 0 0 0 0 0 </table>
+			</lipColorLevel>
+			<lipColorDefaultLevel description="lipColor change strength Default value" range="[0,1]" freq="less" default="6">6</lipColorDefaultLevel>
+			<reserved len="4">0</reserved>
+		</fb_layer>
+		<reserved len="20">0</reserved>
+	</fb_param>
+	<reserved1 len="20">0</reserved1>
+</BEAUTY_20599>

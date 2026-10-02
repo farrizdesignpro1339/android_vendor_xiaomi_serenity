@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<AWBC_16397>
+	<block_header>
+		<version type="u8">
+			<version_major>0</version_major>
+			<version_minor>0</version_minor>
+			<version_micro>0</version_micro>
+			<reserved len="5">0</reserved>
+		</version>
+		<block_info type="u32">
+			<block_id>16397</block_id>
+			<bypass range="[0,1]">0</bypass>
+			<smart_size>0</smart_size>
+			<block_size>24</block_size>
+			<modify_time>2209011130</modify_time>
+			<trigger_flag range="[0,1]">0</trigger_flag>
+			<reserved len="2">0</reserved>
+		</block_info>
+	</block_header>
+	<awbc_gain>
+		<r_gain type="u16">0</r_gain>
+		<b_gain>0</b_gain>
+		<gr_gain>0</gr_gain>
+		<gb_gain>0</gb_gain>
+	</awbc_gain>
+	<awbc_thr>
+		<r_thr type="u16">0</r_thr>
+		<g_thr>0</g_thr>
+		<b_thr>0</b_thr>
+		<reserved>0</reserved>
+	</awbc_thr>
+	<awbc_offset>
+		<r_offset type="u16">0</r_offset>
+		<b_offset>0</b_offset>
+		<gr_offset>0</gr_offset>
+		<gb_offset>0</gb_offset>
+	</awbc_offset>
+</AWBC_16397>

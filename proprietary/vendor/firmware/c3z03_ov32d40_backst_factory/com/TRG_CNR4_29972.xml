@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root name="CNR4"> 
+  <BlockInfo> 
+    <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">29972</Parameter>  
+    <Parameter index="" name="version" des="description" level="1" range="[0,32767]" type="int">1</Parameter>  
+    <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>  
+    <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">2411191518</Parameter>  
+    <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">48</Parameter>  
+    <Parameter index="" name="triggersize" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="datasize" des="description" level="1" range="[0,32767]" type="int">224</Parameter>  
+    <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">3264</Parameter>  
+    <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">2448</Parameter>  
+    <Parameter index="" name="BlockControl" des="description" level="1" range="[0,32767]" type="int">0x0052</Parameter>  
+    <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter> 
+  </BlockInfo>  
+  <Triggers name="CNR4" select_way="0" trigger_enable="1" group_num="6" des="description"> 
+    <Trigger start="1.0" end="8.0" para="total_gain" name="region0" interp_type="0x1">0</Trigger>  
+    <Trigger start="8.0" end="16.0" para="total_gain" name="region1" interp_type="0x1">1</Trigger>  
+    <Trigger start="16.0" end="32.0" para="total_gain" name="region2" interp_type="0x1">2</Trigger>  
+    <Trigger start="32.0" end="96.0" para="total_gain" name="region3" interp_type="0x1">3</Trigger>  
+    <Trigger start="96.0" end="160.0" para="total_gain" name="region4" interp_type="0x1">4</Trigger>  
+    <Trigger start="160.0" end="160.0" para="total_gain" name="region5" interp_type="0x1">5</Trigger> 
+  </Triggers>  
+  <Parameters name="CNR4"> 
+    <Parameter index="0" name="region0" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="CNR" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>  
+        <Parameter name="range_factor" des="description" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">8</Parameter>  
+        <Parameter name="smooth_radius" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">30</Parameter>  
+        <Parameter name="scale" des="description" level="1" range="[1,2]" type="int" reserve="0x0010" length="1">2</Parameter>  
+        <Parameter name="step" des="description" level="1" range="[1,4]" type="int" reserve="0x0010" length="1">2</Parameter>  
+        <Parameter name="color_edge_u" des="description" level="1" range="[0,64]" type="int" reserve="0x0010" length="1">12</Parameter>  
+        <Parameter name="color_edge_v" des="description" level="1" range="[0,64]" type="int" reserve="0x0010" length="1">15</Parameter>  
+        <Parameter name="saturation" des="description" level="1" range="[-64,64]" type="int" reserve="0x0010" length="1">0</Parameter>  
+        <Parameter name="param0" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="param1" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="param2" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter> 
+      </Parameter> 
+    </Parameter>  
+    <Parameter index="1" name="region1" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="CNR" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>  
+        <Parameter name="range_factor" des="description" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">10</Parameter>  
+        <Parameter name="smooth_radius" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">30</Parameter>  
+        <Parameter name="scale" des="description" level="1" range="[1,2]" type="int" reserve="0x0010" length="1">2</Parameter>  
+        <Parameter name="step" des="description" level="1" range="[1,4]" type="int" reserve="0x0010" length="1">2</Parameter>  
+        <Parameter name="color_edge_u" des="description" level="1" range="[0,64]" type="int" reserve="0x0010" length="1">12</Parameter>  
+        <Parameter name="color_edge_v" des="description" level="1" range="[0,64]" type="int" reserve="0x0010" length="1">15</Parameter>  
+        <Parameter name="saturation" des="description" level="1" range="[-64,64]" type="int" reserve="0x0010" length="1">0</Parameter>  
+        <Parameter name="param0" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="param1" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="param2" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter> 
+      </Parameter> 
+    </Parameter>  
+    <Parameter index="2" name="region2" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="CNR" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>  
+        <Parameter name="range_factor" des="description" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">12</Parameter>  
+        <Parameter name="smooth_radius" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">30</Parameter>  
+        <Parameter name="scale" des="description" level="1" range="[1,2]" type="int" reserve="0x0010" length="1">2</Parameter>  
+        <Parameter name="step" des="description" level="1" range="[1,4]" type="int" reserve="0x0010" length="1">2</Parameter>  
+        <Parameter name="color_edge_u" des="description" level="1" range="[0,64]" type="int" reserve="0x0010" length="1">12</Parameter>  
+        <Parameter name="color_edge_v" des="description" level="1" range="[0,64]" type="int" reserve="0x0010" length="1">15</Parameter>  
+        <Parameter name="saturation" des="description" level="1" range="[-64,64]" type="int" reserve="0x0010" length="1">0</Parameter>  
+        <Parameter name="param0" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="param1" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="param2" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter> 
+      </Parameter> 
+    </Parameter>  
+    <Parameter index="3" name="region3" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="CNR" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>  
+        <Parameter name="range_factor" des="description" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">12</Parameter>  
+        <Parameter name="smooth_radius" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">30</Parameter>  
+        <Parameter name="scale" des="description" level="1" range="[1,2]" type="int" reserve="0x0010" length="1">2</Parameter>  
+        <Parameter name="step" des="description" level="1" range="[1,4]" type="int" reserve="0x0010" length="1">2</Parameter>  
+        <Parameter name="color_edge_u" des="description" level="1" range="[0,64]" type="int" reserve="0x0010" length="1">12</Parameter>  
+        <Parameter name="color_edge_v" des="description" level="1" range="[0,64]" type="int" reserve="0x0010" length="1">15</Parameter>  
+        <Parameter name="saturation" des="description" level="1" range="[-64,64]" type="int" reserve="0x0010" length="1">0</Parameter>  
+        <Parameter name="param0" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="param1" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="param2" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter> 
+      </Parameter> 
+    </Parameter>  
+    <Parameter index="4" name="region4" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="CNR" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>  
+        <Parameter name="range_factor" des="description" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">15</Parameter>  
+        <Parameter name="smooth_radius" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">30</Parameter>  
+        <Parameter name="scale" des="description" level="1" range="[1,2]" type="int" reserve="0x0010" length="1">2</Parameter>  
+        <Parameter name="step" des="description" level="1" range="[1,4]" type="int" reserve="0x0010" length="1">2</Parameter>  
+        <Parameter name="color_edge_u" des="description" level="1" range="[0,64]" type="int" reserve="0x0010" length="1">12</Parameter>  
+        <Parameter name="color_edge_v" des="description" level="1" range="[0,64]" type="int" reserve="0x0010" length="1">15</Parameter>  
+        <Parameter name="saturation" des="description" level="1" range="[-64,64]" type="int" reserve="0x0010" length="1">0</Parameter>  
+        <Parameter name="param0" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="param1" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="param2" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter> 
+      </Parameter> 
+    </Parameter>  
+    <Parameter index="5" name="region5" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+      <Parameter name="CNR" des="description" level="1" type="int" reserve="0xffff" length="0"> 
+        <Parameter name="enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>  
+        <Parameter name="range_factor" des="description" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">20</Parameter>  
+        <Parameter name="smooth_radius" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">30</Parameter>  
+        <Parameter name="scale" des="description" level="1" range="[1,2]" type="int" reserve="0x0010" length="1">2</Parameter>  
+        <Parameter name="step" des="description" level="1" range="[1,4]" type="int" reserve="0x0010" length="1">2</Parameter>  
+        <Parameter name="color_edge_u" des="description" level="1" range="[0,64]" type="int" reserve="0x0010" length="1">8</Parameter>  
+        <Parameter name="color_edge_v" des="description" level="1" range="[0,64]" type="int" reserve="0x0010" length="1">9</Parameter>  
+        <Parameter name="saturation" des="description" level="1" range="[-64,64]" type="int" reserve="0x0010" length="1">0</Parameter>  
+        <Parameter name="param0" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="param1" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="param2" des="description" level="1" range="[0,1023]" type="int" reserve="0x0007" length="1">0</Parameter> 
+      </Parameter> 
+    </Parameter> 
+  </Parameters> 
+</root>

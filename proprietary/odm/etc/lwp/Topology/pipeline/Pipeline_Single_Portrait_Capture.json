@@ -1,0 +1,221 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Single_Portrait_Capture",
+    "stream": "capture_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "MultiFrameRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_MF_router"
+        },
+        {
+            "type": "MFNR6Node",
+            "vendor": "SPRD",
+            "id": "cap_MFNR6"
+        },
+        {
+            "type": "HDR52Node",
+            "vendor": "SPRD",
+            "id": "cap_HDR5"
+        },
+        {
+            "type": "YNR2CNR4Node",
+            "vendor": "SPRD",
+            "id": "cap_YNR2CNR4"
+        },
+        {
+            "type": "WaterMarkNode",
+            "vendor": "SPRD",
+            "id": "cap_WaterMark"
+        },
+        {
+            "type": "FaceBeauty12Node",
+            "vendor": "SPRD",
+            "id": "cap_FaceBeauty"
+        },
+        {
+            "type": "JpegNode",
+            "vendor": "SPRD",
+            "id": "cap_Jpeg"
+        },
+        {
+            "type": "CapBlurNode",
+            "vendor": "SPRD",
+            "id": "cap_SingleBlur"
+        },
+        {
+            "type": "LptNode",
+            "vendor": "SPRD",
+            "id": "cap_Lpt"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode1"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "single"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "hdr"
+            },
+            "to": {
+                "name": "cap_HDR5",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR5",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR5",
+                "port": "out1"
+            },
+            "to": {
+                "name": "cap_SingleBlur",
+                "port": "in1"
+            }
+        },
+		{
+            "from": {
+                "name": "cap_MF_router",
+                "port": "mfnr"
+            },
+            "to": {
+                "name": "cap_MFNR6",
+                "port": "in0"
+            }
+        },
+		{
+            "from": {
+                "name": "cap_MFNR6",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MFNR6",
+                "port": "out1"
+            },
+            "to": {
+                "name": "cap_SingleBlur",
+                "port": "in1"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNR2CNR4",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_SingleBlur",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_SingleBlur",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_FaceBeauty",
+                "port": "in0"
+            }
+        },
+		{
+            "from": {
+                "name": "cap_FaceBeauty",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Lpt",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Lpt",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_WaterMark",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_WaterMark",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Jpeg",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

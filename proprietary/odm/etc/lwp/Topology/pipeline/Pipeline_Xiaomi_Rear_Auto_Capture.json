@@ -1,0 +1,257 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Xiaomi_Rear_Auto_Capture",
+    "stream": "capture_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "MultiFrameRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_MF_router"
+        },
+        {
+            "type": "HDRRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_HDR_router"
+        },
+        {
+            "type": "MFNR6Node",
+            "vendor": "SPRD",
+            "id": "cap_MFNR"
+        },
+        {
+            "type": "NoneNode",
+            "vendor": "SPRD",
+            "id": "cap_NONENODE"
+        },
+        {
+            "type": "MorphoHDRNode",
+            "vendor": "SPRD",
+            "id": "cap_MorphoHDR"
+        },
+        {
+            "type": "MorphoHDRNode",
+            "vendor": "SPRD",
+            "id": "cap_MorphoHDR_mf"
+        },
+        {
+            "type": "YNR2CNR4Node",
+            "vendor": "SPRD",
+            "id": "cap_YNR2CNR4"
+        },
+        {
+            "type": "TSFaceBeautyCapNode",
+            "vendor": "TrueSight",
+            "id": "cap_TSFaceBeauty"
+        },
+        {
+            "type": "PCCNode",
+            "vendor": "SPRD",
+            "id": "cap_PCC"
+        },
+        {
+            "type": "JpegNode",
+            "vendor": "SPRD",
+            "id": "cap_Jpeg"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode2"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "flash"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "single"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "mfnr"
+            },
+            "to": {
+                "name": "cap_MFNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MFNR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_HDR_router",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR_router",
+                "port": "out1"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR_router",
+                "port": "morphohdr"
+            },
+            "to": {
+                "name": "cap_MorphoHDR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "morphohdr"
+            },
+            "to": {
+                "name": "cap_MorphoHDR_mf",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MorphoHDR_mf",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MorphoHDR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNR2CNR4",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_PCC",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "multinone"
+            },
+            "to": {
+                "name": "cap_NONENODE",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_NONENODE",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNR2CNR4",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNR2CNR4",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_PCC",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_PCC",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_TSFaceBeauty",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_TSFaceBeauty",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Jpeg",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}
+

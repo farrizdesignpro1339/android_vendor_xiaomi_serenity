@@ -1,0 +1,21 @@
+service board_id /vendor/bin/boardid_bin
+    class main
+    user root
+    oneshot
+    disabled
+
+on early-init
+    chown system system /sys/class/huaqin/interface/hw_info/pcba_config
+    chmod 0664 /sys/class/huaqin/interface/hw_info/pcba_config
+
+on boot
+    start board_id
+
+on property:ro.vendor.boot.hwc=*
+    setprop ro.boot.hwc ${ro.vendor.boot.hwc}
+
+on property:ro.vendor.boot.hwlevel=*
+    setprop ro.boot.hwlevel ${ro.vendor.boot.hwlevel}
+
+on property:ro.vendor.boot.hwversion=*
+    setprop ro.boot.hwversion ${ro.vendor.boot.hwversion}

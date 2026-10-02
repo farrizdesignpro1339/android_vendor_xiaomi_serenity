@@ -1,0 +1,6 @@
+statis_param path = /home/work/mnt/miui_codes1/build_home_rom-vendor-merged/vendor/sprd/modules/libcamera/pss/isp2.7/middleware/inc/pss_param_info.h
+struct statis_param {
+	void *ptr;
+	cmr_u32 size;
+};
+

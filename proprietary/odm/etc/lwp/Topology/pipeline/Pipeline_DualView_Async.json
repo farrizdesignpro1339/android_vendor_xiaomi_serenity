@@ -1,0 +1,179 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2023-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_DualView_Async",
+    "stream": "async_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "DeWarpingNode",
+            "vendor": "SPRD",
+            "id": "async_DeWarping"
+        },
+        {
+            "type": "FaceDetectSDKNode",
+            "vendor": "SPRD",
+            "id": "async_FaceDetect_0"
+        },
+        {
+            "type": "FaceDetectSDKNode",
+            "vendor": "SPRD",
+            "id": "async_FaceDetect_1"
+        },
+        {
+            "type": "FaceDetectSDKNode",
+            "vendor": "SPRD",
+            "id": "async_FaceDetect_2"
+        },
+        {
+            "type": "FaceDetectSDKNode",
+            "vendor": "SPRD",
+            "id": "async_FaceDetect_3"
+        },
+        { "type": "GestureNode",
+            "vendor": "SPRD",
+            "id": "async_Gesture_0"
+        },
+        { "type": "GestureNode",
+            "vendor": "SPRD",
+            "id": "async_Gesture_1"
+        },
+        {
+            "type": "SceneDetectNode",
+            "vendor": "SPRD",
+            "id": "async_SceneDetect"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode1","SourceNode2","SourceNode3"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_Gesture_0",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_Gesture_1",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_DeWarping",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_DeWarping",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_FaceDetect_2",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_FaceDetect_3",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_Gesture_1",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_FaceDetect_1",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_Gesture_0",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_FaceDetect_0",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_FaceDetect_0",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_SceneDetect",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_FaceDetect_1",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_SceneDetect",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_FaceDetect_2",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_SceneDetect",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_FaceDetect_3",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_SceneDetect",
+                "port": "in0"
+            }
+        }
+    ]
+}

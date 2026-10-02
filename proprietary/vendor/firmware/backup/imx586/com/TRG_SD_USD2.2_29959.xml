@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+     SPDX-FileCopyrightText: 2023-2024 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+     Copyright 2023-2024 Unisoc (Shanghai) Technologies Co., Ltd.
+     Licensed under the Unisoc General Software License, version 1.0 (the License);
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+     Software distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+     See the Unisoc General Software License, version 1.0 for more details.
+-->
+<root name="SD_USD2.2"> 
+  <BlockInfo> 
+    <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">29959</Parameter>  
+    <Parameter index="" name="version" des="description" level="1" range="[0,32767]" type="int">2_2</Parameter>  
+    <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>  
+    <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">2408301643</Parameter>  
+    <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="triggersize" des="description" level="1" range="[0,4294967295]" type="int">0</Parameter>  
+    <Parameter index="" name="datasize" des="description" level="1" range="[0,4294967295]" type="int">0</Parameter>  
+    <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="reserve0" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter> 
+  </BlockInfo>  
+  <Triggers name="SD_USD2.2" select_way="0" trigger_enable="0" group_num="1" des="description" link="condition"> 
+    <Trigger start="0" end="0" para="default" name="region0" interp_type="0x01">0</Trigger> 
+  </Triggers>  
+  <Parameters name="SD_USD2.2"> 
+    <Parameter index="0" name="region0" level="1" range="[0,100]" type="int" reserve="0x0000" length="1"> 
+      <Parameters name="Base" des="Base"> 
+        <Parameter name="version_major" des="version_major" level="1" range="[0,255]" type="int" reserve="0x000f" length="1" default="1" seq="0">2</Parameter>  
+        <Parameter name="version_minor" des="version_minor" level="1" range="[0,255]" type="int" reserve="0x000f" length="1" default="0" seq="1">2</Parameter>  
+        <Parameter name="version_micro" des="version_micro" level="1" range="[0,255]" type="int" reserve="0x000f" length="1" default="0" seq="2">0</Parameter> 
+      </Parameters>  
+      <Parameters name="Range" des="Range"> 
+        <Parameter name="enabled_range" des="enabled_range" level="1" range="[0,1]" type="int" reserve="0x0012" length="1" default="1" seq="4">1</Parameter>  
+        <Parameter name="lib_interval_part1" des="lib_interval_part1" level="1" range="[0,3]" type="int" reserve="0x0010" length="1" default="0" seq="5">3</Parameter>  
+        <Parameter name="bv_thd_dark" des="bv_thd_dark" level="1" range="[-600,1600]" type="int" reserve="0x0010" length="1" default="400" seq="6">400</Parameter>  
+        <Parameter name="bv_thd_bright" des="bv_thd_bright" level="1" range="[-600,1600]" type="int" reserve="0x0010" length="1" default="750" seq="7">750</Parameter>  
+        <Parameter name="avg_img_thd" des="avg_img_thd" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="90" seq="8">90</Parameter>  
+        <Parameter name="dif_face_thrd_1" des="dif_face_thrd_1" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="2" seq="9">2</Parameter>  
+        <Parameter name="dif_face_thrd_2" des="dif_face_thrd_2" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="22" seq="10">22</Parameter>  
+        <Parameter name="dif_face_thrd_3" des="dif_face_thrd_3" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="50" seq="11">50</Parameter>  
+        <Parameter name="low_th1" des="low_th1" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="15" seq="12">15</Parameter>  
+        <Parameter name="high_th1" des="high_th1" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="250" seq="13">250</Parameter>  
+        <Parameter name="low_th2" des="low_th2" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="60" seq="14">60</Parameter>  
+        <Parameter name="high_th2" des="high_th2" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="205" seq="15">205</Parameter>  
+        <Parameter name="HP_range" des="HP_range" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="9" seq="16">9</Parameter>  
+        <Parameter name="bv_up" des="bv_up" level="1" range="[-600,1600]" type="int" reserve="0x0010" length="1" default="1600" seq="17">1600</Parameter>  
+        <Parameter name="bv_down" des="bv_down" level="1" range="[-600,1600]" type="int" reserve="0x0010" length="1" default="1550" seq="18">1500</Parameter>  
+        <Parameter name="gain_up" des="gain_up" level="1" range="[128,32768]" type="int" reserve="0x0010" length="1" default="800" seq="19">128</Parameter>  
+        <Parameter name="gain_down" des="gain_down" level="1" range="[128,32768]" type="int" reserve="0x0010" length="1" default="600" seq="20">128</Parameter>  
+        <Parameter name="c_bv_up" des="c_bv_up" level="1" range="[-600,1600]" type="int" reserve="0x0010" length="1" default="1600" seq="21">1600</Parameter>  
+        <Parameter name="c_bv_down" des="c_bv_down" level="1" range="[-600,1600]" type="int" reserve="0x0010" length="1" default="1550" seq="22">1500</Parameter>  
+        <Parameter name="c_gain_up" des="c_gain_up" level="1" range="[128,32768]" type="int" reserve="0x0010" length="1" default="800" seq="23">256</Parameter>  
+        <Parameter name="c_gain_down" des="c_gain_down" level="1" range="[128,32768]" type="int" reserve="0x0010" length="1" default="600" seq="24">256</Parameter>  
+        <Parameter name="XDR_bv_up" des="XDR_bv_up" level="1" range="[-600,1600]" type="int" reserve="0x0010" length="1" default="400" seq="25">400</Parameter>  
+        <Parameter name="f_overexp_thd" des="f_overexp_thd" level="1" range="[0,10]" type="float" reserve="0x0010" length="1" default="0.65" seq="26">0.12</Parameter>  
+        <Parameter name="f_underexp_thd" des="f_underexp_thd" level="1" range="[0,1]" type="float" reserve="0x0010" length="1" default="0.16" seq="27">0.16</Parameter>  
+        <Parameter name="Hist_steep" des="Hist_steep" level="1" range="[0,100000]" type="float" reserve="0x0010" length="1" default="16.0" seq="28">68.00</Parameter>  
+        <Parameter name="low_area_1" des="low_area_1" level="1" range="[0,1]" type="float" reserve="0x0010" length="1" default="0.27" seq="29">0.27</Parameter>  
+        <Parameter name="peak_area_2" des="peak_area_2" level="1" range="[0,1]" type="float" reserve="0x0010" length="1" default="0.33" seq="30">0.33</Parameter>  
+        <Parameter name="peak_dis_2" des="peak_dis_2" level="1" range="[0,256]" type="float" reserve="0x0010" length="1" default="100.0" seq="31">100.0</Parameter>  
+        <Parameter name="peak_area_3" des="peak_area_3" level="1" range="[0,1]" type="float" reserve="0x0010" length="1" default="0.36" seq="32">0.36</Parameter>  
+        <Parameter name="peak_dis_3" des="peak_dis_3" level="1" range="[0,256]" type="float" reserve="0x0010" length="1" default="100.0" seq="33">100.0</Parameter>  
+        <Parameter name="peak_area_4" des="peak_area_4" level="1" range="[0,1]" type="float" reserve="0x0010" length="1" default="0.45" seq="34">0.45</Parameter>  
+        <Parameter name="peak_dis_4" des="peak_dis_4" level="1" range="[0,256]" type="float" reserve="0x0010" length="1" default="110.0" seq="35">110.0</Parameter>  
+        <Parameter name="peak_area_4e" des="peak_area_4e" level="1" range="[0,1]" type="float" reserve="0x0010" length="1" default="0.52" seq="36">0.52</Parameter>  
+        <Parameter name="peak_dis_4e" des="peak_dis_4e" level="1" range="[0,256]" type="float" reserve="0x0010" length="1" default="195.0" seq="37">195.0</Parameter>  
+        <Parameter name="peak_area_5e" des="peak_area_5e" level="1" range="[0,1]" type="float" reserve="0x0010" length="1" default="0.56" seq="38">0.56</Parameter>  
+        <Parameter name="peak_dis_5e" des="peak_dis_5e" level="1" range="[0,256]" type="float" reserve="0x0010" length="1" default="200.0" seq="39">200.0</Parameter>  
+        <Parameter name="peak_area_6e" des="peak_area_6e" level="1" range="[0,1]" type="float" reserve="0x0010" length="1" default="0.70" seq="40">0.70</Parameter>  
+        <Parameter name="peak_dis_6e" des="peak_dis_6e" level="1" range="[0,256]" type="float" reserve="0x0010" length="1" default="190.0" seq="41">190.0</Parameter>  
+        <Parameter name="peak_area_7e" des="peak_area_7e" level="1" range="[0,1]" type="float" reserve="0x0010" length="1" default="0.72" seq="42">0.72</Parameter>  
+        <Parameter name="peak_dis_7e" des="peak_dis_7e" level="1" range="[0,256]" type="float" reserve="0x0010" length="1" default="190.0" seq="43">190.0</Parameter>  
+        <Parameter name="dark_low1" des="dark_low1" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="40" seq="44">40</Parameter>  
+        <Parameter name="dark_low2" des="dark_low2" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="40" seq="45">40</Parameter>  
+        <Parameter name="dark_low3" des="dark_low3" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="40" seq="46">40</Parameter>  
+        <Parameter name="dark_low4" des="dark_low4" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="40" seq="47">40</Parameter>  
+        <Parameter name="dark_high1" des="dark_high1" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="242" seq="48">242</Parameter>  
+        <Parameter name="dark_high2" des="dark_high2" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="242" seq="49">242</Parameter>  
+        <Parameter name="dark_high3" des="dark_high3" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="242" seq="50">242</Parameter>  
+        <Parameter name="dark_high4" des="dark_high4" level="1" range="[0,255]" type="int" reserve="0x0010" length="1" default="242" seq="51">242</Parameter>  
+        <Parameter name="dark_low_area" des="dark_low_area" level="1" range="[0,1]" type="float" reserve="0x0010" length="1" default="0.06" seq="52">0.06</Parameter>  
+        <Parameter name="dark_high_area" des="dark_high_area" level="1" range="[0,10]" type="float" reserve="0x0010" length="1" default="0.03" seq="53">0.03</Parameter>   
+        <Parameter name="SC_Hist_steep" des="SC_Hist_steep" level="1" range="[0,1000]" type="float" reserve="0x0010" length="1" default="160" seq="54">160</Parameter>  
+        <Parameter name="f1_reserved2" des="f1_reserved2" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="55">0</Parameter>  
+        <Parameter name="f1_reserved3" des="f1_reserved3" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="56">0</Parameter>  
+        <Parameter name="f1_reserved4" des="f1_reserved4" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="57">0</Parameter>  
+        <Parameter name="f1_reserved5" des="f1_reserved5" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="58">0</Parameter>  
+        <Parameter name="i1_reserved1" des="i1_reserved1" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="59">0</Parameter>  
+        <Parameter name="i1_reserved2" des="i1_reserved2" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="60">0</Parameter>  
+        <Parameter name="i1_reserved3" des="i1_reserved3" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="61">0</Parameter>  
+        <Parameter name="i1_reserved4" des="i1_reserved4" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="62">0</Parameter>  
+        <Parameter name="i1_reserved5" des="i1_reserved5" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="63">0</Parameter> 
+      </Parameters>  
+      <Parameters name="Color" des="Color"> 
+        <Parameter name="enabled_color" des="enabled_color" level="1" range="[0,1]" type="int" reserve="0x0022" length="1" default="1" seq="64">0</Parameter>  
+        <Parameter name="lib_interval_part2" des="lib_interval_part2" level="1" range="[0,3]" type="int" reserve="0x0020" length="1" default="0" seq="65">3</Parameter>  
+        <Parameter name="low_thresd" des="low_thresd" level="1" range="[0,255]" type="int" reserve="0x0020" length="1" default="55" seq="66">55</Parameter>  
+        <Parameter name="high_thresd" des="high_thresd" level="1" range="[0,255]" type="int" reserve="0x0020" length="1" default="230" seq="67">230</Parameter>  
+        <Parameter name="low_thresd_bulb" des="low_thresd_bulb" level="1" range="[0,255]" type="int" reserve="0x0020" length="1" default="25" seq="68">25</Parameter>  
+        <Parameter name="high_thresd_bulb" des="high_thresd_bulb" level="1" range="[0,255]" type="int" reserve="0x0020" length="1" default="240" seq="69">249</Parameter>  
+        <Parameter name="low_ratio_thrd" des="low_ratio_thrd" level="1" range="[0,1]" type="float" reserve="0x0020" length="1" default="0.48" seq="70">0.48</Parameter>  
+        <Parameter name="high_ratio_thrd" des="high_ratio_thrd" level="1" range="[0,100]" type="float" reserve="0x0020" length="1" default="0.12" seq="71">0.12</Parameter>  
+        <Parameter name="low_ratio_bulb_thrd" des="low_ratio_bulb_thrd" level="1" range="[0,1]" type="float" reserve="0x0020" length="1" default="0.4" seq="72">0.4</Parameter>  
+        <Parameter name="high_ratio_bulb_thrd" des="high_ratio_bulb_thrd" level="1" range="[0,10]" type="float" reserve="0x0020" length="1" default="0.01" seq="73">0.01</Parameter>  
+        <Parameter name="scatter_thd" des="scatter_thd" level="1" range="[0,500000]" type="int" reserve="0x0020" length="1" default="150" seq="74">150</Parameter>  
+        <Parameter name="low_ratio_bulb_thrd_2" des="low_ratio_bulb_thrd_2" level="1" range="[0,1]" type="float" reserve="0x0020" length="1" default="0.7" seq="75">0.7</Parameter>  
+        <Parameter name="high_ratio_bulb_thrd_2" des="high_ratio_bulb_thrd_2" level="1" range="[0,10]" type="float" reserve="0x0020" length="1" default="0.16" seq="76">0.16</Parameter>  
+        <Parameter name="solid_ratio_thd" des="solid_ratio_thd" level="1" range="[0,1]" type="float" reserve="0x0020" length="1" default="0.5" seq="77">0.5</Parameter>  
+        <Parameter name="diff_total_thd" des="diff_total_thd" level="1" range="[0,765]" type="int" reserve="0x0020" length="1" default="33" seq="78">33</Parameter>  
+        <Parameter name="thrd_color" des="thrd_color" level="1" range="[0,255]" type="int" reserve="0x0020" length="1" default="90" seq="79">90</Parameter>  
+        <Parameter name="thrd_bv_2" des="thrd_bv_2" level="1" range="[-600,1600]" type="int" reserve="0x0020" length="1" default="450" seq="80">450</Parameter>  
+        <Parameter name="range" des="range" level="1" range="[0,60]" type="int" reserve="0x0020" length="1" default="4" seq="81">4</Parameter>  
+        <Parameter name="f2_reserved1" des="f2_reserved1" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="82">0</Parameter>  
+        <Parameter name="f2_reserved2" des="f2_reserved2" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="83">0</Parameter>  
+        <Parameter name="f2_reserved3" des="f2_reserved3" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="84">0</Parameter>  
+        <Parameter name="f2_reserved4" des="f2_reserved4" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="85">0</Parameter>  
+        <Parameter name="f2_reserved5" des="f2_reserved5" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="86">0</Parameter>  
+        <Parameter name="i2_reserved1" des="i2_reserved1" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="87">0</Parameter>  
+        <Parameter name="i2_reserved2" des="i2_reserved2" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="88">0</Parameter>  
+        <Parameter name="i2_reserved3" des="i2_reserved3" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="89">0</Parameter>  
+        <Parameter name="i2_reserved4" des="i2_reserved4" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="90">0</Parameter>  
+        <Parameter name="i2_reserved5" des="i2_reserved5" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="91">0</Parameter> 
+      </Parameters>  
+      <Parameters name="Movement" des="Movement"> 
+        <Parameter name="enabled_movement" des="enabled_movement" level="1" range="[0,1]" type="int" reserve="0x0032" length="1" default="1" seq="92">0</Parameter>  
+        <Parameter name="lib_interval_part3" des="lib_interval_part3" level="1" range="[0,3]" type="int" reserve="0x0030" length="1" default="0" seq="93">3</Parameter>  
+        <Parameter name="using_gyro_length" des="using_gyro_length" level="1" range="[2,80]" type="int" reserve="0x0030" length="1" default="20" seq="94">20</Parameter>  
+        <Parameter name="th1_tri" des="th1_tri" level="1" range="[0,200]" type="float" reserve="0x0030" length="1" default="0.03" seq="95">0.03</Parameter>  
+        <Parameter name="th2_han" des="th2_han" level="1" range="[0,50]" type="float" reserve="0x0030" length="1" default="0.08" seq="96">0.08</Parameter>  
+        <Parameter name="thrd_tripod" des="thrd_tripod" level="1" range="[0,50]" type="float" reserve="0x0030" length="1" default="0.06" seq="97">0.06</Parameter>  
+        <Parameter name="thrd_stable" des="thrd_stable" level="1" range="[0,50]" type="float" reserve="0x0030" length="1" default="0.06" seq="98">0.06</Parameter>  
+        <Parameter name="diff_thrd" des="diff_thrd" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" default="33" seq="99">33</Parameter>  
+        <Parameter name="search_range" des="search_range" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" default="64" seq="100">64</Parameter>  
+        <Parameter name="BV_thd_MD" des="BV_thd_MD" level="1" range="[-600,1600]" type="int" reserve="0x0030" length="1" default="600" seq="101">600</Parameter>  
+        <Parameter name="avg_img_thd_MD" des="avg_img_thd_MD" level="1" range="[0,255]" type="int" reserve="0x0030" length="1" default="130" seq="102">130</Parameter>  
+        <Parameter name="frame_interval" des="frame_interval" level="1" range="[1,3]" type="int" reserve="0x0030" length="1" default="2" seq="3">2</Parameter>  
+        <Parameter name="f3_reserved1" des="f3_reserved1" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="103">0</Parameter>  
+        <Parameter name="f3_reserved2" des="f3_reserved2" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="104">0</Parameter>  
+        <Parameter name="f3_reserved3" des="f3_reserved3" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="105">0</Parameter>  
+        <Parameter name="f3_reserved4" des="f3_reserved4" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="106">0</Parameter>  
+        <Parameter name="f3_reserved5" des="f3_reserved5" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="107">0</Parameter>  
+        <Parameter name="i3_reserved1" des="i3_reserved1" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="108">0</Parameter>  
+        <Parameter name="i3_reserved2" des="i3_reserved2" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="109">0</Parameter>  
+        <Parameter name="i3_reserved3" des="i3_reserved3" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="110">0</Parameter>  
+        <Parameter name="i3_reserved4" des="i3_reserved4" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="111">0</Parameter>  
+        <Parameter name="i3_reserved5" des="i3_reserved5" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="112">0</Parameter> 
+      </Parameters>  
+      <Parameters name="In_Out" des="In_Out"> 
+        <Parameter name="enabled_in_out" des="enabled_in_out" level="1" range="[0,1]" type="int" reserve="0x0042" length="1" default="1" seq="113">1</Parameter>  
+        <Parameter name="lib_interval_part4" des="lib_interval_part4" level="1" range="[0,3]" type="int" reserve="0x0040" length="1" default="0" seq="114">3</Parameter>  
+        <Parameter name="e_dark_value" des="e_dark_value" level="1" range="[0,90000]" type="int" reserve="0x0040" length="1" default="1" seq="115">3</Parameter> 
+      </Parameters>  
+      <Parameters name="Acc_Light" type="table"> 
+        <Parameter name="Acc_z_down_tmp" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="0" des="Acc_z_down_tmp0" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="-15" seq="116">-15.0</Parameter>  
+          <Parameter name="1" des="Acc_z_down_tmp1" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="-7.9" seq="117">-7.9</Parameter>  
+          <Parameter name="2" des="Acc_z_down_tmp2" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="-5.8" seq="118">-5.8</Parameter>  
+          <Parameter name="3" des="Acc_z_down_tmp3" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="-2.5" seq="119">-2.5</Parameter>  
+          <Parameter name="4" des="Acc_z_down_tmp4" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="1.9" seq="120">1.9</Parameter>  
+          <Parameter name="5" des="Acc_z_down_tmp5" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="5.7" seq="121">5.7</Parameter>  
+          <Parameter name="6" des="Acc_z_down_tmp6" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="8.2" seq="122">8.2</Parameter> 
+        </Parameter>  
+        <Parameter name="Acc_z_up_tmp" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="0" des="Acc_z_up_tmp0" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="-7.3" seq="123">-7.3</Parameter>  
+          <Parameter name="1" des="Acc_z_up_tmp1" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="-5.2" seq="124">-5.2</Parameter>  
+          <Parameter name="2" des="Acc_z_up_tmp2" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="-1.9" seq="125">-1.9</Parameter>  
+          <Parameter name="3" des="Acc_z_up_tmp3" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="2.5" seq="126">2.5</Parameter>  
+          <Parameter name="4" des="Acc_z_up_tmp4" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="6.3" seq="127">6.3</Parameter>  
+          <Parameter name="5" des="Acc_z_up_tmp5" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="8.8" seq="128">8.8</Parameter>  
+          <Parameter name="6" des="Acc_z_up_tmp6" level="1" range="[-15,15]" type="float" reserve="0x0040" length="1" default="15" seq="129">15.0</Parameter> 
+        </Parameter>  
+        <Parameter name="Light_down_tmp" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="0" des="light_down_tmp0" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="5" seq="130">5</Parameter>  
+          <Parameter name="1" des="light_down_tmp1" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="13" seq="131">13</Parameter>  
+          <Parameter name="2" des="light_down_tmp2" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="21" seq="132">21</Parameter>  
+          <Parameter name="3" des="light_down_tmp3" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="29" seq="133">29</Parameter>  
+          <Parameter name="4" des="light_down_tmp4" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="37" seq="134">37</Parameter>  
+          <Parameter name="5" des="light_down_tmp5" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="45" seq="135">45</Parameter>  
+          <Parameter name="6" des="light_down_tmp6" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="53" seq="136">53</Parameter> 
+        </Parameter>  
+        <Parameter name="Light_up_tmp" des="description" level="1" range="[0,255]" type="int" length="1"> 
+          <Parameter name="0" des="light_up_tmp0" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="50" seq="137">50</Parameter>  
+          <Parameter name="1" des="light_up_tmp1" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="60" seq="138">60</Parameter>  
+          <Parameter name="2" des="light_up_tmp2" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="80" seq="139">80</Parameter>  
+          <Parameter name="3" des="light_up_tmp3" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="110" seq="140">110</Parameter>  
+          <Parameter name="4" des="light_up_tmp4" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="150" seq="141">150</Parameter>  
+          <Parameter name="5" des="light_up_tmp5" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="200" seq="142">200</Parameter>  
+          <Parameter name="6" des="light_up_tmp6" level="1" range="[0,900000]" type="int" reserve="0x0040" length="1" default="260" seq="143">260</Parameter> 
+        </Parameter> 
+      </Parameters>  
+      <Parameter name="f4_reserved1" des="f4_reserved1" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="144">0</Parameter>  
+      <Parameter name="f4_reserved2" des="f4_reserved2" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="145">0</Parameter>  
+      <Parameter name="f4_reserved3" des="f4_reserved3" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="146">0</Parameter>  
+      <Parameter name="f4_reserved4" des="f4_reserved4" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="147">0</Parameter>  
+      <Parameter name="f4_reserved5" des="f4_reserved5" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="148">0</Parameter>  
+      <Parameter name="i4_reserved1" des="i4_reserved1" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="149">0</Parameter>  
+      <Parameter name="i4_reserved2" des="i4_reserved2" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="150">0</Parameter>  
+      <Parameter name="i4_reserved3" des="i4_reserved3" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="151">0</Parameter>  
+      <Parameter name="i4_reserved4" des="i4_reserved4" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="152">0</Parameter>  
+      <Parameter name="i4_reserved5" des="i4_reserved5" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="153">0</Parameter>  
+      <Parameters name="LLS" des="LLS"> 
+        <Parameter name="enabled_lls" des="enabled_lls" level="1" range="[0,1]" type="int" reserve="0x0052" length="1" default="1" seq="154">1</Parameter>  
+        <Parameter name="lls_in" des="lls_in" level="1" range="[-600,1600]" type="int" reserve="0x0050" length="1" default="0" seq="155">-250</Parameter>  
+        <Parameter name="lls_out" des="lls_out" level="1" range="[-600,1600]" type="int" reserve="0x0050" length="1" default="-15" seq="156">-250</Parameter>  
+        <Parameter name="f5_reserved1" des="f5_reserved1" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="157">0</Parameter>  
+        <Parameter name="f5_reserved2" des="f5_reserved2" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="158">0</Parameter>  
+        <Parameter name="f5_reserved3" des="f5_reserved3" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="159">0</Parameter>  
+        <Parameter name="f5_reserved4" des="f5_reserved4" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="160">0</Parameter>  
+        <Parameter name="f5_reserved5" des="f5_reserved5" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="161">0</Parameter>  
+        <Parameter name="i5_reserved1" des="i5_reserved1" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="162">0</Parameter>  
+        <Parameter name="i5_reserved2" des="i5_reserved2" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="163">0</Parameter>  
+        <Parameter name="i5_reserved3" des="i5_reserved3" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="164">0</Parameter>  
+        <Parameter name="i5_reserved4" des="i5_reserved4" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="165">0</Parameter>  
+        <Parameter name="i5_reserved5" des="i5_reserved5" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="166">0</Parameter> 
+      </Parameters>  
+      <Parameters name="Flash" des="Flash"> 
+        <Parameter name="flash_BV_D" des="flash_BV_D" level="1" range="[-600,1600]" type="int" reserve="0x0060" length="1" default="1" seq="167">285</Parameter>  
+        <Parameter name="flash_BV_U" des="flash_BV_U" level="1" range="[-600,1600]" type="int" reserve="0x0060" length="1" default="0" seq="168">300</Parameter>  
+        <Parameter name="flash_cap_D" des="flash_cap_D" level="1" range="[0,200]" type="int" reserve="0x0060" length="1" default="-15" seq="169">6</Parameter>  
+        <Parameter name="f6_reserved1" des="f6_reserved1" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="170">0</Parameter>  
+        <Parameter name="f6_reserved2" des="f6_reserved2" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="171">0</Parameter>  
+        <Parameter name="f6_reserved3" des="f6_reserved3" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="172">0</Parameter>  
+        <Parameter name="f6_reserved4" des="f6_reserved4" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="173">0</Parameter>  
+        <Parameter name="f6_reserved5" des="f6_reserved5" level="1" range="[0,1000]" type="float" reserve="0x0007" length="1" default="0" seq="174">0</Parameter>  
+        <Parameter name="i6_reserved1" des="i6_reserved1" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="175">0</Parameter>  
+        <Parameter name="i6_reserved2" des="i6_reserved2" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="176">0</Parameter>  
+        <Parameter name="i6_reserved3" des="i6_reserved3" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="177">0</Parameter>  
+        <Parameter name="i6_reserved4" des="i6_reserved4" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="178">0</Parameter>  
+        <Parameter name="i6_reserved5" des="i6_reserved5" level="1" range="[0,255]" type="int" reserve="0x0007" length="1" default="0" seq="179">0</Parameter> 
+      </Parameters>  
+      <Parameters name="ACD" des="ACD"> 
+        <Parameter name="enabled_ACD_M" des="enabled_ACD_M" level="1" range="[0,1]" type="int" reserve="0x0072" length="1" default="1" seq="180">1</Parameter>  
+        <Parameter name="MBrigThd" des="MBrigThd" level="1" range="[0,255]" type="float" reserve="0x0070" length="1" default="18" seq="181">20.00</Parameter>  
+        <Parameter name="MAclCntThd" des="MAclCntThd" level="1" range="[0,16384]" type="float" reserve="0x0070" length="1" default="100" seq="182">200.00</Parameter>  
+        <Parameter name="MAclCntThdTripod" des="MAclCntThdTripod" level="1" range="[0,16384]" type="float" reserve="0x0070" length="1" default="100" seq="183">200.00</Parameter>  
+        <Parameter name="MLeftKeepingFTripod" des="MLeftKeepingFTripod" level="1" range="[0,500]" type="float" reserve="0x0070" length="1" default="4" seq="184">0.0</Parameter>  
+        <Parameter name="MLeftkeepingF" des="MLeftkeepingF" level="1" range="[0,500]" type="float" reserve="0x0070" length="1" default="4" seq="185">0.0</Parameter>  
+        <Parameter name="MJoinkeepingF" des="MJoinkeepingF" level="1" range="[0,500]" type="float" reserve="0x0070" length="1" default="2" seq="186">0.0</Parameter>  
+        <Parameter name="MRapidMovingKeepingF" des="MRapidMovingKeepingF" level="1" range="[0,500]" type="float" reserve="0x0070" length="1" default="6" seq="187">3.0</Parameter>  
+        <Parameter name="MRapidThd" des="MRapidThd" level="1" range="[0,16384]" type="float" reserve="0x0070" length="1" default="250" seq="188">900.00</Parameter>  
+        <Parameter name="MBrigGlobalThd" des="MBrigGlobalThd" level="1" range="[0,255]" type="float" reserve="0x0070" length="1" default="20" seq="189">20.00</Parameter>  
+        <Parameter name="MAclGlobalCntThd" des="MAclGlobalCntThd" level="1" range="[0,16384]" type="float" reserve="0x0070" length="1" default="460" seq="190">1000.00</Parameter>  
+        <Parameter name="MAccThdLow" des="MAccThdLow" level="1" range="[0,500]" type="float" reserve="0x0070" length="1" default="0.65" seq="191">0.25</Parameter>  
+        <Parameter name="MAccThdHigh" des="MAccThdHigh" level="1" range="[0,500]" type="float" reserve="0x0070" length="1" default="1.2" seq="192">0.5</Parameter>  
+        <Parameter name="FleftkeepingF" des="FleftkeepingF" level="1" range="[0,500]" type="int" reserve="0x0070" length="1" default="3" seq="193">3</Parameter>  
+        <Parameter name="FJoinkeepingF" des="FJoinkeepingF" level="1" range="[0,500]" type="int" reserve="0x0070" length="1" default="3" seq="194">3</Parameter>  
+        <Parameter name="location_Thd" des="location_Thd" level="1" range="[0,500]" type="float" reserve="0x0070" length="1" default="0.5" seq="195">0.5</Parameter>  
+        <Parameter name="size_Thd" des="size_Thd" level="1" range="[0,500]" type="float" reserve="0x0070" length="1" default="0.5" seq="196">0.5</Parameter>  
+        <Parameter name="AEM_interval" des="AEM_interval" level="1" range="[0,2]" type="int" reserve="0x0070" length="1" default="0" seq="197">0</Parameter>  
+        <Parameter name="using_acc_length_ACD" des="using_acc_length_ACD" level="1" range="[2,80]" type="int" reserve="0x0070" length="1" default="20" seq="198">20</Parameter>  
+        <Parameter name="ACD_bv_up" des="ACD_bv_up" level="1" range="[-600,1600]" type="int" reserve="0x0070" length="1" default="600" seq="199">1200</Parameter> 
+      </Parameters> 
+    </Parameter> 
+  </Parameters> 
+</root>

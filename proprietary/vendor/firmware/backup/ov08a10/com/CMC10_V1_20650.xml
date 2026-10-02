@@ -1,0 +1,1542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<CMC10_V1_20650>
+	<block_header>
+		<version type="u8">
+			<version_major>0</version_major>
+			<version_minor>0</version_minor>
+			<version_micro>0</version_micro>
+			<reserved len="5">0</reserved>
+		</version>
+		<block_info type="u32">
+			<block_id>20650</block_id>
+			<bypass range="[0,1]">0</bypass>
+			<smart_size>0</smart_size>
+			<block_size>9936</block_size>
+			<modify_time>2309041753</modify_time>
+			<trigger_flag range="[0,1]">0</trigger_flag>
+			<reserved len="2">0</reserved>
+		</block_info>
+	</block_header>
+	<magic type="u32" description="0xCECECECE">3469659854</magic>
+	<toolparam_version type="int32" description="0x00040000">263168</toolparam_version>
+	<date>539100968</date>
+	<time>369098752</time>
+	<ccm_parameter Attention="The value sum of one row of CCM matrix must be equal to 1024">
+		<ccm_bypass type="int32" range="[0,1]" freq="less">0</ccm_bypass>
+		<ccm_calib idx="0" description="D65" range="light_enable=[0,1],ct=[0,20000],x=[201,650],y=[151,600],matrix=[-8192,8192]">
+			<light_enable type="int32" range="[0,1]">1</light_enable>
+			<ct type="u16" range="[0,20000]">6449</ct>
+			<x range="[201,650]">314</x>
+			<y range="[151,600]">330</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 1593 -654 85 -177 1517 -316 11 -817 1830 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="1" description="TL84">
+			<light_enable type="int32" range="[0,1]">1</light_enable>
+			<ct type="u16" range="[0,20000]">3956</ct>
+			<x range="[201,650]">392</x>
+			<y range="[151,600]">400</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 1852 -437 -391 -284 1623 -315 31 -918 1911 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="2" description="A">
+			<light_enable type="int32" range="[0,1]">1</light_enable>
+			<ct type="u16" range="[0,20000]">2810</ct>
+			<x range="[201,650]">453</x>
+			<y range="[151,600]">412</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 1839 -1097 282 -298 1207 115 -54 -912 1990 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="3" description="H">
+			<light_enable type="int32" range="[0,1]">1</light_enable>
+			<ct type="u16" range="[0,20000]">2298</ct>
+			<x range="[201,650]">498</x>
+			<y range="[151,600]">412</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 2068 -79 -965 -341 1644 -279 -206 -1315 2545 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="4" description="D75">
+			<light_enable type="int32" range="[0,1]">0</light_enable>
+			<ct type="u16" range="[0,20000]">0</ct>
+			<x range="[201,650]">0</x>
+			<y range="[151,600]">0</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="5" description="D55">
+			<light_enable type="int32" range="[0,1]">0</light_enable>
+			<ct type="u16" range="[0,20000]">0</ct>
+			<x range="[201,650]">0</x>
+			<y range="[151,600]">0</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="6" description="D50 or outdoor">
+			<light_enable type="int32" range="[0,1]">1</light_enable>
+			<ct type="u16" range="[0,20000]">5187</ct>
+			<x range="[201,650]">340</x>
+			<y range="[151,600]">343</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 1844 -964 144 -322 1786 -440 -189 -850 2063 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="7" description="DNP">
+			<light_enable type="int32" range="[0,1]">0</light_enable>
+			<ct type="u16" range="[0,20000]">0</ct>
+			<x range="[201,650]">0</x>
+			<y range="[151,600]">0</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="8" description="USER0">
+			<light_enable type="int32" range="[0,1]">0</light_enable>
+			<ct type="u16" range="[0,20000]">0</ct>
+			<x range="[201,650]">0</x>
+			<y range="[151,600]">0</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="9" description="USER1">
+			<light_enable type="int32" range="[0,1]">0</light_enable>
+			<ct type="u16" range="[0,20000]">0</ct>
+			<x range="[201,650]">0</x>
+			<y range="[151,600]">0</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="10" description="USER2">
+			<light_enable type="int32" range="[0,1]">0</light_enable>
+			<ct type="u16" range="[0,20000]">0</ct>
+			<x range="[201,650]">0</x>
+			<y range="[151,600]">0</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="11" description="USER3">
+			<light_enable type="int32" range="[0,1]">0</light_enable>
+			<ct type="u16" range="[0,20000]">0</ct>
+			<x range="[201,650]">0</x>
+			<y range="[151,600]">0</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="12" description="USER4">
+			<light_enable type="int32" range="[0,1]">0</light_enable>
+			<ct type="u16" range="[0,20000]">0</ct>
+			<x range="[201,650]">0</x>
+			<y range="[151,600]">0</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="13" description="CWF">
+			<light_enable type="int32" range="[0,1]">0</light_enable>
+			<ct type="u16" range="[0,20000]">0</ct>
+			<x range="[201,650]">0</x>
+			<y range="[151,600]">0</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="14" description="Flashcold">
+			<light_enable type="int32" range="[0,1]">0</light_enable>
+			<ct type="u16" range="[0,20000]">0</ct>
+			<x range="[201,650]">0</x>
+			<y range="[151,600]">0</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<ccm_calib idx="15" description="Flashwarm">
+			<light_enable type="int32" range="[0,1]">0</light_enable>
+			<ct type="u16" range="[0,20000]">0</ct>
+			<x range="[201,650]">0</x>
+			<y range="[151,600]">0</y>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32">0</reserved>
+		</ccm_calib>
+		<flag_ccm_preference description="CCM_Pref enable" range="[0,1]" freq="less">1</flag_ccm_preference>
+		<size_bv_level_ccm_preference range="[1,10]" freq="less">10</size_bv_level_ccm_preference>
+		<array_bv_level_ccm_preference type="int16" len="10" range="[-600,1600]" freq="less">
+			<table> -200 0 200 400 600 800 1000 1200 1400 1600 </table>
+		</array_bv_level_ccm_preference>
+		<ccm_pref_param idx="0" range="NodeNum=[1,16],ct=[0,20000],matrix=[-8192,8192]">
+			<NodeNum type="int32" range="[1,16]">12</NodeNum>
+			<ct type="u16" len="16" range="[0,20000]">
+				<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+			</ct>
+			<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="1" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="2" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="3" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="4" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="5" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="6" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="7" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="8" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="9" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="10" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="11" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="12" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="13" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="14" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="15" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32" len="11">0</reserved>
+		</ccm_pref_param>
+		<ccm_pref_param idx="1">
+			<NodeNum type="int32" range="[1,16]">12</NodeNum>
+			<ct type="u16" len="16" range="[0,20000]">
+				<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+			</ct>
+			<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="1" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="2" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="3" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="4" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="5" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="6" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="7" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="8" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="9" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="10" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="11" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="12" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="13" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="14" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="15" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32" len="11">0</reserved>
+		</ccm_pref_param>
+		<ccm_pref_param idx="2">
+			<NodeNum type="int32" range="[1,16]">12</NodeNum>
+			<ct type="u16" len="16" range="[0,20000]">
+				<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+			</ct>
+			<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="1" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="2" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="3" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="4" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="5" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="6" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="7" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="8" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="9" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="10" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="11" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="12" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="13" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="14" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="15" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32" len="11">0</reserved>
+		</ccm_pref_param>
+		<ccm_pref_param idx="3">
+			<NodeNum type="int32" range="[1,16]">12</NodeNum>
+			<ct type="u16" len="16" range="[0,20000]">
+				<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+			</ct>
+			<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+				<table> 952 60 12 30 982 12 30 60 934 </table>
+			</matrix>
+			<matrix idx="1" len="9" range="[-8192,8192]">
+				<table> 952 60 12 30 982 12 30 60 934 </table>
+			</matrix>
+			<matrix idx="2" len="9" range="[-8192,8192]">
+				<table> 952 60 12 30 982 12 30 60 934 </table>
+			</matrix>
+			<matrix idx="3" len="9" range="[-8192,8192]">
+				<table> 916 90 18 45 961 18 45 90 889 </table>
+			</matrix>
+			<matrix idx="4" len="9" range="[-8192,8192]">
+				<table> 916 90 18 45 961 18 45 90 889 </table>
+			</matrix>
+			<matrix idx="5" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="6" len="9" range="[-8192,8192]">
+				<table> 952 60 12 30 982 12 80 10 934 </table>
+			</matrix>
+			<matrix idx="7" len="9" range="[-8192,8192]">
+				<table> 952 60 12 30 982 12 80 10 934 </table>
+			</matrix>
+			<matrix idx="8" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="9" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="10" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="11" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="12" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="13" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="14" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="15" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32" len="11">0</reserved>
+		</ccm_pref_param>
+		<ccm_pref_param idx="4">
+			<NodeNum type="int32" range="[1,16]">12</NodeNum>
+			<ct type="u16" len="16" range="[0,20000]">
+				<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+			</ct>
+			<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+				<table> 952 60 12 30 982 12 30 60 934 </table>
+			</matrix>
+			<matrix idx="1" len="9" range="[-8192,8192]">
+				<table> 952 60 12 30 982 12 30 60 934 </table>
+			</matrix>
+			<matrix idx="2" len="9" range="[-8192,8192]">
+				<table> 952 60 12 30 982 12 30 60 934 </table>
+			</matrix>
+			<matrix idx="3" len="9" range="[-8192,8192]">
+				<table> 916 90 18 45 961 18 45 90 889 </table>
+			</matrix>
+			<matrix idx="4" len="9" range="[-8192,8192]">
+				<table> 916 90 18 45 961 18 45 90 889 </table>
+			</matrix>
+			<matrix idx="5" len="9" range="[-8192,8192]">
+				<table> 1095 -60 -11 -29 1064 -11 -30 -60 1114 </table>
+			</matrix>
+			<matrix idx="6" len="9" range="[-8192,8192]">
+				<table> 1095 -60 -11 -29 1064 -11 -30 -60 1114 </table>
+			</matrix>
+			<matrix idx="7" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="8" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="9" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="10" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="11" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="12" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="13" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="14" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="15" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32" len="11">0</reserved>
+		</ccm_pref_param>
+		<ccm_pref_param idx="5">
+			<NodeNum type="int32" range="[1,16]">12</NodeNum>
+			<ct type="u16" len="16" range="[0,20000]">
+				<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+			</ct>
+			<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="1" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="2" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="3" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="4" len="9" range="[-8192,8192]">
+				<table> 952 60 12 30 982 12 30 60 934 </table>
+			</matrix>
+			<matrix idx="5" len="9" range="[-8192,8192]">
+				<table> 952 60 12 30 982 12 30 60 934 </table>
+			</matrix>
+			<matrix idx="6" len="9" range="[-8192,8192]">
+				<table> 952 60 12 30 982 12 30 60 934 </table>
+			</matrix>
+			<matrix idx="7" len="9" range="[-8192,8192]">
+				<table> 952 60 12 30 982 12 30 60 934 </table>
+			</matrix>
+			<matrix idx="8" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="9" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="10" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="11" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="12" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="13" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="14" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="15" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32" len="11">0</reserved>
+		</ccm_pref_param>
+		<ccm_pref_param idx="6">
+			<NodeNum type="int32" range="[1,16]">12</NodeNum>
+			<ct type="u16" len="16" range="[0,20000]">
+				<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+			</ct>
+			<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="1" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="2" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="3" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="4" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="5" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="6" len="9" range="[-8192,8192]">
+				<table> 1059 -30 -5 -14 1043 -5 -15 -30 1069 </table>
+			</matrix>
+			<matrix idx="7" len="9" range="[-8192,8192]">
+				<table> 1059 -30 -5 -14 1043 -5 -15 -30 1069 </table>
+			</matrix>
+			<matrix idx="8" len="9" range="[-8192,8192]">
+				<table> 1059 -30 -5 -14 1043 -5 -15 -30 1069 </table>
+			</matrix>
+			<matrix idx="9" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="10" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="11" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="12" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="13" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="14" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="15" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32" len="11">0</reserved>
+		</ccm_pref_param>
+		<ccm_pref_param idx="7">
+			<NodeNum type="int32" range="[1,16]">12</NodeNum>
+			<ct type="u16" len="16" range="[0,20000]">
+				<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+			</ct>
+			<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="1" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="2" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="3" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="4" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="5" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="6" len="9" range="[-8192,8192]">
+				<table> 1059 -30 -5 -14 1043 -5 -15 -30 1069 </table>
+			</matrix>
+			<matrix idx="7" len="9" range="[-8192,8192]">
+				<table> 1059 -30 -5 -14 1043 -5 -15 -30 1069 </table>
+			</matrix>
+			<matrix idx="8" len="9" range="[-8192,8192]">
+				<table> 1095 -60 -11 -29 1064 -11 -30 -60 1114 </table>
+			</matrix>
+			<matrix idx="9" len="9" range="[-8192,8192]">
+				<table> 1095 -60 -11 -29 1064 -11 -30 -60 1114 </table>
+			</matrix>
+			<matrix idx="10" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="11" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="12" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="13" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="14" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="15" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32" len="11">0</reserved>
+		</ccm_pref_param>
+		<ccm_pref_param idx="8">
+			<NodeNum type="int32" range="[1,16]">12</NodeNum>
+			<ct type="u16" len="16" range="[0,20000]">
+				<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+			</ct>
+			<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="1" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="2" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="3" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="4" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="5" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="6" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="7" len="9" range="[-8192,8192]">
+				<table> 988 30 6 15 1003 6 15 30 979 </table>
+			</matrix>
+			<matrix idx="8" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="9" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="10" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="11" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="12" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="13" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="14" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="15" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32" len="11">0</reserved>
+		</ccm_pref_param>
+		<ccm_pref_param idx="9">
+			<NodeNum type="int32" range="[1,16]">12</NodeNum>
+			<ct type="u16" len="16" range="[0,20000]">
+				<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+			</ct>
+			<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="1" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="2" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="3" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="4" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="5" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="6" len="9" range="[-8192,8192]">
+				<table> 1095 -60 -11 -29 1064 -11 -30 -60 1114 </table>
+			</matrix>
+			<matrix idx="7" len="9" range="[-8192,8192]">
+				<table> 1095 -60 -11 -29 1064 -11 -30 -60 1114 </table>
+			</matrix>
+			<matrix idx="8" len="9" range="[-8192,8192]">
+				<table> 1095 -60 -11 -29 1064 -11 -30 -60 1114 </table>
+			</matrix>
+			<matrix idx="9" len="9" range="[-8192,8192]">
+				<table> 1095 -60 -11 -29 1064 -11 -30 -60 1114 </table>
+			</matrix>
+			<matrix idx="10" len="9" range="[-8192,8192]">
+				<table> 1095 -60 -11 -29 1064 -11 -30 -60 1114 </table>
+			</matrix>
+			<matrix idx="11" len="9" range="[-8192,8192]">
+				<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+			</matrix>
+			<matrix idx="12" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="13" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="14" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<matrix idx="15" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<reserved type="int32" len="11">0</reserved>
+		</ccm_pref_param>
+		<flag_ccm_ai description="advanced_ccm enable,correspond to CCM_Advenced page" range="[0,1]" freq="less">0</flag_ccm_ai>
+		<ccm_ai idx="0" description="DEFAULT" range="flag_scene_ccm_enable=[0,1],matrix=[-8192,8192]">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="1" description="FOOD">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="2" description="PORTRAIT">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="3" description="FOLIAGE">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="4" description="SKY">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="5" description="NIGHT">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="6" description="BACKLIGHT_POTRAIT">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="7" description="TEXT">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="8" description="SUNRISE">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="9" description="CHINESE_BUILDING">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="10" description="LANDSCAPE">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="11" description="SNOW">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="12" description="FIREWORK">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="13" description="BEACH">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="14" description="CAT">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="15" description="FLOWER">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="16" description="CAR">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="17" description="BICTCLE">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="18" description="AUTUMNLEAF">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="19" description="OVERCAST">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="20" description="WATERFALL">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="21" description="LAKE">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="22" description="OTHER_BUILDING">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="23" description="DOG">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="24" description="DARKLIGHT_POTRAIT">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="25" description="USER0">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="26" description="USER1">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="27" description="USER2">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="28" description="USER3">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="29" description="USER4">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="30" description="USER5">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<ccm_ai idx="31" description="FACE">
+			<flag_scene_ccm_enable type="u16" range="[0,1]">0</flag_scene_ccm_enable>
+			<matrix type="int16" len="9" range="[-8192,8192]">
+				<table> 0 0 0 0 0 0 0 0 0 </table>
+			</matrix>
+			<min_score type="int32">0</min_score>
+		</ccm_ai>
+		<flag_ccm_flash description="CCM_Flash enable" range="[0,1]" freq="less">0</flag_ccm_flash>
+		<ccm_flash_parameter>
+			<flag_ccm_flash_preference type="int32" range="[0,1]">0</flag_ccm_flash_preference>
+			<size_bv_level_ccm_flash_preference range="[1,10]" freq="less">8</size_bv_level_ccm_flash_preference>
+			<array_bv_level_ccm_flash_preference type="int16" len="10" range="[-600,1600]" freq="less">
+				<table> -200 0 200 400 600 800 1000 1200 0 0 </table>
+			</array_bv_level_ccm_flash_preference>
+			<ccm_flash_pref_param idx="0" range="NodeNum=[1,16],ct=[0,20000],matrix=[-8192,8192]">
+				<NodeNum type="int32" range="[1,16]">12</NodeNum>
+				<ct type="u16" len="16" range="[0,20000]">
+					<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+				</ct>
+				<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="1" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="2" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="3" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="4" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="5" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="6" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="7" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="8" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="9" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="10" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="11" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="12" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="13" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="14" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="15" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<reserved type="int32" len="11">0</reserved>
+			</ccm_flash_pref_param>
+			<ccm_flash_pref_param idx="1">
+				<NodeNum type="int32" range="[1,16]">12</NodeNum>
+				<ct type="u16" len="16" range="[0,20000]">
+					<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+				</ct>
+				<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="1" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="2" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="3" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="4" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="5" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="6" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="7" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="8" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="9" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="10" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="11" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="12" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="13" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="14" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="15" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<reserved type="int32" len="11">0</reserved>
+			</ccm_flash_pref_param>
+			<ccm_flash_pref_param idx="2">
+				<NodeNum type="int32" range="[1,16]">12</NodeNum>
+				<ct type="u16" len="16" range="[0,20000]">
+					<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+				</ct>
+				<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="1" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="2" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="3" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="4" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="5" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="6" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="7" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="8" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="9" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="10" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="11" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="12" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="13" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="14" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="15" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<reserved type="int32" len="11">0</reserved>
+			</ccm_flash_pref_param>
+			<ccm_flash_pref_param idx="3">
+				<NodeNum type="int32" range="[1,16]">12</NodeNum>
+				<ct type="u16" len="16" range="[0,20000]">
+					<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+				</ct>
+				<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="1" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="2" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="3" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="4" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="5" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="6" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="7" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="8" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="9" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="10" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="11" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="12" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="13" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="14" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="15" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<reserved type="int32" len="11">0</reserved>
+			</ccm_flash_pref_param>
+			<ccm_flash_pref_param idx="4">
+				<NodeNum type="int32" range="[1,16]">12</NodeNum>
+				<ct type="u16" len="16" range="[0,20000]">
+					<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+				</ct>
+				<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="1" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="2" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="3" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="4" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="5" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="6" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="7" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="8" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="9" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="10" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="11" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="12" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="13" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="14" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="15" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<reserved type="int32" len="11">0</reserved>
+			</ccm_flash_pref_param>
+			<ccm_flash_pref_param idx="5">
+				<NodeNum type="int32" range="[1,16]">12</NodeNum>
+				<ct type="u16" len="16" range="[0,20000]">
+					<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+				</ct>
+				<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="1" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="2" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="3" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="4" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="5" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="6" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="7" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="8" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="9" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="10" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="11" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="12" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="13" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="14" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="15" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<reserved type="int32" len="11">0</reserved>
+			</ccm_flash_pref_param>
+			<ccm_flash_pref_param idx="6">
+				<NodeNum type="int32" range="[1,16]">12</NodeNum>
+				<ct type="u16" len="16" range="[0,20000]">
+					<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+				</ct>
+				<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="1" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="2" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="3" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="4" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="5" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="6" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="7" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="8" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="9" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="10" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="11" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="12" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="13" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="14" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="15" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<reserved type="int32" len="11">0</reserved>
+			</ccm_flash_pref_param>
+			<ccm_flash_pref_param idx="7">
+				<NodeNum type="int32" range="[1,16]">12</NodeNum>
+				<ct type="u16" len="16" range="[0,20000]">
+					<table> 2000 2500 3000 3500 4000 4500 5000 5500 6000 6500 7000 10000 0 0 0 0 </table>
+				</ct>
+				<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="1" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="2" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="3" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="4" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="5" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="6" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="7" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="8" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="9" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="10" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="11" len="9" range="[-8192,8192]">
+					<table> 1024 0 0 0 1024 0 0 0 1024 </table>
+				</matrix>
+				<matrix idx="12" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="13" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="14" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="15" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<reserved type="int32" len="11">0</reserved>
+			</ccm_flash_pref_param>
+			<ccm_flash_pref_param idx="8">
+				<NodeNum type="int32" range="[1,16]">0</NodeNum>
+				<ct type="u16" len="16" range="[0,20000]">
+					<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</ct>
+				<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="1" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="2" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="3" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="4" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="5" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="6" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="7" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="8" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="9" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="10" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="11" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="12" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="13" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="14" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="15" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<reserved type="int32" len="11">0</reserved>
+			</ccm_flash_pref_param>
+			<ccm_flash_pref_param idx="9">
+				<NodeNum type="int32" range="[1,16]">0</NodeNum>
+				<ct type="u16" len="16" range="[0,20000]">
+					<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</ct>
+				<matrix idx="0" type="int16" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="1" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="2" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="3" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="4" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="5" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="6" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="7" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="8" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="9" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="10" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="11" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="12" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="13" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="14" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<matrix idx="15" len="9" range="[-8192,8192]">
+					<table> 0 0 0 0 0 0 0 0 0 </table>
+				</matrix>
+				<reserved type="int32" len="11">0</reserved>
+			</ccm_flash_pref_param>
+		</ccm_flash_parameter>
+		<change_param_smooth_num type="u16">0</change_param_smooth_num>
+		<reserved_u16 type="u16">0</reserved_u16>
+		<reserved type="int32" len="301">0</reserved>
+	</ccm_parameter>
+	<check_sum>81909</check_sum>
+</CMC10_V1_20650>

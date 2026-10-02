@@ -1,0 +1,167 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2023 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "priority":{
+        "nodes":{
+            "bypass_list": [
+                {
+                    "type": "total_enable",
+                    "enable": 0
+                },
+                {
+                    "type": "all",
+                    "enable": 0
+                },
+                {
+                    "type": "cap_DeWarping",
+                    "enable": 0
+                },
+                {
+                    "type": "cap_MFNR",
+                    "enable": 0
+                },
+                {
+                    "type": "cap_HDR",
+                    "enable": 0
+                },
+                {
+                    "type": "cap_YNRCNR",
+                    "enable": 0
+                },
+                {
+                    "type": "cap_DPF",
+                    "enable": 0
+                },
+                {
+                    "type": "cap_DeWarpPortrait",
+                    "enable": 0
+                },
+                {
+                    "type": "cap_FaceBeauty",
+                    "enable": 0
+                },
+                {
+                    "type": "cap_WaterMark",
+                    "enable": 0
+                },
+                {
+                    "type": "cap_MFSR",
+                    "enable": 0
+                },
+                {
+                    "type": "cap_PCC",
+                    "enable": 0
+                },
+                {
+                    "type": "cap_Filter",
+                    "enable": 0
+                },
+                {
+                    "type": "cap_MFNR_HDR",
+                    "enable": 0
+                },
+                {
+                    "type": "raw_mfnr",
+                    "enable": 0
+                },
+                {
+                    "type": "raw_xdr",
+                    "enable": 0
+                },
+                {
+                    "type": "prev_DeWarping",
+                    "enable": 0
+                },
+                {
+                    "type": "prev_FaceBeauty",
+                    "enable": 0
+                },
+                {
+                    "type": "prev_AIScene",
+                    "enable": 0
+                },
+                {
+                    "type": "prev_Filter",
+                    "enable": 0
+                },
+                {
+                    "type": "prev_EIS",
+                    "enable": 0
+                },
+                {
+                    "type": "async_DeWarping",
+                    "enable": 0
+                },
+                {
+                    "type": "async_FaceDetect",
+                    "enable": 0
+                },
+                {
+                    "type": "async_Gesture",
+                    "enable": 0
+                },
+                {
+                    "type": "async_SceneDetect",
+                    "enable": 0
+                }
+            ]
+        },
+        "loglevel": {
+            "log_list": [
+                {
+                    "enable": 0,
+                    "hal": "4",
+                    "oem": "4",
+                    "MW_PM": "4",
+                    "sensor": "4",
+                    "trA_ctrl": "4",
+                    "arithmetic": "4",
+                    "lwplogoff": 0
+                }
+            ],
+            "lwplog_list": [
+                {
+                    "enable": 0,
+                    "ConfigurationManager": "4",
+                    "CameraSession": "4",
+                    "Node": "4",
+                    "PipelineContext": "4",
+                    "bufferPool": "4",
+                    "bufferManager": "4"
+                }
+            ]
+        },
+        "performance": {
+            "test_list": [
+                {
+                    "type": "Camera_Power_Test_Mode",
+                    "enable": 0
+                },
+                {
+                    "type": "Bypass_Af_Alg",
+                    "enable": 0
+                },
+                {
+                    "type": "Bypass_Awb_Alg",
+                    "enable": 0
+                },
+                {
+                    "type": "Bypass_FD_Alg",
+                    "enable": 0
+                },
+                {
+                    "type": "Bypass_FDAF_Alg",
+                    "enable": 0
+                },
+                {
+                    "type": "Camera_idle_sleep",
+                    "enable": 0
+                },
+                {
+                    "type": "Bypass_MultiCamera",
+                    "enable": 0
+                }
+            ]
+        }
+    }
+}

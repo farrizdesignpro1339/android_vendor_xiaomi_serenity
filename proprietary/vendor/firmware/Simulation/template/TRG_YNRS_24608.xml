@@ -1,0 +1,575 @@
+<?xml version="1.0"?>
+<!--
+    SPDX-FileCopyrightText: 2023-2024 Unisoc (Shanghai) Technologies Co., Ltd
+    SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+    Copyright 2023-2024 Unisoc (Shanghai) Technologies Co., Ltd.
+    Licensed under the Unisoc General Software License, version 1.0 (the License);
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+    Software distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+    See the Unisoc General Software License, version 1.0 for more details.
+-->
+<root name="YNRS">
+ <BlockInfo>
+  <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">24608</Parameter>
+  <Parameter index="" name="version" des="description" level="1" range="[0,32767]" type="int">1</Parameter>
+  <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>
+  <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">2401081104</Parameter>
+  <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">48</Parameter>
+  <Parameter index="" name="triggersize" des="description" level="1" range="[0,4294967295]" type="int">184</Parameter>
+  <Parameter index="" name="datasize" des="description" level="1" range="[0,4294967295]" type="int">1624</Parameter>
+  <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">8000</Parameter>
+  <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">6000</Parameter>
+  <Parameter index="" name="BlockControl" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+ </BlockInfo>
+ <Triggers name="YNRS" select_way="0" trigger_enable="1" group_num="7">
+  <Trigger start="1.0" end="1.0" para="total_gain" name="region0" interp_type="1" enable="1">0</Trigger>
+  <Trigger start="8.0" end="8.0" para="total_gain" name="region1" interp_type="1" enable="1">1</Trigger>
+  <Trigger start="16.0" end="16.0" para="total_gain" name="region2" interp_type="1" enable="1">2</Trigger>
+  <Trigger start="28.0" end="28.0" para="total_gain" name="region3" interp_type="1" enable="1">3</Trigger>
+  <Trigger start="38.0" end="38.0" para="total_gain" name="region4" interp_type="1" enable="1">4</Trigger>
+  <Trigger start="52.0" end="52.0" para="total_gain" name="region5" interp_type="1" enable="1">5</Trigger>
+  <Trigger start="78.0" end="78.0" para="total_gain" name="region6" interp_type="1" enable="1">6</Trigger>
+ </Triggers>
+ <Parameters name="YNRS" group_num="7" des="description">
+  <Parameter index="0" name="region0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="YNRS_Control">
+    <Parameter name="bypass" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="lum_T0" des="description" level="1" default="50" range="[0,255]" type="int" reserve="0x0000" length="1">70</Parameter>
+    <Parameter name="lum_T1" des="description" level="1" default="100" range="[0,255]" type="int" reserve="0x0000" length="1">90</Parameter>
+    <Parameter name="radius_base" des="description" level="1" default="1024" range="[0,65535]" type="int" reserve="0x000f" length="1">1024</Parameter>
+    <Parameter name="Radius" des="Radius" level="1" default="781" range="[0,1023]" type="int" reserve="0x0000" length="1">200</Parameter>
+    <Parameter name="imgCenterX" des="description" default="2000" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">4000</Parameter>
+    <Parameter name="imgCenterY" des="description" default="1500" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">3000</Parameter>
+   </Parameter>
+   <Parameter name="YNRS_Param" type="table">
+    <Parameter name="Layer1_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0010" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">2</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0010" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0010" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0010" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0010" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0010" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer2_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">2</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0020" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0020" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0020" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0020" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0020" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer3_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0032" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0030" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0030" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0030" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0030" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0030" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer4_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0040" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0040" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0040" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0040" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0040" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer5_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0052" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0050" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0050" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0050" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0050" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0050" length="1">15</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="YNRS_Control">
+    <Parameter name="bypass" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="lum_T0" des="description" level="1" default="50" range="[0,255]" type="int" reserve="0x0000" length="1">70</Parameter>
+    <Parameter name="lum_T1" des="description" level="1" default="100" range="[0,255]" type="int" reserve="0x0000" length="1">90</Parameter>
+    <Parameter name="radius_base" des="description" level="1" default="1024" range="[0,65535]" type="int" reserve="0x000f" length="1">1024</Parameter>
+    <Parameter name="Radius" des="Radius" level="1" default="781" range="[0,1023]" type="int" reserve="0x0000" length="1">200</Parameter>
+    <Parameter name="imgCenterX" des="description" default="2000" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">4000</Parameter>
+    <Parameter name="imgCenterY" des="description" default="1500" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">3000</Parameter>
+   </Parameter>
+   <Parameter name="YNRS_Param" type="table">
+    <Parameter name="Layer1_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0010" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">2</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0010" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0010" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0010" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0010" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0010" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer2_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">2</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0020" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0020" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0020" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0020" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0020" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer3_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0032" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0030" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0030" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0030" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0030" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0030" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer4_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0040" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0040" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0040" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0040" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0040" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer5_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0052" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0050" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0050" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0050" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0050" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0050" length="1">15</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="YNRS_Control">
+    <Parameter name="bypass" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="lum_T0" des="description" level="1" default="50" range="[0,255]" type="int" reserve="0x0000" length="1">70</Parameter>
+    <Parameter name="lum_T1" des="description" level="1" default="100" range="[0,255]" type="int" reserve="0x0000" length="1">90</Parameter>
+    <Parameter name="radius_base" des="description" level="1" default="1024" range="[0,65535]" type="int" reserve="0x000f" length="1">1024</Parameter>
+    <Parameter name="Radius" des="Radius" level="1" default="781" range="[0,1023]" type="int" reserve="0x0000" length="1">200</Parameter>
+    <Parameter name="imgCenterX" des="description" default="2000" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">4000</Parameter>
+    <Parameter name="imgCenterY" des="description" default="1500" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">3000</Parameter>
+   </Parameter>
+   <Parameter name="YNRS_Param" type="table">
+    <Parameter name="Layer1_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0010" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">4</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">3</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">2</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0010" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0010" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0010" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0010" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0010" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer2_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">3</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">2</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0020" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0020" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0020" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0020" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0020" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer3_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0032" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0030" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0030" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0030" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0030" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0030" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer4_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0040" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0040" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0040" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0040" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0040" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer5_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0052" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0050" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0050" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0050" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0050" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0050" length="1">15</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="YNRS_Control">
+    <Parameter name="bypass" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="lum_T0" des="description" level="1" default="50" range="[0,255]" type="int" reserve="0x0000" length="1">70</Parameter>
+    <Parameter name="lum_T1" des="description" level="1" default="100" range="[0,255]" type="int" reserve="0x0000" length="1">90</Parameter>
+    <Parameter name="radius_base" des="description" level="1" default="1024" range="[0,65535]" type="int" reserve="0x000f" length="1">1024</Parameter>
+    <Parameter name="Radius" des="Radius" level="1" default="781" range="[0,1023]" type="int" reserve="0x0000" length="1">200</Parameter>
+    <Parameter name="imgCenterX" des="description" default="2000" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">4000</Parameter>
+    <Parameter name="imgCenterY" des="description" default="1500" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">3000</Parameter>
+   </Parameter>
+   <Parameter name="YNRS_Param" type="table">
+    <Parameter name="Layer1_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0010" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">6</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">5</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">3</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0010" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0010" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0010" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0010" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0010" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer2_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">5</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">4</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">3</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0020" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0020" length="1">10</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0020" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0020" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0020" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer3_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0032" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0030" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0030" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0030" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0030" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0030" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer4_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0040" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0040" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0040" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0040" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0040" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer5_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0052" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0050" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0050" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0050" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0050" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0050" length="1">15</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="4" name="region4" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="YNRS_Control">
+    <Parameter name="bypass" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="lum_T0" des="description" level="1" default="50" range="[0,255]" type="int" reserve="0x0000" length="1">70</Parameter>
+    <Parameter name="lum_T1" des="description" level="1" default="100" range="[0,255]" type="int" reserve="0x0000" length="1">90</Parameter>
+    <Parameter name="radius_base" des="description" level="1" default="1024" range="[0,65535]" type="int" reserve="0x000f" length="1">1024</Parameter>
+    <Parameter name="Radius" des="Radius" level="1" default="781" range="[0,1023]" type="int" reserve="0x0000" length="1">200</Parameter>
+    <Parameter name="imgCenterX" des="description" default="2000" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">4000</Parameter>
+    <Parameter name="imgCenterY" des="description" default="1500" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">3000</Parameter>
+   </Parameter>
+   <Parameter name="YNRS_Param" type="table">
+    <Parameter name="Layer1_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0010" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">8</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">6</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">4</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0010" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0010" length="1">10</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0010" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0010" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0010" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer2_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">9</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">7</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">5</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0020" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0020" length="1">12</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0020" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0020" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0020" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer3_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0032" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0030" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0030" length="1">10</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0030" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0030" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0030" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer4_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0040" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0040" length="1">10</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0040" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0040" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0040" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer5_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0052" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0050" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0050" length="1">10</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0050" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0050" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0050" length="1">15</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="5" name="region5" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="YNRS_Control">
+    <Parameter name="bypass" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="lum_T0" des="description" level="1" default="50" range="[0,255]" type="int" reserve="0x0000" length="1">70</Parameter>
+    <Parameter name="lum_T1" des="description" level="1" default="100" range="[0,255]" type="int" reserve="0x0000" length="1">90</Parameter>
+    <Parameter name="radius_base" des="description" level="1" default="1024" range="[0,65535]" type="int" reserve="0x000f" length="1">1024</Parameter>
+    <Parameter name="Radius" des="Radius" level="1" default="781" range="[0,1023]" type="int" reserve="0x0000" length="1">200</Parameter>
+    <Parameter name="imgCenterX" des="description" default="2000" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">4000</Parameter>
+    <Parameter name="imgCenterY" des="description" default="1500" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">3000</Parameter>
+   </Parameter>
+   <Parameter name="YNRS_Param" type="table">
+    <Parameter name="Layer1_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0010" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">12</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">10</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">7</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0010" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0010" length="1">12</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0010" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0010" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0010" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer2_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">13</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">11</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">8</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0020" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0020" length="1">13</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0020" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0020" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0020" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer3_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0032" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">4</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">3</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">2</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0030" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0030" length="1">12</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0030" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0030" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0030" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer4_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0040" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0040" length="1">12</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0040" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0040" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0040" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer5_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0052" length="1">0</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0050" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0050" length="1">12</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0050" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0050" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0050" length="1">15</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="6" name="region6" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="YNRS_Control">
+    <Parameter name="bypass" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="lum_T0" des="description" level="1" default="50" range="[0,255]" type="int" reserve="0x0000" length="1">70</Parameter>
+    <Parameter name="lum_T1" des="description" level="1" default="100" range="[0,255]" type="int" reserve="0x0000" length="1">90</Parameter>
+    <Parameter name="radius_base" des="description" level="1" default="1024" range="[0,65535]" type="int" reserve="0x000f" length="1">1024</Parameter>
+    <Parameter name="Radius" des="Radius" level="1" default="781" range="[0,1023]" type="int" reserve="0x0000" length="1">200</Parameter>
+    <Parameter name="imgCenterX" des="description" default="2000" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">4000</Parameter>
+    <Parameter name="imgCenterY" des="description" default="1500" level="1" range="[0,65535]" type="int" reserve="0x0007" length="1">3000</Parameter>
+   </Parameter>
+   <Parameter name="YNRS_Param" type="table">
+    <Parameter name="Layer1_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0010" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">14</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">12</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0010" length="1">10</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0010" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0010" length="1">15</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0010" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0010" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0010" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer2_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">16</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">14</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0020" length="1">12</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0020" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0020" length="1">15</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0020" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0020" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0020" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer3_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0032" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0030" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">9</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">8</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0030" length="1">7</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0030" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0030" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0030" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0030" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0030" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer4_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0042" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">4</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">3</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0040" length="1">2</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0040" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0040" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0040" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0040" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0040" length="1">15</Parameter>
+    </Parameter>
+    <Parameter name="Layer5_GF" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="enable" des="description" level="1" default="1" range="[0,1]" type="int" reserve="0x0052" length="1">1</Parameter>
+     <Parameter name="radius" des="description" level="1" default="2" range="[1,2]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="low" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">3</Parameter>
+     <Parameter name="mid" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">2</Parameter>
+     <Parameter name="high" des="description" level="1" default="20" range="[1,8191]" type="int" reserve="0x0050" length="1">1</Parameter>
+     <Parameter name="rnr_ratio" des="description" level="1" default="1" range="[1,255]" type="int" reserve="0x0050" length="1">3</Parameter>
+     <Parameter name="rnr_offset" des="description" level="1" default="1" range="[0,1023]" type="int" reserve="0x0050" length="1">8</Parameter>
+     <Parameter name="addback_enable" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0050" length="1">0</Parameter>
+     <Parameter name="addback_ratio" des="description" level="1" default="0" range="[0,255]" type="int" reserve="0x0050" length="1">30</Parameter>
+     <Parameter name="addback_clip" des="description" level="1" default="15" range="[0,255]" type="int" reserve="0x0050" length="1">15</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+ </Parameters>
+ <Defaults name="YNRS" des="description">
+  <Parameter index="0" name="region0" des="description">
+   <Parameter name="Radius" des="calc by Radius_f" level="1" range="[0,65535]" type="int" length="1">1562</Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description">
+   <Parameter name="Radius" des="calc by Radius_f" level="1" range="[0,65535]" type="int" length="1">1562</Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description">
+   <Parameter name="Radius" des="calc by Radius_f" level="1" range="[0,65535]" type="int" length="1">1562</Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description">
+   <Parameter name="Radius" des="calc by Radius_f" level="1" range="[0,65535]" type="int" length="1">1562</Parameter>
+  </Parameter>
+  <Parameter index="4" name="region4" des="description">
+   <Parameter name="Radius" des="calc by Radius_f" level="1" range="[0,65535]" type="int" length="1">1562</Parameter>
+  </Parameter>
+  <Parameter index="5" name="region5" des="description">
+   <Parameter name="Radius" des="calc by Radius_f" level="1" range="[0,65535]" type="int" length="1">1562</Parameter>
+  </Parameter>
+  <Parameter index="6" name="region6" des="description">
+   <Parameter name="Radius" des="calc by Radius_f" level="1" range="[0,65535]" type="int" length="1">1562</Parameter>
+  </Parameter>
+ </Defaults>
+</root>

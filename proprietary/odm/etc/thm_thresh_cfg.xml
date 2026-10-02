@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<ThmThreshCfg>
+	<sensor>
+		<sensor_type>soc-thmzone</sensor_type>
+		<status type="hot">
+			<NONE>NAN</NONE>
+			<LIGHT>35</LIGHT>
+			<MODERATE>55</MODERATE>
+			<SEVERE>65</SEVERE>
+			<CRITICAL>90</CRITICAL>
+			<EMERGENCY>100</EMERGENCY>
+			<SHUTDOWN>110</SHUTDOWN>
+		</status>
+		<status type="cold">
+			<NONE>NAN</NONE>
+			<LIGHT>-10</LIGHT>
+			<MODERATE>-20</MODERATE>
+			<SEVERE>-30</SEVERE>
+			<CRITICAL>-35</CRITICAL>
+			<EMERGENCY>-40</EMERGENCY>
+			<SHUTDOWN>-45</SHUTDOWN>
+		</status>
+	</sensor>
+	<sensor>
+		<sensor_type>gpu-thmzone</sensor_type>
+		<status type="hot">
+			<NONE>NAN</NONE>
+			<LIGHT>35</LIGHT>
+			<MODERATE>55</MODERATE>
+			<SEVERE>65</SEVERE>
+			<CRITICAL>90</CRITICAL>
+			<EMERGENCY>100</EMERGENCY>
+			<SHUTDOWN>110</SHUTDOWN>
+		</status>
+		<status type="cold">
+			<NONE>NAN</NONE>
+			<LIGHT>-10</LIGHT>
+			<MODERATE>-20</MODERATE>
+			<SEVERE>-30</SEVERE>
+			<CRITICAL>-35</CRITICAL>
+			<EMERGENCY>-40</EMERGENCY>
+			<SHUTDOWN>-45</SHUTDOWN>
+		</status>
+	</sensor>
+	<sensor>
+		<sensor_type>battery</sensor_type>
+		<status type="hot">
+			<NONE>NAN</NONE>
+			<LIGHT>48</LIGHT>
+			<MODERATE>55</MODERATE>
+			<SEVERE>60</SEVERE>
+			<CRITICAL>70</CRITICAL>
+			<EMERGENCY>110</EMERGENCY>
+			<SHUTDOWN>120</SHUTDOWN>
+		</status>
+		<status type="cold">
+			<NONE>NAN</NONE>
+			<LIGHT>-10</LIGHT>
+			<MODERATE>-20</MODERATE>
+			<SEVERE>-30</SEVERE>
+			<CRITICAL>-35</CRITICAL>
+			<EMERGENCY>-40</EMERGENCY>
+			<SHUTDOWN>-45</SHUTDOWN>
+		</status>
+	</sensor>
+	<sensor>
+		<sensor_type>skin-thmzone</sensor_type>
+		<status type="hot">
+			<NONE>NAN</NONE>
+			<LIGHT>48</LIGHT>
+			<MODERATE>55</MODERATE>
+			<SEVERE>60</SEVERE>
+			<CRITICAL>70</CRITICAL>
+			<EMERGENCY>90</EMERGENCY>
+			<SHUTDOWN>110</SHUTDOWN>
+		</status>
+		<status type="cold">
+			<NONE>NAN</NONE>
+			<LIGHT>-10</LIGHT>
+			<MODERATE>-20</MODERATE>
+			<SEVERE>-30</SEVERE>
+			<CRITICAL>-35</CRITICAL>
+			<EMERGENCY>-40</EMERGENCY>
+			<SHUTDOWN>-45</SHUTDOWN>
+		</status>
+	</sensor>
+	<sensor>
+		<sensor_type>pa-thmzone</sensor_type>
+		<status type="hot">
+			<NONE>NAN</NONE>
+			<LIGHT>48</LIGHT>
+			<MODERATE>55</MODERATE>
+			<SEVERE>65</SEVERE>
+			<CRITICAL>80</CRITICAL>
+			<EMERGENCY>90</EMERGENCY>
+			<SHUTDOWN>110</SHUTDOWN>
+		</status>
+		<status type="cold">
+			<NONE>NAN</NONE>
+			<LIGHT>-10</LIGHT>
+			<MODERATE>-20</MODERATE>
+			<SEVERE>-30</SEVERE>
+			<CRITICAL>-35</CRITICAL>
+			<EMERGENCY>-40</EMERGENCY>
+			<SHUTDOWN>-45</SHUTDOWN>
+		</status>
+	</sensor>
+</ThmThreshCfg>

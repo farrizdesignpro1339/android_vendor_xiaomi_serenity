@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<root name="BCHS">
+ <BlockInfo>
+  <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">24670</Parameter>
+  <Parameter index="" name="version" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>
+  <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">2411151629</Parameter>
+  <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">48</Parameter>
+  <Parameter index="" name="triggersize" des="description" level="1" range="[0,4294967295]" type="int">64</Parameter>
+  <Parameter index="" name="datasize" des="description" level="1" range="[0,4294967295]" type="int">548</Parameter>
+  <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">4000</Parameter>
+  <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">3000</Parameter>
+  <Parameter index="" name="BlockControl" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+ </BlockInfo>
+ <Triggers name="BCHS" select_way="0" trigger_enable="1" group_num="7">
+  <Trigger start="0" end="0" para="app_id" interp_type="0x2" enable="1" name="region0">0</Trigger>
+  <Trigger start="1" end="1" para="app_id" interp_type="0x2" enable="1" name="region1">1</Trigger>
+  <Trigger start="2" end="2" para="app_id" interp_type="0x2" enable="1" name="region2">2</Trigger>
+  <Trigger start="3" end="3" para="app_id" interp_type="0x2" enable="1" name="region3">3</Trigger>
+  <Trigger start="4" end="4" para="app_id" interp_type="0x2" enable="1" name="region4">4</Trigger>
+  <Trigger start="5" end="5" para="app_id" interp_type="0x2" enable="1" name="region5">5</Trigger>
+  <Trigger start="6" end="6" para="app_id" interp_type="0x2" enable="1" name="region6">6</Trigger>
+ </Triggers>
+ <Parameters name="BCHS" group_num="7" des="description">
+  <Parameter index="0" name="region0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Bchs_Bypass">
+    <Parameter name="bchs_bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+   </Parameter>
+   <Parameter name="Bright" des="bright">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="-48" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Contrast" des="contrast">
+    <Parameter name="bypass" des="bypass" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">64</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Hue" des="hue">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[-180,180]" type="int" reserve="0x0020" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Saturation" des="saturation">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+    <Parameter name="csa_factor_u" des="csa_factor_u" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="csa_factor_v" des="csa_factor_v" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="scenemode0" des="scenemode0" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+    <Parameter name="scenemode1" des="scenemode1" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Bchs_Bypass">
+    <Parameter name="bchs_bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+   </Parameter>
+   <Parameter name="Bright" des="bright">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="-48" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Contrast" des="contrast">
+    <Parameter name="bypass" des="bypass" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">64</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Hue" des="hue">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[-180,180]" type="int" reserve="0x0020" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Saturation" des="saturation">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+    <Parameter name="csa_factor_u" des="csa_factor_u" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="csa_factor_v" des="csa_factor_v" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="scenemode0" des="scenemode0" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+    <Parameter name="scenemode1" des="scenemode1" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Bchs_Bypass">
+    <Parameter name="bchs_bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+   </Parameter>
+   <Parameter name="Bright" des="bright">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="-48" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Contrast" des="contrast">
+    <Parameter name="bypass" des="bypass" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">64</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Hue" des="hue">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[-180,180]" type="int" reserve="0x0020" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Saturation" des="saturation">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+    <Parameter name="csa_factor_u" des="csa_factor_u" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="csa_factor_v" des="csa_factor_v" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="scenemode0" des="scenemode0" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+    <Parameter name="scenemode1" des="scenemode1" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Bchs_Bypass">
+    <Parameter name="bchs_bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+   </Parameter>
+   <Parameter name="Bright" des="bright">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="-48" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Contrast" des="contrast">
+    <Parameter name="bypass" des="bypass" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">64</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Hue" des="hue">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[-180,180]" type="int" reserve="0x0020" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Saturation" des="saturation">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+    <Parameter name="csa_factor_u" des="csa_factor_u" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="csa_factor_v" des="csa_factor_v" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="scenemode0" des="scenemode0" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+    <Parameter name="scenemode1" des="scenemode1" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="4" name="region4" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Bchs_Bypass">
+    <Parameter name="bchs_bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+   </Parameter>
+   <Parameter name="Bright" des="bright">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="-48" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Contrast" des="contrast">
+    <Parameter name="bypass" des="bypass" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">64</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Hue" des="hue">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[-180,180]" type="int" reserve="0x0020" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Saturation" des="saturation">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+    <Parameter name="csa_factor_u" des="csa_factor_u" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="csa_factor_v" des="csa_factor_v" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="scenemode0" des="scenemode0" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+    <Parameter name="scenemode1" des="scenemode1" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="5" name="region5" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Bchs_Bypass">
+    <Parameter name="bchs_bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+   </Parameter>
+   <Parameter name="Bright" des="bright">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="-48" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Contrast" des="contrast">
+    <Parameter name="bypass" des="bypass" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">64</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Hue" des="hue">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[-180,180]" type="int" reserve="0x0020" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Saturation" des="saturation">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+    <Parameter name="csa_factor_u" des="csa_factor_u" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="csa_factor_v" des="csa_factor_v" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="scenemode0" des="scenemode0" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+    <Parameter name="scenemode1" des="scenemode1" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="6" name="region6" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Bchs_Bypass">
+    <Parameter name="bchs_bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+   </Parameter>
+   <Parameter name="Bright" des="bright">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="-48" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[-128,127]" type="int" reserve="0x0010" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Contrast" des="contrast">
+    <Parameter name="bypass" des="bypass" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">64</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Hue" des="hue">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">0</Parameter>
+    <Parameter name="factor" des="factor" default="16" level="1" range="[-180,180]" type="int" reserve="0x0020" length="1">0</Parameter>
+    <Parameter name="scenemode" des="scenemode" default="64" level="1" range="[0,255]" type="int" reserve="0x0020" length="1">32</Parameter>
+   </Parameter>
+   <Parameter name="Saturation" des="saturation">
+    <Parameter name="bypass" des="bypass" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">0</Parameter>
+    <Parameter name="csa_factor_u" des="csa_factor_u" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="csa_factor_v" des="csa_factor_v" default="16" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">64</Parameter>
+    <Parameter name="scenemode0" des="scenemode0" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+    <Parameter name="scenemode1" des="scenemode1" default="64" level="1" range="[0,255]" type="int" reserve="0x0040" length="1">32</Parameter>
+   </Parameter>
+  </Parameter>
+ </Parameters>
+</root>
