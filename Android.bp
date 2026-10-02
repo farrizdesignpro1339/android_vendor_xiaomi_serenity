@@ -94,49 +94,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.frameworks.cameraservice.common@2.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/android.frameworks.cameraservice.common@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.frameworks.cameraservice.common@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "android.frameworks.cameraservice.device@2.0",
     owner: "xiaomi",
     strip: {
@@ -148,7 +105,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/android.frameworks.cameraservice.device@2.0.so",
             ],
             shared_libs: [
-                "android.frameworks.cameraservice.common@2.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -164,7 +120,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/android.frameworks.cameraservice.device@2.0.so",
             ],
             shared_libs: [
-                "android.frameworks.cameraservice.common@2.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -193,7 +148,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/android.frameworks.cameraservice.device@2.1.so",
             ],
             shared_libs: [
-                "android.frameworks.cameraservice.common@2.0",
                 "android.frameworks.cameraservice.device@2.0",
                 "libhidlbase",
                 "liblog",
@@ -210,7 +164,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/android.frameworks.cameraservice.device@2.1.so",
             ],
             shared_libs: [
-                "android.frameworks.cameraservice.common@2.0",
                 "android.frameworks.cameraservice.device@2.0",
                 "libhidlbase",
                 "liblog",
@@ -240,7 +193,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/android.frameworks.cameraservice.service@2.0.so",
             ],
             shared_libs: [
-                "android.frameworks.cameraservice.common@2.0",
                 "android.frameworks.cameraservice.device@2.0",
                 "libhidlbase",
                 "liblog",
@@ -257,7 +209,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/android.frameworks.cameraservice.service@2.0.so",
             ],
             shared_libs: [
-                "android.frameworks.cameraservice.common@2.0",
                 "android.frameworks.cameraservice.device@2.0",
                 "libhidlbase",
                 "liblog",
@@ -287,7 +238,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/android.frameworks.cameraservice.service@2.1.so",
             ],
             shared_libs: [
-                "android.frameworks.cameraservice.common@2.0",
                 "android.frameworks.cameraservice.device@2.0",
                 "android.frameworks.cameraservice.service@2.0",
                 "libhidlbase",
@@ -305,7 +255,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/android.frameworks.cameraservice.service@2.1.so",
             ],
             shared_libs: [
-                "android.frameworks.cameraservice.common@2.0",
                 "android.frameworks.cameraservice.device@2.0",
                 "android.frameworks.cameraservice.service@2.0",
                 "libhidlbase",
@@ -336,7 +285,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/android.frameworks.cameraservice.service@2.2.so",
             ],
             shared_libs: [
-                "android.frameworks.cameraservice.common@2.0",
                 "android.frameworks.cameraservice.device@2.0",
                 "android.frameworks.cameraservice.device@2.1",
                 "android.frameworks.cameraservice.service@2.0",
@@ -356,54 +304,10 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/android.frameworks.cameraservice.service@2.2.so",
             ],
             shared_libs: [
-                "android.frameworks.cameraservice.common@2.0",
                 "android.frameworks.cameraservice.device@2.0",
                 "android.frameworks.cameraservice.device@2.1",
                 "android.frameworks.cameraservice.service@2.0",
                 "android.frameworks.cameraservice.service@2.1",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.frameworks.sensorservice@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/android.frameworks.sensorservice@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.frameworks.sensorservice@1.0.so",
-            ],
-            shared_libs: [
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -6450,7 +6354,6 @@ cc_prebuilt_library_shared {
                 "libmediandk",
                 "android.frameworks.cameraservice.device@2.0",
                 "android.frameworks.cameraservice.device@2.1",
-                "android.frameworks.cameraservice.common@2.0",
                 "android.frameworks.cameraservice.service@2.0",
                 "android.frameworks.cameraservice.service@2.1",
                 "android.frameworks.cameraservice.service@2.2",
@@ -6477,7 +6380,6 @@ cc_prebuilt_library_shared {
                 "libmediandk",
                 "android.frameworks.cameraservice.device@2.0",
                 "android.frameworks.cameraservice.device@2.1",
-                "android.frameworks.cameraservice.common@2.0",
                 "android.frameworks.cameraservice.service@2.0",
                 "android.frameworks.cameraservice.service@2.1",
                 "android.frameworks.cameraservice.service@2.2",
@@ -14231,7 +14133,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libhidlbase",
                 "libutils",
-                "android.frameworks.sensorservice@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -14246,7 +14147,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libhidlbase",
                 "libutils",
-                "android.frameworks.sensorservice@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -23171,7 +23071,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "libcutils",
                 "libhidlbase",
-                "android.frameworks.sensorservice@1.0",
                 "libc++",
                 "libc",
                 "libm",

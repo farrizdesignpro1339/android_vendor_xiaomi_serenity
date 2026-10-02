@@ -20106,6 +20106,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/firmware/vecft-zh.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/vecft-zh.elf \
     vendor/xiaomi/serenity/proprietary/vendor/firmware/xml2bin.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/xml2bin.txt \
     vendor/xiaomi/serenity/proprietary/vendor/framework/androidx.camera.extensions.impl.jar:$(TARGET_COPY_OUT_VENDOR)/framework/androidx.camera.extensions.impl.jar \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.frameworks.cameraservice.common@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.common@2.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.sensorservice@1.0.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common-util.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common@5.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@5.0.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common@7.0-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.0-enums.so \
@@ -20200,6 +20202,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/lib/soundfx/libldnhncr.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libldnhncr.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/soundfx/libreverbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libreverbwrapper.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/soundfx/libvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvisualizer.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.frameworks.cameraservice.common@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.cameraservice.common@2.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.frameworks.sensorservice@1.0.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common-util.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@5.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@5.0.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.0-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.0-enums.so \
@@ -20366,13 +20370,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PQTune.unisoc \
     a2dpoffload \
-    android.frameworks.cameraservice.common@2.0 \
     android.frameworks.cameraservice.device@2.0 \
     android.frameworks.cameraservice.device@2.1 \
     android.frameworks.cameraservice.service@2.0 \
     android.frameworks.cameraservice.service@2.1 \
     android.frameworks.cameraservice.service@2.2 \
-    android.frameworks.sensorservice@1.0 \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio@7.1-impl \
     android.hardware.biometrics.common-V2-ndk \
