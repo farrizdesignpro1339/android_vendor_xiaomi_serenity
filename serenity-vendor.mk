@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/serenity
 
 PRODUCT_COPY_FILES += \
-
     vendor/xiaomi/serenity/proprietary/odm/bin/fm_tools:$(TARGET_COPY_OUT_ODM)/bin/fm_tools \
     vendor/xiaomi/serenity/proprietary/odm/etc/ScanStruct/SPRD_TAG_AE_RESULT_INFO.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_AE_RESULT_INFO.txt \
     vendor/xiaomi/serenity/proprietary/odm/etc/ScanStruct/SPRD_TAG_AWB_CALC_INFO.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_AWB_CALC_INFO.txt \
