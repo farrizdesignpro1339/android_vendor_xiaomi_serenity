@@ -19631,7 +19631,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/usr/idc/synaptics_dsx.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/synaptics_dsx.idc \
     vendor/xiaomi/serenity/proprietary/vendor/usr/idc/synaptics_dsx_i2c.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/synaptics_dsx_i2c.idc \
     vendor/xiaomi/serenity/proprietary/vendor/usr/keylayout/adaptive_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/adaptive_ts.kl \
-    vendor/xiaomi/serenity/proprietary/vendor/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
+    vendor/xiaomi/serenity/proprietary/vendor/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
 
 PRODUCT_PACKAGES += \
     PQTune.unisoc \
