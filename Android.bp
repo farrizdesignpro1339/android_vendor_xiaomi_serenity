@@ -1383,62 +1383,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.bluetooth.default",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.bluetooth.default.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio-V2-ndk",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "libbluetooth_audio_session",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.bluetooth.default.so",
-            ],
-            shared_libs: [
-                "android.hardware.bluetooth.audio-V2-ndk",
-                "libaudioutils",
-                "libbase",
-                "libbinder_ndk",
-                "libcutils",
-                "libfmq",
-                "liblog",
-                "libutils",
-                "libbluetooth_audio_session",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "audio.bluetooth.ums9230",
     owner: "xiaomi",
     strip: {
@@ -1485,44 +1429,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "audio.primary.default",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.primary.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.primary.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "audio.primary.ums9230",
     owner: "xiaomi",
     strip: {
@@ -1550,92 +1456,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audio.r_submix.default",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.r_submix.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmedia_helper",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.r_submix.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmedia_helper",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audio.usb.default",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.usb.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libaudioutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.usb.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libaudioutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
     prefer: true,
     relative_install_path: "hw",
     soc_specific: true,
@@ -1822,7 +1642,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libwifi-hal",
                 "libc++",
                 "libc",
                 "libm",
@@ -2449,7 +2268,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libxml2",
                 "libjsoncpp",
-                "libsensorndkbridge",
                 "libion",
                 "libpowerhal_cli",
                 "libutils",
@@ -2531,7 +2349,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libxml2",
                 "libjsoncpp",
-                "libsensorndkbridge",
                 "libion",
                 "libpowerhal_cli",
                 "libutils",
@@ -3183,7 +3000,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcamera_metadata",
                 "libpowerhal_cli",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libidispatch",
                 "libhardware",
@@ -3214,7 +3030,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcamera_metadata",
                 "libpowerhal_cli",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libidispatch",
                 "libhardware",
@@ -3568,7 +3383,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutils",
-                "libsensorndkbridge",
                 "libc++",
                 "libc",
                 "libm",
@@ -3584,7 +3398,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libutils",
-                "libsensorndkbridge",
                 "libc++",
                 "libc",
                 "libm",
@@ -5331,7 +5144,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5357,7 +5169,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5397,7 +5208,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5423,7 +5233,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5463,7 +5272,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5489,7 +5297,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5529,7 +5336,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5554,7 +5360,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5628,7 +5433,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5654,7 +5458,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5694,7 +5497,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5720,7 +5522,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5830,7 +5631,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5856,7 +5656,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5896,7 +5695,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5922,7 +5720,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5962,7 +5759,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -5988,7 +5784,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "libcamera_metadata",
                 "libc++",
-                "libsensorndkbridge",
                 "libpipelinelog",
                 "libiss",
                 "liblwpcommon",
@@ -6148,7 +5943,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libxml2",
                 "libjsoncpp",
-                "libsensorndkbridge",
                 "libion",
                 "libpowerhal_cli",
                 "libutils",
@@ -6223,7 +6017,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libxml2",
                 "libjsoncpp",
-                "libsensorndkbridge",
                 "libion",
                 "libpowerhal_cli",
                 "libutils",
@@ -9407,7 +9200,6 @@ cc_prebuilt_library_shared {
                 "libsprd_scene_seg",
                 "libc++",
                 "libpowerhal_cli",
-                "libsensorndkbridge",
                 "liblwpAdapter",
                 "libcamoem",
                 "libcammem",
@@ -9519,7 +9311,6 @@ cc_prebuilt_library_shared {
                 "libsprd_scene_seg",
                 "libc++",
                 "libpowerhal_cli",
-                "libsensorndkbridge",
                 "liblwpAdapter",
                 "libcamoem",
                 "libcammem",
@@ -9644,7 +9435,6 @@ cc_prebuilt_library_shared {
                 "libsprd_scene_seg",
                 "libc++",
                 "libpowerhal_cli",
-                "libsensorndkbridge",
                 "liblwpAdapter",
                 "libcamoem",
                 "libpipelinelog",
@@ -9751,7 +9541,6 @@ cc_prebuilt_library_shared {
                 "libsprd_scene_seg",
                 "libc++",
                 "libpowerhal_cli",
-                "libsensorndkbridge",
                 "liblwpAdapter",
                 "libcamoem",
                 "libpipelinelog",
@@ -9851,7 +9640,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "librilcore",
-                "librilutils",
                 "libnetutils",
                 "libhidlbase",
                 "libtinyxml2",
@@ -9870,7 +9658,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "librilcore",
-                "librilutils",
                 "libnetutils",
                 "libhidlbase",
                 "libtinyxml2",
@@ -12281,7 +12068,6 @@ cc_prebuilt_library_shared {
                 "libDefog",
                 "libpipelinelog",
                 "liblog",
-                "libsensorndkbridge",
                 "libpowerhal_cli",
                 "libcamps",
                 "camera.unisoc",
@@ -12350,7 +12136,6 @@ cc_prebuilt_library_shared {
                 "libDefog",
                 "libpipelinelog",
                 "liblog",
-                "libsensorndkbridge",
                 "libpowerhal_cli",
                 "libcamps",
                 "camera.unisoc",
@@ -13895,7 +13680,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libhardware_legacy",
-                "librilutils",
                 "libhidlbase",
                 "libbase",
                 "libbinder",
@@ -13932,7 +13716,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libhardware_legacy",
-                "librilutils",
                 "libhidlbase",
                 "libbase",
                 "libbinder",
@@ -13954,41 +13737,6 @@ cc_prebuilt_library_shared {
                 "vendor.unisoc.hardware.radio.modem-V1-ndk",
                 "vendor.unisoc.hardware.radio.ims-V1-ndk",
                 "vendor.sprd.hardware.network-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "librilutils",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/librilutils.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/librilutils.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
@@ -14106,47 +13854,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libtrustyHalHelper",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsensorndkbridge",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsensorndkbridge.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libhidlbase",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsensorndkbridge.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libhidlbase",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -14724,7 +14431,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libxml2",
                 "libjsoncpp",
-                "libsensorndkbridge",
                 "libion",
                 "libpowerhal_cli",
                 "libutils",
@@ -14750,7 +14456,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libxml2",
                 "libjsoncpp",
-                "libsensorndkbridge",
                 "libion",
                 "libpowerhal_cli",
                 "libutils",
@@ -18352,51 +18057,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwifi-hal",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwifi-hal.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libnl",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwifi-hal.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libnl",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libwifi-hal-unisoc",
     owner: "xiaomi",
     strip: {
@@ -18766,46 +18426,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "local_time.default",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/local_time.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/local_time.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "nativemmifinger",
     owner: "xiaomi",
     strip: {
@@ -18883,44 +18503,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "power.default",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/power.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/power.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    relative_install_path: "hw",
     soc_specific: true,
 }
 
@@ -19098,48 +18680,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "thermal.default",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/thermal.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/thermal.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    relative_install_path: "hw",
     soc_specific: true,
 }
 
@@ -21097,44 +20637,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vibrator.default",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vibrator.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vibrator.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "android.hardware.audio.service",
     owner: "xiaomi",
@@ -21668,7 +21170,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libnl",
                 "libutils",
-                "libwifi-hal",
                 "libwifi-system-iface",
                 "libxml2",
                 "libc++",
@@ -23042,35 +22543,6 @@ cc_prebuilt_binary {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "test-nusensors",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/test-nusensors",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhardware",
-                "libutils",
-                "libcutils",
-                "libhidlbase",
                 "libc++",
                 "libc",
                 "libm",
