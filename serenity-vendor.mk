@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/serenity
 
 PRODUCT_COPY_FILES += \
+
     vendor/xiaomi/serenity/proprietary/odm/bin/fm_tools:$(TARGET_COPY_OUT_ODM)/bin/fm_tools \
     vendor/xiaomi/serenity/proprietary/odm/etc/ScanStruct/SPRD_TAG_AE_RESULT_INFO.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_AE_RESULT_INFO.txt \
     vendor/xiaomi/serenity/proprietary/odm/etc/ScanStruct/SPRD_TAG_AWB_CALC_INFO.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_AWB_CALC_INFO.txt \
@@ -568,6 +569,300 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/odm/firmware/sipa.bin:$(TARGET_COPY_OUT_ODM)/firmware/sipa.bin \
     vendor/xiaomi/serenity/proprietary/odm/firmware/wcnmodem.bin:$(TARGET_COPY_OUT_ODM)/firmware/wcnmodem.bin \
     vendor/xiaomi/serenity/proprietary/odm/firmware/wifi_board_config.ini:$(TARGET_COPY_OUT_ODM)/firmware/wifi_board_config.ini \
+    vendor/xiaomi/serenity/proprietary/odm/lib/hw/sensors.unisoc.so:$(TARGET_COPY_OUT_ODM)/lib/hw/sensors.unisoc.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libMiVideoFilter.so:$(TARGET_COPY_OUT_ODM)/lib/libMiVideoFilter.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libSprduniscedec.so:$(TARGET_COPY_OUT_ODM)/lib/libSprduniscedec.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libTrueSight.so:$(TARGET_COPY_OUT_ODM)/lib/libTrueSight.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libanc_night.so:$(TARGET_COPY_OUT_ODM)/lib/libanc_night.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libanc_night_new.so:$(TARGET_COPY_OUT_ODM)/lib/libanc_night_new.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libanc_single_bokeh.so:$(TARGET_COPY_OUT_ODM)/lib/libanc_single_bokeh.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libanc_single_bokeh_rear.so:$(TARGET_COPY_OUT_ODM)/lib/libanc_single_bokeh_rear.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libanc_single_rt_bokeh.so:$(TARGET_COPY_OUT_ODM)/lib/libanc_single_rt_bokeh.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_ODM)/lib/libarcsoft_beautyshot.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libbt-vendor.so:$(TARGET_COPY_OUT_ODM)/lib/libbt-vendor.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib/libc++_shared.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libcam_otp_parser.so:$(TARGET_COPY_OUT_ODM)/lib/libcam_otp_parser.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libcampss_ext.so:$(TARGET_COPY_OUT_ODM)/lib/libcampss_ext.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libcamsensor.so:$(TARGET_COPY_OUT_ODM)/lib/libcamsensor.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/liblwp3rdnodes.so:$(TARGET_COPY_OUT_ODM)/lib/liblwp3rdnodes.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libmialgo_sd.so:$(TARGET_COPY_OUT_ODM)/lib/libmialgo_sd.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libmorpho_HdrChecker.so:$(TARGET_COPY_OUT_ODM)/lib/libmorpho_HdrChecker.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libmorpho_ImageRefiner.so:$(TARGET_COPY_OUT_ODM)/lib/libmorpho_ImageRefiner.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libmorpho_internal_image_refiner_new.so:$(TARGET_COPY_OUT_ODM)/lib/libmorpho_internal_image_refiner_new.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libmorpho_internal_image_refiner_old.so:$(TARGET_COPY_OUT_ODM)/lib/libmorpho_internal_image_refiner_old.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libmpbase.so:$(TARGET_COPY_OUT_ODM)/lib/libmpbase.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_c3z_front_cxt_gc08a8.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_c3z_front_cxt_gc08a8.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_c3z_front_dd_sc820cs.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_c3z_front_dd_sc820cs.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_c3z_front_jk_sc820cs.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_c3z_front_jk_sc820cs.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_c3z_front_syx_ov08f10.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_c3z_front_syx_ov08f10.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_gc5035_common.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_gc5035_common.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_general.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_general.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_general_xml.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_general_xml.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_ov13855.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_ov13855.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_s5k3l6_common.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_s5k3l6_common.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_s5k4h7_tsp.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_s5k4h7_tsp.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_s5k5e8yx_jd.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_s5k5e8yx_jd.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_s5kjn1.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_s5kjn1.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libotp_xiaomi_parse.so:$(TARGET_COPY_OUT_ODM)/lib/libotp_xiaomi_parse.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsample.so:$(TARGET_COPY_OUT_ODM)/lib/libsample.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3z01_ov08f10_frontsyx.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3z01_ov08f10_frontsyx.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3z01_ov32d40_backxl.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3z01_ov32d40_backxl.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3z01_ovsp0821_depthcxt.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3z01_ovsp0821_depthcxt.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3z02_bydbf30a2_depthjk.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3z02_bydbf30a2_depthjk.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3z02_ov32d40_backxl.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3z02_ov32d40_backxl.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3z02_sc820cs_frontjk.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3z02_sc820cs_frontjk.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3z03_gc08a8_frontcxt.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3z03_gc08a8_frontcxt.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3z03_ov32d40_backst.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3z03_ov32d40_backst.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3z03_sc080cs_depthcxt.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3z03_sc080cs_depthcxt.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3z04_gc32e2a_backjk.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3z04_gc32e2a_backjk.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3z04_sc820cs_frontdd.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3z04_sc820cs_frontdd.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3zr01_sc1320cs_backtxd.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3zr01_sc1320cs_backtxd.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_c3zr02_sc1320cs_backlce.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_c3zr02_sc1320cs_backlce.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_gc02m1b_js_1.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_gc02m1b_js_1.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_gc08a3_x6511.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_gc08a3_x6511.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_gc2145.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_gc2145.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_gc2375.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_gc2375.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_gc2375_js_2.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_gc2375_js_2.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_gc2375_wj_2.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_gc2375_wj_2.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_gc2375h.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_gc2375h.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_gc2385_wj_1.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_gc2385_wj_1.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_gc5035.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_gc5035.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_gc5035_x6511.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_gc5035_x6511.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_gc6153.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_gc6153.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_gc8034_gj_2.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_gc8034_gj_2.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_hi1336_m0.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_hi1336_m0.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_hi1336_s0.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_hi1336_s0.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_hi846.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_hi846.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_hi846_gj_1.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_hi846_gj_1.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_hi846_wide.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_hi846_wide.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_imx258.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_imx258.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_imx351.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_imx351.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_imx362.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_imx362.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_imx363.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_imx363.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_imx582.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_imx582.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_imx586.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_imx586.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_imx586_2lane.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_imx586_2lane.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_imx616.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_imx616.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_imx616_2lane.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_imx616_2lane.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ipg.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ipg.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov02a10.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov02a10.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov02b10.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov02b10.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov02b1b.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov02b1b.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov08a10.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov08a10.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov08a10_back.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov08a10_back.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov08a10_back_sunny.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov08a10_back_sunny.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov08a10_hisense.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov08a10_hisense.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov12a10.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov12a10.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov13853_m1.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov13853_m1.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov13853_s1.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov13853_s1.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov13855.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov13855.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov13b10.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov13b10.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov16885_normal.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov16885_normal.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov2680.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov2680.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov32a1q.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov32a1q.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov5675.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov5675.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov5675_dual.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov5675_dual.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov64b40.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov64b40.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov7251.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov7251.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov7251_dual.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov7251_dual.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov8856_back.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov8856_back.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov8856_back_ts.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov8856_back_ts.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov8856_front.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov8856_front.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov8856_front_ts.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov8856_front_ts.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov8856_shine.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov8856_shine.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov8856_shine_front.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov8856_shine_front.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov8856_transsion.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov8856_transsion.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov8856_xl_front.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov8856_xl_front.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_ov8858.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_ov8858.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5k3l6.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5k3l6.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5k3l6_cy.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5k3l6_cy.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5k3l6xx03.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5k3l6xx03.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5k3l8xxm3.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5k3l8xxm3.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5k3p9sx04.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5k3p9sx04.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5k3p9sx04_ts.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5k3p9sx04_ts.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5k4h7.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5k4h7.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5k4h8yx.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5k4h8yx.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5k4h9yx.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5k4h9yx.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5k5e8yx.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5k5e8yx.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5k5e9yu05.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5k5e9yu05.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5kgw1sp03.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5kgw1sp03.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5khm2sp03.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5khm2sp03.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5khm6sx.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5khm6sx.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_s5khm6sx_tr.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_s5khm6sx_tr.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensor_virtual_sensor.so:$(TARGET_COPY_OUT_ODM)/lib/libsensor_virtual_sensor.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libsensorlistcfg.so:$(TARGET_COPY_OUT_ODM)/lib/libsensorlistcfg.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libtuneconnector.so:$(TARGET_COPY_OUT_ODM)/lib/libtuneconnector.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_c3z01_ov32d40_backxl_gt9772.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_c3z01_ov32d40_backxl_gt9772.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_c3z02_ov32d40_backxl_gt9779.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_c3z02_ov32d40_backxl_gt9779.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_c3z03_ov32d40_backst_cn3927v.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_c3z03_ov32d40_backst_cn3927v.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_c3z04_gc32e2a_backjk_pd9215b.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_c3z04_gc32e2a_backjk_pd9215b.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_c3zr01_sc1320cs_backtxd_pd9215b.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_c3zr01_sc1320cs_backtxd_pd9215b.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_cn398a.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_cn398a.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_dw9714.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_dw9714.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_dw9714p.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_dw9714p.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_dw9714v.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_dw9714v.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_dw9718s.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_dw9718s.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_dw9768v.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_dw9768v.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_dw9781b.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_dw9781b.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_dw9800.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_dw9800.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_dw9825a.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_dw9825a.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_fp5510ee4.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_fp5510ee4.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_gt9764.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_gt9764.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_gt9772.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_gt9772.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_lc898213.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_lc898213.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_lc898219.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_lc898219.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_lc898229.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_lc898229.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/libvcm_zc524.so:$(TARGET_COPY_OUT_ODM)/lib/libvcm_zc524.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/npidevice/autotestfm.so:$(TARGET_COPY_OUT_ODM)/lib/npidevice/autotestfm.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/npidevice/libfm-sprd_eut.so:$(TARGET_COPY_OUT_ODM)/lib/npidevice/libfm-sprd_eut.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib/npidevice/libunisoccamcalitest.so:$(TARGET_COPY_OUT_ODM)/lib/npidevice/libunisoccamcalitest.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/hw/sensors.unisoc.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/sensors.unisoc.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libMiVideoFilter.so:$(TARGET_COPY_OUT_ODM)/lib64/libMiVideoFilter.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libSprduniscedec.so:$(TARGET_COPY_OUT_ODM)/lib64/libSprduniscedec.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libTrueSight.so:$(TARGET_COPY_OUT_ODM)/lib64/libTrueSight.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libanc_night.so:$(TARGET_COPY_OUT_ODM)/lib64/libanc_night.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libanc_night_new.so:$(TARGET_COPY_OUT_ODM)/lib64/libanc_night_new.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libanc_single_bokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libanc_single_bokeh.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libanc_single_bokeh_rear.so:$(TARGET_COPY_OUT_ODM)/lib64/libanc_single_bokeh_rear.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libanc_single_rt_bokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libanc_single_rt_bokeh.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_beautyshot.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_ODM)/lib64/libbt-vendor.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib64/libc++_shared.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libcam_otp_parser.so:$(TARGET_COPY_OUT_ODM)/lib64/libcam_otp_parser.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libcampss_ext.so:$(TARGET_COPY_OUT_ODM)/lib64/libcampss_ext.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libcamsensor.so:$(TARGET_COPY_OUT_ODM)/lib64/libcamsensor.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/liblwp3rdnodes.so:$(TARGET_COPY_OUT_ODM)/lib64/liblwp3rdnodes.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libmialgo_sd.so:$(TARGET_COPY_OUT_ODM)/lib64/libmialgo_sd.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libmorpho_HdrChecker.so:$(TARGET_COPY_OUT_ODM)/lib64/libmorpho_HdrChecker.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libmorpho_ImageRefiner.so:$(TARGET_COPY_OUT_ODM)/lib64/libmorpho_ImageRefiner.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libmorpho_internal_image_refiner_new.so:$(TARGET_COPY_OUT_ODM)/lib64/libmorpho_internal_image_refiner_new.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libmorpho_internal_image_refiner_old.so:$(TARGET_COPY_OUT_ODM)/lib64/libmorpho_internal_image_refiner_old.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libmpbase.so:$(TARGET_COPY_OUT_ODM)/lib64/libmpbase.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_c3z_front_cxt_gc08a8.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_c3z_front_cxt_gc08a8.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_c3z_front_dd_sc820cs.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_c3z_front_dd_sc820cs.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_c3z_front_jk_sc820cs.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_c3z_front_jk_sc820cs.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_c3z_front_syx_ov08f10.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_c3z_front_syx_ov08f10.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_gc5035_common.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_gc5035_common.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_general.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_general.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_general_xml.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_general_xml.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_ov13855.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_ov13855.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_s5k3l6_common.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_s5k3l6_common.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_s5k4h7_tsp.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_s5k4h7_tsp.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_s5k5e8yx_jd.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_s5k5e8yx_jd.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_s5kjn1.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_s5kjn1.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libotp_xiaomi_parse.so:$(TARGET_COPY_OUT_ODM)/lib64/libotp_xiaomi_parse.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsample.so:$(TARGET_COPY_OUT_ODM)/lib64/libsample.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3z01_ov08f10_frontsyx.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3z01_ov08f10_frontsyx.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3z01_ov32d40_backxl.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3z01_ov32d40_backxl.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3z01_ovsp0821_depthcxt.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3z01_ovsp0821_depthcxt.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3z02_bydbf30a2_depthjk.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3z02_bydbf30a2_depthjk.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3z02_ov32d40_backxl.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3z02_ov32d40_backxl.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3z02_sc820cs_frontjk.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3z02_sc820cs_frontjk.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3z03_gc08a8_frontcxt.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3z03_gc08a8_frontcxt.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3z03_ov32d40_backst.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3z03_ov32d40_backst.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3z03_sc080cs_depthcxt.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3z03_sc080cs_depthcxt.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3z04_gc32e2a_backjk.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3z04_gc32e2a_backjk.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3z04_sc820cs_frontdd.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3z04_sc820cs_frontdd.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3zr01_sc1320cs_backtxd.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3zr01_sc1320cs_backtxd.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_c3zr02_sc1320cs_backlce.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_c3zr02_sc1320cs_backlce.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_gc02m1b_js_1.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_gc02m1b_js_1.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_gc08a3_x6511.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_gc08a3_x6511.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_gc2145.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_gc2145.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_gc2375.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_gc2375.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_gc2375_js_2.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_gc2375_js_2.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_gc2375_wj_2.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_gc2375_wj_2.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_gc2375h.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_gc2375h.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_gc2385_wj_1.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_gc2385_wj_1.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_gc5035.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_gc5035.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_gc5035_x6511.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_gc5035_x6511.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_gc6153.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_gc6153.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_gc8034_gj_2.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_gc8034_gj_2.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_hi1336_m0.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_hi1336_m0.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_hi1336_s0.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_hi1336_s0.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_hi846.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_hi846.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_hi846_gj_1.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_hi846_gj_1.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_hi846_wide.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_hi846_wide.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_imx258.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_imx258.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_imx351.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_imx351.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_imx362.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_imx362.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_imx363.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_imx363.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_imx582.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_imx582.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_imx586.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_imx586.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_imx586_2lane.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_imx586_2lane.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_imx616.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_imx616.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_imx616_2lane.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_imx616_2lane.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ipg.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ipg.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov02a10.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov02a10.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov02b10.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov02b10.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov02b1b.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov02b1b.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov08a10.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov08a10.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov08a10_back.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov08a10_back.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov08a10_back_sunny.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov08a10_back_sunny.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov08a10_hisense.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov08a10_hisense.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov12a10.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov12a10.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov13853_m1.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov13853_m1.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov13853_s1.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov13853_s1.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov13855.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov13855.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov13b10.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov13b10.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov16885_normal.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov16885_normal.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov2680.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov2680.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov32a1q.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov32a1q.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov5675.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov5675.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov5675_dual.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov5675_dual.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov64b40.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov64b40.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov7251.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov7251.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov7251_dual.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov7251_dual.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov8856_back.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov8856_back.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov8856_back_ts.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov8856_back_ts.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov8856_front.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov8856_front.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov8856_front_ts.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov8856_front_ts.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov8856_shine.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov8856_shine.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov8856_shine_front.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov8856_shine_front.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov8856_transsion.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov8856_transsion.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov8856_xl_front.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov8856_xl_front.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_ov8858.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_ov8858.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5k3l6.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5k3l6.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5k3l6_cy.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5k3l6_cy.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5k3l6xx03.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5k3l6xx03.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5k3l8xxm3.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5k3l8xxm3.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5k3p9sx04.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5k3p9sx04.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5k3p9sx04_ts.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5k3p9sx04_ts.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5k4h7.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5k4h7.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5k4h8yx.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5k4h8yx.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5k4h9yx.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5k4h9yx.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5k5e8yx.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5k5e8yx.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5k5e9yu05.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5k5e9yu05.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5kgw1sp03.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5kgw1sp03.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5khm2sp03.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5khm2sp03.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5khm6sx.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5khm6sx.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_s5khm6sx_tr.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_s5khm6sx_tr.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensor_virtual_sensor.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensor_virtual_sensor.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libsensorlistcfg.so:$(TARGET_COPY_OUT_ODM)/lib64/libsensorlistcfg.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libtuneconnector.so:$(TARGET_COPY_OUT_ODM)/lib64/libtuneconnector.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_c3z01_ov32d40_backxl_gt9772.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_c3z01_ov32d40_backxl_gt9772.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_c3z02_ov32d40_backxl_gt9779.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_c3z02_ov32d40_backxl_gt9779.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_c3z03_ov32d40_backst_cn3927v.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_c3z03_ov32d40_backst_cn3927v.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_c3z04_gc32e2a_backjk_pd9215b.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_c3z04_gc32e2a_backjk_pd9215b.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_c3zr01_sc1320cs_backtxd_pd9215b.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_c3zr01_sc1320cs_backtxd_pd9215b.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_cn398a.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_cn398a.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_dw9714.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_dw9714.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_dw9714p.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_dw9714p.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_dw9714v.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_dw9714v.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_dw9718s.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_dw9718s.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_dw9768v.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_dw9768v.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_dw9781b.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_dw9781b.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_dw9800.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_dw9800.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_dw9825a.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_dw9825a.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_fp5510ee4.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_fp5510ee4.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_gt9764.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_gt9764.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_gt9772.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_gt9772.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_lc898213.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_lc898213.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_lc898219.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_lc898219.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_lc898229.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_lc898229.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/libvcm_zc524.so:$(TARGET_COPY_OUT_ODM)/lib64/libvcm_zc524.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/npidevice/autotestfm.so:$(TARGET_COPY_OUT_ODM)/lib64/npidevice/autotestfm.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/npidevice/libfm-sprd_eut.so:$(TARGET_COPY_OUT_ODM)/lib64/npidevice/libfm-sprd_eut.so \
+    vendor/xiaomi/serenity/proprietary/odm/lib64/npidevice/libunisoccamcalitest.so:$(TARGET_COPY_OUT_ODM)/lib64/npidevice/libunisoccamcalitest.so \
     vendor/xiaomi/serenity/proprietary/odm/overlay/unisoc_overlay_core_max_cached_processed_16.apk:$(TARGET_COPY_OUT_ODM)/overlay/unisoc_overlay_core_max_cached_processed_16.apk \
     vendor/xiaomi/serenity/proprietary/odm/overlay/unisoc_overlay_core_pinner_service_qogirl6.apk:$(TARGET_COPY_OUT_ODM)/overlay/unisoc_overlay_core_pinner_service_qogirl6.apk \
     vendor/xiaomi/serenity/proprietary/product/bin/UnisocDataCollection:$(TARGET_COPY_OUT_PRODUCT)/bin/UnisocDataCollection \
@@ -693,6 +988,37 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/product/etc/ylog.conf.factorytest:$(TARGET_COPY_OUT_PRODUCT)/etc/ylog.conf.factorytest \
     vendor/xiaomi/serenity/proprietary/product/etc/ylog.conf.user:$(TARGET_COPY_OUT_PRODUCT)/etc/ylog.conf.user \
     vendor/xiaomi/serenity/proprietary/product/etc/ylogsource.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/ylogsource.conf \
+    vendor/xiaomi/serenity/proprietary/product/lib/libbase.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libbase.so \
+    vendor/xiaomi/serenity/proprietary/product/lib/libc++.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libc++.so \
+    vendor/xiaomi/serenity/proprietary/product/lib/libcutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libcutils.so \
+    vendor/xiaomi/serenity/proprietary/product/lib/libnetutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libnetutils.so \
+    vendor/xiaomi/serenity/proprietary/product/lib/libsrmi.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsrmi.so \
+    vendor/xiaomi/serenity/proprietary/product/lib/libsrmiservice.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsrmiservice.so \
+    vendor/xiaomi/serenity/proprietary/product/lib/libunievent.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libunievent.so \
+    vendor/xiaomi/serenity/proprietary/product/lib/libutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libutils.so \
+    vendor/xiaomi/serenity/proprietary/product/lib/libylog.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libylog.so \
+    vendor/xiaomi/serenity/proprietary/product/lib/vendor.unisoc.frameworks.srmi-V1-ndk.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.unisoc.frameworks.srmi-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libbase.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libbase.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libc++.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libc++.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libclang_rt.ubsan_standalone-aarch64-android.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libclang_rt.ubsan_standalone-aarch64-android.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libcrypto.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libcrypto.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libcutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libcutils.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libhidlbase.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libhidlbase.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libimsbrd.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsbrd.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libnetlink.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libnetlink.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libnetutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libnetutils.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libnl.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libnl.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libsrmi.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsrmi.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libsrmiservice.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsrmiservice.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libsysutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsysutils.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libunievent.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libunievent.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libutils.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libutils.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libxml2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libxml2.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libylog.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libylog.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/libz.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libz.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/vendor.sprd.hardware.log@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.sprd.hardware.log@1.0.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/vendor.sprd.hardware.tool-V1-ndk.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.sprd.hardware.tool-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/product/lib64/vendor.unisoc.frameworks.srmi-V1-ndk.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.unisoc.frameworks.srmi-V1-ndk.so \
     vendor/xiaomi/serenity/proprietary/product/overlay/CameraLauncherIconOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/CameraLauncherIconOverlay.apk \
     vendor/xiaomi/serenity/proprietary/product/overlay/CaptivePortalLoginFrameworkOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/CaptivePortalLoginFrameworkOverlay.apk \
     vendor/xiaomi/serenity/proprietary/product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk \
@@ -891,6 +1217,180 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/system_ext/framework/vendor.xiaomi.hardware.misys-V4.0-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.xiaomi.hardware.misys-V4.0-java.jar \
     vendor/xiaomi/serenity/proprietary/system_ext/framework/vendor.xiaomi.hardware.misys.V3_0.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.xiaomi.hardware.misys.V3_0.jar \
     vendor/xiaomi/serenity/proprietary/system_ext/framework/vendor.xiaomi.hardware.misys.common-V2-java.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/vendor.xiaomi.hardware.misys.common-V2-java.jar \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/datachannel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/datachannel.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libAVRTTManager.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libAVRTTManager.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libUnisocDumpstate.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libUnisocDumpstate.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libaiengine.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libaiengine.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libaudiofwdump.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libaudiofwdump.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libavatar_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libavatar_lite.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libboot_control_client_unisoc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libboot_control_client_unisoc.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libdata_channel_manager_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdata_channel_manager_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libgamingdriver.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libgamingdriver.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libgamingdriver_hook.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libgamingdriver_hook.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libgui_unisoc_utils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libgui_unisoc_utils.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libhdrtosdrtransform.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libhdrtosdrtransform.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libhdrtosdrtransform_hook.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libhdrtosdrtransform_hook.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libimsbrd.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libimsbrd.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libmedia_hdcp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmedia_hdcp.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libmediahdrexternalshader_hook.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmediahdrexternalshader_hook.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libmediahdrtosdrtransform.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmediahdrtosdrtransform.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libmediahdrtosdrtransform_hook.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmediahdrtosdrtransform_hook.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libmediaplayer_hdcp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmediaplayer_hdcp.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libmemleak_debug.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmemleak_debug.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libmisys_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmisys_jni.xiaomi.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libmme_jrtc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmme_jrtc.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libn3am_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libn3am_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libperfturbo_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libperfturbo_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libpowerhal_cli.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libpowerhal_cli.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libremotedisplay.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libremotedisplay.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libremotedisplayservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libremotedisplayservice.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libsprdpcmdump.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsprdpcmdump.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libsprdssense.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsprdssense.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libstagefright_surface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libstagefright_surface.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libstagefright_wfd.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libstagefright_wfd.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libtonemap_hook.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libtonemap_hook.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libtrustyHalHelper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libtrustyHalHelper.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libualarm_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libualarm_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunievent.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunievent.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunievent_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunievent_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunilog.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunilog.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunilog_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunilog_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunionevent.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunionevent.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunipnp_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunipnp_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunisoc_gnss_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunisoc_gnss_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunisocaudiopolicymanager.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunisocaudiopolicymanager.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunisocaudioutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunisocaudioutils.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunisocaudioutilsservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunisocaudioutilsservice.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunisocbalancer.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunisocbalancer.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunisocblankdetect.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunisocblankdetect.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunisocbootanimation.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunisocbootanimation.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunisoccameraservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunisoccameraservice.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunisocmtp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunisocmtp.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunisocsurfaceflinger_utils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunisocsurfaceflinger_utils.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunisocsurfaceflingeradpf.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunisocsurfaceflingeradpf.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libunisocvold.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libunisocvold.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libvdspservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvdspservice.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libvendorhook.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvendorhook.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libvideo_call_engine_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvideo_call_engine_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libvideo_share_memory.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libvideo_share_memory.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/libyuv_jpeg_converter_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libyuv_jpeg_converter_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.boot-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.boot-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.cplog_svc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.cplog_svc@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.gnss-V1-cpp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.gnss-V1-cpp.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.gnss@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.gnss@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.gnss@2.1.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.hdcp-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.hdcp-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.hdcp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.hdcp@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.log@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.log@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.network@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.network@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.thermal-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.thermal-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.thermal@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.thermal@2.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.tool-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.tool-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.trusty-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.trusty-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.sprd.hardware.trusty@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.sprd.hardware.trusty@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.unisoc.hardware.ai_engine-V2-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.unisoc.hardware.ai_engine-V2-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.unisoc.hardware.power-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.unisoc.hardware.power-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.unisoc.hardware.radio-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.unisoc.hardware.radio-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.unisoc.hardware.radio.lite-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.unisoc.hardware.radio.lite-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.unisoc.hardware.radio.modem-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.unisoc.hardware.radio.modem-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.xiaomi.hardware.misys@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.xiaomi.hardware.misys@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib/vendor.xiaomi.hardware.misys@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.xiaomi.hardware.misys@3.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/cplog_common.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/cplog_common.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/datachannel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/datachannel.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/extractors/libaviextractor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/extractors/libaviextractor.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/extractors/libflvextractor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/extractors/libflvextractor.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/extractors/libunisocmpeg2extractor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/extractors/libunisocmpeg2extractor.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/extractors/libunisocwavextractor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/extractors/libunisocwavextractor.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libAVRTTManager.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libAVRTTManager.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libUnisocDumpstate.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libUnisocDumpstate.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libaiengine.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaiengine.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libaudiofwdump.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libaudiofwdump.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libavatar_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libavatar_lite.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libboot_control_client_unisoc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libboot_control_client_unisoc.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libcplog.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcplog.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libdata_channel_manager_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdata_channel_manager_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libgamingdriver.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libgamingdriver.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libgamingdriver_hook.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libgamingdriver_hook.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libgui_unisoc_utils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libgui_unisoc_utils.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libhdrtosdrtransform.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libhdrtosdrtransform.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libhdrtosdrtransform_hook.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libhdrtosdrtransform_hook.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libimsbrd.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsbrd.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libmedia_hdcp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmedia_hdcp.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libmediahdrexternalshader_hook.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmediahdrexternalshader_hook.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libmediahdrtosdrtransform.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmediahdrtosdrtransform.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libmediahdrtosdrtransform_hook.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmediahdrtosdrtransform_hook.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libmediaplayer_hdcp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmediaplayer_hdcp.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libmemleak_debug.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmemleak_debug.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libmisys_jni.xiaomi.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmisys_jni.xiaomi.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libmme_jrtc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmme_jrtc.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libn3am_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libn3am_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libperfturbo_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libperfturbo_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libpowerhal_cli.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libpowerhal_cli.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libproduction_client_unisoc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libproduction_client_unisoc.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libremotedisplay.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libremotedisplay.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libremotedisplayservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libremotedisplayservice.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libsprdpcmdump.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsprdpcmdump.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libsprdssense.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsprdssense.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libstagefright_surface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libstagefright_surface.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libstagefright_wfd.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libstagefright_wfd.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libtonemap_hook.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libtonemap_hook.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libtrustyHalHelper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libtrustyHalHelper.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libualarm_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libualarm_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunievent.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunievent.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunievent_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunievent_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunilog.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunilog.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunilog_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunilog_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunionevent.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunionevent.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunipnp_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunipnp_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunisoc_gnss_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunisoc_gnss_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunisocaudiopolicymanager.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunisocaudiopolicymanager.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunisocaudioutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunisocaudioutils.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunisocaudioutilsservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunisocaudioutilsservice.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunisocbalancer.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunisocbalancer.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunisocblankdetect.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunisocblankdetect.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunisocbootanimation.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunisocbootanimation.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunisoccameraservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunisoccameraservice.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunisocmtp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunisocmtp.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunisocsurfaceflinger_utils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunisocsurfaceflinger_utils.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunisocsurfaceflingeradpf.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunisocsurfaceflingeradpf.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libunisocvold.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libunisocvold.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libvdspservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvdspservice.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libvendorhook.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvendorhook.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libvideo_call_engine_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvideo_call_engine_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libvideo_share_memory.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libvideo_share_memory.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/libyuv_jpeg_converter_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libyuv_jpeg_converter_jni.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/miui.mqsas.native-cpp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/miui.mqsas.native-cpp.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/unisoc.hardware.audio.core-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/unisoc.hardware.audio.core-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.boot-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.boot-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.boot@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.boot@1.2.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.cplog_svc-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.cplog_svc-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.cplog_svc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.cplog_svc@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.gnss-V1-cpp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.gnss-V1-cpp.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.gnss@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.gnss@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.gnss@2.1.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.hdcp-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.hdcp-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.hdcp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.hdcp@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.log@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.log@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.network-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.network-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.network@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.network@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.production-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.production-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.thermal-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.thermal-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.thermal@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.thermal@2.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.tool-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.tool-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.trusty-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.trusty-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.sprd.hardware.trusty@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.sprd.hardware.trusty@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.unisoc.hardware.ai_engine-V2-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.unisoc.hardware.ai_engine-V2-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.unisoc.hardware.power-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.unisoc.hardware.power-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.unisoc.hardware.radio-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.unisoc.hardware.radio-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.unisoc.hardware.radio.lite-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.unisoc.hardware.radio.lite-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.unisoc.hardware.radio.modem-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.unisoc.hardware.radio.modem-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.xiaomi.hardware.misys.common-V3-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.misys.common-V3-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.xiaomi.hardware.misys.core-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.misys.core-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.xiaomi.hardware.misys@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.misys@1.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.xiaomi.hardware.misys@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.misys@3.0.so \
+    vendor/xiaomi/serenity/proprietary/system_ext/lib64/xiaomi.system.hypsys.common-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/xiaomi.system.hypsys.common-V1-ndk.so \
     vendor/xiaomi/serenity/proprietary/vendor/bin/create_splloader_dual_slot_byname_path.sh:$(TARGET_COPY_OUT_VENDOR)/bin/create_splloader_dual_slot_byname_path.sh \
     vendor/xiaomi/serenity/proprietary/vendor/bin/idlefast.sh:$(TARGET_COPY_OUT_VENDOR)/bin/idlefast.sh \
     vendor/xiaomi/serenity/proprietary/vendor/bin/init.insmod.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.insmod.sh \
@@ -19752,7 +20252,6 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audioclient-types-aidl-cpp \
     autotestfinger \
-    autotestfm \
     autotestsim \
     autotesttcard \
     autotestwifi \
@@ -19769,7 +20268,6 @@ PRODUCT_PACKAGES += \
     camera.device@3.6-external-impl-sprd \
     camera.unisoc \
     cplog_common \
-    datachannel \
     dpu.unisoc \
     enhance.unisoc \
     fingerprint.goodix.default \
@@ -19780,7 +20278,6 @@ PRODUCT_PACKAGES += \
     gsp.unisoc \
     hwcomposer.unisoc \
     lib3axmltobin \
-    libAVRTTManager \
     libAlgoServiceAdapter \
     libBokeh2Frames \
     libDefog \
@@ -19791,7 +20288,6 @@ PRODUCT_PACKAGES += \
     libGLES_mali \
     libMNN \
     libMNN_CL \
-    libMiVideoFilter \
     libRawOrb \
     libSegLite \
     libSensorsMMI \
@@ -19801,11 +20297,8 @@ PRODUCT_PACKAGES += \
     libSprdImageFilterAdapter \
     libSprdMfnrAdapter \
     libSprdVideoHDR \
-    libSprduniscedec \
     libTPrawdata \
     libTfliteWrapper \
-    libTrueSight \
-    libUnisocDumpstate \
     libWT \
     libWhite_point_shift \
     libXMPCore \
@@ -19815,29 +20308,18 @@ PRODUCT_PACKAGES += \
     lib_crypto \
     lib_hdr_tm \
     lib_hsv_rgb_conv \
-    libaiengine \
     libalsautils \
-    libanc_night \
-    libanc_night_new \
-    libanc_single_bokeh \
-    libanc_single_bokeh_rear \
-    libanc_single_rt_bokeh \
     libap_opt \
     libapcomm \
     libapdeepsleep \
-    libarcsoft_beautyshot \
     libatci \
     libaudioclient_aidl_conversion \
     libaudiofoundation \
-    libaudiofwdump \
     libaudionpi \
     libaudiopreprocessing \
-    libavatar_lite \
     libavcodec-59 \
-    libaviextractor \
     libavservices_minijail \
     libavutil-57 \
-    libbase \
     libbinderdebug \
     libbluetooth_audio_session \
     libbluetooth_audio_session_aidl \
@@ -19846,16 +20328,12 @@ PRODUCT_PACKAGES += \
     libbokeh_gaussian_adapter \
     libbokeh_gaussian_cap \
     libboost \
-    libboot_control_client_unisoc \
     libbqbbt \
     libbt-sprd_eut \
     libbt-sprd_suite \
     libbt-ssp_bt \
-    libbt-vendor \
     libbundlewrapper \
     libbundlewrapper2 \
-    libc++ \
-    libc++_shared \
     libcalcsharpness \
     libcalinv \
     libcamAE5.x \
@@ -19879,7 +20357,6 @@ PRODUCT_PACKAGES += \
     libcamSFBSP \
     libcamSRSP \
     libcamVMRPP \
-    libcam_otp_parser \
     libcamafl4.0 \
     libcambr_isp2.7 \
     libcamcalitestcore \
@@ -19897,14 +20374,11 @@ PRODUCT_PACKAGES += \
     libcampmloader \
     libcamppm \
     libcamps \
-    libcampss_ext \
-    libcamsensor \
     libceres_online \
     libcharge \
     libcheckkeybox \
     libcheckpid \
     libchipid \
-    libclang_rt.ubsan_standalone-aarch64-android \
     libclearkeycasplugin \
     libcodec2_hidl@1.0 \
     libcodec2_hidl@1.1 \
@@ -19936,9 +20410,6 @@ PRODUCT_PACKAGES += \
     libcppbor_external \
     libcppcose_rkp \
     libcppdrv_r6p0 \
-    libcrypto \
-    libcutils \
-    libdata_channel_manager_jni \
     libdav1d \
     libdcxcali \
     libdfa \
@@ -19961,12 +20432,8 @@ PRODUCT_PACKAGES += \
     libfaceskinseg \
     libfactoryem_sensor_jni \
     libfactoryhfmanager \
-    libflvextractor \
-    libfm-sprd_eut \
     libfrc \
     libftmode \
-    libgamingdriver \
-    libgamingdriver_hook \
     libgesture_mnn \
     libgetcalispd \
     libgetswpac \
@@ -19978,13 +20445,9 @@ PRODUCT_PACKAGES += \
     libgpio \
     libgpspc \
     libgpudataproducer \
-    libgui_unisoc_utils \
     libgyrostab \
     libhapticgenerator \
     libhdr \
-    libhdrtosdrtransform \
-    libhdrtosdrtransform_hook \
-    libhidlbase \
     libhidltransport \
     libhidparser_sensor \
     libhqcmd \
@@ -19996,7 +20459,6 @@ PRODUCT_PACKAGES += \
     libifaatrusty \
     libimageClassify \
     libimpl-ril \
-    libimsbrd \
     libinfo \
     libinterface \
     libispalg \
@@ -20026,7 +20488,6 @@ PRODUCT_PACKAGES += \
     liblogwrap_vendor \
     liblowi_wifihal \
     liblte \
-    liblwp3rdnodes \
     liblwpAdapter \
     liblwpSimulationAdapter \
     liblwpcommon \
@@ -20037,39 +20498,22 @@ PRODUCT_PACKAGES += \
     liblwpswnodes.dummy \
     liblwptrigger \
     libmapuser \
-    libmedia_hdcp \
-    libmediahdrexternalshader_hook \
     libmediahdrtosdrtransform \
-    libmediahdrtosdrtransform_hook \
-    libmediaplayer_hdcp \
     libmediautils_vendor \
     libmemion \
-    libmemleak_debug \
     libmemunreachable \
     libmfnr \
     libmfnr4 \
     libmfnr5 \
     libmfnr6 \
     libmfnr_SD \
-    libmialgo_sd \
     libmiface \
     libmiscdata \
-    libmisys_jni.xiaomi \
-    libmme_jrtc \
-    libmorpho_HdrChecker \
-    libmorpho_ImageRefiner \
-    libmorpho_internal_image_refiner_new \
-    libmorpho_internal_image_refiner_old \
     libmotiondetect \
-    libmpbase \
     libmt_trusty@1.3 \
     libmulticam \
-    libn3am_jni \
     libnbaio_mono \
     libnefuse \
-    libnetlink \
-    libnetutils \
-    libnl \
     libnpi_rtc \
     libomx_MF2SF_sw_sprd \
     libomx_av1dec_sw_sprd \
@@ -20092,34 +20536,17 @@ PRODUCT_PACKAGES += \
     libomx_vpxdec_hw_sprd \
     libomx_vpxdec_sw_sprd \
     libomx_vpxenc_hw_sprd \
-    libotp_c3z_front_cxt_gc08a8 \
-    libotp_c3z_front_dd_sc820cs \
-    libotp_c3z_front_jk_sc820cs \
-    libotp_c3z_front_syx_ov08f10 \
-    libotp_gc5035_common \
-    libotp_general \
-    libotp_general_xml \
-    libotp_ov13855 \
-    libotp_s5k3l6_common \
-    libotp_s5k4h7_tsp \
-    libotp_s5k5e8yx_jd \
-    libotp_s5kjn1 \
-    libotp_xiaomi_parse \
     libpartinfo \
-    libperfturbo_jni \
     libpipelinelog \
     libportrait_scene_cap \
     libportrait_scene_prev \
     libpowerhal_cli \
-    libproduction_client_unisoc \
     libprotobuf-cpp-full-3.9.1 \
     libprotobuf-cpp-lite-3.9.1 \
     libpss_isp2.7 \
     libpuresoftkeymasterdevice \
     libreadfixednv \
     librebootcmd \
-    libremotedisplay \
-    libremotedisplayservice \
     libreverbwrapper \
     librifaacheck \
     libril-lite \
@@ -20127,95 +20554,8 @@ PRODUCT_PACKAGES += \
     librilcore \
     librilutils \
     librpmbclient \
-    libsample \
     libsecrpmbdata \
     libsecrpmbdata_platform \
-    libsensor_c3z01_ov08f10_frontsyx \
-    libsensor_c3z01_ov32d40_backxl \
-    libsensor_c3z01_ovsp0821_depthcxt \
-    libsensor_c3z02_bydbf30a2_depthjk \
-    libsensor_c3z02_ov32d40_backxl \
-    libsensor_c3z02_sc820cs_frontjk \
-    libsensor_c3z03_gc08a8_frontcxt \
-    libsensor_c3z03_ov32d40_backst \
-    libsensor_c3z03_sc080cs_depthcxt \
-    libsensor_c3z04_gc32e2a_backjk \
-    libsensor_c3z04_sc820cs_frontdd \
-    libsensor_c3zr01_sc1320cs_backtxd \
-    libsensor_c3zr02_sc1320cs_backlce \
-    libsensor_gc02m1b_js_1 \
-    libsensor_gc08a3_x6511 \
-    libsensor_gc2145 \
-    libsensor_gc2375 \
-    libsensor_gc2375_js_2 \
-    libsensor_gc2375_wj_2 \
-    libsensor_gc2375h \
-    libsensor_gc2385_wj_1 \
-    libsensor_gc5035 \
-    libsensor_gc5035_x6511 \
-    libsensor_gc6153 \
-    libsensor_gc8034_gj_2 \
-    libsensor_hi1336_m0 \
-    libsensor_hi1336_s0 \
-    libsensor_hi846 \
-    libsensor_hi846_gj_1 \
-    libsensor_hi846_wide \
-    libsensor_imx258 \
-    libsensor_imx351 \
-    libsensor_imx362 \
-    libsensor_imx363 \
-    libsensor_imx582 \
-    libsensor_imx586 \
-    libsensor_imx586_2lane \
-    libsensor_imx616 \
-    libsensor_imx616_2lane \
-    libsensor_ipg \
-    libsensor_ov02a10 \
-    libsensor_ov02b10 \
-    libsensor_ov02b1b \
-    libsensor_ov08a10 \
-    libsensor_ov08a10_back \
-    libsensor_ov08a10_back_sunny \
-    libsensor_ov08a10_hisense \
-    libsensor_ov12a10 \
-    libsensor_ov13853_m1 \
-    libsensor_ov13853_s1 \
-    libsensor_ov13855 \
-    libsensor_ov13b10 \
-    libsensor_ov16885_normal \
-    libsensor_ov2680 \
-    libsensor_ov32a1q \
-    libsensor_ov5675 \
-    libsensor_ov5675_dual \
-    libsensor_ov64b40 \
-    libsensor_ov7251 \
-    libsensor_ov7251_dual \
-    libsensor_ov8856_back \
-    libsensor_ov8856_back_ts \
-    libsensor_ov8856_front \
-    libsensor_ov8856_front_ts \
-    libsensor_ov8856_shine \
-    libsensor_ov8856_shine_front \
-    libsensor_ov8856_transsion \
-    libsensor_ov8856_xl_front \
-    libsensor_ov8858 \
-    libsensor_s5k3l6 \
-    libsensor_s5k3l6_cy \
-    libsensor_s5k3l6xx03 \
-    libsensor_s5k3l8xxm3 \
-    libsensor_s5k3p9sx04 \
-    libsensor_s5k3p9sx04_ts \
-    libsensor_s5k4h7 \
-    libsensor_s5k4h8yx \
-    libsensor_s5k4h9yx \
-    libsensor_s5k5e8yx \
-    libsensor_s5k5e9yu05 \
-    libsensor_s5kgw1sp03 \
-    libsensor_s5khm2sp03 \
-    libsensor_s5khm6sx \
-    libsensor_s5khm6sx_tr \
-    libsensor_virtual_sensor \
-    libsensorlistcfg \
     libsensorndkbridge \
     libsensornpi \
     libsfplugin_ccodec_utils \
@@ -20279,10 +20619,8 @@ PRODUCT_PACKAGES += \
     libsprdmfsr3 \
     libsprdmfsradapter \
     libsprdorb \
-    libsprdpcmdump \
     libsprdportraitsceneadapter \
     libsprdscenedetect \
-    libsprdssense \
     libsprdwarp \
     libsprdwarpadapter \
     libsprdwarppro \
@@ -20291,17 +20629,12 @@ PRODUCT_PACKAGES += \
     libsprdxdr2 \
     libsprdxdr_1_2 \
     libsprdynr2cnr4 \
-    libsrmi \
-    libsrmiservice \
     libstagefright_bufferpool@2.0.1 \
     libstagefright_hdcp \
-    libstagefright_surface \
-    libstagefright_wfd \
     libsupl \
     libswresample-4 \
     libswscale-6 \
     libsysoffloadstream \
-    libsysutils \
     libteec \
     libteecPlatform \
     libteeproduction \
@@ -20312,80 +20645,32 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libtinycompress_unisoc \
     libtinyxml \
-    libtonemap_hook \
     libtrusty \
     libtrustyHalHelper \
     libtsensor \
     libtsxrawdata \
     libtui \
-    libtuneconnector \
-    libualarm_jni \
     libucpubench \
     libufsprotect \
     libufspwm \
     libumnn \
     libuniai \
     libunievent \
-    libunievent_jni \
-    libunilog \
-    libunilog_jni \
-    libunionevent \
-    libunipnp_jni \
-    libunisoc_gnss_jni \
     libunisocaudiodiagnose \
     libunisocaudiomiscctl \
     libunisocaudioparam \
-    libunisocaudiopolicymanager \
-    libunisocaudioutils \
-    libunisocaudioutilsservice \
-    libunisocbalancer \
-    libunisocblankdetect \
-    libunisocbootanimation \
-    libunisoccamcalitest \
-    libunisoccameraservice \
     libunisocisc \
-    libunisocmpeg2extractor \
-    libunisocmtp \
     libunisocrecordcvs \
     libunisocrecordnr \
     libunisocrtp \
-    libunisocsurfaceflinger_utils \
-    libunisocsurfaceflingeradpf \
     libunisocuserdump \
     libunisocvoiceprocessing \
-    libunisocvold \
-    libunisocwavextractor \
     libunnengine \
     libusbtypec \
-    libutils \
     libutilsparser \
-    libvcm_c3z01_ov32d40_backxl_gt9772 \
-    libvcm_c3z02_ov32d40_backxl_gt9779 \
-    libvcm_c3z03_ov32d40_backst_cn3927v \
-    libvcm_c3z04_gc32e2a_backjk_pd9215b \
-    libvcm_c3zr01_sc1320cs_backtxd_pd9215b \
-    libvcm_cn398a \
-    libvcm_dw9714 \
-    libvcm_dw9714p \
-    libvcm_dw9714v \
-    libvcm_dw9718s \
-    libvcm_dw9768v \
-    libvcm_dw9781b \
-    libvcm_dw9800 \
-    libvcm_dw9825a \
-    libvcm_fp5510ee4 \
-    libvcm_gt9764 \
-    libvcm_gt9772 \
-    libvcm_lc898213 \
-    libvcm_lc898219 \
-    libvcm_lc898229 \
-    libvcm_zc524 \
-    libvdspservice \
     libvendor.xiaomi.hardware.fx.tunnel \
-    libvendorhook \
     libverify \
     libvibrator \
-    libvideo_call_engine_jni \
     libvideo_share_memory \
     libvideonr \
     libvisualizer \
@@ -20397,59 +20682,23 @@ PRODUCT_PACKAGES += \
     libwifieut \
     libwpa_client \
     libwvaidl \
-    libxml2 \
     libxml2bin \
     libxtm1.5 \
     libxtm2.5 \
     libylog \
     libylogtopc \
     libyuv420_scaler \
-    libyuv_jpeg_converter_jni \
-    libz \
     local_time.default \
-    miui.mqsas.native-cpp \
     nativemmifinger \
     oemlock_ca \
     power.default \
     power.sprd \
-    product_lib64_libunievent_so \
-    product_lib64_libylog_so \
-    product_lib64_vendor_sprd_hardware_tool-V1-ndk_so \
     sensors.camera.light \
     sensors.dynamic_sensor_subhal \
-    sensors.unisoc \
     shared-file-region-aidl-cpp \
-    system_ext_lib64_cplog_common_so \
-    system_ext_lib64_libcplog_so \
-    system_ext_lib64_libimsbrd_so \
-    system_ext_lib64_libmediahdrtosdrtransform_so \
-    system_ext_lib64_libpowerhal_cli_so \
-    system_ext_lib64_libtrustyHalHelper_so \
-    system_ext_lib64_libunievent_so \
-    system_ext_lib64_libvideo_share_memory_so \
-    system_ext_lib64_vendor_sprd_hardware_boot@1_2_so \
-    system_ext_lib64_vendor_sprd_hardware_cplog_svc-V1-ndk_so \
-    system_ext_lib64_vendor_sprd_hardware_cplog_svc@1_0_so \
-    system_ext_lib64_vendor_sprd_hardware_hdcp-V1-ndk_so \
-    system_ext_lib64_vendor_sprd_hardware_log@1_0_so \
-    system_ext_lib64_vendor_sprd_hardware_network-V1-ndk_so \
-    system_ext_lib64_vendor_sprd_hardware_thermal@1_0_so \
-    system_ext_lib64_vendor_sprd_hardware_thermal@2_0_so \
-    system_ext_lib64_vendor_sprd_hardware_tool-V1-ndk_so \
-    system_ext_lib64_vendor_sprd_hardware_trusty-V1-ndk_so \
-    system_ext_lib64_vendor_sprd_hardware_trusty@1_0_so \
-    system_ext_lib64_vendor_unisoc_hardware_ai_engine-V2-ndk_so \
-    system_ext_lib64_vendor_unisoc_hardware_power-V1-ndk_so \
-    system_ext_lib64_vendor_unisoc_hardware_radio-V1-ndk_so \
-    system_ext_lib64_vendor_unisoc_hardware_radio_lite-V1-ndk_so \
-    system_ext_lib64_vendor_unisoc_hardware_radio_modem-V1-ndk_so \
-    system_ext_lib64_vendor_xiaomi_hardware_misys@1_0_so \
-    system_ext_lib64_vendor_xiaomi_hardware_misys@3_0_so \
     thermal.default \
     unisoc.bootctrl \
-    unisoc.hardware.audio.core-V1-ndk \
     vendor.sprd.algoservice@1.0 \
-    vendor.sprd.hardware.boot-V1-ndk \
     vendor.sprd.hardware.boot@1.2 \
     vendor.sprd.hardware.connmgr@1.0 \
     vendor.sprd.hardware.connmgr@1.0-impl \
@@ -20457,19 +20706,11 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.cplog_svc@1.0 \
     vendor.sprd.hardware.enhance-V1-ndk \
     vendor.sprd.hardware.fingerprintmmi-V1-ndk \
-    vendor.sprd.hardware.gnss-V1-cpp \
     vendor.sprd.hardware.gnss-V1-ndk \
-    vendor.sprd.hardware.gnss@1.0 \
-    vendor.sprd.hardware.gnss@2.1 \
     vendor.sprd.hardware.hdcp-V1-ndk \
-    vendor.sprd.hardware.hdcp@1.0 \
     vendor.sprd.hardware.ifaa-V1-ndk \
-    vendor.sprd.hardware.log@1.0 \
     vendor.sprd.hardware.network-V1-ndk \
-    vendor.sprd.hardware.network@1.0 \
-    vendor.sprd.hardware.production-V1-ndk \
     vendor.sprd.hardware.soter-V1-ndk \
-    vendor.sprd.hardware.thermal-V1-ndk \
     vendor.sprd.hardware.thermal@1.0 \
     vendor.sprd.hardware.thermal@2.0 \
     vendor.sprd.hardware.thermal@2.0-impl \
@@ -20480,7 +20721,6 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.tui-V1-ndk \
     vendor.sprd.hardware.tui@1.0 \
     vendor.sprd.hardware.unipnp-V1-ndk \
-    vendor.unisoc.frameworks.srmi-V1-ndk \
     vendor.unisoc.hardware.ai_engine-V2-ndk \
     vendor.unisoc.hardware.power-V1-ndk \
     vendor.unisoc.hardware.radio-V1-ndk \
@@ -20495,8 +20735,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hardware.micharge@1.0 \
     vendor.xiaomi.hardware.micharge@1.0-impl \
-    vendor.xiaomi.hardware.misys.common-V3-ndk \
-    vendor.xiaomi.hardware.misys.core-V1-ndk \
     vendor.xiaomi.hardware.misys@1.0 \
     vendor.xiaomi.hardware.misys@1.0-impl \
     vendor.xiaomi.hardware.misys@2.0 \
