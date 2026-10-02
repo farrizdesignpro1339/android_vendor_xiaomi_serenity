@@ -8080,32 +8080,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libavservices_minijail",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libavservices_minijail.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libminijail",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libavutil-57",
     owner: "xiaomi",
     strip: {
@@ -12137,32 +12111,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcppcose_rkp",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcppcose_rkp.so",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcppdrv_r6p0",
     owner: "xiaomi",
     strip: {
@@ -14800,7 +14748,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcrypto",
-                "libcppcose_rkp",
                 "libc++",
                 "libc",
                 "libm",
@@ -18459,7 +18406,6 @@ cc_prebuilt_library_shared {
                 "libkeymaster_portable",
                 "libsoft_attestation_cert",
                 "liblog",
-                "libcppcose_rkp",
                 "libcrypto",
                 "libcutils",
                 "libbase",
@@ -26894,7 +26840,6 @@ cc_prebuilt_binary {
                 "libcodec2",
                 "libcodec2_vndk",
                 "libutils",
-                "libavservices_minijail",
                 "libbinder",
                 "libcodec2_unisoc_store",
                 "libc++",
@@ -26926,7 +26871,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "liblog",
                 "libbase",
-                "libavservices_minijail",
                 "libcutils",
                 "libhidlbase",
                 "libstagefright_omx",

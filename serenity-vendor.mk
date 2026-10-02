@@ -20094,6 +20094,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/framework/androidx.camera.extensions.impl.jar:$(TARGET_COPY_OUT_VENDOR)/framework/androidx.camera.extensions.impl.jar \
     vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common@7.0-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.0-enums.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common@7.1-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.1-enums.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libavservices_minijail.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavservices_minijail.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrm.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidltransport.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwbinder.so \
@@ -20104,6 +20105,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.0-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.0-enums.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.1-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.1-enums.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libcppbor_external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppbor_external.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libcppcose_rkp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppcose_rkp.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwbinder.so \
@@ -20334,7 +20336,6 @@ PRODUCT_PACKAGES += \
     libaudionpi \
     libaudiopreprocessing \
     libavcodec-59 \
-    libavservices_minijail \
     libavutil-57 \
     libbinderdebug \
     libbluetooth_audio_session \
@@ -20423,7 +20424,6 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk \
     libcomcontrol \
     libcplog \
-    libcppcose_rkp \
     libcppdrv_r6p0 \
     libdav1d \
     libdcxcali \
