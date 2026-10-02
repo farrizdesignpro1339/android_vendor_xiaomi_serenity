@@ -11946,7 +11946,6 @@ cc_prebuilt_library_shared {
                 "libui",
                 "libutils",
                 "libcutils",
-                "libvpx",
                 "libion",
                 "libdmabufheap",
                 "libvideo_share_memory",
@@ -11986,7 +11985,6 @@ cc_prebuilt_library_shared {
                 "libui",
                 "libutils",
                 "libcutils",
-                "libvpx",
                 "libion",
                 "libdmabufheap",
                 "libvideo_share_memory",
@@ -23663,30 +23661,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "both",
     prefer: true,
     relative_install_path: "soundfx",
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvpx",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvpx.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
     soc_specific: true,
 }
 
