@@ -12658,7 +12658,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libeic_trusty.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "libcutils",
                 "libutils",
                 "liblog",
@@ -12673,7 +12672,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libeic_trusty.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "libcutils",
                 "libutils",
                 "liblog",
@@ -13301,7 +13299,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libtrusty",
                 "libc",
                 "libm",
                 "libdl",
@@ -14297,7 +14294,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libifaatrusty.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "liblog",
                 "libcutils",
                 "libc++",
@@ -14311,7 +14307,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libifaatrusty.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "liblog",
                 "libcutils",
                 "libc++",
@@ -14744,7 +14739,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libkernelbootcp.trusty.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "liblog",
                 "libcutils",
                 "libc++",
@@ -17021,7 +17015,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libhidlbase",
-                "libtrusty",
                 "libteecPlatform",
                 "libteeproduction",
                 "libxml2",
@@ -19007,7 +19000,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libtrusty",
                 "libc++",
                 "libc",
                 "libm",
@@ -19020,7 +19012,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libtrusty",
                 "libc++",
                 "libc",
                 "libm",
@@ -19047,7 +19038,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libtrusty",
                 "libtrustyHalHelper",
                 "libc++",
                 "libc",
@@ -19062,7 +19052,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libtrusty",
                 "libtrustyHalHelper",
                 "libc++",
                 "libc",
@@ -19445,7 +19434,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libsoter_trusty.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "liblog",
                 "libcutils",
                 "libc++",
@@ -19459,7 +19447,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsoter_trusty.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "liblog",
                 "libcutils",
                 "libc++",
@@ -22335,7 +22322,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libtrusty",
                 "libcrypto",
                 "libc++",
                 "libc",
@@ -22350,7 +22336,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libtrusty",
                 "libcrypto",
                 "libc++",
                 "libc",
@@ -22378,7 +22363,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "liblog",
-                "libtrusty",
                 "libcrypto",
                 "libbase",
                 "libcutils",
@@ -22398,7 +22382,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libutils",
                 "liblog",
-                "libtrusty",
                 "libcrypto",
                 "libbase",
                 "libcutils",
@@ -22429,7 +22412,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libteeproduction.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "liblog",
                 "libcutils",
                 "librpmbclient",
@@ -22444,7 +22426,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libteeproduction.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "liblog",
                 "libcutils",
                 "librpmbclient",
@@ -22639,43 +22620,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libtrusty",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libtrusty.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtrusty.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libtrustyHalHelper",
     owner: "xiaomi",
     strip: {
@@ -22824,7 +22768,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libtrusty",
                 "libhidlbase",
                 "libutils",
                 "vendor.sprd.hardware.tui@1.0",
@@ -22841,7 +22784,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libtrusty",
                 "libhidlbase",
                 "libutils",
                 "vendor.sprd.hardware.tui@1.0",
@@ -22910,7 +22852,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libtrusty",
                 "libsecrpmbdata",
                 "libc++",
                 "libc",
@@ -22924,7 +22865,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libtrusty",
                 "libsecrpmbdata",
                 "libc++",
                 "libc",
@@ -23676,7 +23616,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libvsp_ca.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "liblog",
                 "libcutils",
                 "libtrustyHalHelper",
@@ -23691,7 +23630,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libvsp_ca.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "liblog",
                 "libcutils",
                 "libtrustyHalHelper",
@@ -24254,7 +24192,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/oemlock_ca.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "liblog",
                 "libcutils",
                 "libc++",
@@ -24268,7 +24205,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/oemlock_ca.so",
             ],
             shared_libs: [
-                "libtrusty",
                 "liblog",
                 "libcutils",
                 "libc++",
@@ -25286,7 +25222,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libbinder_ndk",
                 "vendor.sprd.hardware.trusty-V1-ndk",
-                "libtrusty",
                 "libc++",
                 "libc",
                 "libm",
@@ -25305,7 +25240,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libbinder_ndk",
                 "vendor.sprd.hardware.trusty-V1-ndk",
-                "libtrusty",
                 "libc++",
                 "libc",
                 "libm",
@@ -26862,7 +26796,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "liblog",
                 "libcutils",
-                "libtrusty",
                 "libc++",
                 "libc",
                 "libm",
@@ -27178,7 +27111,6 @@ cc_prebuilt_binary {
                 "libhardware",
                 "libkeymint",
                 "liblog",
-                "libtrusty",
                 "libutils",
                 "libc++",
                 "libc",
@@ -28847,7 +28779,6 @@ cc_prebuilt_binary {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libtrusty",
                 "libc++",
                 "libc",
                 "libm",
@@ -29038,7 +28969,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/tsupplicant",
             ],
             shared_libs: [
-                "libtrusty",
                 "libcutils",
                 "libutils",
                 "liblog",
@@ -29068,7 +28998,6 @@ cc_prebuilt_binary {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libtrusty",
                 "libhidlbase",
                 "libbinder_ndk",
                 "libutils",
@@ -29694,7 +29623,6 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "libbinder_ndk",
                 "vendor.sprd.hardware.trusty-V1-ndk",
-                "libtrusty",
                 "vendor.sprd.hardware.trusty-impl",
                 "libc++",
                 "libc",

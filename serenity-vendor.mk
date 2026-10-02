@@ -20098,6 +20098,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidltransport.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwbinder.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyalsa.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libtrusty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrusty.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.0-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.0-enums.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.1-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.1-enums.so \
@@ -20107,6 +20108,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_messages.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libtextclassifier_hash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtextclassifier_hash.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyalsa.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libtrusty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrusty.so \
     vendor/xiaomi/serenity/proprietary/vendor/overlay/AospBtOverlay/AospBtOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay/AospBtOverlay.apk \
     vendor/xiaomi/serenity/proprietary/vendor/overlay/AospBtOverlay_Qogirl6/AospBtOverlay_Qogirl6.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay_Qogirl6/AospBtOverlay_Qogirl6.apk \
     vendor/xiaomi/serenity/proprietary/vendor/overlay/AospWifiOverlay_Marlin3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospWifiOverlay_Marlin3.apk \
@@ -20650,7 +20652,6 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libtinycompress_unisoc \
     libtinyxml \
-    libtrusty \
     libtrustyHalHelper \
     libtsensor \
     libtsxrawdata \
