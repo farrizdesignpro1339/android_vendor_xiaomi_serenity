@@ -12463,7 +12463,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libeffectsconfig",
                 "libc++",
                 "libc",
                 "libm",
@@ -12477,52 +12476,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
-                "libeffectsconfig",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libeffectsconfig",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libeffectsconfig.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libtinyxml2",
-                "libutils",
-                "libmedia_helper",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libeffectsconfig.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libtinyxml2",
-                "libutils",
-                "libmedia_helper",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
