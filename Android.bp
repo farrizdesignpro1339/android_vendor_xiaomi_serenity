@@ -597,7 +597,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbinder_ndk",
                 "android.hardware.common-V2-ndk",
-                "android.hardware.graphics.common-V3-ndk",
                 "libc++",
                 "libc",
                 "libm",
