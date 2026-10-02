@@ -2717,7 +2717,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libGLES_mali.so",
             ],
             shared_libs: [
-                "android.hardware.graphics.allocator-V1-ndk",
                 "libbinder_ndk",
                 "liblog",
                 "libbase",
@@ -2742,7 +2741,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libGLES_mali.so",
             ],
             shared_libs: [
-                "android.hardware.graphics.allocator-V1-ndk",
                 "libbinder_ndk",
                 "liblog",
                 "libbase",
@@ -20124,7 +20122,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/egl/libGLES_mali.so",
             ],
             shared_libs: [
-                "android.hardware.graphics.allocator-V1-ndk",
                 "libbinder_ndk",
                 "liblog",
                 "libbase",
@@ -20149,7 +20146,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/egl/libGLES_mali.so",
             ],
             shared_libs: [
-                "android.hardware.graphics.allocator-V1-ndk",
                 "libbinder_ndk",
                 "liblog",
                 "libbase",
