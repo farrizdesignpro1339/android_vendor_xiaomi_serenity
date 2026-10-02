@@ -977,7 +977,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libmedia_helper",
                 "libmediautils_vendor",
-                "libmemunreachable",
                 "libutils",
                 "android.hardware.audio.common-util",
                 "android.hardware.audio@7.0",
@@ -1004,7 +1003,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libmedia_helper",
                 "libmediautils_vendor",
-                "libmemunreachable",
                 "libutils",
                 "android.hardware.audio.common-util",
                 "android.hardware.audio@7.0",
@@ -5304,7 +5302,6 @@ cc_prebuilt_library_shared {
                 "libcamera_metadata",
                 "libfmq",
                 "libatci",
-                "libmemunreachable",
                 "libc++",
                 "libc",
                 "libm",
@@ -5330,7 +5327,6 @@ cc_prebuilt_library_shared {
                 "libcamera_metadata",
                 "libfmq",
                 "libatci",
-                "libmemunreachable",
                 "libc++",
                 "libc",
                 "libm",
@@ -16610,43 +16606,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmemunreachable",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmemunreachable.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmemunreachable.so",
-            ],
-            shared_libs: [
-                "libbase",
                 "libc++",
                 "libc",
                 "libm",
