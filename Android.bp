@@ -14729,7 +14729,6 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "libcutils",
                 "liblog",
-                "libpuresoftkeymasterdevice",
                 "libutils",
                 "libc++",
                 "libc",
@@ -18294,34 +18293,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libpuresoftkeymasterdevice",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libpuresoftkeymasterdevice.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcrypto",
-                "libcutils",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
