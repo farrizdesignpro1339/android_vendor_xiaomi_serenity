@@ -6,6 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/serenity
 
 PRODUCT_COPY_FILES += \
+
+    vendor/xiaomi/serenity/proprietary/odm/bin/fm_tools:$(TARGET_COPY_OUT_ODM)/bin/fm_tools \
     vendor/xiaomi/serenity/proprietary/odm/etc/ScanStruct/SPRD_TAG_AE_RESULT_INFO.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_AE_RESULT_INFO.txt \
     vendor/xiaomi/serenity/proprietary/odm/etc/ScanStruct/SPRD_TAG_AWB_CALC_INFO.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_AWB_CALC_INFO.txt \
     vendor/xiaomi/serenity/proprietary/odm/etc/ScanStruct/SPRD_TAG_CAP_AE_PARAMS.txt:$(TARGET_COPY_OUT_ODM)/etc/ScanStruct/SPRD_TAG_CAP_AE_PARAMS.txt \
@@ -530,10 +532,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/odm/etc/selinux/odm_property_contexts:$(TARGET_COPY_OUT_ODM)/etc/selinux/odm_property_contexts \
     vendor/xiaomi/serenity/proprietary/odm/etc/selinux/odm_seapp_contexts:$(TARGET_COPY_OUT_ODM)/etc/selinux/odm_seapp_contexts \
     vendor/xiaomi/serenity/proprietary/odm/etc/selinux/odm_sepolicy.cil:$(TARGET_COPY_OUT_ODM)/etc/selinux/odm_sepolicy.cil \
-    vendor/xiaomi/serenity/proprietary/odm/etc/selinux/precompiled_sepolicy:$(TARGET_COPY_OUT_ODM)/etc/selinux/precompiled_sepolicy \
     vendor/xiaomi/serenity/proprietary/odm/etc/selinux/precompiled_sepolicy.plat_sepolicy_and_mapping.sha256:$(TARGET_COPY_OUT_ODM)/etc/selinux/precompiled_sepolicy.plat_sepolicy_and_mapping.sha256 \
     vendor/xiaomi/serenity/proprietary/odm/etc/selinux/precompiled_sepolicy.product_sepolicy_and_mapping.sha256:$(TARGET_COPY_OUT_ODM)/etc/selinux/precompiled_sepolicy.product_sepolicy_and_mapping.sha256 \
     vendor/xiaomi/serenity/proprietary/odm/etc/selinux/precompiled_sepolicy.system_ext_sepolicy_and_mapping.sha256:$(TARGET_COPY_OUT_ODM)/etc/selinux/precompiled_sepolicy.system_ext_sepolicy_and_mapping.sha256 \
+    vendor/xiaomi/serenity/proprietary/odm/etc/selinux/precompiled_sepolicy:$(TARGET_COPY_OUT_ODM)/etc/selinux/precompiled_sepolicy \
     vendor/xiaomi/serenity/proprietary/odm/etc/sensor_config.xml:$(TARGET_COPY_OUT_ODM)/etc/sensor_config.xml \
     vendor/xiaomi/serenity/proprietary/odm/etc/sixth_param.txt:$(TARGET_COPY_OUT_ODM)/etc/sixth_param.txt \
     vendor/xiaomi/serenity/proprietary/odm/etc/sixth_param_voip.txt:$(TARGET_COPY_OUT_ODM)/etc/sixth_param_voip.txt \
@@ -562,27 +564,48 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/odm/firmware/omnivision_ts_tianma_fw_rf.img:$(TARGET_COPY_OUT_ODM)/firmware/omnivision_ts_tianma_fw_rf.img \
     vendor/xiaomi/serenity/proprietary/odm/firmware/omnivision_ts_tianma_mp.img:$(TARGET_COPY_OUT_ODM)/firmware/omnivision_ts_tianma_mp.img \
     vendor/xiaomi/serenity/proprietary/odm/firmware/omnivision_ts_tianma_mp_rf.img:$(TARGET_COPY_OUT_ODM)/firmware/omnivision_ts_tianma_mp_rf.img \
-    vendor/xiaomi/serenity/proprietary/odm/firmware/regulatory.db:$(TARGET_COPY_OUT_ODM)/firmware/regulatory.db \
     vendor/xiaomi/serenity/proprietary/odm/firmware/regulatory.db.p7s:$(TARGET_COPY_OUT_ODM)/firmware/regulatory.db.p7s \
+    vendor/xiaomi/serenity/proprietary/odm/firmware/regulatory.db:$(TARGET_COPY_OUT_ODM)/firmware/regulatory.db \
     vendor/xiaomi/serenity/proprietary/odm/firmware/sipa.bin:$(TARGET_COPY_OUT_ODM)/firmware/sipa.bin \
     vendor/xiaomi/serenity/proprietary/odm/firmware/wcnmodem.bin:$(TARGET_COPY_OUT_ODM)/firmware/wcnmodem.bin \
     vendor/xiaomi/serenity/proprietary/odm/firmware/wifi_board_config.ini:$(TARGET_COPY_OUT_ODM)/firmware/wifi_board_config.ini \
     vendor/xiaomi/serenity/proprietary/odm/overlay/unisoc_overlay_core_max_cached_processed_16.apk:$(TARGET_COPY_OUT_ODM)/overlay/unisoc_overlay_core_max_cached_processed_16.apk \
     vendor/xiaomi/serenity/proprietary/odm/overlay/unisoc_overlay_core_pinner_service_qogirl6.apk:$(TARGET_COPY_OUT_ODM)/overlay/unisoc_overlay_core_pinner_service_qogirl6.apk \
+    vendor/xiaomi/serenity/proprietary/product/bin/UnisocDataCollection:$(TARGET_COPY_OUT_PRODUCT)/bin/UnisocDataCollection \
+    vendor/xiaomi/serenity/proprietary/product/bin/apdumper:$(TARGET_COPY_OUT_PRODUCT)/bin/apdumper \
     vendor/xiaomi/serenity/proprietary/product/bin/data_rps.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/data_rps.sh \
+    vendor/xiaomi/serenity/proprietary/product/bin/ext_data:$(TARGET_COPY_OUT_PRODUCT)/bin/ext_data \
     vendor/xiaomi/serenity/proprietary/product/bin/fwkreboot.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/fwkreboot.sh \
+    vendor/xiaomi/serenity/proprietary/product/bin/hcidump:$(TARGET_COPY_OUT_PRODUCT)/bin/hcidump \
+    vendor/xiaomi/serenity/proprietary/product/bin/inotifywait:$(TARGET_COPY_OUT_PRODUCT)/bin/inotifywait \
+    vendor/xiaomi/serenity/proprietary/product/bin/inotifywatch:$(TARGET_COPY_OUT_PRODUCT)/bin/inotifywatch \
     vendor/xiaomi/serenity/proprietary/product/bin/lastlog.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/lastlog.sh \
     vendor/xiaomi/serenity/proprietary/product/bin/logcatAKlog.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/logcatAKlog.sh \
+    vendor/xiaomi/serenity/proprietary/product/bin/minidumpd:$(TARGET_COPY_OUT_PRODUCT)/bin/minidumpd \
+    vendor/xiaomi/serenity/proprietary/product/bin/net_bpf_progs:$(TARGET_COPY_OUT_PRODUCT)/bin/net_bpf_progs \
     vendor/xiaomi/serenity/proprietary/product/bin/netbox.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/netbox.sh \
+    vendor/xiaomi/serenity/proprietary/product/bin/nhMonitorService:$(TARGET_COPY_OUT_PRODUCT)/bin/nhMonitorService \
     vendor/xiaomi/serenity/proprietary/product/bin/phoneinfo.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/phoneinfo.sh \
     vendor/xiaomi/serenity/proprietary/product/bin/poweronlog.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/poweronlog.sh \
+    vendor/xiaomi/serenity/proprietary/product/bin/sfpd:$(TARGET_COPY_OUT_PRODUCT)/bin/sfpd \
+    vendor/xiaomi/serenity/proprietary/product/bin/sgm.cpu_memory:$(TARGET_COPY_OUT_PRODUCT)/bin/sgm.cpu_memory \
+    vendor/xiaomi/serenity/proprietary/product/bin/sprd_networkcontrol:$(TARGET_COPY_OUT_PRODUCT)/bin/sprd_networkcontrol \
+    vendor/xiaomi/serenity/proprietary/product/bin/srmi_proxyd:$(TARGET_COPY_OUT_PRODUCT)/bin/srmi_proxyd \
     vendor/xiaomi/serenity/proprietary/product/bin/standbylogcat.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/standbylogcat.sh \
     vendor/xiaomi/serenity/proprietary/product/bin/sysinfo.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/sysinfo.sh \
     vendor/xiaomi/serenity/proprietary/product/bin/thermal.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/thermal.sh \
     vendor/xiaomi/serenity/proprietary/product/bin/tiny_firewall.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/tiny_firewall.sh \
+    vendor/xiaomi/serenity/proprietary/product/bin/tool_service:$(TARGET_COPY_OUT_PRODUCT)/bin/tool_service \
     vendor/xiaomi/serenity/proprietary/product/bin/trace.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/trace.sh \
     vendor/xiaomi/serenity/proprietary/product/bin/uboot.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/uboot.sh \
+    vendor/xiaomi/serenity/proprietary/product/bin/uni_wifi:$(TARGET_COPY_OUT_PRODUCT)/bin/uni_wifi \
+    vendor/xiaomi/serenity/proprietary/product/bin/unishutdown_detect_log:$(TARGET_COPY_OUT_PRODUCT)/bin/unishutdown_detect_log \
+    vendor/xiaomi/serenity/proprietary/product/bin/uniview:$(TARGET_COPY_OUT_PRODUCT)/bin/uniview \
+    vendor/xiaomi/serenity/proprietary/product/bin/ylog:$(TARGET_COPY_OUT_PRODUCT)/bin/ylog \
+    vendor/xiaomi/serenity/proprietary/product/bin/ylogctl:$(TARGET_COPY_OUT_PRODUCT)/bin/ylogctl \
     vendor/xiaomi/serenity/proprietary/product/bin/ylogdebug.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/ylogdebug.sh \
+    vendor/xiaomi/serenity/proprietary/product/bin/ylogkat:$(TARGET_COPY_OUT_PRODUCT)/bin/ylogkat \
+    vendor/xiaomi/serenity/proprietary/product/bin/ylogksg:$(TARGET_COPY_OUT_PRODUCT)/bin/ylogksg \
     vendor/xiaomi/serenity/proprietary/product/etc/aconfig_flags.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/aconfig_flags.pb \
     vendor/xiaomi/serenity/proprietary/product/etc/analyzer.py:$(TARGET_COPY_OUT_PRODUCT)/etc/analyzer.py \
     vendor/xiaomi/serenity/proprietary/product/etc/appPowerSaveConfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/appPowerSaveConfig.xml \
@@ -716,6 +739,26 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/product/overlay/framework-res__missi__auto_generated_rro_product.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/framework-res__missi__auto_generated_rro_product.apk \
     vendor/xiaomi/serenity/proprietary/product/usr/share/ime/google/d3_lms/en_us_d3_20180105.dict:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/en_us_d3_20180105.dict \
     vendor/xiaomi/serenity/proprietary/product/usr/share/ime/google/d3_lms/mozc.data:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/mozc.data \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/SprdCameraVndTest:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/SprdCameraVndTest \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/audiofwtool:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/audiofwtool \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/audioutils_client:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/audioutils_client \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/dnsmasq_sprd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dnsmasq_sprd \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/hw/android.hidl.allocator@1.0-service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/hw/android.hidl.allocator@1.0-service \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/hw/com.unisoc.hardware.audio.parameter_parser.service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/hw/com.unisoc.hardware.audio.parameter_parser.service \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/hw/com.unisoc.hardware.audio.tunning.service:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/hw/com.unisoc.hardware.audio.tunning.service \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/hwservicemanager:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/hwservicemanager \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/hypsys_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/hypsys_system \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/ims_bridged:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/ims_bridged \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/iperf:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/iperf \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/linkturbonative:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/linkturbonative \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/mkntfs:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/mkntfs \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/ntfs3g:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/ntfs3g \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/ntfsfix:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/ntfsfix \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/remotedisplay:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/remotedisplay \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/slogmodem:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/slogmodem \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/ummd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/ummd \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/uniresctlopt:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/uniresctlopt \
+    vendor/xiaomi/serenity/proprietary/system_ext/bin/unisocaudioutils:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/unisocaudioutils \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/aconfig_flags.pb:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/aconfig_flags.pb \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/build_flags.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/build_flags.json \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/compatconfig/settings-platform-compat-config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/compatconfig/settings-platform-compat-config.xml \
@@ -792,8 +835,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/profiles/com.google.android.webview.prof:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/profiles/com.google.android.webview.prof \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/profiles/com.google.android.youtube.prof:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/profiles/com.google.android.youtube.prof \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/profiles/default.prof:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/profiles/default.prof \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/security/fsverity/BuildManifestSystemExt.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/security/fsverity/BuildManifestSystemExt.apk \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/security/fsverity/BuildManifestSystemExt.apk.idsig:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/security/fsverity/BuildManifestSystemExt.apk.idsig \
+    vendor/xiaomi/serenity/proprietary/system_ext/etc/security/fsverity/BuildManifestSystemExt.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/security/fsverity/BuildManifestSystemExt.apk \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/selinux/bug_map:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/bug_map \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/selinux/mapping/202404.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/202404.cil \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/selinux/mapping/29.0.compat.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/29.0.compat.cil \
@@ -19588,7 +19631,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/usr/idc/synaptics_dsx.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/synaptics_dsx.idc \
     vendor/xiaomi/serenity/proprietary/vendor/usr/idc/synaptics_dsx_i2c.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/synaptics_dsx_i2c.idc \
     vendor/xiaomi/serenity/proprietary/vendor/usr/keylayout/adaptive_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/adaptive_ts.kl \
-    vendor/xiaomi/serenity/proprietary/vendor/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
+    vendor/xiaomi/serenity/proprietary/vendor/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
 
 PRODUCT_PACKAGES += \
     PQTune.unisoc \
@@ -20472,8 +20515,6 @@ PRODUCT_PACKAGES += \
     xiaomi.system.hypsys.common-V1-ndk
 
 PRODUCT_PACKAGES += \
-    SprdCameraVndTest \
-    UnisocDataCollection \
     android.hardware.audio.service \
     android.hardware.biometrics.face@1.0-service.example \
     android.hardware.biometrics.fingerprint-service \
@@ -20495,10 +20536,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
     android.hardware.usb-service.unisoc \
     android.hardware.wifi@1.0-service-lazy \
-    android.hidl.allocator@1.0-service \
-    apdumper \
-    audiofwtool \
-    audioutils_client \
     awk \
     boardid_bin \
     boringssl_self_test32 \
@@ -20508,8 +20545,6 @@ PRODUCT_PACKAGES += \
     charge \
     charge_logger \
     charged \
-    com.unisoc.hardware.audio.parameter_parser.service \
-    com.unisoc.hardware.audio.tunning.service \
     connmgr \
     connmgr_cli \
     cp_diskserver \
@@ -20521,85 +20556,55 @@ PRODUCT_PACKAGES += \
     ddr_bm \
     ddr_loading \
     ddr_trans_table \
-    dnsmasq_sprd \
     dpc \
     dumpsys \
     engpc \
     engpcctl \
     enhance_test \
-    ext_data \
     fix_cpu_freq \
     fix_ddr_freq \
     fix_gpu_freq \
-    fm_tools \
     gpsd \
     gpu_loading \
     gpu_trans_table \
-    hcidump \
     hostapd \
-    hwservicemanager \
-    hypsys_system \
-    ims_bridged \
-    inotifywait \
-    inotifywatch \
     interrupt \
-    iperf \
     iw \
     iwlist \
     iwnpi \
     iwpriv \
-    linkturbonative \
     lit_cpu_freq \
     logwrapper \
     lwpsimulationdemo64 \
     mifaced \
-    minidumpd \
-    mkntfs \
     modem_control \
     modem_ctrl_dbg \
     mtd_trusty@1.3 \
-    net_bpf_progs \
-    nhMonitorService \
-    ntfs3g \
-    ntfsfix \
     nvmerge \
     paras \
     phasecheckserver \
     refnotify \
-    remotedisplay \
     rkp_factory_extraction_tool \
     rpmbserver \
     sensortest \
-    sfpd \
-    sgm.cpu_memory \
     sh \
-    slogmodem \
     slogmodem_vendor \
-    sprd_networkcontrol \
     sprdstorageproxyd \
-    srmi_proxyd \
     srtd \
     systemDebuggerd \
     tee_rpc \
     test-nusensors \
     test_ufs_swp_config \
     thermald \
-    tool_service \
     toolbox \
     tops \
     toybox_vendor \
     tsupplicant \
     tuica \
     ufs_ffu \
-    ummd \
-    uni_wifi \
     uniai_testbench \
     uniber \
     unionpnp_service \
-    uniresctlopt \
-    unishutdown_detect_log \
-    unisocaudioutils \
-    uniview \
     urild \
     vendor.silead.hardware.fingerprintext-service \
     vendor.sprd.hardware.boot@1.2-service \
@@ -20626,10 +20631,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.misys@4.0-service \
     vendor_bin_iperf \
     wpa_supplicant \
-    ylog \
-    ylogctl \
-    ylogkat \
-    ylogksg \
     yloglite \
     yloglitectl \
     yloglitekat

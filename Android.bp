@@ -38726,80 +38726,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_binary {
-    name: "SprdCameraVndTest",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/SprdCameraVndTest",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "libbase",
-                "libbinder",
-                "libbinder_ndk",
-                "libcamera_metadata",
-                "libcutils",
-                "libfmq",
-                "libgui",
-                "libui",
-                "libmedia",
-                "libhardware",
-                "libtinyxml2",
-                "libexif",
-                "android.hardware.common-V2-ndk",
-                "android.hardware.common.fmq-V1-ndk",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libvndksupport",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "UnisocDataCollection",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/UnisocDataCollection",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "android.hardware.audio.service",
     owner: "xiaomi",
     target: {
@@ -39531,121 +39457,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hidl.allocator@1.0-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/hw/android.hidl.allocator@1.0-service",
-            ],
-            shared_libs: [
-                "android.hidl.allocator@1.0",
-                "libhidlbase",
-                "libbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "apdumper",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/apdumper",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "audiofwtool",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/audiofwtool",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libaudioclient",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "audioutils_client",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/audioutils_client",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libhidlbase",
-                "liblog",
-                "libunisocaudioutilsservice",
-                "libcutils",
-                "libutils",
-                "libunisocaudioutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "awk",
     owner: "xiaomi",
     target: {
@@ -39886,73 +39697,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "com.unisoc.hardware.audio.parameter_parser.service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/hw/com.unisoc.hardware.audio.parameter_parser.service",
-            ],
-            shared_libs: [
-                "unisoc.hardware.audio.core-V1-ndk",
-                "av-audio-types-aidl-V1-ndk",
-                "android.hardware.audio.core-V2-ndk",
-                "libbase",
-                "libbinder_ndk",
-                "android.media.audio.common.types-V3-ndk",
-                "libmedia_helper",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "com.unisoc.hardware.audio.tunning.service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/hw/com.unisoc.hardware.audio.tunning.service",
-            ],
-            shared_libs: [
-                "unisoc.hardware.audio.core-V1-ndk",
-                "libbase",
-                "libaudiohal",
-                "audioclient-types-aidl-cpp",
-                "libbinder_ndk",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    system_ext_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -40247,30 +39991,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "dnsmasq_sprd",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/dnsmasq_sprd",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "dpc",
     owner: "xiaomi",
     target: {
@@ -40420,39 +40140,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "ext_data",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/ext_data",
-            ],
-            shared_libs: [
-                "libnetutils",
-                "liblog",
-                "libcutils",
-                "libbinder_ndk",
-                "libutils",
-                "libimsbrd",
-                "libsrmi",
-                "libcrypto",
-                "libnl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "fix_cpu_freq",
     owner: "xiaomi",
     target: {
@@ -40525,31 +40212,6 @@ cc_prebuilt_binary {
     prefer: true,
     relative_install_path: "power",
     soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "fm_tools",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/fm_tools",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    device_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -40629,34 +40291,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "hcidump",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/hcidump",
-            ],
-            shared_libs: [
-                "liblog",
-                "libz",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "hostapd",
     owner: "xiaomi",
     target: {
@@ -40692,150 +40326,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "hwservicemanager",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/hwservicemanager",
-            ],
-            shared_libs: [
-                "android.hidl.token@1.0",
-                "libcrypto",
-                "libbase",
-                "libhidl-gen-utils",
-                "libselinux",
-                "libutils",
-                "libvintf",
-                "libhidlbase",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "hypsys_system",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/hypsys_system",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libcrypto",
-                "libhidlmemory",
-                "android.hidl.memory@1.0",
-                "android.hidl.allocator@1.0",
-                "vendor.xiaomi.hardware.misys@1.0",
-                "vendor.xiaomi.hardware.misys@3.0",
-                "vendor.xiaomi.hardware.misys.common-V3-ndk",
-                "libjsoncpp",
-                "vendor.xiaomi.hardware.misys.core-V1-ndk",
-                "libnl",
-                "libz",
-                "libbinder",
-                "liblog",
-                "libutils",
-                "libbase",
-                "libdumpstateaidl",
-                "libbinder_ndk",
-                "libhidlbase",
-                "miui.mqsas.native-cpp",
-                "xiaomi.system.hypsys.common-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "ims_bridged",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/ims_bridged",
-            ],
-            shared_libs: [
-                "libnetutils",
-                "liblog",
-                "libcutils",
-                "libnl",
-                "libimsbrd",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "inotifywait",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/inotifywait",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "inotifywatch",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/inotifywatch",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "interrupt",
     owner: "xiaomi",
     target: {
@@ -40858,30 +40348,6 @@ cc_prebuilt_binary {
     prefer: true,
     relative_install_path: "power",
     soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "iperf",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/iperf",
-            ],
-            shared_libs: [
-                "libstdc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -40982,43 +40448,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "linkturbonative",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/linkturbonative",
-            ],
-            shared_libs: [
-                "android.system.net.netd@1.0",
-                "android.system.net.netd@1.1",
-                "libbinder",
-                "libcrypto",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libnetutils",
-                "libselinux",
-                "libssl",
-                "libsysutils",
-                "libbase",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -41139,57 +40568,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "minidumpd",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/minidumpd",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "mkntfs",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/mkntfs",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "modem_control",
     owner: "xiaomi",
     target: {
@@ -41280,105 +40658,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "net_bpf_progs",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/net_bpf_progs",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "nhMonitorService",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/nhMonitorService",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbase",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "ntfs3g",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/ntfs3g",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "ntfsfix",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/ntfsfix",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -41491,35 +40770,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "remotedisplay",
-    owner: "xiaomi",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/bin/remotedisplay",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libhidlbase",
-                "liblog",
-                "libremotedisplayservice",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "rkp_factory_extraction_tool",
     owner: "xiaomi",
     target: {
@@ -41602,57 +40852,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "sfpd",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/sfpd",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libnl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "sgm.cpu_memory",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/sgm.cpu_memory",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "sh",
     owner: "xiaomi",
     target: {
@@ -41671,42 +40870,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "slogmodem",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/slogmodem",
-            ],
-            shared_libs: [
-                "libc",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libservices",
-                "liblz4",
-                "libunievent",
-                "cplog_common",
-                "libcplog",
-                "libhidlbase",
-                "vendor.sprd.hardware.cplog_svc@1.0",
-                "libbinder_ndk",
-                "vendor.sprd.hardware.cplog_svc-V1-ndk",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -41743,32 +40906,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "sprd_networkcontrol",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/sprd_networkcontrol",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "sprdstorageproxyd",
     owner: "xiaomi",
     target: {
@@ -41794,35 +40931,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "srmi_proxyd",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/srmi_proxyd",
-            ],
-            shared_libs: [
-                "libnetutils",
-                "liblog",
-                "libcutils",
-                "libsrmi",
-                "libsrmiservice",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -41997,39 +41105,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "tool_service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/tool_service",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libhidlbase",
-                "libbase",
-                "libbinder_ndk",
-                "libsysutils",
-                "vendor.sprd.hardware.log@1.0",
-                "vendor.sprd.hardware.tool-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "toolbox",
     owner: "xiaomi",
     target: {
@@ -42194,60 +41269,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "ummd",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/ummd",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc",
-                "libpsi",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "uni_wifi",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/uni_wifi",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "uniai_testbench",
     owner: "xiaomi",
     target: {
@@ -42324,121 +41345,6 @@ cc_prebuilt_binary {
     prefer: true,
     relative_install_path: "hw",
     soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "uniresctlopt",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system_ext/bin/uniresctlopt",
-            ],
-            shared_libs: [
-                "libbase",
-                "libnl",
-                "libprocessgroup",
-                "libutils",
-                "libbinder",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "unishutdown_detect_log",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/unishutdown_detect_log",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libxml2",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "unisocaudioutils",
-    owner: "xiaomi",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/system_ext/bin/unisocaudioutils",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libhidlbase",
-                "liblog",
-                "libunisocaudioutilsservice",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "uniview",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/uniview",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
 }
 
 cc_prebuilt_binary {
@@ -43281,112 +42187,6 @@ cc_prebuilt_binary {
     prefer: true,
     relative_install_path: "hw",
     soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "ylog",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/ylog",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libcutils",
-                "libylog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "ylogctl",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/ylogctl",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "ylogkat",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/ylogkat",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "ylogksg",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/product/bin/ylogksg",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    product_specific: true,
 }
 
 cc_prebuilt_binary {
