@@ -20881,7 +20881,6 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.1-unisoc-service \
     android.hardware.media.omx@1.0-service \
     android.hardware.neuralnetworks@aidl-service-armnn-gpu \
-    android.hardware.power.stats-service.example \
     android.hardware.security.keymint@2.0-unisoc.service.trusty \
     android.hardware.usb-service.unisoc \
     android.hardware.wifi@1.0-service-lazy \
