@@ -1390,9 +1390,19 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.xiaomi.hardware.misys@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.misys@1.0.so \
     vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.xiaomi.hardware.misys@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.misys@3.0.so \
     vendor/xiaomi/serenity/proprietary/system_ext/lib64/xiaomi.system.hypsys.common-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/xiaomi.system.hypsys.common-V1-ndk.so \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/awk:$(TARGET_COPY_OUT_VENDOR)/bin/awk \
     vendor/xiaomi/serenity/proprietary/vendor/bin/create_splloader_dual_slot_byname_path.sh:$(TARGET_COPY_OUT_VENDOR)/bin/create_splloader_dual_slot_byname_path.sh \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/hw/android.hardware.biometrics.face@1.0-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.face@1.0-service.example \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service-lazy:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service-lazy \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/hw/android.hardware.health-service.example:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health-service.example \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors-service.multihal \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
     vendor/xiaomi/serenity/proprietary/vendor/bin/idlefast.sh:$(TARGET_COPY_OUT_VENDOR)/bin/idlefast.sh \
     vendor/xiaomi/serenity/proprietary/vendor/bin/init.insmod.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.insmod.sh \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/iw:$(TARGET_COPY_OUT_VENDOR)/bin/iw \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/logwrapper:$(TARGET_COPY_OUT_VENDOR)/bin/logwrapper \
     vendor/xiaomi/serenity/proprietary/vendor/bin/power/backlight/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/backlight/readme \
     vendor/xiaomi/serenity/proprietary/vendor/bin/power/cpu/dvfs/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/dvfs/readme \
     vendor/xiaomi/serenity/proprietary/vendor/bin/power/cpu/fix_freq/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/cpu/fix_freq/readme \
@@ -1417,8 +1427,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/bin/power/tops/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/tops/readme \
     vendor/xiaomi/serenity/proprietary/vendor/bin/power/total/readme:$(TARGET_COPY_OUT_VENDOR)/bin/power/total/readme \
     vendor/xiaomi/serenity/proprietary/vendor/bin/power/total/tool/total.sh:$(TARGET_COPY_OUT_VENDOR)/bin/power/total/tool/total.sh \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/rkp_factory_extraction_tool:$(TARGET_COPY_OUT_VENDOR)/bin/rkp_factory_extraction_tool \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/sh:$(TARGET_COPY_OUT_VENDOR)/bin/sh \
     vendor/xiaomi/serenity/proprietary/vendor/bin/speedrestrictor.sh:$(TARGET_COPY_OUT_VENDOR)/bin/speedrestrictor.sh \
     vendor/xiaomi/serenity/proprietary/vendor/bin/swappiness.sh:$(TARGET_COPY_OUT_VENDOR)/bin/swappiness.sh \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/toolbox:$(TARGET_COPY_OUT_VENDOR)/bin/toolbox \
+    vendor/xiaomi/serenity/proprietary/vendor/bin/toybox_vendor:$(TARGET_COPY_OUT_VENDOR)/bin/toybox_vendor \
     vendor/xiaomi/serenity/proprietary/vendor/bin/trafficshow.sh:$(TARGET_COPY_OUT_VENDOR)/bin/trafficshow.sh \
     vendor/xiaomi/serenity/proprietary/vendor/bin/zramwb.sh:$(TARGET_COPY_OUT_VENDOR)/bin/zramwb.sh \
     vendor/xiaomi/serenity/proprietary/vendor/etc/BBAT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/BBAT.conf \
@@ -20092,38 +20106,225 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/firmware/vecft-zh.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/vecft-zh.elf \
     vendor/xiaomi/serenity/proprietary/vendor/firmware/xml2bin.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/xml2bin.txt \
     vendor/xiaomi/serenity/proprietary/vendor/framework/androidx.camera.extensions.impl.jar:$(TARGET_COPY_OUT_VENDOR)/framework/androidx.camera.extensions.impl.jar \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common-util.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common@5.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@5.0.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common@7.0-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.0-enums.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common@7.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.0-util.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.0.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common@7.1-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.1-enums.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.common@7.1-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.1-util.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.effect@7.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.effect@7.0-util.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio.effect@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.effect@7.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio@7.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio@7.0-util.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio@7.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio@7.1-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio@7.1-util.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio@7.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.bluetooth.audio-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.bluetooth.audio-impl.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.bluetooth.audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.bluetooth.audio@2.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.bluetooth.audio@2.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.boot@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.boot@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.boot@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.boot@1.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.boot@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.boot@1.2.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.broadcastradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.broadcastradio@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.camera.common@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.common@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.camera.device@3.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.2.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.camera.device@3.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.3.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.camera.device@3.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.4.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.5.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.camera.device@3.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.6.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.camera.provider@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.cas.native@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.cas.native@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.cas@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.cas@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.cas@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.cas@1.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.cas@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.cas@1.2.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.media.c2@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.media.c2@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.media.c2@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.media.c2@1.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.nfc@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.nfc@1.2.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.radio.deprecated@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio.deprecated@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.radio@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.radio@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.2.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.secure_element@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.secure_element@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.sensors@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.0-ScopedWakelock.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.sensors@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.sensors@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.thermal@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.thermal@2.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hidl.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.allocator@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/android.hidl.memory.block@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.memory.block@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera.device@1.0-impl.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.broadcastradio@1.0-impl.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/hw/bootctrl.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/bootctrl.default.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioclient_aidl_conversion.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofoundation.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libavservices_minijail.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavservices_minijail.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_aidl.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libcodec2_hidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libcodec2_hidl_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl_plugin.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libcodec2_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_vndk.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libdav1d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdav1d.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrm.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libeffects.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeffects.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libeffectsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeffectsconfig.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidltransport.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwbinder.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libhwc2on1adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwc2on1adapter.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmediautils_vendor.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libmemunreachable.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmemunreachable.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libnbaio_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnbaio_mono.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsfplugin_ccodec_utils.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libshmemcompat.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshmemcompat.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libshmemutil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshmemutil.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_bufferpool@2.0.1.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyalsa.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libtrusty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrusty.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvibrator.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediacas/libclearkeycasplugin.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/soundfx/libbundlewrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libbundlewrapper.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/soundfx/libdownmix.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdownmix.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdynproc.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/soundfx/libeffectproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libeffectproxy.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/soundfx/libhapticgenerator.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhapticgenerator.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/soundfx/libldnhncr.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libldnhncr.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/soundfx/libreverbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libreverbwrapper.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/soundfx/libvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvisualizer.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common-util.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@5.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@5.0.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.0-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.0-enums.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.0-util.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.0.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.1-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.1-enums.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.1-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.1-util.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.effect@7.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.effect@7.0-util.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.effect@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.effect@7.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio@7.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio@7.0-util.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio@7.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio@7.1-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio@7.1-util.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio@7.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.biometrics.face@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.biometrics.face@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.bluetooth.audio-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth.audio-impl.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.bluetooth.audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth.audio@2.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth.audio@2.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.bluetooth@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.bluetooth@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.bluetooth@1.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.boot@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.boot@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.boot@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.boot@1.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.boot@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.boot@1.2.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.broadcastradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.broadcastradio@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.broadcastradio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.broadcastradio@2.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.camera.common@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.common@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.device@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.camera.device@3.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.device@3.2.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.camera.device@3.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.device@3.3.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.camera.device@3.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.device@3.4.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.device@3.5.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.camera.device@3.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.device@3.6.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.camera.provider@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.camera.provider@2.4.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.cas.native@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.cas.native@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.cas@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.cas@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.gatekeeper@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.gatekeeper@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.graphics.composer@2.1-resources.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.graphics.composer@2.1-resources.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.graphics.composer@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.graphics.composer@2.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.graphics.composer@2.2-resources.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.graphics.composer@2.2-resources.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.graphics.composer@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.graphics.composer@2.2.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.graphics.composer@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.graphics.composer@2.3.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.graphics.composer@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.graphics.composer@2.4.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.keymaster@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.keymaster@3.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.keymaster@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.keymaster@4.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.neuralnetworks@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.neuralnetworks@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.neuralnetworks@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.neuralnetworks@1.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.neuralnetworks@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.neuralnetworks@1.2.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.neuralnetworks@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.neuralnetworks@1.3.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.nfc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.nfc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.nfc@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.nfc@1.2.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.radio.deprecated@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.radio.deprecated@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.radio@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.radio@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.radio@1.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.radio@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.radio@1.2.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.secure_element@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.secure_element@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.sensors@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors@2.0-ScopedWakelock.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.sensors@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors@2.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.sensors@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.sensors@2.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.thermal@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.thermal@2.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.wifi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.wifi@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.1.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.wifi@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.2.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.wifi@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.3.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.wifi@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.4.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.wifi@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.5.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.wifi@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.wifi@1.6.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hidl.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hidl.allocator@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hidl.memory.block@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hidl.memory.block@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/android.system.wifi.keystore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.system.wifi.keystore@1.0.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/camera.device@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera.device@1.0-impl.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.broadcastradio@1.0-impl.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.renderscript@1.0-impl.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/hw/bootctrl.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/bootctrl.default.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/lib_android_keymaster_keymint_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_android_keymaster_keymint_utils.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioclient_aidl_conversion.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofoundation.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libbinderdebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinderdebug.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_aidl.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libcodec2_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vndk.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libcppbor_external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppbor_external.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libcppcose_rkp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppcose_rkp.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libdav1d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdav1d.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libeffects.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffects.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libeffectsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffectsconfig.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwbinder.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libhwc2on1adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwc2on1adapter.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwc2onfbadapter.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libkeymaster4support.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster4support.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_messages.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_portable.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libkeymint.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymint.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libkeymint_support.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymint_support.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-wifi-hidl.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediautils_vendor.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libmemunreachable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemunreachable.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libnbaio_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnbaio_mono.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpuresoftkeymasterdevice.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfplugin_ccodec_utils.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libshmemcompat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshmemcompat.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libshmemutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshmemutil.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libsoft_attestation_cert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoft_attestation_cert.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferpool@2.0.1.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libtextclassifier_hash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtextclassifier_hash.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyalsa.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libtrusty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrusty.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libvibrator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvibrator.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediacas/libclearkeycasplugin.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/soundfx/libbundlewrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libbundlewrapper.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/soundfx/libdownmix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdownmix.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdynproc.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/soundfx/libeffectproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libeffectproxy.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/soundfx/libhapticgenerator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhapticgenerator.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/soundfx/libldnhncr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libldnhncr.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/soundfx/libreverbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libreverbwrapper.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/soundfx/libvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvisualizer.so \
     vendor/xiaomi/serenity/proprietary/vendor/overlay/AospBtOverlay/AospBtOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay/AospBtOverlay.apk \
     vendor/xiaomi/serenity/proprietary/vendor/overlay/AospBtOverlay_Qogirl6/AospBtOverlay_Qogirl6.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay_Qogirl6/AospBtOverlay_Qogirl6.apk \
     vendor/xiaomi/serenity/proprietary/vendor/overlay/AospWifiOverlay_Marlin3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospWifiOverlay_Marlin3.apk \
@@ -20172,100 +20373,25 @@ PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.service@2.1 \
     android.frameworks.cameraservice.service@2.2 \
     android.frameworks.sensorservice@1.0 \
-    android.hardware.audio.common-util \
-    android.hardware.audio.common@5.0 \
-    android.hardware.audio.common@7.0 \
-    android.hardware.audio.common@7.0-util \
-    android.hardware.audio.common@7.1-util \
-    android.hardware.audio.effect@7.0 \
     android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio.effect@7.0-util \
-    android.hardware.audio@7.0 \
-    android.hardware.audio@7.0-util \
-    android.hardware.audio@7.1 \
     android.hardware.audio@7.1-impl \
-    android.hardware.audio@7.1-util \
     android.hardware.biometrics.common-V2-ndk \
     android.hardware.biometrics.face-V2-ndk \
-    android.hardware.biometrics.face@1.0 \
     android.hardware.biometrics.fingerprint-V2-ndk \
-    android.hardware.bluetooth.audio-impl \
-    android.hardware.bluetooth.audio@2.0 \
-    android.hardware.bluetooth.audio@2.1 \
-    android.hardware.bluetooth@1.0 \
-    android.hardware.bluetooth@1.1 \
-    android.hardware.boot@1.0 \
     android.hardware.boot@1.0-impl-1.2 \
-    android.hardware.boot@1.1 \
-    android.hardware.boot@1.2 \
-    android.hardware.broadcastradio@1.0 \
-    android.hardware.broadcastradio@1.0-impl \
-    android.hardware.broadcastradio@2.0 \
-    android.hardware.camera.common@1.0 \
-    android.hardware.camera.device@1.0 \
-    android.hardware.camera.device@3.2 \
-    android.hardware.camera.device@3.3 \
-    android.hardware.camera.device@3.4 \
-    android.hardware.camera.device@3.5 \
-    android.hardware.camera.device@3.6 \
-    android.hardware.camera.provider@2.4 \
     android.hardware.camera.provider@2.4-external-sprd \
     android.hardware.camera.provider@2.4-impl-sprd \
     android.hardware.camera.provider@2.4-legacy-sprd \
-    android.hardware.cas.native@1.0 \
-    android.hardware.cas@1.0 \
-    android.hardware.cas@1.1 \
-    android.hardware.cas@1.2 \
-    android.hardware.gatekeeper@1.0 \
     android.hardware.graphics.allocator-V1-ndk \
     android.hardware.graphics.allocator@4.0-impl-arm \
     android.hardware.graphics.common-V3-ndk \
-    android.hardware.graphics.composer@2.1 \
-    android.hardware.graphics.composer@2.1-resources \
-    android.hardware.graphics.composer@2.2 \
-    android.hardware.graphics.composer@2.2-resources \
-    android.hardware.graphics.composer@2.3 \
-    android.hardware.graphics.composer@2.4 \
     android.hardware.graphics.mapper@4.0-impl-arm \
-    android.hardware.keymaster@3.0 \
-    android.hardware.keymaster@4.0 \
-    android.hardware.media.c2@1.0 \
-    android.hardware.media.c2@1.1 \
     android.hardware.neuralnetworks-V1-ndk \
     android.hardware.neuralnetworks-V4-ndk \
-    android.hardware.neuralnetworks@1.0 \
-    android.hardware.neuralnetworks@1.1 \
-    android.hardware.neuralnetworks@1.2 \
-    android.hardware.neuralnetworks@1.3 \
-    android.hardware.nfc@1.0 \
-    android.hardware.nfc@1.1 \
-    android.hardware.nfc@1.2 \
-    android.hardware.radio.deprecated@1.0 \
-    android.hardware.radio@1.0 \
-    android.hardware.radio@1.1 \
-    android.hardware.radio@1.2 \
-    android.hardware.renderscript@1.0-impl \
-    android.hardware.secure_element@1.0 \
     android.hardware.security.keymint-V1-ndk \
-    android.hardware.sensors@1.0 \
-    android.hardware.sensors@2.0 \
-    android.hardware.sensors@2.0-ScopedWakelock \
-    android.hardware.sensors@2.1 \
     android.hardware.sensors@2.X-sprd_subhal \
-    android.hardware.thermal@1.0 \
-    android.hardware.thermal@2.0 \
-    android.hardware.wifi@1.0 \
-    android.hardware.wifi@1.1 \
-    android.hardware.wifi@1.2 \
-    android.hardware.wifi@1.3 \
-    android.hardware.wifi@1.4 \
-    android.hardware.wifi@1.5 \
-    android.hardware.wifi@1.6 \
-    android.hidl.allocator@1.0 \
-    android.hidl.memory.block@1.0 \
     android.media.audio.common.types-V1-cpp \
     android.system.keystore2-V1-ndk \
-    android.system.wifi.keystore@1.0 \
     arm.graphics-V1-ndk \
     arm.graphics-V1-ndk_platform \
     arm.graphics-V2-ndk \
@@ -20284,9 +20410,7 @@ PRODUCT_PACKAGES += \
     autotesttcard \
     autotestwifi \
     av-types-aidl-cpp \
-    bootctrl.default \
     btaudio_offload_if \
-    camera.device@1.0-impl \
     camera.device@3.2-impl-sprd \
     camera.device@3.3-impl-sprd \
     camera.device@3.4-external-impl-sprd \
@@ -20331,24 +20455,18 @@ PRODUCT_PACKAGES += \
     libWhite_point_shift \
     libXMPCore \
     libXMPFiles \
-    lib_android_keymaster_keymint_utils \
     lib_camera_frc \
     lib_crypto \
     lib_hdr_tm \
     lib_hsv_rgb_conv \
-    libalsautils \
     libap_opt \
     libapcomm \
     libapdeepsleep \
     libatci \
-    libaudioclient_aidl_conversion \
-    libaudiofoundation \
     libaudionpi \
-    libaudiopreprocessing \
     libavcodec-59 \
     libavutil-57 \
     libbluetooth_audio_session \
-    libbluetooth_audio_session_aidl \
     libbokeh_depth \
     libbokeh_gaussian \
     libbokeh_gaussian_adapter \
@@ -20358,7 +20476,6 @@ PRODUCT_PACKAGES += \
     libbt-sprd_eut \
     libbt-sprd_suite \
     libbt-ssp_bt \
-    libbundlewrapper \
     libbundlewrapper2 \
     libcalcsharpness \
     libcalinv \
@@ -20405,10 +20522,6 @@ PRODUCT_PACKAGES += \
     libcheckkeybox \
     libcheckpid \
     libchipid \
-    libclearkeycasplugin \
-    libcodec2_hidl@1.0 \
-    libcodec2_hidl@1.1 \
-    libcodec2_hidl_plugin \
     libcodec2_unisoc_av1dec \
     libcodec2_unisoc_avcdec \
     libcodec2_unisoc_avcenc \
@@ -20430,19 +20543,12 @@ PRODUCT_PACKAGES += \
     libcodec2_unisoc_store \
     libcodec2_unisoc_vp8dec \
     libcodec2_unisoc_vp9dec \
-    libcodec2_vndk \
     libcomcontrol \
     libcplog \
     libcppdrv_r6p0 \
-    libdav1d \
     libdcxcali \
     libdfa \
-    libdownmix \
-    libdrmclearkeyplugin \
     libdynamicproduction \
-    libdynproc \
-    libeffectproxy \
-    libeffects \
     libeic_trusty \
     libeng_tok \
     libengbt \
@@ -20468,12 +20574,9 @@ PRODUCT_PACKAGES += \
     libgpspc \
     libgpudataproducer \
     libgyrostab \
-    libhapticgenerator \
     libhdr \
     libhidparser_sensor \
     libhqcmd \
-    libhwc2on1adapter \
-    libhwc2onfbadapter \
     libidispatch \
     libidispatchsm \
     libifaatrusty \
@@ -20488,17 +20591,11 @@ PRODUCT_PACKAGES += \
     libjpegenc_sw_sprd \
     libkernelbootcp.trusty \
     libkey \
-    libkeymaster4support \
-    libkeymint \
-    libkeymint_support \
     libkeypadnpi \
-    libkeystore-engine-wifi-hidl \
-    libkeystore-wifi-hidl \
     liblcdnpi \
     liblcsagent \
     liblcscp \
     liblcsmgt \
-    libldnhncr \
     liblightportrait \
     liblightweightpipeline \
     libliom \
@@ -20528,7 +20625,6 @@ PRODUCT_PACKAGES += \
     libmotiondetect \
     libmt_trusty@1.3 \
     libmulticam \
-    libnbaio_mono \
     libnefuse \
     libnpi_rtc \
     libomx_MF2SF_sw_sprd \
@@ -20562,7 +20658,6 @@ PRODUCT_PACKAGES += \
     libpss_isp2.7 \
     libreadfixednv \
     librebootcmd \
-    libreverbwrapper \
     librifaacheck \
     libril-lite \
     libril-private \
@@ -20573,8 +20668,6 @@ PRODUCT_PACKAGES += \
     libsecrpmbdata_platform \
     libsensorndkbridge \
     libsensornpi \
-    libsfplugin_ccodec_utils \
-    libshmemcompat \
     libsixth_core_v2 \
     libsl_fp_impl \
     libsoter_checkx \
@@ -20642,7 +20735,6 @@ PRODUCT_PACKAGES += \
     libsprdxdr2 \
     libsprdxdr_1_2 \
     libsprdynr2cnr4 \
-    libstagefright_bufferpool@2.0.1 \
     libstagefright_hdcp \
     libsupl \
     libswresample-4 \
@@ -20653,9 +20745,7 @@ PRODUCT_PACKAGES += \
     libteeproduction \
     libtensorflowlite_aiengine \
     libtensorflowlite_c \
-    libtinycompress \
     libtinycompress_unisoc \
-    libtinyxml \
     libtrustyHalHelper \
     libtsensor \
     libtsxrawdata \
@@ -20680,10 +20770,8 @@ PRODUCT_PACKAGES += \
     libutilsparser \
     libvendor.xiaomi.hardware.fx.tunnel \
     libverify \
-    libvibrator \
     libvideo_share_memory \
     libvideonr \
-    libvisualizer \
     libvsp_ca \
     libwcn-vendor \
     libwifi-hal \
@@ -20762,27 +20850,22 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
-    android.hardware.biometrics.face@1.0-service.example \
     android.hardware.biometrics.fingerprint-service \
     android.hardware.bluetooth@1.1-service.unisoc \
     android.hardware.camera.provider@2.4-service_64 \
-    android.hardware.cas@1.2-service-lazy \
     android.hardware.drm-service-lazy.clearkey \
     android.hardware.drm-service-lazy.widevine \
     android.hardware.gatekeeper@1.0-service.trusty \
     android.hardware.graphics.allocator@4.0-service \
     android.hardware.graphics.composer@2.4-service \
-    android.hardware.health-service.example \
     android.hardware.identity-service.trusty \
     android.hardware.media.c2@1.1-unisoc-service \
     android.hardware.media.omx@1.0-service \
     android.hardware.neuralnetworks@aidl-service-armnn-gpu \
     android.hardware.power.stats-service.example \
     android.hardware.security.keymint@2.0-unisoc.service.trusty \
-    android.hardware.sensors-service.multihal \
     android.hardware.usb-service.unisoc \
     android.hardware.wifi@1.0-service-lazy \
-    awk \
     boardid_bin \
     boringssl_self_test32 \
     boringssl_self_test64 \
@@ -20803,7 +20886,6 @@ PRODUCT_PACKAGES += \
     ddr_loading \
     ddr_trans_table \
     dpc \
-    dumpsys \
     engpc \
     engpcctl \
     enhance_test \
@@ -20813,14 +20895,11 @@ PRODUCT_PACKAGES += \
     gpsd \
     gpu_loading \
     gpu_trans_table \
-    hostapd \
     interrupt \
-    iw \
     iwlist \
     iwnpi \
     iwpriv \
     lit_cpu_freq \
-    logwrapper \
     lwpsimulationdemo64 \
     mifaced \
     modem_control \
@@ -20830,10 +20909,8 @@ PRODUCT_PACKAGES += \
     paras \
     phasecheckserver \
     refnotify \
-    rkp_factory_extraction_tool \
     rpmbserver \
     sensortest \
-    sh \
     slogmodem_vendor \
     sprdstorageproxyd \
     srtd \
@@ -20842,9 +20919,7 @@ PRODUCT_PACKAGES += \
     test-nusensors \
     test_ufs_swp_config \
     thermald \
-    toolbox \
     tops \
-    toybox_vendor \
     tsupplicant \
     tuica \
     ufs_ffu \
@@ -20876,7 +20951,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.misys@3.0-service \
     vendor.xiaomi.hardware.misys@4.0-service \
     vendor_bin_iperf \
-    wpa_supplicant \
     yloglite \
     yloglitectl \
     yloglitekat
