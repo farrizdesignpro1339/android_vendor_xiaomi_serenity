@@ -20405,7 +20405,6 @@ PRODUCT_PACKAGES += \
     a2dpoffload \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio@7.1-impl \
-    android.hardware.biometrics.common-V2-ndk \
     android.hardware.biometrics.face-V2-ndk \
     android.hardware.biometrics.fingerprint-V2-ndk \
     android.hardware.boot@1.0-impl-1.2 \
