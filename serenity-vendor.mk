@@ -20102,6 +20102,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.0-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.0-enums.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/android.hardware.audio.common@7.1-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.audio.common@7.1-enums.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libcppbor_external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppbor_external.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwbinder.so \
@@ -20420,7 +20421,6 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk \
     libcomcontrol \
     libcplog \
-    libcppbor_external \
     libcppcose_rkp \
     libcppdrv_r6p0 \
     libdav1d \

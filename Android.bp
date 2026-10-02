@@ -12141,32 +12141,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcppbor_external",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcppbor_external.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcppcose_rkp",
     owner: "xiaomi",
     strip: {
@@ -12178,7 +12152,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcppcose_rkp.so",
             ],
             shared_libs: [
-                "libcppbor_external",
                 "libcrypto",
                 "liblog",
                 "libc++",
@@ -14831,7 +14804,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libcrypto",
-                "libcppbor_external",
                 "libcppcose_rkp",
                 "libc++",
                 "libc",
@@ -14864,7 +14836,6 @@ cc_prebuilt_library_shared {
                 "lib_android_keymaster_keymint_utils",
                 "libbase",
                 "libbinder_ndk",
-                "libcppbor_external",
                 "libcrypto",
                 "libcutils",
                 "libkeymaster_portable",
@@ -18529,7 +18500,6 @@ cc_prebuilt_library_shared {
                 "libkeymaster_portable",
                 "libsoft_attestation_cert",
                 "liblog",
-                "libcppbor_external",
                 "libcppcose_rkp",
                 "libcrypto",
                 "libcutils",
