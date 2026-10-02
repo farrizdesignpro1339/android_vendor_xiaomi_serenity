@@ -976,7 +976,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "liblog",
                 "libmedia_helper",
-                "libmediautils_vendor",
                 "libutils",
                 "android.hardware.audio.common-util",
                 "android.hardware.audio@7.0",
@@ -1002,7 +1001,6 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "liblog",
                 "libmedia_helper",
-                "libmediautils_vendor",
                 "libutils",
                 "android.hardware.audio.common-util",
                 "android.hardware.audio@7.0",
@@ -16458,45 +16456,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmediautils_vendor",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmediautils_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmediautils_vendor.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmemion",
     owner: "xiaomi",
     strip: {
@@ -19081,7 +19040,6 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder",
-                "libshmemutil",
                 "libutils",
                 "shared-file-region-aidl-cpp",
                 "libc++",
@@ -19096,45 +19054,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libbinder",
-                "libshmemutil",
                 "libutils",
-                "shared-file-region-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libshmemutil",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libshmemutil.so",
-            ],
-            shared_libs: [
-                "shared-file-region-aidl-cpp",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libshmemutil.so",
-            ],
-            shared_libs: [
                 "shared-file-region-aidl-cpp",
                 "libc++",
                 "libc",
