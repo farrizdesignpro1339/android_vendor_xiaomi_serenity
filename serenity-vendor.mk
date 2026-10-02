@@ -20092,6 +20092,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/firmware/vecft-zh.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/vecft-zh.elf \
     vendor/xiaomi/serenity/proprietary/vendor/firmware/xml2bin.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/xml2bin.txt \
     vendor/xiaomi/serenity/proprietary/vendor/framework/androidx.camera.extensions.impl.jar:$(TARGET_COPY_OUT_VENDOR)/framework/androidx.camera.extensions.impl.jar \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrm.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidltransport.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwbinder.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyalsa.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwbinder.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster_messages.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libtextclassifier_hash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtextclassifier_hash.so \
+    vendor/xiaomi/serenity/proprietary/vendor/lib64/libtinyalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyalsa.so \
     vendor/xiaomi/serenity/proprietary/vendor/overlay/AospBtOverlay/AospBtOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay/AospBtOverlay.apk \
     vendor/xiaomi/serenity/proprietary/vendor/overlay/AospBtOverlay_Qogirl6/AospBtOverlay_Qogirl6.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay_Qogirl6/AospBtOverlay_Qogirl6.apk \
     vendor/xiaomi/serenity/proprietary/vendor/overlay/AospWifiOverlay_Marlin3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospWifiOverlay_Marlin3.apk \
@@ -20130,7 +20140,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/usr/idc/synaptics_dsx_i2c.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/synaptics_dsx_i2c.idc \
     vendor/xiaomi/serenity/proprietary/vendor/usr/keylayout/adaptive_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/adaptive_ts.kl \
     vendor/xiaomi/serenity/proprietary/vendor/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
-
 PRODUCT_PACKAGES += \
     PQTune.unisoc \
     a2dpoffload \
@@ -20413,7 +20422,6 @@ PRODUCT_PACKAGES += \
     libdcxcali \
     libdfa \
     libdownmix \
-    libdrm \
     libdrmclearkeyplugin \
     libdynamicproduction \
     libdynproc \
@@ -20447,10 +20455,8 @@ PRODUCT_PACKAGES += \
     libgyrostab \
     libhapticgenerator \
     libhdr \
-    libhidltransport \
     libhidparser_sensor \
     libhqcmd \
-    libhwbinder \
     libhwc2on1adapter \
     libhwc2onfbadapter \
     libidispatch \
@@ -20468,7 +20474,6 @@ PRODUCT_PACKAGES += \
     libkernelbootcp.trusty \
     libkey \
     libkeymaster4support \
-    libkeymaster_messages \
     libkeymaster_portable \
     libkeymint \
     libkeymint_support \
@@ -20639,8 +20644,6 @@ PRODUCT_PACKAGES += \
     libteeproduction \
     libtensorflowlite_aiengine \
     libtensorflowlite_c \
-    libtextclassifier_hash \
-    libtinyalsa \
     libtinycompress \
     libtinycompress_unisoc \
     libtinyxml \

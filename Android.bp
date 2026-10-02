@@ -24,7 +24,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libxml2",
                 "liblog",
-                "libdrm",
                 "libc++",
                 "libc",
                 "libm",
@@ -40,7 +39,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libxml2",
                 "liblog",
-                "libdrm",
                 "libc++",
                 "libc",
                 "libm",
@@ -2682,7 +2680,6 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhidlbase",
                 "libgralloctypes",
-                "libdrm",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libc++",
@@ -2709,7 +2706,6 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhidlbase",
                 "libgralloctypes",
-                "libdrm",
                 "android.hardware.graphics.allocator@4.0",
                 "android.hardware.graphics.mapper@4.0",
                 "libc++",
@@ -2975,7 +2971,6 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhidlbase",
                 "libgralloctypes",
-                "libdrm",
                 "android.hardware.graphics.mapper@4.0",
                 "libc++",
                 "libc",
@@ -3001,7 +2996,6 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhidlbase",
                 "libgralloctypes",
-                "libdrm",
                 "android.hardware.graphics.mapper@4.0",
                 "libc++",
                 "libc",
@@ -4859,7 +4853,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libalsautils",
-                "libtinyalsa",
                 "libxml2",
                 "libatci",
                 "libaudioutils",
@@ -4938,7 +4931,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libaudioutils",
-                "libtinyalsa",
                 "libalsautils",
                 "libc++",
                 "libc",
@@ -4954,7 +4946,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libaudioutils",
-                "libtinyalsa",
                 "libalsautils",
                 "libc++",
                 "libc",
@@ -6118,7 +6109,6 @@ cc_prebuilt_library_shared {
                 "libui",
                 "libsync",
                 "libion",
-                "libdrm",
                 "libc++",
                 "libc",
                 "libm",
@@ -6137,7 +6127,6 @@ cc_prebuilt_library_shared {
                 "libui",
                 "libsync",
                 "libion",
-                "libdrm",
                 "libc++",
                 "libc",
                 "libm",
@@ -6415,7 +6404,6 @@ cc_prebuilt_library_shared {
                 "libui",
                 "libsync",
                 "libion",
-                "libdrm",
                 "lib_hdr_tm",
                 "libc++",
                 "libc",
@@ -6435,7 +6423,6 @@ cc_prebuilt_library_shared {
                 "libui",
                 "libsync",
                 "libion",
-                "libdrm",
                 "lib_hdr_tm",
                 "libc++",
                 "libc",
@@ -6477,7 +6464,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libion",
                 "libmediahdrtosdrtransform",
-                "libdrm",
                 "libpowerhal_cli",
                 "vendor.sprd.hardware.enhance-V1-ndk",
                 "libbinder",
@@ -6509,7 +6495,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libion",
                 "libmediahdrtosdrtransform",
-                "libdrm",
                 "libpowerhal_cli",
                 "vendor.sprd.hardware.enhance-V1-ndk",
                 "libbinder",
@@ -7760,7 +7745,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libaudioutils",
-                "libtinyalsa",
                 "libc++",
                 "libc",
                 "libm",
@@ -7775,7 +7759,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libaudioutils",
-                "libtinyalsa",
                 "libc++",
                 "libc",
                 "libm",
@@ -12498,41 +12481,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdrm",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libdrm.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdrm.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdrmclearkeyplugin",
     owner: "xiaomi",
     strip: {
@@ -13818,41 +13766,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhidltransport",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libhidltransport.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhidltransport.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libhidparser_sensor",
     owner: "xiaomi",
     strip: {
@@ -13926,41 +13839,6 @@ cc_prebuilt_library_shared {
     compile_multilib: "both",
     prefer: true,
     relative_install_path: "npidevice",
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libhwbinder",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libhwbinder.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhwbinder.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
     soc_specific: true,
 }
 
@@ -15037,30 +14915,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libkeymaster_messages",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeymaster_messages.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libkeymaster_portable",
     owner: "xiaomi",
     strip: {
@@ -15109,7 +14963,6 @@ cc_prebuilt_library_shared {
                 "libcppbor_external",
                 "libcrypto",
                 "libcutils",
-                "libkeymaster_messages",
                 "libkeymaster_portable",
                 "liblog",
                 "libpuresoftkeymasterdevice",
@@ -17133,7 +16986,6 @@ cc_prebuilt_library_shared {
                 "libdmabufheap",
                 "libhardware",
                 "libhidlbase",
-                "libhidltransport",
                 "liblog",
                 "libmediandk",
                 "libnativewindow",
@@ -17259,7 +17111,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libhidlbase",
-                "libhidltransport",
                 "libtrusty",
                 "libteecPlatform",
                 "libteeproduction",
@@ -17269,7 +17120,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.security.keymint-V1-ndk",
                 "lib_android_keymaster_keymint_utils",
                 "libkeymint",
-                "libkeymaster_messages",
                 "libbinder_ndk",
                 "libkeymint_support",
                 "libc++",
@@ -18773,7 +18623,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libpuresoftkeymasterdevice.so",
             ],
             shared_libs: [
-                "libkeymaster_messages",
                 "libkeymaster_portable",
                 "libsoft_attestation_cert",
                 "liblog",
@@ -18985,7 +18834,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libimpl-ril",
                 "libnetutils",
-                "libhwbinder",
                 "libbase",
                 "libbinder",
                 "libbinder_ndk",
@@ -19006,7 +18854,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libimpl-ril",
                 "libnetutils",
-                "libhwbinder",
                 "libbase",
                 "libbinder",
                 "libbinder_ndk",
@@ -19084,7 +18931,6 @@ cc_prebuilt_library_shared {
                 "libhardware_legacy",
                 "librilutils",
                 "libhidlbase",
-                "libhwbinder",
                 "libbase",
                 "libbinder",
                 "libbinder_ndk",
@@ -19127,7 +18973,6 @@ cc_prebuilt_library_shared {
                 "libhardware_legacy",
                 "librilutils",
                 "libhidlbase",
-                "libhwbinder",
                 "libbase",
                 "libbinder",
                 "libbinder_ndk",
@@ -22531,7 +22376,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libtinyalsa",
                 "libutils",
                 "libprocessgroup",
                 "libtinycompress",
@@ -22550,7 +22394,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
-                "libtinyalsa",
                 "libutils",
                 "libprocessgroup",
                 "libtinycompress",
@@ -22762,63 +22605,6 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "liblog",
                 "libc",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtextclassifier_hash",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtextclassifier_hash.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtinyalsa",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libtinyalsa.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtinyalsa.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libdl",
             ],
         },
     },
@@ -23399,7 +23185,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libxml2",
-                "libtinyalsa",
                 "libc++",
                 "libc",
                 "libm",
@@ -23455,7 +23240,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libxml2",
-                "libtinyalsa",
                 "libc++",
                 "libc",
                 "libm",
@@ -24695,7 +24479,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libhardware",
-                "libhidltransport",
                 "libhidlbase",
                 "android.hardware.sensors@1.0",
                 "android.hardware.sensors@2.0",
@@ -24725,7 +24508,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "libhardware",
-                "libhidltransport",
                 "libhidlbase",
                 "android.hardware.sensors@1.0",
                 "android.hardware.sensors@2.0",
@@ -27328,7 +27110,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "libcrypto",
                 "libbinder_ndk",
-                "libkeymaster_messages",
                 "libeic_trusty",
                 "libc++",
                 "libc",
@@ -27432,11 +27213,9 @@ cc_prebuilt_binary {
                 "libbase",
                 "libbinder_ndk",
                 "libhidlbase",
-                "libhidltransport",
                 "libhidlmemory",
                 "libhardware",
                 "liblog",
-                "libtextclassifier_hash",
                 "libutils",
                 "libnativewindow",
                 "libui",
@@ -27511,7 +27290,6 @@ cc_prebuilt_binary {
                 "libbase",
                 "libbinder_ndk",
                 "libhardware",
-                "libkeymaster_messages",
                 "libkeymint",
                 "liblog",
                 "libtrusty",
@@ -28825,7 +28603,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "libcutils",
                 "libhidlbase",
-                "libhidltransport",
                 "libteec",
                 "libteecPlatform",
                 "libmt_trusty@1.3",
