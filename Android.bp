@@ -23170,7 +23170,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libtui.so",
             ],
             shared_libs: [
-                "libclang_rt.ubsan_standalone-arm-android",
                 "liblog",
                 "libcutils",
                 "libtrusty",
@@ -23188,7 +23187,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libtui.so",
             ],
             shared_libs: [
-                "libclang_rt.ubsan_standalone-aarch64-android",
                 "liblog",
                 "libcutils",
                 "libtrusty",
@@ -25657,7 +25655,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/hw/vendor.sprd.hardware.trusty-impl.so",
             ],
             shared_libs: [
-                "libclang_rt.ubsan_standalone-arm-android",
                 "liblog",
                 "libcutils",
                 "libutils",
@@ -25677,7 +25674,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/vendor.sprd.hardware.trusty-impl.so",
             ],
             shared_libs: [
-                "libclang_rt.ubsan_standalone-aarch64-android",
                 "liblog",
                 "libcutils",
                 "libutils",
@@ -29452,7 +29448,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/tuica",
             ],
             shared_libs: [
-                "libclang_rt.ubsan_standalone-aarch64-android",
                 "liblog",
                 "libcutils",
                 "libtrusty",
@@ -29910,7 +29905,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.sprd.hardware.hdcp-service-lazy",
             ],
             shared_libs: [
-                "libclang_rt.ubsan_standalone-aarch64-android",
                 "libcutils",
                 "liblog",
                 "libbase",
@@ -30075,7 +30069,6 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.sprd.hardware.trusty-service",
             ],
             shared_libs: [
-                "libclang_rt.ubsan_standalone-aarch64-android",
                 "liblog",
                 "libcutils",
                 "libutils",
