@@ -14736,31 +14736,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libkeymaster_portable",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libkeymaster_portable.so",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libkeymint",
     owner: "xiaomi",
     strip: {
@@ -14781,7 +14756,6 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libcrypto",
                 "libcutils",
-                "libkeymaster_portable",
                 "liblog",
                 "libpuresoftkeymasterdevice",
                 "libutils",
@@ -18403,7 +18377,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libpuresoftkeymasterdevice.so",
             ],
             shared_libs: [
-                "libkeymaster_portable",
                 "libsoft_attestation_cert",
                 "liblog",
                 "libcrypto",
@@ -19242,7 +19215,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsoft_attestation_cert.so",
             ],
             shared_libs: [
-                "libkeymaster_portable",
                 "libc++",
                 "libc",
                 "libm",
