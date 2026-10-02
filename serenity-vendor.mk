@@ -20409,13 +20409,9 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-external-sprd \
     android.hardware.camera.provider@2.4-impl-sprd \
     android.hardware.camera.provider@2.4-legacy-sprd \
-    android.hardware.graphics.allocator-V1-ndk \
     android.hardware.graphics.allocator@4.0-impl-arm \
-    android.hardware.graphics.common-V3-ndk \
     android.hardware.graphics.mapper@4.0-impl-arm \
-    android.hardware.neuralnetworks-V1-ndk \
     android.hardware.neuralnetworks-V4-ndk \
-    android.hardware.security.keymint-V1-ndk \
     android.hardware.sensors@2.X-sprd_subhal \
     android.media.audio.common.types-V1-cpp \
     android.system.keystore2-V1-ndk \
