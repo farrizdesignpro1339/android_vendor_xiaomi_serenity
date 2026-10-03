@@ -1063,10 +1063,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/init/ummd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/ummd.rc \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/init/uniresctlopt.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/uniresctlopt.rc \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/init/unisocaudioutils.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/unisocaudioutils.rc \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/network_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/network_config.xml \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/nmem_cfg.pbtxt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/nmem_cfg.pbtxt \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/passwd:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/passwd \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/perflink_version.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/perflink_version.xml \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/permissions/android.software.credentials.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/android.software.credentials.xml \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/permissions/android.software.theme_picker.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/android.software.theme_picker.xml \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/permissions/android.software.themepicker.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/android.software.themepicker.xml \
