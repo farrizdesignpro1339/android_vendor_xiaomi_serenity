@@ -21271,7 +21271,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/cpu/loading",
     soc_specific: true,
 }
 
@@ -21297,7 +21297,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/cpu/trans_table",
     soc_specific: true,
 }
 
@@ -21349,7 +21349,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/ddr/bm/tool",
     soc_specific: true,
 }
 
@@ -21375,7 +21375,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/ddr/loading",
     soc_specific: true,
 }
 
@@ -21401,7 +21401,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/ddr/trans_table",
     soc_specific: true,
 }
 
@@ -21551,7 +21551,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/cpu/fix_freq",
     soc_specific: true,
 }
 
@@ -21577,7 +21577,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/ddr/fix_freq",
     soc_specific: true,
 }
 
@@ -21603,7 +21603,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/gpu/fix_freq",
     soc_specific: true,
 }
 
@@ -21656,7 +21656,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/gpu/loading",
     soc_specific: true,
 }
 
@@ -21682,7 +21682,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/gpu/trans_table",
     soc_specific: true,
 }
 
@@ -21708,7 +21708,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/interrupt",
     soc_specific: true,
 }
 
@@ -21813,7 +21813,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/cpu/lit_freq",
     soc_specific: true,
 }
 
@@ -22029,7 +22029,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/paras/tool",
     soc_specific: true,
 }
 
@@ -22349,7 +22349,7 @@ cc_prebuilt_binary {
     },
     check_elf_files: false,
     prefer: true,
-    relative_install_path: "power",
+    relative_install_path: "power/tops",
     soc_specific: true,
 }
 
