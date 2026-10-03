@@ -9940,6 +9940,7 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    allow_undefined_symbols: true,
     target: {
         android_arm: {
             srcs: [
