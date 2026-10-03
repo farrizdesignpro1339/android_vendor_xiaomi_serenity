@@ -541,7 +541,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/odm/etc/thermal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal.conf \
     vendor/xiaomi/serenity/proprietary/odm/etc/thm_thresh_cfg.xml:$(TARGET_COPY_OUT_ODM)/etc/thm_thresh_cfg.xml \
     vendor/xiaomi/serenity/proprietary/odm/etc/ueventd.rc:$(TARGET_COPY_OUT_ODM)/etc/ueventd.rc \
-    vendor/xiaomi/serenity/proprietary/odm/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest.xml \
     vendor/xiaomi/serenity/proprietary/odm/etc/zoom_config.json:$(TARGET_COPY_OUT_ODM)/etc/zoom_config.json \
     vendor/xiaomi/serenity/proprietary/odm/firmware/4e4ad239-24a4-42ac-941e-ec18e072750c.elf:$(TARGET_COPY_OUT_ODM)/firmware/4e4ad239-24a4-42ac-941e-ec18e072750c.elf \
     vendor/xiaomi/serenity/proprietary/odm/firmware/86f623f6-a299-4dfd-b560-ffd3e5a62c29.elf:$(TARGET_COPY_OUT_ODM)/firmware/86f623f6-a299-4dfd-b560-ffd3e5a62c29.elf \
@@ -981,7 +980,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/product/etc/unipnp/uniperf_config.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/unipnp/uniperf_config.xml \
     vendor/xiaomi/serenity/proprietary/product/etc/uniview_debug.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/uniview_debug.conf \
     vendor/xiaomi/serenity/proprietary/product/etc/uniview_user.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/uniview_user.conf \
-    vendor/xiaomi/serenity/proprietary/product/etc/vintf/compatibility_matrix.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/vintf/compatibility_matrix.xml \
     vendor/xiaomi/serenity/proprietary/product/etc/ylog.conf.chargemode:$(TARGET_COPY_OUT_PRODUCT)/etc/ylog.conf.chargemode \
     vendor/xiaomi/serenity/proprietary/product/etc/ylog.conf.debug:$(TARGET_COPY_OUT_PRODUCT)/etc/ylog.conf.debug \
     vendor/xiaomi/serenity/proprietary/product/etc/ylog.conf.factorytest:$(TARGET_COPY_OUT_PRODUCT)/etc/ylog.conf.factorytest \
@@ -1187,14 +1185,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/sysconfig/unavailable-srmi-feature.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/unavailable-srmi-feature.xml \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/tct_parser.py:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/tct_parser.py \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/vilte/vertical_480.raw:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vilte/vertical_480.raw \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/vintf/compatibility_matrix.202404.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/compatibility_matrix.202404.xml \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/vintf/compatibility_matrix.7.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/compatibility_matrix.7.xml \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/vintf/compatibility_matrix.8.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/compatibility_matrix.8.xml \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/manifest.xml \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/vintf/manifest/android.hidl.allocator@1.0-service.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/manifest/android.hidl.allocator@1.0-service.xml \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/vintf/manifest/manifest_hypsys_system.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/manifest/manifest_hypsys_system.xml \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/vintf/manifest/manifest_media_audio_parameter_parser_aidl_unisoc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/manifest/manifest_media_audio_parameter_parser_aidl_unisoc.xml \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/vintf/manifest/manifest_media_audio_tunning_aidl_unisoc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vintf/manifest/manifest_media_audio_tunning_aidl_unisoc.xml \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/vip_net_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/vip_net_whitelist.xml \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/watchdog_cfg.pbtxt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/watchdog_cfg.pbtxt \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/wmshell.protolog.json.gz:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wmshell.protolog.json.gz \
@@ -1943,49 +1933,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     vendor/xiaomi/serenity/proprietary/vendor/etc/uniber.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uniber.conf \
     vendor/xiaomi/serenity/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/compatibility_matrix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/compatibility_matrix.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/ai_engine-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/ai_engine-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.face-v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.biometrics.face-v2.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.cas@1.2-service-lazy.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.drm-service.clearkey.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/android.hardware.gatekeeper@1.0-service.trusty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.gatekeeper@1.0-service.trusty.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/android.hardware.health-service.example.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.health-service.example.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint@2.0-unisoc.service.trusty.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.security.keymint@2.0-unisoc.service.trusty.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/android.hardware.sensors-multihal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.sensors-multihal.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/android.hardware.usb-service.unisoc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.usb-service.unisoc.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.hostapd.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.supplicant.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.supplicant.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/bluetooth_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/bluetooth_audio.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/combinedservice.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/combinedservice.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/cplog_svc-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/cplog_svc-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/enhance-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/enhance-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/fingerprint-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/fingerprint-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/hdcp-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/hdcp-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/identity-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/identity-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/ifaa-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/ifaa-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/manifest_dualsim.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_dualsim.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/manifest_face_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_face_default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_1_unisoc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_media_c2_V1_1_unisoc.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/network-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/network-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/power.stats-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/power.stats-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/soter_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/soter_default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/trusty-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/trusty-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/tui-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/tui-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/unionpnp_service-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/unionpnp_service-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/vendor-fingerprintmmi-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor-fingerprintmmi-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/vendor-power-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor-power-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/vendor-tool-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor-tool-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/vendor.sprd.gnss-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.sprd.gnss-default.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/vendor.sprd.hardware.boot@1.2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.sprd.hardware.boot@1.2.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml \
-    vendor/xiaomi/serenity/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@4.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys@4.0.xml \
     vendor/xiaomi/serenity/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/xiaomi/serenity/proprietary/vendor/etc/wifi/vendor_hals/unisoc_wifi_hal_arm64.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/unisoc_wifi_hal_arm64.xml \
     vendor/xiaomi/serenity/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
