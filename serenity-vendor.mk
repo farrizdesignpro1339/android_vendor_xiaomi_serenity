@@ -896,7 +896,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/product/bin/ylogdebug.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/ylogdebug.sh \
     vendor/xiaomi/serenity/proprietary/product/bin/ylogkat:$(TARGET_COPY_OUT_PRODUCT)/bin/ylogkat \
     vendor/xiaomi/serenity/proprietary/product/bin/ylogksg:$(TARGET_COPY_OUT_PRODUCT)/bin/ylogksg \
-    vendor/xiaomi/serenity/proprietary/product/etc/aconfig_flags.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/aconfig_flags.pb \
     vendor/xiaomi/serenity/proprietary/product/etc/analyzer.py:$(TARGET_COPY_OUT_PRODUCT)/etc/analyzer.py \
     vendor/xiaomi/serenity/proprietary/product/etc/appPowerSaveConfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/appPowerSaveConfig.xml \
     vendor/xiaomi/serenity/proprietary/product/etc/auto-install.json:$(TARGET_COPY_OUT_PRODUCT)/etc/auto-install.json \
@@ -1036,7 +1035,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/system_ext/bin/ummd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/ummd \
     vendor/xiaomi/serenity/proprietary/system_ext/bin/uniresctlopt:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/uniresctlopt \
     vendor/xiaomi/serenity/proprietary/system_ext/bin/unisocaudioutils:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/unisocaudioutils \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/aconfig_flags.pb:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/aconfig_flags.pb \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/build_flags.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/build_flags.json \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/compatconfig/settings-platform-compat-config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/compatconfig/settings-platform-compat-config.xml \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/config_default.json:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/config_default.json \
