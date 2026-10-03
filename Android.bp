@@ -23799,3 +23799,43 @@ cc_prebuilt_library_shared {
     prefer: true,
     system_ext_specific: true,
 }
+
+cc_prebuilt_library_shared {
+    name: "libtinycompress",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libtinycompress.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtinycompress.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
