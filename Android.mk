@@ -40,46 +40,6 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := DisplayCutoutEmulationCornerOverlay
-LOCAL_SRC_FILES := proprietary/product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := DisplayCutoutEmulationDoubleOverlay
-LOCAL_SRC_FILES := proprietary/product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := DisplayCutoutEmulationHoleOverlay
-LOCAL_SRC_FILES := proprietary/product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := DisplayCutoutEmulationTallOverlay
-LOCAL_SRC_FILES := proprietary/product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := DisplayCutoutEmulationWaterfallOverlay
-LOCAL_SRC_FILES := proprietary/product/overlay/DisplayCutoutEmulationWaterfall/DisplayCutoutEmulationWaterfallOverlay.apk
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := FileexplorerLaauncherIconOverlay
 LOCAL_SRC_FILES := proprietary/product/overlay/FileexplorerLaauncherIconOverlay.apk
 LOCAL_MODULE_CLASS := ETC
@@ -266,22 +226,6 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := MusicLauncherIconOverlay
 LOCAL_SRC_FILES := proprietary/product/overlay/MusicLauncherIconOverlay.apk
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := NavigationBarMode3ButtonOverlay
-LOCAL_SRC_FILES := proprietary/product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := NavigationBarModeGesturalOverlay
-LOCAL_SRC_FILES := proprietary/product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
