@@ -224,14 +224,6 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := NotesRoleEnabledOverlay
-LOCAL_SRC_FILES := proprietary/product/overlay/NotesRoleEnabled/NotesRoleEnabledOverlay.apk
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := ScannerLauncherIconOverlay
 LOCAL_SRC_FILES := proprietary/product/overlay/ScannerLauncherIconOverlay.apk
 LOCAL_MODULE_CLASS := ETC
@@ -266,14 +258,6 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := TeleServiceOverlay
 LOCAL_SRC_FILES := proprietary/product/overlay/TeleServiceOverlay.apk
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := TransparentNavigationBarOverlay
-LOCAL_SRC_FILES := proprietary/product/overlay/TransparentNavigationBar/TransparentNavigationBarOverlay.apk
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_SUFFIX := .apk
 LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
