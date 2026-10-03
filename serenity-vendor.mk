@@ -20422,12 +20422,10 @@ PRODUCT_PACKAGES += \
     arm.graphics-V5-ndk \
     audio.bluetooth.ums9230 \
     audio.primary.ums9230 \
-    audioclient-types-aidl-cpp \
     autotestfinger \
     autotestsim \
     autotesttcard \
     autotestwifi \
-    av-types-aidl-cpp \
     btaudio_offload_if \
     camera.device@3.2-impl-sprd \
     camera.device@3.3-impl-sprd \
@@ -20442,7 +20440,6 @@ PRODUCT_PACKAGES += \
     enhance.unisoc \
     fingerprint.goodix.default \
     fingerprint.silead.default \
-    framework-permission-aidl-cpp \
     gps.default \
     gralloc.default \
     gsp.unisoc \
@@ -20805,7 +20802,6 @@ PRODUCT_PACKAGES += \
     power.sprd \
     sensors.camera.light \
     sensors.dynamic_sensor_subhal \
-    shared-file-region-aidl-cpp \
     unisoc.bootctrl \
     vendor.sprd.algoservice@1.0 \
     vendor.sprd.hardware.boot@1.2 \
