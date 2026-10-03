@@ -48,14 +48,6 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := FontNotoSerifSourceOverlay
-LOCAL_SRC_FILES := proprietary/product/overlay/FontNotoSerifSource/FontNotoSerifSourceOverlay.apk
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/overlay
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := FrameworkResOverlay
 LOCAL_SRC_FILES := proprietary/product/overlay/FrameworkResOverlay.apk
 LOCAL_MODULE_CLASS := ETC
