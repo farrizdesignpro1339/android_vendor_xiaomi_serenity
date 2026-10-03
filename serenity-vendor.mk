@@ -20916,7 +20916,6 @@ PRODUCT_PACKAGES += \
     phasecheckserver \
     refnotify \
     rpmbserver \
-    sensortest \
     slogmodem_vendor \
     sprdstorageproxyd \
     srtd \
