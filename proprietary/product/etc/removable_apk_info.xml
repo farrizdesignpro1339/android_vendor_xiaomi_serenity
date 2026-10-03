@@ -1,3 +1,4 @@
+<resources>
 <string-array name="removable_apk_list">
     <item>com.android.calendar.go</item>
     <item>com.miui.android.fashiongallery</item>
@@ -11,3 +12,4 @@
     <item>/product/data-app/CalculatorGo/CalculatorGo.apk</item>
     <item>/product/data-app/MIDropGo/MIDropGo.apk</item>
 </string-array>
+</resources>
