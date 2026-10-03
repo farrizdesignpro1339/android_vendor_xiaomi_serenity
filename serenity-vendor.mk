@@ -20414,7 +20414,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0-impl-arm \
     android.hardware.graphics.mapper@4.0-impl-arm \
     android.hardware.sensors@2.X-sprd_subhal \
-    android.system.keystore2-V1-ndk \
     arm.graphics-V1-ndk \
     arm.graphics-V1-ndk_platform \
     arm.graphics-V2-ndk \
