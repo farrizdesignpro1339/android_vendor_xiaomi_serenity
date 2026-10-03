@@ -1389,7 +1389,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.xiaomi.hardware.misys.core-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.misys.core-V1-ndk.so \
     vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.xiaomi.hardware.misys@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.misys@1.0.so \
     vendor/xiaomi/serenity/proprietary/system_ext/lib64/vendor.xiaomi.hardware.misys@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.xiaomi.hardware.misys@3.0.so \
-    vendor/xiaomi/serenity/proprietary/system_ext/lib64/xiaomi.system.hypsys.common-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/xiaomi.system.hypsys.common-V1-ndk.so \
     vendor/xiaomi/serenity/proprietary/vendor/bin/awk:$(TARGET_COPY_OUT_VENDOR)/bin/awk \
     vendor/xiaomi/serenity/proprietary/vendor/bin/create_splloader_dual_slot_byname_path.sh:$(TARGET_COPY_OUT_VENDOR)/bin/create_splloader_dual_slot_byname_path.sh \
     vendor/xiaomi/serenity/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
