@@ -861,8 +861,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/odm/lib64/npidevice/autotestfm.so:$(TARGET_COPY_OUT_ODM)/lib64/npidevice/autotestfm.so \
     vendor/xiaomi/serenity/proprietary/odm/lib64/npidevice/libfm-sprd_eut.so:$(TARGET_COPY_OUT_ODM)/lib64/npidevice/libfm-sprd_eut.so \
     vendor/xiaomi/serenity/proprietary/odm/lib64/npidevice/libunisoccamcalitest.so:$(TARGET_COPY_OUT_ODM)/lib64/npidevice/libunisoccamcalitest.so \
-    vendor/xiaomi/serenity/proprietary/odm/overlay/unisoc_overlay_core_max_cached_processed_16.apk:$(TARGET_COPY_OUT_ODM)/overlay/unisoc_overlay_core_max_cached_processed_16.apk \
-    vendor/xiaomi/serenity/proprietary/odm/overlay/unisoc_overlay_core_pinner_service_qogirl6.apk:$(TARGET_COPY_OUT_ODM)/overlay/unisoc_overlay_core_pinner_service_qogirl6.apk \
     vendor/xiaomi/serenity/proprietary/product/bin/UnisocDataCollection:$(TARGET_COPY_OUT_PRODUCT)/bin/UnisocDataCollection \
     vendor/xiaomi/serenity/proprietary/product/bin/apdumper:$(TARGET_COPY_OUT_PRODUCT)/bin/apdumper \
     vendor/xiaomi/serenity/proprietary/product/bin/data_rps.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/data_rps.sh \
@@ -1016,49 +1014,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/product/lib64/vendor.sprd.hardware.log@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.sprd.hardware.log@1.0.so \
     vendor/xiaomi/serenity/proprietary/product/lib64/vendor.sprd.hardware.tool-V1-ndk.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.sprd.hardware.tool-V1-ndk.so \
     vendor/xiaomi/serenity/proprietary/product/lib64/vendor.unisoc.frameworks.srmi-V1-ndk.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.unisoc.frameworks.srmi-V1-ndk.so \
-    vendor/xiaomi/serenity/proprietary/product/overlay/CameraLauncherIconOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/CameraLauncherIconOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/CaptivePortalLoginFrameworkOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/CaptivePortalLoginFrameworkOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/DisplayCutoutEmulationWaterfall/DisplayCutoutEmulationWaterfallOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/DisplayCutoutEmulationWaterfall/DisplayCutoutEmulationWaterfallOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/FileexplorerLaauncherIconOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/FileexplorerLaauncherIconOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/FontNotoSerifSource/FontNotoSerifSourceOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/FontNotoSerifSource/FontNotoSerifSourceOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/FrameworkResOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/FrameworkResOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GameCenterLauncherIconOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GameCenterLauncherIconOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GmsConfigOverlayCommon.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GmsConfigOverlayCommon.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GmsConfigOverlayGalleryGo.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GmsConfigOverlayGalleryGo.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GmsConfigOverlayGeotz.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GmsConfigOverlayGeotz.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GmsConfigOverlayGo.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GmsConfigOverlayGo.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GmsConfigOverlayPersonalSafety.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GmsConfigOverlayPersonalSafety.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GmsConfigOverlaySearchGo.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GmsConfigOverlaySearchGo.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GmsContactProviderOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GmsContactProviderOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GmsSettingProviderOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GmsSettingProviderOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GmsSettingsOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GmsSettingsOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GmsSystemUIOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GmsSystemUIOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GoogleDeviceLockControllerOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GoogleDeviceLockControllerOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GoogleDocumentsUIOverlayGo.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GoogleDocumentsUIOverlayGo.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GoogleExtServicesConfigOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GoogleExtServicesConfigOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GoogleHealthFitnessFrameworkOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GoogleHealthFitnessFrameworkOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GooglePermissionControllerFrameworkOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GooglePermissionControllerFrameworkOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/GooglePermissionControllerOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/GooglePermissionControllerOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/HeadSetConfigOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/HeadSetConfigOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/MiuiCarrierConfigOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/MiuiCarrierConfigOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/ModuleMetadataGoogleOverlayGo.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/ModuleMetadataGoogleOverlayGo.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/MusicLauncherIconOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/MusicLauncherIconOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/NotesRoleEnabled/NotesRoleEnabledOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/NotesRoleEnabled/NotesRoleEnabledOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/ScannerLauncherIconOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/ScannerLauncherIconOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/SettingsProvider__missi__auto_generated_rro_product.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/SettingsProvider__missi__auto_generated_rro_product.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/ShareMeLauncherIconOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/ShareMeLauncherIconOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/SysuiGoConfigOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/SysuiGoConfigOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/TeleServiceOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/TeleServiceOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/TransparentNavigationBar/TransparentNavigationBarOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/TransparentNavigationBar/TransparentNavigationBarOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/VideoplayerLauncherIconOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/VideoplayerLauncherIconOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/WallpaperOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/WallpaperOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/product/overlay/framework-res__missi__auto_generated_rro_product.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/framework-res__missi__auto_generated_rro_product.apk \
     vendor/xiaomi/serenity/proprietary/product/usr/share/ime/google/d3_lms/en_us_d3_20180105.dict:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/en_us_d3_20180105.dict \
     vendor/xiaomi/serenity/proprietary/product/usr/share/ime/google/d3_lms/mozc.data:$(TARGET_COPY_OUT_PRODUCT)/usr/share/ime/google/d3_lms/mozc.data \
     vendor/xiaomi/serenity/proprietary/system_ext/bin/SprdCameraVndTest:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/SprdCameraVndTest \
@@ -1158,7 +1113,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/profiles/com.google.android.youtube.prof:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/profiles/com.google.android.youtube.prof \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/profiles/default.prof:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/profiles/default.prof \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/security/fsverity/BuildManifestSystemExt.apk.idsig:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/security/fsverity/BuildManifestSystemExt.apk.idsig \
-    vendor/xiaomi/serenity/proprietary/system_ext/etc/security/fsverity/BuildManifestSystemExt.apk:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/security/fsverity/BuildManifestSystemExt.apk \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/selinux/bug_map:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/bug_map \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/selinux/mapping/202404.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/202404.cil \
     vendor/xiaomi/serenity/proprietary/system_ext/etc/selinux/mapping/29.0.compat.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/mapping/29.0.compat.cil \
@@ -20312,35 +20266,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/soundfx/libldnhncr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libldnhncr.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/soundfx/libreverbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libreverbwrapper.so \
     vendor/xiaomi/serenity/proprietary/vendor/lib64/soundfx/libvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvisualizer.so \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/AospBtOverlay/AospBtOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay/AospBtOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/AospBtOverlay_Qogirl6/AospBtOverlay_Qogirl6.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospBtOverlay_Qogirl6/AospBtOverlay_Qogirl6.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/AospWifiOverlay_Marlin3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospWifiOverlay_Marlin3.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/AospWifiOverlay_Marlin3_Mainline.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/AospWifiOverlay_Marlin3_Mainline.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/MultiuserOverlays.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/MultiuserOverlays.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/NetworkStackOverlayGo.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/NetworkStackOverlayGo.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/NetworkStackOverlayGsi.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/NetworkStackOverlayGsi.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/SettingsProviderOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/SettingsProviderOverlay.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/TetheringConfigOverlayGo.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/TetheringConfigOverlayGo.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/TetheringConfigOverlayGsi.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/TetheringConfigOverlayGsi.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/UniWifiOverlay_Marlin3/UniWifiOverlay_Marlin3.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/UniWifiOverlay_Marlin3/UniWifiOverlay_Marlin3.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/UnisocConnectivityOverlayGo.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/UnisocConnectivityOverlayGo.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/UnisocConnectivityOverlayGsi.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/UnisocConnectivityOverlayGsi.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_colordisplay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_colordisplay.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_core.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_core_go.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core_go.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_core_navbar.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core_navbar.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_core_wifi_display.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_core_wifi_display.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_display_doze.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_display_doze.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_display_vrr.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_display_vrr.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_phone.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_phone_core.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone_core.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_phone_hac.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_phone_hac.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_power_cpuT606.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_power_cpuT606.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_power_cpuT615.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_power_cpuT615.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_power_cpuT616.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_power_cpuT616.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_overlay_power_qogirl6.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_overlay_power_qogirl6.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_res_overlay_colordisplay.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_res_overlay_colordisplay.apk \
-    vendor/xiaomi/serenity/proprietary/vendor/overlay/unisoc_res_overlay_power_qogirl6.apk:$(TARGET_COPY_OUT_VENDOR)/overlay/unisoc_res_overlay_power_qogirl6.apk \
     vendor/xiaomi/serenity/proprietary/vendor/usr/idc/adaptive_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/adaptive_ts.idc \
     vendor/xiaomi/serenity/proprietary/vendor/usr/idc/focaltech_ats.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_ats.idc \
     vendor/xiaomi/serenity/proprietary/vendor/usr/idc/focaltech_spi_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_spi_ts.idc \
@@ -20938,3 +20863,79 @@ PRODUCT_PACKAGES += \
     ValidationTools \
     factoryTest \
     ims
+
+PRODUCT_PACKAGES += \
+    AospBtOverlay \
+    AospBtOverlay_Qogirl6 \
+    AospWifiOverlay_Marlin3 \
+    AospWifiOverlay_Marlin3_Mainline \
+    CameraLauncherIconOverlay \
+    CaptivePortalLoginFrameworkOverlay \
+    DisplayCutoutEmulationCornerOverlay \
+    DisplayCutoutEmulationDoubleOverlay \
+    DisplayCutoutEmulationHoleOverlay \
+    DisplayCutoutEmulationTallOverlay \
+    DisplayCutoutEmulationWaterfallOverlay \
+    FileexplorerLaauncherIconOverlay \
+    FontNotoSerifSourceOverlay \
+    FrameworkResOverlay \
+    GameCenterLauncherIconOverlay \
+    GmsConfigOverlayCommon \
+    GmsConfigOverlayGalleryGo \
+    GmsConfigOverlayGeotz \
+    GmsConfigOverlayGo \
+    GmsConfigOverlayPersonalSafety \
+    GmsConfigOverlaySearchGo \
+    GmsContactProviderOverlay \
+    GmsSettingProviderOverlay \
+    GmsSettingsOverlay \
+    GmsSystemUIOverlay \
+    GoogleDeviceLockControllerOverlay \
+    GoogleDocumentsUIOverlayGo \
+    GoogleExtServicesConfigOverlay \
+    GoogleHealthFitnessFrameworkOverlay \
+    GooglePermissionControllerFrameworkOverlay \
+    GooglePermissionControllerOverlay \
+    HeadSetConfigOverlay \
+    MiuiCarrierConfigOverlay \
+    ModuleMetadataGoogleOverlayGo \
+    MultiuserOverlays \
+    MusicLauncherIconOverlay \
+    NavigationBarMode3ButtonOverlay \
+    NavigationBarModeGesturalOverlay \
+    NetworkStackOverlayGo \
+    NetworkStackOverlayGsi \
+    NotesRoleEnabledOverlay \
+    ScannerLauncherIconOverlay \
+    SettingsProviderOverlay \
+    SettingsProvider__missi__auto_generated_rro_product \
+    ShareMeLauncherIconOverlay \
+    SysuiGoConfigOverlay \
+    TeleServiceOverlay \
+    TetheringConfigOverlayGo \
+    TetheringConfigOverlayGsi \
+    TransparentNavigationBarOverlay \
+    UniWifiOverlay_Marlin3 \
+    UnisocConnectivityOverlayGo \
+    UnisocConnectivityOverlayGsi \
+    VideoplayerLauncherIconOverlay \
+    WallpaperOverlay \
+    framework-res__missi__auto_generated_rro_product \
+    unisoc_overlay_colordisplay \
+    unisoc_overlay_core \
+    unisoc_overlay_core_go \
+    unisoc_overlay_core_max_cached_processed_16 \
+    unisoc_overlay_core_navbar \
+    unisoc_overlay_core_pinner_service_qogirl6 \
+    unisoc_overlay_core_wifi_display \
+    unisoc_overlay_display_doze \
+    unisoc_overlay_display_vrr \
+    unisoc_overlay_phone \
+    unisoc_overlay_phone_core \
+    unisoc_overlay_phone_hac \
+    unisoc_overlay_power_cpuT606 \
+    unisoc_overlay_power_cpuT615 \
+    unisoc_overlay_power_cpuT616 \
+    unisoc_overlay_power_qogirl6 \
+    unisoc_res_overlay_colordisplay \
+    unisoc_res_overlay_power_qogirl6

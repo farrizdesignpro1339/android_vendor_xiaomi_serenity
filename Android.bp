@@ -23241,3 +23241,521 @@ cc_prebuilt_library_shared {
     prefer: true,
     system_ext_specific: true,
 }
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_core_max_cached_processed_16",
+    owner: "xiaomi",
+    presigned: true,
+    device_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_core_pinner_service_qogirl6",
+    owner: "xiaomi",
+    presigned: true,
+    device_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "CameraLauncherIconOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "CaptivePortalLoginFrameworkOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "DisplayCutoutEmulationCornerOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "DisplayCutoutEmulationDoubleOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "DisplayCutoutEmulationHoleOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "DisplayCutoutEmulationTallOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "DisplayCutoutEmulationWaterfallOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "FileexplorerLaauncherIconOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "FontNotoSerifSourceOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "FrameworkResOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GameCenterLauncherIconOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GmsConfigOverlayCommon",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GmsConfigOverlayGalleryGo",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GmsConfigOverlayGeotz",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GmsConfigOverlayGo",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GmsConfigOverlayPersonalSafety",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GmsConfigOverlaySearchGo",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GmsContactProviderOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GmsSettingProviderOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GmsSettingsOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GmsSystemUIOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GoogleDeviceLockControllerOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GoogleDocumentsUIOverlayGo",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GoogleExtServicesConfigOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GoogleHealthFitnessFrameworkOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GooglePermissionControllerFrameworkOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "GooglePermissionControllerOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "HeadSetConfigOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "MiuiCarrierConfigOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "ModuleMetadataGoogleOverlayGo",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "MusicLauncherIconOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "NavigationBarMode3ButtonOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "NavigationBarModeGesturalOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "NotesRoleEnabledOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "ScannerLauncherIconOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "SettingsProvider__missi__auto_generated_rro_product",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "ShareMeLauncherIconOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "SysuiGoConfigOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "TeleServiceOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "TransparentNavigationBarOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "VideoplayerLauncherIconOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "WallpaperOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "framework-res__missi__auto_generated_rro_product",
+    owner: "xiaomi",
+    presigned: true,
+    product_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "AospBtOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "AospBtOverlay_Qogirl6",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "AospWifiOverlay_Marlin3",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "AospWifiOverlay_Marlin3_Mainline",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "MultiuserOverlays",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "NetworkStackOverlayGo",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "NetworkStackOverlayGsi",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "SettingsProviderOverlay",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "TetheringConfigOverlayGo",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "TetheringConfigOverlayGsi",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "UniWifiOverlay_Marlin3",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "UnisocConnectivityOverlayGo",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "UnisocConnectivityOverlayGsi",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_colordisplay",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_core",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_core_go",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_core_navbar",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_core_wifi_display",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_display_doze",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_display_vrr",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_phone",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_phone_core",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_phone_hac",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_power_cpuT606",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_power_cpuT615",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_power_cpuT616",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_overlay_power_qogirl6",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_res_overlay_colordisplay",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
+
+runtime_resource_overlay {
+    name: "unisoc_res_overlay_power_qogirl6",
+    owner: "xiaomi",
+    presigned: true,
+    soc_specific: true,
+}
