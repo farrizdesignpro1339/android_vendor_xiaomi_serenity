@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<root name="UVDIV">
+ <BlockInfo>
+  <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">24587</Parameter>
+  <Parameter index="" name="version" des="description" level="1" range="[0,32767]" type="int">1</Parameter>
+  <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>
+  <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">2401081103</Parameter>
+  <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">48</Parameter>
+  <Parameter index="" name="triggersize" des="description" level="1" range="[0,4294967295]" type="int">124</Parameter>
+  <Parameter index="" name="datasize" des="description" level="1" range="[0,4294967295]" type="int">400</Parameter>
+  <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">3264</Parameter>
+  <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">2448</Parameter>
+  <Parameter index="" name="BlockControl" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+ </BlockInfo>
+ <Triggers name="UVDIV" select_way="0" trigger_enable="1" group_num="4">
+  <Trigger start="1.0" end="1.0" para="total_gain" name="region0" interp_type="1" enable="1">0</Trigger>
+  <Trigger start="16.0" end="16.0" para="total_gain" name="region1" interp_type="1" enable="1">1</Trigger>
+  <Trigger start="32.0" end="32.0" para="total_gain" name="region2" interp_type="1" enable="1">2</Trigger>
+  <Trigger start="45.0" end="45.0" para="total_gain" name="region3" interp_type="1" enable="1">3</Trigger>
+ </Triggers>
+ <Parameters name="UVDIV" group_num="4" des="description">
+  <Parameter index="0" name="region0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Uvdiv_Control">
+    <Parameter name="bypass" des="bypass" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="UV_Max_Range">
+    <Parameter name="lum_th_l" des="low light transition threshold" default="0" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="lum_th_l_len" des="low to middle light transition threshold" default="4" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="lum_th_h_len" des="middle to high light transition threshold" default="3" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="lum_th_h" des="high light transition threshold" default="247" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">247</Parameter>
+    <Parameter name="chroma_max_h" des="distance smaller than this radius,be filtered" default="20" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="chroma_max_l" des="distance smaller than this radius,be filtered" default="10" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+   </Parameter>
+   <Parameter name="Lum_Control">
+    <Parameter name="y_th_l_len" des="transition threshold of middle light in Y" default="5" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="y_th_h_len" des="transition threshold of high light in Y" default="6" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">6</Parameter>
+    <Parameter name="ratio_y_min0" des="minimum noise reduciton of Y low light" default="64" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="ratio_y_min1" des="minimum noise reduciton of Y high light" default="0" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">58</Parameter>
+    <Parameter name="luma_ratio" des="noise reduction of Y middle light" default="64" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">64</Parameter>
+   </Parameter>
+   <Parameter name="Chroma_Control">
+    <Parameter name="chroma_ratio" des="noise reduction of UV middle light" default="64" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">64</Parameter>
+    <Parameter name="uv_abs_th_len" des="UV transition threshold of NR" default="5" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="ratio_uv_min" des="minimum noise reduction of UV" default="48" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">16</Parameter>
+   </Parameter>
+   <Parameter name="Special_Area_Protection">
+    <Parameter name="uvdiv_u_th0_l" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_u_th1_l" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_u_th0_h" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_u_th1_h" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th0_l" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th1_l" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th0_h" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th1_h" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="ratio_0" des="special area 0 noise reduction" default="48" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">64</Parameter>
+    <Parameter name="ratio_1" des="special area 1 noise reduction" default="56" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">64</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Uvdiv_Control">
+    <Parameter name="bypass" des="bypass" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="UV_Max_Range">
+    <Parameter name="lum_th_l" des="low light transition threshold" default="0" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="lum_th_l_len" des="low to middle light transition threshold" default="4" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="lum_th_h_len" des="middle to high light transition threshold" default="3" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="lum_th_h" des="high light transition threshold" default="247" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">239</Parameter>
+    <Parameter name="chroma_max_h" des="distance smaller than this radius,be filtered" default="20" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="chroma_max_l" des="distance smaller than this radius,be filtered" default="10" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+   </Parameter>
+   <Parameter name="Lum_Control">
+    <Parameter name="y_th_l_len" des="transition threshold of middle light in Y" default="5" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="y_th_h_len" des="transition threshold of high light in Y" default="6" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">6</Parameter>
+    <Parameter name="ratio_y_min0" des="minimum noise reduciton of Y low light" default="64" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="ratio_y_min1" des="minimum noise reduciton of Y high light" default="0" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">58</Parameter>
+    <Parameter name="luma_ratio" des="noise reduction of Y middle light" default="64" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">64</Parameter>
+   </Parameter>
+   <Parameter name="Chroma_Control">
+    <Parameter name="chroma_ratio" des="noise reduction of UV middle light" default="64" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">64</Parameter>
+    <Parameter name="uv_abs_th_len" des="UV transition threshold of NR" default="5" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="ratio_uv_min" des="minimum noise reduction of UV" default="48" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">16</Parameter>
+   </Parameter>
+   <Parameter name="Special_Area_Protection">
+    <Parameter name="uvdiv_u_th0_l" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_u_th1_l" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_u_th0_h" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_u_th1_h" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th0_l" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th1_l" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th0_h" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th1_h" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="ratio_0" des="special area 0 noise reduction" default="48" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">64</Parameter>
+    <Parameter name="ratio_1" des="special area 1 noise reduction" default="56" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">64</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Uvdiv_Control">
+    <Parameter name="bypass" des="bypass" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="UV_Max_Range">
+    <Parameter name="lum_th_l" des="low light transition threshold" default="0" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="lum_th_l_len" des="low to middle light transition threshold" default="4" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="lum_th_h_len" des="middle to high light transition threshold" default="3" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="lum_th_h" des="high light transition threshold" default="247" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">239</Parameter>
+    <Parameter name="chroma_max_h" des="distance smaller than this radius,be filtered" default="20" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="chroma_max_l" des="distance smaller than this radius,be filtered" default="10" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+   </Parameter>
+   <Parameter name="Lum_Control">
+    <Parameter name="y_th_l_len" des="transition threshold of middle light in Y" default="5" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="y_th_h_len" des="transition threshold of high light in Y" default="6" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">6</Parameter>
+    <Parameter name="ratio_y_min0" des="minimum noise reduciton of Y low light" default="64" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">8</Parameter>
+    <Parameter name="ratio_y_min1" des="minimum noise reduciton of Y high light" default="0" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">54</Parameter>
+    <Parameter name="luma_ratio" des="noise reduction of Y middle light" default="64" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">62</Parameter>
+   </Parameter>
+   <Parameter name="Chroma_Control">
+    <Parameter name="chroma_ratio" des="noise reduction of UV middle light" default="64" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">62</Parameter>
+    <Parameter name="uv_abs_th_len" des="UV transition threshold of NR" default="5" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="ratio_uv_min" des="minimum noise reduction of UV" default="48" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">8</Parameter>
+   </Parameter>
+   <Parameter name="Special_Area_Protection">
+    <Parameter name="uvdiv_u_th0_l" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_u_th1_l" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_u_th0_h" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_u_th1_h" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th0_l" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th1_l" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th0_h" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th1_h" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="ratio_0" des="special area 0 noise reduction" default="48" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">64</Parameter>
+    <Parameter name="ratio_1" des="special area 1 noise reduction" default="56" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">64</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Uvdiv_Control">
+    <Parameter name="bypass" des="bypass" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="UV_Max_Range">
+    <Parameter name="lum_th_l" des="low light transition threshold" default="0" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="lum_th_l_len" des="low to middle light transition threshold" default="4" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="lum_th_h_len" des="middle to high light transition threshold" default="3" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">4</Parameter>
+    <Parameter name="lum_th_h" des="high light transition threshold" default="247" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">239</Parameter>
+    <Parameter name="chroma_max_h" des="distance smaller than this radius,be filtered" default="20" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+    <Parameter name="chroma_max_l" des="distance smaller than this radius,be filtered" default="10" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">30</Parameter>
+   </Parameter>
+   <Parameter name="Lum_Control">
+    <Parameter name="y_th_l_len" des="transition threshold of middle light in Y" default="5" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="y_th_h_len" des="transition threshold of high light in Y" default="6" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">6</Parameter>
+    <Parameter name="ratio_y_min0" des="minimum noise reduciton of Y low light" default="64" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="ratio_y_min1" des="minimum noise reduciton of Y high light" default="0" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">50</Parameter>
+    <Parameter name="luma_ratio" des="noise reduction of Y middle light" default="64" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">60</Parameter>
+   </Parameter>
+   <Parameter name="Chroma_Control">
+    <Parameter name="chroma_ratio" des="noise reduction of UV middle light" default="64" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">60</Parameter>
+    <Parameter name="uv_abs_th_len" des="UV transition threshold of NR" default="5" level="1" range="[1,7]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="ratio_uv_min" des="minimum noise reduction of UV" default="48" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Special_Area_Protection">
+    <Parameter name="uvdiv_u_th0_l" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_u_th1_l" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_u_th0_h" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_u_th1_h" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th0_l" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th1_l" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th0_h" des="special area 0 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="uvdiv_v_th1_h" des="special area 1 boundary setting" default="0" level="1" range="[-128,127]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="ratio_0" des="special area 0 noise reduction" default="48" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">64</Parameter>
+    <Parameter name="ratio_1" des="special area 1 noise reduction" default="56" level="1" range="[0,64]" type="int" reserve="0x0000" length="1">64</Parameter>
+   </Parameter>
+  </Parameter>
+ </Parameters>
+</root>

@@ -1,0 +1,133 @@
+{
+  "case": "aisfnr",
+  "inputstream": {
+    "dimention": [
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer1"
+      }
+    ]
+  },
+  "outputstream": {
+    "dimention": [
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer1"
+      }
+    ]
+  },
+  "params": [
+    {
+      "ps": [
+        {
+          "tag": "SPRD_TAG_ISCENE_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_BV",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_POSTPROC_CAP_XML_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_CT",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_FRAME_NUM",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_FACE_FLAG",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_BACK_LIGHT",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TOTAL_GAIN_128X",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_SENSOR_ZOOM",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_EV",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_LCG_GAIN_1024X",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_ISO",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_AI_SCENE",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_EVD",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_APP_ID",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_APP_MODE",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_FILED00",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_FILED01",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_FILED02",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_FILED03",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_IN_SENSOR_ZOOM",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_SENSOR_SIZE_W",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_SENSOR_SIZE_H",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_IS_ZOOM_SENSOR",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_AEM_ID",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_TRIGGER_LSCM_ID",
+          "type": ["SNAPSHOT_TYPE"]
+        }
+      ]
+    }
+  ]
+}

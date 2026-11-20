@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    SPDX-FileCopyrightText: 2023-2024 Unisoc (Shanghai) Technologies Co., Ltd
+    SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+    Copyright 2023-2024 Unisoc (Shanghai) Technologies Co., Ltd.
+    Licensed under the Unisoc General Software License, version 1.0 (the License);
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+    Software distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+    See the Unisoc General Software License, version 1.0 for more details.
+-->
+<AFL_V1_16409>
+	<block_header>
+		<version type="u8">
+			<version_major>0</version_major>
+			<version_minor>0</version_minor>
+			<version_micro>0</version_micro>
+			<reserved len="5">0</reserved>
+		</version>
+		<block_info type="u32">
+			<block_id>16409</block_id>
+			<bypass>0</bypass>
+			<smart_size>0</smart_size>
+			<block_size>12</block_size>
+			<modify_time>2209011403</modify_time>
+			<trigger_flag>0</trigger_flag>
+			<reserved len="2">0</reserved>
+		</block_info>
+	</block_header>
+	<skip_num type="u8">0</skip_num>
+	<line_step>0</line_step>
+	<frm_num>0</frm_num>
+	<reserved0>0</reserved0>
+	<v_height type="u16">0</v_height>
+	<reserved1>0</reserved1>
+	<col_st>0</col_st>
+	<col_ed>0</col_ed>
+</AFL_V1_16409>

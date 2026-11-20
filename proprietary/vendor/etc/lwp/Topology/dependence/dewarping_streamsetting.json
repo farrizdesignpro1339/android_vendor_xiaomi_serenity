@@ -1,0 +1,49 @@
+{
+  "case": "dewarping",
+  "inputstream": {
+    "dimention": [
+      {
+        "format": "yuv",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer1"
+      }
+    ]
+  },
+  "outputstream": {
+    "dimention": [
+      {
+        "format": "yuv",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer1"
+      }
+    ]
+  },
+  "params": [
+    {
+      "ps": [
+        {
+          "tag": "SPRD_TAG_ISCENE_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_MULTI_CAMERA_ID",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_CONFIGSTRAM_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_EIS_PROCESS_FLAG",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_MULTI_SENSOR_OTP_INFO",
+          "type": ["PREVIEW_TYPE"]
+		}
+      ]
+    }
+  ]
+}

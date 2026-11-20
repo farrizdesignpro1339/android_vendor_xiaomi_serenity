@@ -1,0 +1,33 @@
+{
+  "case": "Remosaic",
+  "inputstream": {
+    "dimention": [
+      {
+        "format": "raw",
+        "width": 8160,
+        "height": 6144,
+        "location": "buffer1"
+      }
+    ]
+  },
+  "outputstream": {
+    "dimention": [
+      {
+        "format": "raw",
+        "width": 8160,
+        "height": 6144,
+        "location": "buffer1"
+      }
+    ]
+  },
+  "params": [
+    {
+      "ps": [
+        {
+          "tag": "SPRD_TAG_ISCENE_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        }
+      ]
+    }
+  ]
+}

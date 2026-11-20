@@ -1,0 +1,53 @@
+{
+  "case": "upScale",
+  "inputstream": {
+    "dimention": [
+      {
+        "format": "yuv",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer1"
+      }
+    ]
+  },
+  "outputstream": {
+    "dimention": [
+      {
+        "format": "yuv",
+        "width": 6528,
+        "height": 4896,
+        "location": "buffer1"
+      }
+    ]
+  },
+  "params": [
+    {
+      "ps": [
+        {
+          "tag": "SPRD_TAG_JPEG_POST_PROC",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_IZOOM_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_IS_HEIC_CAP",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_MULTI_MODE_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_NOZSL_AUTO_ROI",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_STREAM_SIZE",
+          "type": ["SNAPSHOT_TYPE","PREVIEW_TYPE","VIDEO_TYPE","CALLBACK_TYPE"]
+        }
+      ]
+    }
+  ]
+}

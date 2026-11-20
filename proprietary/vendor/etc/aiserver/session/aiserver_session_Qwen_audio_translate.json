@@ -1,0 +1,19 @@
+{
+    "session_name" : "Qwen_audio_translate",
+    "in_type" : "text|voice",
+    "out_type" : "text|voice",
+    "entity" : [
+        {
+            "name" : "UniMnnQwen2_5_Omni_3B",
+            "in_type" : "voice",
+            "out_type" : "text",
+            "is_source" : true,
+            "input_prompt": "[path to: /vendor/etc/aiserver/prompt/translate_to_eng_for_qwen_omni.txt]"
+        }
+    ],
+    "adjacency_list" : [
+        {
+            "chain" : "UniMnnQwen2_5_Omni_3B"
+        }
+    ]
+}

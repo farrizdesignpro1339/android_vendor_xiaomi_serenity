@@ -1,0 +1,5 @@
+service vendor.connmgr-default /vendor/bin/hw/vendor.sprd.hardware.connmgr-service
+    class hal
+    user root
+    group system
+

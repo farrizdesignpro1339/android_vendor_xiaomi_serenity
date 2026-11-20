@@ -1,0 +1,22 @@
+{
+    "feature": "Raw2Yuv",
+    "tasks": [
+        {
+            "id": "BpuNode_ips",
+            "action": "cap_bpu_action",
+            "input": {
+                "format": "CKI_CAMSYS_FORMAT_RAW_HALFWORD_14",
+                "size": "",
+                "count": "1",
+                "required": false
+            },
+            "output": {
+                "format": "CKI_CAMSYS_FORMAT_YVU420_2FRAME",
+                "size": "",
+                "count": "1",
+                "required": true
+            },
+            "dependencies": []
+        }
+    ]
+}

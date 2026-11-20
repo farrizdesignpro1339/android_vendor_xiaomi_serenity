@@ -1,0 +1,113 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "AF5_Pipeline",
+    "stream": "preview_5_stream",
+    "nodes": [
+        {
+            "type": "HAF5Node",
+            "vendor": "SPRD",
+            "id": "Haf5Node0"
+        },
+		{
+            "type": "HAF5Node",
+            "vendor": "SPRD",
+            "id": "Haf5Node3"
+        },
+        {
+            "type": "PD5Node",
+            "vendor": "SPRD",
+            "id": "Pd5Node0"
+        },
+		{
+            "type": "PD5Node",
+            "vendor": "SPRD",
+            "id": "Pd5Node3"
+        },
+		{
+            "type": "PD5Node",
+            "vendor": "SPRD",
+            "id": "Pd5IszNode0"
+        },
+		{
+            "type": "AIPD5Node",
+            "vendor": "SPRD",
+            "id": "Aipd5Node0"
+        },
+        {
+            "type": "AF5Router",
+            "vendor": "SPRD",
+            "id": "AF5Router0"
+        },
+        {
+            "type": "AF5Router",
+            "vendor": "SPRD",
+            "id": "AF5Router3"
+        }
+    ],
+
+    "rootNodes": ["AF5Router0","AF5Router3"],
+
+    "linkages": [
+		{
+            "from": {
+                "name": "AF5Router0",
+                "port": "haf"
+            },
+            "to": {
+                "name": "Haf5Node0",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AF5Router0",
+                "port": "pd"
+            },
+            "to": {
+                "name": "Pd5Node0",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AF5Router0",
+                "port": "pdi"
+            },
+            "to": {
+                "name": "Pd5IszNode0",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "Pd5Node0",
+                "port": "out0"
+            },
+            "to": {
+                "name": "Aipd5Node0",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AF5Router3",
+                "port": "haf"
+            },
+            "to": {
+                "name": "Haf5Node3",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AF5Router3",
+                "port": "pd"
+            },
+            "to": {
+                "name": "Pd5Node3",
+                "port": "in0"
+            }
+        }
+    ]
+}

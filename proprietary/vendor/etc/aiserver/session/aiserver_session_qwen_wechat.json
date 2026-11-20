@@ -1,0 +1,14 @@
+{
+    "session_name" : "qwen_wechat",
+    "in_type": "text",
+    "out_type": "text",
+    "entity" : [
+        {
+            "name" : "Qwen2_1_5",
+            "in_type" : "text",
+            "out_type" : "text",
+            "prompt" : "null",
+            "is_source" : false
+        }
+    ]
+}

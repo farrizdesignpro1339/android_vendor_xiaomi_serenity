@@ -1,0 +1,4 @@
+service combined.service-default /vendor/bin/hw/vendor.sprd.hardware.combined-service
+    class hal
+    user system
+    group system

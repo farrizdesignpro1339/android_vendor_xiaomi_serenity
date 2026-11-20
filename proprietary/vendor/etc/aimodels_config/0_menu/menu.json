@@ -1,0 +1,49 @@
+{
+	"first_menu_list" : [
+		{
+			"menu_id": 1,
+			"name_en": "LLM",
+			"name_zh": "大语言"
+		},
+		{
+			"menu_id": 2,
+			"name_en": "MultiModal",
+			"name_zh": "多模态"
+		},
+		{
+			"menu_id": 3,
+			"name_en": "Concurrency",
+			"name_zh": "并发"
+		},
+		{
+			"menu_id": 4,
+			"name_en": "Agent",
+			"name_zh": "Agent"
+		},
+		{
+			"menu_id": 5,
+			"name_en": "Edge Cloud",
+			"name_zh": "端云"
+		},
+		{
+			"menu_id": 6,
+			"name_en": "AI Asst",
+			"name_zh": "AI助手"
+		},
+		{
+			"menu_id": 7,
+			"name_en": "AI Graphic",
+			"name_zh": "AI绘图"
+		},
+		{
+			"menu_id": 8,
+			"name_en": "AI Detection",
+			"name_zh": "AI检测"
+		},
+		{
+			"menu_id": 9,
+			"name_en": "AI Camera",
+			"name_zh": "AI相机"
+		}
+	]	
+}

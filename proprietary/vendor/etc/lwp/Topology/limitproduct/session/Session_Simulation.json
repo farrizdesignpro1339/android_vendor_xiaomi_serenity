@@ -1,0 +1,19 @@
+{
+    "session": {
+        "name": "Session_Simulation",
+        "usecase": {
+            "facing": "rear",
+            "stream_list": [
+                {
+                    "dir": "output",
+                    "max_width": 4000,
+                    "max_height": 3000,
+                    "formats": [ "NV12" ]
+                }
+            ]
+        },
+        "pipeline": [
+            "Pipeline_Simulation"
+        ]
+    }
+}

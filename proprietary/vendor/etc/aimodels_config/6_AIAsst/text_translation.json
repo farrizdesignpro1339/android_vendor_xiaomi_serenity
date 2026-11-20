@@ -1,0 +1,22 @@
+{
+	"model_id":"text_translation",
+	"app_name_en":"Text Translation",
+	"app_name_zh":"文本翻译",
+	"first_menu_list":6,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":true,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":13,
+	"master_load_modelname":"UniMnnLlmQwen2_5_1_5B_text_translate",
+	"slave_load_modelname":"n6pslave::UniMnnLlmQwen2_5_1_5B_text_translate",
+	"prompt_text_zh":[],
+	"prompt_text_en":[],
+	"prompt_image":[],
+	"option_model_name": [
+		{"ax_model":"Deepseek-7B"}
+	]
+}

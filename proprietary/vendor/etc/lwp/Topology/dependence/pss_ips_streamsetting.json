@@ -1,0 +1,121 @@
+{
+  "case": "PSS",
+  "params": [
+    {
+      "ps": [
+        {
+          "tag": "SPRD_TAG_PM_INIT_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_PM_START_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_CAP_PARAM_BUFFER_ID",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_FD_SNAPSHOT",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_LSCM_CFG_PARAM",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_AEM_CFG_PARAM",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_BHIST_CFG_PARAM",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_IMGAE_AND_PARAM_MAP",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_BPU_IMGAE_AND_PARAM_MAP",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_POST_AI_RESULT_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_FD_ISP_INFO",
+          "type": ["SNAPSHOT_TYPE", "PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_DCAMNR3_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_XTM_GAM_RESULT_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_XTM_DRC_RESULT_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_XTM_GC_RESULT_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_XTM_HCE_RESULT_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_XTM_HCEM_RESULT_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_AE_RESULT_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_PSS_AE_RESULT_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_LSC_CAP_RESULT_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_PSS_AWB_RESULT_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_OFFLINE_AEINFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_LME_XTM_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_PSS_XTM_RESULT",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_OTHERS_SENSOR_PARAM",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_AE_MODE_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_AF_MODE_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_AWB_RESULT_INFO",
+          "type": ["PREVIEW_TYPE"]
+        }
+      ]
+    }
+  ]
+}

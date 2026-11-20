@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/sprd/modules/pay/soter/soter_default.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.sprd.hardware.soter</name>
+        <fqname>ISoter/default</fqname>
+    </hal>
+</manifest>

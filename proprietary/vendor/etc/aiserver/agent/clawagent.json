@@ -1,0 +1,67 @@
+{
+    "clawagent": {
+        "home": "/data/local/tmp/.clawagent"
+    },
+    "skills": {
+        "load_mode": "startup",
+        "full_content_skills": []
+    },
+    "model": {
+        "provider": "openai",
+        "name": "qwen3.6-plus",
+        "api_key": "sk-0c0975360ace400c8126b89xxxxxxx",
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "stream": true,
+        "timeout_ms": 120000
+    },
+    "message": {
+        "enable_compression": true,
+        "max_tokens": 128000,
+        "summarize_token_ratio": 0.8,
+        "min_keep_messages": 10
+    },
+    "session": {
+        "max_sessions": 10,
+        "idle_timeout_ms": 300000
+    },
+    "agent": {
+        "system_prompt_path": "/vendor/etc/aiserver/prompt/clawagent_prompt.md",
+        "system_prompt": "",
+        "script_dir": "/data/local/tmp/tool",
+        "max_iterations": 50,
+        "stop_on_error": true
+    },
+    "tools": {
+        "enable_read": true,
+        "enable_write": true,
+        "enable_exec": true,
+        "exec_timeout_ms": 300000
+    },
+    "output": {
+        "show_tools": true,
+        "show_thinking": false,
+        "color_output": true
+    },
+    "logging": {
+        "level": "info",
+        "file": "/data/local/tmp/ClawAgent/log/clawagent.log"
+    },
+    "providers": [
+        {
+            "id": "openai",
+            "model": "qwen-plus",
+            "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+            "api_key": "sk-0c0975360ace400c8126b89xxxxxxx",
+            "api_key_env": "DASHSCOPE_API_KEY"
+        },
+        {
+            "id": "openai",
+            "model": "qwen3.6-plus",
+            "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+            "api_key": "sk-0c0975360ace400c8126b89xxxxxxx",
+            "api_key_env": "DASHSCOPE_API_KEY"
+        }
+    ],
+    "mcpServers": {
+    }
+}

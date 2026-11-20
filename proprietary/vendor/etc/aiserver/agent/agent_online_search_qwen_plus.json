@@ -1,0 +1,8 @@
+{
+	"agent_name": "agent_online_search_qwen_plus",
+	"in_type": "text",
+	"out_type": "text",
+	"prompt": "[path to: /vendor/etc/aiserver/prompt/prompt_mcp.txt]",
+	"mcp_config": "[path to: /vendor/etc/aiserver/mcp/mcp_settings_online_search.json]",
+	"LLM": "cloud-qwen-plus"
+}

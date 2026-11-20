@@ -1,0 +1,7 @@
+service vendor.usys_mgr  /vendor/bin/usys_mgr
+    class core
+    user root
+    group system radio shell
+
+ #transfer usys_mgr log to kernel log need open this code
+ #   file /dev/kmsg w

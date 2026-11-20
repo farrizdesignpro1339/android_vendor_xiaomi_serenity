@@ -1,0 +1,41 @@
+{
+  "case": "dpf",
+  "inputstream": {
+    "dimention": [
+      {
+        "format": "yuv",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer1"
+      }
+    ]
+  },
+  "outputstream": {
+    "dimention": [
+      {
+        "format": "yuv",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer1"
+      }
+    ]
+  },
+  "params": [
+    {
+      "ps": [
+        {
+          "tag": "SPRD_TAG_ISCENE_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_BURST_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_PCC_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        }
+      ]
+    }
+  ]
+}

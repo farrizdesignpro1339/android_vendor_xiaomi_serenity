@@ -1,0 +1,131 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Front_NightPro_Capture",
+    "stream": "capture_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "MultiFrameRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_MF_router"
+        },
+        {
+            "type": "HDRRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_HDR_router"
+        },
+        {
+            "type": "MFNRNode",
+            "vendor": "SPRD",
+            "id": "cap_MFNR"
+        },
+        {
+            "type": "HDRNode",
+            "vendor": "SPRD",
+            "id": "cap_HDR"
+        },
+        {
+            "type": "YNRCNRNode",
+            "vendor": "SPRD",
+            "id": "cap_YNRCNR"
+        },
+        {
+            "type": "WaterMarkNode",
+            "vendor": "SPRD",
+            "id": "cap_WaterMark"
+        }
+    ],
+    "rootNodes": ["SourceNode1"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "mfnr"
+            },
+            "to": {
+                "name": "cap_MFNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MFNR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_HDR_router",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR_router",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_HDR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR_router",
+                "port": "out1"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_HDR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_YNRCNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_YNRCNR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_WaterMark",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_WaterMark",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

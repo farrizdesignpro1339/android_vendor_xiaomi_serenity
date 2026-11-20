@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2024 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<MFNR_SD_20652>
+  <block_header>
+    <version type="u8">
+      <version_major>0</version_major>
+      <version_minor>0</version_minor>
+      <version_micro>0</version_micro>
+      <reserved len="5">0</reserved>
+    </version>
+    <block_info type="u32">
+      <block_id>20652</block_id>
+      <bypass range="[0,1]">0</bypass>
+      <smart_size>0</smart_size>
+      <block_size>64</block_size>
+      <modify_time>2303011450</modify_time>
+      <trigger_flag range="[0,1]">0</trigger_flag>
+      <reserved len="2">0</reserved>
+    </block_info>
+  </block_header>
+  <version_major type="u8">1</version_major>
+  <version_minor>0</version_minor>
+  <version_micro>0</version_micro>
+  <enable description="enable" range="[0,1]" freq="less" default="1">1</enable>
+  <bv_max type="int16" len="10" description="gain_max" range="[128,32768]" freq="less" default="2304">
+    <table> 2304 3840 4480 5888 6400 8192 0 0 0 0 </table>
+  </bv_max>
+  <bv_min len="10" description="gain_min" range="[128,32768]" freq="less" default="128">
+    <table> 128 1536 2304 3840 4480 5888 0 0 0 0 </table>
+  </bv_min>
+  <bv_framenum type="u8" len="10" description="gain_framenum" range="[0,10]" freq="less" default="6">
+    <table> 3 4 5 6 7 8 0 0 0 0 </table>
+  </bv_framenum>
+  <bv_framecase description="set the segments number based on bv" range="[0,10]" freq="less" default="6">6</bv_framecase>
+  <reserved>0</reserved>
+  <bv_up type="int16" description="bv_up" range="[-600,1600]" freq="less" default="1600">1600</bv_up>
+  <bv_down description="bv_down" range="[-600,1600]" freq="less" default="1550">1550</bv_down>
+  <gain_up type="u16" description="gain_up" range="[128,32768]" freq="less" default="800">800</gain_up>
+  <gain_down description="gain_down" range="[128,32768]" freq="less" default="600">600</gain_down>
+</MFNR_SD_20652>

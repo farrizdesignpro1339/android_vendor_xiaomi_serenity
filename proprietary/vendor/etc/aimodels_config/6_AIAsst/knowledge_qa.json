@@ -1,0 +1,30 @@
+{
+	"model_id":"knowledge_qa",
+	"app_name_en":"Knowledge QA",
+	"app_name_zh":"知识问答",
+	"first_menu_list":6,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":true,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":13,
+	"master_load_modelname":"UniMnnLlmQwen2_5_1_5B",
+	"slave_load_modelname":"n6pslave::UniMnnLlmQwen2_5_1_5B",
+	"prompt_text_zh":[
+		"中国的四大发明是什么？",
+		"中国四大名著是哪四部作品？",
+		"上海是哪个国家的城市？那里有哪些著名的景点？"
+	],
+	"prompt_text_en":[
+		"What are Chinas the Four Great Inventions?",
+		"What are the Four Great Classical Novels of China?",
+		"ShangHai is a city in what country? What are the famous attractions there?"
+	],
+	"prompt_image":[],
+	"option_model_name": [
+		{"ax_model":"MiniCpm_V"}
+	]
+}

@@ -1,0 +1,8 @@
+service vendor.dpc /vendor/bin/dpc
+    class main
+    user root
+    group root system
+    oneshot
+
+on property:persist.vendor.sys.dpc_lock=*
+    start vendor.dpc

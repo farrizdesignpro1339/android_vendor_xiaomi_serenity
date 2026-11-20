@@ -1,0 +1,22 @@
+{
+    "feature": "Yuv2Jpeg",
+    "tasks": [
+        {
+            "id": "JpegNode_ips",
+            "action": "cap_jpeg_action",
+            "input": {
+                "format": "CKI_CAMSYS_FORMAT_YVU420_2FRAME",
+                "size": "",
+                "count": "1",
+                "required": false
+            },
+            "output": {
+                "format": "CKI_CAMSYS_FORMAT_JPEG_NORMAL",
+                "size": "",
+                "count": "1",
+                "required": false
+            },
+            "dependencies": []
+        }
+    ]
+}

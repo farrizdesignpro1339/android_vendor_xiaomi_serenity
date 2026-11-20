@@ -1,0 +1,43 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2026 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "session": {
+        "name": "Session_Rear_DualCamera_Yuv",
+        "usecase": {
+            "facing": "rear",
+            "stream_list": [
+                {
+                    "dir": "output",
+                    "max_width": 960,
+                    "max_height": 720,
+                    "formats": [ "NV21" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 960,
+                    "max_height": 720,
+                    "formats": [ "NV21" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 3264,
+                    "max_height": 2448,
+                    "formats": [ "NV21" ]
+                },
+                {
+                    "dir": "output",
+                    "max_width": 1600,
+                    "max_height": 1200,
+                    "formats": [ "NV21"]
+                }
+            ]
+        },
+        "pipeline": [
+            "Pipeline_Pre_YUV",
+            "Pipeline_Rear_DualCam_Preview_3rd",
+            "Pipeline_Rear_DualCam_Capture_Yuv",
+            "Pipeline_Rear_DualCam_Callback",
+            "Pipeline_Async_LT"
+        ]
+    }
+}

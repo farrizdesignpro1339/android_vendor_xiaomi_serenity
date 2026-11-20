@@ -1,0 +1,10 @@
+<!--
+    Input:
+        device/xiaomi/mivendor/mivendor_ugvi_arm64/product/mivendor_ugvi_arm64_go_64only/micharge/aidl/default/vendor.xiaomi.hardware.micharge-service.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.xiaomi.hardware.micharge</name>
+        <fqname>IMiCharge/default</fqname>
+    </hal>
+</manifest>

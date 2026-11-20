@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/sprd/modules/DFR/vendor/uniVndStabServer/IUniStab/unistab-vnd.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.sprd.hardware.unistab</name>
+        <fqname>IUniStab/vnd</fqname>
+    </hal>
+</manifest>

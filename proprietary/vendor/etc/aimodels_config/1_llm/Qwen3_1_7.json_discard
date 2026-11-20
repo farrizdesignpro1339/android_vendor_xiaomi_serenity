@@ -1,0 +1,19 @@
+{
+	"model_id":"Qwen3_1_7",
+	"app_name_en":"Qwen3_1_7",
+	"app_name_zh":"Qwen3_1_7",
+	"first_menu_list":1,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":40,
+	"master_load_modelname":"UniMnnLlmQwen3_1_7",
+	"slave_load_modelname":"n6pslave::UniMnnLlmQwen3_1_7",
+	"option_model_name": [
+		{"master_cpu":"UniMnnLlmQwen3_1_7"},
+		{"slave_cpu":"n6pslave::UniMnnLlmQwen3_1_7"}
+	]
+}

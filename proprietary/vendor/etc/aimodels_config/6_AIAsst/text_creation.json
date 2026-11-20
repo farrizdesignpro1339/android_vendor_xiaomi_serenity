@@ -1,0 +1,34 @@
+{
+	"model_id":"text_creation",
+	"app_name_en":"Text Creation",
+	"app_name_zh":"文本创作",
+	"first_menu_list":6,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":true,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":13,
+	"master_load_modelname":"UniMnnLlmQwen2_5_1_5B",
+	"slave_load_modelname":"n6pslave::UniMnnLlmQwen2_5_1_5B",
+	"prompt_text_zh":[
+		"以“春天的田野”为主题，创作一首七言绝句",
+		"以”梦想“为主题创作一首4行的短诗",
+		"论述“读书的重要性”，要求观点明确，论据充分，逻辑清晰",
+		"针对“人工智能是否会取代人类工作”这一话题，发表你的观点并进行详细论述",
+		"写一段关于AI手机的创意广告"
+	],
+	"prompt_text_en":[
+		"Write a poem about spring",
+		"Write a short poem about the ocean",
+		"Write a promotional slogan introducing the football team of Barcelona",
+		"hello,please introduce yourself for me.",
+		"What is the capital of china, recommend me three kinds of food there"
+	],
+	"prompt_image":[],
+	"option_model_name": [
+		{"ax_model":"Deepseek-7B"}
+	]
+}

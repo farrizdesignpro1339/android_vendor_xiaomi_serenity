@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/sprd/release/IDH/vendor/configs/refnotify-default.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.sprd.hardware.refnotify</name>
+        <fqname>IRefnotifyTransport/default</fqname>
+    </hal>
+</manifest>

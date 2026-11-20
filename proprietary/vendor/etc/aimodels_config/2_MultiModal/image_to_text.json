@@ -1,0 +1,30 @@
+{
+	"model_id":"image_to_text",
+	"app_name_en":"Image-to-text",
+	"app_name_zh":"图生文",
+	"first_menu_list":2,
+	"is_need_camera": true,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":false,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":10,
+	"master_load_modelname":"UniMnnQwen2_VL_2B",
+	"slave_load_modelname":"n6pslave::UniMnnQwen2_VL_2B",
+	"prompt_text_zh":[
+		"描述一下这张图片"
+	],
+	"prompt_text_en":[
+		"describe this image"
+	],
+	"prompt_image":[
+		"/storage/emulated/0/demo_pic/minicpm-v/bus.jpg",
+		"/storage/emulated/0/demo_pic/minicpm-v/dog.jpg",
+		"/storage/emulated/0/demo_pic/clip_pic/19.jpg"
+	],
+	"option_model_name": [
+		{"ax_model":"MiniCpm_V"}
+	]
+}

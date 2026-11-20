@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2018 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<MediaCodecs>
+    <Decoder name="c2.unisoc.avc.decoder"
+            componentName="libcodec2_unisoc_avcdec"
+            maxInstances="10"
+            supportSecure="true"
+    />
+    <Decoder name="c2.unisoc.hevc.decoder"
+            componentName="libcodec2_unisoc_hevcdec"
+            maxInstances="10"
+            supportSecure="true"
+            supportHeif="true"
+    />
+    <Decoder name="c2.unisoc.mpeg4.decoder"
+            componentName="libcodec2_unisoc_mpeg4dec"
+            maxInstances="18"
+            supportHw="true"
+    />
+    <Decoder name="c2.unisoc.h263.decoder"
+            componentName="libcodec2_unisoc_h263dec"
+            maxInstances="18"
+            supportHw="true"
+    />
+    <Decoder name="c2.unisoc.vp8.decoder"
+            componentName="libcodec2_unisoc_vp8dec"
+            maxInstances="20"
+    />
+    <Decoder name="c2.unisoc.vp9.decoder"
+            componentName="libcodec2_unisoc_vp9dec"
+            maxInstances="20"
+            supportSecure="true"
+    />
+    <Decoder name="c2.unisoc.jpeg.decoder"
+            componentName="libcodec2_unisoc_jpegdec"
+    />
+    <Encoder name="c2.unisoc.jpeg.encoder"
+            componentName="libcodec2_unisoc_jpegenc"
+    />
+    <Encoder name="c2.unisoc.avc.encoder"
+            componentName="libcodec2_unisoc_avcenc"
+            VspSoName="libomx_avcenc_hw_sprd"
+            maxInstances="5"
+            maxGoInstances="5"
+            supportSecure="true"
+            QPIMin="10"
+            QPIMax="40"
+            QPPMin="10"
+            QPPMax="40"
+            QPIMin_CBR="16"
+            QPPMin_CBR="16"
+    />
+    <Encoder name="c2.unisoc.hevc.encoder"
+            componentName="libcodec2_unisoc_hevcenc"
+            VspSoName="libomx_hevcenc_hw_sprd"
+            maxInstances="5"
+            maxGoInstances="5"
+            QPIMin="8"
+            QPIMax="40"
+            QPPMin="8"
+            QPPMax="40"
+            QPIMin_CBR="16"
+            QPPMin_CBR="16"
+    />
+    <Config name="powerhint_manage"
+            limitSize="1920x1080"
+            limitWfdFps="30"
+            limitSecureFps="58"
+            limitNormalFps="90"
+    />
+    <Config name="SVC"
+            supportGSP="true"
+    />
+    <Config name="systemResource_manage"
+            MaxPixelProcessingRate="1920x1088x100"
+            MaxPixelProcessingRateEnc="1920x1088x100"
+    />
+</MediaCodecs>

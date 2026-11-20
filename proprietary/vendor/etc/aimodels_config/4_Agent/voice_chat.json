@@ -1,0 +1,22 @@
+{
+	"model_id":"voice_chat",
+	"app_name_en":"Voice Chat",
+	"app_name_zh":"语音聊天",
+	"first_menu_list":4,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":false,
+	"send_msg_type": "voice",
+	"recv_msg_type" : "voice",
+	"load_cost_time":40,
+	"master_load_modelname":"Qwen_audio_chat",
+	"slave_load_modelname":"n6pslave::Qwen_audio_chat",
+	"prompt_text_zh":[],
+	"prompt_text_en":[],
+	"prompt_image":[],
+	"option_model_name": [
+		{"ax_model":"Deepseek-7B"}
+	]
+}

@@ -1,0 +1,920 @@
+#define MAX_CAP_NUM 16
+#define SPRD_FACE_BEAUTY_PARAM_NUM 10
+#define ARRAY_LEN 9
+#define HDR_IMG_NUM_MAX 16
+#define XDR_MAX_FUSION_FRAME 3
+#define SENSOR_NAME_LEN 32
+
+
+struct iScene_info_t {
+    struct version_param_t version_info;
+    struct common_info_t common_info;
+    struct switch_info_t switch_info;
+    struct postproc_info_t postproc_info;
+    struct cap_info_t cap_info;
+    struct sensor_info_t sensor_info;
+    struct custom_info_t custom_info;
+    struct trigger_info_t trigger_info;
+    struct pipeline_param_t pipeline_info;
+};
+
+struct version_param_t {
+    float version;
+    int date;
+    int reserve0;
+    int reserve1;
+    int reserve2;
+    int reserve3;
+    int reserve4;
+    float reserve5;
+    float reserve6;
+    float reserve7;
+    float reserve8;
+    float reserve9;
+};
+
+struct common_info_t {                          
+    uint8_t session_mode;
+    uint32_t frameID;
+    uint32_t camID;
+    uint32_t width;
+    uint32_t height;
+    int32_t app_mode;
+    int32_t top_app_id;
+    int32_t sprd_appmode_id;
+    int32_t device_orientation;
+    uint64_t prv_scenario_id;
+    uint64_t cap_scenario_id;
+    struct zoom_info_t zoom_info;
+    multiCameraMode mMultiCameraMode;
+    struct img_rect dcam_trim;
+    bool isVideoFirstFrame;
+    int32_t sprd_flash_lcd_mode;
+    int32_t ae_mode;
+    int32_t flash_mode;
+    int32_t reserved0;
+    int32_t reserved1;
+    int32_t reserved2;
+    int32_t reserved3;
+    int32_t reserved4;
+    int32_t reserved5;
+    int32_t reserved6;
+    int32_t reserved7;
+    int32_t reserved8;
+    int32_t reserved9[MAX_CAP_NUM];
+    float reserved10;
+    float reserved11;
+    float reserved12;
+    float reserved13;
+    float reserved14;
+    float reserved15[MAX_CAP_NUM];
+};
+
+struct zoom_info_t {
+	float zoom_ratio;
+	struct img_rect cropRegion;
+};
+
+struct img_rect {
+	cmr_s32 start_x;
+	cmr_s32 start_y;
+	cmr_u32 width;
+	cmr_u32 height;
+};
+
+struct switch_info_t {
+    uint32_t face_beauty_on;
+    uint32_t face_detect_on;
+    uint32_t face_attribute_on;
+    uint32_t smile_capture_on;
+    uint32_t ai_detect_on;
+    uint32_t gesture_detect_on;
+    uint32_t time_wartermark_on;
+    uint32_t logo_watermark_on;
+    uint32_t ultra_portrait_on;
+    uint32_t motion_photo_on;
+    uint32_t filter_on;
+    uint32_t is_dynamic_fps_prev;
+    uint32_t is_recording;
+    uint32_t is_dynamic_fps_video;
+    uint32_t video_hdr_enable;
+    uint32_t video_eis_on;
+    uint8_t flip_on;
+    float f_number;
+    uint8_t lightPortraitType;
+    float lens_f_number;
+    uint8_t blurMode;
+    uint32_t filter_type;
+    int32_t facebeauty_levels[SPRD_FACE_BEAUTY_PARAM_NUM];
+    button_status_t hdr_button;
+    button_status_t flash_button;
+    struct watermark_param wm_param;
+    int32_t reserved0;
+    int32_t reserved1;
+    int32_t reserved2;
+    int32_t reserved3;
+    int32_t reserved4;
+    int32_t reserved5;
+    int32_t reserved6;
+    int32_t reserved7;
+    int32_t reserved8;
+    int32_t reserved9[MAX_CAP_NUM];
+    float reserved10;
+    float reserved11;
+    float reserved12;
+    float reserved13;
+    float reserved14;
+    float reserved15[MAX_CAP_NUM];
+};
+
+struct watermark_param {
+    int32_t wm_width;
+    int32_t wm_height;
+    int32_t text_size;    //0:small, 1:default, 2:large
+    int32_t location;    //0:left, 1:center, 2:right
+    int32_t mode;   //0:off, 1:common, 2:customer
+    int32_t file_count;
+};
+
+struct postproc_info_t {
+    int is_hdr_scene;
+    int is_mfnr_scene;
+    int is_chdr_scene;
+    int is_lldr_scene;
+    int is_remosaic_scene;
+    int is_isz_scene;
+    int is_mfsr_scene;
+    int is_mfnr_hdr_scene;
+    int is_mfnr_chdr_scene;
+    int is_xnr_chdr_scene;
+    int is_raw_mfnr_scene;
+    int is_ai_sfnr_scene;
+    int is_xdr_scene;
+    int is_acd_scene;
+    int is_lls_scene;
+    int is_flash_scene;
+    int is_burst_scene;
+    int is_xnr_scene;
+    uint32_t remosaic_type;
+    uint8_t ai_scene_type;
+    struct usd_out_param_t usd_detect_out;
+    int in_out_flag;
+    int dark_light_flag;
+    bool xnr_select_type;
+    int is_hnr_scene;
+    int is_airaw_scene;
+    int reserved2;
+    int reserved3;
+    int reserved4;
+    int reserved5;
+    int reserved6;
+    int reserved7;
+    int reserved8;
+    int reserved9[MAX_CAP_NUM];
+    float reserved10;
+    float reserved11;
+    float reserved12;
+    float reserved13;
+    float reserved14;
+    float reserved15[MAX_CAP_NUM];
+};
+
+struct usd_out_param_t {
+    int face;    // 0:no face; 1:backlight face; 2:frontlight face; 3:sidelight face
+    float fblt_c;   //  confidence of backlit face , value: (0~1)
+    float prop_dark;   //  the proportion of dark areas in the scene
+    float prop_bright;   //  the proportion of bright areas in the scene
+    float reserved1;    // mean steepness of Y-channel histogram
+    float reserved2;    // number of local peaks in the histogram
+    float reserved3;    //  maximum distance of histogram peak value
+    float reserved4;    //  pixel percentage near the peak of the histogram
+    int chdr_flag;   //  1:need chdr processed; 0: not need processed; 99: this part closed
+    int hdr_flag;   //  1:need hdr processed; 0: not need processed; 99: this part closed
+    int mfnr_flag;   //  1:need mfnr processed; 0: not need processed; 99: this part closed
+    int dark_flag;    //  1:dark scene; 0: not dark scene; 99: this part closed
+    int solid_color;    //  1:solid color scene; 0: not solid color scene; 99: this part closed
+    int dark_light;   //  1:dark light scene; 0: not dark light scene
+    int dark_bulb;   //  1:dark bulb scene; 0: not dark bulb scene
+    float solid_ratio;   //  the proportion of solid color in the scene
+    int Hvalloc1;   //  the color of solid color scene,value:[0:1:360]
+    int stable_flag;   //  0:phone very stable; 1:phone relatively stable;2: phone not stable
+    int local_movement_flag;    // 1:obvious local motion; 0: no obvious local motion;2:not judge for local movement;99: this part closed
+    float diff_ratio;   //  the proportion of difference pixels in adjacent frames
+    int phone_posture;   //  1:dark light scene; 0: not dark light scene
+    int in_out_flag;    //   0: outdoor; 1:between 0 and 2; 2:indoor; 3:very dark or night; 99: this part closed
+    int light_value;    //  the environment light by the light sensor
+    int lls_ready_flag;   //  1: lls scene cap ; 0: not lls scene cap
+    int lls_cap_flag;   //  1:lls capture processing ; 0: not lls capture processing
+    int flash_fired;   //  1:need flash; 0: not need flash
+    int flash_lighting_mode;
+    int dark_ACD_flag;   //  1:ACD dark scene; 0: ACD light scene
+    bool ACD_m_GMotionfind;   //  true:global motion ; false: no global motion
+    int ACD_m_MotionLevel;   //  1:local movement; 2: golbal movement; 3:fast local movement; 4:fast golbal movement; 0: stable scene;99: this part closed
+    bool wfaceNsolid;   //  true:stable face in the scene; false:no stable face in the scene
+};
+
+struct cap_info_t {
+    int jpegOrientation;
+    struct scene_detect_out_t detect_out;
+    int reserved0;
+    int reserved1;
+    int reserved2;
+    int reserved3;
+    int reserved4[MAX_CAP_NUM];
+    float reserved5;
+    float reserved6;
+    float reserved7;
+    float reserved8;
+    float reserved9[MAX_CAP_NUM];
+};
+
+struct scene_detect_out_t {
+    uint32_t postproc_type;
+    float ev[MAX_CAP_NUM];
+    int total_num;
+    int normal_num;
+    int select_num; // select_num <= total_num
+    struct ugvi_sprd_hdr_detect_out_t hdr_detect_out;
+    struct sprd_chdr_detect_out_t chdr_detect_out;
+    struct sprd_lldr_detect_out_t lldr_detect_out;
+    int cur_frame_merge_frame_num;
+    struct sprd_raw_mfnr_detect_out_t raw_mfnr_detect_out;
+    struct xdr_detect_out_t xdr_detect_out;
+    struct usd_out_param_t usd_detect_out;
+    float dark_ratio;
+    float bright_ratio;
+    int motion_detect;
+    int is_flash_scene;
+    int is_hdr_scene;
+    int is_chdr_scene;
+    int is_lldr_scene;
+    int is_mfnr_scene;
+    int is_mfnr_chdr_scene;
+    int is_remosaic_scene;
+    int is_isz_scene;
+    int is_mfsr_scene;
+    int is_mfnr_hdr_scene;
+    int is_raw_scene;
+    int is_raw_mfnr_scene;
+    int is_xnr_chdr_scene;
+    int is_xdr_scene;
+    int is_filter_scene;
+    int is_lls_scene;
+    int is_acd_scene;
+    int is_xnr_scene;
+    int is_thumb_zsl_frame;
+    int is_thumb_nozsl_frame;
+    int is_highlight_nozsl;
+    int is_izoom;
+    int is_xnr_hdr_scene;
+    int is_hnr_scene;
+    int is_airaw_scene;
+    int reserved2;
+    int reserved3;
+    int reserved4;
+    int reserved5;
+    int reserved6;
+    int reserved7;
+    int reserved8;
+    int reserved9[MAX_CAP_NUM];
+    float reserved10;
+    float reserved11;
+    float reserved12;
+    float reserved13;
+    float reserved14;
+    float reserved15[MAX_CAP_NUM];
+};
+
+struct ugvi_sprd_hdr_detect_out_t {
+    float       ev[HDR_IMG_NUM_MAX];
+    uint32_t    shutter[HDR_IMG_NUM_MAX];
+    uint32_t    gain[HDR_IMG_NUM_MAX];
+    int         frame_num;
+    int         tuning_param_index;
+    uint64_t    clock;
+    int         bv;
+    uint32_t    face_num;
+    uint32_t    prop_dark;
+    uint32_t    prop_bright;
+    float       trg_prop_dark;
+    float       trg_prop_bright;
+    uint32_t    sceneChosen;
+    int         scene_flag;
+    int         normalNum;
+    int         in_out_flag;
+    int         dark_flag;
+};
+
+struct sprd_chdr_detect_out_t {
+    float       ev[HDR_IMG_NUM_MAX];
+    uint32_t    shutter[HDR_IMG_NUM_MAX];
+    uint32_t    gain[HDR_IMG_NUM_MAX];
+    float       chdr_prop_dark;
+    float       chdr_prop_bright;
+    int         scene_flag;
+    int         in_out_flag;
+    int         dark_flag;
+};
+
+struct sprd_lldr_detect_out_t {
+    float       ev[HDR_IMG_NUM_MAX];
+    uint32_t    shutter[HDR_IMG_NUM_MAX];
+    uint32_t    gain[HDR_IMG_NUM_MAX];
+    int         frame_num;
+    int         tuning_param_index;
+    uint64_t    clock;
+    int         bv;
+    uint32_t    face_num;
+    float       trg_prop_dark;
+    float       trg_prop_bright;
+    uint32_t    sceneChosen;
+    int         scene_flag;
+    int         normalNum;
+    int         in_out_flag;
+    int         dark_flag;
+};
+
+struct sprd_raw_mfnr_detect_out_t {
+    int total_frame_num;
+};
+
+struct xdr_detect_out_t {
+    float ev[XDR_MAX_FUSION_FRAME];
+    int ref_frame_num;
+    int normal_frame_num;
+    int total_frame_num;
+    uint64_t clock;
+    int fusion_class_chosen;
+    int fusion_scene_chosen;
+    int align_merge_class_chosen;
+    int scene_flag;
+    int scene_day;
+};
+
+struct sensor_info_t {
+    int sensorOrientation;
+    int binning_factor;
+    uint32_t source_width_max;
+    uint32_t source_height_max;
+    uint32_t image_format;
+    uint32_t image_pattern;
+    uint32_t trim_width;
+    uint32_t trim_height;
+    uint32_t pixel_width;
+    uint32_t bus_width;
+    struct otp_info_t otp_info;
+    struct img_rect scaler_trim;
+    uint32_t face_type;
+    char sensor_name[SENSOR_NAME_LEN];
+    uint8_t vir_align;
+};
+
+struct otp_info_t {
+    void* ptr;
+    uint32_t size;
+};
+
+struct threeA_info_t {
+    struct ae_result_info ae_info;
+    struct awb_result_info awb_info;
+    struct lsc_result_info lsc_info;
+    struct af_result_info af_info;
+    struct blc_result_info blc_info;
+};
+
+struct ae_result_info {
+    cmr_u32 frm_id;
+    cmr_u32 frm_id_safe;
+    cmr_u32 sof_id;
+    cmr_s32 cur_bv;
+    cmr_u32 cur_lum;
+    cmr_u32 iso;
+    cmr_u32 exp_line;   //cur_exp_line
+    cmr_u32 exp_line_safe;
+    cmr_u64 exp_time;
+    cmr_u64 exp_time_safe;
+    cmr_u32 ae_stable;
+    cmr_u32 flash_lighting_mode;
+    cmr_u32 abl_weight;
+    cmr_u32 total_gain;   //cur_again
+    cmr_u32 total_gain_safe;
+    cmr_u32 sensor_gain;
+    cmr_u32 sensor_gain_safe;
+    cmr_u32 isp_gain;
+    cmr_u32 isp_gain_safe;
+    cmr_u32 lcg_gain;
+    cmr_u32 evd;
+    cmr_u32 hm_evd;
+    cmr_u8 lowlight_flag;   //AE_GET_LOWLIGHT_FLAG_BY_BV
+    cmr_u32 ystat_w;
+    cmr_u32 ystat_h;
+    cmr_u8* ystat_ptr;
+    cmr_u32 face_stable;
+    cmr_u32 face_num;
+    cmr_u32 face_lum;
+    cmr_u32 final_face_backlight;
+    cmr_u32 cur_effect_sensitivity;
+    cmr_u32 cur_effect_sensitivity_safe;
+    float cur_ev;
+    float cur_ev_ori;
+    float cur_lum_avg;
+    float safe_target;
+    float short_target;
+    cmr_u32 flash_status;
+    cmr_u32 flash_status_hal;
+    cmr_u32 reserve2;
+    cmr_u32 reserve3;
+    cmr_u32 reserve4;
+    cmr_u32 reserve5;
+    cmr_u32 reserve6;
+    cmr_u32 reserve7;
+    cmr_u32 reserve8[MAX_CAP_NUM];
+    cmr_u32 reserve9[MAX_CAP_NUM];
+    float reserve10;
+    float reserve11;
+    float reserve12;
+    float reserve13;
+    float reserve14;
+    float reserve15;
+    float reserve16;
+    float reserve17;
+    float reserve18[MAX_CAP_NUM];
+    float reserve19[MAX_CAP_NUM];
+    struct monitor_info ae_monit_inf;   //AE_GET_MONITOR_INFO
+    struct rgb_gain_info gain_info;   //ae rgb gain
+    cmr_u32 pre_sof_id;  //用于从triggerlist取参数的id
+    cmr_u32 pre_type;  //拍照预览，目前拍照赋值CALLBACK_TYPE
+    cmr_s32 pre_bv;
+    cmr_u32 pre_ct;
+    cmr_u32 pre_bv_gain;  //total gain
+    cmr_u32 pre_abl_weight;
+    cmr_u32 pre_backlight;
+    cmr_u32 pre_hm_evd;
+    float pre_lcg_gain;
+    float pre_ev;
+    cmr_u32 reserve20;
+    cmr_u32 reserve21;
+    cmr_u32 reserve22;
+    cmr_u32 reserve23;
+    cmr_u32 reserve24;
+    cmr_u32 reserve25;
+    cmr_u32 reserve26;
+    cmr_u32 reserve27;
+    cmr_u32 reserve28[MAX_CAP_NUM];
+    cmr_u32 reserve29[MAX_CAP_NUM];
+    float reserve30;
+    float reserve31;
+    float reserve32;
+    float reserve33;
+    float reserve34;
+    float reserve35;
+    float reserve36;
+    float reserve37;
+    float reserve38[MAX_CAP_NUM];
+    float reserve39[MAX_CAP_NUM];
+    cmr_u64 cur_effect_exp_time;
+    cmr_u64 cur_effect_exp_time_safe;
+    cmr_u32 cur_effect_exp_line;
+    cmr_u32 cur_effect_exp_line_safe;
+    cmr_u32 cur_effect_dmy_line;
+    cmr_u32 cur_effect_dmy_line_safe;
+    cmr_u32 cur_effect_again;
+    cmr_u32 cur_effect_again_safe;
+    cmr_u32 cur_effect_dgain;
+    cmr_u32 cur_effect_dgain_safe;
+    float cur_effect_fps;
+    float cur_effect_fps_safe;
+    cmr_u32 reserve40;
+    cmr_u32 reserve41;
+    cmr_u32 reserve42;
+    cmr_u32 reserve43;
+    cmr_u32 reserve44;
+    cmr_u32 reserve45;
+    cmr_u32 reserve46;
+    cmr_u32 reserve47;
+    cmr_u32 reserve48[MAX_CAP_NUM];
+    cmr_u32 reserve49[MAX_CAP_NUM];
+    float reserve50;
+    float reserve51;
+    float reserve52;
+    float reserve53;
+    float reserve54;
+    float reserve55;
+    float reserve56;
+    float reserve57;
+    float reserve58[MAX_CAP_NUM];
+    float reserve59[MAX_CAP_NUM];
+};
+
+struct monitor_info {
+    struct ctrl_size win_size;
+    struct ctrl_size win_num;
+    struct ctrl_trim trim;
+};
+
+struct ctrl_size {
+    cmr_u32 w;
+    cmr_u32 h;
+};
+
+struct ctrl_trim {
+    cmr_u32 x;
+    cmr_u32 y;
+    cmr_u32 w;
+    cmr_u32 h;
+};
+
+struct awb_result_info {
+    cmr_u32 r_gain;
+    cmr_u32 g_gain;
+    cmr_u32 b_gain;
+    cmr_u32 ct;
+    cmr_u32 ccm[ARRAY_LEN];    //需要注意
+    cmr_u32 reserve0;
+    cmr_u32 reserve1;
+    cmr_u32 reserve2;
+    cmr_u32 reserve3[MAX_CAP_NUM];
+    cmr_u32 reserve4[MAX_CAP_NUM];
+    float reserve5;
+    float reserve6;
+    float reserve7;
+    float reserve8[MAX_CAP_NUM];
+    float reserve9[MAX_CAP_NUM];
+};
+
+struct lsc_result_info {
+    cmr_u32 full_size_width;
+    cmr_u32 full_size_height;
+    cmr_u32 full_size_grid;
+    cmr_u32 full_size_grid_x;
+    cmr_u32 full_size_grid_y;
+    cmr_u32 LSC_SPD_VERSION;
+    cmr_u32 zsl_flag;
+    cmr_u32 lsc_gain_w;
+    cmr_u32 lsc_gain_h;
+    struct ctrl_size src_size;
+    struct ctrl_size prv_size;
+    struct sensor_crop_info_t sns_crop_info;
+    cmr_u32 reserve0;
+    cmr_u32 reserve1;
+    cmr_u32 reserve2;
+    cmr_u32 reserve3[MAX_CAP_NUM];
+    cmr_u32 reserve4[MAX_CAP_NUM];
+    float reserve5;
+    float reserve6;
+    float reserve7;
+    float reserve8[MAX_CAP_NUM];
+    float reserve9[MAX_CAP_NUM];
+};
+
+struct rgb_gain_info {
+	cmr_u32 bypass;
+	cmr_u32 global_gain;
+	cmr_u32 r_gain;
+	cmr_u32 g_gain;
+	cmr_u32 b_gain;
+	cmr_u32 frame_id;
+};
+
+struct custom_info00 {
+    struct ctrl_size reserve0;
+    struct ctrl_size reserve1;
+    struct ctrl_trim reserve2;
+};
+
+struct custom_info01 {
+    cmr_u32 reserve0;
+    cmr_u32 reserve1;
+    cmr_u32 reserve2;
+    cmr_u32 reserve3;
+    cmr_u32 reserve4;
+    cmr_u32 reserve5;
+};
+
+struct sensor_crop_info_t {
+    cmr_u32 ae_update;
+    cmr_u32 lsc_update;
+    cmr_u32 full_image_width;
+    cmr_u32 full_image_height;
+    cmr_u32 binning;  //Nin1, N=1,2,3...
+    cmr_u32 crop;    //crop:1, no_crop:0
+    cmr_u32 crop_start_col;
+    cmr_u32 crop_start_row;
+};
+
+struct custom_sensor_crop_info_t {
+    cmr_u32 ae_update;
+    cmr_u32 lsc_update;
+    cmr_u32 full_image_width;
+    cmr_u32 full_image_height;
+    cmr_u32 binning;  //Nin1, N=1,2,3...
+    cmr_u32 crop;    //crop:1, no_crop:0
+    cmr_u32 crop_start_col;
+    cmr_u32 crop_start_row;
+};
+
+struct af_result_info {
+    struct af_roi af_roi_regoin;
+    struct af_roi af_roi_regoin_cap;
+    uint32_t af_pos;
+    cmr_u32 focus_complete_flag;
+    cmr_u32 reserve1;
+    cmr_u32 reserve2;
+    cmr_u32 reserve3[MAX_CAP_NUM];
+    cmr_u32 reserve4[MAX_CAP_NUM];
+    float reserve5;
+    float reserve6;
+    float reserve7;
+    float reserve8[MAX_CAP_NUM];
+    float reserve9[MAX_CAP_NUM];
+};
+
+struct af_roi {
+    cmr_u32 sx;
+    cmr_u32 sy;
+    cmr_u32 ex;
+    cmr_u32 ey;
+};
+
+struct custom_roi {
+    cmr_u32 sx;
+    cmr_u32 sy;
+    cmr_u32 ex;
+    cmr_u32 ey;
+};
+
+struct blc_result_info {
+    uint32_t r;
+    uint32_t b;
+    uint32_t gr;
+    uint32_t gb;
+    uint32_t reserve0;
+    uint32_t reserve1;
+    uint32_t reserve2;
+    uint32_t reserve3[MAX_CAP_NUM];
+    uint32_t reserve4[MAX_CAP_NUM];
+    float reserve5;
+    float reserve6;
+    float reserve7;
+    float reserve8[MAX_CAP_NUM];
+    float reserve9[MAX_CAP_NUM];
+};
+
+struct custom_info0 {
+    cmr_u32 reserve0;
+    cmr_u32 reserve1;
+    cmr_u32 reserve2;
+    cmr_s32 reserve3;
+    cmr_u32 reserve4;
+    cmr_u32 reserve5;
+    cmr_u32 reserve6;
+    cmr_u32 reserve7;
+    cmr_u64 reserve8;
+    cmr_u64 reserve9;
+    cmr_u32 reserve10;
+    cmr_u32 reserve11;
+    cmr_u32 reserve12;
+    cmr_u32 reserve13;
+    cmr_u32 reserve14;
+    cmr_u32 reserve15;
+    cmr_u32 reserve16;
+    cmr_u32 reserve17;
+    cmr_u32 reserve18;
+    cmr_u32 reserve19;
+    cmr_u32 reserve20;
+    cmr_u32 reserve21;
+    cmr_u8 reserve22;
+    cmr_u32 reserve23;
+    cmr_u32 reserve24;
+    cmr_u8* reserve25;
+    cmr_u32 reserve26;
+    cmr_u32 reserve27;
+    cmr_u32 reserve28;
+    cmr_u32 reserve29;
+    cmr_u32 reserve30;
+    cmr_u32 reserve31;
+    float reserve32;
+    float reserve33;
+    float reserve34;
+    float reserve35;
+    float reserve36;
+    cmr_u32 reserve37;
+    cmr_u32 reserve38;
+    cmr_u32 reserve39;
+    cmr_u32 reserve40;
+    cmr_u32 reserve41;
+    cmr_u32 reserve42;
+    cmr_u32 reserve43;
+    cmr_u32 reserve44;
+    cmr_u32 reserve45[MAX_CAP_NUM];
+    cmr_u32 reserve46[MAX_CAP_NUM];
+    float reserve47;
+    float reserve48;
+    float reserve49;
+    float reserve50;
+    float reserve51;
+    float reserve52;
+    float reserve53;
+    float reserve54;
+    float reserve55[MAX_CAP_NUM];
+    float reserve56[MAX_CAP_NUM];
+    struct custom_info00 reserve57;
+    struct custom_info01 reserve58;
+    cmr_u32 reserve59;
+    cmr_u32 reserve60;
+    cmr_s32 reserve61;
+    cmr_u32 reserve62;
+    cmr_u32 reserve63;
+    cmr_u32 reserve64;
+    cmr_u32 reserve65;
+    cmr_u32 reserve66;
+    float reserve67;
+    float reserve68;
+    cmr_u32 reserve69;
+    cmr_u32 reserve70;
+    cmr_u32 reserve71;
+    cmr_u32 reserve72;
+    cmr_u32 reserve73;
+    cmr_u32 reserve74;
+    cmr_u32 reserve75;
+    cmr_u32 reserve76;
+    cmr_u32 reserve77[MAX_CAP_NUM];
+    cmr_u32 reserve78[MAX_CAP_NUM];
+    float reserve79;
+    float reserve80;
+    float reserve81;
+    float reserve82;
+    float reserve83;
+    float reserve84;
+    float reserve85;
+    float reserve86;
+    float reserve87[MAX_CAP_NUM];
+    float reserve88[MAX_CAP_NUM];
+    cmr_u64 reserve89;
+    cmr_u64 reserve90;
+    cmr_u32 reserve91;
+    cmr_u32 reserve92;
+    cmr_u32 reserve93;
+    cmr_u32 reserve94;
+    cmr_u32 reserve95;
+    cmr_u32 reserve96;
+    cmr_u32 reserve97;
+    cmr_u32 reserve98;
+    float reserve99;
+    float reserve100;
+    cmr_u32 reserve101;
+    cmr_u32 reserve102;
+    cmr_u32 reserve103;
+    cmr_u32 reserve104;
+    cmr_u32 reserve105;
+    cmr_u32 reserve106;
+    cmr_u32 reserve107;
+    cmr_u32 reserve108;
+    cmr_u32 reserve109[MAX_CAP_NUM];
+    cmr_u32 reserve110[MAX_CAP_NUM];
+    float reserve111;
+    float reserve112;
+    float reserve113;
+    float reserve114;
+    float reserve115;
+    float reserve116;
+    float reserve117;
+    float reserve118;
+    float reserve119[MAX_CAP_NUM];
+    float reserve120[MAX_CAP_NUM];
+};
+
+struct custom_info1 {
+    cmr_u32 reserve0;
+    cmr_u32 reserve1;
+    cmr_u32 reserve2;
+    cmr_u32 reserve3;
+    cmr_u32 reserve4[ARRAY_LEN];
+    cmr_u32 reserve5;
+    cmr_u32 reserve6;
+    cmr_u32 reserve7;
+    cmr_u32 reserve8[MAX_CAP_NUM];
+    cmr_u32 reserve9[MAX_CAP_NUM];
+    float reserve10;
+    float reserve11;
+    float reserve12;
+    float reserve13[MAX_CAP_NUM];
+    float reserve14[MAX_CAP_NUM];
+};
+
+struct custom_info2 {
+    cmr_u32 reserve0;
+    cmr_u32 reserve1;
+    cmr_u32 reserve2;
+    cmr_u32 reserve3;
+    cmr_u32 reserve4;
+    cmr_u32 reserve5;
+    cmr_u32 reserve6;
+    cmr_u32 reserve7;
+    cmr_u32 reserve8;
+    struct ctrl_size reserve9;
+    struct ctrl_size reserve10;
+    struct custom_sensor_crop_info_t reserve11;
+    cmr_u32 reserve12;
+    cmr_u32 reserve13;
+    cmr_u32 reserve14;
+    cmr_u32 reserve15[MAX_CAP_NUM];
+    cmr_u32 reserve16[MAX_CAP_NUM];
+    float reserve17;
+    float reserve18;
+    float reserve19;
+    float reserve20[MAX_CAP_NUM];
+    float reserve21[MAX_CAP_NUM];
+};
+
+struct custom_info3 {
+    struct custom_roi reserve0;
+    struct custom_roi reserve1;
+    uint32_t reserve2;
+    cmr_u32 reserve3;
+    cmr_u32 reserve4;
+    cmr_u32 reserve5;
+    cmr_u32 reserve6[MAX_CAP_NUM];
+    cmr_u32 reserve7[MAX_CAP_NUM];
+    float reserve8;
+    float reserve9;
+    float reserve10;
+    float reserve11[MAX_CAP_NUM];
+    float reserve12[MAX_CAP_NUM];
+};
+
+struct custom_info4 {
+    uint32_t reserve0;
+    uint32_t reserve1;
+    uint32_t reserve2;
+    uint32_t reserve3;
+    uint32_t reserve4;
+    uint32_t reserve5;
+    uint32_t reserve6;
+    uint32_t reserve7[MAX_CAP_NUM];
+    uint32_t reserve8[MAX_CAP_NUM];
+    float reserve9;
+    float reserve10;
+    float reserve11;
+    float reserve12[MAX_CAP_NUM];
+    float reserve13[MAX_CAP_NUM];
+};
+
+struct custom_info_t {
+    struct custom_info0 info0;
+    struct custom_info1 info1;
+    struct custom_info2 info2;
+    struct custom_info3 info3;
+    struct custom_info4 info4;
+};
+
+struct trigger_info_t {
+    int app_id;
+    int bv;
+    int ct;
+    int face;
+    int iso;
+    int evd;
+    int backlight;
+    int ai_scene;
+    int default_val;
+    int frame_num;
+    int environment;
+    int flash;
+    float lcg_gain;
+    float total_gain;
+    float zoom_ratio;
+    float ev;
+    float dark_ratio;
+    float bright_ratio;
+    float chdr_dark_ratio;
+    float chdr_bright_ratio;
+    float lldr_dark_ratio;
+    float lldr_bright_ratio;
+    int usd_face;
+    int lexp_total_gain;
+    int race;
+    int reserve3;
+    int reserve4;
+    float reserve5;
+    float reserve6;
+    float reserve7;
+    float reserve8;
+    float reserve9;
+};
+
+struct pipeline_param_t {
+    int mv_x;
+    int mv_y;
+    uint32_t reserve0;
+    uint32_t reserve1;
+    uint32_t reserve2;
+    uint32_t reserve3[MAX_CAP_NUM];
+    uint32_t reserve4[MAX_CAP_NUM];
+    float reserve5;
+    float reserve6;
+    float reserve7;
+    float reserve8[MAX_CAP_NUM];
+    float reserve9[MAX_CAP_NUM];
+};
+

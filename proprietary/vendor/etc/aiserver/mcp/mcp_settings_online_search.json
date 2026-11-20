@@ -1,0 +1,10 @@
+{
+    "mcpServers": {
+      "AISearch": {
+        "disabled": true,
+        "timeout": 60,
+        "url": "http://appbuilder.baidu.com/v2/ai_search/mcp/sse?api_key=Bearer+bce-v3/ALTAK-xy3iDnvE7NchFPm6r6cYj/ec499bc37a4ba3cc6818a75328220fe00ba41849",
+        "transportType": "sse"
+      }
+    }
+}

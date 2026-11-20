@@ -1,0 +1,111 @@
+{
+  "case": "DualCamDepth",
+  "inputstream": {
+    "dimention": [
+      {
+        "format": "yuv",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer1"
+      },
+      {
+        "format": "yuv",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer2"
+      },
+      {
+        "format": "yuv",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer3"
+      }
+    ]
+  },
+  "outputstream": {
+    "dimention": [
+      {
+        "format": "yuv",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer1"
+      },
+      {
+        "format": "yuv",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer2"
+      },
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer3"
+      },
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer4"
+      }
+    ]
+  },
+  "params": [
+    {
+      "ps": [
+        {
+          "tag": "SPRD_TAG_SENSOR_SIZE",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_STREAM_SIZE",
+          "type": ["SNAPSHOT_TYPE","PREVIEW_TYPE","VIDEO_TYPE","CALLBACK_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_NORMAL_RESULT",
+          "type": ["XTS_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_AF_INFO_OTHER",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_ISCENE_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_APP_ZOOM_RATIO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_AF_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_FD_SNAPSHOT",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_FD_ID",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_MULTI_OTP_DATA",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_MULTI_MODE_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_DUALCAM_RELATIVE_PARAMS",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_POSTPROC_CAP_XML_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        }
+      ]
+    }
+  ]
+}

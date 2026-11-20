@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2024 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<AIPD_20653>
+	<block_header>
+		<version type="u8">
+			<version_major>0</version_major>
+			<version_minor>0</version_minor>
+			<version_micro>0</version_micro>
+			<reserved len="5">0</reserved>
+		</version>
+		<block_info type="u32">
+			<block_id>20653</block_id>
+			<bypass range="[0,1]">0</bypass>
+			<smart_size>0</smart_size>
+			<block_size>880</block_size>
+			<modify_time>0</modify_time>
+			<trigger_flag range="[0,1]">0</trigger_flag>
+			<reserved len="2">0</reserved>
+		</block_info>
+	</block_header>
+	<header>
+		<magic type="u32">3452816845</magic>
+		<param_version type="int32">83886080</param_version>
+		<param_size type="int32">880</param_size>
+		<reserved type="u32">0</reserved>
+	</header>
+	<calc>
+		<bypass type="u16">1</bypass>
+		<raw_OB>64</raw_OB>
+		<raw_max>1023</raw_max>
+		<max_buffer_w>150</max_buffer_w>
+		<max_buffer_h>600</max_buffer_h>
+		<reserved len="15">0</reserved>
+	</calc>
+	<dump>
+		<dump_enable type="u16">0</dump_enable>
+		<dump_skip>30</dump_skip>
+		<reserved len="10">0</reserved>
+	</dump>
+	<model>
+		<net_input_w type="u16">96</net_input_w>
+		<net_input_h>384</net_input_h>
+		<vcm_predict_min>80</vcm_predict_min>
+		<vcm_predict_max>240</vcm_predict_max>
+		<vcm_predict_interval type="float">5.0000000</vcm_predict_interval>
+		<vcm_predict_len type="u16">32</vcm_predict_len>
+		<vcm_remap_min>100</vcm_remap_min>
+		<vcm_remap_max>900</vcm_remap_max>
+		<reserved len="31">0</reserved>
+	</model>
+	<vcm_limit>
+		<in_limit_enable type="u16">0</in_limit_enable>
+		<in_remap_min>50</in_remap_min>
+		<in_remap_max>800</in_remap_max>
+		<reserved len="17">0</reserved>
+	</vcm_limit>
+	<otp>
+		<otp_apply_enable type="u16">1</otp_apply_enable>
+		<reserved len="19">0</reserved>
+	</otp>
+	<reserved type="u32" len="160">0</reserved>
+</AIPD_20653>

@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2025 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+on property:ro.bootmode=cali
+    start vendor.drm-widevine-hal-cali
+
+service vendor.drm-widevine-hal-cali /apex/com.google.android.widevine/bin/hw/android.hardware.drm-service.widevine-rikers
+    interface aidl android.hardware.drm.IDrmFactory/widevine
+    class cali
+    user media
+    group media mediadrm drmrpc system
+

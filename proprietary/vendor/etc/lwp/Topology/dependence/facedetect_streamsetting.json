@@ -1,0 +1,110 @@
+{
+  "case": "facedetect",
+  "inputstream": {
+    "dimention": [
+      {
+          "format": "yuv",
+          "width": 3264,
+          "height": 2448,
+          "location": "buffer1"
+      },
+      {
+          "format": "yuv",
+          "width": 3264,
+          "height": 2448,
+          "location": "buffer2"
+      }
+    ]
+  },
+  "outputstream": {
+    "dimention": [
+      {
+          "format": "yuv",
+          "width": 3264,
+          "height": 2448,
+          "location": "buffer1"
+      },
+      {
+          "format": "yuv",
+          "width": 3264,
+          "height": 2448,
+          "location": "buffer2"
+      }
+    ]
+  }
+
+  "params": [
+    {
+      "ps": [
+        {
+          "tag": "SPRD_TAG_VIDEO_INFO",
+          "type": ["ASYNC_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_FD_PARM",
+          "type": ["ASYNC_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_MULTI_MASTER_CAM_ID",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_CONFIGSTRAM_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_IS_HEIC_CAP",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_FD_TOUCH_POINT",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_ISCENE_INFO",
+          "type": ["SNAPSHOT_TYPE", "PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_CAP_PARAM_BUFFER_ID",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_AE_RESULT_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_DEVICE_ORIENTATION",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_APP_ZOOM_RATIO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_MULTI_REF_CAM_ID",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_EIS_PROCESS_FLAG",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_STREAM_SIZE",
+          "type": ["PREVIEW_TYPE", "SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_REMOSAIC_INFO",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_PREV_FLASH",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_MESH_MATRIX_INFO",
+          "type": ["PREVIEW_TYPE"]
+        }
+      ]
+    }
+  ]
+}

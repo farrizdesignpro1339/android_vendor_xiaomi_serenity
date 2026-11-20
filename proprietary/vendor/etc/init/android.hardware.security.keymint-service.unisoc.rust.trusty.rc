@@ -1,0 +1,10 @@
+service vendor.keymint-unisoc /vendor/bin/hw/android.hardware.security.keymint-unisoc.service.trusty \
+                                        --dev ${ro.hardware.trusty_ipc_dev.keymint:-/dev/trusty-ipc-dev0}
+    class early_hal
+    user system
+    group system drmrpc
+    # The keymint service is not allowed to restart.
+    # If it crashes, a device restart is required.
+
+on cali-start
+    start vendor.keymint-unisoc

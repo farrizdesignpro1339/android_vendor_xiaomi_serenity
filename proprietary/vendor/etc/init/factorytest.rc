@@ -1,0 +1,133 @@
+service vendor.factorytest /vendor/bin/factorytest
+    user root
+    group root input radio system sdcard_rw net_bt_admin wifi camera audio media graphics nfc
+
+service console-ft /system/bin/sh
+    console
+    user root
+    group root
+    seclabel u:r:shell:s0
+
+
+
+#trigger by /vendor/etc/init/hw/init.factorytest.rc
+on factorytest
+    chown system root /sys/bus/iio/devices/trigger0/name
+    chown system root /sys/class/sprd_sensorhub/sensor_hub/iio/buffer
+    chown system root /sys/class/sprd_sensorhub/sensor_hub/iio/buffer/length
+    chown system root /sys/class/sprd_sensorhub/sensor_hub/iio/buffer/enable
+    chown system root /sys/class/sprd_sensorhub/sensor_hub/iio/trigger/current_trigger
+    chmod 660 /sys/bus/iio/devices/trigger0/name
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/iio/buffer/length
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/iio/buffer/enable
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/iio/trigger/current_trigger
+    chown system root /sys/class/sprd_sensorhub/sensor_hub/iio/name
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/iio/name
+
+    chown system root /sys/module/sensorhub/parameters/gryo_firms
+    chown system root /sys/module/sensorhub/parameters/acc_firms
+    chown system root /sys/module/sensorhub/parameters/mag_firms
+    chown system root /sys/module/sensorhub/parameters/pressure_firms
+    chown system root /sys/module/sensorhub/parameters/light_firms
+    chown system root /sys/module/sensorhub/parameters/prox_firms
+    chown system root /sys/module/sensorhub/parameters/color_temp_firms
+    chown system root /sys/module/firmware_class/parameters/path
+    chmod 660     /sys/module/sensorhub/parameters/gryo_firms
+    chmod 660     /sys/module/sensorhub/parameters/acc_firms
+    chmod 660     /sys/module/sensorhub/parameters/mag_firms
+    chmod 660     /sys/module/sensorhub/parameters/pressure_firms
+    chmod 660     /sys/module/sensorhub/parameters/light_firms
+    chmod 660     /sys/module/sensorhub/parameters/prox_firms
+    chmod 660     /sys/module/sensorhub/parameters/color_temp_firms
+    chmod 660     /sys/module/firmware_class/parameters/path
+
+#trigger by /vendor/etc/init/hw/init.factorytest.rc
+on factorytest-start
+    start vendor.ril-daemon
+    #support sensorhub factorytest start
+    chown system system /sys/class/sprd_sensorhub/sensor_hub/batch
+    chown system system /sys/class/sprd_sensorhub/sensor_hub/logctl
+    chown system system /sys/class/sprd_sensorhub/sensor_hub/calibrator_cmd
+    chown system system /sys/class/sprd_sensorhub/sensor_hub/calibrator_data
+    chown system system /sys/class/sprd_sensorhub/sensor_hub/enable
+    chown system system /sys/class/sprd_sensorhub/sensor_hub/flush
+    chown system system /sys/class/sprd_sensorhub/sensor_hub/version
+    chown system system /sys/class/sprd_sensorhub/sensor_hub/mag_cali_flag
+    chown system system /sys/class/sprd_sensorhub/sensor_hub/sensorhub
+    chown system system /sys/class/sprd_sensorhub/sensor_hub/raw_data_als
+    chown system system /sys/class/sprd_sensorhub/sensor_hub/raw_data_ps
+    chown system system /sys/class/sprd_sensorhub/sensor_hub/light_sensor_calibrator
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/batch
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/logctl
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/calibrator_cmd
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/calibrator_data
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/enable
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/flush
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/version
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/mag_cali_flag
+    chmod 660 /sys/class/sprd_sensorhub/sensor_hub/sensorhub
+    chmod 666 /sys/class/sprd_sensorhub/sensor_hub/raw_data_als
+    chmod 666 /sys/class/sprd_sensorhub/sensor_hub/raw_data_ps
+    chmod 666 /sys/class/sprd_sensorhub/sensor_hub/light_sensor_calibrator
+
+    mkdir /${ro.vendor.prodnv_path}/productinfo 0771 system root
+#support sensorhub factorytest end
+    mkdir /${ro.vendor.prodnv_path}/sensorhub 0770 system root
+    mkdir /${ro.vendor.prodnv_path}/productinfo/sensor_calibration_data 0770 system root
+    chown system root /${ro.vendor.prodnv_path}/productinfo/sensor_calibration_data/acc
+    chown system root /${ro.vendor.prodnv_path}/productinfo/sensor_calibration_data/mag
+    chown system root /${ro.vendor.prodnv_path}/productinfo/sensor_calibration_data/gyro
+    chown system root /${ro.vendor.prodnv_path}/productinfo/sensor_calibration_data/light
+    chown system root /${ro.vendor.prodnv_path}/productinfo/sensor_calibration_data/proximity
+    chmod 660 /${ro.vendor.prodnv_path}/productinfo/sensor_calibration_data/acc
+    chmod 660 /${ro.vendor.prodnv_path}/productinfo/sensor_calibration_data/mag
+    chmod 660 /${ro.vendor.prodnv_path}/productinfo/sensor_calibration_data/gyro
+    chmod 660 /${ro.vendor.prodnv_path}/productinfo/sensor_calibration_data/light
+    chmod 660 /${ro.vendor.prodnv_path}/productinfo/sensor_calibration_data/proximity
+# sensor(non-sensorhub) file attribute modify
+    mkdir /${ro.vendor.prodnv_path}/productinfo/acc_sensor_calibration 0770 system root
+    chown system root /${ro.vendor.prodnv_path}/productinfo/acc_sensor_calibration/x_axis_offset
+    chown system root /${ro.vendor.prodnv_path}/productinfo/acc_sensor_calibration/y_axis_offset
+    chown system root /${ro.vendor.prodnv_path}/productinfo/acc_sensor_calibration/z_axis_offset
+    chmod 660 /${ro.vendor.prodnv_path}/productinfo/acc_sensor_calibration/x_axis_offset
+    chmod 660 /${ro.vendor.prodnv_path}/productinfo/acc_sensor_calibration/y_axis_offset
+    chmod 660 /${ro.vendor.prodnv_path}/productinfo/acc_sensor_calibration/z_axis_offset
+
+    class_start early_hal
+    class_start hal
+#add wifi start
+    setprop wifi.interface wlan0
+#add wifi end
+    start sensors-hal-1-0
+    start vendor.sensors-hal-1-0
+    setprop persist.ylog.enabled 1
+    setprop sys.usb.config adb,vser,gser
+    setprop sys.usb.configfs 1
+    start ylog
+    start slogmodem
+    start hwservicemanager
+    start debuggerd
+    start debuggerd64
+    chmod 0660 /dev/block/mmcblk0p26
+    chown system system /dev/block/mmcblk0p26
+    start vendor.engpcclientlte
+    start vendor.usys_mgr
+    start logd
+    start gnss_download
+    #start media
+    start wcnd
+    start wcnd_eng
+    start gpsd
+    start servicemanager
+    start wificond
+    insmod ${ro.vendor.ko.mount.point}/socko/sprdbt_tty.ko
+    chmod 660 /sys/class/rfkill/rfkill0/state
+    chown bluetooth net_bt_admin /sys/class/rfkill/rfkill0/state
+    chmod 660 /sys/class/rfkill/rfkill0/type
+    chown bluetooth net_bt_admin /sys/class/rfkill/rfkill0/type
+    insmod ${ro.vendor.ko.mount.point}/socko/sprd_fm.ko
+    chmod 0666 /dev/adf-interface0.0
+    chmod 0666 /dev/adf-overlay-engine0.0
+    chmod 0666 /dev/adf0
+    #stop vendor.hwcomposer-2-1
+    write /sys/touchscreen/ts_suspend 0

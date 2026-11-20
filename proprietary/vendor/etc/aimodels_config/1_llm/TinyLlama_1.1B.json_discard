@@ -1,0 +1,20 @@
+{
+	"model_id":"TinyLlama_1.1B",
+	"app_name_en":"TinyLlama_1.1B",
+	"app_name_zh":"TinyLlama_1.1B",
+	"first_menu_list":1,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":40,
+	"master_load_modelname":"UniMnnLlmTinyLlama_1_1B",
+	"slave_load_modelname":"n6pslave::UniTinyLlama",
+	"option_model_name": [
+		{"ax_model":"TinyLlama"},
+		{"master_cpu":"UniMnnLlmTinyLlama_1_1B"},
+		{"slave_cpu":"n6pslave::UniMnnLlmTinyLlama_1_1B"}
+	]
+}

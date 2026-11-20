@@ -1,0 +1,30 @@
+{
+	"model_id":"wechat_auto",
+	"app_name_en":"WeChat Auto",
+	"app_name_zh":"微信发送",
+	"first_menu_list":4,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":false,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":15,
+	"master_load_modelname":"UniMnnLlmQwen2_1_5BWeChat",
+	"slave_load_modelname":"n6pslave::UniQwen2_1_5BWeChat",
+	"prompt_text_zh":[
+		"给张三发微信说今晚7点去打羽毛球",
+		"给张三发微信说今天下午会议主题是AI人工智能"
+	],
+	"prompt_text_en":[
+		"给张三发微信说今晚7点去打羽毛球",
+		"给张三发微信说今天下午会议主题是AI人工智能"
+	],
+	"prompt_image":[],
+	"option_model_name": [
+		{"ax_model":"Deepseek-7B"},
+		{"master_cpu":"UniMnnLlmQwen2_1_5BWeChat"},
+		{"slave_cpu":"n6pslave::UniMnnLlmQwen2_1_5BWeChat"}
+	]
+}

@@ -1,0 +1,106 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2024 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Encode_Yuv",
+    "stream": "encode_yuv_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode4"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "JpegNode",
+            "vendor": "SPRD",
+            "id": "cap_Jpeg"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode1","SourceNode2","SourceNode3","SourceNode4"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode4",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_Jpeg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_Jpeg",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

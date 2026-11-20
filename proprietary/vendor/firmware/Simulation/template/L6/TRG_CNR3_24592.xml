@@ -1,0 +1,820 @@
+<?xml version="1.0"?>
+<!--
+    SPDX-FileCopyrightText: 2023-2024 Unisoc (Shanghai) Technologies Co., Ltd
+    SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+    Copyright 2023-2024 Unisoc (Shanghai) Technologies Co., Ltd.
+    Licensed under the Unisoc General Software License, version 1.0 (the License);
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+    Software distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+    See the Unisoc General Software License, version 1.0 for more details.
+-->
+<root name="CNR3">
+ <BlockInfo>
+  <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">24592</Parameter>
+  <Parameter index="" name="version" des="description" level="1" range="[0,32767]" type="int">1</Parameter>
+  <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>
+  <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">2401081104</Parameter>
+  <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">48</Parameter>
+  <Parameter index="" name="triggersize" des="description" level="1" range="[0,4294967295]" type="int">204</Parameter>
+  <Parameter index="" name="datasize" des="description" level="1" range="[0,4294967295]" type="int">2656</Parameter>
+  <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">8000</Parameter>
+  <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">6000</Parameter>
+  <Parameter index="" name="BlockControl" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+ </BlockInfo>
+ <Triggers name="CNR3" select_way="0" trigger_enable="1" group_num="8">
+  <Trigger start="1.0" end="1.0" para="total_gain" name="region0" interp_type="1" enable="1">0</Trigger>
+  <Trigger start="3.0" end="3.0" para="total_gain" name="region1" interp_type="1" enable="1">1</Trigger>
+  <Trigger start="11.0" end="11.0" para="total_gain" name="region2" interp_type="1" enable="1">2</Trigger>
+  <Trigger start="28.0" end="28.0" para="total_gain" name="region3" interp_type="1" enable="1">3</Trigger>
+  <Trigger start="38.0" end="38.0" para="total_gain" name="region4" interp_type="1" enable="1">4</Trigger>
+  <Trigger start="48.0" end="48.0" para="total_gain" name="region5" interp_type="1" enable="1">5</Trigger>
+  <Trigger start="60.0" end="60.0" para="total_gain" name="region6" interp_type="1" enable="1">6</Trigger>
+  <Trigger start="78.0" end="78.0" para="total_gain" name="region7" interp_type="1" enable="1">7</Trigger>
+ </Triggers>
+ <Parameters name="CNR3" group_num="8" des="description">
+  <Parameter index="0" name="region0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CNR3_Control">
+    <Parameter name="level_enable" des="description" default="1" level="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="low_ct_thrd" des="description" default="0" level="1" range="[0,20000]" type="int" reserve="0x0007" length="1">0</Parameter>
+   <Parameter name="radius_base" des="description" default="1024" level="1" range="[1024,1024]" type="int" reserve="0x0007" length="1">1024</Parameter>
+   <Parameter name="CNR3 param" type="table">
+    <Parameter name="Layer0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">7.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">8.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">9.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0020" length="1">740</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0020" length="1">256</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0020" length="1">256</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">2000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">1500</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer1" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">6.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">7.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">8.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0040" length="1">370</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0040" length="1">256</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0040" length="1">256</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">1000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">750</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer2" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0052" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">5.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">6.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">7.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0062" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0060" length="1">180</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0060" length="1">256</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0060" length="1">256</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">500</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">375</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer3" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0072" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">4.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">5.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">6.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0082" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0080" length="1">90</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0080" length="1">256</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0080" length="1">256</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">250</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">187</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer4" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0092" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">3.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">4.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">5.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x00a2" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x00a0" length="1">44</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x00a0" length="1">256</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x00a0" length="1">256</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">125</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">93</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CNR3_Control">
+    <Parameter name="level_enable" des="description" default="1" level="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="low_ct_thrd" des="description" default="0" level="1" range="[0,20000]" type="int" reserve="0x0007" length="1">0</Parameter>
+   <Parameter name="radius_base" des="description" default="1024" level="1" range="[1024,1024]" type="int" reserve="0x0007" length="1">1024</Parameter>
+   <Parameter name="CNR3 param" type="table">
+    <Parameter name="Layer0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">9.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">10.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">11.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0020" length="1">740</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0020" length="1">256</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0020" length="1">256</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">2000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">1500</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer1" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">8.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">9.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">10.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0040" length="1">370</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0040" length="1">192</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0040" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">1000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">750</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer2" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0052" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">7.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">8.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">9.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0062" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0060" length="1">180</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0060" length="1">192</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0060" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">500</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">375</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer3" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0072" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">6.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">7.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">8.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0082" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0080" length="1">90</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0080" length="1">256</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0080" length="1">256</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">250</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">187</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer4" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0092" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">5.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">6.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">7.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x00a2" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x00a0" length="1">44</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x00a0" length="1">256</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x00a0" length="1">256</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">125</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">93</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CNR3_Control">
+    <Parameter name="level_enable" des="description" default="1" level="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="low_ct_thrd" des="description" default="0" level="1" range="[0,20000]" type="int" reserve="0x0007" length="1">0</Parameter>
+   <Parameter name="radius_base" des="description" default="1024" level="1" range="[1024,1024]" type="int" reserve="0x0007" length="1">1024</Parameter>
+   <Parameter name="CNR3 param" type="table">
+    <Parameter name="Layer0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">12.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">13.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">14.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0020" length="1">740</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0020" length="1">192</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0020" length="1">256</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">2000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">1500</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer1" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">11.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">12.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">13.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0040" length="1">370</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0040" length="1">192</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0040" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">1000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">750</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer2" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0052" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">10.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">11.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">12.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0062" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0060" length="1">180</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0060" length="1">192</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0060" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">500</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">375</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer3" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0072" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">9.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">10.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">11.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0082" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0080" length="1">90</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0080" length="1">192</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0080" length="1">256</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">250</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">187</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer4" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0092" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">8.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">9.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">10.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x00a2" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x00a0" length="1">44</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x00a0" length="1">192</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x00a0" length="1">256</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">125</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">93</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CNR3_Control">
+    <Parameter name="level_enable" des="description" default="1" level="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="low_ct_thrd" des="description" default="0" level="1" range="[0,20000]" type="int" reserve="0x0007" length="1">0</Parameter>
+   <Parameter name="radius_base" des="description" default="1024" level="1" range="[1024,1024]" type="int" reserve="0x0007" length="1">1024</Parameter>
+   <Parameter name="CNR3 param" type="table">
+    <Parameter name="Layer0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">14.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">15.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">16.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0020" length="1">740</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0020" length="1">160</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0020" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">2000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">1500</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer1" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">13.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">14.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">15.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0040" length="1">370</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0040" length="1">160</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0040" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">1000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">750</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer2" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0052" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">12.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">13.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">14.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0062" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0060" length="1">180</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0060" length="1">160</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0060" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">500</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">375</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer3" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0072" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">11.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">12.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">13.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0082" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0080" length="1">90</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0080" length="1">160</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0080" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">250</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">187</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer4" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0092" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">10.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">11.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">12.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x00a2" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x00a0" length="1">44</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x00a0" length="1">160</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x00a0" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">125</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">93</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="4" name="region4" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CNR3_Control">
+    <Parameter name="level_enable" des="description" default="1" level="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="low_ct_thrd" des="description" default="0" level="1" range="[0,20000]" type="int" reserve="0x0007" length="1">0</Parameter>
+   <Parameter name="radius_base" des="description" default="1024" level="1" range="[1024,1024]" type="int" reserve="0x0007" length="1">1024</Parameter>
+   <Parameter name="CNR3 param" type="table">
+    <Parameter name="Layer0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">16.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">17.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">18.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0020" length="1">740</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0020" length="1">128</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0020" length="1">512</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">2000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">1500</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer1" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">15.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">16.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">17.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0040" length="1">370</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0040" length="1">128</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0040" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">1000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">750</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer2" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0052" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">14.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">15.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">16.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0062" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0060" length="1">180</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0060" length="1">128</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0060" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">500</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">375</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer3" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0072" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">13.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">14.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">15.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0082" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0080" length="1">90</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0080" length="1">128</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0080" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">250</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">187</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer4" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0092" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">12.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">13.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">14.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x00a2" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x00a0" length="1">44</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x00a0" length="1">128</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x00a0" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">125</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">93</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="5" name="region5" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CNR3_Control">
+    <Parameter name="level_enable" des="description" default="1" level="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="low_ct_thrd" des="description" default="0" level="1" range="[0,20000]" type="int" reserve="0x0007" length="1">0</Parameter>
+   <Parameter name="radius_base" des="description" default="1024" level="1" range="[1024,1024]" type="int" reserve="0x0007" length="1">1024</Parameter>
+   <Parameter name="CNR3 param" type="table">
+    <Parameter name="Layer0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">19.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">20.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">21.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0020" length="1">740</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0020" length="1">96</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0020" length="1">512</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">2000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">1500</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer1" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">17.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">18.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">19.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0040" length="1">370</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0040" length="1">96</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0040" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">1000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">750</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer2" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0052" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">16.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">17.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">18.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0062" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0060" length="1">180</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0060" length="1">96</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0060" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">500</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">375</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer3" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0072" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">15.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">16.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">17.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0082" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0080" length="1">90</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0080" length="1">96</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0080" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">250</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">187</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer4" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0092" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">14.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">15.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">16.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x00a2" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x00a0" length="1">44</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x00a0" length="1">96</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x00a0" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">125</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">93</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="6" name="region6" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CNR3_Control">
+    <Parameter name="level_enable" des="description" default="1" level="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="low_ct_thrd" des="description" default="0" level="1" range="[0,20000]" type="int" reserve="0x0007" length="1">0</Parameter>
+   <Parameter name="radius_base" des="description" default="1024" level="1" range="[1024,1024]" type="int" reserve="0x0007" length="1">1024</Parameter>
+   <Parameter name="CNR3 param" type="table">
+    <Parameter name="Layer0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">21.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">22.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">23.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0020" length="1">740</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0020" length="1">64</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0020" length="1">512</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">2000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">1500</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer1" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">19.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">20.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">21.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0040" length="1">370</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0040" length="1">64</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0040" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">1000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">750</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer2" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0052" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">18.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">19.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">20.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0062" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0060" length="1">180</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0060" length="1">64</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0060" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">500</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">375</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer3" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0072" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">17.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">18.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">19.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0082" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0080" length="1">90</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0080" length="1">64</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0080" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">250</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">187</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer4" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0092" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">16.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">17.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">18.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x00a2" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x00a0" length="1">44</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x00a0" length="1">64</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x00a0" length="1">384</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">125</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">93</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="7" name="region7" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CNR3_Control">
+    <Parameter name="level_enable" des="description" default="1" level="1" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="low_ct_thrd" des="description" default="0" level="1" range="[0,20000]" type="int" reserve="0x0007" length="1">0</Parameter>
+   <Parameter name="radius_base" des="description" default="1024" level="1" range="[1024,1024]" type="int" reserve="0x0007" length="1">1024</Parameter>
+   <Parameter name="CNR3 param" type="table">
+    <Parameter name="Layer0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0012" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0010" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">23.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">24.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0010" length="1">25.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0022" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0020" length="1">740</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0020" length="1">1</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0020" length="1">512</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">2000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">1500</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer1" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0032" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0030" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">21.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">22.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0030" length="1">23.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0042" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0040" length="1">370</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0040" length="1">1</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0040" length="1">512</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">1000</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">750</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer2" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0052" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0050" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">20.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">21.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0050" length="1">22.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0062" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0060" length="1">180</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0060" length="1">1</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0060" length="1">512</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">500</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">375</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer3" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0072" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0070" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">19.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">20.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0070" length="1">21.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0082" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x0080" length="1">90</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0080" length="1">1</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x0080" length="1">512</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">250</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">187</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+    <Parameter name="Layer4" des="description" level="1" range="[0,100]" type="int" reserve="0x0010" length="1">
+     <Parameter name="lowpass_filter_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x0092" length="1">1</Parameter>
+     <Parameter name="luma_T0" des="description" default="50" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">60</Parameter>
+     <Parameter name="luma_T1" des="description" default="160" level="1" range="[0,255]" type="int" reserve="0x0090" length="1">150</Parameter>
+     <Parameter name="sigma0" des="description" default="10" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">18.0</Parameter>
+     <Parameter name="sigma1" des="description" default="13" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">19.0</Parameter>
+     <Parameter name="sigma2" des="description" default="15" level="1" range="[1.0,63.0]" type="float" reserve="0x0090" length="1">20.0</Parameter>
+     <Parameter name="denoise_radial_en" des="description" default="0" level="1" range="[0,1]" type="int" reserve="0x00a2" length="1">1</Parameter>
+     <Parameter name="baseRadius_factor" des="description" default="1024" level="1" range="[0,1024]" type="int" reserve="0x00a0" length="1">44</Parameter>
+     <Parameter name="minRatio" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x00a0" length="1">1</Parameter>
+     <Parameter name="slope" des="description" default="0" level="1" range="[0,4095]" type="int" reserve="0x00a0" length="1">512</Parameter>
+     <Parameter name="imgCenterX" des="description" default="1632" level="1" range="[0,width]" type="int" reserve="0x000f" length="1">125</Parameter>
+     <Parameter name="imgCenterY" des="description" default="1224" level="1" range="[0,height]" type="int" reserve="0x000f" length="1">93</Parameter>
+     <Parameter name="order0" des="description" default="6" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">6</Parameter>
+     <Parameter name="order1" des="description" default="5" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">4</Parameter>
+     <Parameter name="order2" des="description" default="4" level="1" range="[1,7]" type="int" reserve="0x0017" length="1">2</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+ </Parameters>
+ <Defaults name="CNR3" des="description">
+  <Parameter index="0" name="region0" des="description">
+   <Parameter name="baseRadius" des="description" level="1" range="[0,65535]" type="int" length="5">2 48 51 12 18</Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description">
+   <Parameter name="baseRadius" des="description" level="1" range="[0,65535]" type="int" length="5">2 48 51 12 18</Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description">
+   <Parameter name="baseRadius" des="description" level="1" range="[0,65535]" type="int" length="5">2 48 51 12 18</Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description">
+   <Parameter name="baseRadius" des="description" level="1" range="[0,65535]" type="int" length="5">2 48 51 12 18</Parameter>
+  </Parameter>
+  <Parameter index="4" name="region4" des="description">
+   <Parameter name="baseRadius" des="description" level="1" range="[0,65535]" type="int" length="5">2 48 51 12 18</Parameter>
+  </Parameter>
+  <Parameter index="5" name="region5" des="description">
+   <Parameter name="baseRadius" des="description" level="1" range="[0,65535]" type="int" length="5">2 48 51 12 18</Parameter>
+  </Parameter>
+  <Parameter index="6" name="region6" des="description">
+   <Parameter name="baseRadius" des="description" level="1" range="[0,65535]" type="int" length="5">2 48 51 12 18</Parameter>
+  </Parameter>
+  <Parameter index="7" name="region7" des="description">
+   <Parameter name="baseRadius" des="description" level="1" range="[0,65535]" type="int" length="5">2 48 51 12 18</Parameter>
+  </Parameter>
+ </Defaults>
+</root>

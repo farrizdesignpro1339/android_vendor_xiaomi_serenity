@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/sprd/modules/wcn/vendor/bt/aidl/default/bluetooth-service-default.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.bluetooth</name>
+        <fqname>IBluetoothHci/default</fqname>
+    </hal>
+</manifest>

@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/sprd/modules/wcn/vendor/fm/aidl/default/broadcastradio.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.broadcastradio</name>
+        <fqname>IBroadcastRadio/amfm</fqname>
+    </hal>
+</manifest>

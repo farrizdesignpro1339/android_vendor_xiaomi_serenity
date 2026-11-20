@@ -1,0 +1,22 @@
+{
+	"model_id":"voice_translation",
+	"app_name_en":"Voice Translation",
+	"app_name_zh":"语音翻译",
+	"first_menu_list":6,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":false,
+	"send_msg_type": "voice",
+	"recv_msg_type" : "text",
+	"load_cost_time":10,
+	"master_load_modelname":"Qwen_audio_translate",
+	"slave_load_modelname":"n6pslave::Qwen_audio_translate",
+	"prompt_text_zh":[],
+	"prompt_text_en":[],
+	"prompt_image":[],
+	"option_model_name": [
+		{"ax_model":"Deepseek-7B"}
+	]
+}

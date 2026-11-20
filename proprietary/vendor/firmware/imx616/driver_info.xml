@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+-->
+<driver_info>
+  <sensor_name>imx616</sensor_name>
+  <versionid>0x000C0019</versionid>
+  <scenario_num>1</scenario_num>
+  <size>
+    <fullsize>
+      <width>6560</width>
+      <height>4928</height>
+    </fullsize>
+    <binningsize>
+      <width>3280</width>
+      <height>2464</height>
+    </binningsize>
+  </size>
+  <deviceinfo>
+    <line_time>13000</line_time>
+    <mine_line>6</mine_line>
+    <max_gain>2048</max_gain>
+    <min_gain>128</min_gain>
+    <gain_precision>1</gain_precision>
+    <exp_skip_num>1</exp_skip_num>
+    <gain_skip_num>1</gain_skip_num>
+  </deviceinfo>
+  <blc>
+    <r>1024</r>
+    <gr>1024</gr>
+    <gb>1024</gb>
+    <b>1024</b>
+  </blc>
+</driver_info>

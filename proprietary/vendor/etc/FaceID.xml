@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FaceID>
+	<version type="string" length="1">v1.0.0.0</version>
+	<FaceID_enable type="uint8" range="[0,1]" default="0" Descripion="the value is 0 or 1, 1 is open tuning">0</FaceID_enable>
+	<tuning_param>
+		<subModuleEnable>
+			<faceEnable type="uint8" range="[0,1]" default="0" Descripion="the value is 0 or 1, 1 is open tuning">0</faceEnable>
+			<faceQualityEnable type="uint8" range="[0,1]" default="0" Descripion="the value is 0 or 1, 1 is open tuning">0</faceQualityEnable>
+			<fliveEnable type="uint8" range="[0,1]" default="0" Descripion="the value is 0 or 1, 1 is open tuning">0</fliveEnable>
+			<fvEnable type="uint8" range="[0,1]" default="0" Descripion="the value is 0 or 1, 1 is open tuning">0</fvEnable>
+			<eyeAnalyzeEnable type="uint8" range="[0,1]" default="0" Descripion="the value is 0 or 1, 1 is open tuning">0</eyeAnalyzeEnable>
+		</subModuleEnable>
+		
+		<face>
+			<enrollFaceThrLow type="float" range="[-1,1]" default="0.3" description="range is [-1,1]">0.3</enrollFaceThrLow>
+			<enrollFaceThrHigh type="float" range="[-1,1]" default="0.9" description="range is [-1,1]">0.9</enrollFaceThrHigh>
+			<authEyeMode type="uint8" range="[0,1]" default="1" description="the value is 0 or 1">1</authEyeMode>
+			<authEyeCloseMode type="uint8" range="[0,1]" default="0" description="the value is 0 or 1">0</authEyeCloseMode>
+		</face>
+		
+		<faceQuality>
+			<enrollFarRatioThrLow type="float" range="[0,1]" default="0.2778" description="range is [0,1]">0.2778</enrollFarRatioThrLow>
+			<enrollFarRatioThrHigh type="float" range="[0,1]" default="0.625" description="range is [0,1]">0.625</enrollFarRatioThrHigh>
+			<enrollFrontOccThr type="uint8" range="[0,100]" default="10" description="step is 1">10</enrollFrontOccThr>
+			<enrollUpOccThr type="uint8" range="[0,100]" default="20" description="step is 1">20</enrollUpOccThr>
+			<enrollDownOccThr type="uint8" range="[0,100]" default="50" description="step is 1">50</enrollDownOccThr>
+			<enrollFrontClarityThr type="uint8" range="[0,100]" default="20" description="step is 1">20</enrollFrontClarityThr>
+			<enrollUpClarityThr type="uint8" range="[0,100]" default="10" description="step is 1">10</enrollUpClarityThr>
+			<enrollDownClarityThr type="uint8" range="[0,100]" default="10" description="step is 1">10</enrollDownClarityThr>
+			<enrollDarkThr type="int" range="[-400,1600]" default="-400" description="step is 1">-400</enrollDarkThr>
+			<enrollBrightThr type="int" range="[-400,1600]" default="1250" description="step is 1">1250</enrollBrightThr>
+			<enrollRectBightThr type="uint8" range="(0,255)" default="210" description="step is 1">210</enrollRectBightThr>
+			<enrollRectDarkThr type="uint8" range="(0,255)" default="85" description="step is 1">85</enrollRectDarkThr>
+			<enrollRectBackThr type="uint8" range="(0,255)" default="80" description="step is 1">80</enrollRectBackThr>
+			<enrollRectHighThr type="uint8" range="(0,255)" default="175" description="step is 1">175</enrollRectHighThr>
+			<enrollClarityThr type="float" range="[-1,1]" default="0" description="range is [-1,1]">0</enrollClarityThr>
+			<enrollYawThr type="int" range="[-90,90]" default="8" description="step is 1">8</enrollYawThr>
+			<enrollPitchFrontThrLow type="int" range="[-90,90]" default="-5" description="step is 1">-5</enrollPitchFrontThrLow>
+			<enrollPitchFrontThrHigh type="int" range="[-90,90]" default="10" description="step is 1">10</enrollPitchFrontThrHigh>
+			<enrollPitchUpThrLow type="int" range="[-90,90]" default="-10" description="step is 1">-10</enrollPitchUpThrLow>
+			<enrollPitchUpThrHigh type="int" range="[-90,90]" default="-2" description="step is 1">-2</enrollPitchUpThrHigh>
+			<enrollPitchDownThrLow type="int" range="[-90,90]" default="12" description="step is 1">12</enrollPitchDownThrLow>
+			<enrollPitchDownThrHigh type="int" range="[-90,90]" default="25" description="step is 1">25</enrollPitchDownThrHigh>
+			<authFarRatioThr type="uint8" range="[1,10]" default="6" description="step is 1">6</authFarRatioThr>
+		</faceQuality>
+		
+		<flive>
+			<authEyeOpenThrOne type="uint8" range="[0,100]" default="10" description="step is 1">10</authEyeOpenThrOne>
+			<authEyeOpenThrTwo type="uint8" range="[0,100]" default="22" description="step is 1">22</authEyeOpenThrTwo>
+			<authEyeOpenThrThree type="uint8" range="[0,100]" default="45" description="step is 1">45</authEyeOpenThrThree>
+			<authEyeCloseThrOne type="int" range="[-100,0]" default="-5" description="step is 1">-5</authEyeCloseThrOne>
+			<authEyeCloseThrTwo type="int" range="[-100,0]" default="-15" description="step is 1">-15</authEyeCloseThrTwo>
+			<authEyeCloseThrThree type="int" range="[-100,0]" default="-45" description="step is 1">-45</authEyeCloseThrThree>
+		</flive>
+		
+		<FV>
+			<authNoGoodEnrollThr type="float" range="[-1,1]" default="0.4" description="range is [-1,1]">0.4</authNoGoodEnrollThr>
+			<authLargeThr type="float" range="[-1,1]" default="0.555" description="range is [-1,1]">0.555</authLargeThr>
+			<authLittleThr type="float" range="[-1,1]" default="0.50" description="range is [-1,1]">0.50</authLittleThr>
+			<fvVersion type="uint8" range="[2,3,5]" default="3" description="the value is 2/3/5">3</fvVersion>
+		</FV>
+		
+		<eyeAnalyze>
+			<enrollAnaEyeOpenUpThr type="int" range="[-100,100]" default="10" description="step is 1">10</enrollAnaEyeOpenUpThr>
+			<enrollAnaEyeOpenFrontThr type="int" range="[-100,100]" default="20" description="step is 1">20</enrollAnaEyeOpenFrontThr>
+			<authAnaEyeOpenThr type="int" range="[-100,100]" default="10" description="step is 1">10</authAnaEyeOpenThr>
+			<authAnaEyeOpenBackThr type="int" range="[-100,100]" default="-20" description="step is 1">-20</authAnaEyeOpenBackThr>
+		</eyeAnalyze>
+	</tuning_param>
+</FaceID>

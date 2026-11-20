@@ -1,0 +1,8 @@
+service neuralnetworks_hal_service_armnn-gpu /vendor/bin/hw/android.hardware.neuralnetworks@aidl-service-armnn-gpu
+    interface aidl android.hardware.neuralnetworks.IDevice/armnn-gpu 
+    oneshot
+    disabled 
+    class hal
+    user system
+    group system
+    oom_score_adjust 0

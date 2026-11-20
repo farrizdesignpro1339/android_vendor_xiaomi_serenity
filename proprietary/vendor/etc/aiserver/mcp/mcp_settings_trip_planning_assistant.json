@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "amap-amap-sse": {
+      "timeout": 60,
+      "url": "http://mcp.amap.com/sse?key=b18461e36814d4e21e26babff2349e73",
+      "transportType": "sse"
+    }
+  }
+}

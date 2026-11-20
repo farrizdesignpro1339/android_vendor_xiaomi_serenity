@@ -1,0 +1,22 @@
+{
+    "feature": "Bayer2Raw",
+    "tasks": [
+        {
+            "id": "FpuNode_ips",
+            "action": "cap_fpu_action",
+            "input": {
+                "format": "CKI_CAMSYS_FORMAT_RAW_PACK_10",
+                "size": "",
+                "count": "1",
+                "required": false
+            },
+            "output": {
+                "format": "CKI_CAMSYS_FORMAT_RAW_HALFWORD_14",
+                "size": "",
+                "count": "1",
+                "required": true
+            },
+            "dependencies": []
+        }
+    ]
+}

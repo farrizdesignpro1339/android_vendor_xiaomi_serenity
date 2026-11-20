@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2024 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<PD_20660>
+  <block_header>
+    <version type="u8">
+      <version_major>0</version_major>
+      <version_minor>0</version_minor>
+      <version_micro>0</version_micro>
+      <reserved len="5">0</reserved>
+    </version>
+    <block_info type="u32">
+      <block_id>20660</block_id>
+      <bypass range="[0,1]">0</bypass>
+      <smart_size>0</smart_size>
+      <block_size>2048</block_size>
+      <modify_time>2411131506</modify_time>
+      <trigger_flag range="[0,1]">0</trigger_flag>
+      <reserved len="2">0</reserved>
+    </block_info>
+  </block_header>
+  <header>
+    <magic type="u32">2880154539</magic>
+    <param_version type="int32">83886080</param_version>
+    <param_size type="int32">2048</param_size>
+    <reserved type="u32">0</reserved>
+  </header>
+  <function>
+    <pdlib_bypass type="u16">0</pdlib_bypass>
+    <spc_enable>1</spc_enable>
+    <dcc_enable>1</dcc_enable>
+    <photo_debuginfo_enable>1</photo_debuginfo_enable>
+    <video_debuginfo_enable>1</video_debuginfo_enable>
+    <reserved len="43">0</reserved>
+  </function>
+  <dump>
+    <roi_raw_enable type="u16">0</roi_raw_enable>
+    <skip_num>30</skip_num>
+    <reserved len="22">0</reserved>
+  </dump>
+  <log>
+    <adjust_enable type="u16">0</adjust_enable>
+    <log_level>0</log_level>
+    <reserved len="10">0</reserved>
+  </log>
+  <common>
+    <OB type="u16">64</OB>
+    <pd_offset type="int16">-1000</pd_offset>
+    <calc_skip_num type="u16">0</calc_skip_num>
+    <reserved len="45">0</reserved>
+  </common>
+  <roi>
+    <min_w_ratio type="u16">66</min_w_ratio>
+    <min_h_ratio>66</min_h_ratio>
+    <reserved len="34">0</reserved>
+  </roi>
+  <interpolate>
+    <enable type="u16">1</enable>
+    <interpolate_num>0</interpolate_num>
+    <accuracy_bit>16</accuracy_bit>
+    <reserved len="33">0</reserved>
+  </interpolate>
+  <filter>
+    <enable type="u16">1</enable>
+    <raw_bit>10</raw_bit>
+    <shift_raw_bit1>3</shift_raw_bit1>
+    <shift_raw_bit2>10</shift_raw_bit2>
+    <reserved len="40">0</reserved>
+  </filter>
+  <lineband>
+    <enable type="u16">1</enable>
+    <line_nums_of_band>0</line_nums_of_band>
+    <skip_indivisible_line>0</skip_indivisible_line>
+    <reserved len="33">0</reserved>
+  </lineband>
+  <shift>
+    <adjust_enable type="u16">1</adjust_enable>
+    <pd_max_phase type="int16">16</pd_max_phase>
+    <fraction_bit type="u16">9</fraction_bit>
+    <reserved len="33">0</reserved>
+  </shift>
+  <reorder>
+    <enable type="u16">1</enable>
+    <reserved len="19">0</reserved>
+  </reorder>
+  <reserved type="u32" len="338">0</reserved>
+</PD_20660>

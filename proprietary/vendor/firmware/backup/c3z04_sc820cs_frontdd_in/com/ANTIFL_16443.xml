@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    SPDX-FileCopyrightText: 2023-2024 Unisoc (Shanghai) Technologies Co., Ltd
+    SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+    Copyright 2023-2024 Unisoc (Shanghai) Technologies Co., Ltd.
+    Licensed under the Unisoc General Software License, version 1.0 (the License);
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+    Software distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+    See the Unisoc General Software License, version 1.0 for more details.
+-->
+<ANTIFL_16443>
+	<block_header>
+		<version type="u8">
+			<version_major>0</version_major>
+			<version_minor>0</version_minor>
+			<version_micro>0</version_micro>
+			<reserved len="5">0</reserved>
+		</version>
+		<block_info type="u32">
+			<block_id>16443</block_id>
+			<bypass>0</bypass>
+			<smart_size>0</smart_size>
+			<block_size>1600</block_size>
+			<modify_time>2305121335</modify_time>
+			<trigger_flag>0</trigger_flag>
+			<reserved len="2">0</reserved>
+		</block_info>
+	</block_header>
+	<afl_start>
+		<version type="int32">4</version>
+		<major type="u32">4</major>
+		<minor>6</minor>
+		<micro>0</micro>
+		<nano>0</nano>
+		<pm_param_num type="int32">1</pm_param_num>
+		<tool_param_version type="u32">270336</tool_param_version>
+		<magic type="int32">0</magic>
+	</afl_start>
+	<afl_enable>
+		<total_enable type="int8" description="afl4.0 total enable switch" range="[0,1]" default="1" freq="less">1</total_enable>
+		<afl_normal_enable description="ordinary moving speed ripple detection switch" range="[0,1]" default="1" freq="less">1</afl_normal_enable>
+		<afl_frozen_enable description="static ripple detection switch" range="[0,1]" default="1" freq="less">1</afl_frozen_enable>
+		<afl_still_enable description="ripple detection switch for slower moving speeds" range="[0,1]" default="1" freq="less">1</afl_still_enable>
+		<afl_scene_detect_enable description="switch to actively toggle the AE table when stationary ripples may be present" range="[0,1]" default="0" freq="less">0</afl_scene_detect_enable>
+		<afl_normal_freq_enable>1</afl_normal_freq_enable>
+		<afl_rgn_frozen_enable>1</afl_rgn_frozen_enable>
+		<magic len="17">
+			<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		</magic>
+	</afl_enable>
+	<afl_thrd_param>
+		<reg_mflicker_frame_thrd>
+			<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+			<magic>0</magic>
+			<samples idx="0">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+				<y len="3" description="mflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="200 200" freq="less">
+					<table> 200 200 0 </table>
+				</y>
+			</samples>
+			<samples idx="1">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">360</x>
+				<y len="3" description="mflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="200 200" freq="less">
+					<table> 200 200 0 </table>
+				</y>
+			</samples>
+			<samples idx="2">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">400</x>
+				<y len="3" description="mflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="200 200" freq="less">
+					<table> 200 200 0 </table>
+				</y>
+			</samples>
+			<samples idx="3">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">800</x>
+				<y len="3" description="mflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="200 200" freq="less">
+					<table> 200 200 0 </table>
+				</y>
+			</samples>
+			<samples idx="4">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="5">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="6">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="7">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+		</reg_mflicker_frame_thrd>
+		<reg_mflicker_video_thrd>
+			<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+			<magic>0</magic>
+			<samples idx="0">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+				<y len="3" description="mflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 20 20 0 </table>
+				</y>
+			</samples>
+			<samples idx="1">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">360</x>
+				<y len="3" description="mflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 20 20 0 </table>
+				</y>
+			</samples>
+			<samples idx="2">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">400</x>
+				<y len="3" description="mflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 20 20 0 </table>
+				</y>
+			</samples>
+			<samples idx="3">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">800</x>
+				<y len="3" description="mflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 20 20 0 </table>
+				</y>
+			</samples>
+			<samples idx="4">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="5">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="6">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="7">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+		</reg_mflicker_video_thrd>
+		<reg_sflicker_frame_thrd>
+			<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+			<magic>0</magic>
+			<samples idx="0">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+				<y len="3" description="sflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="160 160" freq="less">
+					<table> 160 160 0 </table>
+				</y>
+			</samples>
+			<samples idx="1">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">360</x>
+				<y len="3" description="sflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="160 160" freq="less">
+					<table> 160 160 0 </table>
+				</y>
+			</samples>
+			<samples idx="2">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">400</x>
+				<y len="3" description="sflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="160 160" freq="less">
+					<table> 160 160 0 </table>
+				</y>
+			</samples>
+			<samples idx="3">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">800</x>
+				<y len="3" description="sflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="160 160" freq="less">
+					<table> 160 160 0 </table>
+				</y>
+			</samples>
+			<samples idx="4">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="5">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="6">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="7">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+		</reg_sflicker_frame_thrd>
+		<reg_sflicker_video_thrd>
+			<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+			<magic>0</magic>
+			<samples idx="0">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+				<y len="3" description="sflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="160 160" freq="less">
+					<table> 160 160 0 </table>
+				</y>
+			</samples>
+			<samples idx="1">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">360</x>
+				<y len="3" description="sflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="160 160" freq="less">
+					<table> 160 160 0 </table>
+				</y>
+			</samples>
+			<samples idx="2">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">400</x>
+				<y len="3" description="sflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="160 160" freq="less">
+					<table> 160 160 0 </table>
+				</y>
+			</samples>
+			<samples idx="3">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">800</x>
+				<y len="3" description="sflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="160 160" freq="less">
+					<table> 160 160 0 </table>
+				</y>
+			</samples>
+			<samples idx="4">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="5">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="6">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="7">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+		</reg_sflicker_video_thrd>
+		<reg_mflicker_long_thrd>
+			<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+			<magic>0</magic>
+			<samples idx="0">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+				<y len="3" description="mflicker long threshold for 50Hz/60Hz AE table" range="[0,2000]" default="100 100" freq="less">
+					<table> 100 100 0 </table>
+				</y>
+			</samples>
+			<samples idx="1">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">360</x>
+				<y len="3" description="mflicker long threshold for 50Hz/60Hz AE table" range="[0,2000]" default="100 100" freq="less">
+					<table> 100 100 0 </table>
+				</y>
+			</samples>
+			<samples idx="2">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">400</x>
+				<y len="3" description="mflicker long threshold for 50Hz/60Hz AE table" range="[0,2000]" default="280 200" freq="less">
+					<table> 280 200 0 </table>
+				</y>
+			</samples>
+			<samples idx="3">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">800</x>
+				<y len="3" description="mflicker long threshold for 50Hz/60Hz AE table" range="[0,2000]" default="280 200" freq="less">
+					<table> 280 200 0 </table>
+				</y>
+			</samples>
+			<samples idx="4">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="5">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="6">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="7">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+		</reg_mflicker_long_thrd>
+		<reg_fflicker_frame_thrd>
+			<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+			<magic>0</magic>
+			<samples idx="0">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+				<y len="3" description="fflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 20 20 0 </table>
+				</y>
+			</samples>
+			<samples idx="1">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">360</x>
+				<y len="3" description="fflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 20 20 0 </table>
+				</y>
+			</samples>
+			<samples idx="2">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">400</x>
+				<y len="3" description="fflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 20 20 0 </table>
+				</y>
+			</samples>
+			<samples idx="3">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">800</x>
+				<y len="3" description="fflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 20 20 0 </table>
+				</y>
+			</samples>
+			<samples idx="4">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="5">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="6">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="7">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+		</reg_fflicker_frame_thrd>
+		<reg_fflicker_video_thrd>
+			<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+			<magic>0</magic>
+			<samples idx="0">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+				<y len="3" description="fflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 20 20 0 </table>
+				</y>
+			</samples>
+			<samples idx="1">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">360</x>
+				<y len="3" description="fflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 20 20 0 </table>
+				</y>
+			</samples>
+			<samples idx="2">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">400</x>
+				<y len="3" description="fflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 20 20 0 </table>
+				</y>
+			</samples>
+			<samples idx="3">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">800</x>
+				<y len="3" description="fflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 20 20 0 </table>
+				</y>
+			</samples>
+			<samples idx="4">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="5">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="6">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="7">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+		</reg_fflicker_video_thrd>
+		<reg_fflicker_length_thrd>
+			<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+			<magic>0</magic>
+			<samples idx="0">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+				<y len="3" description="fflicker length threshold for 50Hz/60Hz AE table" range="[0,2000]" default="120 120" freq="less">
+					<table> 120 120 0 </table>
+				</y>
+			</samples>
+			<samples idx="1">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">360</x>
+				<y len="3" description="fflicker length threshold for 50Hz/60Hz AE table" range="[0,2000]" default="120 120" freq="less">
+					<table> 120 120 0 </table>
+				</y>
+			</samples>
+			<samples idx="2">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">400</x>
+				<y len="3" description="fflicker length threshold for 50Hz/60Hz AE table" range="[0,2000]" default="120 120" freq="less">
+					<table> 120 120 0 </table>
+				</y>
+			</samples>
+			<samples idx="3">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">800</x>
+				<y len="3" description="fflicker length threshold for 50Hz/60Hz AE table" range="[0,2000]" default="120 120" freq="less">
+					<table> 120 120 0 </table>
+				</y>
+			</samples>
+			<samples idx="4">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="5">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="6">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="7">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+		</reg_fflicker_length_thrd>
+		<reg_mflicker_freq_thrd>
+			<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+			<magic>0</magic>
+			<samples idx="0">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+				<y len="3" description="mflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="200 200" freq="less">
+					<table> 4 5 0 </table>
+				</y>
+			</samples>
+			<samples idx="1">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">400</x>
+				<y len="3" description="mflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="200 200" freq="less">
+					<table> 4 5 0 </table>
+				</y>
+			</samples>
+			<samples idx="2">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">600</x>
+				<y len="3" description="mflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="200 200" freq="less">
+					<table> 4 5 0 </table>
+				</y>
+			</samples>
+			<samples idx="3">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">800</x>
+				<y len="3" description="mflicker frame threshold for 50Hz/60Hz AE table" range="[0,2000]" default="200 200" freq="less">
+					<table> 4 5 0 </table>
+				</y>
+			</samples>
+			<samples idx="4">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="5">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="6">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="7">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+		</reg_mflicker_freq_thrd>
+		<reg_mflicker_video_freq_thrd>
+			<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+			<magic>0</magic>
+			<samples idx="0">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+				<y len="3" description="mflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 10 10 0 </table>
+				</y>
+			</samples>
+			<samples idx="1">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">400</x>
+				<y len="3" description="mflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 10 10 0 </table>
+				</y>
+			</samples>
+			<samples idx="2">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">600</x>
+				<y len="3" description="mflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 10 10 0 </table>
+				</y>
+			</samples>
+			<samples idx="3">
+				<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">800</x>
+				<y len="3" description="mflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+					<table> 10 10 0 </table>
+				</y>
+			</samples>
+			<samples idx="4">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="5">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="6">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+			<samples idx="7">
+				<x type="int16">0</x>
+				<y len="3">
+					<table> 0 0 0 </table>
+				</y>
+			</samples>
+		</reg_mflicker_video_freq_thrd>
+		<magic type="int32" len="20">
+			<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		</magic>
+	</afl_thrd_param>
+	<still_mix_ratio>
+		<num type="int32" description="number of stalls" range="[0,7]" default="1" freq="less">1</num>
+		<magic>0</magic>
+		<samples idx="0">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="0" freq="less">0</x>
+			<y len="3" description="still mix ratio for 50Hz/60Hz AE table" range="[0,2000]" default="100 100" freq="less">
+				<table> 100 100 0 </table>
+			</y>
+		</samples>
+		<samples idx="1">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="2">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="3">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="4">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="5">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="6">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="7">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+	</still_mix_ratio>
+	<frozen_mix_ratio>
+		<num type="int32" description="number of stalls" range="[0,7]" default="1" freq="less">1</num>
+		<magic>0</magic>
+		<samples idx="0">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="0" freq="less">0</x>
+			<y len="3" description="frozen mix ratio for 50Hz/60Hz AE table" range="[0,2000]" default="100 100" freq="less">
+				<table> 100 100 0 </table>
+			</y>
+		</samples>
+		<samples idx="1">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="2">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="3">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="4">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="5">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="6">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="7">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+	</frozen_mix_ratio>
+	<flk_point_power2 type="u16">13</flk_point_power2>
+	<reserved>0</reserved>
+	<rgn_frozen_mix_ratio>
+		<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">1</num>
+		<magic>0</magic>
+		<samples idx="0">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">0</x>
+			<y len="3" description="fflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+				<table> 100 100 0 </table>
+			</y>
+		</samples>
+		<samples idx="1">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">0</x>
+			<y len="3" description="fflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="2">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">0</x>
+			<y len="3" description="fflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="3">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">0</x>
+			<y len="3" description="fflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="4">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="5">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="6">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="7">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+	</rgn_frozen_mix_ratio>
+	<reg_rgn_fflicker_frame_thrd>
+		<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+		<magic>0</magic>
+		<samples idx="0">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+			<y len="3" description="fflicker length threshold for 50Hz/60Hz AE table" range="[0,2000]" default="120 120" freq="less">
+				<table> 20 20 0 </table>
+			</y>
+		</samples>
+		<samples idx="1">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">360</x>
+			<y len="3" description="fflicker length threshold for 50Hz/60Hz AE table" range="[0,2000]" default="120 120" freq="less">
+				<table> 20 20 0 </table>
+			</y>
+		</samples>
+		<samples idx="2">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">400</x>
+			<y len="3" description="fflicker length threshold for 50Hz/60Hz AE table" range="[0,2000]" default="120 120" freq="less">
+				<table> 20 20 0 </table>
+			</y>
+		</samples>
+		<samples idx="3">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">800</x>
+			<y len="3" description="fflicker length threshold for 50Hz/60Hz AE table" range="[0,2000]" default="120 120" freq="less">
+				<table> 20 20 0 </table>
+			</y>
+		</samples>
+		<samples idx="4">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="5">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="6">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="7">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+	</reg_rgn_fflicker_frame_thrd>
+	<reg_rgn_fflicker_video_thrd>
+		<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+		<magic>0</magic>
+		<samples idx="0">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+			<y len="3" description="fflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+				<table> 20 20 0 </table>
+			</y>
+		</samples>
+		<samples idx="1">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">360</x>
+			<y len="3" description="fflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+				<table> 20 20 0 </table>
+			</y>
+		</samples>
+		<samples idx="2">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">400</x>
+			<y len="3" description="fflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+				<table> 20 20 0 </table>
+			</y>
+		</samples>
+		<samples idx="3">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">800</x>
+			<y len="3" description="fflicker video threshold for 50Hz/60Hz AE table" range="[0,2000]" default="20 20" freq="less">
+				<table> 20 20 0 </table>
+			</y>
+		</samples>
+		<samples idx="4">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="5">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="6">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="7">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+	</reg_rgn_fflicker_video_thrd>
+	<reg_rgn_fflicker_length_thrd>
+		<num type="int32" description="number of stalls" range="[0,7]" default="4" freq="less">4</num>
+		<magic>0</magic>
+		<samples idx="0">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="300" freq="less">300</x>
+			<y len="3" description="fflicker length threshold for 50Hz/60Hz AE table" range="[0,2000]" default="120 120" freq="less">
+				<table> 120 120 0 </table>
+			</y>
+		</samples>
+		<samples idx="1">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="360" freq="less">360</x>
+			<y len="3" description="fflicker length threshold for 50Hz/60Hz AE table" range="[0,2000]" default="120 120" freq="less">
+				<table> 120 120 0 </table>
+			</y>
+		</samples>
+		<samples idx="2">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="400" freq="less">400</x>
+			<y len="3" description="fflicker length threshold for 50Hz/60Hz AE table" range="[0,2000]" default="120 120" freq="less">
+				<table> 120 120 0 </table>
+			</y>
+		</samples>
+		<samples idx="3">
+			<x type="int16" description="brightness of the current environment" range="[-600,1600]" default="800" freq="less">800</x>
+			<y len="3" description="fflicker length threshold for 50Hz/60Hz AE table" range="[0,2000]" default="120 120" freq="less">
+				<table> 120 120 0 </table>
+			</y>
+		</samples>
+		<samples idx="4">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="5">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="6">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+		<samples idx="7">
+			<x type="int16">0</x>
+			<y len="3">
+				<table> 0 0 0 </table>
+			</y>
+		</samples>
+	</reg_rgn_fflicker_length_thrd>
+	<magic type="int32" len="77">
+		<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+	</magic>
+</ANTIFL_16443>

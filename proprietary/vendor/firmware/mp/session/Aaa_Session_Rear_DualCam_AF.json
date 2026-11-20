@@ -1,0 +1,28 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "session": {
+        "name": "Aaa_Session_Rear_DualCam_AF",
+        "usecase": {
+            "facing": "rear",
+            "stream_list": [
+                {
+                    "dir": "input",
+                    "max_width": 20,
+                    "max_height": 15,
+                    "formats": [ "STATIS_AFM"]
+                },
+                {
+                    "dir": "input",
+                    "max_width": 64,
+                    "max_height": 64,
+                    "formats": [ "STATIS_AEM"]
+                }
+            ]
+        },
+        "pipeline": [
+            "AF5_Pipeline",
+            "AF4_Pipeline"
+        ]
+    }
+}

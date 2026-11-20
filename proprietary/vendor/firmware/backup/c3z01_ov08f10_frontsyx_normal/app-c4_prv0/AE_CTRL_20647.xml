@@ -1,0 +1,1733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2024 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<AE_CTRL_20647>
+  <block_header>
+    <version type="u8">
+      <version_major>0</version_major>
+      <version_minor>0</version_minor>
+      <version_micro>0</version_micro>
+      <reserved len="5">0</reserved>
+    </version>
+    <block_info type="u32">
+      <block_id>20647</block_id>
+      <bypass range="[0,1]">0</bypass>
+      <smart_size>0</smart_size>
+      <block_size>30132</block_size>
+      <modify_time>2411182057</modify_time>
+      <trigger_flag range="[0,1]">0</trigger_flag>
+      <reserved len="2">0</reserved>
+    </block_info>
+  </block_header>
+  <magic_begin type="u32">2930683392</magic_begin>
+  <version_data>
+    <version type="u32">83886080</version>
+    <isp_ver_id>0</isp_ver_id>
+    <reserved type="u8" len="16">0</reserved>
+  </version_data>
+  <ae_table_input idx="0">
+    <start_gain type="float">1.0000000</start_gain>
+    <min_exp_line type="u32">4</min_exp_line>
+    <line_time type="u32">13278</line_time>
+    <min_kneepoint_line type="u16">0</min_kneepoint_line>
+    <max_kneepoint_line type="u16">6</max_kneepoint_line>
+    <increase_prior type="u8" len="64">
+      <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </increase_prior>
+    <gain type="float" len="64">
+      <table> 4.0000000 8.0000000 12.0000000 16.0000000 24.0000000 40.0000000 48.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </gain>
+    <exposure_time type="u32" len="64">
+      <table> 10000000 20000000 30000000 50000000 70000000 80000000 100000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </exposure_time>
+  </ae_table_input>
+  <ae_table_input idx="1">
+    <start_gain type="float">1.0000000</start_gain>
+    <min_exp_line type="u32">2</min_exp_line>
+    <line_time type="u32">13333</line_time>
+    <min_kneepoint_line type="u16">0</min_kneepoint_line>
+    <max_kneepoint_line type="u16">9</max_kneepoint_line>
+    <increase_prior type="u8" len="64">
+      <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </increase_prior>
+    <gain type="float" len="64">
+      <table> 2.0000000 3.0000000 18.0000000 30.0000000 40.0000000 85.0000000 100.0000000 100.0000000 110.0000000 105.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </gain>
+    <exposure_time type="u32" len="64">
+      <table> 10000000 20000000 30000000 40000000 50000000 60000000 70000000 80000000 90000000 100000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </exposure_time>
+  </ae_table_input>
+  <ae_table_input idx="2">
+    <start_gain type="float">1.0000000</start_gain>
+    <min_exp_line type="u32">2</min_exp_line>
+    <line_time type="u32">13333</line_time>
+    <min_kneepoint_line type="u16">0</min_kneepoint_line>
+    <max_kneepoint_line type="u16">9</max_kneepoint_line>
+    <increase_prior type="u8" len="64">
+      <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </increase_prior>
+    <gain type="float" len="64">
+      <table> 2.0000000 3.0000000 18.0000000 30.0000000 40.0000000 85.0000000 100.0000000 100.0000000 110.0000000 105.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </gain>
+    <exposure_time type="u32" len="64">
+      <table> 10000000 20000000 30000000 40000000 50000000 60000000 70000000 80000000 90000000 100000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </exposure_time>
+  </ae_table_input>
+  <ae_table_input idx="3">
+    <start_gain type="float">1.0000000</start_gain>
+    <min_exp_line type="u32">2</min_exp_line>
+    <line_time type="u32">13333</line_time>
+    <min_kneepoint_line type="u16">0</min_kneepoint_line>
+    <max_kneepoint_line type="u16">9</max_kneepoint_line>
+    <increase_prior type="u8" len="64">
+      <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </increase_prior>
+    <gain type="float" len="64">
+      <table> 2.0000000 3.0000000 18.0000000 30.0000000 40.0000000 85.0000000 100.0000000 100.0000000 110.0000000 105.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </gain>
+    <exposure_time type="u32" len="64">
+      <table> 10000000 20000000 30000000 40000000 50000000 60000000 70000000 80000000 90000000 100000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </exposure_time>
+  </ae_table_input>
+  <ae_table_input idx="4">
+    <start_gain type="float">1.0000000</start_gain>
+    <min_exp_line type="u32">2</min_exp_line>
+    <line_time type="u32">13333</line_time>
+    <min_kneepoint_line type="u16">0</min_kneepoint_line>
+    <max_kneepoint_line type="u16">9</max_kneepoint_line>
+    <increase_prior type="u8" len="64">
+      <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </increase_prior>
+    <gain type="float" len="64">
+      <table> 2.0000000 3.0000000 18.0000000 30.0000000 40.0000000 85.0000000 100.0000000 100.0000000 110.0000000 105.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </gain>
+    <exposure_time type="u32" len="64">
+      <table> 10000000 20000000 30000000 40000000 50000000 60000000 70000000 80000000 90000000 100000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </exposure_time>
+  </ae_table_input>
+  <ae_table_input idx="5">
+    <start_gain type="float">1.0000000</start_gain>
+    <min_exp_line type="u32">2</min_exp_line>
+    <line_time type="u32">10893</line_time>
+    <min_kneepoint_line type="u16">0</min_kneepoint_line>
+    <max_kneepoint_line type="u16">9</max_kneepoint_line>
+    <increase_prior type="u8" len="64">
+      <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </increase_prior>
+    <gain type="float" len="64">
+      <table> 2.0000000 3.0000000 18.0000000 30.0000000 40.0000000 85.0000000 100.0000000 100.0000000 110.0000000 105.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </gain>
+    <exposure_time type="u32" len="64">
+      <table> 10000000 20000000 30000000 40000000 50000000 60000000 70000000 80000000 90000000 100000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </exposure_time>
+  </ae_table_input>
+  <ae_table_input idx="6">
+    <start_gain type="float">1.0000000</start_gain>
+    <min_exp_line type="u32">2</min_exp_line>
+    <line_time type="u32">13333</line_time>
+    <min_kneepoint_line type="u16">0</min_kneepoint_line>
+    <max_kneepoint_line type="u16">9</max_kneepoint_line>
+    <increase_prior type="u8" len="64">
+      <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </increase_prior>
+    <gain type="float" len="64">
+      <table> 2.0000000 3.0000000 18.0000000 30.0000000 40.0000000 85.0000000 100.0000000 100.0000000 110.0000000 105.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </gain>
+    <exposure_time type="u32" len="64">
+      <table> 10000000 20000000 30000000 40000000 50000000 60000000 70000000 80000000 90000000 100000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </exposure_time>
+  </ae_table_input>
+  <ae_table_input idx="7">
+    <start_gain type="float">1.0000000</start_gain>
+    <min_exp_line type="u32">2</min_exp_line>
+    <line_time type="u32">13333</line_time>
+    <min_kneepoint_line type="u16">0</min_kneepoint_line>
+    <max_kneepoint_line type="u16">9</max_kneepoint_line>
+    <increase_prior type="u8" len="64">
+      <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </increase_prior>
+    <gain type="float" len="64">
+      <table> 2.0000000 3.0000000 18.0000000 30.0000000 40.0000000 85.0000000 100.0000000 100.0000000 110.0000000 105.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </gain>
+    <exposure_time type="u32" len="64">
+      <table> 10000000 20000000 30000000 40000000 50000000 60000000 70000000 80000000 90000000 100000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </exposure_time>
+  </ae_table_input>
+  <ae_table_input idx="8">
+    <start_gain type="float">1.0000000</start_gain>
+    <min_exp_line type="u32">2</min_exp_line>
+    <line_time type="u32">13333</line_time>
+    <min_kneepoint_line type="u16">0</min_kneepoint_line>
+    <max_kneepoint_line type="u16">9</max_kneepoint_line>
+    <increase_prior type="u8" len="64">
+      <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </increase_prior>
+    <gain type="float" len="64">
+      <table> 2.0000000 3.0000000 18.0000000 30.0000000 40.0000000 85.0000000 100.0000000 100.0000000 110.0000000 105.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </gain>
+    <exposure_time type="u32" len="64">
+      <table> 10000000 20000000 30000000 40000000 50000000 60000000 70000000 80000000 90000000 100000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </exposure_time>
+  </ae_table_input>
+  <ae_table_input idx="9">
+    <start_gain type="float">1.0000000</start_gain>
+    <min_exp_line type="u32">2</min_exp_line>
+    <line_time type="u32">13333</line_time>
+    <min_kneepoint_line type="u16">0</min_kneepoint_line>
+    <max_kneepoint_line type="u16">9</max_kneepoint_line>
+    <increase_prior type="u8" len="64">
+      <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </increase_prior>
+    <gain type="float" len="64">
+      <table> 2.0000000 3.0000000 18.0000000 30.0000000 40.0000000 85.0000000 100.0000000 100.0000000 110.0000000 105.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </gain>
+    <exposure_time type="u32" len="64">
+      <table> 10000000 20000000 30000000 40000000 50000000 60000000 70000000 80000000 90000000 100000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </exposure_time>
+  </ae_table_input>
+  <weight_table idx="0 AVG">
+    <wht type="u8" len="1024">
+      <table> 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 1 1 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 4 4 4 4 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 4 4 4 4 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 1 1 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 </table>
+    </wht>
+  </weight_table>
+  <weight_table idx="1 CENTER">
+    <wht type="u8" len="1024">
+      <table> 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 1 1 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 4 4 4 4 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 4 4 4 4 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 1 1 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 </table>
+    </wht>
+  </weight_table>
+  <weight_table idx="2 SPOT">
+    <wht type="u8" len="1024">
+      <table> 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 1 1 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 4 4 4 4 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 4 4 4 4 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 1 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 1 1 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 2 2 2 2 2 2 2 2 2 2 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 3 3 3 3 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 </table>
+    </wht>
+  </weight_table>
+  <ctrl_setting>
+    <max_sensor_gain type="u16" description="The maximum gain of the sensor" freq="less">1984</max_sensor_gain>
+    <min_sensor_gain description="The minimum gain of the sensor" freq="less">128</min_sensor_gain>
+    <min_exp_line description="The minimum exposure line of the sensor" freq="less">4</min_exp_line>
+    <gain_precision description="Accuracy setting of sensor gain" freq="less">1</gain_precision>
+    <exp_skip_num type="u8" description="Effective mechanism of sensor exp" default="1" freq="less">1</exp_skip_num>
+    <gain_skip_num description="Effective mechanism of sensor gain" default="0" freq="less">1</gain_skip_num>
+    <isp_gain_skip_num description="isp_gain_skip_num" default="0" freq="no">0</isp_gain_skip_num>
+    <reserved len="125">0</reserved>
+  </ctrl_setting>
+  <flash_control_param>
+    <pre_param_effect_delay type="u8">2</pre_param_effect_delay>
+    <main_capture_delay description="the frame delay of capturing" range="[0,8]" default="6" freq="often">3</main_capture_delay>
+    <main_skip_num description="the skip frame number of main-flash">6</main_skip_num>
+    <lcd_preflash_stable_delay description="front camera lcd preflash_stable delay cb to close pre_lighting for fd; default_value: carame 1 :4, else is 0">4</lcd_preflash_stable_delay>
+    <reserved len="24">0</reserved>
+  </flash_control_param>
+  <auto_flash_ctrl>
+    <thrd_up type="int16" description="thrd_up" range="[-600,1600]" freq="often">300</thrd_up>
+    <thrd_down description="thrd_down" range="[-600,1600]" freq="often">285</thrd_down>
+  </auto_flash_ctrl>
+  <thrd_param idx="0" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="1" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="2" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="3" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="4" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="5" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="6" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="7" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="8" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="9" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="10" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="11" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="12" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="13" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="14" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="15" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="16" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="17" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="18" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <thrd_param idx="19" description="It is not displayed on the tool screen">
+    <thrd_up type="int16">0</thrd_up>
+    <thrd_down>0</thrd_down>
+  </thrd_param>
+  <aem_cfg_param>
+    <monitor_mode type="u8">1</monitor_mode>
+    <reserved len="3">0</reserved>
+    <win_num_w type="u16" description="win_num_w" range="32/64/128" default="32" freq="less">64</win_num_w>
+    <win_num_h description="win_num_h" range="32/64/128" default="32" freq="less">64</win_num_h>
+    <r_oe_thrd description="Overexposure threshold for aem r channel" range="[250,255]" default="250" freq="less">1000</r_oe_thrd>
+    <r_ue_thrd description="Underexposure threshold for aem r channel" range="[0,16]" default="5" freq="less">20</r_ue_thrd>
+    <g_oe_thrd description="Overexposure threshold for aem g channel" range="[250,255]" default="250" freq="less">1000</g_oe_thrd>
+    <g_ue_thrd description="Underexposure threshold for aem g channel" range="[0,16]" default="5" freq="less">20</g_ue_thrd>
+    <b_oe_thrd description="Overexposure threshold for aem b channel" range="[250,255]" default="250" freq="less">1000</b_oe_thrd>
+    <b_ue_thrd description="Underexposure threshold for aem b channel" range="[0,16]" default="5" freq="less">20</b_ue_thrd>
+    <reserved type="u8" len="12">0</reserved>
+  </aem_cfg_param>
+  <bhist_cfg_param>
+    <bypass type="u8" description="bypass" range="[0,1]" default="0" freq="less">0</bypass>
+    <mode>1</mode>
+    <skip_num description="skip_num" default="0" freq="less">0</skip_num>
+    <reserved len="17">0</reserved>
+  </bhist_cfg_param>
+  <eis_param>
+    <eis_en type="u8" description="eis_en" range="[0,1]" default="0" freq="less">1</eis_en>
+    <eis_thrd_set_num description="eis_thrd_set_num" range="[1,8]" default="1" freq="less">1</eis_thrd_set_num>
+    <reserved1 len="2">0</reserved1>
+    <eis_thr len="8" description="eis_thr" range="[0,10]" default="0" freq="less">
+      <table> 2 0 0 0 0 0 0 0 </table>
+    </eis_thr>
+    <eis_piecewise idx="0">
+      <sample_num type="u8">5</sample_num>
+      <reserved1 len="3">0</reserved1>
+      <samples type="int32" len="32">
+        <table> 100 20000 300 20000 500 10000 800 10000 1000 4000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+      </samples>
+      <reserved type="u8" len="12">0</reserved>
+    </eis_piecewise>
+    <eis_piecewise idx="1">
+      <sample_num type="u8">0</sample_num>
+      <reserved1 len="3">0</reserved1>
+      <samples type="int32" len="32">
+        <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+      </samples>
+      <reserved type="u8" len="12">0</reserved>
+    </eis_piecewise>
+    <eis_piecewise idx="2">
+      <sample_num type="u8">0</sample_num>
+      <reserved1 len="3">0</reserved1>
+      <samples type="int32" len="32">
+        <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+      </samples>
+      <reserved type="u8" len="12">0</reserved>
+    </eis_piecewise>
+    <eis_piecewise idx="3">
+      <sample_num type="u8">0</sample_num>
+      <reserved1 len="3">0</reserved1>
+      <samples type="int32" len="32">
+        <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+      </samples>
+      <reserved type="u8" len="12">0</reserved>
+    </eis_piecewise>
+    <eis_piecewise idx="4">
+      <sample_num type="u8">0</sample_num>
+      <reserved1 len="3">0</reserved1>
+      <samples type="int32" len="32">
+        <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+      </samples>
+      <reserved type="u8" len="12">0</reserved>
+    </eis_piecewise>
+    <eis_piecewise idx="5">
+      <sample_num type="u8">0</sample_num>
+      <reserved1 len="3">0</reserved1>
+      <samples type="int32" len="32">
+        <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+      </samples>
+      <reserved type="u8" len="12">0</reserved>
+    </eis_piecewise>
+    <eis_piecewise idx="6">
+      <sample_num type="u8">0</sample_num>
+      <reserved1 len="3">0</reserved1>
+      <samples type="int32" len="32">
+        <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+      </samples>
+      <reserved type="u8" len="12">0</reserved>
+    </eis_piecewise>
+    <eis_piecewise idx="7">
+      <sample_num type="u8">0</sample_num>
+      <reserved1 len="3">0</reserved1>
+      <samples type="int32" len="32">
+        <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+      </samples>
+      <reserved type="u8" len="12">0</reserved>
+    </eis_piecewise>
+    <reserved len="16" type="u8">0</reserved>
+  </eis_param>
+  <fast_ae_af_param>
+    <fast_af_cvg_en type="u8" description="fast_af_cvg_en" range="[0,1]" default="1" freq="less">0</fast_af_cvg_en>
+    <num description="num" range="[0,8]" default="5" freq="less">0</num>
+    <reserved1 len="2" note="SpaceNum">0</reserved1>
+    <fast_af_cfg idx="0">
+      <bv type="int32">0</bv>
+      <exp type="u32">0</exp>
+    </fast_af_cfg>
+    <fast_af_cfg idx="1">
+      <bv type="int32">0</bv>
+      <exp type="u32">0</exp>
+    </fast_af_cfg>
+    <fast_af_cfg idx="2">
+      <bv type="int32">0</bv>
+      <exp type="u32">0</exp>
+    </fast_af_cfg>
+    <fast_af_cfg idx="3">
+      <bv type="int32">0</bv>
+      <exp type="u32">0</exp>
+    </fast_af_cfg>
+    <fast_af_cfg idx="4">
+      <bv type="int32">0</bv>
+      <exp type="u32">0</exp>
+    </fast_af_cfg>
+    <fast_af_cfg idx="5">
+      <bv type="int32">0</bv>
+      <exp type="u32">0</exp>
+    </fast_af_cfg>
+    <fast_af_cfg idx="6">
+      <bv type="int32">0</bv>
+      <exp type="u32">0</exp>
+    </fast_af_cfg>
+    <fast_af_cfg idx="7">
+      <bv type="int32">0</bv>
+      <exp type="u32">0</exp>
+    </fast_af_cfg>
+    <reserved type="u8" len="28">0</reserved>
+  </fast_ae_af_param>
+  <long_exp_param>
+    <long_exp_en type="u8" description="long exp enable switch" range="[0,1]" default="0" freq="less">1</long_exp_en>
+    <long_exp_thr_preview type="u8" description="Maximum preview exposure when long exposure is set" range="[30,100]" default="70" freq="less">70</long_exp_thr_preview>
+    <reserved type="u8" len="18">0</reserved>
+  </long_exp_param>
+  <acd_param>
+    <enable type="u32">1</enable>
+    <max_gain>30720</max_gain>
+    <flicker_calc_thrd type="int32">1000</flicker_calc_thrd>
+    <acd_piecewise idx="0">
+      <sample_num type="u32">7</sample_num>
+      <samples idx="0">
+        <x type="int32">1000</x>
+        <y>1000</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">10000</x>
+        <y>4000</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">20000</x>
+        <y>4000</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">30000</x>
+        <y>6000</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">40000</x>
+        <y>6000</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">60000</x>
+        <y>20000</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">100000</x>
+        <y>50000</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="1">
+      <sample_num type="u32">7</sample_num>
+      <samples idx="0">
+        <x type="int32">1000</x>
+        <y>1000</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">10000</x>
+        <y>3000</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">20000</x>
+        <y>3000</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">30000</x>
+        <y>6000</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">40000</x>
+        <y>20000</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">60000</x>
+        <y>20000</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">100000</x>
+        <y>50000</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="2">
+      <sample_num type="u32">7</sample_num>
+      <samples idx="0">
+        <x type="int32">1000</x>
+        <y>1000</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">10000</x>
+        <y>3000</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">20000</x>
+        <y>3000</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">30000</x>
+        <y>6000</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">40000</x>
+        <y>20000</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">60000</x>
+        <y>20000</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">100000</x>
+        <y>50000</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="3">
+      <sample_num type="u32">7</sample_num>
+      <samples idx="0">
+        <x type="int32">1000</x>
+        <y>1000</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">10000</x>
+        <y>2000</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">20000</x>
+        <y>2000</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">30000</x>
+        <y>6000</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">40000</x>
+        <y>20000</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">60000</x>
+        <y>20000</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">100000</x>
+        <y>50000</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="4">
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="5">
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="6">
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="7">
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <reserved type="u8" len="16">0</reserved>
+  </acd_param>
+  <night_ice_param>
+    <enable type="u32">0</enable>
+    <max_gain>0</max_gain>
+    <flicker_calc_thrd type="int32">0</flicker_calc_thrd>
+    <acd_piecewise idx="0">
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="1">
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="2">
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="3">
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="4">
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="5">
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="6">
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <acd_piecewise idx="7">
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </acd_piecewise>
+    <reserved type="u8" len="16">0</reserved>
+  </night_ice_param>
+  <night_yuv_param>
+    <enable type="u32">0</enable>
+    <max_gain>0</max_gain>
+    <night_param>
+      <sample_num type="u32">0</sample_num>
+      <samples idx="0">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="1">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="2">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="3">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="4">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="5">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="6">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="7">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="8">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="9">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="10">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="11">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="12">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="13">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="14">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <samples idx="15">
+        <x type="int32">0</x>
+        <y>0</y>
+      </samples>
+      <reserved type="u8" len="16">0</reserved>
+    </night_param>
+    <reserved type="u8" len="16">0</reserved>
+  </night_yuv_param>
+  <single_flash_param>
+    <flash_lighting_mode type="u32" description="Flash blinking mode:0 double flash,1 single flash" range="[0,1]" default="0" freq="less">0</flash_lighting_mode>
+    <flash_start_skip_num type="u32" description="the number of frames skipped after blinding is enabled" range="[0,15]" default="1" freq="ofen">0</flash_start_skip_num>
+    <flash_end_skip_num type="u32" description="number of preview frames skipped after turning off flash" range="[0,15]" default="1" freq="ofen">0</flash_end_skip_num>
+    <lcd_skip_frame_num type="int32" description="If the lcd blinks only once, delay reports the number of ae frames after the blinks is enabled" range="[3,15]" default="3" freq="ofen">0</lcd_skip_frame_num>
+    <flash_level_led1 type="int16" description="LED1 current gear" range="[-1,100]" default="15" freq="ofen">0</flash_level_led1>
+    <flash_level_led2 type="int16" description="LED2 current gear" range="[-1,100]" default="9" freq="ofen">0</flash_level_led2>
+    <reserved type="u8" len="32">0</reserved>
+  </single_flash_param>
+  <flash_product_cali>
+    <LED_enable type="u32">0</LED_enable>
+    <numP1_hw type="u16">32</numP1_hw>
+    <numP2_hw type="u16">32</numP2_hw>
+    <numM1_hw type="u16">32</numM1_hw>
+    <numM2_hw type="u16">32</numM2_hw>
+    <numP1_hwSample type="u16">0</numP1_hwSample>
+    <indP1_hwSample type="u16" len="3">
+      <table> 0 0 0 </table>
+    </indP1_hwSample>
+    <maP1_hwSample type="float" len="3">
+      <table> 0.0000000 0.0000000 0.0000000 </table>
+    </maP1_hwSample>
+    <numP2_hwSample type="u16">0</numP2_hwSample>
+    <indP2_hwSample type="u16" len="3">
+      <table> 0 0 0 </table>
+    </indP2_hwSample>
+    <maP2_hwSample type="float" len="3">
+      <table> 0.0000000 0.0000000 0.0000000 </table>
+    </maP2_hwSample>
+    <resverd1 type="u32">0</resverd1>
+    <numM1_hwSample type="u16">0</numM1_hwSample>
+    <indM1_hwSample type="u16" len="3">
+      <table> 0 0 0 </table>
+    </indM1_hwSample>
+    <maM1_hwSample type="float" len="3">
+      <table> 0.0000000 0.0000000 0.0000000 </table>
+    </maM1_hwSample>
+    <resverd2 type="u32">0</resverd2>
+    <numM2_hwSample type="u16">0</numM2_hwSample>
+    <indM2_hwSample type="u16" len="3">
+      <table> 0 0 0 </table>
+    </indM2_hwSample>
+    <maM2_hwSample type="float" len="3">
+      <table> 0.0000000 0.0000000 0.0000000 </table>
+    </maM2_hwSample>
+    <prefm type="u32" len="3">
+      <table> 0 0 0 </table>
+    </prefm>
+    <mainfm type="u32" len="3">
+      <table> 0 0 0 </table>
+    </mainfm>
+    <reserved type="u32">0</reserved>
+    <mAMaxP1 type="float">0.0000000</mAMaxP1>
+    <mAMaxP2 type="float">0.0000000</mAMaxP2>
+    <mAMaxP12 type="float">0.0000000</mAMaxP12>
+    <mAMaxM1 type="float">0.0000000</mAMaxM1>
+    <mAMaxM2 type="float">0.0000000</mAMaxM2>
+    <mAMaxM12 type="float">0.0000000</mAMaxM12>
+    <fourcorners type="float" len="2">
+      <table> 0.0000000 0.0000000 </table>
+    </fourcorners>
+    <around2center type="float" len="2">
+      <table> 0.0000000 0.0000000 </table>
+    </around2center>
+    <P1rgbData type="float" len="9" array="3*3">
+      <table> 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </P1rgbData>
+    <P2rgbData type="float" len="9" array="3*3">
+      <table> 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </P2rgbData>
+    <M1rgbData type="float" len="9" array="3*3">
+      <table> 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </M1rgbData>
+    <M2rgbData type="float" len="9" array="3*3">
+      <table> 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </M2rgbData>
+    <P1expgain type="u32" len="6" array="3*2">
+      <table> 0 0 0 0 0 0 </table>
+    </P1expgain>
+    <P2expgain type="u32" len="6" array="3*2">
+      <table> 0 0 0 0 0 0 </table>
+    </P2expgain>
+    <M1expgain type="u32" len="6" array="3*2">
+      <table> 0 0 0 0 0 0 </table>
+    </M1expgain>
+    <M2expgain type="u32" len="6" array="3*2">
+      <table> 0 0 0 0 0 0 </table>
+    </M2expgain>
+    <cor_bright type="u32" len="2">
+      <table> 0 0 </table>
+    </cor_bright>
+    <ratio type="float" len="2">
+      <table> 0.0000000 0.0000000 </table>
+    </ratio>
+    <flashIC type="int8" len="32" description="flash ic name" range="NA" default="0" freq="no">
+      <table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+    </flashIC>
+  </flash_product_cali>
+  <def_exp_gain>
+    <def_exptime type="u32">30000000</def_exptime>
+    <def_gain type="u32">512</def_gain>
+  </def_exp_gain>
+  <iso_special_mode type="u8">0</iso_special_mode>
+  <zoom_ae_enable type="u8">1</zoom_ae_enable>
+  <reserved1 type="u8" len="2">0</reserved1>
+  <multicolor_lcd_enable type="u32">1</multicolor_lcd_enable>
+  <use_ae_def type="u32">0</use_ae_def>
+  <reserved type="u8" len="16384">0</reserved>
+  <magic_end type="u32">2930683409</magic_end>
+  <extension_flag type="u32">0</extension_flag>
+</AE_CTRL_20647>

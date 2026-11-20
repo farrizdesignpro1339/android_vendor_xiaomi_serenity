@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<root name="DP_BOKEH">
+ <BlockInfo>
+  <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">29967</Parameter>
+  <Parameter index="" name="version" des="description" level="1" range="[0,32767]" type="int">1</Parameter>
+  <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>
+  <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">2401151030</Parameter>
+  <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="triggersize" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="datasize" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">3264</Parameter>
+  <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">2448</Parameter>
+  <Parameter index="" name="BlockControl" des="description" level="1" range="[0,32767]" type="int">0x0022</Parameter>
+  <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+ </BlockInfo>
+ <Triggers name="DP_BOKEH" select_way="0" trigger_enable="0" group_num="1" des="description" link="condition">
+  <Trigger start="0" end="0" para="default" name="region0" interp_type="0x01">0</Trigger>
+ </Triggers>
+ <Parameters name="DP_BOKEH">
+  <Parameter index="0" name="region0" level="1">
+   <Parameter name="Prev_Blur" des="v5.2.0" level="1" type="int" reserve="0xffff" length="0">
+    <Parameter name="smoothWinSize" des="smoothWinSize" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">11</Parameter>
+    <Parameter name="clipRatio" des="clipRatio" level="1" range="[0,500]" type="int" reserve="0x0000" length="1">50 </Parameter>
+    <Parameter name="DisparitySmoothWinSize" des="DisparitySmoothWinSize" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="scalingRatio" des="step is 1" level="1" range="[0,4]" type="int" reserve="0x0000" length="1">2</Parameter>
+    <Parameter name="sigma" des="gaussian_sigma" level="1" range="[0,100]" type="float" reserve="0x0000" length="1">1.0</Parameter>
+   </Parameter>
+   <Parameter name="Smooth_Lut" type="table">
+    <Parameter name="Smooth_Lut">
+     <Parameter name="0" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="1" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="2" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="3" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="4" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="5" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="6" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="7" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="8" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="9" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="10" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="11" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="12" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="13" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="14" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="15" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="16" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="17" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="18" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+     <Parameter name="19" des="smooth level" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    </Parameter>
+   </Parameter>
+  </Parameter>
+ </Parameters>
+</root>

@@ -1,0 +1,86 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2026 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Rear_DualCam_Capture_Yuv",
+    "stream": "capture_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "MultiFrameRouterNode",
+            "vendor": "SPRD",
+            "id": "cap_MF_router"
+        },
+        {
+            "type": "MFNRNode",
+            "vendor": "SPRD",
+            "id": "cap_MFNR"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode2"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_MF_router",
+                "port": "cin0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "mfnr"
+            },
+            "to": {
+                "name": "cap_MFNR",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MF_router",
+                "port": "single"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_MFNR",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

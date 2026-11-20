@@ -1,0 +1,32 @@
+{
+	"model_id":"image_classification",
+	"app_name_en":"Image Classification",
+	"app_name_zh":"图像分类",
+	"first_menu_list":8,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":false,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":30,
+	"master_load_modelname":"UniMnnClip",
+	"slave_load_modelname":"n6pslave::UniMnnClip",
+	"prompt_text_zh":[
+		"fruit",
+		"animal",
+		"scenery",
+		"architecture"
+	],
+	"prompt_text_en":[
+		"fruit",
+		"animal",
+		"scenery",
+		"architecture"
+	],
+	"prompt_image":[],
+	"option_model_name": [
+		{"ax_model":"Clip"}
+	]
+}

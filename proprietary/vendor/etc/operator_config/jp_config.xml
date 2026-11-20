@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+     Copyright 2016-2024 Unisoc (Shanghai) Technologies Co., Ltd
+
+     Licensed under the Unisoc General Software License, version 1.0 (the License);
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+     Software distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+     See the Unisoc General Software License, version 1.0 for more details.
+-->
+<resources>
+  <string-array>
+    <item plmn="44010">
+        <qos qos_sdu_error_ratio="4">
+        </qos>
+    </item>
+    <item plmn="44050,44051,44052,44053,44054">
+        <failCause
+            pdp_retry_fail_cause="26,149">
+        </failCause>
+    </item>
+    <item plmn="44011,44020,44050,44051,44052,44053,44054,44010,44021,44120">
+        <timer_delay
+            is_ind_endcinfo="1">
+        </timer_delay>
+    </item>
+  </string-array>
+</resources>

@@ -1,0 +1,20 @@
+{
+	"model_id":"Qwen2_0.5B",
+	"app_name_en":"Qwen2_0.5B",
+	"app_name_zh":"Qwen2_0.5B",
+	"first_menu_list":1,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":6,
+	"master_load_modelname":"UniMnnLlmQwen2_0_5B",
+	"slave_load_modelname":"n6pslave::UniQwen2_0_5",
+	"option_model_name": [
+		{"ax_model":"Deepseek-7B"},
+		{"master_cpu":"UniMnnLlmQwen2_0_5B"},
+		{"slave_cpu":"n6pslave::UniMnnLlmQwen2_0_5B"}
+	]
+}

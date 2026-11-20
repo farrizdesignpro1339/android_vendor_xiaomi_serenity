@@ -1,0 +1,20 @@
+{
+	"model_id":"rag_model",
+	"app_name_en":"RAG",
+	"app_name_zh":"RAG",
+	"first_menu_list":4,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":false,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":15,
+	"master_load_modelname":"rag_model",
+	"slave_load_modelname":"n6pslave::rag_model",
+	"prompt_text_zh":[],
+	"prompt_text_en":[],
+	"prompt_image":[],
+	"option_model_name": []
+}

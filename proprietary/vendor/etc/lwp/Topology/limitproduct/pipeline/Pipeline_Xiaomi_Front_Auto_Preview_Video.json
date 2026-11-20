@@ -1,0 +1,71 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Xiaomi_Front_Auto_Preview_Video",
+    "stream": "preview_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "ModeRouterNode",
+            "vendor": "SPRD",
+            "id": "prev_ModeRouter"
+        },
+        {
+            "type": "TSFaceBeautyPreNode",
+            "vendor": "TrueSight",
+            "id": "prev_TSFaceBeauty"
+        }
+    ],
+    "rootNodes": ["SourceNode1"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "prev_ModeRouter",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_ModeRouter",
+                "port": "beauty"
+            },
+            "to": {
+                "name": "prev_TSFaceBeauty",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_ModeRouter",
+                "port": "normal"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_TSFaceBeauty",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

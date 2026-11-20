@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <scan-in-config config="ro.boot.wcn_chip" value="marlin3lite" >
+        <disallowed-scan-path name="DreamFMRadio" />
+        <disallowed-scan-path name="UniWifi" />
+        <disallowed-scan-path name="UnisocWcn" />
+    </scan-in-config>
+</config>

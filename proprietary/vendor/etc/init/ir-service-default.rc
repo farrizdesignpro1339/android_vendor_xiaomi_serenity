@@ -1,0 +1,7 @@
+service vendor.ir-default /vendor/bin/hw/android.hardware.ir-service.unisoc
+    class hal
+    user system
+    group system shell
+on boot
+    chown root system dev/lirc0
+    chmod 660 /dev/lirc0

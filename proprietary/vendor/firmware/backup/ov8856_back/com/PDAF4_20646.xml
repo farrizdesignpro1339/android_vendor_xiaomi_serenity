@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<PDAF4_20646>
+	<block_header>
+		<version type="u8">
+			<version_major>0</version_major>
+			<version_minor>0</version_minor>
+			<version_micro>0</version_micro>
+			<reserved len="5">0</reserved>
+		</version>
+		<block_info type="u32">
+			<block_id>20646</block_id>
+			<bypass range="[0,1]">0</bypass>
+			<smart_size>0</smart_size>
+			<block_size>1024</block_size>
+			<modify_time>0</modify_time>
+			<trigger_flag range="[0,1]">0</trigger_flag>
+			<reserved len="2">0</reserved>
+		</block_info>
+	</block_header>
+	<magic_begin type="u32">1970168166</magic_begin>
+	<toolparam_version type="int32">263168</toolparam_version>
+	<func_enable>
+		<pdalgo_bypass type="u16" description="Whether to skip the PD algorithm" range="[0,1]" default="0">0</pdalgo_bypass>
+		<spc_apply description="Whether to make spc compensation" range="[0,1]" default="1">1</spc_apply>
+		<reserved len="8">0</reserved>
+	</func_enable>
+	<dump>
+		<pdalgo_dump type="u16" description="Enter the pd raw switch of the algorithm library" range="[0,1]" default="0">0</pdalgo_dump>
+		<dump_skip description="Save the pd raw of the input algorithm library every number of frames" range="[1,2000]" default="30">30</dump_skip>
+		<reserved len="10">0</reserved>
+	</dump>
+	<center>
+		<center_max_w_ratio type="u16" description="This value, divided by 1000, represents the scaling of the upper limit of the center area width relative to the image width" range="[1,1000)" default="200">200</center_max_w_ratio>
+		<center_max_h_ratio description="This value, divided by 1000, represents the upper limit of the center region's height relative to the zoom ratio of the image's height" range="[1,1000)" default="200">200</center_max_h_ratio>
+		<center_min_w_ratio description="This value, divided by 1000, represents the scaling ratio of the lower limit of the center area width relative to the image width" range="[1,1000)" default="125">125</center_min_w_ratio>
+		<center_min_h_ratio description="This value, divided by 1000, represents the scaling ratio of the lower bound of the center region height relative to the image height" range="[1,1000)" default="125">125</center_min_h_ratio>
+		<reserved len="10">0</reserved>
+	</center>
+	<touch>
+		<touch_max_ratio type="u16" description="This value, divided by 1000, represents the scale of the upper limit of the side length of the touch area relative to the short side of the image" range="[1,1000)" default="200">200</touch_max_ratio>
+		<touch_min_ratio description="This value, divided by 1000, represents the scale of the lower limit of the side length of the touch area relative to the short side of the image" range="[1,1000)" default="125">125</touch_min_ratio>
+		<reserved len="10">0</reserved>
+	</touch>
+	<face>
+		<face_max_w_ratio type="u16" description="the value divided by 1000, represents the face area wide maximum relative to the image of wide scale. The default value is 250" range="[1,1000)" default="250">250</face_max_w_ratio>
+		<face_max_h_ratio description="the value divided by 1000, represents the face area high ceiling high relative to the image scaling" range="[1,1000)" default="250">250</face_max_h_ratio>
+		<face_min_w_ratio description="This value, divided by 1000, represents the scaling of the lower limit of the face area width relative to the image width" range="[1,1000)" default="50">50</face_min_w_ratio>
+		<face_min_h_ratio description="This value, divided by 1000, represents the scaling ratio of the lower limit of the face area height relative to the image height" range="[1,1000)" default="50">50</face_min_h_ratio>
+		<dropdown_enable default="1">1</dropdown_enable>
+		<dropdown_bv_thr type="int16" len="2">
+			<table> 100 300 </table>
+		</dropdown_bv_thr>
+		<dropdown_coef type="u16" len="3">
+			<table> 1600 1600 1600 </table>
+		</dropdown_coef>
+		<reserved len="4">0</reserved>
+	</face>
+	<calc>
+		<OB type="u16" description="Optical dark current" range="[0,1023]" default="64">64</OB>
+		<line_band_num description="Number of adjacent left/right pd lines added" range="[1,32]" default="0">0</line_band_num>
+		<sadoffset_stride description="The step size to find the minimum sad value in the process of calculating the phase difference" range="[1,32]" default="5">5</sadoffset_stride>
+		<sadmap_th description="The value /100000 represents the threshold correlation coefficient for judging the flat scene" range="[1,10000]" default="0">0</sadmap_th>
+		<pd_offset type="int16" description="This value, divided by 1000, represents the offset based on the original phase difference" range="[-3000,3000]" default="-450">-450</pd_offset>
+		<calc_skip type="u16">0</calc_skip>
+		<reserved type="u16" len="16">0</reserved>
+	</calc>
+	<pointlight>
+		<detect_pl_enable type="u16" description="Enable for point light detection" range="[0,1]" default="0">0</detect_pl_enable>
+		<saturated_pixel_thr type="u16" description="The brightness threshold of saturated pixels" range="[0,1023]" default="900">900</saturated_pixel_thr>
+		<saturated_bigarea_thr type="u16" description="The value /1000 represents the threshold of big area point light" range="(0,1000)" default="300">300</saturated_bigarea_thr>
+		<saturated_smallarea_thr type="u16" description="The value /1000 represents the threshold of small area point light" range="(0,1000)" default="20">20</saturated_smallarea_thr>
+		<saturated_lrnumdiff_thr type="u16" description="The value /1000 represents the threshold for the difference saturated pixels num between the left and right of small area point light" range="(0,1000)" default="50">50</saturated_lrnumdiff_thr>
+		<reserved len="7">0</reserved>
+	</pointlight>
+	<smooth>
+		<diffscene_enable type="u16" description="Enable switches with different thresholds for different scenes" range="[0,1]" default="0">0</diffscene_enable>
+		<center_bv_thr type="int16" len="2" description="Brightness threshold division for center scene" range="[0,1]">
+			<table> 100 300 </table>
+		</center_bv_thr>
+		<center_thr type="u16" len="3">
+			<table> 1500 1500 1000 </table>
+		</center_thr>
+		<touch_bv_thr type="int16" len="2" description="Brightness threshold division for touch scene" range="[0,1]">
+			<table> 100 300 </table>
+		</touch_bv_thr>
+		<touch_thr type="u16" len="3">
+			<table> 1500 4000 4000 </table>
+		</touch_thr>
+		<face_bv_thr type="int16" len="2" description="Brightness threshold division for face scene" range="[0,1]">
+			<table> 100 300 </table>
+		</face_bv_thr>
+		<face_thr type="u16" len="3">
+			<table> 100 100 1000 </table>
+		</face_thr>
+		<reserved len="14">0</reserved>
+	</smooth>
+	<sideface>
+		<sideface_enable type="u16" default="1">1</sideface_enable>
+		<yaw_angle len="3">
+			<table> 20 45 60 </table>
+		</yaw_angle>
+		<reserved len="6">0</reserved>
+	</sideface>
+	<facewidth>
+		<scale_enable type="u16" default="1">1</scale_enable>
+		<scale_bv_thr type="int16" len="2">
+			<table> 100 300 </table>
+		</scale_bv_thr>
+		<scale_coef type="u16" len="3">
+			<table> 800 800 800 </table>
+		</scale_coef>
+		<reserved len="14">0</reserved>
+	</facewidth>
+	<common_curpos>
+		<enable type="u16">0</enable>
+		<inf_offset type="int16">0</inf_offset>
+		<macro_offset>0</macro_offset>
+		<reserved type="u16" len="4">0</reserved>
+	</common_curpos>
+	<common_predictpos>
+		<enable type="u16">0</enable>
+		<inf_offset type="int16">0</inf_offset>
+		<macro_offset>0</macro_offset>
+		<reserved type="u16" len="4">0</reserved>
+	</common_predictpos>
+	<face_curpos>
+		<enable type="u16">0</enable>
+		<inf_offset type="int16">0</inf_offset>
+		<macro_offset>0</macro_offset>
+		<reserved type="u16" len="4">0</reserved>
+	</face_curpos>
+	<face_predictpos>
+		<enable type="u16">0</enable>
+		<inf_offset type="int16">0</inf_offset>
+		<macro_offset>0</macro_offset>
+		<reserved type="u16" len="4">0</reserved>
+	</face_predictpos>
+	<moire>
+		<center_enable type="u16" description="Enable switch for center scene moire detection" range="[0,1]" default="0">0</center_enable>
+		<center_th default="0">0</center_th>
+		<touch_enable type="u16" description="Enable switch for touch scene moire detection" range="[0,1]" default="0">0</touch_enable>
+		<touch_th default="0">0</touch_th>
+		<face_enable type="u16" description="Enable switch for face scene moire detection" range="[0,1]" default="0">0</face_enable>
+		<face_th default="0">0</face_th>
+		<reserved len="4">0</reserved>
+	</moire>
+	<reserved type="u32" len="26">0</reserved>
+	<mallocparam>
+		<photo_debuginfo_disable type="u16" description="Enable switch for allocating photo debuginfo memory" range="[0,1]" default="0">0</photo_debuginfo_disable>
+		<video_debuginfo_disable type="u16" description="Enable switch for allocating video debuginfo memory" range="[0,1]" default="0">0</video_debuginfo_disable>
+		<multiwin_disable type="u16" description="Enable switch for allocating multiwin memory" range="[0,1]" default="0">0</multiwin_disable>
+		<interpolate_disable type="u16" description="Enable switch for allocating interpolate memory" range="[0,1]" default="0">0</interpolate_disable>
+		<spc_disable type="u16" description="Enable switch for allocating spc memory" range="[0,1]" default="0">0</spc_disable>
+		<dcc_disable type="u16" description="Enable switch for allocating dcc memory" range="[0,1]" default="0">0</dcc_disable>
+		<lineband_disable type="u16" description="Enable switch for allocating lineband memory" range="[0,1]" default="0">0</lineband_disable>
+		<cosin_sim_disable type="u16" description="Enable switch for allocating old conf_score memory" range="[0,1]" default="1">0</cosin_sim_disable>
+		<reorder_disable type="u16" description="Enable switch for allocating reorder memory" range="[0,1]" default="1">0</reorder_disable>
+		<filter_enable type="u16" description="Enable switch for allocating filter memory" range="[0,1]" default="1">0</filter_enable>
+		<reserved len="10">0</reserved>
+	</mallocparam>
+	<log>
+		<log_adjust_enable type="u16" description="Enable switch for adjusting log level" range="[0,1]" default="0">0</log_adjust_enable>
+		<log_level type="u16" description="log level 2 for LOGV, log level 3 for LOGD" range="[0,8]" default="3">3</log_level>
+		<reserved len="2">0</reserved>
+	</log>
+	<reserved type="u32" len="118">0</reserved>
+	<magic_end>1970169441</magic_end>
+</PDAF4_20646>

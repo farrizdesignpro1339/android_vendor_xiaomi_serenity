@@ -1,0 +1,28 @@
+{
+    "session_name" : "MiniCpm_audio_translate",
+    "in_type" : "text|voice",
+    "out_type" : "text|voice",
+    "entity" : [
+        {
+            "name" : "ASR",
+            "in_type" : "voice",
+            "out_type" : "text",
+            "is_source" : true
+        },
+        {
+            "name" : "MiniCpm",
+            "in_type" : "text",
+            "out_type" : "text",
+            "is_source" : true,
+            "input_prompt": "[path to: /vendor/etc/aiserver/prompt/translate_to_eng.txt]"
+        }
+    ],
+    "adjacency_list" : [
+        {
+            "chain" : "ASR, MiniCpm"
+        },
+        {
+            "chain" : "MiniCpm"
+        }
+    ]
+}

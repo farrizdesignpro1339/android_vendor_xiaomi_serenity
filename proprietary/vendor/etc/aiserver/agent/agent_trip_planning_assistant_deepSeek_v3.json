@@ -1,0 +1,8 @@
+{
+	"agent_name": "agent_trip_planning_assistant_deepSeek_v3",
+	"in_type": "text",
+	"out_type": "text",
+	"prompt": "[path to: /vendor/etc/aiserver/prompt/prompt_trip_planning_assistant.txt]",
+	"mcp_config": "[path to: /vendor/etc/aiserver/mcp/mcp_settings_trip_planning_assistant.json]",
+	"LLM": "cloud-DeepSeek-V3"
+}

@@ -1,0 +1,24 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022-2026 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "session": {
+        "name": "Session_Rear_Qrcode",
+        "usecase": {
+            "facing": "rear",
+            "stream_list": [
+                {
+                    "dir": "output",
+                    "max_width": 2160,
+                    "max_height": 1080,
+                    "formats": [ "NV12" ]
+                }
+            ]
+        },
+        "pipeline": [
+            "Pipeline_Pre_YUV",
+            "Pipeline_Multimode_Preview",
+            "Pipeline_Async_LT",
+            "Pipeline_Multimode_Callback"
+        ]
+    }
+}

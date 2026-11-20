@@ -1,0 +1,26 @@
+{
+	"model_id":"face_detection",
+	"app_name_en":"Face Detection",
+	"app_name_zh":"人脸检测",
+	"first_menu_list":8,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":false,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":3,
+	"master_load_modelname":"UniMnnUltraFace",
+	"slave_load_modelname":"n6pslave::UniMnnUltraFace",
+	"prompt_text_zh":[],
+	"prompt_text_en":[],
+	"prompt_image":[
+		"/storage/emulated/0/demo_pic/face/face1.jpg",
+		"/storage/emulated/0/demo_pic/face/face2.jpg",
+		"/storage/emulated/0/demo_pic/face/face3.jpg"
+	],
+	"option_model_name": [
+		{"ax_model":"Yolov5s_Face"}
+	]
+}

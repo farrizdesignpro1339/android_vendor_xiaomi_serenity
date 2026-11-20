@@ -1,0 +1,13 @@
+{
+  "case": "fpu",
+  "params": [
+    {
+      "ps": [
+        {
+          "tag": "SPRD_TAG_DCAMZOOM_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/sprd/modules/prplMesh/bml-native-service/prplmesh_bmlservice_default.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>org.prplmesh.bmlservice</name>
+        <fqname>IBmlService/default</fqname>
+    </hal>
+</manifest>

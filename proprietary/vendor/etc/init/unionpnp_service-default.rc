@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+service unionpnp_service /vendor/bin/hw/unionpnp_service
+     class main
+     user root
+     group system
+     interface aidl vendor.sprd.hardware.unipnp.IUnionPnP/default
+
+on boot
+     chmod 0664 /sys/class/display/backlight/max_brightness
+     mkdir /data/vendor/unipnp 0777 system system
+     mkdir /data/vendor/unipnp/cpuloading 0777 system system
+     chmod 0644 /proc/cpuloading_enable

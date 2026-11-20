@@ -1,0 +1,19 @@
+{
+    "session_name" : "n6pslave::UniMnnLlmQwen2_5_1_5B_text_translate",
+    "in_type" : "text",
+    "out_type" : "text",
+    "entity" : [
+        {
+            "name" : "n6pslave::UniMnnLlmQwen2_5_1_5B",
+            "in_type" : "text",
+            "out_type" : "text",
+            "is_source" : true,
+            "input_prompt": "[path to: /vendor/etc/aiserver/prompt/translate_for_qwen2_5.txt]"
+        }
+    ],
+    "adjacency_list" : [
+		{
+			"chain" : "n6pslave::UniMnnLlmQwen2_5_1_5B"
+		}
+    ]
+}

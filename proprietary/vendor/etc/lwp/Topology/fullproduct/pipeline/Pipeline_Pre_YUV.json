@@ -1,0 +1,146 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Pre_YUV",
+    "stream": "pre_yuv_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode4"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "BpuRouterNode",
+            "vendor": "SPRD",
+            "id": "bpu_router"
+        },
+        {
+            "type": "BpuNode",
+            "vendor": "SPRD",
+            "id": "prev_BpuNode"
+        },
+        {
+            "type": "BpuNode",
+            "vendor": "SPRD",
+            "id": "cap_BpuNode"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode1","SourceNode2","SourceNode3","SourceNode4"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "bpu_router",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "bpu_router",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "bpu_router",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "bpu_router",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode4",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "bpu_router",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "bpu_router",
+                "port": "out0"
+            },
+            "to": {
+                "name": "prev_BpuNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "bpu_router",
+                "port": "out1"
+            },
+            "to": {
+                "name": "cap_BpuNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_BpuNode",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_BpuNode",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

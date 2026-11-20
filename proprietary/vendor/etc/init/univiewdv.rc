@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+## Service definition
+service univiewdv /vendor/bin/univiewdv
+    class main
+    user root
+    group root system log readproc sdcard_r sdcard_rw media_rw cache everybody
+    task_profiles ServiceCapacityLow HighEnergySaving LowIoPriority
+
+on property:persist.vendor.uniview.enabled=1
+    start univiewdv
+
+on property:persist.vendor.uniview.enabled=0
+    stop univiewdv
+
+on property:vold.emulated.volume.ready=*
+    setprop debug.vendor.uniview.emulated.ready ${vold.emulated.volume.ready}

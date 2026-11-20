@@ -1,0 +1,121 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2023-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Post_Raw",
+    "stream": "post_raw_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "FpuNode",
+            "vendor": "SPRD",
+            "id": "cap_FpuNode"
+        },
+        {
+            "type": "RemosaicNode",
+            "vendor": "SPRD",
+            "id": "cap_remosaic"
+        },
+        {
+            "type": "XDRNode",
+            "vendor": "SPRD",
+            "id": "raw_xdr"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode1","SourceNode2","SourceNode3"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_remosaic",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_remosaic",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_FpuNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "cap_FpuNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_remosaic",
+                "port": "out0"
+            },
+            "to": {
+                "name": "cap_FpuNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "cap_FpuNode",
+                "port": "out0"
+            },
+            "to": {
+                "name": "raw_xdr",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "raw_xdr",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

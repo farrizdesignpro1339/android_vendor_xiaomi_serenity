@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2016-2026 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+#wifid service
+service vendor.wifid /vendor/bin/wifid
+    class core
+    user system
+    group system
+    oneshot
+
+#wifid cali mode service
+on property:vendor.ro.bootmode=cali
+   start vendor.wifid

@@ -1,0 +1,1 @@
+Please help to translate audio content into english and just output translation result"""{input}"""

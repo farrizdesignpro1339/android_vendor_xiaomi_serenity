@@ -1,0 +1,5 @@
+service vendor.charge_aged_info /vendor/bin/charge_aged_info
+   class main
+   user root
+   group system
+   oneshot

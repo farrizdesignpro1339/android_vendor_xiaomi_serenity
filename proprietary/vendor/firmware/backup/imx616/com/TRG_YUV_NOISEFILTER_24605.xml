@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<root name="NOISEFILTER">
+ <BlockInfo>
+  <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">24605</Parameter>
+  <Parameter index="" name="version" des="description" level="1" range="[0,32767]" type="int">1</Parameter>
+  <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>
+  <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">2209031032</Parameter>
+  <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">48</Parameter>
+  <Parameter index="" name="triggersize" des="description" level="1" range="[0,4294967295]" type="int">144</Parameter>
+  <Parameter index="" name="datasize" des="description" level="1" range="[0,4294967295]" type="int">560</Parameter>
+  <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">6560</Parameter>
+  <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">4928</Parameter>
+  <Parameter index="" name="BlockControl" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+ </BlockInfo>
+ <Triggers name="NOISEFILTER" select_way="0" trigger_enable="1" group_num="5">
+  <Trigger start="1.0" end="1.0" para="total_gain" name="region0" interp_type="1" enable="1">0</Trigger>
+  <Trigger start="2.0" end="2.0" para="total_gain" name="region1" interp_type="1" enable="1">1</Trigger>
+  <Trigger start="5.0" end="5.0" para="total_gain" name="region2" interp_type="1" enable="1">2</Trigger>
+  <Trigger start="20.0" end="20.0" para="total_gain" name="region3" interp_type="1" enable="1">3</Trigger>
+  <Trigger start="48.0" end="48.0" para="total_gain" name="region4" interp_type="1" enable="1">4</Trigger>
+ </Triggers>
+ <Parameters name="NOISEFILTER" group_num="5" des="description">
+  <Parameter index="0" name="region0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Noise_Filter_Control">
+    <Parameter name="bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+    <Parameter name="mode" des="description" default="3" level="1" range="[0,3]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="filter_thr" des="description" default="1" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Noise_Filter_Clip">
+    <Parameter name="noise_clip_p" des="description" default="127" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>
+    <Parameter name="noise_clip_n" des="description" default="-127" level="1" range="[-128,0]" type="int" reserve="0x0000" length="1">-127</Parameter>
+   </Parameter>
+   <Parameter name="Noise_Filter_Cv">
+    <Parameter name="cv_t1" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="cv_t2" des="description" default="8" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">8</Parameter>
+    <Parameter name="cv_t3" des="description" default="16" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="cv_t4" des="description" default="24" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">24</Parameter>
+    <Parameter name="cv_r1" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">64</Parameter>
+    <Parameter name="cv_r2" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">64</Parameter>
+    <Parameter name="cv_r3" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">64</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Noise_Filter_Control">
+    <Parameter name="bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+    <Parameter name="mode" des="description" default="3" level="1" range="[0,3]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="filter_thr" des="description" default="1" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Noise_Filter_Clip">
+    <Parameter name="noise_clip_p" des="description" default="127" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>
+    <Parameter name="noise_clip_n" des="description" default="-127" level="1" range="[-128,0]" type="int" reserve="0x0000" length="1">-127</Parameter>
+   </Parameter>
+   <Parameter name="Noise_Filter_Cv">
+    <Parameter name="cv_t1" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="cv_t2" des="description" default="8" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">8</Parameter>
+    <Parameter name="cv_t3" des="description" default="16" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="cv_t4" des="description" default="24" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">24</Parameter>
+    <Parameter name="cv_r1" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">64</Parameter>
+    <Parameter name="cv_r2" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">64</Parameter>
+    <Parameter name="cv_r3" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">64</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Noise_Filter_Control">
+    <Parameter name="bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="mode" des="description" default="3" level="1" range="[0,3]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="filter_thr" des="description" default="1" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Noise_Filter_Clip">
+    <Parameter name="noise_clip_p" des="description" default="127" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>
+    <Parameter name="noise_clip_n" des="description" default="-127" level="1" range="[-128,0]" type="int" reserve="0x0000" length="1">-127</Parameter>
+   </Parameter>
+   <Parameter name="Noise_Filter_Cv">
+    <Parameter name="cv_t1" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="cv_t2" des="description" default="8" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">8</Parameter>
+    <Parameter name="cv_t3" des="description" default="16" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="cv_t4" des="description" default="24" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">24</Parameter>
+    <Parameter name="cv_r1" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="cv_r2" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="cv_r3" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">16</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Noise_Filter_Control">
+    <Parameter name="bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="mode" des="description" default="3" level="1" range="[0,3]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="filter_thr" des="description" default="1" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Noise_Filter_Clip">
+    <Parameter name="noise_clip_p" des="description" default="127" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>
+    <Parameter name="noise_clip_n" des="description" default="-127" level="1" range="[-128,0]" type="int" reserve="0x0000" length="1">-127</Parameter>
+   </Parameter>
+   <Parameter name="Noise_Filter_Cv">
+    <Parameter name="cv_t1" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="cv_t2" des="description" default="8" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">8</Parameter>
+    <Parameter name="cv_t3" des="description" default="16" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="cv_t4" des="description" default="24" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">24</Parameter>
+    <Parameter name="cv_r1" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">32</Parameter>
+    <Parameter name="cv_r2" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">32</Parameter>
+    <Parameter name="cv_r3" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">32</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="4" name="region4" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Noise_Filter_Control">
+    <Parameter name="bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">1</Parameter>
+    <Parameter name="mode" des="description" default="3" level="1" range="[0,3]" type="int" reserve="0x0000" length="1">3</Parameter>
+    <Parameter name="filter_thr" des="description" default="1" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>
+   </Parameter>
+   <Parameter name="Noise_Filter_Clip">
+    <Parameter name="noise_clip_p" des="description" default="127" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>
+    <Parameter name="noise_clip_n" des="description" default="-127" level="1" range="[-128,0]" type="int" reserve="0x0000" length="1">-127</Parameter>
+   </Parameter>
+   <Parameter name="Noise_Filter_Cv">
+    <Parameter name="cv_t1" des="description" default="0" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="cv_t2" des="description" default="8" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">8</Parameter>
+    <Parameter name="cv_t3" des="description" default="16" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">16</Parameter>
+    <Parameter name="cv_t4" des="description" default="24" level="1" range="[0,1023]" type="int" reserve="0x0000" length="1">24</Parameter>
+    <Parameter name="cv_r1" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">64</Parameter>
+    <Parameter name="cv_r2" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">64</Parameter>
+    <Parameter name="cv_r3" des="description" default="" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">64</Parameter>
+   </Parameter>
+  </Parameter>
+ </Parameters>
+ <Defaults name="NOISEFILTER" des="description">
+  <Parameter index="0" name="region0" des="description">
+   <Parameter name="noisefilter_random_seed_mode" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="noisefilter_shape_mode" des="description" level="1" range="[0,1]" type="int" length="1">1</Parameter>
+   <Parameter name="random_r_offset" des="description" level="1" range="[-1024,1023]" type="int" length="1">-16</Parameter>
+   <Parameter name="random_r_shift" des="description" level="1" range="[0,11]" type="int" length="1">6</Parameter>
+   <Parameter name="random_seed" des="description" level="1" range="[0,255]" type="int" length="4">1 0 0 0</Parameter>
+   <Parameter name="random_takebit" des="description" level="1" range="[0,8]" type="int" length="8">8 8 8 8 8 8 8 8</Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description">
+   <Parameter name="noisefilter_random_seed_mode" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="noisefilter_shape_mode" des="description" level="1" range="[0,1]" type="int" length="1">1</Parameter>
+   <Parameter name="random_r_offset" des="description" level="1" range="[-1024,1023]" type="int" length="1">-16</Parameter>
+   <Parameter name="random_r_shift" des="description" level="1" range="[0,11]" type="int" length="1">6</Parameter>
+   <Parameter name="random_seed" des="description" level="1" range="[0,255]" type="int" length="4">1 0 0 0</Parameter>
+   <Parameter name="random_takebit" des="description" level="1" range="[0,8]" type="int" length="8">8 8 8 8 8 8 8 8</Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description">
+   <Parameter name="noisefilter_random_seed_mode" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="noisefilter_shape_mode" des="description" level="1" range="[0,1]" type="int" length="1">1</Parameter>
+   <Parameter name="random_r_offset" des="description" level="1" range="[-1024,1023]" type="int" length="1">-16</Parameter>
+   <Parameter name="random_r_shift" des="description" level="1" range="[0,11]" type="int" length="1">6</Parameter>
+   <Parameter name="random_seed" des="description" level="1" range="[0,255]" type="int" length="4">1 0 0 0</Parameter>
+   <Parameter name="random_takebit" des="description" level="1" range="[0,8]" type="int" length="8">8 8 8 8 8 8 8 8</Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description">
+   <Parameter name="noisefilter_random_seed_mode" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="noisefilter_shape_mode" des="description" level="1" range="[0,1]" type="int" length="1">1</Parameter>
+   <Parameter name="random_r_offset" des="description" level="1" range="[-1024,1023]" type="int" length="1">-16</Parameter>
+   <Parameter name="random_r_shift" des="description" level="1" range="[0,11]" type="int" length="1">6</Parameter>
+   <Parameter name="random_seed" des="description" level="1" range="[0,255]" type="int" length="4">1 0 0 0</Parameter>
+   <Parameter name="random_takebit" des="description" level="1" range="[0,8]" type="int" length="8">8 8 8 8 8 8 8 8</Parameter>
+  </Parameter>
+  <Parameter index="4" name="region4" des="description">
+   <Parameter name="noisefilter_random_seed_mode" des="description" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="noisefilter_shape_mode" des="description" level="1" range="[0,1]" type="int" length="1">1</Parameter>
+   <Parameter name="random_r_offset" des="description" level="1" range="[-1024,1023]" type="int" length="1">-16</Parameter>
+   <Parameter name="random_r_shift" des="description" level="1" range="[0,11]" type="int" length="1">6</Parameter>
+   <Parameter name="random_seed" des="description" level="1" range="[0,255]" type="int" length="4">1 0 0 0</Parameter>
+   <Parameter name="random_takebit" des="description" level="1" range="[0,8]" type="int" length="8">8 8 8 8 8 8 8 8</Parameter>
+  </Parameter>
+ </Defaults>
+</root>

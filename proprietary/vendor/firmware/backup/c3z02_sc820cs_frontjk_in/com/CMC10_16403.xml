@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<CMC10_16403>
+	<block_header>
+		<version type="u8">
+			<version_major>0</version_major>
+			<version_minor>0</version_minor>
+			<version_micro>0</version_micro>
+			<reserved len="5">0</reserved>
+		</version>
+		<block_info type="u32">
+			<block_id>16403</block_id>
+			<bypass>0</bypass>
+			<smart_size>328</smart_size>
+			<block_size>304</block_size>
+			<modify_time>1</modify_time>
+			<trigger_flag>0</trigger_flag>
+			<reserved len="2">0</reserved>
+		</block_info>
+	</block_header>
+	<SMART>
+		<enable type="u32">1</enable>
+		<smart_id>2</smart_id>
+		<block_id>16403</block_id>
+		<component_num>1</component_num>
+		<reserved len="2">0</reserved>
+		<component_cfg>
+			<id type="u32">0</id>
+			<type>0</type>
+			<offset>0</offset>
+			<size>0</size>
+			<x_type>3</x_type>
+			<y_type>1</y_type>
+			<default_val type="int32">0</default_val>
+			<use_flash_val>1</use_flash_val>
+			<flash_val>8</flash_val>
+			<range_num type="u32">4</range_num>
+			<func_num>4</func_num>
+			<reserved len="3">0</reserved>
+			<isp_range_new>
+				<min type="int16">-1000</min>
+				<max>360</max>
+				<reserved len="2">0</reserved>
+			</isp_range_new>
+			<isp_range_new>
+				<min type="int16">460</min>
+				<max>1060</max>
+				<reserved len="2">0</reserved>
+			</isp_range_new>
+			<isp_range_new>
+				<min type="int16">1230</min>
+				<max>1360</max>
+				<reserved len="2">0</reserved>
+			</isp_range_new>
+			<isp_range_new>
+				<min type="int16">1460</min>
+				<max>3000</max>
+				<reserved len="2">0</reserved>
+			</isp_range_new>
+			<func_new>
+				<sample_num type="u32">3</sample_num>
+				<reserved>0</reserved>
+				<sample_new>
+					<x type="int16">2800</x>
+					<y>0</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+				<sample_new>
+					<x type="int16">4000</x>
+					<y>1</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+				<sample_new>
+					<x type="int16">5000</x>
+					<y>9</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+			</func_new>
+			<func_new>
+				<sample_num type="u32">4</sample_num>
+				<reserved>0</reserved>
+				<sample_new>
+					<x type="int16">3200</x>
+					<y>2</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+				<sample_new>
+					<x type="int16">4000</x>
+					<y>3</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+				<sample_new>
+					<x type="int16">4800</x>
+					<y>4</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+				<sample_new>
+					<x type="int16">5800</x>
+					<y>5</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+			</func_new>
+			<func_new>
+				<sample_num type="u32">1</sample_num>
+				<reserved>0</reserved>
+				<sample_new>
+					<x type="int16">4000</x>
+					<y>6</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+			</func_new>
+			<func_new>
+				<sample_num type="u32">1</sample_num>
+				<reserved>0</reserved>
+				<sample_new>
+					<x type="int16">4000</x>
+					<y>6</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+			</func_new>
+		</component_cfg>
+	</SMART>
+	<SMART>
+		<enable type="u32">0</enable>
+		<smart_id>3</smart_id>
+		<block_id>16403</block_id>
+		<component_num>1</component_num>
+		<reserved len="2">0</reserved>
+		<component_cfg>
+			<id type="u32">0</id>
+			<type>0</type>
+			<offset>0</offset>
+			<size>0</size>
+			<x_type>1</x_type>
+			<y_type>0</y_type>
+			<default_val type="int32">0</default_val>
+			<use_flash_val>0</use_flash_val>
+			<flash_val>0</flash_val>
+			<range_num type="u32">0</range_num>
+			<func_num>1</func_num>
+			<reserved len="3">0</reserved>
+			<func_new>
+				<sample_num type="u32">3</sample_num>
+				<reserved>0</reserved>
+				<sample_new>
+					<x type="int16">0</x>
+					<y>0</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+				<sample_new>
+					<x type="int16">0</x>
+					<y>0</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+				<sample_new>
+					<x type="int16">0</x>
+					<y>0</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+			</func_new>
+		</component_cfg>
+	</SMART>
+	<cur_idx>
+		<x0 type="int32" description="description param" range="[0,1]" tune_freq="often_tune" default_value="0">0</x0>
+		<x1 description="description param" range="[0,1]" tune_freq="often_tune" default_value="0">0</x1>
+		<weight0 type="u32" description="description param" range="[0,1]" tune_freq="often_tune" default_value="0">256</weight0>
+		<weight1 description="description param" range="[0,1]" tune_freq="often_tune" default_value="0">0</weight1>
+	</cur_idx>
+	<matrix idx="0" type="u16" len="9" description="description param" range="[0,1]" tune_freq="often_tune" default_value="0">
+		<table> 808 180 36 92 896 36 92 180 752 </table>
+	</matrix>
+	<matrix idx="1" len="9">
+		<table> 808 180 36 92 896 36 92 180 752 </table>
+	</matrix>
+	<matrix idx="2" len="9">
+		<table> 808 180 36 92 896 36 92 180 752 </table>
+	</matrix>
+	<matrix idx="3" len="9">
+		<table> 808 180 36 92 896 36 92 180 752 </table>
+	</matrix>
+	<matrix idx="4" len="9">
+		<table> 808 180 36 92 896 36 92 180 752 </table>
+	</matrix>
+	<matrix idx="5" len="9">
+		<table> 844 152 28 76 920 28 76 152 796 </table>
+	</matrix>
+	<matrix idx="6" len="9">
+		<table> 844 152 28 76 920 28 76 152 796 </table>
+	</matrix>
+	<matrix idx="7" len="9">
+		<table> 808 180 36 92 896 36 92 180 752 </table>
+	</matrix>
+	<matrix idx="8" len="9">
+		<table> 808 180 36 92 896 36 92 180 752 </table>
+	</matrix>
+	<matrix idx="9" len="9">
+		<table> 808 180 36 92 896 36 92 180 752 </table>
+	</matrix>
+	<matrix idx="10" len="9">
+		<table> 808 180 36 92 896 36 92 180 752 </table>
+	</matrix>
+	<matrix idx="11" len="9">
+		<table> 844 152 28 76 920 28 76 152 796 </table>
+	</matrix>
+	<matrix idx="12" len="9">
+		<table> 844 152 28 76 920 28 76 152 796 </table>
+	</matrix>
+	<matrix idx="13" len="9">
+		<table> 808 180 36 92 896 36 92 180 752 </table>
+	</matrix>
+	<matrix idx="14" len="9">
+		<table> 808 180 36 92 896 36 92 180 752 </table>
+	</matrix>
+	<matrix idx="15" len="9">
+		<table> 808 180 36 92 896 36 92 180 752 </table>
+	</matrix>
+</CMC10_16403>

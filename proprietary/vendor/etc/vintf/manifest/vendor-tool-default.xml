@@ -1,0 +1,11 @@
+<!--
+    Input:
+        vendor/sprd/modules/tool/vendor-tool-default.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.sprd.hardware.tool</name>
+        <version>3</version>
+        <fqname>IToolControl/default</fqname>
+    </hal>
+</manifest>

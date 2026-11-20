@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/sprd/interfaces/connmgr/aidl/default/connmgr-default.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>vendor.sprd.hardware.connmgr</name>
+        <fqname>IConnmgr/default</fqname>
+    </hal>
+</manifest>

@@ -1,0 +1,30 @@
+{
+	"model_id":"code_assistant",
+	"app_name_en":"Code Assistant",
+	"app_name_zh":"代码助手",
+	"first_menu_list":6,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":true,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":13,
+	"master_load_modelname":"UniMnnLlmQwen2_5_1_5B",
+	"slave_load_modelname":"n6pslave::UniMnnLlmQwen2_5_1_5B",
+	"prompt_text_zh":[
+		"python实现快速排序算法",
+		"Python写一段代码加载pytorch模型并将其转换为onnx格式",
+		"C++中，怎样创建和操作二叉树数据结构？"
+	],
+	"prompt_text_en":[
+		"Write a quick sort program with C++",
+		"Load pytorch model with Python and convert the model into onnx",
+		"how to create and manipulate binary tree data structures in python?"
+	],
+	"prompt_image":[],
+	"option_model_name": [
+		{"ax_model":"Qwen2_1_5"}
+	]
+}

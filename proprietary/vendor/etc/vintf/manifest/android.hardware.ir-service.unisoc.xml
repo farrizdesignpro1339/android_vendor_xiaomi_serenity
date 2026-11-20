@@ -1,0 +1,10 @@
+<!--
+    Input:
+        vendor/sprd/modules/ir/android.hardware.ir-service.unisoc.xml
+-->
+<manifest version="9.0" type="device">
+    <hal format="aidl">
+        <name>android.hardware.ir</name>
+        <fqname>IConsumerIr/default</fqname>
+    </hal>
+</manifest>

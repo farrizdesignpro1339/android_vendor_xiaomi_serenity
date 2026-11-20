@@ -1,0 +1,28 @@
+{
+	"model_id":"MCP_Online Search",
+	"app_name_en":"MCP_Online Search",
+	"app_name_zh":"MCP_联网搜索",
+	"first_menu_list":4,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":true,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":40,
+	"master_load_modelname":"agent_online_search_qwen_plus",
+	"slave_load_modelname":"agent_online_search_qwen_plus",
+	"prompt_text_zh":[
+		"今日全球实时新闻是什么？",
+		"今日微博热搜是什么？",
+		"上海热门景点有哪些？"
+
+	],
+	"prompt_text_en":[
+		"What are the global real-time news updates today?",
+		"Please list today's top trending topics on Weibo in China",
+		"What are the popular tourist attractions in Shanghai?"
+	],
+	"prompt_image":[]
+}

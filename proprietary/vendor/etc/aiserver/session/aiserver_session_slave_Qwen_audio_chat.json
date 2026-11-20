@@ -1,0 +1,28 @@
+{
+    "session_name" : "n6pslave::Qwen_audio_chat",
+    "in_type" : "text|voice",
+    "out_type" : "text|voice",
+    "entity" : [
+        {
+            "name" : "n6pslave::UniMnnQwen2_5_Omni_3B",
+            "in_type" : "voice",
+            "out_type" : "text",
+            "is_source" : true,
+            "should_callback" : true
+        },
+        {
+            "name" : "n6pslave::UniMnnMeloTTS",
+            "in_type" : "text",
+            "out_type" : "voice",
+            "is_source" : false
+        }
+    ],
+    "adjacency_list" : [
+        {
+            "chain" : "n6pslave::UniMnnQwen2_5_Omni_3B, n6pslave::UniMnnMeloTTS"
+        },
+        {
+            "chain" : "n6pslave::UniMnnMeloTTS"
+        }
+    ]
+}

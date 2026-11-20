@@ -1,0 +1,20 @@
+{
+  "image2text":[
+    {"name": "UniMnnQwen2_VL_2B"}
+  ],
+  "ai_attitude":[
+    {"name": "UniMnnYolov8sPose"}
+  ],
+  "ai_depth":[
+    {"name": "UniMnnDepthAnything"}
+  ],
+  "ai_faceswap":[
+    {"name": "UniMNNdeeplivecam"}
+  ],
+  "ai_removal":[
+    {"name": "UniMnnSamInpaint"}
+  ],
+  "ai_res":[
+    {"name": "UniMnnRealesrgan"}
+  ]
+}

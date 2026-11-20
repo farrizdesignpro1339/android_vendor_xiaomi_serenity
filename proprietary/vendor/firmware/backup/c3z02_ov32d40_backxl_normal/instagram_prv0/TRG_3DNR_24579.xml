@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root name="3DNR"> 
+  <BlockInfo> 
+    <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">24579</Parameter>  
+    <Parameter index="" name="version" des="description" level="1" range="[0,32767]" type="int">1</Parameter>  
+    <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>  
+    <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">2501082023</Parameter>  
+    <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">48</Parameter>  
+    <Parameter index="" name="triggersize" des="description" level="1" range="[0,4294967295]" type="int">164</Parameter>  
+    <Parameter index="" name="datasize" des="description" level="1" range="[0,4294967295]" type="int">2736</Parameter>  
+    <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">3264</Parameter>  
+    <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">2448</Parameter>  
+    <Parameter index="" name="BlockControl" des="description" level="1" range="[0,32767]" type="int">0</Parameter>  
+    <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter> 
+  </BlockInfo>  
+  <Triggers name="3DNR" select_way="0" trigger_enable="1" group_num="4"> 
+    <Trigger start="1.0" end="1.0" para="total_gain" name="region0" interp_type="1" enable="1">0</Trigger>  
+    <Trigger start="2.0" end="2.0" para="total_gain" name="region1" interp_type="1" enable="1">1</Trigger>  
+    <Trigger start="15.0" end="15.0" para="total_gain" name="region2" interp_type="1" enable="1">2</Trigger>  
+    <Trigger start="38.0" end="38.0" para="total_gain" name="region3" interp_type="1" enable="1">3</Trigger> 
+  </Triggers>  
+  <Parameters name="3DNR" group_num="4" des="description"> 
+    <Parameter index="0" name="region0" des="description"> 
+      <Parameter name="3DNR_Control"> 
+        <Parameter name="bypass" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>  
+        <Parameter name="filter_switch_en" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1">0</Parameter>  
+        <Parameter name="fast_me_bypass" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="channel_sel" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="fusion_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Radius_Control" reserve="0x0007"> 
+        <Parameter name="radius_base" des="description" level="1" range="[1024,1024]" type="int" reserve="0x0000" length="1">1024</Parameter>  
+        <Parameter name="r_circle0" des="description" level="1" range="[0,2448]" type="int" reserve="0x000f" length="1">350</Parameter>  
+        <Parameter name="r_circle1" des="description" level="1" range="[0,2448]" type="int" reserve="0x000f" length="1">400</Parameter>  
+        <Parameter name="r_circle2" des="description" level="1" range="[0,2448]" type="int" reserve="0x000f" length="1">450</Parameter> 
+      </Parameter>  
+      <Parameter name="Gradient_Weight_Polyline"> 
+        <Parameter name="gradient_weight_polyline0" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline1" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline2" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline3" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline4" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline5" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline6" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline7" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline8" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline9" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline10" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter> 
+      </Parameter>  
+      <Parameter name="UV CFG" type="table" reserve="0x0007"> 
+        <Parameter name="U" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="range_min" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">0</Parameter>  
+          <Parameter name="range_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="thr_factor0" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor1" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor2" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor3" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="div_factor0" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor1" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor2" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor3" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter> 
+        </Parameter>  
+        <Parameter name="V" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="range_min" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">0</Parameter>  
+          <Parameter name="range_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="thr_factor0" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor1" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor2" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor3" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="div_factor0" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor1" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor2" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor3" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="YUV CFG" type="table"> 
+        <Parameter name="CFG_Y" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="src_weight0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>  
+          <Parameter name="noise_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="noise_w" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="threshold0" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold1" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold2" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold4" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold5" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold6" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold7" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold8" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="intens_gain0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain3" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain4" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain5" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain6" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain7" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain8" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter> 
+        </Parameter>  
+        <Parameter name="CFG_U" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="src_weight0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>  
+          <Parameter name="noise_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="noise_w" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="threshold0" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold1" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold2" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold4" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold5" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold6" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold7" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold8" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="intens_gain0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain3" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain4" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain5" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain6" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain7" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain8" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter> 
+        </Parameter>  
+        <Parameter name="CFG_V" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="src_weight0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>  
+          <Parameter name="noise_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="noise_w" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="threshold0" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold1" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold2" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold4" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold5" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold6" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold7" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="threshold8" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="intens_gain0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain3" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain4" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain5" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain6" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain7" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain8" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter> 
+        </Parameter> 
+      </Parameter> 
+    </Parameter>  
+    <Parameter index="1" name="region1" des="description"> 
+      <Parameter name="3DNR_Control"> 
+        <Parameter name="bypass" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>  
+        <Parameter name="filter_switch_en" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1">0</Parameter>  
+        <Parameter name="fast_me_bypass" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="channel_sel" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="fusion_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Radius_Control" reserve="0x0007"> 
+        <Parameter name="radius_base" des="description" level="1" range="[1024,1024]" type="int" reserve="0x0000" length="1">1024</Parameter>  
+        <Parameter name="r_circle0" des="description" level="1" range="[0,2448]" type="int" reserve="0x000f" length="1">350</Parameter>  
+        <Parameter name="r_circle1" des="description" level="1" range="[0,2448]" type="int" reserve="0x000f" length="1">400</Parameter>  
+        <Parameter name="r_circle2" des="description" level="1" range="[0,2448]" type="int" reserve="0x000f" length="1">450</Parameter> 
+      </Parameter>  
+      <Parameter name="Gradient_Weight_Polyline"> 
+        <Parameter name="gradient_weight_polyline0" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline1" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline2" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline3" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline4" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline5" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline6" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline7" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline8" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline9" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline10" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter> 
+      </Parameter>  
+      <Parameter name="UV CFG" type="table" reserve="0x0007"> 
+        <Parameter name="U" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="range_min" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">0</Parameter>  
+          <Parameter name="range_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="thr_factor0" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor1" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor2" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor3" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="div_factor0" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor1" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor2" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor3" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter> 
+        </Parameter>  
+        <Parameter name="V" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="range_min" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">0</Parameter>  
+          <Parameter name="range_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="thr_factor0" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor1" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor2" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor3" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="div_factor0" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor1" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor2" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor3" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="YUV CFG" type="table"> 
+        <Parameter name="CFG_Y" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="src_weight0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>  
+          <Parameter name="noise_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="noise_w" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="threshold0" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">10</Parameter>  
+          <Parameter name="threshold1" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">10</Parameter>  
+          <Parameter name="threshold2" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">10</Parameter>  
+          <Parameter name="threshold3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">10</Parameter>  
+          <Parameter name="threshold4" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">10</Parameter>  
+          <Parameter name="threshold5" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">10</Parameter>  
+          <Parameter name="threshold6" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">10</Parameter>  
+          <Parameter name="threshold7" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">10</Parameter>  
+          <Parameter name="threshold8" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">10</Parameter>  
+          <Parameter name="intens_gain0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain3" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain4" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain5" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain6" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain7" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain8" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter> 
+        </Parameter>  
+        <Parameter name="CFG_U" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="src_weight0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>  
+          <Parameter name="noise_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">3</Parameter>  
+          <Parameter name="noise_w" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="threshold0" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold1" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold2" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold4" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold5" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold6" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold7" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold8" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="intens_gain0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain3" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain4" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain5" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain6" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain7" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain8" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter> 
+        </Parameter>  
+        <Parameter name="CFG_V" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="src_weight0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">128</Parameter>  
+          <Parameter name="src_weight3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>  
+          <Parameter name="noise_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">3</Parameter>  
+          <Parameter name="noise_w" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="threshold0" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold1" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold2" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold4" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold5" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold6" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold7" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="threshold8" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="intens_gain0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain3" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain4" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain5" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain6" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain7" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain8" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter> 
+        </Parameter> 
+      </Parameter> 
+    </Parameter>  
+    <Parameter index="2" name="region2" des="description"> 
+      <Parameter name="3DNR_Control"> 
+        <Parameter name="bypass" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>  
+        <Parameter name="filter_switch_en" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1">1</Parameter>  
+        <Parameter name="fast_me_bypass" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="channel_sel" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="fusion_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Radius_Control" reserve="0x0007"> 
+        <Parameter name="radius_base" des="description" level="1" range="[1024,1024]" type="int" reserve="0x0000" length="1">1024</Parameter>  
+        <Parameter name="r_circle0" des="description" level="1" range="[0,2448]" type="int" reserve="0x000f" length="1">350</Parameter>  
+        <Parameter name="r_circle1" des="description" level="1" range="[0,2448]" type="int" reserve="0x000f" length="1">400</Parameter>  
+        <Parameter name="r_circle2" des="description" level="1" range="[0,2448]" type="int" reserve="0x000f" length="1">450</Parameter> 
+      </Parameter>  
+      <Parameter name="Gradient_Weight_Polyline"> 
+        <Parameter name="gradient_weight_polyline0" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline1" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline2" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline3" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline4" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline5" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline6" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline7" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline8" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline9" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline10" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter> 
+      </Parameter>  
+      <Parameter name="UV CFG" type="table" reserve="0x0007"> 
+        <Parameter name="U" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="range_min" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">0</Parameter>  
+          <Parameter name="range_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="thr_factor0" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor1" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor2" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor3" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="div_factor0" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor1" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor2" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor3" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter> 
+        </Parameter>  
+        <Parameter name="V" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="range_min" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">0</Parameter>  
+          <Parameter name="range_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="thr_factor0" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor1" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor2" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor3" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="div_factor0" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor1" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor2" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor3" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="YUV CFG" type="table"> 
+        <Parameter name="CFG_Y" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="src_weight0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">64</Parameter>  
+          <Parameter name="src_weight1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">64</Parameter>  
+          <Parameter name="src_weight2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">64</Parameter>  
+          <Parameter name="src_weight3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>  
+          <Parameter name="noise_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">5</Parameter>  
+          <Parameter name="noise_w" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="threshold0" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">20</Parameter>  
+          <Parameter name="threshold1" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">20</Parameter>  
+          <Parameter name="threshold2" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">20</Parameter>  
+          <Parameter name="threshold3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">20</Parameter>  
+          <Parameter name="threshold4" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">20</Parameter>  
+          <Parameter name="threshold5" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">20</Parameter>  
+          <Parameter name="threshold6" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">20</Parameter>  
+          <Parameter name="threshold7" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">20</Parameter>  
+          <Parameter name="threshold8" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">20</Parameter>  
+          <Parameter name="intens_gain0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain3" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain4" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain5" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain6" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain7" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain8" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter> 
+        </Parameter>  
+        <Parameter name="CFG_U" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="src_weight0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">48</Parameter>  
+          <Parameter name="src_weight1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">48</Parameter>  
+          <Parameter name="src_weight2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">48</Parameter>  
+          <Parameter name="src_weight3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>  
+          <Parameter name="noise_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">3</Parameter>  
+          <Parameter name="noise_w" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="threshold0" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold1" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold2" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold4" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold5" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold6" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold7" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold8" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="intens_gain0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain3" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain4" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain5" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain6" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain7" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain8" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter> 
+        </Parameter>  
+        <Parameter name="CFG_V" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="src_weight0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">48</Parameter>  
+          <Parameter name="src_weight1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">48</Parameter>  
+          <Parameter name="src_weight2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">48</Parameter>  
+          <Parameter name="src_weight3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>  
+          <Parameter name="noise_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">3</Parameter>  
+          <Parameter name="noise_w" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="threshold0" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold1" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold2" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold4" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold5" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold6" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold7" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="threshold8" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">15</Parameter>  
+          <Parameter name="intens_gain0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain3" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain4" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain5" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain6" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain7" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain8" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter> 
+        </Parameter> 
+      </Parameter> 
+    </Parameter>  
+    <Parameter index="3" name="region3" des="description"> 
+      <Parameter name="3DNR_Control"> 
+        <Parameter name="bypass" des="description" level="1" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>  
+        <Parameter name="filter_switch_en" des="description" level="1" range="[0,1]" type="int" reserve="0x0000" length="1">1</Parameter>  
+        <Parameter name="fast_me_bypass" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="channel_sel" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">0</Parameter>  
+        <Parameter name="fusion_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter> 
+      </Parameter>  
+      <Parameter name="Radius_Control" reserve="0x0007"> 
+        <Parameter name="radius_base" des="description" level="1" range="[1024,1024]" type="int" reserve="0x0000" length="1">1024</Parameter>  
+        <Parameter name="r_circle0" des="description" level="1" range="[0,2448]" type="int" reserve="0x000f" length="1">350</Parameter>  
+        <Parameter name="r_circle1" des="description" level="1" range="[0,2448]" type="int" reserve="0x000f" length="1">400</Parameter>  
+        <Parameter name="r_circle2" des="description" level="1" range="[0,2448]" type="int" reserve="0x000f" length="1">450</Parameter> 
+      </Parameter>  
+      <Parameter name="Gradient_Weight_Polyline"> 
+        <Parameter name="gradient_weight_polyline0" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline1" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline2" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline3" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline4" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline5" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline6" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline7" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline8" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline9" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter>  
+        <Parameter name="gradient_weight_polyline10" des="description" level="1" range="[0,127]" type="int" reserve="0x0000" length="1">127</Parameter> 
+      </Parameter>  
+      <Parameter name="UV CFG" type="table" reserve="0x0007"> 
+        <Parameter name="U" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="range_min" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">0</Parameter>  
+          <Parameter name="range_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="thr_factor0" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor1" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor2" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor3" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="div_factor0" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor1" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor2" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor3" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter> 
+        </Parameter>  
+        <Parameter name="V" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="range_min" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">0</Parameter>  
+          <Parameter name="range_max" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="thr_factor0" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor1" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor2" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="thr_factor3" des="description" level="1" range="[31,127]" type="int" reserve="0x0000" length="1">63</Parameter>  
+          <Parameter name="div_factor0" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor1" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor2" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter>  
+          <Parameter name="div_factor3" des="description" level="1" range="[1,4]" type="int" reserve="0x0000" length="1">1</Parameter> 
+        </Parameter> 
+      </Parameter>  
+      <Parameter name="YUV CFG" type="table"> 
+        <Parameter name="CFG_Y" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="src_weight0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">116</Parameter>  
+          <Parameter name="src_weight1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">116</Parameter>  
+          <Parameter name="src_weight2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">116</Parameter>  
+          <Parameter name="src_weight3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">150</Parameter>  
+          <Parameter name="noise_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">10</Parameter>  
+          <Parameter name="noise_w" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">205</Parameter>  
+          <Parameter name="threshold0" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">50</Parameter>  
+          <Parameter name="threshold1" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">50</Parameter>  
+          <Parameter name="threshold2" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">50</Parameter>  
+          <Parameter name="threshold3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">50</Parameter>  
+          <Parameter name="threshold4" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">50</Parameter>  
+          <Parameter name="threshold5" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">50</Parameter>  
+          <Parameter name="threshold6" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">50</Parameter>  
+          <Parameter name="threshold7" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">50</Parameter>  
+          <Parameter name="threshold8" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">50</Parameter>  
+          <Parameter name="intens_gain0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain3" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain4" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain5" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain6" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain7" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain8" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter> 
+        </Parameter>  
+        <Parameter name="CFG_U" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="src_weight0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">64</Parameter>  
+          <Parameter name="src_weight1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">64</Parameter>  
+          <Parameter name="src_weight2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">180</Parameter>  
+          <Parameter name="src_weight3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">130</Parameter>  
+          <Parameter name="noise_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">8</Parameter>  
+          <Parameter name="noise_w" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="threshold0" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold1" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold2" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold4" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold5" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold6" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold7" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold8" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="intens_gain0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain3" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain4" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain5" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain6" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain7" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain8" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter> 
+        </Parameter>  
+        <Parameter name="CFG_V" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1"> 
+          <Parameter name="src_weight0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">64</Parameter>  
+          <Parameter name="src_weight1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">64</Parameter>  
+          <Parameter name="src_weight2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">180</Parameter>  
+          <Parameter name="src_weight3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">130</Parameter>  
+          <Parameter name="noise_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">8</Parameter>  
+          <Parameter name="noise_w" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">255</Parameter>  
+          <Parameter name="threshold0" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold1" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold2" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold3" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold4" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold5" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold6" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold7" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="threshold8" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">35</Parameter>  
+          <Parameter name="intens_gain0" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain1" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain2" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain3" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain4" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain5" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain6" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain7" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter>  
+          <Parameter name="intens_gain8" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">63</Parameter> 
+        </Parameter> 
+      </Parameter> 
+    </Parameter> 
+  </Parameters>  
+  <Defaults name="3DNR" des="description"> 
+    <Parameter index="0" name="region0" des="description"> 
+      <Parameter name="project_mode" des="description" level="1" range="[0,1024]" type="int" length="1">0</Parameter>  
+      <Parameter name="sub_me_bypass" des="description" level="1" range="[0,1024]" type="int" length="1">1</Parameter> 
+    </Parameter>  
+    <Parameter index="1" name="region1" des="description"> 
+      <Parameter name="project_mode" des="description" level="1" range="[0,1024]" type="int" length="1">0</Parameter>  
+      <Parameter name="sub_me_bypass" des="description" level="1" range="[0,1024]" type="int" length="1">1</Parameter> 
+    </Parameter>  
+    <Parameter index="2" name="region2" des="description"> 
+      <Parameter name="project_mode" des="description" level="1" range="[0,1024]" type="int" length="1">0</Parameter>  
+      <Parameter name="sub_me_bypass" des="description" level="1" range="[0,1024]" type="int" length="1">1</Parameter> 
+    </Parameter>  
+    <Parameter index="3" name="region3" des="description"> 
+      <Parameter name="project_mode" des="description" level="1" range="[0,1024]" type="int" length="1">0</Parameter>  
+      <Parameter name="sub_me_bypass" des="description" level="1" range="[0,1024]" type="int" length="1">1</Parameter> 
+    </Parameter> 
+  </Defaults> 
+</root>

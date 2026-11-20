@@ -1,0 +1,28 @@
+{
+    "session_name" : "n6pslave::UniMnnLlmQwen2_5_1_5B_diffusion",
+    "in_type" : "text",
+    "out_type" : "picture",
+    "entity" : [
+        {
+            "name" : "n6pslave::UniMnnLlmQwen2_5_1_5B",
+            "in_type" : "text",
+            "out_type" : "text",
+            "is_source" : true,
+            "input_prompt": "[path to: /vendor/etc/aiserver/prompt/translate_to_eng_for_diffusion.txt]"
+        },
+        {
+            "name" : "n6pslave::UniMnnLlmStableDiffusion",
+            "in_type" : "text",
+            "out_type" : "picture",
+            "is_source" : false
+        }
+    ],
+    "adjacency_list" : [
+		{
+            "chain" : "n6pslave::UniMnnLlmQwen2_5_1_5B, n6pslave::UniMnnLlmStableDiffusion"
+        },
+        {
+            "chain" : "n6pslave::UniMnnLlmStableDiffusion"
+        }
+    ]
+}

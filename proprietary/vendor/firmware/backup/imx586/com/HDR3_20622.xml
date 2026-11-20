@@ -1,0 +1,2380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<HDR3_20622>
+	<block_header>
+		<version type="u8">
+			<version_major>0</version_major>
+			<version_minor>0</version_minor>
+			<version_micro>0</version_micro>
+			<reserved len="5">0</reserved>
+		</version>
+		<block_info type="u32">
+			<block_id>20622</block_id>
+			<bypass range="[0,1]">0</bypass>
+			<smart_size>0</smart_size>
+			<block_size>5540</block_size>
+			<modify_time>2209061032</modify_time>
+			<trigger_flag range="[0,1]">0</trigger_flag>
+			<reserved len="2">0</reserved>
+		</block_info>
+	</block_header>
+	<version type="u32">3</version>
+	<scene_num type="int32" description="scene_num" freq="no" default="10">10</scene_num>
+	<bv_thr1 description="bv_thr1" range="[0,1600]" freq="less" default="520">520</bv_thr1>
+	<bv_thr2 description="bv_thr2" range="[0,1600]" freq="less" default="1250">1250</bv_thr2>
+	<thresh_dark type="u8" description="dark_threshold" range="[0,255]" freq="less" default="20">20</thresh_dark>
+	<thresh_bright description="bright_threshold" range="[0,255]" freq="less" default="248">248</thresh_bright>
+	<reserved len="2">0</reserved>
+	<scene idx="0" idx1="0">
+		<dark_low type="float" description="dark_low" range="[0,100]" freq="less">0.0000000</dark_low>
+		<dark_high description="dark_high" range="[0,100]" freq="less">100.0000000</dark_high>
+		<bright_low description="bright_low" range="[0,100]" freq="less">0.0000000</bright_low>
+		<bright_high description="bright_high" range="[0,100]" freq="less">100.0000000</bright_high>
+		<ev len="2" description="ev0,ev1" range="[-5,5]" freq="less">
+			<table> -3.5000000 0.5000000 </table>
+		</ev>
+		<scene type="u8" description="scene" range="0/1" freq="less">1</scene>
+		<pylevel len="3" description="pylevel1~3" range="[0,20]" freq="less" default="11 10 8">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level description="level" range="[0,20]" freq="less" default="8">8</level>
+		<level3 description="level3" range="[0,20]" freq="less" default="8">8</level3>
+		<weight_mean description="weight_mean" range="[0,255]" freq="often" default="150">128</weight_mean>
+		<hist_a description="hist_a" range="[0,16]" freq="often" default="5">8</hist_a>
+		<ref3prop type="u16" description="ref3prop" range="[0,256]" freq="less" default="64">64</ref3prop>
+		<light_enhance type="int16" description="light_enhance" range="[-128,128]" freq="often" default="40">15</light_enhance>
+		<exp_thr type="float" len="2" description="exposureThresh1,exposureThresh2" range="[0,1]" freq="less" default="0.08 0.15">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky description="ref1ex_forsky" range="[0,1]" freq="often" default="0.04">0.0400000</ref1ex_forsky>
+		<sigma description="sigma" range="[0,5]" freq="less" default="0.06">0.0600000</sigma>
+		<face_weight type="u8" description="face_weight" range="[0,10]" freq="often" default="4">4</face_weight>
+		<plyratio len="3" description="plyratio1,plyratio2,plyratio3" range="[0,32]" freq="less" default="12 16 0">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16" description="down_thr" range="[0,1000]" freq="often" default="5">5</down_thr>
+		<up_thr description="up_thr" range="[0,1000]" freq="often" default="5">10</up_thr>
+		<incre_forface type="float" description="incre_forface" range="[-1,1]" freq="often" default="0.43">0.3500000</incre_forface>
+		<incre_forall description="incre_forall" range="[-1,1]" freq="often" default="0">0.2000000</incre_forall>
+		<c_step type="u8" description="c_step" range="[0,20]" freq="less" default="10">4</c_step>
+		<refdown description="refdown" range="[0,16]" freq="often" default="12">10</refdown>
+		<re1_enhance description="re1_enhance" range="[0,40]" freq="less" default="20">20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5" description="temp1~5" range="temp1~3:[-10,10],temp4:[-5,5],temp5:[1,10]" freq="often" default="0.96 1.4 0.85 0 3">
+			<table> 0.9800000 1.0000000 0.8000000 1.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="0" idx1="1">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 7.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="0" idx1="2">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="0" idx1="3">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 7.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="0" idx1="4">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 7.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="0" idx1="5">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 7.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="0" idx1="6">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="0" idx1="7">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 7.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="0" idx1="8">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 7.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="0" idx1="9">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="1" idx1="0">
+		<dark_low type="float" description="dark_low" range="[0,100]" freq="less">3.0000000</dark_low>
+		<dark_high description="dark_high" range="[0,100]" freq="less">20.0000000</dark_high>
+		<bright_low description="bright_low" range="[0,100]" freq="less">1.8000000</bright_low>
+		<bright_high description="bright_high" range="[0,100]" freq="less">100.0000000</bright_high>
+		<ev len="2" description="ev0,ev1" range="[-5,5]" freq="less">
+			<table> -3.3000000 0.8000000 </table>
+		</ev>
+		<scene type="u8" description="scene" range="0/1" freq="less">1</scene>
+		<pylevel len="3" description="pylevel1~3" range="[0,20]" freq="less" default="11 10 8">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level description="level" range="[0,20]" freq="less" default="8">8</level>
+		<level3 description="level3" range="[0,20]" freq="less" default="8">8</level3>
+		<weight_mean description="weight_mean" range="[0,255]" freq="often" default="150">145</weight_mean>
+		<hist_a description="hist_a" range="[0,16]" freq="often" default="5">8</hist_a>
+		<ref3prop type="u16" description="ref3prop" range="[0,256]" freq="less" default="64">10</ref3prop>
+		<light_enhance type="int16" description="light_enhance" range="[-128,128]" freq="often" default="40">15</light_enhance>
+		<exp_thr type="float" len="2" description="exposureThresh1,exposureThresh2" range="[0,1]" freq="less" default="0.08 0.15">
+			<table> 0.0800000 0.0800000 </table>
+		</exp_thr>
+		<ref1ex_forsky description="ref1ex_forsky" range="[0,1]" freq="often" default="0.04">0.0400000</ref1ex_forsky>
+		<sigma description="sigma" range="[0,5]" freq="less" default="0.06">0.0800000</sigma>
+		<face_weight type="u8" description="face_weight" range="[0,10]" freq="often" default="4">4</face_weight>
+		<plyratio len="3" description="plyratio1,plyratio2,plyratio3" range="[0,32]" freq="less" default="12 16 0">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16" description="down_thr" range="[0,1000]" freq="often" default="5">5</down_thr>
+		<up_thr description="up_thr" range="[0,1000]" freq="often" default="5">10</up_thr>
+		<incre_forface type="float" description="incre_forface" range="[-1,1]" freq="often" default="0.43">0.3500000</incre_forface>
+		<incre_forall description="incre_forall" range="[-1,1]" freq="often" default="0">0.2000000</incre_forall>
+		<c_step type="u8" description="c_step" range="[0,20]" freq="less" default="10">4</c_step>
+		<refdown description="refdown" range="[0,16]" freq="often" default="12">10</refdown>
+		<re1_enhance description="re1_enhance" range="[0,40]" freq="less" default="20">20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5" description="temp1~5" range="temp1~3:[-10,10],temp4:[-5,5],temp5:[1,10]" freq="often" default="0.96 1.4 0.85 0 3">
+			<table> 0.9800000 1.0000000 0.8000000 1.0000000 7.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="1" idx1="1">
+		<dark_low type="float">20.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>1.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.3000000 1.0000000 </table>
+		</ev>
+		<scene type="u8">1</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">10</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.0800000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0800000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 1.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="1" idx1="2">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>1.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>6.0000000</bright_high>
+		<ev len="2">
+			<table> -2.0000000 1.1000000 </table>
+		</ev>
+		<scene type="u8">1</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">10</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.0800000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 1.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="1" idx1="3">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -2.0000000 1.1000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>140</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">10</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1000000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0500000</ref1ex_forsky>
+		<sigma>0.0800000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="1" idx1="4">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="1" idx1="5">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="1" idx1="6">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="1" idx1="7">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="1" idx1="8">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="1" idx1="9">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="2" idx1="0">
+		<dark_low type="float" description="dark_low" range="[0,100]" freq="less">2.0000000</dark_low>
+		<dark_high description="dark_high" range="[0,100]" freq="less">22.0000000</dark_high>
+		<bright_low description="bright_low" range="[0,100]" freq="less">2.0000000</bright_low>
+		<bright_high description="bright_high" range="[0,100]" freq="less">100.0000000</bright_high>
+		<ev len="2" description="ev0,ev1" range="[-5,5]" freq="less">
+			<table> -3.2000000 1.3000000 </table>
+		</ev>
+		<scene type="u8" description="scene" range="0/1" freq="less">1</scene>
+		<pylevel len="3" description="pylevel1~3" range="[0,20]" freq="less" default="11 10 8">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level description="level" range="[0,20]" freq="less" default="8">9</level>
+		<level3 description="level3" range="[0,20]" freq="less" default="8">8</level3>
+		<weight_mean description="weight_mean" range="[0,255]" freq="often" default="150">145</weight_mean>
+		<hist_a description="hist_a" range="[0,16]" freq="often" default="5">8</hist_a>
+		<ref3prop type="u16" description="ref3prop" range="[0,256]" freq="less" default="64">8</ref3prop>
+		<light_enhance type="int16" description="light_enhance" range="[-128,128]" freq="often" default="40">15</light_enhance>
+		<exp_thr type="float" len="2" description="exposureThresh1,exposureThresh2" range="[0,1]" freq="less" default="0.08 0.15">
+			<table> 0.0800000 0.0800000 </table>
+		</exp_thr>
+		<ref1ex_forsky description="ref1ex_forsky" range="[0,1]" freq="often" default="0.04">0.0400000</ref1ex_forsky>
+		<sigma description="sigma" range="[0,5]" freq="less" default="0.06">0.0800000</sigma>
+		<face_weight type="u8" description="face_weight" range="[0,10]" freq="often" default="4">4</face_weight>
+		<plyratio len="3" description="plyratio1,plyratio2,plyratio3" range="[0,32]" freq="less" default="12 16 0">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16" description="down_thr" range="[0,1000]" freq="often" default="5">5</down_thr>
+		<up_thr description="up_thr" range="[0,1000]" freq="often" default="5">10</up_thr>
+		<incre_forface type="float" description="incre_forface" range="[-1,1]" freq="often" default="0.43">0.3500000</incre_forface>
+		<incre_forall description="incre_forall" range="[-1,1]" freq="often" default="0">0.2000000</incre_forall>
+		<c_step type="u8" description="c_step" range="[0,20]" freq="less" default="10">4</c_step>
+		<refdown description="refdown" range="[0,16]" freq="often" default="12">10</refdown>
+		<re1_enhance description="re1_enhance" range="[0,40]" freq="less" default="20">20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5" description="temp1~5" range="temp1~3:[-10,10],temp4:[-5,5],temp5:[1,10]" freq="often" default="0.96 1.4 0.85 0 3">
+			<table> 0.9800000 1.0000000 0.8000000 1.0000000 7.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="2" idx1="1">
+		<dark_low type="float">22.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>1.5000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.2000000 2.0000000 </table>
+		</ev>
+		<scene type="u8">1</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>148</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">10</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1000000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0800000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 1.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="2" idx1="2">
+		<dark_low type="float">16.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.5000000</bright_low>
+		<bright_high>1.5000000</bright_high>
+		<ev len="2">
+			<table> -1.0000000 1.0000000 </table>
+		</ev>
+		<scene type="u8">1</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>9</level>
+		<level3>8</level3>
+		<weight_mean>140</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">10</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1000000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0800000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 1.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="2" idx1="3">
+		<dark_low type="float">1.0000000</dark_low>
+		<dark_high>6.0000000</dark_high>
+		<bright_low>0.3000000</bright_low>
+		<bright_high>1.5000000</bright_high>
+		<ev len="2">
+			<table> -2.5000000 0.5000000 </table>
+		</ev>
+		<scene type="u8">1</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>9</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">9</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1000000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0800000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 1.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="2" idx1="4">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>2.0000000</dark_high>
+		<bright_low>20.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -2.5000000 0.0000000 </table>
+		</ev>
+		<scene type="u8">1</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>9</level>
+		<level3>8</level3>
+		<weight_mean>130</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">10</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1000000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0500000</ref1ex_forsky>
+		<sigma>0.0800000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 1.0000000 7.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="2" idx1="5">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -2.0000000 1.1000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>9</level>
+		<level3>8</level3>
+		<weight_mean>130</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">10</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1000000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0500000</ref1ex_forsky>
+		<sigma>0.0800000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="2" idx1="6">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="2" idx1="7">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="2" idx1="8">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="2" idx1="9">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>8</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">15</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">4</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">5</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3500000</incre_forface>
+		<incre_forall>0.2000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9800000 1.0000000 0.8000000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="3" idx1="0">
+		<dark_low type="float" description="dark_low" range="[0,100]" freq="less">0.0000000</dark_low>
+		<dark_high description="dark_high" range="[0,100]" freq="less">25.0000000</dark_high>
+		<bright_low description="bright_low" range="[0,100]" freq="less">1.7000000</bright_low>
+		<bright_high description="bright_high" range="[0,100]" freq="less">100.0000000</bright_high>
+		<ev len="2" description="ev0,ev1" range="[-5,5]" freq="less">
+			<table> -4.0000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8" description="scene" range="0/1" freq="less">1</scene>
+		<pylevel len="3" description="pylevel1~3" range="[0,20]" freq="less" default="11 10 8">
+			<table> 11 10 8 </table>
+		</pylevel>
+		<level description="level" range="[0,20]" freq="less" default="8">6</level>
+		<level3 description="level3" range="[0,20]" freq="less" default="8">8</level3>
+		<weight_mean description="weight_mean" range="[0,255]" freq="often" default="150">128</weight_mean>
+		<hist_a description="hist_a" range="[0,16]" freq="often" default="5">4</hist_a>
+		<ref3prop type="u16" description="ref3prop" range="[0,256]" freq="less" default="64">10</ref3prop>
+		<light_enhance type="int16" description="light_enhance" range="[-128,128]" freq="often" default="40">10</light_enhance>
+		<exp_thr type="float" len="2" description="exposureThresh1,exposureThresh2" range="[0,1]" freq="less" default="0.08 0.15">
+			<table> 0.0500000 0.0500000 </table>
+		</exp_thr>
+		<ref1ex_forsky description="ref1ex_forsky" range="[0,1]" freq="often" default="0.04">0.0400000</ref1ex_forsky>
+		<sigma description="sigma" range="[0,5]" freq="less" default="0.06">0.0600000</sigma>
+		<face_weight type="u8" description="face_weight" range="[0,10]" freq="often" default="4">5</face_weight>
+		<plyratio len="3" description="plyratio1,plyratio2,plyratio3" range="[0,32]" freq="less" default="12 16 0">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16" description="down_thr" range="[0,1000]" freq="often" default="5">0</down_thr>
+		<up_thr description="up_thr" range="[0,1000]" freq="often" default="5">10</up_thr>
+		<incre_forface type="float" description="incre_forface" range="[-1,1]" freq="often" default="0.43">0.3700000</incre_forface>
+		<incre_forall description="incre_forall" range="[-1,1]" freq="often" default="0">0.0000000</incre_forall>
+		<c_step type="u8" description="c_step" range="[0,20]" freq="less" default="10">4</c_step>
+		<refdown description="refdown" range="[0,16]" freq="often" default="12">10</refdown>
+		<re1_enhance description="re1_enhance" range="[0,40]" freq="less" default="20">20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5" description="temp1~5" range="temp1~3:[-10,10],temp4:[-5,5],temp5:[1,10]" freq="often" default="0.96 1.4 0.85 0 3">
+			<table> 0.9600000 1.2000000 0.8500000 1.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="3" idx1="1">
+		<dark_low type="float">25.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>2.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -4.0000000 -1.0000000 </table>
+		</ev>
+		<scene type="u8">1</scene>
+		<pylevel len="3">
+			<table> 11 10 8 </table>
+		</pylevel>
+		<level>6</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">10</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0500000 0.0500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="3" idx1="2">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.0000000 -1.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 11 10 8 </table>
+		</pylevel>
+		<level>6</level>
+		<level3>8</level3>
+		<weight_mean>128</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">10</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0500000 0.0500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="3" idx1="3">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="3" idx1="4">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="3" idx1="5">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="3" idx1="6">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="3" idx1="7">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="3" idx1="8">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="3" idx1="9">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="4" idx1="0">
+		<dark_low type="float" description="dark_low" range="[0,100]" freq="less">0.4000000</dark_low>
+		<dark_high description="dark_high" range="[0,100]" freq="less">25.0000000</dark_high>
+		<bright_low description="bright_low" range="[0,100]" freq="less">2.0000000</bright_low>
+		<bright_high description="bright_high" range="[0,100]" freq="less">100.0000000</bright_high>
+		<ev len="2" description="ev0,ev1" range="[-5,5]" freq="less">
+			<table> -3.8000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8" description="scene" range="0/1" freq="less">1</scene>
+		<pylevel len="3" description="pylevel1~3" range="[0,20]" freq="less" default="11 10 8">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level description="level" range="[0,20]" freq="less" default="8">8</level>
+		<level3 description="level3" range="[0,20]" freq="less" default="8">8</level3>
+		<weight_mean description="weight_mean" range="[0,255]" freq="often" default="150">140</weight_mean>
+		<hist_a description="hist_a" range="[0,16]" freq="often" default="5">4</hist_a>
+		<ref3prop type="u16" description="ref3prop" range="[0,256]" freq="less" default="64">10</ref3prop>
+		<light_enhance type="int16" description="light_enhance" range="[-128,128]" freq="often" default="40">10</light_enhance>
+		<exp_thr type="float" len="2" description="exposureThresh1,exposureThresh2" range="[0,1]" freq="less" default="0.08 0.15">
+			<table> 0.0800000 0.0400000 </table>
+		</exp_thr>
+		<ref1ex_forsky description="ref1ex_forsky" range="[0,1]" freq="often" default="0.04">0.0400000</ref1ex_forsky>
+		<sigma description="sigma" range="[0,5]" freq="less" default="0.06">0.0800000</sigma>
+		<face_weight type="u8" description="face_weight" range="[0,10]" freq="often" default="4">5</face_weight>
+		<plyratio len="3" description="plyratio1,plyratio2,plyratio3" range="[0,32]" freq="less" default="12 16 0">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16" description="down_thr" range="[0,1000]" freq="often" default="5">0</down_thr>
+		<up_thr description="up_thr" range="[0,1000]" freq="often" default="5">10</up_thr>
+		<incre_forface type="float" description="incre_forface" range="[-1,1]" freq="often" default="0.43">0.3700000</incre_forface>
+		<incre_forall description="incre_forall" range="[-1,1]" freq="often" default="0">0.0000000</incre_forall>
+		<c_step type="u8" description="c_step" range="[0,20]" freq="less" default="10">4</c_step>
+		<refdown description="refdown" range="[0,16]" freq="often" default="12">10</refdown>
+		<re1_enhance description="re1_enhance" range="[0,40]" freq="less" default="20">20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5" description="temp1~5" range="temp1~3:[-10,10],temp4:[-5,5],temp5:[1,10]" freq="often" default="0.96 1.4 0.85 0 3">
+			<table> 0.9600000 1.2000000 0.8500000 1.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="4" idx1="1">
+		<dark_low type="float">25.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.1000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -1.8000000 </table>
+		</ev>
+		<scene type="u8">1</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>140</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">8</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.0800000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 1.0000000 7.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="4" idx1="2">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>3.0000000</dark_high>
+		<bright_low>5.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.8000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">1</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>145</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">10</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0100000 0.0800000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0800000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 1.0000000 7.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="4" idx1="3">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="4" idx1="4">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="4" idx1="5">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="4" idx1="6">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 6.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="4" idx1="7">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="4" idx1="8">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="4" idx1="9">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="5" idx1="0">
+		<dark_low type="float" description="dark_low" range="[0,100]" freq="less">0.0000000</dark_low>
+		<dark_high description="dark_high" range="[0,100]" freq="less">100.0000000</dark_high>
+		<bright_low description="bright_low" range="[0,100]" freq="less">2.5000000</bright_low>
+		<bright_high description="bright_high" range="[0,100]" freq="less">15.0000000</bright_high>
+		<ev len="2" description="ev0,ev1" range="[-5,5]" freq="less">
+			<table> -3.3000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8" description="scene" range="0/1" freq="less">1</scene>
+		<pylevel len="3" description="pylevel1~3" range="[0,20]" freq="less" default="11 10 8">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level description="level" range="[0,20]" freq="less" default="8">8</level>
+		<level3 description="level3" range="[0,20]" freq="less" default="8">8</level3>
+		<weight_mean description="weight_mean" range="[0,255]" freq="often" default="150">146</weight_mean>
+		<hist_a description="hist_a" range="[0,16]" freq="often" default="5">4</hist_a>
+		<ref3prop type="u16" description="ref3prop" range="[0,256]" freq="less" default="64">10</ref3prop>
+		<light_enhance type="int16" description="light_enhance" range="[-128,128]" freq="often" default="40">10</light_enhance>
+		<exp_thr type="float" len="2" description="exposureThresh1,exposureThresh2" range="[0,1]" freq="less" default="0.08 0.15">
+			<table> 0.0500000 0.0500000 </table>
+		</exp_thr>
+		<ref1ex_forsky description="ref1ex_forsky" range="[0,1]" freq="often" default="0.04">0.0800000</ref1ex_forsky>
+		<sigma description="sigma" range="[0,5]" freq="less" default="0.06">0.0600000</sigma>
+		<face_weight type="u8" description="face_weight" range="[0,10]" freq="often" default="4">5</face_weight>
+		<plyratio len="3" description="plyratio1,plyratio2,plyratio3" range="[0,32]" freq="less" default="12 16 0">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16" description="down_thr" range="[0,1000]" freq="often" default="5">0</down_thr>
+		<up_thr description="up_thr" range="[0,1000]" freq="often" default="5">10</up_thr>
+		<incre_forface type="float" description="incre_forface" range="[-1,1]" freq="often" default="0.43">0.3700000</incre_forface>
+		<incre_forall description="incre_forall" range="[-1,1]" freq="often" default="0">0.0000000</incre_forall>
+		<c_step type="u8" description="c_step" range="[0,20]" freq="less" default="10">4</c_step>
+		<refdown description="refdown" range="[0,16]" freq="often" default="12">10</refdown>
+		<re1_enhance description="re1_enhance" range="[0,40]" freq="less" default="20">20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5" description="temp1~5" range="temp1~3:[-10,10],temp4:[-5,5],temp5:[1,10]" freq="often" default="0.96 1.4 0.85 0 3">
+			<table> 0.9600000 1.2000000 0.8500000 1.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="5" idx1="1">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>15.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5999999 -2.0000000 </table>
+		</ev>
+		<scene type="u8">1</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>6</level>
+		<level3>8</level3>
+		<weight_mean>145</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">9</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.0800000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0500000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 1.0000000 5.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="5" idx1="2">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>0.4000000</dark_high>
+		<bright_low>15.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">1</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>145</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">9</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0500000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 1.0000000 4.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="5" idx1="3">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.0000000 -1.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 11 11 8 </table>
+		</pylevel>
+		<level>9</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">9</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1000000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 4.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="5" idx1="4">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 4.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="5" idx1="5">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 4.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="5" idx1="6">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 4.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="5" idx1="7">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 4.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="5" idx1="8">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 4.0000000 </table>
+		</temp>
+	</scene>
+	<scene idx="5" idx1="9">
+		<dark_low type="float">0.0000000</dark_low>
+		<dark_high>100.0000000</dark_high>
+		<bright_low>0.0000000</bright_low>
+		<bright_high>100.0000000</bright_high>
+		<ev len="2">
+			<table> -3.5000000 -2.0000000 </table>
+		</ev>
+		<scene type="u8">0</scene>
+		<pylevel len="3">
+			<table> 10 9 8 </table>
+		</pylevel>
+		<level>8</level>
+		<level3>8</level3>
+		<weight_mean>135</weight_mean>
+		<hist_a>4</hist_a>
+		<ref3prop type="u16">64</ref3prop>
+		<light_enhance type="int16">10</light_enhance>
+		<exp_thr type="float" len="2">
+			<table> 0.0800000 0.1500000 </table>
+		</exp_thr>
+		<ref1ex_forsky>0.0400000</ref1ex_forsky>
+		<sigma>0.0600000</sigma>
+		<face_weight type="u8">5</face_weight>
+		<plyratio len="3">
+			<table> 16 20 0 </table>
+		</plyratio>
+		<down_thr type="u16">0</down_thr>
+		<up_thr>10</up_thr>
+		<incre_forface type="float">0.3700000</incre_forface>
+		<incre_forall>0.0000000</incre_forall>
+		<c_step type="u8">4</c_step>
+		<refdown>10</refdown>
+		<re1_enhance>20</re1_enhance>
+		<reserved>0</reserved>
+		<temp type="float" len="5">
+			<table> 0.9600000 1.2000000 0.8500000 0.0000000 4.0000000 </table>
+		</temp>
+	</scene>
+</HDR3_20622>

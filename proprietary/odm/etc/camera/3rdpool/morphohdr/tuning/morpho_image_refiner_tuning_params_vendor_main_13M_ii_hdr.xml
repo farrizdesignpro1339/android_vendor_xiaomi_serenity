@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Morpho Image Refiner Parameters Configuration -->
+<!-- Copyright(c) 2021 Morpho China,Inc.  -->
+
+<image_refiner>
+	<!-- Please do not change the prefix Param_V4.1.1_  -->
+    <version   type="string" length="1">Param_V4.1.1_C3ZR_i_main_hdr_20251223</version>
+	<camera_id type="int"    length="1">11</camera_id>
+	
+    <params>
+		<iso value="100">
+			<hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.5"   length="1">1.5</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</hdr_irr_obc_thres>
+			<deghost_over_exposure_rate_thres         type="double" rang="[0.0,1.0]"      default="0.006"   length="1">0.006</deghost_over_exposure_rate_thres>
+
+			<y_nr_level       			type="double" rang="[0.0,100.0]"  default="0.0"   length="1">0</y_nr_level>
+
+			<lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</hb_contrast>
+			<face_lb_contrast    		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</face_lb_contrast>
+			<face_hb_contrast      		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</face_hb_contrast>
+
+			<lb_exposure                type="int"    rang="[0.0,255.0]"  default="150"     length="1">150</lb_exposure>
+            <hb_exposure                type="int"    rang="[0.0,255.0]"  default="200"     length="1">200</hb_exposure>
+            <face_lb_exposure           type="double" rang="[0.0,255.0]"  default="150"    length="1">180</face_lb_exposure>
+            <face_hb_exposure           type="double" rang="[0.0,255.0]"  default="200"   length="1">250</face_hb_exposure>
+			<merge_mu                   type="double" rang="[0,1]"   	  default="0.6"   length="1">0.6</merge_mu>
+			<face_merge_mu              type="double" rang="[0,1]"   	  default="0.6"   length="1">0.6</face_merge_mu>
+			<face_gamma_brighten_min_gamma   type="double"   rang="[0,1]"   default="0.45"   length="1">0.5</face_gamma_brighten_min_gamma>
+			<face_darker_gamma_min_gamma   type="double"   rang="[0,1]"   default="0.45"   length="1">0.2</face_darker_gamma_min_gamma>
+			<deghost_shrink_iteration>1</deghost_shrink_iteration>
+		</iso>
+		
+		<iso value="200">
+			<hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.5"   length="1">1.5</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</hdr_irr_obc_thres>
+			<deghost_over_exposure_rate_thres         type="double" rang="[0.0,1.0]"      default="0.006"   length="1">0.006</deghost_over_exposure_rate_thres>
+
+			<y_nr_level       			type="double" rang="[0.0,100.0]"  default="0.0"   length="1">0</y_nr_level>
+
+			<lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</hb_contrast>
+			<face_lb_contrast    		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</face_lb_contrast>
+			<face_hb_contrast      		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</face_hb_contrast>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="150"     length="1">150</lb_exposure>
+			<face_lb_exposure           type="double" rang="[0.0,255.0]"  default="150"    length="1">205</face_lb_exposure>
+            <face_hb_exposure           type="double" rang="[0.0,255.0]"  default="200"   length="1">250</face_hb_exposure>
+			<merge_mu                   type="double" rang="[0,1]"   	  default="0.6"   length="1">0.6</merge_mu>
+			<face_merge_mu              type="double" rang="[0,1]"   	  default="0.6"   length="1">0.1</face_merge_mu>
+			<face_gamma_brighten_min_gamma   type="double"   rang="[0,1]"   default="0.45"   length="1">0.5</face_gamma_brighten_min_gamma>
+			<face_darker_gamma_min_gamma   type="double"   rang="[0,1]"   default="0.45"   length="1">0.5</face_darker_gamma_min_gamma>
+			<deghost_shrink_iteration>1</deghost_shrink_iteration>
+
+		</iso>
+		
+		<iso value="400">
+			<hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.5"   length="1">1.5</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</hdr_irr_obc_thres>
+			<deghost_over_exposure_rate_thres         type="double" rang="[0.0,1.0]"      default="0.006"   length="1">0.006</deghost_over_exposure_rate_thres>
+
+			<y_nr_level       			type="double" rang="[0.0,100.0]"  default="0.0"   length="1">0</y_nr_level>
+
+			<lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</hb_contrast>
+			<face_lb_contrast    		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</face_lb_contrast>
+			<face_hb_contrast      		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</face_hb_contrast>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="150"     length="1">150</lb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="150"    length="1">150</face_lb_exposure>
+			<merge_mu                   type="double" rang="[0,1]"   	  default="0.6"   length="1">0.6</merge_mu>
+			<face_merge_mu              type="double" rang="[0,1]"   	  default="0.6"   length="1">0.6</face_merge_mu>
+			<deghost_shrink_iteration>1</deghost_shrink_iteration>
+
+		</iso>
+
+		<iso value="800">
+			<hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.5"   length="1">1.5</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</hdr_irr_obc_thres>
+			<deghost_over_exposure_rate_thres         type="double" rang="[0.0,1.0]"      default="0.006"   length="1">0.006</deghost_over_exposure_rate_thres>
+
+			<y_nr_level       			type="double" rang="[0.0,100.0]"  default="0.0"   length="1">0</y_nr_level>
+
+			<lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</hb_contrast>
+			<face_lb_contrast    		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</face_lb_contrast>
+			<face_hb_contrast      		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</face_hb_contrast>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="150"     length="1">150</lb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="150"    length="1">150</face_lb_exposure>
+			<merge_mu                   type="double" rang="[0,1]"   	  default="0.6"   length="1">0.6</merge_mu>
+			<face_merge_mu              type="double" rang="[0,1]"   	  default="0.6"   length="1">0.6</face_merge_mu>
+			<deghost_shrink_iteration>1</deghost_shrink_iteration>
+
+		</iso>
+
+		<iso value="1600">
+			<hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.5"   length="1">1.5</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</hdr_irr_obc_thres>
+			<deghost_over_exposure_rate_thres         type="double" rang="[0.0,1.0]"      default="0.006"   length="1">0.006</deghost_over_exposure_rate_thres>
+
+			<y_nr_level       			type="double" rang="[0.0,100.0]"  default="0.0"   length="1">0</y_nr_level>
+
+			<lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</hb_contrast>
+			<face_lb_contrast    		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</face_lb_contrast>
+			<face_hb_contrast      		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</face_hb_contrast>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="150"     length="1">150</lb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="150"    length="1">150</face_lb_exposure>
+			<merge_mu                   type="double" rang="[0,1]"   	  default="0.6"   length="1">0.6</merge_mu>
+			<face_merge_mu              type="double" rang="[0,1]"   	  default="0.6"   length="1">0.6</face_merge_mu>
+			<deghost_shrink_iteration>1</deghost_shrink_iteration>
+
+		</iso>
+
+		
+		<iso value="99999">
+			<hdr_obc       		  		type="double" rang="[0.0,10.0]"   default="1.5"   length="1">1.5</hdr_obc>
+			<hdr_obc_thres       		type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</hdr_obc_thres>
+			<hdr_irr_obc_thres      	type="double" rang="[0.0,1.0]"    default="0.8"   length="1">0.8</hdr_irr_obc_thres>
+			<deghost_over_exposure_rate_thres         type="double" rang="[0.0,1.0]"      default="0.006"   length="1">0.006</deghost_over_exposure_rate_thres>
+
+			<y_nr_level       			type="double" rang="[0.0,100.0]"  default="0.0"   length="1">0</y_nr_level>
+
+			<lb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</lb_contrast>
+			<hb_contrast      			type="int"    rang="[0, 1.0]"     default="0"     length="1">0</hb_contrast>
+			<face_lb_contrast    		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</face_lb_contrast>
+			<face_hb_contrast      		type="int"    rang="[0, 1.0]"     default="0"     length="1">0.0</face_hb_contrast>
+
+			<lb_exposure      			type="int"    rang="[0.0,255.0]"  default="150"     length="1">150</lb_exposure>
+			<face_lb_exposure      		type="double" rang="[0.0,255.0]"  default="150"    length="1">150</face_lb_exposure>
+			<merge_mu                   type="double" rang="[0,1]"   	  default="0.6"   length="1">0.6</merge_mu>
+			<face_merge_mu              type="double" rang="[0,1]"   	  default="0.6"   length="1">0.6</face_merge_mu>
+			<deghost_shrink_iteration>1</deghost_shrink_iteration>
+
+		</iso>
+    </params>
+</image_refiner>

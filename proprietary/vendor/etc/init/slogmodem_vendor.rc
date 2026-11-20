@@ -1,0 +1,35 @@
+service vendor.slogmodem /vendor/bin/slogmodem_vendor
+    class core
+    user root
+    group system sdcard_rw media_rw audio radio everybody external_storage root
+    writepid /dev/cpuset/system-background/tasks
+
+on post-fs-data
+    mkdir /data/vendor/local/slogmodem 0777 system system
+
+on cali-fs
+    mkdir /data/vendor 0751 root root
+    mkdir /data/vendor/ylog 0770 root system
+    mkdir /data/vendor/local 0751 root root
+    mkdir /data/vendor/local/slogmodem 0770 shell system
+
+on cali-start
+   start vendor.slogmodem
+
+on factorytest-fs
+    mkdir /data/vendor 0751 root root
+    mkdir /data/vendor/ylog 0770 shell system
+    mkdir /data/vendor/local 0751 root root
+    mkdir /data/vendor/local/slogmodem 0770 shell system
+
+on factorytest-start
+   start vendor.slogmodem
+
+on property:vold.emulated.volume.ready=*
+    setprop vendor.sys.cplog.emulated.ready ${vold.emulated.volume.ready}
+
+on property:vold.sdcard0.state=*
+    setprop vendor.sys.cplog.sdcard0.state ${vold.sdcard0.state}
+
+on property:vold.sdcard0.path=*
+    setprop vendor.sys.cplog.sdcard0.path ${vold.sdcard0.path}

@@ -1,0 +1,26 @@
+{
+	"model_id":"super_resolution",
+	"app_name_en":"Super-resolution",
+	"app_name_zh":"图像超分",
+	"first_menu_list":7,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":false,
+	"send_msg_type": "image",
+	"recv_msg_type" : "image",
+	"load_cost_time":5,
+	"master_load_modelname":"UniMnnRealesrgan",
+	"slave_load_modelname":"n6pslave::UniMnnRealesrgan",
+	"prompt_text_zh":[],
+	"prompt_text_en":[],
+	"prompt_image":[
+		"/storage/emulated/0/demo_pic/super/super1.jpg",
+		"/storage/emulated/0/demo_pic/super/super2.jpg",
+		"/storage/emulated/0/demo_pic/super/super3.jpg"
+	],
+	"option_model_name": [
+		{"ax_model":"Deepseek-7B"}
+	]
+}

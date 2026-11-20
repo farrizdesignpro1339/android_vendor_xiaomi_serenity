@@ -1,0 +1,10 @@
+service vendor.trusty.mtdservice /vendor/bin/mtd_trusty
+    class hal
+    user system
+    group system keystore drmrpc
+    disabled
+
+on property:sys.boot_completed=1
+    setprop ro.vendor.oem.serialno ${ro.boot.serialno}
+    mkdir /mnt/vendor/prodnv/persist/fdsd 0755 system system
+    start vendor.trusty.mtdservice

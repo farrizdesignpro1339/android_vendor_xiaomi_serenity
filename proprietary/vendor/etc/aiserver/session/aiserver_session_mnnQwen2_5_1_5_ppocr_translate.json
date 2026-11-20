@@ -1,0 +1,28 @@
+{
+    "session_name" : "UniMnnLlmQwen2_5_1_5B_ppocr_translate",
+    "in_type" : "picture",
+    "out_type" : "text",
+    "entity" : [
+        {
+            "name" : "UniMnnPpocrV4",
+            "in_type" : "picture",
+            "out_type" : "text",
+            "is_source" : true
+        },
+        {
+            "name" : "UniMnnLlmQwen2_5_1_5B",
+            "in_type" : "text",
+            "out_type" : "text",
+            "is_source" : true,
+            "input_prompt": "[path to: /vendor/etc/aiserver/prompt/translate_for_ocr_qwen2_5.txt]"
+        }
+    ],
+    "adjacency_list" : [
+        {
+            "chain" : "UniMnnPpocrV4, UniMnnLlmQwen2_5_1_5B"
+        },
+		{
+			"chain" : "UniMnnLlmQwen2_5_1_5B"
+		}
+    ]
+}

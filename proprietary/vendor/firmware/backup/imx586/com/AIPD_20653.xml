@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<AIPD_20653>
+  <block_header>
+    <version type="u8">
+      <version_major>0</version_major>
+      <version_minor>0</version_minor>
+      <version_micro>0</version_micro>
+      <reserved len="5">0</reserved>
+    </version>
+    <block_info type="u32">
+      <block_id>20653</block_id>
+      <bypass range="[0,1]">0</bypass>
+      <smart_size>0</smart_size>
+      <block_size>1428</block_size>
+      <modify_time>0</modify_time>
+      <trigger_flag range="[0,1]">0</trigger_flag>
+      <reserved len="2">0</reserved>
+    </block_info>
+  </block_header>
+  <header>
+    <magic type="u32">3452816845</magic>
+    <param_version type="int32">84148224</param_version>
+    <param_size type="int32">1428</param_size>
+    <reserved type="u32">0</reserved>
+  </header>
+  <calc>
+    <bypass type="u16">0</bypass>
+    <max_buffer_w>150</max_buffer_w>
+    <max_buffer_h>600</max_buffer_h>
+    <lens_pe_enable>0</lens_pe_enable>
+    <cut_OB>
+      <enable type="u16">0</enable>
+      <raw_OB>64</raw_OB>
+      <raw_max>1023</raw_max>
+      <reserved len="13">0</reserved>
+    </cut_OB>
+    <size_limit>
+      <enable type="u16">0</enable>
+      <reserved1>0</reserved1>
+      <ratio_w type="float">1.0000000</ratio_w>
+      <ratio_h>1.0000000</ratio_h>
+      <reserved type="u16" len="12">0</reserved>
+    </size_limit>
+    <vcm_limit>
+      <enable type="u16">0</enable>
+      <in_min>200</in_min>
+      <in_max>680</in_max>
+      <reserved len="13">0</reserved>
+    </vcm_limit>
+    <reserved len="60">0</reserved>
+  </calc>
+  <model>
+    <norm_raw_w type="u16">112</norm_raw_w>
+    <norm_raw_h>448</norm_raw_h>
+    <norm_inf type="float">375.0000000</norm_inf>
+    <norm_macro type="float">634.0000000</norm_macro>
+    <out_vcm_list len="50">
+      <table> 380.5950012 381.6830139 383.1279907 385.1430054 388.9289856 394.4519958 403.6900024 417.1279907 436.7600098 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 0.0000000 </table>
+    </out_vcm_list>
+    <out_vcm_len type="u16">9</out_vcm_len>
+    <reserved len="61">0</reserved>
+  </model>
+  <otp>
+    <spc_enable type="u16">0</spc_enable>
+    <dcc_enable type="u16">1</dcc_enable>
+    <reserved len="10">0</reserved>
+  </otp>
+  <dump>
+    <dump_enable type="u16">0</dump_enable>
+    <dump_skip>30</dump_skip>
+    <reserved len="10">0</reserved>
+  </dump>
+  <reserved type="u32" len="200">0</reserved>
+</AIPD_20653>

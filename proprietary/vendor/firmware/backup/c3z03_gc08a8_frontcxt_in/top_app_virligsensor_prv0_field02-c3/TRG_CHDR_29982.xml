@@ -1,0 +1,835 @@
+<?xml version="1.0"?>
+<root name="CHDR">
+ <BlockInfo>
+  <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">29982</Parameter>
+  <Parameter index="" name="version" des="description" level="1" range="[0,32767]" type="int">1</Parameter>
+  <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>
+  <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">0</Parameter>
+  <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">48</Parameter>
+  <Parameter index="" name="triggersize" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="datasize" des="description" level="1" range="[0,32767]" type="int">224</Parameter>
+  <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">3264</Parameter>
+  <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">2448</Parameter>
+  <Parameter index="" name="BlockControl" des="description" level="1" range="[0,32767]" type="int">0x0052</Parameter>
+  <Parameter index="" name="reserve1" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+ </BlockInfo>
+ <ConstData name="Control">
+  <Parameter name="SD_Control">
+   <Parameter name="thres_dark" des="description" default="0" level="1" range="[0,255]" type="int" length="1">20</Parameter>
+   <Parameter name="thres_bright" des="description" default="0" level="1" range="[0,255]" type="int" length="1">248</Parameter>
+   <Parameter name="bv_thr1" des="description" default="0" level="1" range="[-600,1600]" type="int" length="1" reserve="0x0007">520</Parameter>
+   <Parameter name="bv_thr2" des="description" default="0" level="1" range="[-600,1600]" type="int" length="1" reserve="0x0007">1250</Parameter>
+  </Parameter>
+  <Parameter name="Version_Control">
+   <Parameter name="version_major" des="description" default="0" level="1" range="[0,255]" type="int" length="1">1</Parameter>
+   <Parameter name="version_minor" des="description" default="0" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+   <Parameter name="version_micro" des="description" default="0" level="1" range="[0,255]" type="int" length="1">0</Parameter>
+  </Parameter>
+  <Parameter name="Process_Control">
+   <Parameter name="chdr_enable" des="description" default="0" level="1" range="[0,1]" type="int" length="1">1</Parameter>
+  </Parameter>
+ </ConstData>
+ <Triggers name="SD" select_way="0" trigger_enable="1" group_num="12" des="description">
+  <Trigger start="0" end="0" para="environment" name="">
+   <Trigger start="0" end="0" para="face" name="">
+    <Trigger start="0.0" end="100.0" para="chdr_dark_ratio" name="">
+     <Trigger start="0.0" end="50.0" para="chdr_bright_ratio" name="region0" interp_type="0x1">0</Trigger>
+     <Trigger start="50.0" end="100.0" para="chdr_bright_ratio" name="region1" interp_type="0x1">1</Trigger>
+    </Trigger>
+   </Trigger>
+   <Trigger start="1" end="1" para="face" name="">
+    <Trigger start="0.0" end="100.0" para="chdr_dark_ratio" name="">
+     <Trigger start="0.0" end="50.0" para="chdr_bright_ratio" name="region2" interp_type="0x1">2</Trigger>
+     <Trigger start="50.0" end="100.0" para="chdr_bright_ratio" name="region3" interp_type="0x1">3</Trigger>
+    </Trigger>
+   </Trigger>
+  </Trigger>
+  <Trigger start="1" end="1" para="environment" name="">
+   <Trigger start="0" end="0" para="face" name="">
+    <Trigger start="0.0" end="100.0" para="chdr_dark_ratio" name="">
+     <Trigger start="0.0" end="50.0" para="chdr_bright_ratio" name="region4" interp_type="0x1">4</Trigger>
+     <Trigger start="50.0" end="100.0" para="chdr_bright_ratio" name="region5" interp_type="0x1">5</Trigger>
+    </Trigger>
+   </Trigger>
+   <Trigger start="1" end="1" para="face" name="">
+    <Trigger start="0.0" end="100.0" para="chdr_dark_ratio" name="">
+     <Trigger start="0.0" end="50.0" para="chdr_bright_ratio" name="region6" interp_type="0x1">6</Trigger>
+     <Trigger start="50.0" end="100.0" para="chdr_bright_ratio" name="region7" interp_type="0x1">7</Trigger>
+    </Trigger>
+   </Trigger>
+  </Trigger>
+  <Trigger start="2" end="2" para="environment" name="">
+   <Trigger start="0" end="0" para="face" name="">
+    <Trigger start="0.0" end="100.0" para="chdr_dark_ratio" name="">
+     <Trigger start="0.0" end="50.0" para="chdr_bright_ratio" name="region8" interp_type="0x1">8</Trigger>
+     <Trigger start="50.0" end="100.0" para="chdr_bright_ratio" name="region9" interp_type="0x1">9</Trigger>
+    </Trigger>
+   </Trigger>
+   <Trigger start="1" end="1" para="face" name="">
+    <Trigger start="0.0" end="100.0" para="chdr_dark_ratio" name="">
+     <Trigger start="0.0" end="50.0" para="chdr_bright_ratio" name="region10" interp_type="0x1">10</Trigger>
+     <Trigger start="50.0" end="100.0" para="chdr_bright_ratio" name="region11" interp_type="0x1">11</Trigger>
+    </Trigger>
+   </Trigger>
+  </Trigger>
+ </Triggers>
+ <Parameters name="SD" group_num="12" des="description">
+  <Parameter index="0" name="region0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="SD">
+    <Parameter name="ev0" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">-2.5</Parameter>
+    <Parameter name="ev1" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="scene_flag" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="SD">
+    <Parameter name="ev0" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">-2.5</Parameter>
+    <Parameter name="ev1" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="scene_flag" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="SD">
+    <Parameter name="ev0" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">-2.5</Parameter>
+    <Parameter name="ev1" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="scene_flag" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="SD">
+    <Parameter name="ev0" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">-2.5</Parameter>
+    <Parameter name="ev1" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="scene_flag" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="4" name="region4" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="SD">
+    <Parameter name="ev0" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">-2.5</Parameter>
+    <Parameter name="ev1" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="scene_flag" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="5" name="region5" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="SD">
+    <Parameter name="ev0" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">-2.5</Parameter>
+    <Parameter name="ev1" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="scene_flag" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="6" name="region6" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="SD">
+    <Parameter name="ev0" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">-2.5</Parameter>
+    <Parameter name="ev1" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="scene_flag" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="7" name="region7" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="SD">
+    <Parameter name="ev0" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">-2.5</Parameter>
+    <Parameter name="ev1" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="scene_flag" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="8" name="region8" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="SD">
+    <Parameter name="ev0" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">-2.5</Parameter>
+    <Parameter name="ev1" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="scene_flag" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="9" name="region9" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="SD">
+    <Parameter name="ev0" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">-2.5</Parameter>
+    <Parameter name="ev1" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="scene_flag" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="10" name="region10" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="SD">
+    <Parameter name="ev0" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">-2.5</Parameter>
+    <Parameter name="ev1" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="scene_flag" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="11" name="region11" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="SD">
+    <Parameter name="ev0" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">-2.5</Parameter>
+    <Parameter name="ev1" des="description" level="1" range="[-5,5]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="scene_flag" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+ </Parameters>
+ <Triggers name="Night" select_way="0" trigger_enable="1" group_num="4" des="description">
+  <Trigger start="0" end="0" para="face" name="">
+   <Trigger start="0.0" end="100.0" para="chdr_dark_ratio" name="">
+    <Trigger start="0.0" end="50.0" para="chdr_bright_ratio" name="region0" interp_type="0x1">0</Trigger>
+    <Trigger start="50.0" end="100.0" para="chdr_bright_ratio" name="region1" interp_type="0x1">1</Trigger>
+   </Trigger>
+  </Trigger>
+  <Trigger start="1" end="1" para="face" name="">
+   <Trigger start="0.0" end="100.0" para="chdr_dark_ratio" name="">
+    <Trigger start="0.0" end="50.0" para="chdr_bright_ratio" name="region2" interp_type="0x1">2</Trigger>
+    <Trigger start="50.0" end="100.0" para="chdr_bright_ratio" name="region3" interp_type="0x1">3</Trigger>
+   </Trigger>
+  </Trigger>
+ </Triggers>
+ <Parameters name="Night" group_num="4" des="description">
+  <Parameter index="0" name="region0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Night">
+    <Parameter name="y_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="y_mean_mid" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="y_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">168</Parameter>
+    <Parameter name="y_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_mid" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">108</Parameter>
+    <Parameter name="uv_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="uv_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="IncreaseUVRatio" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="keepPortraitRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="keepLow_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">248</Parameter>
+    <Parameter name="brightness" des="description" level="1" range="[-100,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="contrast" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="saturation" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.02</Parameter>
+    <Parameter name="saturation_sky" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.1</Parameter>
+    <Parameter name="sharpLow" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.5</Parameter>
+    <Parameter name="sharpNormal" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.1</Parameter>
+    <Parameter name="ghostover_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.03</Parameter>
+    <Parameter name="down_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="up_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.5</Parameter>
+    <Parameter name="overexp_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">250</Parameter>
+    <Parameter name="limit_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="Low_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="overexp_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="fusionover_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.001</Parameter>
+    <Parameter name="overexp_bright_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="ghost_diff_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">51</Parameter>
+    <Parameter name="isKeepPortrait" des="description" level="1" range="[0,2]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isPortraitKeepRefine" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isIncreaseDynamic" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isReduceHalo" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isFusionAdvance" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepnormal_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">208</Parameter>
+    <Parameter name="keepnormal_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepNormalRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepportrait_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">5</Parameter>
+    <Parameter name="keepportrait2_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">3</Parameter>
+    <Parameter name="reducehalo_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepLow_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepBlueMaxThre" des="description" level="1" range="[255,511]" type="int" reserve="0x0007" length="1">280</Parameter>
+    <Parameter name="keepBlueRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.4</Parameter>
+    <Parameter name="ResidualThreNormal" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="ResidualThreLow" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="crop_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Night">
+    <Parameter name="y_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="y_mean_mid" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="y_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">168</Parameter>
+    <Parameter name="y_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_mid" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">108</Parameter>
+    <Parameter name="uv_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="uv_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="IncreaseUVRatio" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="keepPortraitRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="keepLow_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">248</Parameter>
+    <Parameter name="brightness" des="description" level="1" range="[-100,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="contrast" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="saturation" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.02</Parameter>
+    <Parameter name="saturation_sky" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.1</Parameter>
+    <Parameter name="sharpLow" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.5</Parameter>
+    <Parameter name="sharpNormal" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.1</Parameter>
+    <Parameter name="ghostover_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.03</Parameter>
+    <Parameter name="down_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="up_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.5</Parameter>
+    <Parameter name="overexp_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">250</Parameter>
+    <Parameter name="limit_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="Low_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="overexp_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="fusionover_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.001</Parameter>
+    <Parameter name="overexp_bright_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="ghost_diff_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">51</Parameter>
+    <Parameter name="isKeepPortrait" des="description" level="1" range="[0,2]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isPortraitKeepRefine" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isIncreaseDynamic" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isReduceHalo" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isFusionAdvance" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepnormal_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">208</Parameter>
+    <Parameter name="keepnormal_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepNormalRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepportrait_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">5</Parameter>
+    <Parameter name="keepportrait2_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">3</Parameter>
+    <Parameter name="reducehalo_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepLow_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepBlueMaxThre" des="description" level="1" range="[255,511]" type="int" reserve="0x0007" length="1">280</Parameter>
+    <Parameter name="keepBlueRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.4</Parameter>
+    <Parameter name="ResidualThreNormal" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="ResidualThreLow" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="crop_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Night">
+    <Parameter name="y_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="y_mean_mid" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="y_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">168</Parameter>
+    <Parameter name="y_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_mid" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">108</Parameter>
+    <Parameter name="uv_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="uv_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="IncreaseUVRatio" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="keepPortraitRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="keepLow_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">248</Parameter>
+    <Parameter name="brightness" des="description" level="1" range="[-100,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="contrast" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="saturation" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.02</Parameter>
+    <Parameter name="saturation_sky" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.1</Parameter>
+    <Parameter name="sharpLow" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.5</Parameter>
+    <Parameter name="sharpNormal" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.1</Parameter>
+    <Parameter name="ghostover_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.03</Parameter>
+    <Parameter name="down_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="up_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.5</Parameter>
+    <Parameter name="overexp_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">250</Parameter>
+    <Parameter name="limit_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="Low_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="overexp_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="fusionover_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.001</Parameter>
+    <Parameter name="overexp_bright_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="ghost_diff_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">51</Parameter>
+    <Parameter name="isKeepPortrait" des="description" level="1" range="[0,2]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isPortraitKeepRefine" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isIncreaseDynamic" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isReduceHalo" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isFusionAdvance" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepnormal_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">208</Parameter>
+    <Parameter name="keepnormal_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepNormalRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepportrait_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">5</Parameter>
+    <Parameter name="keepportrait2_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">3</Parameter>
+    <Parameter name="reducehalo_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepLow_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepBlueMaxThre" des="description" level="1" range="[255,511]" type="int" reserve="0x0007" length="1">280</Parameter>
+    <Parameter name="keepBlueRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.4</Parameter>
+    <Parameter name="ResidualThreNormal" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="ResidualThreLow" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="crop_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Night">
+    <Parameter name="y_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="y_mean_mid" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="y_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">168</Parameter>
+    <Parameter name="y_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_mid" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">108</Parameter>
+    <Parameter name="uv_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="uv_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="IncreaseUVRatio" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="keepPortraitRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="keepLow_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">248</Parameter>
+    <Parameter name="brightness" des="description" level="1" range="[-100,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="contrast" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="saturation" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.02</Parameter>
+    <Parameter name="saturation_sky" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.1</Parameter>
+    <Parameter name="sharpLow" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.5</Parameter>
+    <Parameter name="sharpNormal" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.1</Parameter>
+    <Parameter name="ghostover_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.03</Parameter>
+    <Parameter name="down_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="up_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.5</Parameter>
+    <Parameter name="overexp_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">250</Parameter>
+    <Parameter name="limit_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="Low_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="overexp_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="fusionover_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.001</Parameter>
+    <Parameter name="overexp_bright_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="ghost_diff_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">51</Parameter>
+    <Parameter name="isKeepPortrait" des="description" level="1" range="[0,2]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isPortraitKeepRefine" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isIncreaseDynamic" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isReduceHalo" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isFusionAdvance" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepnormal_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">208</Parameter>
+    <Parameter name="keepnormal_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepNormalRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepportrait_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">5</Parameter>
+    <Parameter name="keepportrait2_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">3</Parameter>
+    <Parameter name="reducehalo_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepLow_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepBlueMaxThre" des="description" level="1" range="[255,511]" type="int" reserve="0x0007" length="1">280</Parameter>
+    <Parameter name="keepBlueRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.4</Parameter>
+    <Parameter name="ResidualThreNormal" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="ResidualThreLow" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="crop_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+   </Parameter>
+  </Parameter>
+ </Parameters>
+ <Triggers name="Day_Indoor" select_way="0" trigger_enable="1" group_num="4" des="description">
+  <Trigger start="0" end="0" para="face" name="">
+   <Trigger start="0.0" end="100.0" para="chdr_dark_ratio" name="">
+    <Trigger start="0.0" end="50.0" para="chdr_bright_ratio" name="region0" interp_type="0x1">0</Trigger>
+    <Trigger start="50.0" end="100.0" para="chdr_bright_ratio" name="region1" interp_type="0x1">1</Trigger>
+   </Trigger>
+  </Trigger>
+  <Trigger start="1" end="1" para="face" name="">
+   <Trigger start="0.0" end="100.0" para="chdr_dark_ratio" name="">
+    <Trigger start="0.0" end="50.0" para="chdr_bright_ratio" name="region2" interp_type="0x1">2</Trigger>
+    <Trigger start="50.0" end="100.0" para="chdr_bright_ratio" name="region3" interp_type="0x1">3</Trigger>
+   </Trigger>
+  </Trigger>
+ </Triggers>
+ <Parameters name="Day_Indoor" group_num="4" des="description">
+  <Parameter index="0" name="region0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Day_Indoor">
+    <Parameter name="y_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="y_mean_mid" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="y_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">168</Parameter>
+    <Parameter name="y_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_mid" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">108</Parameter>
+    <Parameter name="uv_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="uv_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="IncreaseUVRatio" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="keepPortraitRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="keepLow_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">248</Parameter>
+    <Parameter name="brightness" des="description" level="1" range="[-100,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="contrast" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="saturation" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.02</Parameter>
+    <Parameter name="saturation_sky" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.1</Parameter>
+    <Parameter name="sharpLow" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.5</Parameter>
+    <Parameter name="sharpNormal" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.1</Parameter>
+    <Parameter name="ghostover_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.03</Parameter>
+    <Parameter name="down_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="up_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.5</Parameter>
+    <Parameter name="overexp_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">250</Parameter>
+    <Parameter name="limit_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="Low_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="overexp_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="fusionover_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.0005</Parameter>
+    <Parameter name="overexp_bright_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="ghost_diff_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">51</Parameter>
+    <Parameter name="isKeepPortrait" des="description" level="1" range="[0,2]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isPortraitKeepRefine" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isIncreaseDynamic" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isReduceHalo" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isFusionAdvance" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepnormal_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">208</Parameter>
+    <Parameter name="keepnormal_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepNormalRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepportrait_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">5</Parameter>
+    <Parameter name="keepportrait2_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">3</Parameter>
+    <Parameter name="reducehalo_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepLow_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepBlueMaxThre" des="description" level="1" range="[255,511]" type="int" reserve="0x0007" length="1">300</Parameter>
+    <Parameter name="keepBlueRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ResidualThreNormal" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="ResidualThreLow" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="crop_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Day_Indoor">
+    <Parameter name="y_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="y_mean_mid" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="y_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">168</Parameter>
+    <Parameter name="y_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_mid" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">108</Parameter>
+    <Parameter name="uv_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="uv_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="IncreaseUVRatio" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="keepPortraitRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="keepLow_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">248</Parameter>
+    <Parameter name="brightness" des="description" level="1" range="[-100,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="contrast" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="saturation" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.02</Parameter>
+    <Parameter name="saturation_sky" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.1</Parameter>
+    <Parameter name="sharpLow" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.5</Parameter>
+    <Parameter name="sharpNormal" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.1</Parameter>
+    <Parameter name="ghostover_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.03</Parameter>
+    <Parameter name="down_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="up_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.5</Parameter>
+    <Parameter name="overexp_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">250</Parameter>
+    <Parameter name="limit_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="Low_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="overexp_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="fusionover_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.0005</Parameter>
+    <Parameter name="overexp_bright_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="ghost_diff_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">51</Parameter>
+    <Parameter name="isKeepPortrait" des="description" level="1" range="[0,2]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isPortraitKeepRefine" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isIncreaseDynamic" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isReduceHalo" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isFusionAdvance" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepnormal_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">208</Parameter>
+    <Parameter name="keepnormal_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepNormalRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepportrait_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">5</Parameter>
+    <Parameter name="keepportrait2_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">3</Parameter>
+    <Parameter name="reducehalo_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepLow_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepBlueMaxThre" des="description" level="1" range="[255,511]" type="int" reserve="0x0007" length="1">300</Parameter>
+    <Parameter name="keepBlueRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ResidualThreNormal" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="ResidualThreLow" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="crop_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Day_Indoor">
+    <Parameter name="y_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="y_mean_mid" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="y_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">168</Parameter>
+    <Parameter name="y_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_mid" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">108</Parameter>
+    <Parameter name="uv_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="uv_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="IncreaseUVRatio" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="keepPortraitRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="keepLow_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">248</Parameter>
+    <Parameter name="brightness" des="description" level="1" range="[-100,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="contrast" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="saturation" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.02</Parameter>
+    <Parameter name="saturation_sky" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.1</Parameter>
+    <Parameter name="sharpLow" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.5</Parameter>
+    <Parameter name="sharpNormal" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.1</Parameter>
+    <Parameter name="ghostover_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.03</Parameter>
+    <Parameter name="down_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="up_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.5</Parameter>
+    <Parameter name="overexp_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">250</Parameter>
+    <Parameter name="limit_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="Low_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="overexp_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="fusionover_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.0005</Parameter>
+    <Parameter name="overexp_bright_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="ghost_diff_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">51</Parameter>
+    <Parameter name="isKeepPortrait" des="description" level="1" range="[0,2]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isPortraitKeepRefine" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isIncreaseDynamic" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isReduceHalo" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isFusionAdvance" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepnormal_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">208</Parameter>
+    <Parameter name="keepnormal_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepNormalRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepportrait_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">5</Parameter>
+    <Parameter name="keepportrait2_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">3</Parameter>
+    <Parameter name="reducehalo_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepLow_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepBlueMaxThre" des="description" level="1" range="[255,511]" type="int" reserve="0x0007" length="1">300</Parameter>
+    <Parameter name="keepBlueRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ResidualThreNormal" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="ResidualThreLow" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="crop_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Day_Indoor">
+    <Parameter name="y_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="y_mean_mid" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="y_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">168</Parameter>
+    <Parameter name="y_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_mid" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">108</Parameter>
+    <Parameter name="uv_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="uv_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="IncreaseUVRatio" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="keepPortraitRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="keepLow_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">248</Parameter>
+    <Parameter name="brightness" des="description" level="1" range="[-100,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="contrast" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="saturation" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.02</Parameter>
+    <Parameter name="saturation_sky" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.1</Parameter>
+    <Parameter name="sharpLow" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.5</Parameter>
+    <Parameter name="sharpNormal" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.1</Parameter>
+    <Parameter name="ghostover_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.03</Parameter>
+    <Parameter name="down_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="up_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.5</Parameter>
+    <Parameter name="overexp_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">250</Parameter>
+    <Parameter name="limit_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="Low_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="overexp_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="fusionover_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.0005</Parameter>
+    <Parameter name="overexp_bright_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="ghost_diff_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">51</Parameter>
+    <Parameter name="isKeepPortrait" des="description" level="1" range="[0,2]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isPortraitKeepRefine" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isIncreaseDynamic" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isReduceHalo" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isFusionAdvance" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepnormal_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">208</Parameter>
+    <Parameter name="keepnormal_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepNormalRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepportrait_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">5</Parameter>
+    <Parameter name="keepportrait2_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">3</Parameter>
+    <Parameter name="reducehalo_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepLow_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepBlueMaxThre" des="description" level="1" range="[255,511]" type="int" reserve="0x0007" length="1">300</Parameter>
+    <Parameter name="keepBlueRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ResidualThreNormal" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="ResidualThreLow" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="crop_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+   </Parameter>
+  </Parameter>
+ </Parameters>
+ <Triggers name="Day_Outdoor" select_way="0" trigger_enable="1" group_num="4" des="description">
+  <Trigger start="0" end="0" para="face" name="">
+   <Trigger start="0.0" end="100.0" para="chdr_dark_ratio" name="">
+    <Trigger start="0.0" end="50.0" para="chdr_bright_ratio" name="region0" interp_type="0x1">0</Trigger>
+    <Trigger start="50.0" end="100.0" para="chdr_bright_ratio" name="region1" interp_type="0x1">1</Trigger>
+   </Trigger>
+  </Trigger>
+  <Trigger start="1" end="1" para="face" name="">
+   <Trigger start="0.0" end="100.0" para="chdr_dark_ratio" name="">
+    <Trigger start="0.0" end="50.0" para="chdr_bright_ratio" name="region2" interp_type="0x1">2</Trigger>
+    <Trigger start="50.0" end="100.0" para="chdr_bright_ratio" name="region3" interp_type="0x1">3</Trigger>
+   </Trigger>
+  </Trigger>
+ </Triggers>
+ <Parameters name="Day_Outdoor" group_num="4" des="description">
+  <Parameter index="0" name="region0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Day_Outdoor">
+    <Parameter name="y_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="y_mean_mid" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="y_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">168</Parameter>
+    <Parameter name="y_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_mid" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">108</Parameter>
+    <Parameter name="uv_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="uv_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="IncreaseUVRatio" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="keepPortraitRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="keepLow_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">248</Parameter>
+    <Parameter name="brightness" des="description" level="1" range="[-100,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="contrast" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="saturation" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.02</Parameter>
+    <Parameter name="saturation_sky" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.1</Parameter>
+    <Parameter name="sharpLow" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.5</Parameter>
+    <Parameter name="sharpNormal" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.1</Parameter>
+    <Parameter name="ghostover_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.03</Parameter>
+    <Parameter name="down_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="up_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.5</Parameter>
+    <Parameter name="overexp_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">250</Parameter>
+    <Parameter name="limit_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="Low_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="overexp_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="fusionover_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.0005</Parameter>
+    <Parameter name="overexp_bright_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="ghost_diff_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">51</Parameter>
+    <Parameter name="isKeepPortrait" des="description" level="1" range="[0,2]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isPortraitKeepRefine" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isIncreaseDynamic" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isReduceHalo" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isFusionAdvance" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepnormal_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">208</Parameter>
+    <Parameter name="keepnormal_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepNormalRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepportrait_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">5</Parameter>
+    <Parameter name="keepportrait2_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">3</Parameter>
+    <Parameter name="reducehalo_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepLow_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepBlueMaxThre" des="description" level="1" range="[255,511]" type="int" reserve="0x0007" length="1">300</Parameter>
+    <Parameter name="keepBlueRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ResidualThreNormal" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="ResidualThreLow" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="crop_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Day_Outdoor">
+    <Parameter name="y_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="y_mean_mid" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="y_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">168</Parameter>
+    <Parameter name="y_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_mid" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">108</Parameter>
+    <Parameter name="uv_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="uv_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="IncreaseUVRatio" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="keepPortraitRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="keepLow_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">248</Parameter>
+    <Parameter name="brightness" des="description" level="1" range="[-100,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="contrast" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="saturation" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.02</Parameter>
+    <Parameter name="saturation_sky" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.1</Parameter>
+    <Parameter name="sharpLow" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.5</Parameter>
+    <Parameter name="sharpNormal" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.1</Parameter>
+    <Parameter name="ghostover_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.03</Parameter>
+    <Parameter name="down_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="up_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.5</Parameter>
+    <Parameter name="overexp_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">250</Parameter>
+    <Parameter name="limit_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="Low_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="overexp_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="fusionover_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.0005</Parameter>
+    <Parameter name="overexp_bright_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="ghost_diff_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">51</Parameter>
+    <Parameter name="isKeepPortrait" des="description" level="1" range="[0,2]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isPortraitKeepRefine" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isIncreaseDynamic" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isReduceHalo" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isFusionAdvance" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepnormal_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">208</Parameter>
+    <Parameter name="keepnormal_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepNormalRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepportrait_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">5</Parameter>
+    <Parameter name="keepportrait2_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">3</Parameter>
+    <Parameter name="reducehalo_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepLow_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepBlueMaxThre" des="description" level="1" range="[255,511]" type="int" reserve="0x0007" length="1">300</Parameter>
+    <Parameter name="keepBlueRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ResidualThreNormal" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="ResidualThreLow" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="crop_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Day_Outdoor">
+    <Parameter name="y_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="y_mean_mid" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="y_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">168</Parameter>
+    <Parameter name="y_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_mid" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">108</Parameter>
+    <Parameter name="uv_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="uv_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="IncreaseUVRatio" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="keepPortraitRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="keepLow_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">248</Parameter>
+    <Parameter name="brightness" des="description" level="1" range="[-100,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="contrast" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="saturation" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.02</Parameter>
+    <Parameter name="saturation_sky" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.1</Parameter>
+    <Parameter name="sharpLow" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.5</Parameter>
+    <Parameter name="sharpNormal" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.1</Parameter>
+    <Parameter name="ghostover_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.03</Parameter>
+    <Parameter name="down_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="up_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.5</Parameter>
+    <Parameter name="overexp_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">250</Parameter>
+    <Parameter name="limit_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="Low_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="overexp_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="fusionover_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.0005</Parameter>
+    <Parameter name="overexp_bright_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="ghost_diff_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">51</Parameter>
+    <Parameter name="isKeepPortrait" des="description" level="1" range="[0,2]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isPortraitKeepRefine" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isIncreaseDynamic" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isReduceHalo" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isFusionAdvance" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepnormal_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">208</Parameter>
+    <Parameter name="keepnormal_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepNormalRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepportrait_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">5</Parameter>
+    <Parameter name="keepportrait2_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">3</Parameter>
+    <Parameter name="reducehalo_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepLow_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepBlueMaxThre" des="description" level="1" range="[255,511]" type="int" reserve="0x0007" length="1">300</Parameter>
+    <Parameter name="keepBlueRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ResidualThreNormal" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="ResidualThreLow" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="crop_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="Day_Outdoor">
+    <Parameter name="y_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="y_mean_mid" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="y_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">168</Parameter>
+    <Parameter name="y_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_mid" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="y_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_mean_normal" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">108</Parameter>
+    <Parameter name="uv_mean_low" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">148</Parameter>
+    <Parameter name="uv_sigma_normal" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="uv_sigma_low" des="description" level="1" range="[0.01,255]" type="float" reserve="0x0000" length="1">51</Parameter>
+    <Parameter name="IncreaseUVRatio" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">128</Parameter>
+    <Parameter name="keepPortraitRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">1</Parameter>
+    <Parameter name="keepLow_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">248</Parameter>
+    <Parameter name="brightness" des="description" level="1" range="[-100,100]" type="int" reserve="0x0000" length="1">5</Parameter>
+    <Parameter name="contrast" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="saturation" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.02</Parameter>
+    <Parameter name="saturation_sky" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.1</Parameter>
+    <Parameter name="sharpLow" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.5</Parameter>
+    <Parameter name="sharpNormal" des="description" level="1" range="[1,1.5]" type="float" reserve="0x0000" length="1">1.1</Parameter>
+    <Parameter name="ghostover_ratio" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.03</Parameter>
+    <Parameter name="down_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="up_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0.5</Parameter>
+    <Parameter name="overexp_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0000" length="1">250</Parameter>
+    <Parameter name="limit_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="Low_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="overexp_bright_gamma" des="description" level="1" range="[0,1]" type="float" reserve="0x0000" length="1">0</Parameter>
+    <Parameter name="fusionover_thr" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">0.0005</Parameter>
+    <Parameter name="overexp_bright_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_enable" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ghost_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="ghost_diff_thr" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">51</Parameter>
+    <Parameter name="isKeepPortrait" des="description" level="1" range="[0,2]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isPortraitKeepRefine" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isIncreaseDynamic" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+    <Parameter name="isReduceHalo" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="isFusionAdvance" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepnormal_thre" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">208</Parameter>
+    <Parameter name="keepnormal_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepNormalRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepportrait_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">5</Parameter>
+    <Parameter name="keepportrait2_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">3</Parameter>
+    <Parameter name="reducehalo_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">8</Parameter>
+    <Parameter name="keepLow_level" des="description" level="1" range="[0,15]" type="int" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="keepBlueMaxThre" des="description" level="1" range="[255,511]" type="int" reserve="0x0007" length="1">300</Parameter>
+    <Parameter name="keepBlueRatio" des="description" level="1" range="[0,1]" type="float" reserve="0x0007" length="1">1</Parameter>
+    <Parameter name="ResidualThreNormal" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="ResidualThreLow" des="description" level="1" range="[0,255]" type="int" reserve="0x0007" length="1">40</Parameter>
+    <Parameter name="crop_mode" des="description" level="1" range="[0,1]" type="int" reserve="0x0007" length="1">0</Parameter>
+   </Parameter>
+  </Parameter>
+ </Parameters>
+</root>

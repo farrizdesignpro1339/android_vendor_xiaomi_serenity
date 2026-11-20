@@ -1,0 +1,10 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2024 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "session": {
+        "name": "Session_3A_3",
+        "pipeline": [
+            "Pipeline_3A_3"
+        ]
+    }
+}

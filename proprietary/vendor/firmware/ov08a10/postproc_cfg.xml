@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<postproc_cfg>
+  <sensor_name>ov08a10</sensor_name>
+  <versionid>0x000C0019</versionid>
+  <scenario_num>15</scenario_num>
+  <scenario alia="com">
+    <id>0x0000000000000000</id>
+    <postprocfile_num>13</postprocfile_num>
+    <postprocfile name="TRG_BEAUTY14_29991.xml">
+      <param>com</param>
+    </postprocfile>
+    <postprocfile name="TRG_HDR5.2_29978.xml">
+      <param>com</param>
+    </postprocfile>
+    <postprocfile name="TRG_CHDR_29982.xml">
+      <param>com</param>
+    </postprocfile>
+    <postprocfile name="TRG_MFNR6.2_LITE_29988.xml">
+      <param>com</param>
+    </postprocfile>
+    <postprocfile name="TRG_MFSR3_29975.xml">
+      <param>com</param>
+    </postprocfile>
+    <postprocfile name="TRG_SD_MFSR_29976.xml">
+      <param>com</param>
+    </postprocfile>
+    <postprocfile name="TRG_SD_MFNR2.0_29960.xml">
+      <param>com</param>
+    </postprocfile>
+    <postprocfile name="TRG_YNR2_29954.xml">
+      <param>com</param>
+    </postprocfile>
+    <postprocfile name="TRG_CNR4_29972.xml">
+      <param>com</param>
+    </postprocfile>
+    <postprocfile name="TRG_SD_LOWLIGHT_29979.xml">
+      <param>com</param>
+    </postprocfile>
+    <postprocfile name="dpf_70001.xml">
+      <param>com</param>
+    </postprocfile>
+    <postprocfile name="TRG_SD_USD2.2_29959.xml">
+      <param>com</param>
+    </postprocfile>
+    <postprocfile name="TRG_FD_29993.xml">
+      <param>com</param>
+    </postprocfile>
+  </scenario>
+  <scenario alia="prv0">
+    <id>0x0000010000000000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+  <scenario alia="prv1">
+    <id>0x0000020000000000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+  <scenario alia="cap0">
+    <id>0x0000050000000000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+  <scenario alia="cap1">
+    <id>0x0000060000000000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+  <scenario alia="video0">
+    <id>0x0000090000000000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+  <scenario alia="video1">
+    <id>0x00000A0000000000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+  <scenario alia="video2">
+    <id>0x00000B0000000000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+  <scenario alia="cap0_hdr">
+    <id>0x0000050001000000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+  <scenario alia="cap0_hdr_face">
+    <id>0x0000050001010000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+  <scenario alia="video0_eis">
+    <id>0x0000090003000000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+  <scenario alia="cap0_zoom">
+    <id>0x0000050000000001</id>
+    <postprocfile_num>2</postprocfile_num>
+    <postprocfile name="TRG_CNR4_29972.xml">
+      <param>cap0_zoom</param>
+    </postprocfile>
+    <postprocfile name="TRG_YNR2_29954.xml">
+      <param>cap0_zoom</param>
+    </postprocfile>
+  </scenario>
+  <scenario alia="cap0_field00-c5">
+    <id>0x0000050008000000</id>
+    <postprocfile_num>1</postprocfile_num>
+    <postprocfile name="TRG_YNR2_29954.xml">
+      <param>cap0_field00-c5</param>
+    </postprocfile>
+  </scenario>
+  <scenario alia="prv0_zoom">
+    <id>0x0000010000000001</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+  <scenario alia="top_XTS_TEST">
+    <id>0x0032000000000000</id>
+    <postprocfile_num>0</postprocfile_num>
+  </scenario>
+</postproc_cfg>

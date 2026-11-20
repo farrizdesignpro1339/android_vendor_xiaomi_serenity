@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+## Service definition
+service vendor.uniview-default /vendor/bin/hw/vendor.unisoc.hardware.uniview-service
+    class late_start
+    user root
+    group root system log readproc sdcard_rw media_rw cache everybody
+    oneshot
+    task_profiles ServiceCapacityLow
+
+on property:persist.sys.uniview_aidl.enabled=1
+    start vendor.uniview-default
+
+on property:persist.sys.uniview_aidl.enabled=0
+    stop vendor.uniview-default

@@ -1,0 +1,28 @@
+{
+    "session_name" : "UniMnnLlmQwen2_5_1_5B_diffusion",
+    "in_type" : "text",
+    "out_type" : "picture",
+    "entity" : [
+        {
+            "name" : "UniMnnLlmQwen2_5_1_5B",
+            "in_type" : "text",
+            "out_type" : "text",
+            "is_source" : true,
+            "input_prompt": "[path to: /vendor/etc/aiserver/prompt/translate_to_eng_for_diffusion.txt]"
+        },
+        {
+            "name" : "UniMnnLlmStableDiffusion",
+            "in_type" : "text",
+            "out_type" : "picture",
+            "is_source" : false
+        }
+    ],
+    "adjacency_list" : [
+		{
+            "chain" : "UniMnnLlmQwen2_5_1_5B, UniMnnLlmStableDiffusion"
+        },
+        {
+            "chain" : "UniMnnLlmStableDiffusion"
+        }
+    ]
+}

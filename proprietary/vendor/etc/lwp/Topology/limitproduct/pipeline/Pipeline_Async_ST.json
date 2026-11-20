@@ -1,0 +1,91 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Async_ST",
+    "stream": "async_st_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "GestureNode",
+            "vendor": "SPRD",
+            "id": "async_Gesture"
+        },
+        {
+            "type": "SceneDetectNode",
+            "vendor": "SPRD",
+            "id": "async_SceneDetect"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode1","SourceNode2","SourceNode3"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_Gesture",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_Gesture",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_Gesture",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode3",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "async_Gesture",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "async_Gesture",
+                "port": "out0"
+            },
+            "to": {
+                "name": "async_SceneDetect",
+                "port": "in0"
+            }
+        }
+    ]
+}

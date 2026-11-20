@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2016-2025 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+on late-init
+    start splpath_util
+
+service splpath_util /vendor/bin/splpath_util
+    class main
+    user root
+    group root system
+    disabled
+    oneshot

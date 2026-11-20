@@ -1,0 +1,29 @@
+{
+	"model_id":"MCP_Intelligent Navigation",
+	"app_name_en":"MCP_Intelligent Navigation",
+	"app_name_zh":"MCP_智能导航",
+	"first_menu_list":4,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":true,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":40,
+	"master_load_modelname":"agent_trip_planning_assistant_deepSeek_v3",
+	"slave_load_modelname":"agent_trip_planning_assistant_deepSeek_v3",
+    "prompt_text_zh":[
+		"我想开车去浦东机场，请帮我导航一下。",
+		"我想打车去上海南京路。",
+		"我想坐公共交通去上海虹桥机场T2航站楼，请帮我导航一下。",
+		"请帮我规划一下上海周末两天游玩。要求从上海站出发，最后回到上海站，并生成个人行程图。"
+	],
+    "prompt_text_en":[
+		"I want to drive to Pudong Airport, please help me navigate.",
+		"I want to take a taxi to Nanjing Road in Shanghai.",
+		"I want to take public transportation to Shanghai Hongqiao Airport.",
+		"Please help me plan a two-day weekend trip to Shanghai. Request to depart from Shanghai Station and finally return to Shanghai Station."
+	],
+    "prompt_image":[]
+}

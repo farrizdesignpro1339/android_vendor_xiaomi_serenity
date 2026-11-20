@@ -1,0 +1,12 @@
+# SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+# SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+# vendor component include gatekeeper vnd_others component.
+
+service vendor.ifaa-default /vendor/bin/hw/vendor.sprd.hardware.ifaa-service-lazy
+    interface aidl vendor.sprd.hardware.ifaa.IIfaa/default
+    disabled
+    oneshot
+    class hal
+    user system
+    group system
+

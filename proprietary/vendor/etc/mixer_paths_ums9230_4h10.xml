@@ -1,0 +1,1697 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+     SPDX-FileCopyrightText: 2016-2023 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+-->
+<mixer>
+    <!-- These are the initial mixer settings -->
+
+    <!-- FE to BE switch (playabck) -->
+    <ctl name="VBC_DA0 FAST_DA0" value="0"/>
+    <ctl name="VBC_DA1 FAST_DA1" value="0"/>
+    <ctl name="BT_OFFLOAD FAST_BT_OFFLOAD" value="0"/>
+
+    <ctl name="VBC_DA0 MM_DA0" value="0"/>
+    <ctl name="VBC_DA1 MM_DA1" value="0"/>
+    <ctl name="BT_OFFLOAD MM_BT_OFFLOAD" value="0"/>
+
+    <ctl name="VBC_DA0 FAST_DPBF_DA0" value="0"/>
+    <ctl name="VBC_DA1 FAST_DPBF_DA1" value="0"/>
+    <ctl name="BT_OFFLOAD FAST_DPBF_BT_OFFLOAD" value="0"/>
+
+    <ctl name="VIRT_OUT VOICE_VIRT_OUT" value="0"/>
+    <ctl name="VBC_DA0 OFFLOAD_DA0" value="0"/>
+    <ctl name="VBC_DA1 OFFLOAD_DA1" value="0"/>
+    <ctl name="BT_OFFLOAD OFFLOAD_BT_OFFLOAD" value="0"/>
+
+    <ctl name="VBC_DA1 VOIP_DA1" value="0"/>
+    <ctl name="BT_OFFLOAD VOIP_BT_OFFLOAD" value="0"/>
+
+    <ctl name="VBC_FM FM" value="0"/>
+    <ctl name="FM_CAPTURE FM_CAP_AD3" value="0"/>
+
+    <ctl name="VBC_DA1 VOICE_DA1" value="0"/>
+    <ctl name="VOICE VOICE_AD2" value="0"/>
+    <ctl name="BT_OFFLOAD VOICE_BT_OFFLOAD" value="0"/>
+
+    <ctl name="VBC_DA1 LOOP_DA1" value="0"/>
+
+    <!-- FE to BE switch (capture) -->
+    <ctl name="CAPTURE_DSP CAPTURE_AD0" value="0"/>
+    <ctl name="CAPTURE_DSP CAPTURE_BT_IN" value="0"/>
+
+    <ctl name="CAPTURE_DPBF CAP_DPBF_AD0" value="0"/>
+    <ctl name="CAPTURE_DPBF CAP_DPBF_BT_IN" value="0"/>
+
+    <ctl name="VOIP VOIP_AD2" value="0"/>
+    <ctl name="VOIP VOIP_BT_IN" value="0"/>
+
+    <ctl name="VOICE VOICE_VIRT_IN" value="0"/>
+    <ctl name="VOICE VOICE_AD2" value="0"/>
+    <ctl name="VOICE VOICE_BT_IN" value="0"/>
+
+    <ctl name="LOOP LOOP_AD2" value="0"/>
+
+    <!-- codec -> speaker -->
+    <ctl name="ag_iis0_ext_sel_v1" value="top_dac_iis"/>
+    <ctl name="DAC LRCLK Select" value="normal"/>
+    <ctl name="SPKL Mixer DACLSPKL Switch" value="0"/>
+    <ctl name="Speaker Function" value="0"/>
+    <ctl name="VBC_MIXER1_DAC0" value="NOT_MIX"/>
+    <ctl name="EAR Mixer DACLEAR Switch" value="0"/>
+    <ctl name="Earpiece Function" value="0"/>
+    <ctl name="VBC_IIS_TX0_LRMOD_SEL" value="LEFT_HIGH"/>
+    <ctl name="VBC_DA0_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+    <ctl name="VBC_DA1_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+    <ctl name="VBC_DA2_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+    <ctl name="VBC_IIS0_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC0"/>
+    <ctl name="VBC_IIS1_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC0"/>
+    <ctl name="VBC_IIS2_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC0"/>
+    <ctl name="VBC_IIS3_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+
+    <!-- codec -> headphone -->
+    <ctl name="HP mix mode" value="1"/>
+    <ctl name="HPL EAR Sel" value="EAR"/>
+    <ctl name="HPL Mixer DACLHPL Switch" value="0"/>
+    <ctl name="HPR Mixer DACRHPR Switch" value="0"/>
+    <ctl name="HeadPhone Function" value="0"/>
+    <ctl name="HP_3P_CROSSTALK_EN" value="0"/>
+    <ctl name="HP_4P_CROSSTALK_EN" value="0"/>
+
+    <!-- usb device -->
+    <ctl name="VBC_IIS_TX0_WD_SEL" value="WD_24BIT"/>
+    <ctl name="VBC_IIS_TX1_WD_SEL" value="WD_24BIT"/>
+    <ctl name="VBC_IIS_INF_SYS_SEL" value="vbc_iis_to_aon_usb"/>
+    <ctl name="BE_USB_OFFLOAD_PLAY" value="0"/>
+    <ctl name="BE_USB_OFFLOAD_CAP" value="0"/>
+    <ctl name="ag_iis2_ext_sel_v1" value="top_adc_iis1"/>
+
+    <!-- BT SCO & offload -->
+    <ctl name="SYS_IIS0" value="vbc_iis3"/>
+    <ctl name="VBC_SRC_BT_ADC" value="RX_SRC_DISABLE"/>
+    <ctl name="VBC_SRC_BT_DAC" value="TX_SRC_DISABLE"/>
+    <ctl name="VBC_IIS_MST_SEL_0_TYPE" value="VBC_MASTER_EXTERNAL"/>
+    <ctl name="VBC_IIS_TX2_WD_SEL" value="WD_16BIT"/>
+    <ctl name="VBC_DAC1_BYPASS_EN" value="0"/>
+
+    <!-- codec -> main mic -->
+    <ctl name="ADC LRCLK Select" value="normal"/>
+    <ctl name="ADC1 LRCLK Select" value="normal"/>
+    <ctl name="ADCL Mixer MainMICADCL Switch" value="0"/>
+    <ctl name="AUD ADC0L Switch" value="0"/>
+    <ctl name="AUD ADC0R Switch" value="0"/>
+    <ctl name="Mic Function" value="0"/>
+    <ctl name="VBC_AD0_IIS_SEL" value="VBC_IIS_PORT_IIS1"/>
+    <ctl name="VBC_AD2_IIS_SEL" value="VBC_IIS_PORT_IIS1"/>
+
+    <!-- codec -> aux mic / hp mic -->
+    <ctl name="ADCR Mixer AuxMICADCR Switch" value="0"/>
+    <ctl name="Aux Mic Function" value="0"/>
+    <ctl name="ADCL Mixer HPMICADCL Switch" value="0"/>
+    <ctl name="ADCR Mixer HPMICADCR Switch" value="0"/>
+    <ctl name="HP Mic Function" value="0"/>
+
+    <!-- voice / voip -->
+    <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC0"/>
+    <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+    <ctl name="VBC_MUX_ST" value="ST_IN_ADC2"/>
+
+    <!-- fbsmartamp & ffsmartamp -->
+    <ctl name="IVSENCE_FUNC_DSP" value="disable"/>
+    <ctl name="AUDIO_ISC_SMARTAMP_SWITCH" value="0"/>
+    <ctl name="AUDIO_SMARTAMP_SPK" value="0"/>
+    <ctl name="PDM_DMIC2 Switch" value="0"/>
+    <ctl name="VBC_IIS_RX1_LRMOD_SEL" value="LEFT_HIGH"/>
+    <ctl name="ag_iis4_ext_sel_v1" value="pdm_iis2"/>
+    <ctl name="IVSense Virt Switch" value="0"/>
+    <ctl name="VBC ADC1 DG Set" value="24 24" count="2"/>
+    <ctl name="VBC_AD1_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+
+    <!-- vbc dump -->
+    <ctl name="VBC_DUMP_POS" value="DUMP_POS_DAC0_E"/>
+    <ctl name="VBC_DUMP VBC_DUMP_AP01_AD" value="0"/>
+
+    <!-- fm -->
+    <ctl name="FM_TYPE_SEL" value="fm_vbc_loop"/>
+    <ctl name="VBC_AD3_IIS_SEL" value="VBC_IIS_PORT_IIS3"/>
+    <ctl name="VBC_IIS_RX3_WD_SEL" value="WD_16BIT"/>
+    <ctl name="VBC_IIS_RX3_LRMOD_SEL" value="RIGHT_HIGH"/>
+    <ctl name="VBC_FM_ENABLE" value="0"/>
+
+    <!-- These are audio route (FE to BE) specific mixer settings -->
+    <path name="primary-playback">
+        <ctl name="VBC_DA0 FAST_DA0" value="1"/>
+    </path>
+
+    <path name="primary-playback handset">
+        <path name="primary-playback"/>
+    </path>
+
+    <path name="primary-playback speaker">
+        <path name="primary-playback"/>
+    </path>
+
+    <path name="primary-playback headset">
+        <path name="primary-playback"/>
+    </path>
+
+    <path name="primary-playback usb-headset">
+        <path name="primary-playback"/>
+    </path>
+
+    <path name="primary-playback bt-sco">
+        <ctl name="VBC_DA0 FAST_DA0" value="1"/>
+        <ctl name="VBC_DA1 FAST_DA1" value="1"/>
+    </path>
+
+    <path name="primary-playback bt-a2dp">
+        <ctl name="BT_OFFLOAD FAST_BT_OFFLOAD" value="1"/>
+    </path>
+
+    <path name="primary-playback bt-ble">
+        <path name="primary-playback bt-a2dp"/>
+    </path>
+
+    <path name="primary-playback speaker-and-headset">
+        <path name="primary-playback headset"/>
+        <path name="primary-playback speaker"/>
+    </path>
+
+    <path name="primary-playback speaker-and-usb-headset">
+        <ctl name="VBC_DA0 FAST_DA0" value="1"/>
+        <ctl name="VBC_DA1 FAST_DA1" value="1"/>
+    </path>
+
+    <path name="primary-playback speaker-and-bt-sco">
+        <ctl name="VBC_DA0 FAST_DA0" value="1"/>
+        <ctl name="VBC_DA1 FAST_DA1" value="1"/>
+    </path>
+
+    <path name="primary-playback speaker-and-bt-a2dp">
+        <path name="primary-playback bt-a2dp"/>
+        <path name="primary-playback speaker"/>
+    </path>
+
+    <path name="primary-playback speaker-and-bt-ble">
+        <path name="primary-playback bt-ble"/>
+        <path name="primary-playback speaker"/>
+    </path>
+
+    <path name="fast-playback">
+        <ctl name="VBC_DA0 MM_DA0" value="1"/>
+    </path>
+
+    <path name="fast-playback handset">
+        <path name="fast-playback"/>
+    </path>
+
+    <path name="fast-playback speaker">
+        <path name="fast-playback"/>
+    </path>
+
+    <path name="fast-playback headset">
+        <path name="fast-playback"/>
+    </path>
+
+    <path name="fast-playback usb-headset">
+        <path name="fast-playback"/>
+    </path>
+
+    <path name="fast-playback bt-sco">
+        <ctl name="VBC_DA0 MM_DA0" value="1"/>
+        <ctl name="VBC_DA1 MM_DA1" value="1"/>
+    </path>
+
+    <path name="fast-playback bt-a2dp">
+        <ctl name="BT_OFFLOAD MM_BT_OFFLOAD" value="1"/>
+    </path>
+
+    <path name="fast-playback bt-ble">
+        <path name="fast-playback bt-a2dp"/>
+    </path>
+
+    <path name="fast-playback speaker-and-headset">
+        <path name="fast-playback headset"/>
+        <path name="fast-playback speaker"/>
+    </path>
+
+    <path name="fast-playback speaker-and-usb-headset">
+        <path name="fast-playback usb-headset"/>
+        <path name="fast-playback speaker"/>
+    </path>
+
+    <path name="fast-playback speaker-and-bt-sco">
+        <path name="fast-playback bt-sco"/>
+        <path name="fast-playback speaker"/>
+    </path>
+
+    <path name="fast-playback speaker-and-bt-a2dp">
+        <path name="fast-playback bt-a2dp"/>
+        <path name="fast-playback speaker"/>
+    </path>
+
+    <path name="fast-playback speaker-and-bt-ble">
+        <path name="fast-playback bt-ble"/>
+        <path name="fast-playback speaker"/>
+    </path>
+
+    <path name="deep-buffer-playback">
+        <ctl name="VBC_DA0 FAST_DPBF_DA0" value="1"/>
+    </path>
+
+    <path name="deep-buffer-playback handset">
+        <path name="deep-buffer-playback"/>
+    </path>
+
+    <path name="deep-buffer-playback speaker">
+        <path name="deep-buffer-playback"/>
+    </path>
+
+    <path name="deep-buffer-playback headset">
+        <path name="deep-buffer-playback"/>
+    </path>
+
+    <path name="deep-buffer-playback usb-headset">
+        <path name="deep-buffer-playback"/>
+    </path>
+
+    <path name="deep-buffer-playback bt-sco">
+        <ctl name="VBC_DA0 FAST_DPBF_DA0" value="1"/>
+        <ctl name="VBC_DA1 FAST_DPBF_DA1" value="1"/>
+    </path>
+
+    <path name="deep-buffer-playback bt-a2dp">
+        <ctl name="BT_OFFLOAD FAST_DPBF_BT_OFFLOAD" value="1"/>
+    </path>
+
+    <path name="deep-buffer-playback bt-ble">
+        <path name="deep-buffer-playback bt-a2dp"/>
+    </path>
+
+    <path name="deep-buffer-playback speaker-and-headset">
+        <path name="deep-buffer-playback headset"/>
+        <path name="deep-buffer-playback speaker"/>
+    </path>
+
+    <path name="deep-buffer-playback speaker-and-usb-headset">
+        <path name="deep-buffer-playback usb-headset"/>
+        <path name="deep-buffer-playback speaker"/>
+    </path>
+
+    <path name="deep-buffer-playback speaker-and-bt-sco">
+        <path name="deep-buffer-playback bt-sco"/>
+        <path name="deep-buffer-playback speaker"/>
+    </path>
+
+    <path name="deep-buffer-playback speaker-and-bt-a2dp">
+        <path name="deep-buffer-playback bt-a2dp"/>
+        <path name="deep-buffer-playback speaker"/>
+    </path>
+
+    <path name="deep-buffer-playback speaker-and-bt-ble">
+        <path name="deep-buffer-playback bt-ble"/>
+        <path name="deep-buffer-playback speaker"/>
+    </path>
+
+    <path name="compress-offload-playback">
+        <ctl name="VBC_DA0 OFFLOAD_DA0" value="1"/>
+    </path>
+
+    <path name="compress-offload-playback handset">
+        <path name="compress-offload-playback"/>
+    </path>
+
+    <path name="compress-offload-playback speaker">
+        <path name="compress-offload-playback"/>
+    </path>
+
+    <path name="compress-offload-playback headset">
+        <path name="compress-offload-playback"/>
+    </path>
+
+    <path name="compress-offload-playback usb-headset">
+        <path name="compress-offload-playback"/>
+    </path>
+
+    <path name="compress-offload-playback bt-sco">
+        <ctl name="VBC_DA0 OFFLOAD_DA0" value="1"/>
+        <ctl name="VBC_DA1 OFFLOAD_DA1" value="1"/>
+    </path>
+
+    <path name="compress-offload-playback bt-a2dp">
+        <ctl name="BT_OFFLOAD OFFLOAD_BT_OFFLOAD" value="1"/>
+    </path>
+
+    <path name="compress-offload-playback bt-ble">
+        <path name="compress-offload-playback bt-a2dp"/>
+    </path>
+
+    <path name="compress-offload-playback speaker-and-headset">
+        <path name="compress-offload-playback headset"/>
+        <path name="compress-offload-playback speaker"/>
+    </path>
+
+    <path name="compress-offload-playback speaker-and-usb-headset">
+        <path name="compress-offload-playback usb-headset"/>
+        <path name="compress-offload-playback speaker"/>
+    </path>
+
+    <path name="compress-offload-playback speaker-and-bt-sco">
+        <path name="compress-offload-playback bt-sco"/>
+        <path name="compress-offload-playback speaker"/>
+    </path>
+
+    <path name="compress-offload-playback speaker-and-bt-a2dp">
+        <path name="compress-offload-playback bt-a2dp"/>
+        <path name="compress-offload-playback speaker"/>
+    </path>
+
+    <path name="compress-offload-playback speaker-and-bt-ble">
+        <path name="compress-offload-playback bt-ble"/>
+        <path name="compress-offload-playback speaker"/>
+    </path>
+
+    <path name="mmap-playback">
+    </path>
+
+    <path name="mmap-playback handset">
+        <path name="mmap-playback"/>
+    </path>
+
+    <path name="mmap-playback speaker">
+        <path name="mmap-playback"/>
+    </path>
+
+    <path name="mmap-playback headset">
+    </path>
+
+    <path name="mmap-playback usb-headset">
+    </path>
+
+    <path name="mmap-playback bt-sco">
+    </path>
+
+    <path name="mmap-playback bt-a2dp">
+    </path>
+
+    <path name="mmap-playback bt-ble">
+    </path>
+
+    <path name="mmap-playback speaker-and-headset">
+        <path name="mmap-playback headset"/>
+        <path name="mmap-playback speaker"/>
+    </path>
+
+    <path name="mmap-playback speaker-and-usb-headset">
+        <path name="mmap-playback usb-headset"/>
+        <path name="mmap-playback speaker"/>
+    </path>
+
+    <path name="mmap-playback speaker-and-bt-sco">
+        <path name="mmap-playback bt-sco"/>
+        <path name="mmap-playback speaker"/>
+    </path>
+
+    <path name="mmap-playback speaker-and-bt-a2dp">
+        <path name="mmap-playback bt-a2dp"/>
+        <path name="mmap-playback speaker"/>
+    </path>
+
+    <path name="mmap-playback speaker-and-bt-ble">
+        <path name="mmap-playback bt-ble"/>
+        <path name="mmap-playback speaker"/>
+    </path>
+
+    <path name="voip-playback">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC0"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_DA1 VOIP_DA1" value="1"/>
+    </path>
+
+    <path name="voip-playback handset">
+        <path name="voip-playback"/>
+    </path>
+
+    <path name="voip-playback speaker">
+        <path name="voip-playback"/>
+    </path>
+
+    <path name="voip-playback headset">
+        <path name="voip-playback"/>
+    </path>
+
+    <path name="voip-playback usb-headset">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC1"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_DA1 VOIP_DA1" value="1"/>
+    </path>
+
+    <path name="voip-playback bt-sco">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC1"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_DA1 VOIP_DA1" value="1"/>
+    </path>
+
+    <path name="voip-playback bt-ble">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC1"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="BT_OFFLOAD VOIP_BT_OFFLOAD" value="1"/>
+    </path>
+
+    <path name="voip-playback speaker-and-headset">
+        <path name="voip-playback headset"/>
+        <path name="voip-playback speaker"/>
+    </path>
+
+    <path name="voip-playback speaker-and-usb-headset">
+        <ctl name="VBC_DA1 VOIP_DA1" value="1"/>
+    </path>
+
+    <path name="voip-playback speaker-and-bt-sco">
+        <path name="voip-playback bt-sco"/>
+        <path name="voip-playback speaker"/>
+    </path>
+
+    <path name="hifi-playback">
+    </path>
+
+    <path name="hifi-playback handset">
+        <path name="hifi-playback"/>
+    </path>
+
+    <path name="hifi-playback speaker">
+        <path name="hifi-playback"/>
+    </path>
+
+    <path name="hifi-playback headset">
+    </path>
+
+    <path name="hifi-playback usb-headset">
+    </path>
+
+    <path name="hifi-playback bt-sco">
+    </path>
+
+    <path name="hifi-playback bt-a2dp">
+    </path>
+
+    <path name="hifi-playback bt-ble">
+    </path>
+
+    <path name="hifi-playback speaker-and-headset">
+        <path name="hifi-playback headset"/>
+        <path name="hifi-playback speaker"/>
+    </path>
+
+    <path name="hifi-playback speaker-and-usb-headset">
+        <path name="hifi-playback usb-headset"/>
+        <path name="hifi-playback speaker"/>
+    </path>
+
+    <path name="hifi-playback speaker-and-bt-sco">
+        <path name="hifi-playback bt-sco"/>
+        <path name="hifi-playback speaker"/>
+    </path>
+
+    <path name="hifi-playback speaker-and-bt-a2dp">
+        <path name="hifi-playback bt-a2dp"/>
+        <path name="hifi-playback speaker"/>
+    </path>
+
+    <path name="hifi-playback speaker-and-bt-ble">
+        <path name="hifi-playback bt-ble"/>
+        <path name="hifi-playback speaker"/>
+    </path>
+
+    <path name="display-port-playback">
+    </path>
+
+    <path name="spatializer-playback">
+    </path>
+
+    <path name="spatializer-playback handset">
+        <path name="spatializer-playback"/>
+    </path>
+
+    <path name="spatializer-playback speaker">
+        <path name="spatializer-playback"/>
+    </path>
+
+    <path name="spatializer-playback headset">
+    </path>
+
+    <path name="spatializer-playback usb-headset">
+    </path>
+
+    <path name="spatializer-playback bt-sco">
+    </path>
+
+    <path name="spatializer-playback bt-a2dp">
+    </path>
+
+    <path name="spatializer-playback bt-ble">
+    </path>
+
+    <path name="spatializer-playback speaker-and-headset">
+        <path name="spatializer-playback headset"/>
+        <path name="spatializer-playback speaker"/>
+    </path>
+
+    <path name="spatializer-playback speaker-and-usb-headset">
+        <path name="spatializer-playback headset"/>
+        <path name="spatializer-playback speaker"/>
+    </path>
+
+    <path name="spatializer-playback speaker-and-bt-sco">
+        <path name="spatializer-playback bt-sco"/>
+        <path name="spatializer-playback speaker"/>
+    </path>
+
+    <path name="spatializer-playback speaker-and-bt-a2dp">
+        <path name="spatializer-playback bt-a2dp"/>
+        <path name="spatializer-playback speaker"/>
+    </path>
+
+    <path name="spatializer-playback speaker-and-bt-ble">
+        <path name="spatializer-playback bt-ble"/>
+        <path name="spatializer-playback speaker"/>
+    </path>
+
+    <path name="fm-playback">
+        <ctl name="VBC_FM FM" value="1"/>
+    </path>
+
+    <path name="fm-playback handset">
+        <path name="fm-playback"/>
+    </path>
+
+    <path name="fm-playback speaker">
+        <path name="fm-playback"/>
+    </path>
+
+    <path name="fm-playback headset">
+        <path name="fm-playback"/>
+    </path>
+
+    <path name="fm-playback usb-headset">
+        <path name="fm-playback"/>
+    </path>
+
+    <path name="fm-playback bt-sco">
+    </path>
+
+    <path name="fm-playback bt-a2dp">
+    </path>
+
+    <path name="fm-playback bt-ble">
+    </path>
+
+    <path name="karaoke-playback">
+    </path>
+
+    <path name="karaoke-playback handset">
+        <path name="karaoke-playback"/>
+    </path>
+
+    <path name="karaoke-playback speaker">
+        <path name="karaoke-playback"/>
+    </path>
+
+    <path name="karaoke-playback headset">
+    </path>
+
+    <path name="karaoke-playback usb-headset">
+    </path>
+
+    <path name="karaoke-playback bt-sco">
+    </path>
+
+    <path name="karaoke-playback bt-a2dp">
+    </path>
+
+    <path name="karaoke-playback bt-ble">
+        <path name="karaoke-playback bt-a2dp"/>
+    </path>
+
+    <path name="karaoke-playback speaker-and-headset">
+        <path name="karaoke-playback headset"/>
+        <path name="karaoke-playback speaker"/>
+    </path>
+
+    <path name="karaoke-playback speaker-and-usb-headset">
+        <path name="karaoke-playback usb-headset"/>
+        <path name="karaoke-playback speaker"/>
+    </path>
+
+    <path name="karaoke-playback speaker-and-bt-sco">
+        <path name="karaoke-playback bt-sco"/>
+        <path name="karaoke-playback speaker"/>
+    </path>
+
+    <path name="karaoke-playback speaker-and-bt-a2dp">
+        <path name="karaoke-playback bt-a2dp"/>
+        <path name="karaoke-playback speaker"/>
+    </path>
+
+    <path name="karaoke-playback speaker-and-bt-ble">
+        <path name="karaoke-playback bt-ble"/>
+        <path name="karaoke-playback speaker"/>
+    </path>
+
+    <path name="hidl-playback">
+    </path>
+
+    <path name="hidl-diag-playback">
+    </path>
+
+    <path name="audio-record">
+        <ctl name="VTS_PROC_IN_CHAN_NUM" value="2"/>
+        <ctl name="VTS_PROC_OUT_CHAN_NUM" value="2"/>
+        <ctl name="CAPTURE_DSP CAPTURE_AD0" value="1"/>
+    </path>
+
+    <path name="audio-record handset-mic">
+        <path name="audio-record"/>
+    </path>
+
+    <path name="audio-record speaker-mic">
+        <path name="audio-record"/>
+    </path>
+
+    <path name="audio-record headset-mic">
+        <path name="audio-record"/>
+    </path>
+
+    <path name="audio-record usb-headset-mic">
+        <ctl name="CAPTURE_DSP CAPTURE_AD0" value="1"/>
+    </path>
+
+    <path name="audio-record bt-sco-mic">
+        <ctl name="CAPTURE_DSP CAPTURE_AD2" value="1"/>
+    </path>
+
+    <path name="audio-record bt-a2dp-mic">
+    </path>
+
+    <path name="audio-record bt-ble-mic">
+        <ctl name="CAPTURE_DSP CAPTURE_BT_IN" value="1"/>
+    </path>
+
+    <path name="fast-record">
+        <ctl name="VBC_AP01_CAPTURE AP01_AD" value="1"/>
+    </path>
+
+    <path name="fast-record handset-mic">
+        <path name="fast-record"/>
+    </path>
+
+    <path name="fast-record speaker-mic">
+        <path name="fast-record"/>
+    </path>
+
+    <path name="fast-record headset-mic">
+        <path name="fast-record"/>
+    </path>
+
+    <path name="fast-record usb-headset-mic">
+    </path>
+
+    <path name="fast-record bt-sco-mic">
+    </path>
+
+    <path name="fast-record bt-a2dp-mic">
+    </path>
+
+    <path name="fast-record bt-ble-mic">
+    </path>
+
+    <path name="mmap-record">
+    </path>
+
+    <path name="mmap-record handset-mic">
+        <path name="mmap-record"/>
+    </path>
+
+    <path name="mmap-record speaker-mic">
+        <path name="mmap-record"/>
+    </path>
+
+    <path name="mmap-record headset-mic">
+        <path name="mmap-record"/>
+    </path>
+
+    <path name="mmap-record usb-headset-mic">
+    </path>
+
+    <path name="mmap-record bt-sco-mic">
+    </path>
+
+    <path name="mmap-record bt-a2dp-mic">
+    </path>
+
+    <path name="mmap-record bt-ble-mic">
+    </path>
+
+    <path name="voip-record">
+        <ctl name="VOIP VOIP_AD2" value="1"/>
+    </path>
+
+    <path name="voip-record handset-mic">
+        <path name="voip-record"/>
+    </path>
+
+    <path name="voip-record speaker-mic">
+        <path name="voip-record"/>
+    </path>
+
+    <path name="voip-record headset-mic">
+        <path name="voip-record"/>
+    </path>
+
+    <path name="voip-record usb-headset-mic">
+        <ctl name="VOIP VOIP_AD2" value="1"/>
+    </path>
+
+    <path name="voip-record bt-sco-mic">
+        <ctl name="VOIP VOIP_AD2" value="1"/>
+    </path>
+
+    <path name="voip-record bt-a2dp-mic">
+    </path>
+
+    <path name="voip-record bt-ble-mic">
+        <ctl name="VOIP VOIP_BT_IN" value="1"/>
+    </path>
+
+    <path name="display-port-record">
+    </path>
+
+    <path name="fm-record">
+        <ctl name="FM_CAPTURE FM_CAP_AD3" value="1"/>
+    </path>
+
+    <path name="karaoke-record">
+    </path>
+
+    <path name="karaoke-record handset-mic">
+        <path name="karaoke-record"/>
+    </path>
+
+    <path name="karaoke-record speaker-mic">
+        <path name="karaoke-record"/>
+    </path>
+
+    <path name="karaoke-record headset-mic">
+    </path>
+
+    <path name="karaoke-record usb-headset-mic">
+    </path>
+
+    <path name="karaoke-record bt-sco-mic">
+    </path>
+
+    <path name="karaoke-record bt-a2dp-mic">
+    </path>
+
+    <path name="karaoke-record bt-ble-mic">
+    </path>
+
+    <path name="echo-reference-record">
+    </path>
+
+    <path name="hidl-record">
+    </path>
+
+    <path name="hidl-diag-record">
+    </path>
+
+    <path name="voice-call">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC0"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_MUX_ST" value="ST_IN_ADC2"/>
+        <ctl name="VBC_DA1 VOICE_DA1" value="1"/>
+        <ctl name="VOICE VOICE_AD2" value="1"/>
+    </path>
+
+    <path name="voice-call handset">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC0"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_MUX_ST" value="ST_IN_ADC2"/>
+        <ctl name="VBC_DA1 VOICE_DA1" value="1"/>
+    </path>
+
+    <path name="voice-call speaker">
+        <path name="voice-call handset"/>
+    </path>
+
+    <path name="voice-call headset">
+        <path name="voice-call handset"/>
+    </path>
+
+    <path name="voice-call usb-headset">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC1"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_MUX_ST" value="ST_IN_ADC2"/>
+        <ctl name="VBC_DA1 VOICE_DA1" value="1"/>
+    </path>
+
+    <path name="voice-call bt-sco">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC1"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_MUX_ST" value="ST_IN_ADC2"/>
+        <ctl name="VBC_DA1 VOICE_DA1" value="1"/>
+    </path>
+
+    <path name="voice-call bt-ble">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC1"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_MUX_ST" value="ST_IN_ADC2"/>
+        <ctl name="BT_OFFLOAD VOICE_BT_OFFLOAD" value="1"/>
+    </path>
+
+    <path name="voice-call telephony-tx">
+        <ctl name="VIRT_OUT VOICE_VIRT_OUT" value="1"/>
+    </path>
+
+    <path name="voice-call speaker-and-headset">
+        <path name="voice-call headset"/>
+        <path name="voice-call speaker"/>
+    </path>
+
+    <path name="voice-call speaker-and-usb-headset">
+        <path name="voice-call usb-headset"/>
+        <path name="voice-call speaker"/>
+    </path>
+
+    <path name="voice-call speaker-and-bt-sco">
+        <path name="voice-call bt-sco"/>
+        <path name="voice-call speaker"/>
+    </path>
+
+    <path name="voice-call speaker-and-bt-ble">
+        <path name="voice-call bt-ble"/>
+        <path name="voice-call speaker"/>
+    </path>
+
+    <path name="voice-call handset-mic">
+        <ctl name="VOICE VOICE_AD2" value="1"/>
+    </path>
+
+    <path name="voice-call speaker-mic">
+        <path name="voice-call handset-mic"/>
+    </path>
+
+    <path name="voice-call headset-mic">
+        <path name="voice-call handset-mic"/>
+    </path>
+
+    <path name="voice-call usb-headset-mic">
+        <ctl name="VOICE VOICE_AD2" value="1"/>
+    </path>
+
+    <path name="voice-call bt-sco-mic">
+        <ctl name="VOICE VOICE_AD2" value="1"/>
+    </path>
+
+    <path name="voice-call bt-a2dp-mic">
+    </path>
+
+    <path name="voice-call bt-ble-mic">
+        <ctl name="VOICE VOICE_BT_IN" value="1"/>
+    </path>
+
+    <path name="voice-call telephony-rx">
+        <ctl name="VOICE VOICE_VIRT_IN" value="1"/>
+    </path>
+
+    <path name="sound-trigger">
+    </path>
+
+    <path name="voice-recognition">
+        <ctl name="CAPTURE_DPBF CAP_DPBF_AD0" value="1"/>
+    </path>
+
+    <path name="voice-recognition handset-mic">
+        <path name="voice-recognition"/>
+    </path>
+
+    <path name="voice-recognition speaker-mic">
+        <path name="voice-recognition"/>
+    </path>
+
+    <path name="voice-recognition headset-mic">
+        <path name="voice-recognition"/>
+    </path>
+
+    <path name="voice-recognition usb-headset-mic">
+        <ctl name="CAPTURE_DPBF CAP_DPBF_AD0" value="1"/>
+    </path>
+
+    <path name="voice-recognition bt-sco-mic">
+        <ctl name="CAPTURE_DPBF CAP_DPBF_AD2" value="1"/>
+    </path>
+
+    <path name="voice-recognition bt-a2dp-mic">
+    </path>
+
+    <path name="voice-recognition bt-ble-mic">
+        <ctl name="CAPTURE_DPBF CAP_DPBF_BT_IN" value="1"/>
+    </path>
+
+    <path name="voice-recognition-proxy">
+    </path>
+
+    <path name="incall-record">
+        <ctl name="DSP_VOICE_CAP VOICE_CAP" value="1"/>
+    </path>
+
+    <path name="incall-record handset-mic">
+        <path name="incall-record"/>
+    </path>
+
+    <path name="incall-record speaker-mic">
+        <path name="incall-record"/>
+    </path>
+
+    <path name="incall-record headset-mic">
+        <path name="incall-record"/>
+    </path>
+
+    <path name="incall-record usb-headset-mic">
+        <path name="incall-record"/>
+    </path>
+
+    <path name="incall-record bt-sco-mic">
+        <path name="incall-record"/>
+    </path>
+
+    <path name="incall-record bt-a2dp-mic">
+        <path name="incall-record"/>
+    </path>
+
+    <path name="incall-record bt-ble-mic">
+        <path name="incall-record"/>
+    </path>
+
+    <path name="incall-record telephony-rx">
+        <path name="incall-record"/>
+    </path>
+
+    <path name="incall-music">
+        <ctl name="DSP_VOICE_PLAY VOICE_PLAY" value="1"/>
+    </path>
+
+    <path name="incall-music handset">
+        <path name="incall-music"/>
+    </path>
+
+    <path name="incall-music speaker">
+        <path name="incall-music"/>
+    </path>
+
+    <path name="incall-music headset">
+        <path name="incall-music"/>
+    </path>
+
+    <path name="incall-music usb-headset">
+        <path name="incall-music"/>
+    </path>
+
+    <path name="incall-music bt-sco">
+        <path name="incall-music"/>
+    </path>
+
+    <path name="incall-music bt-a2dp">
+        <path name="incall-music"/>
+    </path>
+
+    <path name="incall-music bt-ble">
+        <path name="incall-music"/>
+    </path>
+
+    <path name="incall-music telephony-tx">
+        <path name="incall-music"/>
+    </path>
+
+    <path name="audio-ultrasound">
+        <ctl name="VBC_DA2_CODEC USS_DA2_CODEC" value="1"/>
+        <ctl name="USS USS_AD0_AD1_CODEC" value="1"/>
+    </path>
+
+    <path name="audio-ultrasound handset-us">
+        <ctl name="VBC_DA2_CODEC USS_DA2_CODEC" value="1"/>
+    </path>
+
+    <path name="audio-ultrasound handset-mic-us">
+        <ctl name="USS USS_AD0_AD1_CODEC" value="1"/>
+    </path>
+
+    <path name="audio-loopback">
+        <ctl name="VBC_DA1 LOOP_DA1" value="1"/>
+        <ctl name="LOOP LOOP_AD2" value="1"/>
+    </path>
+
+    <path name="audio-loopback handset">
+        <ctl name="VBC_DA1 LOOP_DA1" value="1"/>
+    </path>
+
+    <path name="audio-loopback speaker">
+        <path name="audio-loopback handset"/>
+    </path>
+
+    <path name="audio-loopback headset">
+        <ctl name="VBC_DA1 LOOP_DA1" value="1"/>
+    </path>
+
+    <path name="audio-loopback handset-mic">
+        <ctl name="LOOP LOOP_AD2" value="1"/>
+    </path>
+
+    <path name="audio-loopback speaker-mic">
+        <path name="audio-loopback handset-mic"/>
+    </path>
+
+    <path name="audio-loopback headset-mic">
+        <path name="audio-loopback handset-mic"/>
+    </path>
+
+    <path name="vbc-dump">
+    </path>
+
+    <!-- These are actual sound device specific mixer settings -->
+    <path name="handset">
+        <ctl name="ag_iis0_ext_sel_v1" value="top_dac_iis"/>
+        <ctl name="VBC_IIS_TX0_LRMOD_SEL" value="RIGHT_HIGH"/>
+        <ctl name="VBC_DA0_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="VBC_DA1_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="VBC_IIS0_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC0"/>
+        <ctl name="VBC_IIS2_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="VBC_IIS3_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="VBC_MIXER1_DAC0" value="HALF_ADD"/>
+        <ctl name="EAR Mixer DACLEAR Switch" value="1"/>
+        <ctl name="Earpiece Function" value="1"/>
+    </path>
+
+    <path name="handset-us">
+    </path>
+
+    <path name="speaker">
+        <ctl name="ag_iis0_ext_sel_v1" value="top_dac_iis"/>
+        <ctl name="VBC_IIS_TX0_LRMOD_SEL" value="RIGHT_HIGH"/>
+        <ctl name="VBC_DA0_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="VBC_DA1_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="VBC_IIS0_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC0"/>
+        <ctl name="VBC_IIS2_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="VBC_IIS3_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="DAC LRCLK Select" value="invert"/>
+        <ctl name="SPKL Mixer DACLSPKL Switch" value="1"/>
+        <ctl name="Speaker Function" value="1"/>
+    </path>
+
+    <path name="headset">
+        <ctl name="ag_iis0_ext_sel_v1" value="top_dac_iis"/>
+        <ctl name="VBC_IIS_TX0_LRMOD_SEL" value="RIGHT_HIGH"/>
+        <ctl name="VBC_DA0_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="VBC_DA1_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="VBC_IIS0_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC0"/>
+        <ctl name="VBC_IIS2_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="VBC_IIS3_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="HP mix mode" value="0"/>
+        <ctl name="DAC LRCLK Select" value="invert"/>
+        <ctl name="HPL EAR Sel" value="HPL"/>
+        <ctl name="HPL Mixer DACLHPL Switch" value="1"/>
+        <ctl name="HPR Mixer DACRHPR Switch" value="1"/>
+        <ctl name="HeadPhone Function" value="1"/>
+        <ctl name="HP_4P_CROSSTALK_EN" value="1" />
+    </path>
+
+    <path name="headphone">
+        <ctl name="ag_iis0_ext_sel_v1" value="top_dac_iis"/>
+        <ctl name="VBC_IIS_TX0_LRMOD_SEL" value="RIGHT_HIGH"/>
+        <ctl name="VBC_DA0_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="VBC_DA1_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="VBC_IIS0_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC0"/>
+        <ctl name="VBC_IIS2_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="VBC_IIS3_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="HP mix mode" value="0"/>
+        <ctl name="DAC LRCLK Select" value="invert"/>
+        <ctl name="HPL EAR Sel" value="HPL"/>
+        <ctl name="HPL Mixer DACLHPL Switch" value="1"/>
+        <ctl name="HPR Mixer DACRHPR Switch" value="1"/>
+        <ctl name="HeadPhone Function" value="1"/>
+        <ctl name="HP_3P_CROSSTALK_EN" value="1" />
+    </path>
+
+    <path name="line">
+    </path>
+
+    <path name="usb-device">
+        <ctl name="VBC_IIS_INF_SYS_SEL" value="vbc_iis_to_aon_usb"/>
+        <ctl name="ag_iis2_ext_sel_v1" value="l5_top_usb_iism"/>
+        <ctl name="VBC_DA0_IIS_SEL" value="VBC_IIS_PORT_IIS2"/>
+        <ctl name="VBC_DA1_IIS_SEL" value="VBC_IIS_PORT_IIS2"/>
+        <ctl name="VBC_IIS0_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="VBC_IIS2_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC0"/>
+        <ctl name="VBC_IIS3_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="BE_USB_OFFLOAD_PLAY" value="1"/>
+    </path>
+
+    <path name="usb-headset">
+        <path name="usb-device"/>
+    </path>
+
+    <path name="bt-sco">
+        <ctl name="VBC_IIS_TX0_WD_SEL" value="WD_16BIT"/>
+        <ctl name="VBC_IIS_TX1_WD_SEL" value="WD_16BIT"/>
+        <ctl name="VBC_IIS_MST_SEL_0_TYPE" value="VBC_MASTER_INTERNAL"/>
+        <ctl name="VBC_DA0_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="VBC_DA1_IIS_SEL" value="VBC_IIS_PORT_IIS3"/>
+        <ctl name="VBC_IIS0_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="VBC_IIS2_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="VBC_IIS3_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC1"/>
+        <ctl name="VBC_MST_IIS0_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC0"/>
+        <ctl name="SYS_IIS0" value="vbc_iis3"/>
+    </path>
+
+    <path name="bt-sco-headset">
+        <path name="bt-sco"/>
+    </path>
+
+    <path name="bt-sco-carkit">
+        <path name="bt-sco"/>
+    </path>
+
+    <path name="bt-a2dp">
+        <ctl name="VBC_IIS_TX2_WD_SEL" value="WD_16BIT"/>
+        <ctl name="VBC_DA1_IIS_SEL" value="VBC_IIS_PORT_IIS3"/>
+        <ctl name="VBC_DA2_IIS_SEL" value="VBC_IIS_PORT_IIS3"/>
+        <ctl name="VBC_IIS3_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="VBC_DAC1_BYPASS_EN" value="1"/>
+    </path>
+
+    <path name="bt-a2dp-headphone">
+        <path name="bt-a2dp"/>
+    </path>
+
+    <path name="bt-a2dp-speaker">
+        <path name="bt-a2dp"/>
+    </path>
+
+    <path name="bt-ble-headset">
+        <path name="bt-a2dp"/>
+    </path>
+
+    <path name="bt-ble-speaker">
+        <path name="bt-a2dp"/>
+    </path>
+
+    <path name="bt-ble-broadcast">
+        <path name="bt-a2dp"/>
+    </path>
+
+    <path name="aux-digital">
+    </path>
+
+    <path name="telephony-tx">
+    </path>
+
+    <path name="voice-handset">
+        <path name="handset"/>
+    </path>
+
+    <path name="voice-speaker">
+        <path name="speaker"/>
+    </path>
+
+    <path name="voice-headset">
+        <path name="headset"/>
+    </path>
+
+    <path name="voice-headphone">
+        <path name="headphone"/>
+    </path>
+
+    <path name="voice-line">
+        <path name="line"/>
+    </path>
+
+    <path name="voice-usb-device">
+        <path name="usb-device"/>
+    </path>
+
+    <path name="voice-usb-headset">
+        <path name="usb-headset"/>
+    </path>
+
+    <path name="speaker-and-headset">
+        <path name="headset"/>
+        <path name="speaker"/>
+    </path>
+
+    <path name="speaker-and-headphone">
+        <path name="headphone"/>
+        <path name="speaker"/>
+    </path>
+
+    <path name="speaker-and-line">
+        <path name="line"/>
+        <path name="speaker"/>
+    </path>
+
+    <path name="speaker-and-usb-device">
+        <ctl name="ag_iis0_ext_sel_v1" value="top_dac_iis"/>
+        <ctl name="VBC_IIS_INF_SYS_SEL" value="vbc_iis_to_aon_usb"/>
+        <ctl name="ag_iis2_ext_sel_v1" value="l5_top_usb_iism"/>
+        <ctl name="SPKL Mixer DACLSPKL Switch" value="1"/>
+        <ctl name="VBC_IIS_TX0_WD_SEL" value="WD_24BIT"/>
+        <ctl name="VBC_IIS_TX1_WD_SEL" value="WD_24BIT"/>
+        <ctl name="VBC_IIS_TX0_LRMOD_SEL" value="RIGHT_HIGH"/>
+        <ctl name="VBC_DA0_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="VBC_DA1_IIS_SEL" value="VBC_IIS_PORT_IIS2"/>
+        <ctl name="VBC_IIS0_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC0"/>
+        <ctl name="VBC_IIS2_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC1"/>
+        <ctl name="VBC_IIS3_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="Speaker Function" value="1"/>
+        <ctl name="BE_USB_OFFLOAD_PLAY" value="1"/>
+    </path>
+
+    <path name="speaker-and-usb-headset">
+        <path name="speaker-and-usb-device"/>
+    </path>
+
+    <path name="speaker-and-bt-sco">
+        <ctl name="ag_iis0_ext_sel_v1" value="top_dac_iis"/>
+        <ctl name="VBC_IIS_TX0_LRMOD_SEL" value="RIGHT_HIGH"/>
+        <ctl name="DAC LRCLK Select" value="invert"/>
+        <ctl name="SPKL Mixer DACLSPKL Switch" value="1"/>
+        <ctl name="Speaker Function" value="1"/>
+        <ctl name="VBC_IIS_TX0_WD_SEL" value="WD_24BIT"/>
+        <ctl name="VBC_IIS_TX1_WD_SEL" value="WD_16BIT"/>
+        <ctl name="VBC_DA0_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="VBC_DA1_IIS_SEL" value="VBC_IIS_PORT_IIS3"/>
+        <ctl name="VBC_IIS0_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC0"/>
+        <ctl name="VBC_IIS2_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="VBC_IIS3_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC1"/>
+        <ctl name="SYS_IIS0" value="vbc_iis3"/>
+    </path>
+
+    <path name="speaker-and-bt-sco-headset">
+        <path name="speaker-and-bt-sco"/>
+    </path>
+
+    <path name="speaker-and-bt-sco-carkit">
+        <path name="speaker-and-bt-sco"/>
+    </path>
+
+    <path name="speaker-and-bt-a2dp">
+        <ctl name="ag_iis0_ext_sel_v1" value="top_dac_iis"/>
+        <ctl name="VBC_IIS_TX0_LRMOD_SEL" value="RIGHT_HIGH"/>
+        <ctl name="VBC_DA0_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="DAC LRCLK Select" value="invert"/>
+        <ctl name="SPKL Mixer DACLSPKL Switch" value="1"/>
+        <ctl name="Speaker Function" value="1"/>
+        <ctl name="VBC_IIS_TX2_WD_SEL" value="WD_16BIT"/>
+        <ctl name="VBC_DA1_IIS_SEL" value="VBC_IIS_PORT_IIS3"/>
+        <ctl name="VBC_IIS0_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC0"/>
+        <ctl name="VBC_IIS2_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC1"/>
+        <ctl name="VBC_IIS3_TX_DATA_SEL" value="IIS_TX_DATA_FROM_DAC2"/>
+        <ctl name="VBC_DAC1_BYPASS_EN" value="1"/>
+    </path>
+
+    <path name="speaker-and-bt-a2dp-headphone">
+        <path name="speaker-and-bt-a2dp"/>
+    </path>
+
+    <path name="speaker-and-bt-a2dp-speaker">
+        <path name="speaker-and-bt-a2dp"/>
+    </path>
+
+    <path name="speaker-and-bt-ble-headset">
+        <path name="speaker-and-bt-a2dp"/>
+    </path>
+
+    <path name="speaker-and-bt-ble-speaker">
+        <path name="speaker-and-bt-a2dp"/>
+    </path>
+
+    <path name="speaker-and-bt-ble-broadcast">
+        <path name="speaker-and-bt-a2dp"/>
+    </path>
+
+    <path name="primary-mic">
+        <ctl name="VBC_AD0_IIS_SEL" value="VBC_IIS_PORT_IIS1"/>
+        <ctl name="VBC_AD2_IIS_SEL" value="VBC_IIS_PORT_IIS1"/>
+        <ctl name="ADC LRCLK Select" value="invert"/>
+        <ctl name="ADC1 LRCLK Select" value="invert"/>
+        <ctl name="ADCL Mixer MainMICADCL Switch" value="1"/>
+        <ctl name="AUD ADC0L Switch" value="1"/>
+        <ctl name="AUD ADC0R Switch" value="1"/>
+        <ctl name="Mic Function" value="1"/>
+    </path>
+
+    <path name="second-mic">
+        <ctl name="VBC_AD0_IIS_SEL" value="VBC_IIS_PORT_IIS1"/>
+        <ctl name="VBC_AD2_IIS_SEL" value="VBC_IIS_PORT_IIS1"/>
+        <ctl name="ADC LRCLK Select" value="normal"/>
+        <ctl name="ADC1 LRCLK Select" value="normal"/>
+        <ctl name="ADCR Mixer AuxMICADCR Switch" value="1"/>
+        <ctl name="AUD ADC0L Switch" value="1"/>
+        <ctl name="AUD ADC0R Switch" value="1"/>
+        <ctl name="Aux Mic Function" value="1"/>
+    </path>
+
+    <path name="third-mic">
+    </path>
+
+    <path name="fourth-mic">
+    </path>
+
+    <path name="handset-mic">
+        <path name="primary-mic"/>
+    </path>
+
+    <path name="handset-mic-us">
+    </path>
+
+    <path name="handset-mic-aec">
+        <path name="handset-mic"/>
+    </path>
+
+    <path name="handset-dual-mic">
+        <ctl name="VBC_AD0_IIS_SEL" value="VBC_IIS_PORT_IIS1"/>
+        <ctl name="VBC_AD2_IIS_SEL" value="VBC_IIS_PORT_IIS1"/>
+        <ctl name="ADC LRCLK Select" value="invert"/>
+        <ctl name="ADC1 LRCLK Select" value="invert"/>
+        <ctl name="ADCR Mixer AuxMICADCR Switch" value="1"/>
+        <ctl name="ADCL Mixer MainMICADCL Switch" value="1"/>
+        <ctl name="AUD ADC0L Switch" value="1"/>
+        <ctl name="AUD ADC0R Switch" value="1"/>
+        <ctl name="Aux Mic Function" value="1"/>
+        <ctl name="Mic Function" value="1"/>
+    </path>
+
+    <path name="handset-dual-mic-aec">
+        <path name="handset-dual-mic"/>
+    </path>
+
+    <path name="handset-triple-mic">
+    </path>
+
+    <path name="handset-triple-mic-aec">
+        <path name="handset-triple-mic"/>
+    </path>
+
+    <path name="handset-quad-mic">
+    </path>
+
+    <path name="handset-quad-mic-aec">
+        <path name="handset-quad-mic"/>
+    </path>
+
+    <path name="speaker-mic">
+        <path name="second-mic"/>
+    </path>
+
+    <path name="speaker-mic-aec">
+        <path name="speaker-mic"/>
+    </path>
+
+    <path name="speaker-dual-mic">
+        <path name="handset-dual-mic"/>
+    </path>
+
+    <path name="speaker-dual-mic-aec">
+        <path name="speaker-dual-mic"/>
+    </path>
+
+    <path name="speaker-triple-mic">
+        <path name="handset-triple-mic"/>
+    </path>
+
+    <path name="speaker-triple-mic-aec">
+        <path name="speaker-triple-mic"/>
+    </path>
+
+    <path name="speaker-quad-mic">
+    </path>
+
+    <path name="speaker-quad-mic-aec">
+        <path name="speaker-quad-mic"/>
+    </path>
+
+    <path name="headset-mic">
+        <ctl name="VBC_AD0_IIS_SEL" value="VBC_IIS_PORT_IIS1"/>
+        <ctl name="VBC_AD2_IIS_SEL" value="VBC_IIS_PORT_IIS1"/>
+        <ctl name="ADCL Mixer HPMICADCL Switch" value="1"/>
+        <ctl name="ADCR Mixer HPMICADCR Switch" value="1"/>
+        <ctl name="HP Mic Function" value="1"/>
+        <ctl name="AUD ADC0L Switch" value="1"/>
+        <ctl name="AUD ADC0R Switch" value="1"/>
+    </path>
+
+    <path name="headset-mic-aec">
+        <path name="headset-mic"/>
+    </path>
+
+    <path name="usb-device-mic">
+        <ctl name="VBC_IIS_INF_SYS_SEL" value="vbc_iis_to_aon_usb"/>
+        <ctl name="ag_iis2_ext_sel_v1" value="l5_top_usb_iism"/>
+        <ctl name="VBC_AD0_IIS_SEL" value="VBC_IIS_PORT_IIS2"/>
+        <ctl name="VBC_AD2_IIS_SEL" value="VBC_IIS_PORT_IIS2"/>
+        <ctl name="BE_USB_OFFLOAD_CAP" value="1"/>
+    </path>
+
+    <path name="usb-device-mic-aec">
+        <path name="usb-device-mic"/>
+    </path>
+
+    <path name="usb-headset-mic">
+        <path name="usb-device-mic"/>
+    </path>
+
+    <path name="usb-headset-mic-aec">
+        <path name="usb-headset-mic"/>
+    </path>
+
+    <path name="bt-sco-headset-mic">
+        <ctl name="VBC_AD0_IIS_SEL" value="VBC_IIS_PORT_IIS3"/>
+        <ctl name="VBC_AD2_IIS_SEL" value="VBC_IIS_PORT_IIS3"/>
+        <ctl name="SYS_IIS0" value="vbc_iis3"/>
+    </path>
+
+    <path name="bt-a2dp-mic">
+        <ctl name="SYS_IIS0" value="vbc_iis3"/>
+    </path>
+
+    <path name="bt-ble-mic">
+        <ctl name="SYS_IIS0" value="vbc_iis3"/>
+    </path>
+
+    <path name="bt-ble-headset-mic">
+        <ctl name="SYS_IIS0" value="vbc_iis3"/>
+    </path>
+
+    <path name="aux-digital-mic">
+    </path>
+
+    <path name="fm-tuner">
+        <ctl name="SYS_IIS0" value="vbc_iis3"/>
+        <ctl name="VBC_AD3_IIS_SEL" value="VBC_IIS_PORT_IIS3"/>
+        <ctl name="VBC_IIS_RX3_WD_SEL" value="WD_16BIT"/>
+        <ctl name="VBC_IIS_RX3_LRMOD_SEL" value="RIGHT_HIGH"/>
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_IIS3_ADC"/>
+        <ctl name="VBC_FM_ENABLE" value="1"/>
+    </path>
+
+    <path name="telephony-rx">
+    </path>
+
+    <path name="echo-reference">
+    </path>
+
+    <path name="voice-handset-mic">
+        <path name="handset-mic"/>
+    </path>
+
+    <path name="voice-handset-dual-mic">
+        <path name="handset-dual-mic"/>
+    </path>
+
+    <path name="voice-handset-triple-mic">
+        <path name="handset-triple-mic"/>
+    </path>
+
+    <path name="voice-handset-quad-mic">
+        <path name="handset-quad-mic"/>
+    </path>
+
+    <path name="voice-speaker-mic">
+        <path name="speaker-mic"/>
+    </path>
+
+    <path name="voice-speaker-dual-mic">
+        <path name="speaker-dual-mic"/>
+    </path>
+
+    <path name="voice-speaker-triple-mic">
+        <path name="speaker-triple-mic"/>
+    </path>
+
+    <path name="voice-speaker-quad-mic">
+        <path name="speaker-quad-mic"/>
+    </path>
+
+    <path name="voice-headset-mic">
+        <path name="headset-mic"/>
+    </path>
+
+    <path name="voice-usb-device-mic">
+        <path name="usb-device-mic"/>
+    </path>
+
+    <path name="voice-usb-headset-mic">
+        <path name="usb-headset-mic"/>
+    </path>
+
+    <path name="voice-recognition-virtual-device">
+    </path>
+
+    <path name="fbsmartamp">
+        <ctl name="PDM_DMIC2 Switch" value="1"/>
+        <ctl name="VBC_IIS_RX1_LRMOD_SEL" value="RIGHT_HIGH"/>
+        <ctl name="ag_iis4_ext_sel_v1" value="pdm_iis2"/>
+        <ctl name="IVSense Virt Switch" value="1"/>
+        <ctl name="VBC ADC1 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_AD1_IIS_SEL" value="VBC_IIS_PORT_IIS0"/>
+        <ctl name="IVSENCE_FUNC_DSP" value="enable"/>
+        <ctl name="AUDIO_ISC_SMARTAMP_SWITCH" value="1"/>
+        <ctl name="AUDIO_SMARTAMP_SPK" value="1"/>
+    </path>
+
+    <path name="ffsmartamp">
+        <ctl name="AUDIO_ISC_SMARTAMP_SWITCH" value="1"/>
+    </path>
+
+    <path name="sound_trigger_vad">
+    </path>
+
+    <path name="sound_trigger_broken">
+    </path>
+
+    <!-- loopback-type-mode -->
+    <path name="loopback-0-0">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC0"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_DSP_LOOPBACK_TYPE" value="ADDA"/>
+        <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" value="0"/>
+        <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" value="8"/>
+    </path>
+
+    <!-- loopback-type-mode -->
+    <path name="loopback-0-1">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC0"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_DSP_LOOPBACK_TYPE" value="ADDA"/>
+        <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" value="1"/>
+        <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" value="8"/>
+    </path>
+
+    <!-- loopback-type-mode -->
+    <path name="loopback-1-0">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC0"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_DSP_LOOPBACK_TYPE" value="AD_ULDL_DA_PROCESS"/>
+        <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" value="0"/>
+        <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" value="8"/>
+    </path>
+
+    <!-- loopback-type-mode -->
+    <path name="loopback-1-1">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC0"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_DSP_LOOPBACK_TYPE" value="AD_ULDL_DA_PROCESS"/>
+        <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" value="1"/>
+        <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" value="8"/>
+        <ctl name="VBC_DSP_LOOPBACK_VOICE_FMT" value="8"/>
+    </path>
+
+    <!-- loopback-type-mode-rate -->
+    <path name="loopback-2-0-8000">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC0"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" value="7"/>
+        <ctl name="VBC_DSP_LOOPBACK_VOICE_FMT" value="3"/>
+        <ctl name="VBC_DSP_LOOPBACK_TYPE" value="AD_UL_ENCODE_DECODE_DL_DA_PROCESS"/>
+        <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" value="0"/>
+    </path>
+
+    <!-- loopback-type-mode-rate -->
+    <path name="loopback-2-0-16000">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC0"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" value="8"/>
+        <ctl name="VBC_DSP_LOOPBACK_VOICE_FMT" value="8"/>
+        <ctl name="VBC_DSP_LOOPBACK_TYPE" value="AD_UL_ENCODE_DECODE_DL_DA_PROCESS"/>
+        <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" value="0"/>
+    </path>
+
+    <!-- loopback-type-mode-rate -->
+    <path name="loopback-2-1-8000">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC0"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" value="7"/>
+        <ctl name="VBC_DSP_LOOPBACK_VOICE_FMT" value="3"/>
+        <ctl name="VBC_DSP_LOOPBACK_TYPE" value="AD_UL_ENCODE_DECODE_DL_DA_PROCESS"/>
+        <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" value="1"/>
+    </path>
+
+    <!-- loopback-type-mode-rate -->
+    <path name="loopback-2-1-16000">
+        <ctl name="VBC_MUX_ADC3" value="ADC_IN_DAC0"/>
+        <ctl name="VBC ADC3 DG Set" value="24 24" count="2"/>
+        <ctl name="VBC_DSP_LOOPBACK_ARM_RATE" value="8"/>
+        <ctl name="VBC_DSP_LOOPBACK_VOICE_FMT" value="8"/>
+        <ctl name="VBC_DSP_LOOPBACK_TYPE" value="AD_UL_ENCODE_DECODE_DL_DA_PROCESS"/>
+        <ctl name="VBC_DSP_LOOPBACK_LOOP_MODE" value="1"/>
+    </path>
+
+    <path name="vbc_dump_vbc_dac0">
+        <ctl name="VBC_DUMP_POS" value="DUMP_POS_DAC0_E"/>
+        <ctl name="VBC_DUMP VBC_DUMP_AP01_AD" value="1"/>
+    </path>
+
+    <path name="vbc_dump_vbc_dac1">
+        <ctl name="VBC_DUMP_POS" value="DUMP_POS_DAC1_E"/>
+        <ctl name="VBC_DUMP VBC_DUMP_AP01_AD" value="1"/>
+    </path>
+
+    <path name="vbc_dump_vbc_a1">
+        <ctl name="VBC_DUMP_POS" value="DUMP_POS_A1"/>
+        <ctl name="VBC_DUMP VBC_DUMP_AP01_AD" value="1"/>
+    </path>
+
+    <path name="vbc_dump_vbc_a2">
+        <ctl name="VBC_DUMP_POS" value="DUMP_POS_A2"/>
+        <ctl name="VBC_DUMP VBC_DUMP_AP01_AD" value="1"/>
+    </path>
+
+    <path name="vbc_dump_vbc_a3">
+        <ctl name="VBC_DUMP_POS" value="DUMP_POS_A3"/>
+        <ctl name="VBC_DUMP VBC_DUMP_AP01_AD" value="1"/>
+    </path>
+
+    <path name="vbc_dump_vbc_a4">
+        <ctl name="VBC_DUMP_POS" value="DUMP_POS_A4"/>
+        <ctl name="VBC_DUMP VBC_DUMP_AP01_AD" value="1"/>
+    </path>
+
+    <path name="vbc_dump_vbc_v1">
+        <ctl name="VBC_DUMP_POS" value="DUMP_POS_V1"/>
+        <ctl name="VBC_DUMP VBC_DUMP_AP01_AD" value="1"/>
+    </path>
+
+    <path name="vbc_dump_vbc_v2">
+        <ctl name="VBC_DUMP_POS" value="DUMP_POS_V2"/>
+        <ctl name="VBC_DUMP VBC_DUMP_AP01_AD" value="1"/>
+    </path>
+</mixer>

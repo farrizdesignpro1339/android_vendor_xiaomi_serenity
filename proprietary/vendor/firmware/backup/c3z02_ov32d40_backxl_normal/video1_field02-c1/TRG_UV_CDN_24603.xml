@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+<root name="UVCDN">
+ <BlockInfo>
+  <Parameter index="" name="blockid" des="description" level="1" range="[0,32767]" type="int">24603</Parameter>
+  <Parameter index="" name="version" des="description" level="1" range="[0,32767]" type="int">1</Parameter>
+  <Parameter index="" name="bypass" des="description" level="1" range="[0,1]" type="int">0</Parameter>
+  <Parameter index="" name="modify_time" des="description" level="1" range="[0,4294967295]" type="int">2501132206</Parameter>
+  <Parameter index="" name="headersize" des="description" level="1" range="[0,32767]" type="int">48</Parameter>
+  <Parameter index="" name="triggersize" des="description" level="1" range="[0,32767]" type="int">184</Parameter>
+  <Parameter index="" name="datasize" des="description" level="1" range="[0,32767]" type="int">1176</Parameter>
+  <Parameter index="" name="calc_freq" des="description" level="1" range="[0,32767]" type="int">0</Parameter>
+  <Parameter index="" name="width" des="description" level="1" range="[0,32767]" type="int">3264</Parameter>
+  <Parameter index="" name="height" des="description" level="1" range="[0,32767]" type="int">1836</Parameter>
+  <Parameter index="" name="BlockControl" des="description" level="1" range="[0,255]" type="int">0</Parameter>
+  <Parameter index="" name="reserve1" des="description" level="1" range="[0,255]" type="int">0</Parameter>
+ </BlockInfo>
+ <Triggers name="UVCDN" select_way="0" trigger_enable="1" group_num="7">
+  <Trigger start="1.0" end="1.0" para="total_gain" name="region0" interp_type="1" enable="1">0</Trigger>
+  <Trigger start="2.0" end="2.0" para="total_gain" name="region1" interp_type="1" enable="1">1</Trigger>
+  <Trigger start="4.0" end="4.0" para="total_gain" name="region2" interp_type="1" enable="1">2</Trigger>
+  <Trigger start="8.0" end="8.0" para="total_gain" name="region3" interp_type="1" enable="1">3</Trigger>
+  <Trigger start="11.0" end="11.0" para="total_gain" name="region4" interp_type="1" enable="1">4</Trigger>
+  <Trigger start="20.0" end="20.0" para="total_gain" name="region5" interp_type="1" enable="1">5</Trigger>
+  <Trigger start="38.0" end="38.0" para="total_gain" name="region6" interp_type="1" enable="1">6</Trigger>
+ </Triggers>
+ <Parameters name="UVCDN" group_num="7" des="description">
+  <Parameter index="0" name="region0" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CDN_Control">
+    <Parameter name="bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="sigma_uv" des="description" default=" " level="1" range="[0.1,40.0]" type="float" reserve="0x0000" length="1">10.00</Parameter>
+   </Parameter>
+   <Parameter name="CDN_Seguv">
+    <Parameter name="cdn_seguv0" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv1" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv2" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv3" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">60</Parameter>
+    <Parameter name="cdn_seguv4" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">58</Parameter>
+    <Parameter name="cdn_seguv5" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">56</Parameter>
+    <Parameter name="cdn_seguv6" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">53</Parameter>
+    <Parameter name="cdn_seguv7" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">49</Parameter>
+    <Parameter name="cdn_seguv8" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">46</Parameter>
+    <Parameter name="cdn_seguv9" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">42</Parameter>
+    <Parameter name="cdn_seguv10" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">38</Parameter>
+    <Parameter name="cdn_seguv11" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">34</Parameter>
+    <Parameter name="cdn_seguv12" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">31</Parameter>
+    <Parameter name="cdn_seguv13" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">27</Parameter>
+    <Parameter name="cdn_seguv14" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">24</Parameter>
+    <Parameter name="cdn_seguv15" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">20</Parameter>
+    <Parameter name="cdn_seguv16" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">18</Parameter>
+    <Parameter name="cdn_seguv17" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">15</Parameter>
+    <Parameter name="cdn_seguv18" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">12</Parameter>
+    <Parameter name="cdn_seguv19" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">10</Parameter>
+    <Parameter name="cdn_seguv20" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">9</Parameter>
+    <Parameter name="cdn_seguv21" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">7</Parameter>
+    <Parameter name="cdn_seguv22" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">6</Parameter>
+    <Parameter name="cdn_seguv23" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">4</Parameter>
+    <Parameter name="cdn_seguv24" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">4</Parameter>
+    <Parameter name="cdn_seguv25" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">3</Parameter>
+    <Parameter name="cdn_seguv26" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">2</Parameter>
+    <Parameter name="cdn_seguv27" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">2</Parameter>
+    <Parameter name="cdn_seguv28" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">1</Parameter>
+    <Parameter name="cdn_seguv29" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">1</Parameter>
+    <Parameter name="cdn_seguv30" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CDN_Control">
+    <Parameter name="bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="sigma_uv" des="description" default=" " level="1" range="[0.1,40.0]" type="float" reserve="0x0000" length="1">10.00</Parameter>
+   </Parameter>
+   <Parameter name="CDN_Seguv">
+    <Parameter name="cdn_seguv0" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv1" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv2" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv3" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv4" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv5" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv6" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv7" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv8" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv9" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv10" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv11" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv12" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">60</Parameter>
+    <Parameter name="cdn_seguv13" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">60</Parameter>
+    <Parameter name="cdn_seguv14" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">59</Parameter>
+    <Parameter name="cdn_seguv15" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">59</Parameter>
+    <Parameter name="cdn_seguv16" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">58</Parameter>
+    <Parameter name="cdn_seguv17" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">58</Parameter>
+    <Parameter name="cdn_seguv18" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">57</Parameter>
+    <Parameter name="cdn_seguv19" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">56</Parameter>
+    <Parameter name="cdn_seguv20" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">56</Parameter>
+    <Parameter name="cdn_seguv21" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">55</Parameter>
+    <Parameter name="cdn_seguv22" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">54</Parameter>
+    <Parameter name="cdn_seguv23" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">53</Parameter>
+    <Parameter name="cdn_seguv24" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">53</Parameter>
+    <Parameter name="cdn_seguv25" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">52</Parameter>
+    <Parameter name="cdn_seguv26" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">51</Parameter>
+    <Parameter name="cdn_seguv27" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">50</Parameter>
+    <Parameter name="cdn_seguv28" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">49</Parameter>
+    <Parameter name="cdn_seguv29" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">48</Parameter>
+    <Parameter name="cdn_seguv30" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">48</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CDN_Control">
+    <Parameter name="bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="sigma_uv" des="description" default=" " level="1" range="[0.1,40.0]" type="float" reserve="0x0000" length="1">10.00</Parameter>
+   </Parameter>
+   <Parameter name="CDN_Seguv">
+    <Parameter name="cdn_seguv0" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv1" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv2" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv3" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">60</Parameter>
+    <Parameter name="cdn_seguv4" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">58</Parameter>
+    <Parameter name="cdn_seguv5" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">56</Parameter>
+    <Parameter name="cdn_seguv6" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">53</Parameter>
+    <Parameter name="cdn_seguv7" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">49</Parameter>
+    <Parameter name="cdn_seguv8" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">46</Parameter>
+    <Parameter name="cdn_seguv9" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">42</Parameter>
+    <Parameter name="cdn_seguv10" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">38</Parameter>
+    <Parameter name="cdn_seguv11" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">34</Parameter>
+    <Parameter name="cdn_seguv12" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">31</Parameter>
+    <Parameter name="cdn_seguv13" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">27</Parameter>
+    <Parameter name="cdn_seguv14" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">24</Parameter>
+    <Parameter name="cdn_seguv15" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">20</Parameter>
+    <Parameter name="cdn_seguv16" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">18</Parameter>
+    <Parameter name="cdn_seguv17" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">15</Parameter>
+    <Parameter name="cdn_seguv18" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">12</Parameter>
+    <Parameter name="cdn_seguv19" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">10</Parameter>
+    <Parameter name="cdn_seguv20" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">9</Parameter>
+    <Parameter name="cdn_seguv21" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">7</Parameter>
+    <Parameter name="cdn_seguv22" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">6</Parameter>
+    <Parameter name="cdn_seguv23" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">4</Parameter>
+    <Parameter name="cdn_seguv24" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">4</Parameter>
+    <Parameter name="cdn_seguv25" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">3</Parameter>
+    <Parameter name="cdn_seguv26" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">2</Parameter>
+    <Parameter name="cdn_seguv27" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">2</Parameter>
+    <Parameter name="cdn_seguv28" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">1</Parameter>
+    <Parameter name="cdn_seguv29" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">1</Parameter>
+    <Parameter name="cdn_seguv30" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">1</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CDN_Control">
+    <Parameter name="bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="sigma_uv" des="description" default=" " level="1" range="[0.1,40.0]" type="float" reserve="0x0000" length="1">40.00</Parameter>
+   </Parameter>
+   <Parameter name="CDN_Seguv">
+    <Parameter name="cdn_seguv0" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv1" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv2" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv3" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv4" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv5" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv6" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv7" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv8" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv9" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv10" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv11" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv12" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">60</Parameter>
+    <Parameter name="cdn_seguv13" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">60</Parameter>
+    <Parameter name="cdn_seguv14" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">59</Parameter>
+    <Parameter name="cdn_seguv15" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">59</Parameter>
+    <Parameter name="cdn_seguv16" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">58</Parameter>
+    <Parameter name="cdn_seguv17" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">58</Parameter>
+    <Parameter name="cdn_seguv18" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">57</Parameter>
+    <Parameter name="cdn_seguv19" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">56</Parameter>
+    <Parameter name="cdn_seguv20" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">56</Parameter>
+    <Parameter name="cdn_seguv21" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">55</Parameter>
+    <Parameter name="cdn_seguv22" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">54</Parameter>
+    <Parameter name="cdn_seguv23" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">53</Parameter>
+    <Parameter name="cdn_seguv24" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">53</Parameter>
+    <Parameter name="cdn_seguv25" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">52</Parameter>
+    <Parameter name="cdn_seguv26" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">51</Parameter>
+    <Parameter name="cdn_seguv27" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">50</Parameter>
+    <Parameter name="cdn_seguv28" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">49</Parameter>
+    <Parameter name="cdn_seguv29" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">48</Parameter>
+    <Parameter name="cdn_seguv30" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">48</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="4" name="region4" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CDN_Control">
+    <Parameter name="bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="sigma_uv" des="description" default=" " level="1" range="[0.1,40.0]" type="float" reserve="0x0000" length="1">40.00</Parameter>
+   </Parameter>
+   <Parameter name="CDN_Seguv">
+    <Parameter name="cdn_seguv0" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv1" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv2" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv3" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv4" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv5" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv6" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv7" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv8" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv9" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv10" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv11" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv12" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">60</Parameter>
+    <Parameter name="cdn_seguv13" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">60</Parameter>
+    <Parameter name="cdn_seguv14" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">59</Parameter>
+    <Parameter name="cdn_seguv15" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">59</Parameter>
+    <Parameter name="cdn_seguv16" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">58</Parameter>
+    <Parameter name="cdn_seguv17" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">58</Parameter>
+    <Parameter name="cdn_seguv18" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">57</Parameter>
+    <Parameter name="cdn_seguv19" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">56</Parameter>
+    <Parameter name="cdn_seguv20" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">56</Parameter>
+    <Parameter name="cdn_seguv21" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">55</Parameter>
+    <Parameter name="cdn_seguv22" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">54</Parameter>
+    <Parameter name="cdn_seguv23" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">53</Parameter>
+    <Parameter name="cdn_seguv24" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">53</Parameter>
+    <Parameter name="cdn_seguv25" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">52</Parameter>
+    <Parameter name="cdn_seguv26" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">51</Parameter>
+    <Parameter name="cdn_seguv27" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">50</Parameter>
+    <Parameter name="cdn_seguv28" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">49</Parameter>
+    <Parameter name="cdn_seguv29" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">48</Parameter>
+    <Parameter name="cdn_seguv30" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">48</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="5" name="region5" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CDN_Control">
+    <Parameter name="bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="sigma_uv" des="description" default=" " level="1" range="[0.1,40.0]" type="float" reserve="0x0000" length="1">40.00</Parameter>
+   </Parameter>
+   <Parameter name="CDN_Seguv">
+    <Parameter name="cdn_seguv0" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv1" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv2" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv3" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv4" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv5" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv6" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv7" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv8" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv9" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv10" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv11" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv12" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">60</Parameter>
+    <Parameter name="cdn_seguv13" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">60</Parameter>
+    <Parameter name="cdn_seguv14" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">59</Parameter>
+    <Parameter name="cdn_seguv15" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">59</Parameter>
+    <Parameter name="cdn_seguv16" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">58</Parameter>
+    <Parameter name="cdn_seguv17" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">58</Parameter>
+    <Parameter name="cdn_seguv18" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">57</Parameter>
+    <Parameter name="cdn_seguv19" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">56</Parameter>
+    <Parameter name="cdn_seguv20" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">56</Parameter>
+    <Parameter name="cdn_seguv21" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">55</Parameter>
+    <Parameter name="cdn_seguv22" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">54</Parameter>
+    <Parameter name="cdn_seguv23" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">53</Parameter>
+    <Parameter name="cdn_seguv24" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">53</Parameter>
+    <Parameter name="cdn_seguv25" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">52</Parameter>
+    <Parameter name="cdn_seguv26" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">51</Parameter>
+    <Parameter name="cdn_seguv27" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">50</Parameter>
+    <Parameter name="cdn_seguv28" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">49</Parameter>
+    <Parameter name="cdn_seguv29" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">48</Parameter>
+    <Parameter name="cdn_seguv30" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">48</Parameter>
+   </Parameter>
+  </Parameter>
+  <Parameter index="6" name="region6" des="description" level="1" range="[0,100]" type="int" reserve="0x0000" length="1">
+   <Parameter name="CDN_Control">
+    <Parameter name="bypass" des="description" level="1" default="0" range="[0,1]" type="int" reserve="0x0001" length="1">0</Parameter>
+    <Parameter name="sigma_uv" des="description" default=" " level="1" range="[0.1,40.0]" type="float" reserve="0x0000" length="1">40.0</Parameter>
+   </Parameter>
+   <Parameter name="CDN_Seguv">
+    <Parameter name="cdn_seguv0" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv1" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv2" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv3" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv4" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv5" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">63</Parameter>
+    <Parameter name="cdn_seguv6" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv7" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv8" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">62</Parameter>
+    <Parameter name="cdn_seguv9" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv10" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv11" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">61</Parameter>
+    <Parameter name="cdn_seguv12" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">60</Parameter>
+    <Parameter name="cdn_seguv13" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">60</Parameter>
+    <Parameter name="cdn_seguv14" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">59</Parameter>
+    <Parameter name="cdn_seguv15" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">59</Parameter>
+    <Parameter name="cdn_seguv16" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">58</Parameter>
+    <Parameter name="cdn_seguv17" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">58</Parameter>
+    <Parameter name="cdn_seguv18" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">57</Parameter>
+    <Parameter name="cdn_seguv19" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">56</Parameter>
+    <Parameter name="cdn_seguv20" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">56</Parameter>
+    <Parameter name="cdn_seguv21" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">55</Parameter>
+    <Parameter name="cdn_seguv22" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">54</Parameter>
+    <Parameter name="cdn_seguv23" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">53</Parameter>
+    <Parameter name="cdn_seguv24" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">53</Parameter>
+    <Parameter name="cdn_seguv25" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">52</Parameter>
+    <Parameter name="cdn_seguv26" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">51</Parameter>
+    <Parameter name="cdn_seguv27" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">50</Parameter>
+    <Parameter name="cdn_seguv28" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">49</Parameter>
+    <Parameter name="cdn_seguv29" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">48</Parameter>
+    <Parameter name="cdn_seguv30" des="description" default=" " level="1" range="[0,255]" type="int" reserve="0x000f" length="1">48</Parameter>
+   </Parameter>
+  </Parameter>
+ </Parameters>
+ <Defaults name="UVCDN_DEFAULT" des="description">
+  <Parameter index="0" name="region0" des="description">
+   <Parameter name="median_thru0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thru1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="median_thrv0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thrv1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="cdn_gaussian_mode" des="description" level="1" range="[0,255]" type="int" length="1">2</Parameter>
+   <Parameter name="median_mode" des="description" level="1" range="[0,255]" type="int" length="1">4</Parameter>
+   <Parameter name="median_writeback_en" des="description" level="1" range="[0,255]" type="int" length="1">1</Parameter>
+   <Parameter name="filter_bypass" des="description" level="1" range="[0,1]" type="int" length="1">0</Parameter>
+   <Parameter name="median_thr" des="description" level="1" range="[0,65535]" type="int" length="1">40</Parameter>
+  </Parameter>
+  <Parameter index="1" name="region1" des="description">
+   <Parameter name="median_thru0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thru1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="median_thrv0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thrv1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="cdn_gaussian_mode" des="description" level="1" range="[0,255]" type="int" length="1">2</Parameter>
+   <Parameter name="median_mode" des="description" level="1" range="[0,255]" type="int" length="1">4</Parameter>
+   <Parameter name="median_writeback_en" des="description" level="1" range="[0,255]" type="int" length="1">1</Parameter>
+   <Parameter name="filter_bypass" des="description" level="1" range="[0,1]" type="int" length="1">0</Parameter>
+   <Parameter name="median_thr" des="description" level="1" range="[0,65535]" type="int" length="1">40</Parameter>
+  </Parameter>
+  <Parameter index="2" name="region2" des="description">
+   <Parameter name="median_thru0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thru1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="median_thrv0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thrv1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="cdn_gaussian_mode" des="description" level="1" range="[0,255]" type="int" length="1">2</Parameter>
+   <Parameter name="median_mode" des="description" level="1" range="[0,255]" type="int" length="1">4</Parameter>
+   <Parameter name="median_writeback_en" des="description" level="1" range="[0,255]" type="int" length="1">1</Parameter>
+   <Parameter name="filter_bypass" des="description" level="1" range="[0,1]" type="int" length="1">0</Parameter>
+   <Parameter name="median_thr" des="description" level="1" range="[0,65535]" type="int" length="1">40</Parameter>
+  </Parameter>
+  <Parameter index="3" name="region3" des="description">
+   <Parameter name="median_thru0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thru1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="median_thrv0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thrv1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="cdn_gaussian_mode" des="description" level="1" range="[0,255]" type="int" length="1">2</Parameter>
+   <Parameter name="median_mode" des="description" level="1" range="[0,255]" type="int" length="1">4</Parameter>
+   <Parameter name="median_writeback_en" des="description" level="1" range="[0,255]" type="int" length="1">1</Parameter>
+   <Parameter name="filter_bypass" des="description" level="1" range="[0,1]" type="int" length="1">0</Parameter>
+   <Parameter name="median_thr" des="description" level="1" range="[0,65535]" type="int" length="1">40</Parameter>
+  </Parameter>
+  <Parameter index="4" name="region4" des="description">
+   <Parameter name="median_thru0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thru1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="median_thrv0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thrv1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="cdn_gaussian_mode" des="description" level="1" range="[0,255]" type="int" length="1">2</Parameter>
+   <Parameter name="median_mode" des="description" level="1" range="[0,255]" type="int" length="1">4</Parameter>
+   <Parameter name="median_writeback_en" des="description" level="1" range="[0,255]" type="int" length="1">1</Parameter>
+   <Parameter name="filter_bypass" des="description" level="1" range="[0,1]" type="int" length="1">0</Parameter>
+   <Parameter name="median_thr" des="description" level="1" range="[0,65535]" type="int" length="1">80</Parameter>
+  </Parameter>
+  <Parameter index="5" name="region5" des="description">
+   <Parameter name="median_thru0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thru1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="median_thrv0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thrv1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="cdn_gaussian_mode" des="description" level="1" range="[0,255]" type="int" length="1">2</Parameter>
+   <Parameter name="median_mode" des="description" level="1" range="[0,255]" type="int" length="1">4</Parameter>
+   <Parameter name="median_writeback_en" des="description" level="1" range="[0,255]" type="int" length="1">1</Parameter>
+   <Parameter name="filter_bypass" des="description" level="1" range="[0,1]" type="int" length="1">0</Parameter>
+   <Parameter name="median_thr" des="description" level="1" range="[0,65535]" type="int" length="1">40</Parameter>
+  </Parameter>
+  <Parameter index="6" name="region6" des="description">
+   <Parameter name="median_thru0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thru1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="median_thrv0" des="description" level="1" range="[0,255]" type="int" length="1">30</Parameter>
+   <Parameter name="median_thrv1" des="description" level="1" range="[0,255]" type="int" length="1">100</Parameter>
+   <Parameter name="cdn_gaussian_mode" des="description" level="1" range="[0,255]" type="int" length="1">2</Parameter>
+   <Parameter name="median_mode" des="description" level="1" range="[0,255]" type="int" length="1">4</Parameter>
+   <Parameter name="median_writeback_en" des="description" level="1" range="[0,255]" type="int" length="1">1</Parameter>
+   <Parameter name="filter_bypass" des="description" level="1" range="[0,1]" type="int" length="1">0</Parameter>
+   <Parameter name="median_thr" des="description" level="1" range="[0,65535]" type="int" length="1">40</Parameter>
+  </Parameter>
+ </Defaults>
+</root>

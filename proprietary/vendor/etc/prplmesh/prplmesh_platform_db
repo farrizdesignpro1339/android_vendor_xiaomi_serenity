@@ -1,0 +1,14 @@
+management_mode=Multi-AP-Controller-and-Agent
+stop_on_failure_attempts=0
+certification_mode=0
+hostapd_ctrl_path_wlan2=/data/vendor/wifi/hostapd/ctrl/wlan2
+wpa_supplicant_ctrl_path_wlan2=/data/vendor/wifi/wpa/wlan0
+wpa_supplicant_ctrl_path_wlan0=/data/vendor/wifi/wpa/wlan0
+wireless.wlan2.ssid=prplmesh
+wireless.wlan2.security_mode=wpa2-psk
+wireless.wlan2.psk=prplmesh_pass
+wireless.wlan2.operating_class=24g-5g
+wireless.wlan2.multi_ap=3
+backhaul_wire_iface=eth1
+band_steering=1
+client_roaming=1

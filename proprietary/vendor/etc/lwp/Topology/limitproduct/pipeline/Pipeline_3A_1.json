@@ -1,0 +1,239 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2024 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_3A_1",
+    "stream": "param_stream_1",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode1"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+		{
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode3"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "AAASinkNode"
+        },
+        {
+            "type": "AAARouter",
+            "vendor": "SPRD",
+            "id": "AAAStatNode1"
+        },
+        {
+            "type": "AENode",
+            "vendor": "SPRD",
+            "id": "AeNode1"
+        },
+		{
+            "type": "AFNode",
+            "vendor": "SPRD",
+            "id": "AfNode1"
+        },
+		{
+            "type": "AWBNode",
+            "vendor": "SPRD",
+            "id": "AwbNode1"
+        },
+	{
+            "type": "AFLNode",
+            "vendor": "SPRD",
+            "id": "AflNode1"
+        },
+	{
+            "type": "LSCNode",
+            "vendor": "SPRD",
+            "id": "LscNode1"
+        },
+        {
+            "type": "XTM2Node",
+            "vendor": "SPRD",
+            "id": "XTM2Node1"
+        },
+        {
+            "type": "PSSFPUNode",
+            "vendor": "SPRD",
+            "id": "PSSFPUNode1"
+        }
+    ],
+
+    "rootNodes": ["SourceNode1"],
+
+    "linkages": [
+
+        {
+            "from": {
+                "name": "SourceNode1",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "AAAStatNode1",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AAAStatNode1",
+                "port": "ae"
+            },
+            "to": {
+                "name": "AeNode1",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AeNode1",
+                "port": "awb"
+            },
+            "to": {
+                "name": "AwbNode1",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AwbNode1",
+                "port": "af"
+            },
+            "to": {
+                "name": "AfNode1",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AAAStatNode1",
+                "port": "ae"
+            },
+            "to": {
+                "name": "AeNode1",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AeNode1",
+                "port": "awb"
+            },
+            "to": {
+                "name": "AwbNode1",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AwbNode1",
+                "port": "pssfpu"
+            },
+            "to": {
+                "name": "PSSFPUNode1",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "PSSFPUNode1",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+	{
+            "from": {
+                "name": "AAAStatNode1",
+                "port": "lsc"
+            },
+            "to": {
+                "name": "LscNode1",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "LscNode1",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AAAStatNode1",
+                "port": "af"
+            },
+            "to": {
+                "name": "AfNode1",
+                "port": "in1"
+            }
+        },
+        {
+            "from": {
+                "name": "AfNode1",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AAAStatNode1",
+                "port": "afl"
+            },
+            "to": {
+                "name": "AflNode1",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AflNode1",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AAAStatNode1",
+                "port": "xtm"
+            },
+            "to": {
+                "name": "XTM2Node1",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "XTM2Node1",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

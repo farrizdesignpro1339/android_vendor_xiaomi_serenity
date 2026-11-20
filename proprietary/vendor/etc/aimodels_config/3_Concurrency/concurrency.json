@@ -1,0 +1,19 @@
+{
+	"model_id":"concurrency",
+	"app_name_en":"Concurrency",
+	"app_name_zh":"模型并发",
+	"first_menu_list":3,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":false,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":0,
+	"master_load_modelname":"null",
+	"slave_load_modelname":"null",
+	"prompt_text_zh":[],
+	"prompt_text_en":[],
+	"prompt_image":[]
+}

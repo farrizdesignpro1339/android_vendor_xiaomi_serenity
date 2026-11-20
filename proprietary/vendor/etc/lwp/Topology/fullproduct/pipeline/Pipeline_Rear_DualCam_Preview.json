@@ -1,0 +1,191 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Rear_DualCam_Preview",
+    "stream": "preview_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "DualCamModeRouterNode",
+            "vendor": "SPRD",
+            "id": "prev_ModeRouter"
+        },
+        {
+            "type": "DualCamPrevRouterNode",
+            "vendor": "SPRD",
+            "id": "prev_DualCam"
+        },
+        {
+            "type": "DualPrevDepthNode",
+            "vendor": "SPRD",
+            "id": "prev_DualDepth"
+        },
+        {
+            "type": "DualPrevBlurNode",
+            "vendor": "SPRD",
+            "id": "prev_Dual_Blur"
+        },
+        {
+            "type": "FaceBeautyNode",
+            "vendor": "SPRD",
+            "id": "prev_FaceBeauty"
+        },
+        {
+            "type": "LptNode",
+            "vendor": "SPRD",
+            "id": "prev_Lpt"
+        },
+        {
+            "type": "DualCamScaleNode",
+            "vendor": "SPRD",
+            "id": "prev_scale"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode2"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "prev_DualCam",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "prev_DualCam",
+                "port": "in1"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_DualCam",
+                "port": "out0"
+            },
+            "to": {
+                "name": "prev_DualDepth",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_DualDepth",
+                "port": "out0"
+            },
+            "to": {
+                "name": "prev_Dual_Blur",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_DualDepth",
+                "port": "out1"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_Dual_Blur",
+                "port": "out0"
+            },
+            "to": {
+                "name": "prev_ModeRouter",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_ModeRouter",
+                "port": "bokehPort"
+            },
+            "to": {
+                "name": "prev_scale",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_scale",
+                "port": "bokehPort"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_ModeRouter",
+                "port": "portraitPort"
+            },
+            "to": {
+                "name": "prev_FaceBeauty",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_FaceBeauty",
+                "port": "out0"
+            },
+            "to": {
+                "name": "prev_scale",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_scale",
+                "port": "portraitPort"
+            },
+            "to": {
+                "name": "prev_Lpt",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_Lpt",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_DualCam",
+                "port": "out1"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

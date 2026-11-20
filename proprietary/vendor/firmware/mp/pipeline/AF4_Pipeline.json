@@ -1,0 +1,83 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "AF4_Pipeline",
+    "stream": "preview_4_stream",
+    "nodes": [
+        {
+            "type": "HAF4Node",
+            "vendor": "SPRD",
+            "id": "Haf4Node0"
+        },
+		{
+            "type": "HAF4Node",
+            "vendor": "SPRD",
+            "id": "Haf4Node3"
+        },
+        {
+            "type": "PD4Node",
+            "vendor": "SPRD",
+            "id": "Pd4Node0"
+        },
+		{
+            "type": "PD4Node",
+            "vendor": "SPRD",
+            "id": "Pd4Node3"
+        },
+        {
+            "type": "AF4Router",
+            "vendor": "SPRD",
+            "id": "AF4Router0"
+        },
+        {
+            "type": "AF4Router",
+            "vendor": "SPRD",
+            "id": "AF4Router3"
+        }
+    ],
+
+    "rootNodes": ["AF4Router0","AF4Router3"],
+
+    "linkages": [
+		{
+            "from": {
+                "name": "AF4Router0",
+                "port": "haf"
+            },
+            "to": {
+                "name": "Haf4Node0",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AF4Router0",
+                "port": "pd"
+            },
+            "to": {
+                "name": "Pd4Node0",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AF4Router3",
+                "port": "haf"
+            },
+            "to": {
+                "name": "Haf4Node3",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "AF4Router3",
+                "port": "pd"
+            },
+            "to": {
+                "name": "Pd4Node3",
+                "port": "in0"
+            }
+        }
+    ]
+}

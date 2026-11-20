@@ -1,0 +1,77 @@
+<cmds>
+<!--
+     SPDX-FileCopyrightText: 2022-2025 Unisoc (Shanghai) Technologies Co., Ltd
+     SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+     Copyright 2022-2025 Unisoc (Shanghai) Technologies Co., Ltd.
+     Licensed under the Unisoc General Software License, version 1.0 (the License);
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+     https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+     Software distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+     See the Unisoc General Software License, version 1.0 for more details.
+
+     Due to system permission restrictions such as SELinux,
+     there are explicit naming restrictions for prop names.
+     The defined rules for valid prop names must follow these patterns:
+     persist.vendor.cam.xxx.xxx.xxx...
+     vendor.cam.xxx.xxx.xxx...
+     debug.xxx.xxx.xxx...
+-->
+	<cmd>
+		<module>XTM3.x</module>
+		<name>关闭算法库平滑机制</name>
+		<prop>debug.isp.xtm.smooth</prop>
+		<desc>打开XTM内部smooth逻辑</desc>
+		<range>[0,1]</range>
+		<value_dec>0是关，1是开</value_dec>
+		<default>0</default>
+		<hint>仅用于XTM3.x适配平台</hint>
+		<enable>1</enable>
+	</cmd>
+	<cmd>
+		<module>HDR Sensor Debug</module>
+		<name>bypass 3dnr</name>
+		<prop>persist.vendor.cam.drv.debug.block.bypass</prop>
+		<desc>用于L8 HDR Sensor bypass 3dnr</desc>
+		<range></range>
+		<value_dec>0是关，3dnr是bypass</value_dec>
+		<default>0</default>
+		<hint></hint>
+		<enable>1</enable>
+	</cmd>
+	<cmd>
+		<module>HDR Sensor Debug</module>
+		<name>AE多路曝光开关</name>
+		<prop>persist.vendor.cam.isp.ae.cmd</prop>
+		<desc>总开关</desc>
+		<range>[on,off]</range>
+		<value_dec>off是关，on是开</value_dec>
+		<default>off</default>
+		<hint></hint>
+		<enable>1</enable>
+	</cmd>
+	<cmd>
+		<module>HDR Sensor Debug</module>
+		<name>AE设置多路曝光</name>
+		<prop>persist.vendor.cam.isp.ae.exp_gain</prop>
+		<desc>'7 20000 128 10000 256',表示设置曝光mode、normal路exp、gain、欠曝路exp、gain</desc>
+		<range>'8 -2.0',表示manual ev mode、欠曝路ev值</range>
+		<value_dec>'9 10 370 5 10 -0.5'，表示曝光表mode、ae index起始、终止、步长、间隔帧数、欠曝路ev值</value_dec>
+		<default>0</default>
+		<hint></hint>
+		<enable>1</enable>
+	</cmd>
+	<cmd>
+		<module>HDR Sensor Debug</module>
+		<name>bypass pdaf otp bin</name>
+		<prop>debug.isp.pdaf.ignore_otp</prop>
+		<desc>用于dump无otp bin的HDR Sensor pdaf raw</desc>
+		<range>[0,1]</range>
+		<value_dec>0是关，1是开</value_dec>
+		<default>0</default>
+		<hint></hint>
+		<enable>1</enable>
+	</cmd>
+</cmds>

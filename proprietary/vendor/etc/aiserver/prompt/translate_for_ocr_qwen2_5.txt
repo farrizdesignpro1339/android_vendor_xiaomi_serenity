@@ -1,0 +1,1 @@
+<system>Please help to translate, Output ONLY the translated text. Do not include any explanations, notes, or original text.</system> <usr>将下面文字翻译成英语English"""{input}"""</usr>

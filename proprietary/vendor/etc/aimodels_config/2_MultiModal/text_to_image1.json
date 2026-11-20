@@ -1,0 +1,28 @@
+{
+	"model_id":"text_to_image1",
+	"app_name_en":"Text-to-Image",
+	"app_name_zh":"文生图",
+	"first_menu_list":2,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":false,
+	"send_msg_type": "text",
+	"recv_msg_type" : "image",
+	"load_cost_time":40,
+	"master_load_modelname":"UniMnnLlmQwen2_5_1_5B_diffusion",
+	"slave_load_modelname":"n6pslave::UniMnnLlmQwen2_5_1_5B_diffusion",
+	"prompt_text_zh":[
+		"a little girl, hanfu, brown eyes, brown hair, smile, blush, chines syle headwear, outdoor, best qulity, 8k",
+		"a little boy, brown eyes, brown hair, smile, blush, sprots wear, running outdoor, best qulity, 8k"
+	],
+	"prompt_text_en":[
+		"a little girl, hanfu, brown eyes, brown hair, smile, blush, chines syle headwear, outdoor, best qulity, 8k",
+		"a little boy, brown eyes, brown hair, smile, blush, sprots wear, running outdoor, best qulity, 8k"
+	],
+	"prompt_image":[],
+	"option_model_name": [
+		{"ax_model":"LcmSd"}
+	]
+}

@@ -1,0 +1,17 @@
+{
+  "Profiles": [
+    {
+      "Name": "MaxIoPriority",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "blkio",
+            "Path": "foreground"
+          }
+        }
+      ]
+    }
+  ]
+}

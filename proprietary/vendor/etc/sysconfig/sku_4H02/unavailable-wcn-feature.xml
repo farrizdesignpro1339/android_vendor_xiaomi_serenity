@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions>
+    <unavailable-feature name="android.hardware.wifi" />
+    <unavailable-feature name="android.hardware.wifi.direct" />
+    <unavailable-feature name="android.hardware.wifi.passpoint" />
+    <unavailable-feature name="android.hardware.wifi.rtt" />
+    <unavailable-feature name="android.hardware.wifi.aware" />
+    <unavailable-feature name="android.hardware.bluetooth" />
+    <unavailable-feature name="android.hardware.bluetooth_le" />
+    <unavailable-feature name="android.hardware.bluetooth_le.channel_sounding" />
+    <unavailable-feature name="android.hardware.broadcastradio" />
+    <unavailable-feature name="android.hardware.location" />
+    <unavailable-feature name="android.hardware.location.gps" />
+    <unavailable-feature name="android.hardware.location.network" />
+</permissions>

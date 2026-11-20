@@ -1,0 +1,50 @@
+on charger-fs && property:ro.vendor.prodnv_path=*
+    mkdir /${ro.vendor.prodnv_path} 0775 system system
+    mount ext4 /dev/block/by-name/prodnv /${ro.vendor.prodnv_path}
+    mount_all /vendor/etc/fstab.charge_mode --early
+    chown system system /${ro.vendor.prodnv_path}
+    chmod 0775 /${ro.vendor.prodnv_path}
+    chmod 664 /sys/power/wakeup_count
+
+on charger-apexd
+    # Make sure that apexd is started in the default namespace
+    enter_default_mount_ns
+
+    start apexd
+
+    # Wait for apexd to finish activating APEXes before starting more processes.
+    wait_for_prop apexd.status activated
+    perform_apex_config
+
+on property:ro.debuggable=1
+    start console
+
+on charger
+    trigger charger-apexd
+    trigger charger-fs
+    wait_for_prop vendor.all.modules.ready 1
+    start vendor.charge
+    class_start thermal
+    class_start charged_server
+    class_start charge_aged_info_server
+
+service vendor.charge /vendor/bin/charge
+    group input system
+    user root
+    oneshot
+
+service vendor.thermald.chg /vendor/bin/thermald
+    class thermal
+    user root
+    group system
+
+service vendor.charged.server /vendor/bin/charged
+    class charged_server
+    user root
+    group system
+
+service vendor.charge_aged_info.server /vendor/bin/charge_aged_info
+    class charge_aged_info_server
+    user root
+    group system
+    oneshot

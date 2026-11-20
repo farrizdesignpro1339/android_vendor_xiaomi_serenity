@@ -1,0 +1,41 @@
+{
+    "feature": "ParamEnvValidator",
+    "tasks": [
+        {
+            "id": "PSSNode",
+            "action": "cap_pssnode_action",
+            "input": {
+                "format": "",
+                "size": "",
+                "count": "1",
+                "required": false
+            },
+            "output": {
+                "format": "",
+                "size": "",
+                "count": "1",
+                "required": false
+            },
+            "dependencies": []
+        },
+        {
+            "id": "TRGNode",
+            "action": "cap_trgnode_action",
+            "input": {
+                "format": "",
+                "size": "",
+                "count": "1",
+                "required": false
+            },
+            "output": {
+                "format": "",
+                "size": "",
+                "count": "1",
+                "required": false
+            },
+            "dependencies": [
+                "PSSNode"
+            ]
+        }
+    ]
+}

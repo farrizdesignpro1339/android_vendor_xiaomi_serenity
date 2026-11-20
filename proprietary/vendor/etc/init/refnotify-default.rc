@@ -1,0 +1,5 @@
+service vendor.refnotify-default /vendor/bin/hw/vendor.sprd.hardware.refnotify-service
+    class hal
+    user root
+    group system
+

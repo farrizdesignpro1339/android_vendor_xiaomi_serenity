@@ -1,0 +1,7 @@
+service vendor.soter-default /vendor/bin/hw/vendor.sprd.hardware.soter-service-lazy
+    interface aidl vendor.sprd.hardware.soter.ISoter/default
+    disabled
+    oneshot
+    class hal
+    user system
+    group system

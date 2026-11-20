@@ -1,0 +1,113 @@
+{
+  "case": "hdr",
+  "inputstream": {
+    "dimention": [
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer1"
+      },
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer2"
+      },
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer3"
+      },
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer4"
+      },
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer5"
+      }
+    ]
+  },
+  "outputstream": {
+    "dimention": [
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer1"
+      },
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer2"
+      },
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer3"
+      },
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer4"
+      },
+      {
+        "format": "raw",
+        "width": 3264,
+        "height": 2448,
+        "location": "buffer5"
+      }
+    ]
+  },
+  "params": [
+    {
+      "ps": [
+        {
+          "tag": "SPRD_TAG_ISCENE_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_ISCENE_3A_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_FD_SNAPSHOT",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_POSTPROC_CAP_XML_INFO",
+          "type": ["SNAPSHOT_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_BPU_IMGAE_AND_PARAM_MAP",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_IMGAE_AND_PARAM_MAP",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_XTM_VER",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_PSS_XTM_RESULT",
+          "type": ["PREVIEW_TYPE"]
+        },
+        {
+          "tag": "SPRD_TAG_XTM_SWITCH_INFO",
+          "type": ["PREVIEW_TYPE"]
+        }
+      ]
+    }
+  ]
+}

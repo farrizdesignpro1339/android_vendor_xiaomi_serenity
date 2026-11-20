@@ -1,0 +1,20 @@
+{
+	"model_id":"client_virtual_human",
+	"app_name_en":"Client Virtual Human",
+	"app_name_zh":"端侧数字人",
+	"first_menu_list":2,
+	"is_need_camera": false,
+	"is_need_audio": false,
+	"is_need_video": false,
+	"is_need_text_input": false,
+	"is_support_quick_flush":false,
+	"send_msg_type": "voice",
+	"recv_msg_type" : "video",
+	"load_cost_time":13,
+	"master_load_modelname":"",
+	"slave_load_modelname":"",
+	"prompt_text_zh":[],
+	"prompt_text_en":[],
+	"prompt_image":[],
+	"option_model_name": []
+}

@@ -1,0 +1,46 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Xiaomi_Rear_Auto_Preview_Raw",
+    "stream": "preview_raw_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "CalculateSharpnessNode",
+            "vendor": "SPRD",
+            "id": "CalcSharpness"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        }
+    ],
+    "rootNodes": ["SourceNode0"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "CalcSharpness",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "CalcSharpness",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

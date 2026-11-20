@@ -1,0 +1,86 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2026 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "name": "Pipeline_Rear_DualCam_Preview_3rd",
+    "stream": "preview_stream",
+    "nodes": [
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode0"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SourceNode2"
+        },
+        {
+            "type": "DummyNode",
+            "vendor": "SPRD",
+            "id": "SinkNode"
+        },
+        {
+            "type": "DualCamPrevRouterNode",
+            "vendor": "SPRD",
+            "id": "prev_DualCam"
+        },
+        {
+            "type": "DualCamPrev3rdNode",
+            "vendor": "SPRD",
+            "id": "prev_3rdalg"
+        }
+    ],
+    "rootNodes": ["SourceNode0","SourceNode2"],
+    "linkages": [
+        {
+            "from": {
+                "name": "SourceNode0",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "prev_DualCam",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "SourceNode2",
+                "port": "result_out"
+            },
+            "to": {
+                "name": "prev_DualCam",
+                "port": "in1"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_DualCam",
+                "port": "out0"
+            },
+            "to": {
+                "name": "prev_3rdalg",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_3rdalg",
+                "port": "out0"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        },
+        {
+            "from": {
+                "name": "prev_DualCam",
+                "port": "out1"
+            },
+            "to": {
+                "name": "SinkNode",
+                "port": "in0"
+            }
+        }
+    ]
+}

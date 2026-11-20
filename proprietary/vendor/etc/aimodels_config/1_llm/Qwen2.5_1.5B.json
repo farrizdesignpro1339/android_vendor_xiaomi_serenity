@@ -1,0 +1,35 @@
+{
+	"model_id":"Qwen2.5_1.5B",
+	"app_name_en":"Qwen2.5_1.5B",
+	"app_name_zh":"Qwen2.5_1.5B",
+	"first_menu_list":1,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":true,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":13,
+	"master_load_modelname":"UniMnnLlmQwen2_5_1_5B",
+	"slave_load_modelname":"n6pslave::UnillmQwen2_5_1_5",
+	"prompt_text_zh":[
+		"请介绍一下你自己",
+		"什么是大语言模型",
+		"介绍一下中国的春节习俗",
+		"介绍一下人工智能在人类发展历史中的作用",
+		"如果人类和动物可以自由交流，世界会变成什么样？"
+	],
+	"prompt_text_en":[
+		"hello,please introduce yourself for me.",
+		"What is the capital of spain, recommend me three kinds of food there",
+		"Introduce Gaudi\'s architechture in ShangHai",
+		"Introduce the 5G technology",
+		"how to create and manipulate binary tree data structures in python?"
+	],
+	"prompt_image":[],
+	"option_model_name": [
+		{"master_cpu":"UniMnnLlmQwen2_5_1_5B"},
+		{"slave_cpu":"n6pslave::UniMnnLlmQwen2_5_1_5B"}
+	]
+}

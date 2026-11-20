@@ -1,0 +1,39 @@
+{
+	"model_id":"deepseek_R1",
+	"app_name_en":"Deepseek-R1(full)",
+	"app_name_zh":"Deepseek-R1(满血版)",
+	"first_menu_list":5,
+	"is_need_camera": false,
+	"is_need_audio": true,
+	"is_need_video": false,
+	"is_need_text_input": true,
+	"is_support_quick_flush":true,
+	"send_msg_type": "text",
+	"recv_msg_type" : "text",
+	"load_cost_time":40,
+	"master_load_modelname":"cloud-DeepSeek-R1",
+	"slave_load_modelname":"cloud-DeepSeek-R1",
+	"prompt_text_zh":[
+		"请介绍一下你自己",
+		"介绍一下中国的春节习俗",
+		"介绍一下人工智能在人类发展历史中的作用",
+		"如果人类和动物可以自由交流，世界会变成什么样？",
+		"介绍一下巴塞罗那特色",
+		"python实现快速排序算法",
+		"求解方程:3x+5=11",
+		"求解方程组:x+y=10,2x-y=5",
+		"求数列2,4,6,8,10的平均数"
+	],
+	"prompt_text_en":[
+		"Please introduce yourself for me",
+		"Introduce the Chinese Spring Festival",
+		"Introduce the role of AI in the history of human development",
+		"What would the world look like if humans and animals could communicate freely？",
+		"Introduce the special features of Barcelona",
+		"Write a quick sort program in python",
+		"Slove the equation: 3x+5=11",
+		"Solve the system of equations: x+y=10,2x-y=5",
+		"Convert 0.75 to a fraction"
+	],
+	"prompt_image":[]
+}

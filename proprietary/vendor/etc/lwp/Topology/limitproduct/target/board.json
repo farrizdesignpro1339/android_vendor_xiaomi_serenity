@@ -1,0 +1,135 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2023 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "id": "TargetBoard",
+    "usecase": {
+        "TargetList": [
+            {
+                "name": "CAMERA_EIS_BOARD_PARAM",
+                "value": "ums9230-6",
+                "description": "eis_param",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_MFSR_CAPTURE",
+                "value": "false",
+                "description": "mfsr_capture_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_MOTION_PHONE",
+                "value": "false",
+                "description": "motion_phone_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_LMK_CAMERA_POWERHINT",
+                "value": "true",
+                "description": "set_power_hint_high_performance",
+                "group": "reprocessing"
+            },
+            {
+                 "name": "TARGET_BOARD_BOKEH_HDRMFNR_SUPPORT",
+                 "value": "3",
+                 "description": "0bothoff_1mfnron/hdroff_2mfnroff/hdron_3bothon",
+                 "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_PORTRAIT_SINGLE_HDRMFNR_SUPPORT",
+                "value": "0",
+                "description": "0bothoff_1mfnron/hdroff_2mfnroff/hdron_3bothon",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_BOKEH_MODE_SUPPORT",
+                "value": "false",
+                "description": "bokeh_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_PORTRAIT_SUPPORT",
+                "value": "false",
+                "description": "portrait_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_SUPPORT_FRONT_NIGHT_ALGO",
+                "value": "mfnr",
+                "description": "front_night_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_SUPPORT_REAR_NIGHT_ALGO",
+                "value": "mfnr",
+                "description": "rear_night_scene_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_NIGHT_FLASH_SUPPORT",
+                "value": "0",
+                "description": "0close_1back_2front_3backandfront",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_MFNR_VERSION",
+                "value": "6.0",
+                "description": "mfnr_version",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_CHDR_SUPPORT",
+                "value": "0",
+                "description": "chdr_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_HDR_VERSION",
+                "value": "2.0",
+                "description": "hdr_version",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_BACK_UTRL_RES_SUPPORT",
+                "value": "0",
+                "description": "back_high_resolution_mode_support",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_FRONT_UTRL_RES_SUPPORT",
+                "value": "0",
+                "description": "front_high_resolution_mode_support",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_FRONT_TIMELAPSE_ENABLE",
+                "value": "true",
+                "description": "front_timelapse_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAM_FAST_THUMB",
+                "value": "111011111",
+                "description": "fast.thumb",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAM_SHOT2SHOT_ENABLE",
+                "value": "11",
+                "description": "shot2shot",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_LLDR_ENABLE",
+                "value": "false",
+                "description": "lldr_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_DUALCAM_ZOOM_ENABLE",
+                "value": "0",
+                "description": "0 no support ,1 support normal zoom, 2 support insensorzoom",
+                "group": "reprocessing"
+            }
+        ]
+    }
+}

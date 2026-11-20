@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<BWUD_20585>
+	<block_header>
+		<version type="u8">
+			<version_major>0</version_major>
+			<version_minor>0</version_minor>
+			<version_micro>0</version_micro>
+			<reserved len="5">0</reserved>
+		</version>
+		<block_info type="u32">
+			<block_id>20585</block_id>
+			<bypass range="[0,1]">0</bypass>
+			<smart_size>160</smart_size>
+			<block_size>20</block_size>
+			<modify_time>2306301731</modify_time>
+			<trigger_flag range="[0,1]">0</trigger_flag>
+			<reserved len="2">0</reserved>
+		</block_info>
+	</block_header>
+	<SMART>
+		<enable type="u32">1</enable>
+		<smart_id>38</smart_id>
+		<block_id>20585</block_id>
+		<component_num>1</component_num>
+		<reserved len="2">0</reserved>
+		<component_cfg>
+			<id type="u32">0</id>
+			<type>0</type>
+			<offset>0</offset>
+			<size>0</size>
+			<x_type>3</x_type>
+			<y_type>0</y_type>
+			<default_val type="int32">0</default_val>
+			<use_flash_val>0</use_flash_val>
+			<flash_val>0</flash_val>
+			<section_num type="u32">4</section_num>
+			<func_num>3</func_num>
+			<reserved len="3">0</reserved>
+			<isp_range_new>
+				<min type="int16">0</min>
+				<max>0</max>
+				<reserved len="2">0</reserved>
+			</isp_range_new>
+			<isp_range_new>
+				<min type="int16">0</min>
+				<max>0</max>
+				<reserved len="2">0</reserved>
+			</isp_range_new>
+			<isp_range_new>
+				<min type="int16">0</min>
+				<max>0</max>
+				<reserved len="2">0</reserved>
+			</isp_range_new>
+			<isp_range_new>
+				<min type="int16">0</min>
+				<max>0</max>
+				<reserved len="2">0</reserved>
+			</isp_range_new>
+			<func_new>
+				<sample_num type="u32">1</sample_num>
+				<reserved>0</reserved>
+				<sample_new>
+					<x type="int16">128</x>
+					<y>0</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+			</func_new>
+			<func_new>
+				<sample_num type="u32">1</sample_num>
+				<reserved>0</reserved>
+				<sample_new>
+					<x type="int16">0</x>
+					<y>0</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+			</func_new>
+			<func_new>
+				<sample_num type="u32">1</sample_num>
+				<reserved>0</reserved>
+				<sample_new>
+					<x type="int16">0</x>
+					<y>0</y>
+					<reserved len="2">0</reserved>
+				</sample_new>
+			</func_new>
+		</component_cfg>
+	</SMART>
+	<level_num type="u32" lsize="16">1</level_num>
+	<sensor_bwu_bwd_level level="1" gain="1.00">
+		<bwu1>
+			<bwu1_bypass type="u8">0</bwu1_bypass>
+			<bwu1_bitshift>2</bwu1_bitshift>
+			<reserved len="2">0</reserved>
+		</bwu1>
+		<bwu2>
+			<bwu2_bypass type="u8">0</bwu2_bypass>
+			<bwu2_outbits>0</bwu2_outbits>
+			<reserved len="2">0</reserved>
+		</bwu2>
+		<bwd1>
+			<bwd1_bypass type="u8">0</bwd1_bypass>
+			<bwd1_outbits>8</bwd1_outbits>
+			<reserved len="2">0</reserved>
+		</bwd1>
+		<bwd2>
+			<bwd2_bypass type="u8">0</bwd2_bypass>
+			<bwd2_outbits>8</bwd2_outbits>
+			<reserved len="2">0</reserved>
+		</bwd2>
+	</sensor_bwu_bwd_level>
+</BWUD_20585>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?Declaration Don't modify the file manually,  its created automaticlly?>
+<Entry>
+  <EventId_Version version="1.0"/>
+  <Event id="103000008" EventType="FAULT" EventLevel="GENERAL" EventName="kernel exception event fault recorder">
+    <Param id="0" name="module_name" type="varchar" length="16"/>
+    <Param id="1" name="log" type="varchar" length="128"/>
+  </Event>
+  <Event id="103000009" EventType="FAULT" EventLevel="DEBUG" EventName="kernel exception event debug recorder">
+    <Param id="0" name="module_name" type="varchar" length="16"/>
+    <Param id="1" name="log" type="varchar" length="128"/>
+  </Event>
+  <Event id="103000020" EventType="FAULT" EventLevel="DEBUG" EventName="foldable event logging for foldable devices">
+    <Param id="0" name="module_name" type="varchar" length="16"/>
+    <Param id="1" name="log" type="varchar" length="128"/>
+  </Event>
+  <Event id="104000303" EventType="FAULT" EventLevel="DEBUG" EventName="charge input limit current">
+    <Param id="0" name="ktime" type="long"/>
+    <Param id="1" name="charge_limit_cur" type="int"/>
+    <Param id="2" name="input_limit_cur" type="int"/>
+  </Event>
+  <Event id="104000304" EventType="FAULT" EventLevel="DEBUG" EventName="battery information">
+    <Param id="0" name="ktime" type="long"/>
+    <Param id="1" name="batt_rm_uah" type="int"/>
+    <Param id="2" name="unadj_cc_uah" type="int"/>
+    <Param id="3" name="vbat_vol_mv" type="int"/>
+    <Param id="4" name="vbat_cur_ma" type="int"/>
+  </Event>
+  <Event id="104000830" EventType="FAULT" EventLevel="DEBUG" EventName="Modem_LTE">
+    <Param id="0" name="type" type="varchar" length="64"/>
+    <Param id="1" name="message" type="varchar" length="1024"/>
+  </Event>
+  <Event id="104000831" EventType="FAULT" EventLevel="DEBUG" EventName="Modem_NR">
+    <Param id="0" name="type" type="varchar" length="64"/>
+    <Param id="1" name="message" type="varchar" length="1024"/>
+  </Event>
+  <Event id="104001001" EventType="FAULT" EventLevel="DEBUG" EventName="cp_log_state">
+    <Param id="0" name="name" type="varchar" length="64"/>
+    <Param id="1" name="stat" type="varchar" length="16"/>
+  </Event>
+  <Event id="104001401" EventType="FAULT" EventLevel="DEBUG" EventName="power domain">
+    <Param id="0" name="ebInfo" type="varchar" length="256"/>
+    <Param id="1" name="pdInfo" type="varchar" length="256"/>
+  </Event>
+  <Event id="104001901" EventType="FAULT" EventLevel="DEBUG" EventName="ddr info">
+    <Param id="0" name="ddr_freq" type="long"/>
+    <Param id="1" name="ddr_freq_time" type="long"/>
+    <Param id="2" name="ddr_state" type="varchar" length="128"/>
+    <Param id="3" name="ddr_state_time" type="long"/>
+  </Event>
+  <Event id="104002201" EventType="FAULT" EventLevel="DEBUG" EventName="thermal_info">
+    <Param id="0" name="temp" type="varchar" length="16"/>
+  </Event>
+  <Event id="104002801" EventType="FAULT" EventLevel="DEBUG" EventName="memory info">
+    <Param id="0" name="meminfo" type="varchar" length="256"/>
+  </Event>
+  <Event id="105001001" EventType="FAULT" EventLevel="GENERAL" EventName="Sensor Assert" EventCode="Assert">
+    <Param id="0" name="type" type="varchar" length="64"/>
+    <Param id="1" name="message" type="varchar" length="256"/>
+  </Event>
+  <Event id="107000001" EventType="FAULT" EventLevel="DEBUG" EventName="regulator event info">
+    <Param id="0" name="task" type="varchar" length="64"/>
+    <Param id="1" name="pid" type="varchar" length="64"/>
+    <Param id="2" name="vsel_reg" type="varchar" length="64"/>
+  </Event>
+  <Event id="107000002" EventType="FAULT" EventLevel="GENERAL" EventName="UFS debugbus dump count" EventCode="UfsDump">
+    <Param id="0" name="ufs_debug_bus_dump_cnt" type="varchar" length="64"/>
+  </Event>
+  <Event id="107000003" EventType="FAULT" EventLevel="DEBUG" EventName="Camera ISP timeout">
+    <Param id="0" name="task" type="varchar" length="64"/>
+    <Param id="1" name="pid" type="varchar" length="8"/>
+    <Param id="2" name="func" type="varchar" length="64"/>
+    <Param id="3" name="val" type="varchar" length="64"/>
+  </Event>
+  <Event id="107000004" EventType="FAULT" EventLevel="DEBUG" EventName="RTC event">
+    <Param id="0" name="flag" type="varchar" length="32"/>
+    <Param id="1" name="info" type="varchar" length="256"/>
+  </Event>
+  <Event id="109000001" EventType="FAULT" EventLevel="GENERAL" EventName="CP2 Assert" EventCode="Assert">
+    <Param id="0" name="type" type="varchar" length="64"/>
+    <Param id="1" name="message" type="varchar" length="256"/>
+  </Event>
+  <Event id="109000002" EventType="FAULT" EventLevel="GENERAL" EventName="GNSS Assert" EventCode="Assert">
+    <Param id="0" name="type" type="varchar" length="64"/>
+    <Param id="1" name="message" type="varchar" length="256"/>
+  </Event>
+  <Event id="109000003" EventType="FAULT" EventLevel="GENERAL" EventName="WCN Assert" EventCode="WCN">
+    <Param id="0" name="wcn_assert" type="int"/>
+    <Param id="1" name="message" type="varchar" length="256"/>
+  </Event>
+  <Event id="109000004" EventType="FAULT" EventLevel="GENERAL" EventName="WCN Event" EventCode="WCN">
+    <Param id="0" name="chr_event" type="int"/>
+  </Event>
+  <Event id="110000001" EventType="FAULT" EventLevel="GENERAL" EventName="Modem Assert" EventCode="Assert" DedupType="1">
+    <Param id="0" name="type" type="varchar" length="64"/>
+    <Param id="1" name="message" type="varchar" length="256"/>
+  </Event>
+  <Event id="112001001" EventType="FAULT" EventLevel="GENERAL" EventName="ADI error" EventCode="ADI">
+    <Param id="0" name="err_type" type="int"/>
+    <Param id="1" name="task" type="varchar" length="64"/>
+    <Param id="2" name="PID" type="int"/>
+    <Param id="3" name="reg" type="varchar" length="64"/>
+  </Event>
+  <Event id="112002001" EventType="FAULT" EventLevel="GENERAL" EventName="OCP error" EventCode="OCP">
+    <Param id="0" name="task" type="varchar" length="64"/>
+    <Param id="1" name="PID" type="int"/>
+    <Param id="2" name="critical" type="varchar" length="128"/>
+    <Param id="3" name="ktime" type="long"/>
+  </Event>
+</Entry>

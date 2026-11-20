@@ -1,0 +1,93 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2023 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "id": "TargetBoard",
+    "usecase": {
+        "TargetList": [
+            {
+                "name": "CAMERA_EIS_BOARD_PARAM",
+                "value": "ums9230-4",
+                "description": "eis_param",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_MFSR_CAPTURE",
+                "value": "true",
+                "description": "mfsr_capture_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_SUPPORT_EXPOSURE_SENSITIVITY",
+                "value": "true",
+                "description": "exposure_sensitivity_camerago",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_MOTION_PHONE",
+                "value": "true",
+                "description": "motion_phone_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAM_OPTICSZOOM_CALI_MODE",
+                "value": "3",
+                "description": "opticszoom_cali_mode",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_MULTI_CAM",
+                "value": "true",
+                "description": "multicamera_enable",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_NEWDUALVIEW_SUPPORT",
+                "value": "1",
+                "description": "0close_1open_w+sw_shared_electricity_2open_f+w",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_DPF_EN",
+                "value": "1",
+                "description": "0close_DPF 1open_DPF",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_BOKEH_HDRMFNR_SUPPORT",
+                "value": "3",
+                "description": "0bothoff_1mfnron/hdroff_2mfnroff/hdron_3bothon",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_PORTRAIT_SINGLE_HDRMFNR_SUPPORT",
+                "value": "3",
+                "description": "0bothoff_1mfnron/hdroff_2mfnroff/hdron_3bothon",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAMERA_FRONT_TIMELAPSE_ENABLE",
+                "value": "true",
+                "description": "front_timelapse_enable",
+                "group": "reprocessing"
+            },
+			{
+                "name": "TARGET_BOARD_CAMERA_AUTO_UTRLRES",
+                "value": "1001",
+                "description": "cam_auto_utrlres_flag",
+                "group": "cap"
+            },
+            {
+                "name": "TARGET_BOARD_CAM_FAST_THUMB",
+                "value": "111011111",
+                "description": "fast.thumb",
+                "group": "reprocessing"
+            },
+            {
+                "name": "TARGET_BOARD_CAM_SHOT2SHOT_ENABLE",
+                "value": "111001111",
+                "description": "shot2shot",
+                "group": "reprocessing"
+            }
+        ]
+    }
+}

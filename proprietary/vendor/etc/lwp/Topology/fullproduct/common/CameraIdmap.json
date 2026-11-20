@@ -1,0 +1,36 @@
+{
+    "DataLicense" : "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright" : "2022-2024 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "IdList" :[
+      {
+        "desc" : "MultiCameraImplV2",
+        "logicId" : 36,
+        "phyIds" : [ 0, 2, 3 ]
+
+      },
+      {
+        "desc" : "Cam3DualCam",
+        "logicId" : 38,
+        "phyIds" : [ 0, 2 ]
+
+      },
+      {
+        "desc" : "Cam3DualCam",
+        "logicId" : 24,
+        "phyIds" : [ 0, 2 ]
+
+      },
+      {
+        "desc" : "ultra",
+        "logicId" : 35,
+        "phyIds" : [2]
+
+      },
+      {
+        "desc" : "portrait",
+        "logicId" : 42,
+        "phyIds" : [1]
+
+      }
+    ]
+}

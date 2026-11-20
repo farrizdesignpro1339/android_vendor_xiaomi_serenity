@@ -1,0 +1,153 @@
+{
+    "DataLicense": "LicenseRef-Unisoc-General-1.0",
+    "DataCopyright": "2022-2025 Unisoc (Shanghai) Technologies Co., Ltd.",
+    "nodes": [
+		{
+			"type": "HAF6Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": ["in0"],
+			"outputs": ["out0"],
+			"priv": {
+				"so_name": "libcamAf6.x.so"
+			}
+		},
+		{
+			"type": "PD6Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": ["in0"],
+			"outputs": ["out0"],
+			"priv": {
+				"so_name": "libcamPd6.x.so"
+			}
+		},
+		{
+			"type": "HAF5Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": ["in0"],
+			"outputs": ["out0"],
+			"priv": {
+				"so_name": "libcamAF5.x.so"
+			}
+		},
+		{
+			"type": "PD5Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": ["in0"],
+			"outputs": ["out0"],
+			"priv": {
+				"so_name": "libcamPD5.x.so",
+				"aipd_support": "0"
+			}
+		},
+		{
+			"type": "HAF4Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": ["in0"],
+			"outputs": ["out0"],
+			"priv": {
+				"so_name": ""
+			}
+		},
+		{
+			"type": "PD4Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": ["in0"],
+			"outputs": ["out0"],
+			"priv": {
+				"so_name": ""
+			}
+		},
+        {
+			"type": "AIPD5Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": ["in0"],
+			"outputs": ["out0"],
+			"priv": {
+				"so_name": "libcamAIPD5.x.so"
+			}
+		},
+	    {
+			"type": "AIPD6Node",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": ["in0"],
+			"outputs": ["out0"],
+			"priv": {
+				"so_name": "libcamAIPD6.x.so"
+			}
+		},
+		{
+			"type": "AF4Router",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": ["in0"],
+			"outputs": ["haf", "pd"],
+			"priv": {
+				"AF4Router0": "phyCam0",
+				"AF4Router3": "phyCam3"
+			}
+		},
+		{
+			"type": "AF5Router",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": ["in0"],
+			"outputs": ["haf", "pd", "pdi"],
+			"priv": {
+				"AF5Router0": "phyCam0",
+				"AF5Router3": "phyCam3"
+			}
+		},
+		{
+			"type": "AF6Router",
+			"vendor": "SPRD",
+			"node_major": 1,
+			"node_minor": 0,
+			"data_major": 1,
+			"data_minor": 0,
+			"inputs": ["in0"],
+			"outputs": ["haf", "pd", "pdi"],
+			"priv": {
+				"AF6Router0": "phyCam0",
+				"AF6Router3": "phyCam3"
+			}
+		}
+    ]
+}

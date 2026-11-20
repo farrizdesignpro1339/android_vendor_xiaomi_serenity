@@ -1,0 +1,2519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd
+SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+
+Copyright 2022-2023 Unisoc (Shanghai) Technologies Co., Ltd.
+Licensed under the Unisoc General Software License, version 1.0 (the License);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+Software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+See the Unisoc General Software License, version 1.0 for more details.
+-->
+<AF_16435>
+	<block_header>
+		<version type="u8">
+			<version_major>0</version_major>
+			<version_minor>0</version_minor>
+			<version_micro>0</version_micro>
+			<reserved len="5">0</reserved>
+		</version>
+		<block_info type="u32">
+			<block_id>16435</block_id>
+			<bypass range="[0,1]">0</bypass>
+			<smart_size>0</smart_size>
+			<block_size>11264</block_size>
+			<modify_time>0</modify_time>
+			<trigger_flag range="[0,1]">0</trigger_flag>
+			<reserved len="2">0</reserved>
+		</block_info>
+	</block_header>
+	<magic_begin type="u32" description="0xAFAFAFAF">2947526575</magic_begin>
+	<tuning_version type="int32" description="0x00040400">263168</tuning_version>
+	<lens_info>
+		<rand idx="0">
+			<inf_downward type="u16">134</inf_downward>
+			<inf_horizontal>98</inf_horizontal>
+			<inf_upward>102</inf_upward>
+			<macro_downward>796</macro_downward>
+			<macro_horizontal>730</macro_horizontal>
+			<macro_upward>838</macro_upward>
+			<reserved len="20">0</reserved>
+		</rand>
+		<rand idx="1">
+			<inf_downward type="u16">126</inf_downward>
+			<inf_horizontal>114</inf_horizontal>
+			<inf_upward>106</inf_upward>
+			<macro_downward>808</macro_downward>
+			<macro_horizontal>766</macro_horizontal>
+			<macro_upward>838</macro_upward>
+			<reserved len="20">0</reserved>
+		</rand>
+		<rand idx="2">
+			<inf_downward type="u16">166</inf_downward>
+			<inf_horizontal>138</inf_horizontal>
+			<inf_upward>118</inf_upward>
+			<macro_downward>786</macro_downward>
+			<macro_horizontal>810</macro_horizontal>
+			<macro_upward>730</macro_upward>
+			<reserved len="20">0</reserved>
+		</rand>
+		<rand idx="3">
+			<inf_downward type="u16">118</inf_downward>
+			<inf_horizontal>94</inf_horizontal>
+			<inf_upward>86</inf_upward>
+			<macro_downward>788</macro_downward>
+			<macro_horizontal>754</macro_horizontal>
+			<macro_upward>790</macro_upward>
+			<reserved len="20">0</reserved>
+		</rand>
+		<reserved idx="0">
+			<inf_downward type="u16">0</inf_downward>
+			<inf_horizontal>0</inf_horizontal>
+			<inf_upward>0</inf_upward>
+			<macro_downward>0</macro_downward>
+			<macro_horizontal>0</macro_horizontal>
+			<macro_upward>0</macro_upward>
+			<reserved len="20">0</reserved>
+		</reserved>
+		<reserved idx="1">
+			<inf_downward type="u16">0</inf_downward>
+			<inf_horizontal>0</inf_horizontal>
+			<inf_upward>0</inf_upward>
+			<macro_downward>0</macro_downward>
+			<macro_horizontal>0</macro_horizontal>
+			<macro_upward>0</macro_upward>
+			<reserved len="20">0</reserved>
+		</reserved>
+		<reserved idx="2">
+			<inf_downward type="u16">0</inf_downward>
+			<inf_horizontal>0</inf_horizontal>
+			<inf_upward>0</inf_upward>
+			<macro_downward>0</macro_downward>
+			<macro_horizontal>0</macro_horizontal>
+			<macro_upward>0</macro_upward>
+			<reserved len="20">0</reserved>
+		</reserved>
+		<reserved idx="3">
+			<inf_downward type="u16">0</inf_downward>
+			<inf_horizontal>0</inf_horizontal>
+			<inf_upward>0</inf_upward>
+			<macro_downward>0</macro_downward>
+			<macro_horizontal>0</macro_horizontal>
+			<macro_upward>0</macro_upward>
+			<reserved len="20">0</reserved>
+		</reserved>
+		<reserved idx="4">
+			<inf_downward type="u16">0</inf_downward>
+			<inf_horizontal>0</inf_horizontal>
+			<inf_upward>0</inf_upward>
+			<macro_downward>0</macro_downward>
+			<macro_horizontal>0</macro_horizontal>
+			<macro_upward>0</macro_upward>
+			<reserved len="20">0</reserved>
+		</reserved>
+		<reserved idx="5">
+			<inf_downward type="u16">0</inf_downward>
+			<inf_horizontal>0</inf_horizontal>
+			<inf_upward>0</inf_upward>
+			<macro_downward>0</macro_downward>
+			<macro_horizontal>0</macro_horizontal>
+			<macro_upward>0</macro_upward>
+			<reserved len="20">0</reserved>
+		</reserved>
+		<lens_inf>126</lens_inf>
+		<lens_macro>840</lens_macro>
+		<lens_mc_min>30</lens_mc_min>
+		<lens_mc_max>1010</lens_mc_max>
+		<lens_hysteresis>0</lens_hysteresis>
+		<lens_max_move_one_frame>200</lens_max_move_one_frame>
+		<lens_hyper>138</lens_hyper>
+		<far_ratio>7</far_ratio>
+		<near_ratio>5</near_ratio>
+		<downward_ratio>1</downward_ratio>
+		<upward_ratio>3</upward_ratio>
+		<lens_sky>118</lens_sky>
+		<reserved1 len="20">0</reserved1>
+	</lens_info>
+	<roi_ratio>
+		<side_face_enable type="u16" description="Side face face detection switch" range="[0,1]" freq="often" default="0">1</side_face_enable>
+		<flash_face_enable description="Face focus switch under flash" range="[0,1]" freq="often" default="1">1</flash_face_enable>
+		<touch_face_enable description="Face focus switch under touch" range="[0,1]" freq="often" default="1">1</touch_face_enable>
+		<face_roi_extend_enable description="Face circle drop-down switch" range="[0,1]" freq="often" default="1">1</face_roi_extend_enable>
+		<touch>
+			<ratio_1x type="u16" description="1X ROI reduction or amplification" range="[0,4000]" freq="often" default="1250">1000</ratio_1x>
+			<ratio_1xto2x description="1-2X ROI reduction or amplification" range="[0,4000]" freq="often" default="1400">1400</ratio_1xto2x>
+			<ratio_2xto3x description="2-3X ROI reduction or amplification" range="[0,4000]" freq="often" default="1800">1800</ratio_2xto3x>
+			<ratio_3xupper description="3Xupper ROI reduction or amplification" range="[0,4000]" freq="often" default="2200">2200</ratio_3xupper>
+			<ratio_4xto6x description="4-6X ROI reduction or amplification" range="[0,4000]" freq="often" default="0">0</ratio_4xto6x>
+			<ratio_6xto8x description="6-8X ROI reduction or amplification" range="[0,4000]" freq="often" default="0">0</ratio_6xto8x>
+			<ratio_8xto10x description="8-10X ROI reduction or amplification" range="[0,4000]" freq="often" default="0">0</ratio_8xto10x>
+			<ratio_10xupper description="10Xupper ROI reduction or amplification" range="[0,4000]" freq="often" default="0">0</ratio_10xupper>
+			<reserved type="u32" len="4">0</reserved>
+		</touch>
+		<face>
+			<face_num_thr_small type="u16" description="small face threshold" range="[0,100]" freq="less" default="0">90</face_num_thr_small>
+			<face_num_thr_big description="big face threshold" range="[0,100]" freq="less" default="0">20</face_num_thr_big>
+			<face_ratio_small description="small face reduction or amplification" range="[0,1000]" freq="often" default="900">900</face_ratio_small>
+			<face_ratio_middle description="middle face reduction or amplification" range="[0,1000]" freq="often" default="900">900</face_ratio_middle>
+			<face_ratio_big description="big face reduction or amplification" range="[0,1000]" freq="often" default="900">900</face_ratio_big>
+			<face_ratio_width description="face width reduction" range="[0,1000]" freq="often" default="950">950</face_ratio_width>
+			<face_ratio_extend description="The small ratio of enlargement under the face" range="[0,4000]" freq="often" default="3000">3000</face_ratio_extend>
+			<face_ratio_max description="The maximum proportion of face expansion" range="[0,100]" freq="often" default="100">100</face_ratio_max>
+			<face_ratio_finer_extend_w>3000</face_ratio_finer_extend_w>
+			<face_ratio_finer_extend_h>4000</face_ratio_finer_extend_h>
+			<reserved len="12">0</reserved>
+		</face>
+		<roi_ratio_flash description="Zoom factor for ROI region in flash mode" range="[0,100]" freq="less" default="40">33</roi_ratio_flash>
+		<roi_ratio_caf description="Scaling parameter of ROI region under CDAF" range="[0,100]" freq="often" default="40">33</roi_ratio_caf>
+		<roi_pd_block_x description="pd region divides the number of blocks in the x direction" range="[0,10]" freq="often" default="1">1</roi_pd_block_x>
+		<roi_pd_block_y description="pd region divides the number of blocks in the y direction" range="[0,10]" freq="often" default="1">1</roi_pd_block_y>
+		<flash_face_min_thr description="Minimum face side length threshold in Flash" range="[0,1000]" freq="often" default="380">200</flash_face_min_thr>
+		<ratio_min_face>
+			<ratio_1x type="u16">1000</ratio_1x>
+			<ratio_1xto2x>900</ratio_1xto2x>
+			<ratio_2xto3x>800</ratio_2xto3x>
+			<ratio_3xupper>700</ratio_3xupper>
+			<ratio_4xto6x>0</ratio_4xto6x>
+			<ratio_6xto8x>0</ratio_6xto8x>
+			<ratio_8xto10x>0</ratio_8xto10x>
+			<ratio_10xupper>0</ratio_10xupper>
+			<reserved len="2">0</reserved>
+		</ratio_min_face>
+		<face_roi_finer_extend_enable>0</face_roi_finer_extend_enable>
+	</roi_ratio>
+	<weight_table>
+		<touch_af>
+			<block_num_x type="u8" description="The number of blocks divided in the x direction of the touch_af focus area" range="[0,10]" freq="often" default="3">3</block_num_x>
+			<block_num_y description="The number of blocks divided in the y direction of the touch_af focus area" range="[0,10]" freq="often" default="3">3</block_num_y>
+			<weight_value len="40" description="The weight parameter of touch_af" range="[0,20]" freq="less" default="0">
+				<table> 1 1 1 1 12 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+			</weight_value>
+			<reserved len="13">0</reserved>
+		</touch_af>
+		<face_af>
+			<block_num_x type="u8" description="The number of blocks divided in the x direction of the face_af focus area" range="[0,10]" freq="often" default="0">3</block_num_x>
+			<block_num_y description="The number of blocks divided in the y direction of the face_af focus area" range="[0,10]" freq="often" default="0">9</block_num_y>
+			<weight_value len="40" description="The weight parameter of face_af" range="[0,20]" freq="less" default="0">
+				<table> 1 2 1 1 2 1 0 4 0 0 1 0 0 0 0 0 1 0 1 2 1 1 2 1 1 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+			</weight_value>
+			<reserved len="13">0</reserved>
+		</face_af>
+		<flash_af>
+			<block_num_x type="u8" description="The number of blocks divided in the x direction of the flash_af focus area" range="[0,10]" freq="often" default="0">3</block_num_x>
+			<block_num_y description="The number of blocks divided in the year direction of the flash_af focus area" range="[0,10]" freq="often" default="0">3</block_num_y>
+			<weight_value len="40" description="The weight parameter of flash_af" range="[0,20]" freq="less" default="0">
+				<table> 1 2 1 2 8 2 1 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+			</weight_value>
+			<reserved len="13">0</reserved>
+		</flash_af>
+		<center_af>
+			<block_num_x type="u8" description="The number of blocks divided in the x direction of the center_af focus area" range="[0,10]" freq="often" default="0">3</block_num_x>
+			<block_num_y description="The number of blocks divided in the x direction of the center_af focus area" range="[0,10]" freq="often" default="0">3</block_num_y>
+			<weight_value len="40" description="The weight parameter of center_af" range="[0,20]" freq="less" default="0">
+				<table> 1 2 1 2 12 2 1 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+			</weight_value>
+			<reserved len="13">0</reserved>
+		</center_af>
+		<sideface_af>
+			<block_num_x type="u8">3</block_num_x>
+			<block_num_y>3</block_num_y>
+			<weight_value len="40">
+				<table> 4 2 8 4 2 2 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+			</weight_value>
+			<reserved len="13">0</reserved>
+		</sideface_af>
+		<finer_face_af>
+			<block_num_x type="u8">9</block_num_x>
+			<block_num_y>12</block_num_y>
+			<weight_value len="108">
+				<table> 0 0 0 4 2 4 0 0 0 0 0 0 1 4 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 1 4 8 4 1 1 0 0 1 1 4 8 4 1 1 0 0 1 1 4 8 4 1 1 0 0 1 1 4 8 4 1 1 0 0 1 1 4 8 4 1 1 0 0 1 1 4 8 4 1 1 0 </table>
+			</weight_value>
+		</finer_face_af>
+		<reserved idx="0">
+			<block_num_x type="u8">0</block_num_x>
+			<block_num_y>0</block_num_y>
+			<weight_value len="40">
+				<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+			</weight_value>
+			<reserved len="13">0</reserved>
+		</reserved>
+	</weight_table>
+	<haf>
+		<touch_pdaf_enable type="u16" description="touch_pd parameter enable switch" range="[0,1]" freq="often" default="0">1</touch_pdaf_enable>
+		<touch_from_curpos description="touch from cur_pos" range="[0,1]" freq="often" default="1">1</touch_from_curpos>
+		<touch_init_pos description="Touch focus starting position" freq="often" default="0">0</touch_init_pos>
+		<face_from_curpos description="face from cur_pos" range="[0,1]" freq="often" default="1">1</face_from_curpos>
+		<face_init_pos description="face focus starting position" freq="often" default="0">0</face_init_pos>
+		<center_from_curpos description="center from cur_pos" range="[0,1]" freq="often" default="1">1</center_from_curpos>
+		<center_init_pos description="center focus starting position" freq="often" default="0">0</center_init_pos>
+		<init_camera_pos description="Set the motor position parameter when the camera is initialized" freq="often" default="0">0</init_camera_pos>
+		<sky_break_enable description="Sky break condition enable switch" range="[0,1]" freq="often" default="0">1</sky_break_enable>
+		<lock_ae description="Forced lock AE enable switch during focusing" range="[0,1]" freq="often" default="0">0</lock_ae>
+		<lock_awb description="Forced lock AWB enable switch during focusing" range="[0,1]" freq="often" default="0">0</lock_awb>
+		<lock_lsc description="Forced lock LSC enable switch during focusing" range="[0,1]" freq="often" default="0">0</lock_lsc>
+		<lock_nlm description="Forced lock NLM enable switch during focusing" range="[0,1]" freq="often" default="0">0</lock_nlm>
+		<sun_break_enable>1</sun_break_enable>
+		<frm_delay>0</frm_delay>
+		<scan_tbl_posture_enable>1</scan_tbl_posture_enable>
+		<init_pos_for_lastfocus description="Enable switch that starts the camera at the position of the motor that ended the last focus" range="[0,1]" default="0">0</init_pos_for_lastfocus>
+		<reserved len="17">0</reserved>
+	</haf>
+	<cdaf_tuning>
+		<enable_adapt_af type="u16" description="cdaf_tuning Parameter effective switch" range="[0,43605]" freq="less" default="43605">43605</enable_adapt_af>
+		<_alg_select description="Full scan enable switch" range="[0,1]" freq="often" default="0">0</_alg_select>
+		<_lowlight_agc description="AE gain decision threshold in low-light environment" range="[0,max_gain]" freq="less" default="1024">1024</_lowlight_agc>
+		<reserved len="2" note="SpaceNum">0</reserved>
+		<_stat_min_value type="u32" len="6" description="Minimum statistic">
+			<table> 988 1412 2081 3282 4543 5906 </table>
+		</_stat_min_value>
+		<_break_count type="u16" description="break drop point threshold" range="[1,5]" freq="often" default="2">2</_break_count>
+		<_turnback_count description="turnback drop point threshold" range="[1,5]" freq="often" default="2">2</_turnback_count>
+		<_lowlight_ma_count description="The number of points between smooth areas judged in low light environment" range="[1,10]" freq="often" default="3">3</_lowlight_ma_count>
+		<_sky_scene_thr description="sky scene bv threshold" range="[-600,1600]" freq="often" default="800">1250</_sky_scene_thr>
+		<_min_fine_dac description="minimum motion step per frame" range="[1,50]" freq="often" default="5">5</_min_fine_dac>
+		<turnback_interval_from_pkidx type="int16" description="The idx interval between the scan start position and the peak position after turnback" range="[1,50]" freq="often" default="0">1</turnback_interval_from_pkidx>
+		<ratio_tuning>
+			<_flat_rto type="u32" description="flat threshold" range="[0,10000]" freq="often" default="450">200</_flat_rto>
+			<_falling_rto description="falling threshold" range="[0,10000]" freq="often" default="250">355</_falling_rto>
+			<_rising_rto description="rising threshold" range="[0,10000]" freq="often" default="350">350</_rising_rto>
+			<_break_rto description="FV falling ratio threshold" range="[0,10000]" freq="often" default="500">500</_break_rto>
+			<_turnback_rto description="Turnback FV drop rate threshold" range="[0,10000]" freq="often" default="500">600</_turnback_rto>
+			<_forcebreak_rto description="FV ratio of change threshold" range="[0,10000]" freq="often" default="2000">2000</_forcebreak_rto>
+			<_posture_diff_slop type="int32" description="turnback threshold" range="[0,100000]" freq="often" default="30000">30000</_posture_diff_slop>
+			<_full_slop_difference type="u32" description="Scan step size for flat areas" range="[0,100000]" freq="often" default="50000">50000</_full_slop_difference>
+			<reserved len="16">0</reserved>
+		</ratio_tuning>
+		<fine_search_tuning>
+			<_limit_search_interval type="u16" description="fine scan threshold" range="[0,10]" freq="often" default="2">6</_limit_search_interval>
+			<reserved len="2" note="SpaceNum">0</reserved>
+			<_limit_search_ratio type="u32" description="Fine scan FV change rate threshold" range="[0,10000]" freq="often" default="5000">7000</_limit_search_ratio>
+			<_limit_break_rto description="Peak point judgment" range="[0,10000]" freq="often" default="500">700</_limit_break_rto>
+			<_limit_break_cnt type="u16" description="Fine scan break drop point threshold" range="[1,5]" freq="often" default="1">2</_limit_break_cnt>
+			<reserved len="8">0</reserved>
+			<reserved len="2" note="SpaceNum">0</reserved>
+		</fine_search_tuning>
+		<scan_interval_tuning>
+			<_init_jump_interval_idx type="u16" len="8" description="Start scan idx interval in different modes">
+				<table> 3 2 2 2 2 3 1 1 </table>
+			</_init_jump_interval_idx>
+			<_max_shift_idx description="Maximum idx that can be moved per unit frame" range="[2,10]" freq="often" default="6">6</_max_shift_idx>
+			<reserved len="9">0</reserved>
+		</scan_interval_tuning>
+		<fitting_tuning>
+			<fitting_enable type="u16" description="fitting_enable switch" range="[0,1]" freq="less" default="1">1</fitting_enable>
+			<fitting_num description="Maximum Support Points of fitting" range="[0,7]" freq="less" default="7">7</fitting_num>
+			<reserved len="8">0</reserved>
+		</fitting_tuning>
+		<init_stable_cnt>
+			<touch_stable_cnt type="u32" description="touch at most ae stable frames" range="[0,50]" freq="often" default="0">25</touch_stable_cnt>
+			<face_stable_cnt description="face at most ae stable frames" range="[0,50]" freq="often" default="0">15</face_stable_cnt>
+			<center_stable_cnt description="center at most ae stable frames" range="[0,50]" freq="often" default="0">5</center_stable_cnt>
+			<flash_stable_cnt description="flash at most ae stable frames" range="[0,50]" freq="often" default="0">25</flash_stable_cnt>
+			<pd_stable_cnt description="pd at most ae stable frames" range="[0,50]" freq="often" default="0">1</pd_stable_cnt>
+			<tof_stable_cnt description="tof at most ae stable frames" range="[0,50]" freq="often" default="0">15</tof_stable_cnt>
+			<reserved len="8">0</reserved>
+		</init_stable_cnt>
+		<forcebreak_count type="u16" description="The index difference between current position and peak point,can be broken in advance" range="[0,10]" default="6">1</forcebreak_count>
+		<local_tuning>
+			<to_near_range type="u16" description="When the local cdaf is triggered, sweep the range near the current motor position" range="[0,200]" default="60">60</to_near_range>
+			<to_far_range description="When the local cdaf is triggered, at the current motor position, the range of the sweep to the far end" range="[0,200]" default="60">60</to_far_range>
+			<reserve len="2">
+				<table> 0 0 </table>
+			</reserve>
+		</local_tuning>
+		<_sky_posture_ratio type="int16">-50</_sky_posture_ratio>
+		<sky_scene_lowthr>50</sky_scene_lowthr>
+		<cancel_pos_enable type="u16">0</cancel_pos_enable>
+		<turnback_wait_cnt>0</turnback_wait_cnt>
+		<pdroi_detect_spot_enable type="u16" description="Enable switch of spotlight judgment when pdaf transfers to cd" range="[0,1]" default="1">1</pdroi_detect_spot_enable>
+		<reserve len="13">
+			<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		</reserve>
+		<reserved len="2" note="SpaceNum">0</reserved>
+	</cdaf_tuning>
+	<cdaf_coeff>
+		<touchaf type="u32" description="minvalue scaling factor for touchaf" range="[0,1000]" freq="often" default="200">200</touchaf>
+		<faceaf description="minvalue scaling factor for touchaf" range="[0,1000]" freq="often" default="400">400</faceaf>
+		<flashaf description="minvalue scaling factor for touchaf" range="[0,1000]" freq="often" default="1000">1000</flashaf>
+		<continuousaf description="minvalue scaling factor for touchaf" range="[0,1000]" freq="often" default="1000">1000</continuousaf>
+		<reserved type="u16" len="4">0</reserved>
+	</cdaf_coeff>
+	<spot_thr>
+		<tuning_enable type="u16" description="Enable point light scene detection switch" range="[0,1]" freq="often" default="1">1</tuning_enable>
+		<reserved len="2" note="SpaceNum">0</reserved>
+		<spot_oe_ratio_thr type="u32" description="Point light source judgment threshold" range="[0,1000]" freq="often" default="40">310</spot_oe_ratio_thr>
+		<spot_win_filter_thr type="u16" description="Large-area point light source judgment threshold" range="[0,100]" freq="often" default="0">40</spot_win_filter_thr>
+		<dynamic_enable description="Large area dynamic point light source scene detection switch" range="[0,1]" freq="often" default="1">1</dynamic_enable>
+		<frame_detection_cnt_thr description="Calculate the number of consecutive frames of the point light source" range="[0,15]" freq="often" default="3">3</frame_detection_cnt_thr>
+		<local_unstable_cnt_thr description="Dynamic point light source judgment threshold" range="[1,9]" freq="often" default="3">3</local_unstable_cnt_thr>
+		<hyperfocal_enable description="Point light source peak true or false detection switch" range="[0,1]" freq="often" default="1">1</hyperfocal_enable>
+		<pk2oevly_delta_idx_thr description="False peak point judgment" range="[1,10]" freq="often" default="1">1</pk2oevly_delta_idx_thr>
+		<pk2oevly_oecnt_rto_thr type="u32" description="False peak point judgment" range="[0,1000]" freq="often" default="250">260</pk2oevly_oecnt_rto_thr>
+		<hyperfocal_max_idx_offset type="u16" description="False peak point judgment" range="[1,20]" freq="often" default="7">13</hyperfocal_max_idx_offset>
+		<face_tuning_enable description="Face point light source detection switch" defult="1">1</face_tuning_enable>
+		<face_dynamic_enable description="Face dynamic point light source detection switch" defult="0">0</face_dynamic_enable>
+		<face_hyperfocal_enable description="Face large area point light source push ultra focal length switch" defult="0">0</face_hyperfocal_enable>
+		<face_spot_param_enable>1</face_spot_param_enable>
+		<face_spot_bv_thr type="int16">400</face_spot_bv_thr>
+		<spot_bv_thr>510</spot_bv_thr>
+		<spot_dark_bv_thr>180</spot_dark_bv_thr>
+		<spot_win_filter_pd_thr type="u16" description="Large-area point light source judgment threshold when pdaf" range="[0,1]" default="0">0</spot_win_filter_pd_thr>
+		<reserved len="2" note="SpaceNum">0</reserved>
+		<spot_oe_ratio_pd_thr type="u32" description="Point light source judgment threshold when pdaf" range="[0,500]" default="300">300</spot_oe_ratio_pd_thr>
+	</spot_thr>
+	<pdaf_tuning>
+		<pdaf_tuning_enable type="u16" description="pdaf_tuning_enable switch" range="[0,1]" freq="often" default="1">1</pdaf_tuning_enable>
+		<coc_range len="5" description="The scanning space left for CDAF after PD focuses" range="[25,1023]" freq="often">
+			<table> 30 30 30 30 30 </table>
+		</coc_range>
+		<far_tolerance description="decide pd predict peak pos right or wrong" range="[0,1023]" freq="often">50</far_tolerance>
+		<near_tolerance description="decide pd predict peak pos right or wrong">80</near_tolerance>
+		<err_limit description="the times of peak pos not in effective travel range" range="[0,5]" freq="often" default="3">3</err_limit>
+		<pd_thread_sync_frm description="The number of stable frames after PD focus is completed" range="[0,10]" freq="often" default="3">3</pd_thread_sync_frm>
+		<max_process_frm description="PD maximum focus frame number" range="[0,10]" freq="often" default="6">6</max_process_frm>
+		<pd_converge_thr description="if pd triggered,pd_converge*1000 bigger than pd_converge_thr,vcm will push by pd else by cd" range="[0,16000]" freq="often" default="1800">900</pd_converge_thr>
+		<pd_two_steps_converge_thr description="if pd triggered,pd_converge*1000 bigger than pd_converge_thr_2nd,it will push vcm twice" range="[0,16000]" freq="often" default="8000">6500</pd_two_steps_converge_thr>
+		<reserved len="2" note="SpaceNum">0</reserved>
+		<pd_two_steps_conf_score_thr type="u32" description="If PD's initial confidence score is larger than this value, PD will push twice" range="[0,1000]" freq="often" default="150">150</pd_two_steps_conf_score_thr>
+		<pd_two_steps_percent type="u16" description="The position of PD's first push motor as a percentage of defocus" range="[0,1000]" freq="often" default="700">700</pd_two_steps_percent>
+		<far_to_near_search_range description="cd Scan range: scanning range from far to near" range="[0,1023]" freq="often" default="30">300</far_to_near_search_range>
+		<near_to_far_search_range description="cd Scan range: scanning range from near to far" range="[0,1023]" freq="often" default="30">300</near_to_far_search_range>
+		<confscore_strong_thr description="If the confidence score is greater than this value, the pd is considered to have high confidence" range="[0,1000]" freq="often" default="1000">1000</confscore_strong_thr>
+		<confscore_weak_thr description="If the confidence score is less than this value, pd is considered to have low confidence" range="[0,1000]" freq="often" default="0">0</confscore_weak_thr>
+		<dcc_correction description="dcc scaling factor" range="[0,1000]" freq="often" default="1">1</dcc_correction>
+		<pd_defocus_param>
+			<pd_defocus_divide_num type="u16" description="Divide the interval number of pd defocus values" range="[0,5]" freq="often" default="5">5</pd_defocus_divide_num>
+			<pd_defocus_divide_pos len="4" description="Divide the pos value of the pd defocus interval" range="[0,1023]" freq="often" default="0">
+				<table> 50 160 260 450 </table>
+			</pd_defocus_divide_pos>
+			<pd_defocus_step len="5" description="step value" range="[0,1023]" freq="often" default="0">
+				<table> 50 160 150 300 300 </table>
+			</pd_defocus_step>
+			<reserved len="4">0</reserved>
+		</pd_defocus_param>
+		<pdaf_lowbv_tuning_enable>0</pdaf_lowbv_tuning_enable>
+		<bv_thr type="int16">0</bv_thr>
+		<pdaf_lowbv>
+			<pd_converge_thr type="u16">0</pd_converge_thr>
+			<pd_two_steps_converge_thr>0</pd_two_steps_converge_thr>
+			<pd_two_steps_conf_score_thr type="u32">0</pd_two_steps_conf_score_thr>
+			<pd_two_steps_percent type="u16">0</pd_two_steps_percent>
+			<far_to_near_search_range>0</far_to_near_search_range>
+			<near_to_far_search_range>0</near_to_far_search_range>
+			<confscore_strong_thr>0</confscore_strong_thr>
+			<confscore_weak_thr>0</confscore_weak_thr>
+			<reserved>0</reserved>
+		</pdaf_lowbv>
+		<reserved len="2">0</reserved>
+	</pdaf_tuning>
+	<tof_tuning>
+		<tof_tuning_enable type="u16" description="LDAF enable switch" range="[0,1]" freq="often" default="1">1</tof_tuning_enable>
+		<min_tof_vcm_steps description="min step of tof move" range="[0,1023]" freq="often" default="30">30</min_tof_vcm_steps>
+		<max_tof_vcm_steps description="max step of tof move" range="[0,1023]" freq="often" default="300">300</max_tof_vcm_steps>
+		<coc_range len="5" description="rest vcm vange when tof convert to cd" range="[25,1023]" freq="often">
+			<table> 40 40 40 40 40 </table>
+		</coc_range>
+		<far_tolerance description="decide pd predict peak pos right or wrong" range="[0,1023]" freq="often">50</far_tolerance>
+		<near_tolerance description="decide pd predict peak pos right or wrong" range="[0,1023]" freq="often">80</near_tolerance>
+		<err_limit description="the times of peak pos not in effective travel range" range="[0,5]" freq="often" default="3">3</err_limit>
+		<tof_thread_sync_frm description="The number of stable frames after LD focusing is completed" range="[0,10]" freq="often" default="3">2</tof_thread_sync_frm>
+		<min_process_frm description="Minimum number of pushes by vcm" range="[0,6]" freq="often" default="3">3</min_process_frm>
+		<max_process_frm description="Maximum number of pushes by vcm" range="[0,6]" freq="often" default="6">6</max_process_frm>
+		<far_to_near_search_range description="cd Scan range: scanning range from far to near" range="[0,1023]" freq="often" default="50">50</far_to_near_search_range>
+		<near_to_far_search_range description="cd Scan range: scanning range from near to far" range="[0,1023]" freq="often" default="50">50</near_to_far_search_range>
+		<reserved len="30">0</reserved>
+	</tof_tuning>
+	<softlanding>
+		<tuning_enable type="u16" description="enable switch" range="[0,1]" freq="often" default="1">1</tuning_enable>
+		<fine_step_range description="motor movement step" range="[0,2047]" freq="often" default="0">89</fine_step_range>
+		<quit_max_step description="When the moving path is in section C to B, the motor moves the maximum position per step" range="[0,2047]" freq="often" default="0">357</quit_max_step>
+		<quit_step description="When the moving path is in section B to A, the motor moves the position every step" range="[0,2047]" freq="less" default="25">25</quit_step>
+		<quit_sleep description="When the Camera exits, the buffer time after the motor moves" range="[0,100]" freq="less" default="12">12</quit_sleep>
+		<deinit_camera_pos description="When exiting the camera, the target position where the motor will eventually move" range="[0,2047]" freq="often" default="0">0</deinit_camera_pos>
+		<reserved len="10">0</reserved>
+	</softlanding>
+	<bokeh_calibration>
+		<tuning_enable type="u16" description="enable switch" range="[0,1]" freq="often" default="1">1</tuning_enable>
+		<golden_infinity description="The motor position of the far focus point calibrated by the Golden module" range="[0,2047]" freq="often" default="0">157</golden_infinity>
+		<golden_macro description="The near-focus motor position calibrated by the Golden module" range="[0,2047]" freq="often" default="0">816</golden_macro>
+		<golden_stops description="Total number of points to be calibrated" range="[0,40]" freq="often" default="0">10</golden_stops>
+		<golden_distance len="40" description="The distance to be calibrated" freq="often" default="0">
+			<table> 10 15 30 50 60 70 80 100 120 150 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		</golden_distance>
+		<golden_vcm_codes len="40" description="The quasi-focus position corresponding to each distance of golden_distance" range="[0,2047]" freq="often" default="0">
+			<table> 740 522 334 253 225 214 202 194 184 178 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		</golden_vcm_codes>
+		<move_steps description="In bokeh mode, it is used to establish the itinerary interval" range="[1,50]" freq="often" default="5">6</move_steps>
+		<defocus_ratio description="In bokeh mode, it is used to judge whether the found peak is reliable" range="[0,10000]" freq="often" default="800">800</defocus_ratio>
+		<calibration_distance description="Fixed distance when bokeh calibration" freq="often">50</calibration_distance>
+		<calibration_code description="Motor quasi-focus position corresponding to 50cm" range="[0,2047]" freq="often" default="0">230</calibration_code>
+		<reverved len="30">
+			<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		</reverved>
+	</bokeh_calibration>
+	<dacmap>
+		<tuning_enable type="u16" description="enable switch" range="[0,1]" freq="often" default="1">1</tuning_enable>
+		<golden_infinity description="The motor position of the far focus point calibrated by the Golden module" range="[0,2047]" freq="often" default="0">102</golden_infinity>
+		<golden_macro description="The near-focus motor position calibrated by the Golden module" range="[0,2047]" freq="often" default="0">776</golden_macro>
+		<golden_stops description="Total number of points to be calibrated" range="[0,40]" freq="often" default="0">17</golden_stops>
+		<golden_distance len="40" description="The distance to be calibrated" freq="often" default="0">
+			<table> 10 15 20 30 40 50 60 70 80 90 100 110 120 130 140 150 200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		</golden_distance>
+		<golden_vcm_codes len="40" description="The quasi-focus position corresponding to each distance of golden_distance" range="[0,2047]" freq="often" default="0">
+			<table> 740 540 420 325 270 230 225 205 195 190 185 178 172 168 165 160 150 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		</golden_vcm_codes>
+		<reverved len="80">
+			<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+		</reverved>
+	</dacmap>
+	<aft_block>
+		<support>
+			<face_support type="u8" description="Face trigger control switch" range="[0,1]" freq="often" default="1">1</face_support>
+			<pd_support description="PD trigger control switch" range="[0,1]" freq="often" default="1">1</pd_support>
+			<facepd_support description="Facepd trigger control switch" range="[0,1]" freq="often" default="1">1</facepd_support>
+			<pdp_support description="pdp trigger control switch" range="[0,1]" freq="often" default="1">1</pdp_support>
+			<tof_support description="tof trigger control switch" range="[0,1]" freq="often" default="0">1</tof_support>
+			<aem_support description="aem trigger control switch" range="[0,1]" freq="often" default="1">1</aem_support>
+			<gsensor_support description="gsensor trigger control switch" range="[0,1]" freq="often" default="1">1</gsensor_support>
+			<gyro_support description="gyro trigger control switch" range="[0,1]" freq="often" default="0">0</gyro_support>
+			<scene_change_support description="Control switch for scene detection" range="[0,1]" freq="often" default="1">1</scene_change_support>
+			<abort_af_support description="Determines whether to interrupt the current focus switch" range="[0,1]" freq="often" default="1">1</abort_af_support>
+			<facepred_support description="Face supports the peak prediction switch, which is disabled in cap and enabled in video by default" defult="1">0</facepred_support>
+			<local_support description="After continuous movement, the small-range scanning switch is enabled when the device is stable. The switch is turned off by default under cap and enabled by default under video" defult="1">0</local_support>
+			<triggerpd_bycd_support>1</triggerpd_bycd_support>
+			<fafeatpred_support>1</fafeatpred_support>
+			<facerefocus_support>0</facerefocus_support>
+			<reserved len="1">0</reserved>
+		</support>
+		<common>
+			<glob_ae_stab_cnt_thr type="u8" description="ae stb frame number threshold" range="[0,10]" freq="often" default="3">3</glob_ae_stab_cnt_thr>
+			<glob_ae_nearstab_cnt_thr description="ae nearstb frame number threshold" range="[0,10]" freq="often" default="3">3</glob_ae_nearstab_cnt_thr>
+			<face_ae_stab_cnt_thr description="face ae stb frame number threshold" range="[0,10]" freq="often" default="2">2</face_ae_stab_cnt_thr>
+			<bv_stab_thr description="If the BV deviation is less than this value for three consecutive frames, the BV is stable, allowing AF to be triggered." range="[0,10]" freq="often" default="6">6</bv_stab_thr>
+			<reserved len="14">0</reserved>
+		</common>
+		<aem>
+			<img_blk_frame_skip_cnt type="u8" description="Number of frames skipped when starting aem calculation" range="[0,3]" freq="often" default="1">1</img_blk_frame_skip_cnt>
+			<reserved note="SpaceNum">0</reserved>
+			<aem_block_num_w type="u16" description="The number of blocks divided in the wide direction of the entire aem statistical area" freq="often">32</aem_block_num_w>
+			<aem_block_num_h description="The number of blocks divided in the high direction in the entire aem statistical area" freq="often">32</aem_block_num_h>
+			<move>
+				<img_blk_value_thr type="u16" description="Threshold for determining whether the brightness of each block in the central statistical area of aem has changed" range="[0,255]" freq="often" default="85">90</img_blk_value_thr>
+				<img_blk_num_thr description="Threshold to determine whether the brightness of the statistical area in the center of frame aem changes" range="[50,196]" freq="often" default="55">55</img_blk_num_thr>
+				<img_blk_cnt_thr description="Frame threshold to determine whether the scene has changed" range="[1,10]" freq="often" default="3">3</img_blk_cnt_thr>
+				<reserved len="5">0</reserved>
+			</move>
+			<stable>
+				<img_blk_value_thr type="u16" description="Threshold for determining whether the brightness of each block in the central statistical area of aem is stable" range="[0,100]" freq="often" default="40">30</img_blk_value_thr>
+				<img_blk_num_thr description="Threshold to determine whether the brightness of the statistical area in the center of frame aem is stableh" range="[0,100]" freq="often" default="30">20</img_blk_num_thr>
+				<img_blk_cnt_thr description="Frame count threshold to determine whether the scene is stable" range="[1,10]" freq="often" default="3">3</img_blk_cnt_thr>
+				<reserved len="5">0</reserved>
+			</stable>
+			<abort>
+				<img_blk_value_thr type="u16" description="Determine block brightness changes during the focusing process" range="[0,255]" freq="often" default="1">185</img_blk_value_thr>
+				<img_blk_num_thr description="Determine when the frame brightness changes during the focusing process" range="[50,196]" freq="often" default="1">75</img_blk_num_thr>
+				<img_blk_cnt_thr description="Determine the scene change during the focusing process" range="[1,10]" freq="often" default="1">3</img_blk_cnt_thr>
+				<reserved len="5">0</reserved>
+			</abort>
+			<minR>
+				<diff_min_thr type="u16" description="Determine the lower threshold of the brightness change of the block in the R channel." range="[1,10]" freq="often">1</diff_min_thr>
+				<min_base_avg description="The minimum brightness mean value of the effective base of the R channel" range="[1,20]" freq="often">3</min_base_avg>
+				<reserved len="4">0</reserved>
+			</minR>
+			<minG>
+				<diff_min_thr type="u16" description="Determine the lower threshold of the brightness change of the block on the G channel." range="[1,10]" freq="often">1</diff_min_thr>
+				<min_base_avg description="The minimum brightness mean value of the effective base of the G channel." range="[1,20]" freq="often">5</min_base_avg>
+				<reserved len="4">0</reserved>
+			</minG>
+			<minB>
+				<diff_min_thr type="u16" description="Determine the lower threshold of the brightness change of the block of the B channel." range="[1,10]" freq="often">1</diff_min_thr>
+				<min_base_avg description="The minimum brightness average value of the effective base of the B channel." range="[1,20]" freq="often">3</min_base_avg>
+				<reserved len="4">0</reserved>
+			</minB>
+			<reserved type="u8" len="13">0</reserved>
+			<reserved note="SpaceNum">0</reserved>
+		</aem>
+		<sensor>
+			<gyro>
+				<sensor_queue_cnt type="u16" description="use the default values" freq="less" default="8">5</sensor_queue_cnt>
+				<gyro_move_percent_thr description="use the default values" freq="less" default="95">250</gyro_move_percent_thr>
+				<gyro_stab_percent_thr description="use the default values" freq="less" default="40">110</gyro_stab_percent_thr>
+				<reserved type="u8" len="13">0</reserved>
+				<reserved note="SpaceNum">0</reserved>
+			</gyro>
+			<acc>
+				<move>
+					<sensor_diff_value_thr type="u16" description="Sensitive state change judgment" range="[100,4000]" freq="often" default="500">500</sensor_diff_value_thr>
+					<sensor_cnt_thr description="Determine whether the state is stable" range="[1,10]" freq="often" default="1">3</sensor_cnt_thr>
+					<reserved len="8">0</reserved>
+				</move>
+				<stable>
+					<sensor_diff_value_thr type="u16" description="Sensitive state change judgment" range="[100,4000]" freq="often" default="500">500</sensor_diff_value_thr>
+					<sensor_cnt_thr description="Determine whether the state is stable" range="[1,10]" freq="often" default="3">3</sensor_cnt_thr>
+					<reserved len="8">0</reserved>
+				</stable>
+				<abort>
+					<sensor_diff_value_thr type="u16" description="Determine whether the status changes" range="[300,20000]" freq="often" default="2000">2000</sensor_diff_value_thr>
+					<sensor_cnt_thr description="Check whether the status is stable" range="[1,10]" freq="often" default="5">5</sensor_cnt_thr>
+					<reserved len="8">0</reserved>
+				</abort>
+				<acc_cont_unstab_cnt_thr description="Determine the number of frames required for the gsensor to remain unstable" defult="10">10</acc_cont_unstab_cnt_thr>
+				<reserved type="u8" len="10">0</reserved>
+			</acc>
+			<reserved type="u16" len="8">0</reserved>
+		</sensor>
+		<face>
+			<fmove>
+				<diff_area_thr type="u16" description="Threshold of face area change ratio" range="[500,10000]" freq="often" default="5000">5000</diff_area_thr>
+				<diff_cx_thr description="The threshold of the change ratio of the face frame in the x direction" range="[500,10000]" freq="often" default="2000">2000</diff_cx_thr>
+				<diff_cy_thr description="The threshold of the change ratio of the face frame in the y direction" range="[500,10000]" freq="often" default="2000">2000</diff_cy_thr>
+				<converge_cnt_thr description="Frame number threshold for face scene changes" range="[0,10]" freq="often" default="3">1</converge_cnt_thr>
+				<reserved len="8">0</reserved>
+			</fmove>
+			<fstab>
+				<diff_area_thr type="u16" description="The threshold of the stable ratio of face area" range="[500,10000]" freq="often" default="2000">2000</diff_area_thr>
+				<diff_cx_thr description="The threshold of the stable ratio of the face frame in the x direction" range="[500,10000]" freq="often" default="1000">1000</diff_cx_thr>
+				<diff_cy_thr description="The threshold of the stable ratio of the face frame in the y direction" range="[500,10000]" freq="often" default="1000">1000</diff_cy_thr>
+				<converge_cnt_thr description="Frame number threshold for face scene changes" range="[1,6]" freq="often" default="3">3</converge_cnt_thr>
+				<reserved len="8">0</reserved>
+			</fstab>
+			<fabort>
+				<diff_area_thr type="u16" description="Threshold of face area change ratio during focusing" range="[500,10000]" freq="often" default="2000">2000</diff_area_thr>
+				<diff_cx_thr description="The threshold of the change ratio of the face frame in the x direction during focusing" range="[500,10000]" freq="often" default="1150">1150</diff_cx_thr>
+				<diff_cy_thr description="The threshold of the change ratio of the face frame in the y direction during focusing" range="[500,10000]" freq="often" default="1150">1150</diff_cy_thr>
+				<converge_cnt_thr description="Frame number threshold for face scene changes during focusing" range="[1,6]" freq="often" default="1">1</converge_cnt_thr>
+				<reserved len="8">0</reserved>
+			</fabort>
+			<percentage_base description="Face change ratio base" freq="often" default="10000">10000</percentage_base>
+			<face_timer_cnt_down description="No-face scene judgment threshold" range="[3,20]" freq="often" default="6">6</face_timer_cnt_down>
+			<face_select_area_thr description="In multi-face scenes, face selection threshold" range="[10,100]" freq="often" default="16">16</face_select_area_thr>
+			<move_face_min_thr description="The minimum effective face side length threshold that can trigger face focus" range="[160,200]" freq="often" default="180">140</move_face_min_thr>
+			<abort_face_min_thr_for_face description="During the face focusing process, the minimum side length threshold of a valid face" range="[160,179]" freq="often" default="170">130</abort_face_min_thr_for_face>
+			<abort_face_min_thr_for_other description="The minimum side length threshold of a valid face during non-face focusing" range="[179,200]" freq="often" default="190">150</abort_face_min_thr_for_other>
+			<face_none_cnt_thr description="During the face focusing process, cancel the face focus judgment threshold" range="[3,20]" freq="often" default="3">3</face_none_cnt_thr>
+			<fast_face_valid_distance description="Face prediction peak minimum effective distance. When support.facepred_support is enabled, facepred can be triggered if the distance from the lens to the face is greater than this value" default="50">50</fast_face_valid_distance>
+			<fast_face_move_cnt_thr description="Determine the number of frames needed to predict face changes" default="3" range="[3,20]">3</fast_face_move_cnt_thr>
+			<fast_face_stab_cnt_thr description="The number of frames that can be predicted to determine face stability" default="3" range="[3,20]">3</fast_face_stab_cnt_thr>
+			<face_dis_diff_thr description="The threshold for determining the distance difference of face move. If the distance change is greater than this value, it is judged to be face move" default="20" range="[1,100]">20</face_dis_diff_thr>
+			<face_dis_stb_thr description="The distance difference threshold for determining face stability. If the distance change is less than this value, the face is judged to be stable" default="10" range="[1,100]">10</face_dis_stb_thr>
+			<reserved type="u8" len="2">0</reserved>
+		</face>
+		<pd>
+			<scene_bv_thr type="int16" len="2" description="bv threshold for scene division" range="[-600,1600]" freq="often">
+				<table> 480 100 </table>
+			</scene_bv_thr>
+			<move_aux_enable type="u16" description="enable switch" range="[0,1]" freq="often" default="1">1</move_aux_enable>
+			<stab_aux_enable description="enable switch" range="[0,1]" freq="often" default="1">1</stab_aux_enable>
+			<abort_by_pd_enable description="enable switch" range="[0,1]" freq="often" default="0">0</abort_by_pd_enable>
+			<pd_highBr>
+				<pd_value_abs_trig_thr type="u16" description="Phase difference trigger threshold" range="[0,8000]" freq="often" default="1500">900</pd_value_abs_trig_thr>
+				<pd_value_stable_thr description="Phase difference variance stability threshold" range="[0,8000]" freq="often" default="3000">3000</pd_value_stable_thr>
+				<pd_move_cnt_thr description="Determine the frame number threshold of pd move" range="[1,10]" freq="often" default="3">1</pd_move_cnt_thr>
+				<pd_stable_cnt_thr description="Determine the frame number threshold of pd stable" range="[1,10]" freq="often" default="3">3</pd_stable_cnt_thr>
+				<pd_conf_score_num_H description="Set the number of thresholds for confidence scores" range="[1,33]" freq="often" default="6">6</pd_conf_score_num_H>
+				<pd_conf_score_idx_H len="33" description="Different idx Settings for confidence scores" range="[0,32]" freq="often">
+					<table> 0 3 13 19 29 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_idx_H>
+				<pd_conf_score_thr_H len="33" description="Different idx correspond to the threshold of confidence score" range="[0,1000]" freq="often">
+					<table> 1000 1000 1000 1000 1000 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_thr_H>
+				<pd_conf_score_num_M description="Set the number of thresholds for confidence scores" range="[1,33]" freq="often" default="6">6</pd_conf_score_num_M>
+				<pd_conf_score_idx_M len="33" description="Different idx Settings for confidence scores" range="[0,32]" freq="often">
+					<table> 0 3 13 19 29 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_idx_M>
+				<pd_conf_score_thr_M len="33" description="Different idx correspond to the threshold of confidence score" range="[0,1000]" freq="often">
+					<table> 200 130 100 100 130 200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_thr_M>
+				<pd_conf_score_move_thr description="conf_score change threshold" range="[0,1000]" freq="less" default="300">300</pd_conf_score_move_thr>
+				<pd_conf_score_move_cnt description="conf_score change frame number threshold" range="[0,10]" freq="less" default="3">3</pd_conf_score_move_cnt>
+				<pd_dis_abort_thr description="pd prediction distance change threshold" range="[0,1000]" freq="less" default="300">300</pd_dis_abort_thr>
+				<pd_dis_abort_cnt description="pd prediction distance change frame number threshold" range="[0,10]" freq="less" default="3">3</pd_dis_abort_cnt>
+				<pd_infocus_thr description="PD phase difference threshold to determine whether the current motor position is near the quasi-focal position" default="650" range="[0,8000]">650</pd_infocus_thr>
+				<reserved type="u8" len="8">0</reserved>
+			</pd_highBr>
+			<pd_midBr>
+				<pd_value_abs_trig_thr type="u16" description="Phase difference trigger threshold" range="[0,8000]" freq="often" default="1500">1000</pd_value_abs_trig_thr>
+				<pd_value_stable_thr description="Phase difference variance stability threshold" range="[0,8000]" freq="often" default="3000">3000</pd_value_stable_thr>
+				<pd_move_cnt_thr description="Determine the frame number threshold of pd move" range="[1,10]" freq="often" default="3">1</pd_move_cnt_thr>
+				<pd_stable_cnt_thr description="Determine the frame number threshold of pd stable" range="[1,10]" freq="often" default="3">3</pd_stable_cnt_thr>
+				<pd_conf_score_num_H description="Set the number of thresholds for confidence scores" range="[1,33]" freq="often" default="6">6</pd_conf_score_num_H>
+				<pd_conf_score_idx_H len="33" description="Different idx Settings for confidence scores" range="[0,32]" freq="often">
+					<table> 0 3 13 19 29 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_idx_H>
+				<pd_conf_score_thr_H len="33" description="Different idx correspond to the threshold of confidence score" range="[0,1000]" freq="often">
+					<table> 1000 1000 1000 1000 1000 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_thr_H>
+				<pd_conf_score_num_M description="Set the number of thresholds for confidence scores" range="[1,33]" freq="often" default="6">6</pd_conf_score_num_M>
+				<pd_conf_score_idx_M len="33" description="Different idx Settings for confidence scores" range="[0,32]" freq="often">
+					<table> 0 3 13 19 29 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_idx_M>
+				<pd_conf_score_thr_M len="33" description="Different idx correspond to the threshold of confidence score" range="[0,1000]" freq="often">
+					<table> 100 100 100 100 100 100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_thr_M>
+				<pd_conf_score_move_thr description="conf_score change threshold" range="[0,1000]" freq="less" default="300">300</pd_conf_score_move_thr>
+				<pd_conf_score_move_cnt description="conf_score change frame number threshold" range="[0,10]" freq="less" default="3">3</pd_conf_score_move_cnt>
+				<pd_dis_abort_thr description="pd prediction distance change threshold" range="[0,1000]" freq="less" default="300">300</pd_dis_abort_thr>
+				<pd_dis_abort_cnt description="pd prediction distance change frame number threshold" range="[0,10]" freq="less" default="3">3</pd_dis_abort_cnt>
+				<pd_infocus_thr description="PD phase difference threshold to determine whether the current motor position is near the quasi-focal position" default="650" range="[0,8000]">650</pd_infocus_thr>
+				<reserved type="u8" len="8">0</reserved>
+			</pd_midBr>
+			<reserved len="14">0</reserved>
+		</pd>
+		<tof>
+			<tof_region_num type="u16" description="Number of distance intervals">5</tof_region_num>
+			<tof_distance_region len="5" description="distance interval" range="[0,1500]" freq="often">
+				<table> 100 300 550 850 1180 </table>
+			</tof_distance_region>
+			<tof_distance_move_thr len="5" description="distance change threshold" range="[0,300]" freq="often">
+				<table> 40 65 80 100 150 </table>
+			</tof_distance_move_thr>
+			<tof_move_cnt description="The frame number threshold for determining scene changes" range="[0,10]" freq="often">1</tof_move_cnt>
+			<tof_distance_abort_thr len="5" description="Determine whether the frame distance changes during the focusing process" range="[0,300]" freq="often">
+				<table> 60 90 100 120 180 </table>
+			</tof_distance_abort_thr>
+			<tof_abort_cnt description="Determine whether the scene has changed during the focusing process" range="[0,10]" freq="often">2</tof_abort_cnt>
+			<tof_dis_stable_thr len="5" description="distance stability threshold" range="[0,300]" freq="often">
+				<table> 40 55 60 65 80 </table>
+			</tof_dis_stable_thr>
+			<tof_stab_cnt description="tof stable frame rate" range="[0,10]" freq="often">1</tof_stab_cnt>
+			<tof_scene_bv_thr description="bv threshold for tof to take effect" range="[-600,1600]" freq="often">1000</tof_scene_bv_thr>
+			<reserved type="u8" len="16">0</reserved>
+		</tof>
+		<scene_change>
+			<Nface_sc>
+				<roi_proportion type="u16" description="sc calculates the proportion of length and width blocks in the whole aem statistical region" range="[1,100]" freq="often" default="40">40</roi_proportion>
+				<corr_line_move_thr description="Scene change detection threshold" range="[0,100]" freq="often" default="90">90</corr_line_move_thr>
+				<corr_line_abort_thr description="detect whether the current frame scene changes during focusing" range="[0,100]" freq="often" default="30">60</corr_line_abort_thr>
+				<corr_line_stab_thr description="Scene stabilization detection threshold" range="[0,100]" freq="often" default="92">92</corr_line_stab_thr>
+				<sc_move_cnt_thr description="Scene change frame number threshold" range="[0,10]" freq="often" default="1">3</sc_move_cnt_thr>
+				<sc_abort_cnt_thr description="detect whether the current frame scene changes during focusing" range="[0,10]" freq="often" default="1">1</sc_abort_cnt_thr>
+				<sc_stab_cnt_thr description="Scene stable frame threshold" range="[0,10]" freq="often" default="1">1</sc_stab_cnt_thr>
+				<reserved type="u8" len="16">0</reserved>
+			</Nface_sc>
+			<face_sc>
+				<roi_proportion type="u16" description="In face scene, sc calculates the proportion of the number of blocks in the aem statistical area where the selected face is located in the entire area" range="[1,100]" freq="often" default="40">30</roi_proportion>
+				<corr_line_move_thr description="Face scene change detection threshold" range="[0,100]" freq="often" default="90">88</corr_line_move_thr>
+				<corr_line_abort_thr description="Detect whether the face scene in the current frame changes during the focusing" range="[0,100]" freq="often" default="88">97</corr_line_abort_thr>
+				<corr_line_stab_thr description="Face scene stability detection threshold" range="[0,100]" freq="often" default="92">92</corr_line_stab_thr>
+				<sc_move_cnt_thr description="Face scene change frame number threshold" range="[0,10]" freq="often" default="1">1</sc_move_cnt_thr>
+				<sc_abort_cnt_thr description="detect whether the face scene changes during the focusing" range="[0,10]" freq="often" default="1">1</sc_abort_cnt_thr>
+				<sc_stab_cnt_thr description="Face scene stabilization frame number threshold" range="[0,10]" freq="often" default="1">1</sc_stab_cnt_thr>
+				<reserved type="u8" len="16">0</reserved>
+			</face_sc>
+			<reserved len="16">0</reserved>
+		</scene_change>
+		<pd_highbv_thr>
+			<pd_highbv_thr_enable type="u16">0</pd_highbv_thr_enable>
+			<high_bv type="int16">0</high_bv>
+			<pd_value_abs_trig_thr type="u16">0</pd_value_abs_trig_thr>
+			<pd_value_stable_thr>0</pd_value_stable_thr>
+			<pd_move_cnt_thr>0</pd_move_cnt_thr>
+			<pd_stable_cnt_thr>0</pd_stable_cnt_thr>
+			<pd_conf_score_thr_H>0</pd_conf_score_thr_H>
+			<pd_conf_score_thr_M>0</pd_conf_score_thr_M>
+			<pd_conf_score_move_thr>0</pd_conf_score_move_thr>
+			<pd_conf_score_move_cnt>0</pd_conf_score_move_cnt>
+			<pd_dis_abort_thr>0</pd_dis_abort_thr>
+			<pd_dis_abort_cnt>0</pd_dis_abort_cnt>
+			<pd_value_infocus_thr>0</pd_value_infocus_thr>
+			<reserved len="3">0</reserved>
+		</pd_highbv_thr>
+		<face_refocus_cnt_thr>20</face_refocus_cnt_thr>
+		<feature_dis>73</feature_dis>
+		<reserved type="u8" len="24">0</reserved>
+	</aft_block>
+	<each_block_tuning>
+		<each_block_curve_enable type="u16" description="Single block curve anomaly detection switch" default="1" range="[0,1]">0</each_block_curve_enable>
+		<break_cnt description="A single block is determined to be the number of points of fall that break" default="2" range="[1,5]">2</break_cnt>
+		<break_rto description="The decline rate of a single block is determined to be break" default="500" range="[0,10000]">500</break_rto>
+		<reserved len="10">0</reserved>
+	</each_block_tuning>
+	<face_restrict_tuning>
+		<face_restrict_tuning_enable type="u16" description="Face scene limit range switch" default="1" range="[0,1]">1</face_restrict_tuning_enable>
+		<scan_table_restrict_idx description="Limit the deviation of the table from the idx of the hyperfocal length of the face scene" default="3" range="[0,50]">4</scan_table_restrict_idx>
+		<face_restrict_bv type="int16">600</face_restrict_bv>
+		<face_restrict_delta_code>0</face_restrict_delta_code>
+		<face_restrict_zoom_ratio type="u16">1500</face_restrict_zoom_ratio>
+		<reserved len="7">0</reserved>
+	</face_restrict_tuning>
+	<noise_tuning>
+		<noise_cnt_detect_enable type="u16" description="Face noisecnt detection switch" default="1" range="[0,1]">0</noise_cnt_detect_enable>
+		<fine_search_limit_pos description="The face fluctuates into the effective motor position of the fine sweep" default="0" range="[0,2047]">0</fine_search_limit_pos>
+		<noise_cnt_thr description="noisecnt enters the frame count threshold of the fine sweep" default="1" range="[1,10]">1</noise_cnt_thr>
+		<reserved len="2" note="SpaceNum">0</reserved>
+		<noise_ratio type="u32" description="noisecnt determines the ratio threshold" default="350" range="[0,10000]">350</noise_ratio>
+		<reserved type="u16" len="10">0</reserved>
+	</noise_tuning>
+	<iir_pm_ctrl>
+		<spotlight_bv_th type="int16" description="BV threshold of light source at night scenic spot. If BV is less than this threshold, it is judged to be the light source of night scenic spot, and can be switched to the corresponding filter for calculation" default="350" range="[-600,1600]">350</spotlight_bv_th>
+		<spotlight_scene_th type="u16" description="Point source scene threshold" default="1" range="[0,2]">1</spotlight_scene_th>
+		<night_bv_th type="int16">350</night_bv_th>
+		<face_bv_th>350</face_bv_th>
+		<face_day_spotlight_reset type="u16">1</face_day_spotlight_reset>
+		<face_night_spotlight_reset>1</face_night_spotlight_reset>
+		<tuning_enable>1</tuning_enable>
+		<reserved len="5">0</reserved>
+	</iir_pm_ctrl>
+	<face_distance_restrict>
+		<face_distance_restrict_enable type="u16" description="Face goes caf search range limit switch" default="0" range="[0,1]">0</face_distance_restrict_enable>
+		<bv_thr type="int16" len="5" description="Bv gears" default="1" range="[-600,1600]">
+			<table> 1200 900 500 300 -599 </table>
+		</bv_thr>
+		<far_distance type="u16" len="5" description="Search for long-distance restrictions. Unit: cm" default="0" range="[0,1000]">
+			<table> 201 201 201 201 201 </table>
+		</far_distance>
+		<near_distance len="5" description="Search close range limits. Unit: cm" default="0" range="[0,1000]">
+			<table> 20 40 40 40 40 </table>
+		</near_distance>
+		<reserved len="5">0</reserved>
+		<reserved len="2" note="SpaceNum">0</reserved>
+	</face_distance_restrict>
+	<facepd_tuning>
+		<facepd_tune_enable type="u16" description="facepd enable switch" default="0" range="[0,1]">1</facepd_tune_enable>
+		<facepd_aft>
+			<scene_bv_thr type="int16" len="2" description="bv threshold for scene division" default="0" range="[-600,1600]">
+				<table> 700 150 </table>
+			</scene_bv_thr>
+			<move_aux_enable type="u16" description="pd trigger supports using aem_move and sc_move to assist in judging scene changes" default="0" range="[0,1]">1</move_aux_enable>
+			<stab_aux_enable description="pd trigger supports using aem_stab and sc_stab to assist in judging scene stability" default="0" range="[0,1]">1</stab_aux_enable>
+			<abort_by_pd_enable description="During the focusing process, the enable switch of interrupting the focusing using PD related information is supported" default="0" range="[0,1]">0</abort_by_pd_enable>
+			<pd_highBr>
+				<pd_value_abs_trig_thr type="u16" description="Phase difference trigger threshold" default="0" range="[0,8000]">1300</pd_value_abs_trig_thr>
+				<pd_value_stable_thr description="Phase difference variance stability threshold" default="0" range="[0,8000]">3000</pd_value_stable_thr>
+				<pd_move_cnt_thr description="Determine the frame number threshold of pd move" default="0" range="[1,10]">2</pd_move_cnt_thr>
+				<pd_stable_cnt_thr description="Determine the frame number threshold of pd stable" default="0" range="[3,8]">3</pd_stable_cnt_thr>
+				<pd_conf_score_num_H description="Sets the threshold number for the confidence score" default="0" range="[1,33]">6</pd_conf_score_num_H>
+				<pd_conf_score_idx_H len="33" description="Different idx settings for confidence score" default="0" range="[0,32]">
+					<table> 0 3 13 19 29 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_idx_H>
+				<pd_conf_score_thr_H len="33" description="The threshold of confidence score corresponding to different idx" default="0" range="[0,1000]">
+					<table> 1000 1000 1000 1000 1000 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_thr_H>
+				<pd_conf_score_num_M description="Sets the threshold number for the confidence score" default="0" range="[1,33]">6</pd_conf_score_num_M>
+				<pd_conf_score_idx_M len="33" description="Different idx settings for confidence score" default="0" range="[0,32]">
+					<table> 0 3 13 19 29 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_idx_M>
+				<pd_conf_score_thr_M len="33" description="The threshold of confidence score corresponding to different idx" default="0" range="[0,1000]">
+					<table> 200 200 150 150 200 200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_thr_M>
+				<pd_conf_score_move_thr description="conf_score change threshold" default="0" range="[0,1000]">300</pd_conf_score_move_thr>
+				<pd_conf_score_move_cnt description="conf_score change frame number threshold" default="0" range="[0,10]">3</pd_conf_score_move_cnt>
+				<pd_dis_abort_thr description="pd prediction distance change threshold" default="0" range="[0,1000]">300</pd_dis_abort_thr>
+				<pd_dis_abort_cnt description="pd prediction distance change frame number threshold" default="0" range="[0,10]">3</pd_dis_abort_cnt>
+				<pd_infocus_thr description="PD phase difference threshold for judging whether the current position of the motor is near the in-focus position" default="0" range="[0,8000]">650</pd_infocus_thr>
+				<reserved type="u8" len="8">0</reserved>
+			</pd_highBr>
+			<pd_midBr>
+				<pd_value_abs_trig_thr type="u16" description="Phase difference trigger threshold" default="0" range="[0,8000]">1200</pd_value_abs_trig_thr>
+				<pd_value_stable_thr description="Phase difference variance stability threshold" default="0" range="[0,8000]">3000</pd_value_stable_thr>
+				<pd_move_cnt_thr description="Determine the frame number threshold of pd move" default="0" range="[1,10]">2</pd_move_cnt_thr>
+				<pd_stable_cnt_thr description="Determine the frame number threshold of pd stable" default="0" range="[3,8]">3</pd_stable_cnt_thr>
+				<pd_conf_score_num_H description="Sets the threshold number for the confidence score" default="0" range="[1,33]">6</pd_conf_score_num_H>
+				<pd_conf_score_idx_H len="33" description="Different idx settings for confidence score" default="0" range="[0,32]">
+					<table> 0 3 13 19 29 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_idx_H>
+				<pd_conf_score_thr_H len="33" description="The threshold of confidence score corresponding to different idx" default="0" range="[0,1000]">
+					<table> 1000 1000 1000 1000 1000 1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_thr_H>
+				<pd_conf_score_num_M description="Sets the threshold number for the confidence score" default="0" range="[1,33]">6</pd_conf_score_num_M>
+				<pd_conf_score_idx_M len="33" description="Different idx settings for confidence score" default="0" range="[0,32]">
+					<table> 0 3 13 19 29 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_idx_M>
+				<pd_conf_score_thr_M len="33" description="The threshold of confidence score corresponding to different idx" default="0" range="[0,1000]">
+					<table> 200 200 160 160 200 200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</pd_conf_score_thr_M>
+				<pd_conf_score_move_thr description="conf_score change threshold" default="0" range="[0,1000]">300</pd_conf_score_move_thr>
+				<pd_conf_score_move_cnt description="conf_score change frame number threshold" default="0" range="[0,10]">3</pd_conf_score_move_cnt>
+				<pd_dis_abort_thr description="pd prediction distance change threshold" default="0" range="[0,1000]">300</pd_dis_abort_thr>
+				<pd_dis_abort_cnt description="pd prediction distance change frame number threshold" default="0" range="[0,10]">3</pd_dis_abort_cnt>
+				<pd_infocus_thr description="PD phase difference threshold for judging whether the current position of the motor is near the in-focus position" default="0" range="[0,8000]">650</pd_infocus_thr>
+				<reserved type="u8" len="8">0</reserved>
+			</pd_midBr>
+			<reserved len="14">0</reserved>
+			<reserved len="2" note="SpaceNum">0</reserved>
+		</facepd_aft>
+		<facepd>
+			<pdaf_tuning_enable type="u16">1</pdaf_tuning_enable>
+			<coc_range len="5">
+				<table> 60 60 60 60 60 </table>
+			</coc_range>
+			<far_tolerance>50</far_tolerance>
+			<near_tolerance>80</near_tolerance>
+			<err_limit>3</err_limit>
+			<pd_thread_sync_frm>3</pd_thread_sync_frm>
+			<max_process_frm>6</max_process_frm>
+			<pd_converge_thr>500</pd_converge_thr>
+			<pd_two_steps_converge_thr>6000</pd_two_steps_converge_thr>
+			<reserved len="2" note="SpaceNum">0</reserved>
+			<pd_two_steps_conf_score_thr type="u32">100</pd_two_steps_conf_score_thr>
+			<pd_two_steps_percent type="u16">600</pd_two_steps_percent>
+			<far_to_near_search_range>300</far_to_near_search_range>
+			<near_to_far_search_range>300</near_to_far_search_range>
+			<confscore_strong_thr>1000</confscore_strong_thr>
+			<confscore_weak_thr>50</confscore_weak_thr>
+			<dcc_correction>1</dcc_correction>
+			<pd_defocus_param>
+				<pd_defocus_divide_num type="u16">5</pd_defocus_divide_num>
+				<pd_defocus_divide_pos len="4">
+					<table> 50 160 260 450 </table>
+				</pd_defocus_divide_pos>
+				<pd_defocus_step len="5">
+					<table> 50 160 150 300 300 </table>
+				</pd_defocus_step>
+				<reserved len="4">0</reserved>
+			</pd_defocus_param>
+			<pdaf_lowbv_tuning_enable>0</pdaf_lowbv_tuning_enable>
+			<bv_thr type="int16">0</bv_thr>
+			<pdaf_lowbv>
+				<pd_converge_thr type="u16">0</pd_converge_thr>
+				<pd_two_steps_converge_thr>0</pd_two_steps_converge_thr>
+				<pd_two_steps_conf_score_thr type="u32">0</pd_two_steps_conf_score_thr>
+				<pd_two_steps_percent type="u16">0</pd_two_steps_percent>
+				<far_to_near_search_range>0</far_to_near_search_range>
+				<near_to_far_search_range>0</near_to_far_search_range>
+				<confscore_strong_thr>0</confscore_strong_thr>
+				<confscore_weak_thr>0</confscore_weak_thr>
+				<reserved>0</reserved>
+			</pdaf_lowbv>
+			<reserved len="2">0</reserved>
+		</facepd>
+	</facepd_tuning>
+	<sideface_tuning>
+		<yaw_angle type="u16" len="3">
+			<table> 15 40 60 </table>
+		</yaw_angle>
+		<shift_ratio len="3">
+			<table> 200 500 900 </table>
+		</shift_ratio>
+		<face_ratio_ear len="3">
+			<table> 350 350 400 </table>
+		</face_ratio_ear>
+		<face_ratio_head len="3">
+			<table> 350 350 400 </table>
+		</face_ratio_head>
+		<reserved len="4">0</reserved>
+	</sideface_tuning>
+	<face_spot_thr>
+		<tuning_enable type="u16">1</tuning_enable>
+		<reserved len="2" note="SpaceNum">0</reserved>
+		<spot_oe_ratio_thr type="u32">5</spot_oe_ratio_thr>
+		<spot_win_filter_thr type="u16">50</spot_win_filter_thr>
+		<dynamic_enable>0</dynamic_enable>
+		<frame_detection_cnt_thr>3</frame_detection_cnt_thr>
+		<local_unstable_cnt_thr>3</local_unstable_cnt_thr>
+		<hyperfocal_enable>0</hyperfocal_enable>
+		<pk2oevly_delta_idx_thr>1</pk2oevly_delta_idx_thr>
+		<pk2oevly_oecnt_rto_thr type="u32">260</pk2oevly_oecnt_rto_thr>
+		<hyperfocal_max_idx_offset type="u16">8</hyperfocal_max_idx_offset>
+		<spot_win_filter_pd_thr type="u16" description="Large-area point light source judgment threshold when face pdaf" range="[0,1]" default="0">0</spot_win_filter_pd_thr>
+		<spot_oe_ratio_pd_thr type="u32" description="Point light source judgment threshold when face pdaf" range="[0,500]" default="300">300</spot_oe_ratio_pd_thr>
+		<reserve len="8" type="u16">
+			<table> 0 0 0 0 0 0 0 0 </table>
+		</reserve>
+	</face_spot_thr>
+	<face_spot_lowbv_thr>
+		<tuning_enable type="u16">1</tuning_enable>
+		<reserved len="2" note="SpaceNum">0</reserved>
+		<spot_oe_ratio_thr type="u32">2</spot_oe_ratio_thr>
+		<spot_win_filter_thr type="u16">50</spot_win_filter_thr>
+		<dynamic_enable>0</dynamic_enable>
+		<frame_detection_cnt_thr>3</frame_detection_cnt_thr>
+		<local_unstable_cnt_thr>3</local_unstable_cnt_thr>
+		<hyperfocal_enable>0</hyperfocal_enable>
+		<pk2oevly_delta_idx_thr>1</pk2oevly_delta_idx_thr>
+		<pk2oevly_oecnt_rto_thr type="u32">260</pk2oevly_oecnt_rto_thr>
+		<hyperfocal_max_idx_offset type="u16">8</hyperfocal_max_idx_offset>
+		<spot_win_filter_pd_thr type="u16" description="Large-area point light source judgment threshold when lowbv face pdaf" range="[0,1]" default="0">0</spot_win_filter_pd_thr>
+		<spot_oe_ratio_pd_thr type="u32" description="Point light source judgment threshold when lowbv face pdaf" range="[0,500]" default="300">300</spot_oe_ratio_pd_thr>
+		<reserve len="8" type="u16">
+			<table> 0 0 0 0 0 0 0 0 </table>
+		</reserve>
+	</face_spot_lowbv_thr>
+	<com_spot_lowbv_thr>
+		<tuning_enable type="u16">1</tuning_enable>
+		<reserved len="2" note="SpaceNum">0</reserved>
+		<spot_oe_ratio_thr type="u32">100</spot_oe_ratio_thr>
+		<spot_win_filter_thr type="u16">30</spot_win_filter_thr>
+		<dynamic_enable>1</dynamic_enable>
+		<frame_detection_cnt_thr>3</frame_detection_cnt_thr>
+		<local_unstable_cnt_thr>3</local_unstable_cnt_thr>
+		<hyperfocal_enable>1</hyperfocal_enable>
+		<pk2oevly_delta_idx_thr>0</pk2oevly_delta_idx_thr>
+		<pk2oevly_oecnt_rto_thr type="u32">0</pk2oevly_oecnt_rto_thr>
+		<hyperfocal_max_idx_offset type="u16">20</hyperfocal_max_idx_offset>
+		<spot_win_filter_pd_thr type="u16" description="Large-area point light source judgment threshold when lowbv pdaf" range="[0,1]" default="0">0</spot_win_filter_pd_thr>
+		<spot_oe_ratio_pd_thr type="u32" description="Point light source judgment threshold when lowbv face pdaf" range="[0,500]" default="200">200</spot_oe_ratio_pd_thr>
+		<reserve len="8" type="u16">
+			<table> 0 0 0 0 0 0 0 0 </table>
+		</reserve>
+	</com_spot_lowbv_thr>
+	<edgeface_sizelimit>
+		<move_face_min_thr type="u16">200</move_face_min_thr>
+		<abort_face_min_thr_for_face>190</abort_face_min_thr_for_face>
+		<abort_face_min_thr_for_other>210</abort_face_min_thr_for_other>
+		<reserved len="2" note="SpaceNum">0</reserved>
+	</edgeface_sizelimit>
+	<com_spot_dark_thr>
+		<tuning_enable type="u16">1</tuning_enable>
+		<reserved len="2" note="SpaceNum">0</reserved>
+		<spot_oe_ratio_thr type="u32">20</spot_oe_ratio_thr>
+		<spot_win_filter_thr type="u16">20</spot_win_filter_thr>
+		<dynamic_enable>1</dynamic_enable>
+		<frame_detection_cnt_thr>3</frame_detection_cnt_thr>
+		<local_unstable_cnt_thr>3</local_unstable_cnt_thr>
+		<hyperfocal_enable>1</hyperfocal_enable>
+		<pk2oevly_delta_idx_thr>0</pk2oevly_delta_idx_thr>
+		<pk2oevly_oecnt_rto_thr type="u32">0</pk2oevly_oecnt_rto_thr>
+		<hyperfocal_max_idx_offset type="u16">30</hyperfocal_max_idx_offset>
+		<spot_win_filter_pd_thr type="u16" description="Large-area point light source judgment threshold when dark pdaf" range="[0,1]" default="0">0</spot_win_filter_pd_thr>
+		<spot_oe_ratio_pd_thr type="u32" description="Point light source judgment threshold when dark pdaf" range="[0,500]" default="150">150</spot_oe_ratio_pd_thr>
+		<reserve len="8" type="u16">
+			<table> 0 0 0 0 0 0 0 0 </table>
+		</reserve>
+	</com_spot_dark_thr>
+	<center_ratio>
+		<center_ratio_enable type="u16">0</center_ratio_enable>
+		<ratio_1x>0</ratio_1x>
+		<ratio_1xto2x>0</ratio_1xto2x>
+		<ratio_2xto3x>0</ratio_2xto3x>
+		<ratio_3xupper>0</ratio_3xupper>
+		<ratio_4xto6x>0</ratio_4xto6x>
+		<ratio_6xto8x>0</ratio_6xto8x>
+		<ratio_8xto10x>0</ratio_8xto10x>
+		<ratio_10xupper>0</ratio_10xupper>
+		<reserved len="7">0</reserved>
+	</center_ratio>
+	<focus_frame_display>
+		<cd_display_switch type="u16">0</cd_display_switch>
+		<pd_display_switch>2</pd_display_switch>
+		<cd_iso_thr>800</cd_iso_thr>
+		<pd_iso_thr>800</pd_iso_thr>
+		<pd_confscore_thr>200</pd_confscore_thr>
+		<pd_fps_thr>30</pd_fps_thr>
+	</focus_frame_display>
+	<pdaf_focus_done_param>
+		<center_pdaf_done_param>
+			<bv_thr type="int16" len="2">
+				<table> 800 1 </table>
+			</bv_thr>
+			<bv_enable type="u16" len="3">
+				<table> 1 1 1 </table>
+			</bv_enable>
+			<defocus_thr len="3">
+				<table> 11 11 15 </table>
+			</defocus_thr>
+			<confscore_thr len="3">
+				<table> 250 250 250 </table>
+			</confscore_thr>
+			<pd_converge_cnt>3</pd_converge_cnt>
+			<check_cnt>2</check_cnt>
+			<reserved len="11">0</reserved>
+		</center_pdaf_done_param>
+		<face_pdaf_done_param>
+			<bv_thr type="int16" len="2">
+				<table> 800 1 </table>
+			</bv_thr>
+			<bv_enable type="u16" len="3">
+				<table> 1 1 1 </table>
+			</bv_enable>
+			<defocus_thr len="3">
+				<table> 11 11 15 </table>
+			</defocus_thr>
+			<confscore_thr len="3">
+				<table> 250 250 250 </table>
+			</confscore_thr>
+			<pd_converge_cnt>3</pd_converge_cnt>
+			<check_cnt>2</check_cnt>
+			<reserved len="11">0</reserved>
+		</face_pdaf_done_param>
+		<touch_pdaf_done_param>
+			<bv_thr type="int16" len="2">
+				<table> 800 1 </table>
+			</bv_thr>
+			<bv_enable type="u16" len="3">
+				<table> 0 0 0 </table>
+			</bv_enable>
+			<defocus_thr len="3">
+				<table> 11 11 15 </table>
+			</defocus_thr>
+			<confscore_thr len="3">
+				<table> 250 250 250 </table>
+			</confscore_thr>
+			<pd_converge_cnt>3</pd_converge_cnt>
+			<check_cnt>2</check_cnt>
+			<reserved len="11">0</reserved>
+		</touch_pdaf_done_param>
+		<reserved len="16">0</reserved>
+	</pdaf_focus_done_param>
+	<reserved len="116">0</reserved>
+	<magic_end type="u32">4210752250</magic_end>
+	<sensor_info>
+		<EFL type="u16">4740</EFL>
+		<sensor_width>8000</sensor_width>
+		<sensor_height>6000</sensor_height>
+		<pixel_size>8</pixel_size>
+		<reserved len="10">0</reserved>
+	</sensor_info>
+	<iso_adjust_roi>
+		<iso_adjust_roi_enable type="u16">1</iso_adjust_roi_enable>
+		<iso_partition len="2">
+			<table> 1600 3200 </table>
+		</iso_partition>
+		<roi_ratio_touch len="3">
+			<table> 1000 1000 1200 </table>
+		</roi_ratio_touch>
+		<face_ratio_width len="3">
+			<table> 950 950 980 </table>
+		</face_ratio_width>
+		<face_ratio_extend len="3">
+			<table> 3000 3000 3000 </table>
+		</face_ratio_extend>
+		<roi_ratio_flash len="3">
+			<table> 40 40 45 </table>
+		</roi_ratio_flash>
+		<roi_ratio_caf len="3">
+			<table> 40 40 45 </table>
+		</roi_ratio_caf>
+		<reserved len="6">0</reserved>
+	</iso_adjust_roi>
+	<scan_table_tuning>
+		<scan_table_tuning_enable type="u16">1</scan_table_tuning_enable>
+		<inf_pos>126</inf_pos>
+		<macro_pos>760</macro_pos>
+		<scan_table_region_num>10</scan_table_region_num>
+		<scan_table_pos len="9">
+			<table> 165 237 309 379 444 524 604 684 764 </table>
+		</scan_table_pos>
+		<scan_table_steps len="10">
+			<table> 5 6 8 10 13 16 20 20 20 20 </table>
+		</scan_table_steps>
+		<scan_interval_tuning_enable>0</scan_interval_tuning_enable>
+		<bv_thr type="int16" len="2">
+			<table> 0 0 </table>
+		</bv_thr>
+		<touch_interval_tuning idx="0">
+			<cd_rough_interval type="u16">0</cd_rough_interval>
+			<cd_fine_interval>0</cd_fine_interval>
+			<pd_rough_interval>0</pd_rough_interval>
+			<pd_fine_interval>0</pd_fine_interval>
+			<tof_rough_interval>0</tof_rough_interval>
+			<tof_fine_interval>0</tof_fine_interval>
+			<reserved len="6">0</reserved>
+		</touch_interval_tuning>
+		<touch_interval_tuning idx="1">
+			<cd_rough_interval type="u16">0</cd_rough_interval>
+			<cd_fine_interval>0</cd_fine_interval>
+			<pd_rough_interval>0</pd_rough_interval>
+			<pd_fine_interval>0</pd_fine_interval>
+			<tof_rough_interval>0</tof_rough_interval>
+			<tof_fine_interval>0</tof_fine_interval>
+			<reserved len="6">0</reserved>
+		</touch_interval_tuning>
+		<touch_interval_tuning idx="2">
+			<cd_rough_interval type="u16">0</cd_rough_interval>
+			<cd_fine_interval>0</cd_fine_interval>
+			<pd_rough_interval>0</pd_rough_interval>
+			<pd_fine_interval>0</pd_fine_interval>
+			<tof_rough_interval>0</tof_rough_interval>
+			<tof_fine_interval>0</tof_fine_interval>
+			<reserved len="6">0</reserved>
+		</touch_interval_tuning>
+		<face_interval_tuning idx="0">
+			<cd_rough_interval type="u16">0</cd_rough_interval>
+			<cd_fine_interval>0</cd_fine_interval>
+			<pd_rough_interval>0</pd_rough_interval>
+			<pd_fine_interval>0</pd_fine_interval>
+			<tof_rough_interval>0</tof_rough_interval>
+			<tof_fine_interval>0</tof_fine_interval>
+			<reserved len="6">0</reserved>
+		</face_interval_tuning>
+		<face_interval_tuning idx="1">
+			<cd_rough_interval type="u16">0</cd_rough_interval>
+			<cd_fine_interval>0</cd_fine_interval>
+			<pd_rough_interval>0</pd_rough_interval>
+			<pd_fine_interval>0</pd_fine_interval>
+			<tof_rough_interval>0</tof_rough_interval>
+			<tof_fine_interval>0</tof_fine_interval>
+			<reserved len="6">0</reserved>
+		</face_interval_tuning>
+		<face_interval_tuning idx="2">
+			<cd_rough_interval type="u16">0</cd_rough_interval>
+			<cd_fine_interval>0</cd_fine_interval>
+			<pd_rough_interval>0</pd_rough_interval>
+			<pd_fine_interval>0</pd_fine_interval>
+			<tof_rough_interval>0</tof_rough_interval>
+			<tof_fine_interval>0</tof_fine_interval>
+			<reserved len="6">0</reserved>
+		</face_interval_tuning>
+		<center_interval_tuning idx="0">
+			<cd_rough_interval type="u16">0</cd_rough_interval>
+			<cd_fine_interval>0</cd_fine_interval>
+			<pd_rough_interval>0</pd_rough_interval>
+			<pd_fine_interval>0</pd_fine_interval>
+			<tof_rough_interval>0</tof_rough_interval>
+			<tof_fine_interval>0</tof_fine_interval>
+			<reserved len="6">0</reserved>
+		</center_interval_tuning>
+		<center_interval_tuning idx="1">
+			<cd_rough_interval type="u16">0</cd_rough_interval>
+			<cd_fine_interval>0</cd_fine_interval>
+			<pd_rough_interval>0</pd_rough_interval>
+			<pd_fine_interval>0</pd_fine_interval>
+			<tof_rough_interval>0</tof_rough_interval>
+			<tof_fine_interval>0</tof_fine_interval>
+			<reserved len="6">0</reserved>
+		</center_interval_tuning>
+		<center_interval_tuning idx="2">
+			<cd_rough_interval type="u16">0</cd_rough_interval>
+			<cd_fine_interval>0</cd_fine_interval>
+			<pd_rough_interval>0</pd_rough_interval>
+			<pd_fine_interval>0</pd_fine_interval>
+			<tof_rough_interval>0</tof_rough_interval>
+			<tof_fine_interval>0</tof_fine_interval>
+			<reserved len="6">0</reserved>
+		</center_interval_tuning>
+		<reserved len="12">0</reserved>
+	</scan_table_tuning>
+	<hist_thr>
+		<face_hist_tuning_enable type="u16">0</face_hist_tuning_enable>
+		<face_hist_value_thr>25</face_hist_value_thr>
+		<face_hist_bin_filter_thr>1</face_hist_bin_filter_thr>
+		<face_hist_max_win_percent_thr>100</face_hist_max_win_percent_thr>
+		<face_size_thr type="u16" description="If face block size is larger than thr, face block flat judgement can be performed." range="[0,4000]" default="93">93</face_size_thr>
+		<face_init_idx_thr type="u16" description="If vcm init pos is smaller than thr, face block flat judgement can be performed." range="[0,256]" default="40">40</face_init_idx_thr>
+		<sky_hist_tuning_enable type="u16" description="Flat detection enable for sky scenes." range="[0,1]" default="1">1</sky_hist_tuning_enable>
+		<sky_hist_value_thr type="u16" description="Threshold of the valid bin. If the value is greater than the product of this parameter and the total value, the bin is judged to be valid." range="[0,1000]" default="10">10</sky_hist_value_thr>
+		<sky_hist_bin_filter_thr type="u16" description="When the number of valid bins is less than this parameter, the roi is judged to be flat." range="[0,32]" default="8">8</sky_hist_bin_filter_thr>
+		<reserved len="7">0</reserved>
+	</hist_thr>
+	<aestable_cnt>
+		<ae_stable_cnt type="u16" len="6">
+			<table> 2 0 0 7 0 0 </table>
+		</ae_stable_cnt>
+		<ae_near_stable_cnt len="6">
+			<table> 3 1 1 7 1 1 </table>
+		</ae_near_stable_cnt>
+		<ae_y_stable_cnt len="6">
+			<table> 1 1 1 7 1 1 </table>
+		</ae_y_stable_cnt>
+		<reserved len="6">0</reserved>
+	</aestable_cnt>
+	<touchpd_tuning>
+		<pdaf_tuning_enable type="u16">1</pdaf_tuning_enable>
+		<coc_range len="5">
+			<table> 50 50 50 50 50 </table>
+		</coc_range>
+		<far_tolerance description="It is used to judge whether the peak value predicted by PD is correct." default="0" range="[0,1023]">50</far_tolerance>
+		<near_tolerance description="It is used to judge whether the peak value predicted by PD is correct." default="0" range="[0,1023]">80</near_tolerance>
+		<err_limit description="The number of times that the motor code value of the peak point is not within the valid stroke." default="0" range="[0,5]">3</err_limit>
+		<pd_thread_sync_frm description="The number of stable frames after PD focus is completed." default="0" range="[0,10]">3</pd_thread_sync_frm>
+		<max_process_frm description="PD maximum focus frame number." default="0" range="[0,6]">6</max_process_frm>
+		<pd_converge_thr description="After PD is triggered, check whether the current phase difference times 1000 is greater than pd_converge_thr" default="0" range="[0,16000]">1000</pd_converge_thr>
+		<pd_two_steps_converge_thr description="If the PD initial phase difference times 1000 is greater than this value, the PD will be pushed twice." default="0" range="[0,16000]">6000</pd_two_steps_converge_thr>
+		<reserved len="2" note="SpaceNum">0</reserved>
+		<pd_two_steps_conf_score_thr type="u32" description="If the PD's initial confidence score is greater than this value, the PD will push it twice." default="0" range="[0,1000]">150</pd_two_steps_conf_score_thr>
+		<pd_two_steps_percent type="u16" description="The position where the PD pushes the motor for the first time accounts for the proportion of defocus." default="0" range="[0,1000]">700</pd_two_steps_percent>
+		<far_to_near_search_range description="cd fine scan range, scan interval from far to near direction" default="0" range="[0,1023]">300</far_to_near_search_range>
+		<near_to_far_search_range description="cd fine scan range, scan interval from near to far direction" default="0" range="[0,1023]">300</near_to_far_search_range>
+		<confscore_strong_thr description="A confidence score greater than this value is considered to be high confidence in pd." default="0" range="[0,1000]">1000</confscore_strong_thr>
+		<confscore_weak_thr description="If the confidence score is less than this value, it is considered that the confidence of pd is low." default="0" range="[0,1000]">100</confscore_weak_thr>
+		<dcc_correction description="dcc scaling factor" default="0" range="[0,1000]">1</dcc_correction>
+		<pd_defocus_param>
+			<pd_defocus_divide_num type="u16" description="The number of intervals to divide the pd defocus value." default="0" range="[0,5]">5</pd_defocus_divide_num>
+			<pd_defocus_divide_pos len="4" description="This array is the pos value for dividing the pd defocus interval" default="0" range="[0,1023]">
+				<table> 50 160 260 450 </table>
+			</pd_defocus_divide_pos>
+			<pd_defocus_step len="5" description="This array corresponds to pushing different step values when the current pd defocus value is in different intervals." default="0" range="[0,1023]">
+				<table> 50 160 150 300 300 </table>
+			</pd_defocus_step>
+			<reserved len="4">0</reserved>
+		</pd_defocus_param>
+		<pdaf_lowbv_tuning_enable>0</pdaf_lowbv_tuning_enable>
+		<bv_thr type="int16">0</bv_thr>
+		<pdaf_lowbv>
+			<pd_converge_thr type="u16">0</pd_converge_thr>
+			<pd_two_steps_converge_thr>0</pd_two_steps_converge_thr>
+			<pd_two_steps_conf_score_thr type="u32">0</pd_two_steps_conf_score_thr>
+			<pd_two_steps_percent type="u16">0</pd_two_steps_percent>
+			<far_to_near_search_range>0</far_to_near_search_range>
+			<near_to_far_search_range>0</near_to_far_search_range>
+			<confscore_strong_thr>0</confscore_strong_thr>
+			<confscore_weak_thr>0</confscore_weak_thr>
+			<reserved>0</reserved>
+		</pdaf_lowbv>
+		<reserved len="2">0</reserved>
+	</touchpd_tuning>
+	<reserved42 len="300" type="u16">0</reserved42>
+	<pdaf_converge_tuning>
+		<tuning_enable type="u16">1</tuning_enable>
+		<far_extend type="u16" description="Effective vcm stroke expansion value for from." range="[0,1023]" default="50">50</far_extend>
+		<near_extend type="u16" description="Effective vcm stroke expansion value for to." range="[0,1023]" default="80">80</near_extend>
+		<dcc_correction type="u16" description="Scaling factor of dcc." range="[0,1000]" default="1">1</dcc_correction>
+		<center_param>
+			<tuning_enable type="u16">1</tuning_enable>
+			<bv_num description="Partition quantity of bv." range="[0,5]" default="4">4</bv_num>
+			<bv_thr len="4" type="int16">
+				<table> 1000 800 200 0 </table>
+			</bv_thr>
+			<search_param idx="0">
+				<max_sch_num type="u16" description="If the frames of ps search are beyond this parameter, convert to cdaf." range="[0,20]" default="4">4</max_sch_num>
+				<err_limit type="u16" description="Frame number of predict peak pos out of range is larger than this parameter, convert to cdaf." range="[0,5]" default="3">3</err_limit>
+				<pd_thread_sync_frm type="u16" description="The number of frames for pd stable is required after the vcm is moved." range="[0,10]" default="3">3</pd_thread_sync_frm>
+				<low_conf_sch_en type="u16" description="Enable switch when the confscore is low." range="[0,1]" default="1">1</low_conf_sch_en>
+				<low_conf_sch_num type="u16" description="If frame number of pd search is less than this parameter when the confscore is low, pd is usable." range="[0,1]" default="1">1</low_conf_sch_num>
+				<defocus_large_thr type="u16" description="If pd defocus is larger than this parameter when the confscore is low, pd is usable." range="[0,1024]" default="200">200</defocus_large_thr>
+				<defocus_fine_thr type="u16" description="If pd defocus is less than this parameter, af can be transfered to cdaf." range="[0,1024]" default="85">85</defocus_fine_thr>
+				<defocus_converge_thr type="u16" description="If pd defocus is less than this parameter when the confscore is high, pdaf is done." range="[0,1024]" default="5">5</defocus_converge_thr>
+				<confscore_strong_thr type="u16" description="If confscore is larger than this parameter, confscore level is high." range="[0,1000]" default="500">500</confscore_strong_thr>
+				<confscore_middle_thr type="u16" description="If confscore is larger than this parameter, confscore level is middle." range="[0,1000]" default="120">120</confscore_middle_thr>
+				<confscore_weak_thr type="u16" description="If confscore is larger than this parameter, confscore level is low." range="[0,1000]" default="50">50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16" description="The number of sections divided by step move vcm when confscore level is high." default="5" range="[0,5]">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16" description="The number of sections divided by step move vcm when confscore level is middle." range="[0,5]" default="5">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range type="u16" description="The scanning space left for CDAF after PD focuses." range="[0,1023]" default="35" freq="often">35</coc_range>
+				<forward_far_search_range description="cd Scan range: scanning range from far to near" range="[0,1023]" default="0" freq="often">0</forward_far_search_range>
+				<forward_near_search_range description="cd Scan range: scanning range from far to near" range="[0,1023]" default="65" freq="often">65</forward_near_search_range>
+				<backward_far_search_range description="cd Scan range: scanning range from far to near" range="[0,1023]" default="80" freq="often">80</backward_far_search_range>
+				<backward_near_search_range description="cd Scan range: scanning range from far to near" range="[0,1023]" default="0" freq="often">0</backward_near_search_range>
+				<turnback_defocus_step len="3" description="Pd defocus to divide the change threshold interval" range="[0,1023]" freq="often">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4" description="If pd defocus variation is larger than this parameter, pdaf turnback.">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="1">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>35</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="2">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>35</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="3">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>35</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="4">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>35</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<smooth_param>
+				<pd_smooth_divide_num type="u16">0</pd_smooth_divide_num>
+				<pd_smooth_pos len="4">
+					<table> 50 160 260 450 </table>
+				</pd_smooth_pos>
+				<pd_smooth_step len="5">
+					<table> 50 160 150 300 300 </table>
+				</pd_smooth_step>
+				<reserved len="6">0</reserved>
+			</smooth_param>
+			<reserved len="58" type="u16">0</reserved>
+		</center_param>
+		<face_param>
+			<tuning_enable type="u16">1</tuning_enable>
+			<bv_num>4</bv_num>
+			<bv_thr len="4" type="int16">
+				<table> 1000 800 200 0 </table>
+			</bv_thr>
+			<search_param idx="0">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>700</confscore_strong_thr>
+				<confscore_middle_thr>150</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="1">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>700</confscore_strong_thr>
+				<confscore_middle_thr>150</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="2">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>700</confscore_strong_thr>
+				<confscore_middle_thr>150</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="3">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>700</confscore_strong_thr>
+				<confscore_middle_thr>150</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="4">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>700</confscore_strong_thr>
+				<confscore_middle_thr>150</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<smooth_param>
+				<pd_smooth_divide_num type="u16" description="Number of intervals divided for vcm smooth movement." range="[0,5]" default="0">0</pd_smooth_divide_num>
+				<pd_smooth_pos len="4">
+					<table> 50 160 260 450 </table>
+				</pd_smooth_pos>
+				<pd_smooth_step len="5">
+					<table> 50 160 150 300 300 </table>
+				</pd_smooth_step>
+				<reserved len="6">0</reserved>
+			</smooth_param>
+			<reserved len="58" type="u16">0</reserved>
+		</face_param>
+		<touch_param>
+			<tuning_enable type="u16">1</tuning_enable>
+			<bv_num>4</bv_num>
+			<bv_thr len="4" type="int16">
+				<table> 1000 800 200 0 </table>
+			</bv_thr>
+			<search_param idx="0">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="1">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="2">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="3">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="4">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<smooth_param>
+				<pd_smooth_divide_num type="u16">0</pd_smooth_divide_num>
+				<pd_smooth_pos len="4">
+					<table> 50 160 260 450 </table>
+				</pd_smooth_pos>
+				<pd_smooth_step len="5">
+					<table> 50 160 150 300 300 </table>
+				</pd_smooth_step>
+				<reserved len="6">0</reserved>
+			</smooth_param>
+			<reserved len="58" type="u16">0</reserved>
+		</touch_param>
+		<flash_param>
+			<tuning_enable type="u16">1</tuning_enable>
+			<bv_num>4</bv_num>
+			<bv_thr len="4" type="int16">
+				<table> 1000 800 200 0 </table>
+			</bv_thr>
+			<search_param idx="0">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="1">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="2">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="3">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<search_param idx="4">
+				<max_sch_num type="u16">4</max_sch_num>
+				<err_limit>3</err_limit>
+				<pd_thread_sync_frm>3</pd_thread_sync_frm>
+				<low_conf_sch_en>1</low_conf_sch_en>
+				<low_conf_sch_num>1</low_conf_sch_num>
+				<defocus_large_thr>200</defocus_large_thr>
+				<defocus_fine_thr>85</defocus_fine_thr>
+				<defocus_converge_thr>5</defocus_converge_thr>
+				<confscore_strong_thr>500</confscore_strong_thr>
+				<confscore_middle_thr>120</confscore_middle_thr>
+				<confscore_weak_thr>50</confscore_weak_thr>
+				<conf_strong_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 100 200 600 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 90 85 70 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_strong_move_table>
+				<conf_middle_move_table>
+					<move_divide_num type="u16">5</move_divide_num>
+					<move_pos len="4">
+						<table> 50 100 300 900 </table>
+					</move_pos>
+					<move_percent len="5">
+						<table> 100 95 85 80 60 </table>
+					</move_percent>
+					<reserved len="6">0</reserved>
+				</conf_middle_move_table>
+				<coc_range>65</coc_range>
+				<forward_far_search_range>0</forward_far_search_range>
+				<forward_near_search_range>65</forward_near_search_range>
+				<backward_far_search_range>80</backward_far_search_range>
+				<backward_near_search_range>0</backward_near_search_range>
+				<turnback_defocus_step len="3">
+					<table> 500 300 100 </table>
+				</turnback_defocus_step>
+				<turnback_defocus_diff_thr len="4">
+					<table> 100 70 60 50 </table>
+				</turnback_defocus_diff_thr>
+				<reserved len="1">0</reserved>
+			</search_param>
+			<smooth_param>
+				<pd_smooth_divide_num type="u16">0</pd_smooth_divide_num>
+				<pd_smooth_pos len="4">
+					<table> 50 160 260 450 </table>
+				</pd_smooth_pos>
+				<pd_smooth_step len="5">
+					<table> 50 160 150 300 300 </table>
+				</pd_smooth_step>
+				<reserved len="6">0</reserved>
+			</smooth_param>
+			<reserved len="58" type="u16">0</reserved>
+		</flash_param>
+		<reserved len="4" type="u16">0</reserved>
+	</pdaf_converge_tuning>
+	<aft_params>
+		<aft_scene_estimate_enable type="u16" description="Enable switch of judging whether the scene is stable or move." range="[0,1]" default="1">1</aft_scene_estimate_enable>
+		<aft_pd_params>
+			<aft_pd_defocus_support type="u16" description="Enable switch of pd trigger based on pd defocus." range="[0,1]" default="1">1</aft_pd_defocus_support>
+			<centerpd>
+				<pd_ultraBr>
+					<aft_pd_defocus_diff_thr type="u16" description="If current center pd defocus and average are less than this parameter, scene is stable in utral bright environments." range="[0,1024]" default="45">45</aft_pd_defocus_diff_thr>
+					<aft_pd_defocus_var_thr type="u16" description="If current center pd defocus variance is less than this parameter, scene is unstable in utral bright environments." range="[0,50]" default="30">30</aft_pd_defocus_var_thr>
+					<aft_pd_defocus_move_cnt_thr type="u16" description="If move cnt is more than this parameter, trigger judgment is 'need af' in utral bright environments." range="[1,10]" default="3">3</aft_pd_defocus_move_cnt_thr>
+					<aft_pd_defocus_stab_cnt_thr type="u16" description="If stable cnt is more than this parameter, scene is stable in utral bright environments." range="[1,10]" default="3">3</aft_pd_defocus_stab_cnt_thr>
+					<reserved len="4">0</reserved>
+				</pd_ultraBr>
+				<pd_highBr>
+					<aft_pd_defocus_diff_thr type="u16" description="If current center pd defocus and average are less than this parameter, scene is stable in high bright environments." range="[0,1024]" default="50">50</aft_pd_defocus_diff_thr>
+					<aft_pd_defocus_var_thr type="u16" description="If current center pd defocus variance is less than this parameter, scene is unstable in high bright environments." range="[0,50]" default="30">30</aft_pd_defocus_var_thr>
+					<aft_pd_defocus_move_cnt_thr type="u16" description="If move cnt is more than this parameter, trigger judgment is 'need af' in high bright environments." range="[1,10]" default="3">3</aft_pd_defocus_move_cnt_thr>
+					<aft_pd_defocus_stab_cnt_thr type="u16" description="If stable cnt is more than this parameter, scene is stable in high bright environments." range="[1,10]" default="3">3</aft_pd_defocus_stab_cnt_thr>
+					<reserved len="4">0</reserved>
+				</pd_highBr>
+				<pd_midBr>
+					<aft_pd_defocus_diff_thr type="u16" description="If current center pd defocus and average are less than this parameter, scene is stable in middle bright environments." range="[0,1024]" default="55">55</aft_pd_defocus_diff_thr>
+					<aft_pd_defocus_var_thr type="u16" description="If current center pd defocus variance is less than this parameter, scene is unstable in middle bright environments." range="[0,50]" default="30">30</aft_pd_defocus_var_thr>
+					<aft_pd_defocus_move_cnt_thr type="u16" description="If move cnt is more than this parameter, trigger judgment is 'need af' in middle bright environments." range="[1,10]" default="3">3</aft_pd_defocus_move_cnt_thr>
+					<aft_pd_defocus_stab_cnt_thr type="u16" description="If stable cnt is more than this parameter, scene is stable in middle bright environments." range="[1,10]" default="3">3</aft_pd_defocus_stab_cnt_thr>
+					<reserved len="4">0</reserved>
+				</pd_midBr>
+				<reserved len="8">0</reserved>
+			</centerpd>
+			<facepd>
+				<pd_ultraBr>
+					<aft_pd_defocus_diff_thr type="u16" description="If current face pd defocus and average are less than this parameter, scene is stable in utral bright environments." range="[0,1024]" default="47">47</aft_pd_defocus_diff_thr>
+					<aft_pd_defocus_var_thr type="u16" description="If current face pd defocus variance is less than this parameter, scene is unstable in utral bright environments." range="[0,50]" default="30">30</aft_pd_defocus_var_thr>
+					<aft_pd_defocus_move_cnt_thr type="u16" description="If move cnt is more than this parameter, trigger judgment is 'need af' in utral bright environments." range="[1,10]" default="3">3</aft_pd_defocus_move_cnt_thr>
+					<aft_pd_defocus_stab_cnt_thr type="u16" description="If stable cnt is more than this parameter, scene is stable in utral bright environments." range="[1,10]" default="3">3</aft_pd_defocus_stab_cnt_thr>
+					<reserved len="4">0</reserved>
+				</pd_ultraBr>
+				<pd_highBr>
+					<aft_pd_defocus_diff_thr type="u16" description="If current face pd defocus and average are less than this parameter, scene is stable in high bright environments." range="[0,1024]" default="52">52</aft_pd_defocus_diff_thr>
+					<aft_pd_defocus_var_thr type="u16" description="If current face pd defocus variance is less than this parameter, scene is unstable in high bright environments." range="[0,50]" default="30">30</aft_pd_defocus_var_thr>
+					<aft_pd_defocus_move_cnt_thr type="u16" description="If move cnt is more than this parameter, trigger judgment is 'need af' in high bright environments." range="[1,10]" default="3">3</aft_pd_defocus_move_cnt_thr>
+					<aft_pd_defocus_stab_cnt_thr type="u16" description="If stable cnt is more than this parameter, scene is stable in high bright environments." range="[1,10]" default="3">3</aft_pd_defocus_stab_cnt_thr>
+					<reserved len="4">0</reserved>
+				</pd_highBr>
+				<pd_midBr>
+					<aft_pd_defocus_diff_thr type="u16" description="If current face pd defocus and average are less than this parameter, scene is stable in middle bright environments." default="57" range="[0,1024]">57</aft_pd_defocus_diff_thr>
+					<aft_pd_defocus_var_thr type="u16" description="If current face pd defocus variance is less than this parameter, scene is unstable in middle bright environments." default="30" range="[0,50]">30</aft_pd_defocus_var_thr>
+					<aft_pd_defocus_move_cnt_thr type="u16" description="If move cnt is more than this parameter, trigger judgment is 'need af' in middle bright environments." default="3" range="[1,10]">3</aft_pd_defocus_move_cnt_thr>
+					<aft_pd_defocus_stab_cnt_thr type="u16" description="If stable cnt is more than this parameter, scene is stable in middle bright environments." default="3" range="[1,10]">3</aft_pd_defocus_stab_cnt_thr>
+					<reserved len="4">0</reserved>
+				</pd_midBr>
+				<reserved type="u16" len="8">0</reserved>
+			</facepd>
+			<reserved type="u16" len="7">0</reserved>
+		</aft_pd_params>
+		<reserved type="u16" len="7">0</reserved>
+	</aft_params>
+	<haf_tuning>
+		<haf_tuning_enable type="u16" description="Enable switch is used for focus tracking." default="1" range="[0,1]">1</haf_tuning_enable>
+		<pdaf_algo_enable type="u16" description="Enable switch is used for pure pd." default="1" range="[0,1]">1</pdaf_algo_enable>
+		<tof_algo_enable type="u16" description="Enable switch is used for pure tof." default="1" range="[0,1]">0</tof_algo_enable>
+		<cdaf_algo_enable type="u16" description="Enable switch is used for cd." default="1" range="[0,1]">1</cdaf_algo_enable>
+		<flash_pd_enable type="u16" description="Enable switch is used for flash pd." default="1" range="[0,1]">1</flash_pd_enable>
+		<roi_frame_skip_num type="u16" description="Delayed frames when roi type change." default="1" range="[0,10]">1</roi_frame_skip_num>
+		<touch_body_enable type="u16" description="Enable switch to focus on face when touch on body." default="0" range="[0,1]">0</touch_body_enable>
+		<cdaf_fine_algo_enable type="u16" description="Enable switch for fine search turnback." default="1" range="[0,1]">1</cdaf_fine_algo_enable>
+		<reserved len="4">0</reserved>
+	</haf_tuning>
+	<face_roi_tuning>
+		<tuning_enable type="u16" description="Enable switch for face area adjust in af4.4." default="1" range="[0,1]">1</tuning_enable>
+		<face_ratio_tuning>
+			<side_face_enable type="u16" description="Enable switch for sideface area adjust." default="1" range="[0,1]">1</side_face_enable>
+			<face_roi_extend_enable type="u16" description="Enable switch for face area extend." default="1" range="[0,1]">1</face_roi_extend_enable>
+			<face_iso_adjust_enable type="u16" description="Enable switch for selecting parameters according to iso." default="1" range="[0,1]">1</face_iso_adjust_enable>
+			<face_ratio_max type="u16" description="Maximum face extend ratio." default="100" range="[0,100]">100</face_ratio_max>
+			<iso len="2" description="bright/com/dark">
+				<table> 800 3200 </table>
+			</iso>
+			<face_size_thr type="u16" len="4" description="According to these parameters, faces are divided into five categories:micro/small/middle/big/huge.">
+				<table> 67 120 300 600 </table>
+			</face_size_thr>
+			<face_ratio_com>
+				<face_height_ratio type="u16" len="5" description="Select corresponding height scaling parameters for faces of different sizes in com iso.">
+					<table> 800 900 900 900 600 </table>
+				</face_height_ratio>
+				<face_width_ratio type="u16" len="5" description="Select corresponding width scaling parameters for faces of different sizes in com iso.">
+					<table> 855 855 855 855 600 </table>
+				</face_width_ratio>
+			</face_ratio_com>
+			<face_ratio_dark>
+				<face_height_ratio type="u16" len="5" description="Select corresponding height scaling parameters for faces of different sizes in dark iso.">
+					<table> 800 900 900 900 600 </table>
+				</face_height_ratio>
+				<face_width_ratio type="u16" len="5" description="Select corresponding width scaling parameters for faces of different sizes in dark iso.">
+					<table> 855 855 855 855 600 </table>
+				</face_width_ratio>
+			</face_ratio_dark>
+			<face_ratio_bright type="u16" len="5" description="Select corresponding height scaling parameters for faces of different sizes in bright iso.">
+				<face_height_ratio type="u16" len="5">
+					<table> 800 900 900 900 600 </table>
+				</face_height_ratio>
+				<face_width_ratio type="u16" len="5" description="Select corresponding width scaling parameters for faces of different sizes in bright iso.">
+					<table> 780 780 780 780 600 </table>
+				</face_width_ratio>
+			</face_ratio_bright>
+			<face_ratio_extend_w type="u16" len="2" description="Face width extend parameters for micro/normal face.Small/middle/big face are defined as normal face, huge face does not extend">
+				<table> 5000 3000 </table>
+			</face_ratio_extend_w>
+			<face_ratio_extend_h type="u16" len="2" description="Face height extend parameters for micro/normal face.Small/middle/big face are defined as normal face, huge face does not extend">
+				<table> 3000 3000 </table>
+			</face_ratio_extend_h>
+			<reserved len="6">0</reserved>
+		</face_ratio_tuning>
+		<face_weight_tuning>
+			<normalface_af>
+				<block_num_x type="u8">3</block_num_x>
+				<block_num_y>3</block_num_y>
+				<weight_value len="40">
+					<table> 4 2 4 2 8 2 8 2 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</weight_value>
+				<reserved len="13">0</reserved>
+			</normalface_af>
+			<normalface_af_extend>
+				<block_num_x type="u8">9</block_num_x>
+				<block_num_y>9</block_num_y>
+				<weight_value len="108">
+					<table> 0 0 0 1 2 1 0 0 0 0 0 0 1 2 1 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 2 1 0 0 0 0 0 0 1 2 1 0 0 0 0 0 0 1 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</weight_value>
+			</normalface_af_extend>
+			<microface_af>
+				<block_num_x type="u8">3</block_num_x>
+				<block_num_y>3</block_num_y>
+				<weight_value len="40">
+					<table> 4 2 4 2 8 2 8 2 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</weight_value>
+				<reserved len="13">0</reserved>
+			</microface_af>
+			<microface_af_extend>
+				<block_num_x type="u8">5</block_num_x>
+				<block_num_y>3</block_num_y>
+				<weight_value len="40">
+					<table> 0 0 2 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</weight_value>
+				<reserved len="13">0</reserved>
+			</microface_af_extend>
+			<hugeface_af>
+				<block_num_x type="u8">3</block_num_x>
+				<block_num_y>3</block_num_y>
+				<weight_value len="40">
+					<table> 4 2 4 2 8 2 8 2 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</weight_value>
+				<reserved len="13">0</reserved>
+			</hugeface_af>
+			<sideface_af>
+				<block_num_x type="u8">3</block_num_x>
+				<block_num_y>3</block_num_y>
+				<weight_value len="40">
+					<table> 4 2 8 4 2 2 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</weight_value>
+				<reserved len="13">0</reserved>
+			</sideface_af>
+			<reserved idx="0">
+				<block_num_x type="u8">0</block_num_x>
+				<block_num_y>0</block_num_y>
+				<weight_value len="40">
+					<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</weight_value>
+				<reserved len="13">0</reserved>
+			</reserved>
+			<reserved idx="1">
+				<block_num_x type="u8">0</block_num_x>
+				<block_num_y>0</block_num_y>
+				<weight_value len="40">
+					<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</weight_value>
+				<reserved len="13">0</reserved>
+			</reserved>
+			<reserved idx="2">
+				<block_num_x type="u8">0</block_num_x>
+				<block_num_y>0</block_num_y>
+				<weight_value len="40">
+					<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</weight_value>
+				<reserved len="13">0</reserved>
+			</reserved>
+			<reserved idx="3">
+				<block_num_x type="u8">0</block_num_x>
+				<block_num_y>0</block_num_y>
+				<weight_value len="40">
+					<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</weight_value>
+				<reserved len="13">0</reserved>
+			</reserved>
+			<reserved idx="4">
+				<block_num_x type="u8">0</block_num_x>
+				<block_num_y>0</block_num_y>
+				<weight_value len="40">
+					<table> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </table>
+				</weight_value>
+				<reserved len="13">0</reserved>
+			</reserved>
+		</face_weight_tuning>
+		<reserved len="5" type="u16">0</reserved>
+	</face_roi_tuning>
+	<face_correct>
+		<face_correct_highbv>
+			<face_predpos_enable type="u16" description="Enable switch to use face prediction to correct peak of face scene under highbv." default="1" range="[0,1]">1</face_predpos_enable>
+			<face_pred_valid_distance type="u16" description="Use the effective distance of face prediction under highbv. If it is less than this value, it will not be used." default="1000" range="[50,1000]">1000</face_pred_valid_distance>
+			<face_pred_dis_num type="u16" description="Number of face prediction parameter segments under highbv." default="3" range="[1,4]">3</face_pred_dis_num>
+			<face_pred_dis_section type="u16" len="4" description="Segment distance threshold of face prediction parameters under highbv." default="80/100/120/0" range="[50,1000]">
+				<table> 80 100 120 0 </table>
+			</face_pred_dis_section>
+			<face_pred_pos_offset type="int16" len="5" description="Prediction position offset of different distance segments for face prediction under highbv." default="-10/-20/-10/-10/0" range="[-100,100]">
+				<table> -10 -20 -10 -10 0 </table>
+			</face_pred_pos_offset>
+			<face_pred_rangef type="u16" description="Correction range based on face prediction position under highbv.(for from)" default="7" range="[0,50]">7</face_pred_rangef>
+			<face_pred_rangen type="u16" description="Correction range based on face prediction position under highbv.(for near)" default="7" range="[0,50]">7</face_pred_rangen>
+			<face_pred_errdac_thr type="u16" description="If the deviation between peak and the predicted face position under highbv exceeds this threshold, no correction will be made." default="35" range="[0,100]">35</face_pred_errdac_thr>
+			<side_face_pred_enable type="u16" description="Enable switch to use sideface prediction to correct peak of sideface scene under highbv." default="1" range="[0,1]">1</side_face_pred_enable>
+			<yaw_angle_thr type="u16" description="If yaw_angle is greater than this threshold, it is judged as sideface scene under highbv." default="50" range="[0,100]">50</yaw_angle_thr>
+			<sideface_pred_valid_distance type="u16" description="Use the effective distance of sideface prediction under highbv. If it is less than this value, it will not be used." default="60" range="[50,1000]">60</sideface_pred_valid_distance>
+			<sideface_pred_rangef type="u16" description="Correction range based on sideface prediction position under highbv.(for from)" default="7" range="[0,50]">7</sideface_pred_rangef>
+			<sideface_pred_rangen type="u16" description="Correction range based on sideface prediction position under highbv.(for near)" default="7" range="[0,50]">7</sideface_pred_rangen>
+			<sideface_pred_errdac_thr type="u16" description="If the deviation between peak and the predicted sideface position under highbv exceeds this threshold, no correction will be made." default="48" range="[0,100]">48</sideface_pred_errdac_thr>
+			<reserved len="3">0</reserved>
+		</face_correct_highbv>
+		<face_correct_midbv>
+			<face_predpos_enable type="u16">1</face_predpos_enable>
+			<face_pred_valid_distance>150</face_pred_valid_distance>
+			<face_pred_dis_num>3</face_pred_dis_num>
+			<face_pred_dis_section len="4">
+				<table> 80 100 120 0 </table>
+			</face_pred_dis_section>
+			<face_pred_pos_offset type="int16" len="5">
+				<table> -10 -20 -10 -10 0 </table>
+			</face_pred_pos_offset>
+			<face_pred_rangef type="u16">7</face_pred_rangef>
+			<face_pred_rangen>7</face_pred_rangen>
+			<face_pred_errdac_thr>35</face_pred_errdac_thr>
+			<side_face_pred_enable>1</side_face_pred_enable>
+			<yaw_angle_thr>50</yaw_angle_thr>
+			<sideface_pred_valid_distance>60</sideface_pred_valid_distance>
+			<sideface_pred_rangef>7</sideface_pred_rangef>
+			<sideface_pred_rangen>7</sideface_pred_rangen>
+			<sideface_pred_errdac_thr>48</sideface_pred_errdac_thr>
+			<reserved len="3">0</reserved>
+		</face_correct_midbv>
+		<face_correct_lowbv>
+			<face_predpos_enable type="u16">1</face_predpos_enable>
+			<face_pred_valid_distance>110</face_pred_valid_distance>
+			<face_pred_dis_num>3</face_pred_dis_num>
+			<face_pred_dis_section len="4">
+				<table> 90 115 130 0 </table>
+			</face_pred_dis_section>
+			<face_pred_pos_offset type="int16" len="5">
+				<table> -25 -15 -7 -10 0 </table>
+			</face_pred_pos_offset>
+			<face_pred_rangef type="u16">7</face_pred_rangef>
+			<face_pred_rangen>7</face_pred_rangen>
+			<face_pred_errdac_thr>40</face_pred_errdac_thr>
+			<side_face_pred_enable>1</side_face_pred_enable>
+			<yaw_angle_thr>20</yaw_angle_thr>
+			<sideface_pred_valid_distance>60</sideface_pred_valid_distance>
+			<sideface_pred_rangef>7</sideface_pred_rangef>
+			<sideface_pred_rangen>7</sideface_pred_rangen>
+			<sideface_pred_errdac_thr>48</sideface_pred_errdac_thr>
+			<reserved len="3">0</reserved>
+		</face_correct_lowbv>
+		<bv_thr type="int16" len="2" description="Bv threshold for face correct." default="900/300" range="[-600,1600]">
+			<table> 900 300 </table>
+		</bv_thr>
+		<reserved type="u16" len="6">
+			<table> 0 0 0 0 0 0 </table>
+		</reserved>
+	</face_correct>
+	<afm_gamma>
+		<tuning_enable type="u16" description="Enable switch for afm gamma." default="1" range="[0,1]">1</tuning_enable>
+		<dark_scene_bv_thr type="int16" description="Bv is smaller than this parameter, dark gamma will be used." default="400" range="[-600,1600]">400</dark_scene_bv_thr>
+		<bright_scene_bv_thr type="u16" description="Bv is larger than this parameter, bright gamma will be used." default="800" range="[0,1600]">800</bright_scene_bv_thr>
+		<reserved type="u16" len="5">0</reserved>
+	</afm_gamma>
+	<pd_skip_ctrl>
+		<pd_skip_ctrl_enable type="u16" description="Enable switch for pd calculation to skip several frames." default="0" range="[0,1]">0</pd_skip_ctrl_enable>
+		<skip_cnt_focusing type="u16" description="Skip framse for pd calculation when focusing." default="0" range="[0,10]">0</skip_cnt_focusing>
+		<skip_cnt_other type="u16" description="Skip framse for pd calculation when not focusing." default="0" range="[0,10]">0</skip_cnt_other>
+		<pd_calc_onlyfocusing type="u16" description="Enable switch for pd calculation when not focusing." default="0" range="[0,1]">0</pd_calc_onlyfocusing>
+		<pd_calc_delay_frm_cnt type="u16" description="Delay framse for pd calculation." default="0" range="[0,10]">0</pd_calc_delay_frm_cnt>
+		<reserved len="3">0</reserved>
+	</pd_skip_ctrl>
+	<reserved44 type="u16" len="474">0</reserved44>
+	<magic_end42 type="u32" description="0xFAFAFAFA">4210752250</magic_end42>
+</AF_16435>

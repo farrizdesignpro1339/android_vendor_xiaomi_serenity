@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * SPDX-License-Identifier: LicenseRef-Unisoc-General-1.0
+ * SPDX-FileCopyrightText: 2012 Unisoc (Shanghai) Technologies Co., Ltd
+
+ * Copyright 2012-2023 Unisoc (Shanghai) Technologies Co., Ltd
+ *
+ * Licensed under the Unisoc General Software License, version 1.0 (the License);
+ * you may not use this file except in compliance with the License. You may obtain a copy of the License at
+ *
+ * https://www.unisoc.com/en_us/license/UNISOC_GENERAL_LICENSE_V1.0-EN_US
+ *
+ * Software distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OF ANY KIND, either express or implied.
+ * See the Unisoc General Software License, version 1.0 for more details.
+ */
+
+ -->
+
+<power>
+    <mode name="normal">
+        <scene name="fixed_performance">
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="interaction_touch">
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="interaction_launch">
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+            <set path="subsys" file="uclamp" value="conf_5" />
+        </scene>
+        <scene name="interaction_fling">
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="subsys" file="uclamp" value="conf_5" />
+        </scene>
+        <scene name="interaction_wakeup">
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+        </scene>
+        <scene name="benchmark">
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="backdoor" value="1" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6/uscfreq" file="freq_margin" value="50" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0/uscfreq" file="freq_margin" value="50" />
+            <set path="/proc/sys/unisched" file="sched_walt_io_is_busy" value="1" />
+            <set path="/proc/sys/unisched" file="sched_uclamp_threshold" value="0" />
+            <set path="/proc/sys/unisched" file="sched_spc_threshold" value="200" />
+            <set path="subsys" file="uclamp" value="conf_2" />
+        </scene>
+        <scene name="ddr">
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="launch" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="screen_rotation" >
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="performance" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="performance_gts" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="performance_cts" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="camera_high_perf" >
+            <set path="subsys" file="uclamp" value="conf_8" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+        </scene>
+        <scene name="camera_heavyload_perf" >
+            <set path="subsys" file="uclamp" value="conf_8" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+        </scene>
+        <scene name="camera_launch_perf" >
+            <set path="subsys" file="uclamp" value="conf_8" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+        </scene>
+        <scene name="camera_icap_perf" >
+            <set path="subsys" file="uclamp" value="conf_8" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+        </scene>
+        <scene name="camera_portrait_perf" >
+            <set path="subsys" file="uclamp" value="conf_8" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+        </scene>
+        <scene name="camera_perf" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+        </scene>
+        <scene name="camera_lowpower" >
+            <set path="subsys" file="uclamp" value="conf_6" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0/uscfreq" file="freq_margin" value="25" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6/uscfreq" file="freq_margin" value="25" />
+        </scene>
+        <scene name="camera_lowpower_1" >
+            <set path="subsys" file="uclamp" value="conf_3" />
+        </scene>
+        <scene name="video_60fps" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="radio_nviot" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+        </scene>
+	<scene name="com.futuremark.pcmark.android.benchmark" >
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="backdoor" value="1" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+            <set path="/proc/sys/unisched" file="sched_spc_threshold" value="200" />
+            <set path="/proc/sys/unisched" file="sched_walt_io_is_busy" value="1" />
+            <set path="/proc/sys/unisched" file="sched_uclamp_threshold" value="0" />
+            <set path="/proc/sys/unisched/rotation" file="rotation_enable" value="0" />
+            <set path="subsys" file="uclamp" value="conf_2" />
+        </scene>
+        <scene name="com.andromeda.androbench2" >
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="backdoor" value="1" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+	    <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+            <set path="/proc/sys/unisched" file="sched_walt_io_is_busy" value="1" />
+            <set path="/proc/sys/unisched" file="sched_uclamp_threshold" value="0" />
+            <set path="subsys" file="uclamp" value="conf_2" />
+        </scene>
+        <scene name="screen_off" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6/uscfreq" file="freq_margin" value="0" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0/freqlink" file="enable" value="0" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6/freqlink" file="enable" value="0" />
+        </scene>
+	    <scene name="mtp_usb" >
+            <set path="/dev" file="cpu_dma_latency" value="0" />
+	    </scene>
+        <scene name="media_screenreocrd" >
+            <set path="subsys" file="uclamp" value="conf_4" />
+        </scene>
+        <scene name="game_loading" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="mtp_launch" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+	    <scene name="uniai_llm" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="max" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="max" />
+	        <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="max" />
+            <set path="/sys/class/devfreq/23100000.gpu" file="min_freq" value="950000000" />
+            <set path="/sys/class/devfreq/23100000.gpu" file="max_freq" value="950000000" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+            <set path="/proc/sys/unisched" file="sched_walt_io_is_busy" value="1" />
+        </scene>
+    </mode>
+    <mode name="low_power" />
+    <mode name="power_save" />
+    <mode name="ultra_power_save" />
+    <mode name="performance" />
+</power>
